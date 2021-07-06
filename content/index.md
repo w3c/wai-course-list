@@ -21,24 +21,20 @@ last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with m
 github:
   repository: w3c/wai-course-list
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-permalink: /link/to/page/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
+permalink: /link/to/page/@@   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
 
 # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
 # navigation:
-  # previous: /path/to/previous/file/
-  # next: /path/to/next/file/
-# @@SLH To Do: figure out if need to add lang here, too, and if this replaces "order" from older resources?
+  # previous: /path/to/previous/file/@@
+  # next: /path/to/next/file/@@
 
-ref: /link/to/page/   # Translators, do not change this
+ref: /link/to/page/@@   # Translators, do not change this
 changelog: /@@/changelog/
 acknowledgements: /@@/acknowledgements/  # NEW: delete if don"t have a separate acknowledgements page. And delete it in the footer below.
 license: creative-commons   # NEW: delete if not creative-commons
 
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
-image: /content-images/wai-@@repo/social.png  # NEW: image for social media
-feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (the default is wai-eo-editors@w3.org)
-
-# NEW: Footer below has several options, and not all will be relevant for specific pages. (Ask Shawn if questions.)
+# image: /content-images/wai-course-list/social.png  # NEW: image for social media
 
 # In the footer below:
 # Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
@@ -47,8 +43,8 @@ feedbackmail: wai@w3.org  # NEW: delete this line if it’s an EOWG resource (th
 # Do not change the dates in the footer below.
 footer: >
    <p><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. CHANGELOG.</p>
-   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/@@wg/participants">participants of the @@WG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
-   <p>Developed by the @@ Working Group (<a href="http://www.w3.org/WAI/@@/">@@WG</a>). Developed as part of the <a href="https://www.w3.org/WAI/@@/">WAI-@@ project</a>, @@co-funded by the European Commission.</p>
+   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
+   <p>Developed by the AccfessibilityEducation and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 
 ---
 
