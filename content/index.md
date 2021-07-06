@@ -5,7 +5,7 @@
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
 title: "List of Accessibility Courses"
-title_html: "Main Title:<br>Other Part" # NEW: only needed if you need <br> or other in title. Otherwise, delete.
+title_html: "List of Accessibility Courses:<br>Education and training related to the <a href="https://www.w3.org/WAI/curricula/">WAI Curricula</a>" # NEW: only needed if you need <br> or other in title. Otherwise, delete.
 nav_title: "List of Courses"
 
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
