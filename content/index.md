@@ -5,7 +5,7 @@
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
 title: "List of Accessibility Courses"
-title_html: "List of Accessibility Courses:<br>Education and training @@sub-heading" # NEW: only needed if you need <br> or other in title. Otherwise, delete.
+title_html: "List of Accessibility Courses:<br>Education and training" 
 nav_title: "List of Courses"
 
 lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
@@ -22,6 +22,7 @@ github:
   repository: w3c/wai-course-list
   path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
 permalink: /teach-advocate/course-list/   # Add the language shortcode to the end, with no slash at end, for example: /teach-advocate/course-list/fr
+
 
 # NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
 # navigation:
@@ -45,73 +46,63 @@ footer: >
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 
+
 ---
 
-{::nomarkdown}
-{% include box.html type="start" title="Summary" class="" %}
-{:/}
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod architecto excepturi incidunt, odit modi quidem deserunt doloremque molestias saepe. Iste dolor non repellendus laudantium. Nihil velit mollitia voluptatem ullam libero.
+<style> 
+{% include css/styles.css %}
+</style>
 
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
+<div class="header-sup">
+  <p>Browse for offers of education, training, and certification on digital accessibility.</p>
 
-{::nomarkdown}
-{% include toc.html type="start" title="Page Contents" %}
-{:/}
+  <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
+</div>
 
-- This will be replaced by an automatically generated TOC when using Markdown formatting.
-{:toc}
 
-{::nomarkdown}
-{% include toc.html type="end" %}
-{:/}
+<!-- <a class="button button-more submit-a-offer" href="submit-an-offer"><span>Submit an offer</span></a> 
+-->
 
-## Heading Level 2
+<div id="app" class="offers">
+  <div id="left-col" class="offers-filters">
+    <form data-filter-form action="/api/offers.json" method="GET">
+      <h2>Filters</h2>
+      {% for filter in site.data.filters %}
+      <fieldset id="{{ filter.id }}">
+        <legend>{{ filter.name }}</legend>
+        {% for option in filter.options %}
+        <div class="offers-filters__filter">
+          <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
+          <label for="filter-{{ option.id }}">{{ option.name }}</label>
+        </div>
+        {% endfor %}
+      </fieldset>
+      {% endfor %} 
+    </form>
+    <div class="disclaimer" id="disclaimer">
+        <h2>Important Disclaimer</h2>
+        <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of products in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+        <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
+        <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+    </div>
+  </div>
+  <div class="offers-offers">
+    <h2 class="visuallyhidden">List of offers</h2>
+    <div role="alert">
+      <p class="status status-busy" hidden>Loading offers…</p>
+      <p class="status status-failure" hidden>something went wrong…</p>
+    </div>
+    <div id="offers-list">
+      <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+      <a id="deselect" class="button deselect" hidden><span>Clear filters</span></a> 
+      {% for offer in site.data.offers %}
+        {% include offer.liquid %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
 
-Here is some **bold text**
-
-Here is some _italic text_
-
-**Link markdown template in markdown**:
-* [[Exact Title of Page on WAI website]](/permalink/to/page/)
-* [WAI website but not exact title](/permalink/to/page/)
-* [link off WAI website](https://example.com)
-
-Description of link markdown:
-* When the linked text is the **exact same as the title of the page** on the WAI website, use **double brackets** and permalink, e.g.:<br>
-    ```[[W3C Accessibility Standards Overview]](/standards-guidelines/)```<br>
-  In GitHub rich text, it will have an extra bracket. You can ignore that.
-* When linked text is not the title of the page and goes to WAI website, use single brackets and permalink, e.g.:<br>
-    ```[about our standards](/standards-guidelines/)```
-* When it links off the WAI website, use single brackets and full URI, e.g.:<br>
-   ``` [ISO standards](https://example.com) ```
-
-### Heading Level 3
-
-1. This is 
-2. a nice
-3. ordered
-4. list.
-
-#### Heading Level 4
-
-* And this is a
-* bullet list
-
-- You can use asterisks
-- or dashes. Whatever floats
-- your boat :-)
-
-##### Heading Level 5
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-## Heading Level 2
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
-
-### Heading Level 3
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione placeat ab laboriosam. Assumenda aut, praesentium commodi nesciunt natus ipsum fugiat voluptates nisi ipsam voluptas recusandae, a. Sunt eos veritatis numquam
+<script>
+{% include js/offers.js %}
+</script>
