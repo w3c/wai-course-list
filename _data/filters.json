@@ -1,7 +1,7 @@
 [
   {
-    "id": "course_type",
-    "name": "Course type",
+    "id": "offer_type",
+    "name": "Offer type",
     "type": "checkbox",
     "options": [
       {
