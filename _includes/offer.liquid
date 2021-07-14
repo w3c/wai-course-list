@@ -1,0 +1,52 @@
+<article class="offer" id="{{ offer.id }}">
+  <h3>
+    {% if offer.offer_link %}
+      <a href="{{ offer.offer_link }}" rel="external">{{ offer.name }}</a>
+    {% else %}
+      {{ offer.name }}
+    {% endif %}
+     <span>by {{ offer.provider }}</span>
+  </h3>
+  <p>{{ offer.description }}</p>
+<details>
+    <summary><h4>Details<span class="visuallyhidden"> for {{ offer.name }}</span></h4></summary>
+    <div class="offer__features">
+      <dl>
+          <dt>Offer type</dt>
+          <dd>{{ offer.offer_type }}</dd>
+          <dt>Degree of certification</dt>
+          <dd>{{ offer.degree_certification}}</dd>
+          <dt>Prerequisites</dt>
+          <dd>{{ offer.prerequisites}}</dd>
+          <dt>Target role</dt>
+          <dd>{{ offer.target_role}}</dd>
+          <dt>Level</dt>
+          <dd>{{ offer.level}}</dd>
+          <dt>WAI Curricula correspondence</dt>
+          <dd>{{ offer.curricula_correspondence}}</dd>
+          <dt>Keywords/Topics</dt>
+          <dd>{{ offer.keywords_topics}}</dd>
+          <dt>Language</dt>
+          <dd>{{ offer.language}}</dd>
+          <dt>Country</dt>
+          <dd>{{ offer.country}}</dd>
+          <dt>Format</dt>
+          <dd>{{ offer.format}}</dd>
+          <dt>Platform</dt>
+          <dd>{{ offer.platform}}</dd>
+          <dt>Cost</dt>
+          <dd>{{ offer.cost}}</dd>
+          <dt>Duration</dt>
+          <dd>{{ offer.duration}}</dd>
+          <dt>Link to offer page</dt>
+          <dd>{{ offer.offer_link}}</dd>
+          <dt>Link to offer reviews page</dt>
+          <dd>{{ offer.offer_link_reviews}}</dd>
+          <dt>Date of last information update</dt>
+          <dd>{{ offer.offer_info_last_update}}</dd>
+          <dt>Date of last update to course contents</dt>
+          <dd>{{ offer.offer_content_last_update}}</dd>
+        </dl>
+    </div>
+  </details>
+</article>
