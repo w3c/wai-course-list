@@ -1,0 +1,125 @@
+[
+  {
+    "id": "course_type",
+    "name": "Course type",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "non_credit",
+        "name": "Non-credit"
+      },
+      {
+        "id": "undergrad",
+        "name": "Undergrad"
+      },
+      {
+        "id": "graduate",
+        "name": "Graduate"
+      },
+      {
+        "id": "professional",
+        "name": "Professional"
+      },
+      {
+        "id": "other",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "id": "target_role",
+    "name": "Target role",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "developer",
+        "name": "Developer"
+      },
+      {
+        "id": "designer",
+        "name": "Designer"
+      },
+      {
+        "id": "content_author",
+        "name": "Content author"
+      },
+      {
+        "id": "manager",
+        "name": "Manager"
+      },
+      {
+        "id": "tester",
+        "name": "Tester"
+      },
+      {
+        "id": "other",
+        "name": "Other"
+      }
+    ]
+  },
+  {
+    "id": "level",
+    "name": "Level",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "basic",
+        "name": "Basic"
+      },
+      {
+        "id": "intermediate",
+        "name": "Intermediate"
+      },
+      {
+        "id": "advanced",
+        "name": "Advanced"
+      }
+    ]
+  },
+  {
+    "id": "format",
+    "name": "Format",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "online",
+        "name": "Online"
+      },
+      {
+        "id": "face-to-face",
+        "name": "Face-to-face"
+      },
+      {
+        "id": "hybrid",
+        "name": "Hybrid"
+      }
+    ]
+  },
+  {
+    "id": "cost",
+    "name": "Cost",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "free",
+        "name": "Free"
+      },
+      {
+        "id": "free_certificates_for_purchase",
+        "name": "Free with certificates for purchase"
+      },
+      {
+        "id": "free_limited_time",
+        "name": "Free for limited time"
+      },
+      {
+        "id": "free_or_reduced_for_some",
+        "name": "Free or reduced fee for some"
+      },
+      {
+        "id": "for_fee",
+        "name": "For fee"
+      }
+    ]
+  }
+]
