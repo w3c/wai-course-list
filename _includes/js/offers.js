@@ -1,59 +1,67 @@
 const filterForm = document.querySelector('[data-filter-form]');
 const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
-const offersList = document.getElementById('offers-list');
+const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
+const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
+
+
+var offersList = document.getElementById('offers-list');
+
+document.querySelectorAll('.button-clear-button').forEach(item => {
+  item.hidden = true;
+  item.addEventListener('click', e => { clearFilters() });
+})
 
 if (filterForm) {
 
-  filterForm.addEventListener('change', e => {
+  filterForm.addEventListener('change', el => {
     filterJson(filterForm);
-  });
-
-  filterForm.addEventListener('submit', e => {
-
-    filterJson(form);
-  });
-
-  document.getElementById("deselect").addEventListener('click', e => {
-    rebuildList(jsonOffers, []);
-    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
   });
 
 
 
   function filterJson(form) {
 
+    //form = document.querySelector('[data-filter-form]');
+
+    // selecting filters on
+    var attValues = [];
     var filtersOn = [];
-    var allFiltersOn = [];
-    var filterName;
-    var newResults = [];
-    var offersFiltered = [];
 
-    // for each group filter category
-    form.querySelectorAll('fieldset').forEach(group => {
+    // for each attribute group
+    form.querySelectorAll('fieldset').forEach(att => {
 
-      // identify filters on
-      filtersOn = [];
-      offersFiltered = [];
+      // [att, [checked values]]
+      attValues = [];
+      filterName = att.querySelectorAll('legend')[0].innerText;
 
-      group.querySelectorAll('input[type="checkbox"]').forEach(filter => {
+      att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
         if (filter.checked) {
-          filterName = group.querySelector("label[for='" + filter.id + "']").innerText;
-          filtersOn.push(filterName);
-          allFiltersOn.push(filterName);
+          attValues.push(att.querySelector("label[for='" + filter.id + "']").innerText);
+        }
+      })
+
+      if (attValues.length > 0)
+        filtersOn.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
+
+      att.querySelectorAll('select').forEach(filter => {
+        attValues = [];
+
+        if (filter.value != "") {
+          attValues.push(filter.value)
+          filtersOn.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
         }
       });
 
-      if (filtersOn.length > 0) {
-
-        jsonOffers.forEach(offer => {
-          if (filtersOn.includes(offer[group.id]))
-            offersFiltered.push(offer);
-        })
-        newResults.push(offersFiltered);
-
-      }
     });
+
+    // filtering results
+    var newResults = [];
+
+    // by attribute
+    filtersOn.forEach(filter => {
+      newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
+    })
 
     // if no filter, show all offers
     if (newResults.length === 0)
@@ -62,9 +70,8 @@ if (filterForm) {
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
-
     //rebuild document
-    rebuildList(newResults, allFiltersOn);
+    rebuildList(newResults, filtersOn);
 
     // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
 
@@ -72,7 +79,28 @@ if (filterForm) {
 
   function rebuildList(newResults, filtersOn) {
 
-    const articles = offersList.querySelectorAll('ARTICLE');
+    const articles = offersList.querySelectorAll('aside');
+    var totalOffers = document.getElementById("total-offers");
+
+    var listFiltersOnString = document.createElement('dl');
+
+    filtersOn.forEach(f => {
+
+      var attName = document.createElement('dt');
+      attName.innerText = f.filterName + ':';
+      listFiltersOnString.appendChild(attName);
+
+      var attValues = document.createElement('dd');
+
+      if (f.filterId == 'language')
+        attValues.innerText = jsonLang[f.filterValues[0]].name + " (" + jsonLang[f.filterValues[0]].nativeName + ")";
+      else if (f.filterId == 'country')
+        attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";
+      else
+        attValues.innerText = f.filterValues.join(', ');
+      listFiltersOnString.appendChild(attValues);
+    });
+
 
     articles.forEach(el => {
       if (!newResults.find(o => o.id === el.id))
@@ -82,27 +110,38 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-      document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers";
-      hideClearFilters(true);
+      totalOffers.innerText = "Showing " + newResults.length + " offers";
+      hideClearButton(true);
     }
     else if (newResults.length > 0) {
-      document.getElementById("total-offers").innerText =
-        "Showing " + newResults.length + " offers matching the filters: " + filtersOn.toString();
-      hideClearFilters(false);
+      if (newResults.length === 1)
+        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: ";
+      else
+        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
+      totalOffers.appendChild(listFiltersOnString);
+      hideClearButton(false);
     }
     else {
-      document.getElementById("total-offers").innerText = "Sorry, but no items match these criteria";
-      hideClearFilters(false);
+      totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
+      totalOffers.appendChild(listFiltersOnString);
+      hideClearButton(false);
     }
   }
 
-  function hideClearFilters(visibility) {
-    document.getElementById("deselect").hidden = visibility;
+
+  function hideClearButton(isHidden) {
+    document.querySelectorAll('.button-clear-button').forEach(item => { item.hidden = isHidden });
   }
 
-  
-  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList){
+
+  function clearFilters() {
+    rebuildList(jsonOffers, []);
+    filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
+    filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
+  }
+
+
+  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList) {
     console.log("Filters:");
     console.log(jsonFilters);
     console.log("Offers:");
@@ -124,4 +163,26 @@ if (filterForm) {
     return obj
   }
 
+}
+
+const divSelectLang = document.getElementById("divSelectLang");
+const fieldLang = document.getElementsByClassName("field-language")[0];
+document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang,fieldLang)});
+
+const divSelectCountry = document.getElementById("divSelectCountry");
+const fieldCountry = document.getElementsByClassName("field-country")[0];
+document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry,fieldCountry)});
+
+const divInputPrerequisite = document.getElementById("divInputPrerequisite");
+const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
+document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite,fieldPrequisite)});
+
+const divInputTopic = document.getElementById("divInputTopic");
+const fieldTopic = document.getElementsByClassName("field-topic")[0];
+document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic,fieldTopic)});
+
+
+
+function addNewField(divToAppend, fieldToAppend){
+  divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
 }

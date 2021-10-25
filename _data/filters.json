@@ -1,34 +1,34 @@
 [
   {
-    "id": "offer_type",
-    "name": "Offer type",
+    "id": "type",
+    "name": "Type",
     "type": "checkbox",
     "options": [
       {
-        "id": "non_credit",
-        "name": "Non-credit"
+        "id": "grad",
+        "name": "Graduate program"
       },
       {
-        "id": "undergrad",
-        "name": "Undergrad"
+        "id": "undergraduate",
+        "name": "Undergraduate program"
       },
       {
-        "id": "graduate",
-        "name": "Graduate"
+        "id": "training",
+        "name": "Training program"
       },
       {
-        "id": "professional",
-        "name": "Professional"
+        "id": "certification",
+        "name": "Professional certification"
       },
       {
-        "id": "other",
+        "id": "other_type",
         "name": "Other"
-      }
+      }                        
     ]
   },
   {
-    "id": "target_role",
-    "name": "Target role",
+    "id": "audience",
+    "name": "Audience",
     "type": "checkbox",
     "options": [
       {
@@ -52,7 +52,7 @@
         "name": "Tester"
       },
       {
-        "id": "other",
+        "id": "other_audience",
         "name": "Other"
       }
     ]
@@ -96,6 +96,29 @@
     ]
   },
   {
+    "id": "learning",
+    "name": "Learning",
+    "type": "checkbox",
+    "options": [
+      {
+        "id": "guided",
+        "name": "Guided"
+      },
+      {
+        "id": "non-guided",
+        "name": "Non-guided"
+      },
+      {
+        "id": "synchronous",
+        "name": "Synchronous"
+      },
+      {
+        "id": "asynchronous",
+        "name": "Asynchronous"
+      }
+    ]
+  },
+  {
     "id": "cost",
     "name": "Cost",
     "type": "checkbox",
@@ -110,15 +133,15 @@
       },
       {
         "id": "free_limited_time",
-        "name": "Free for limited time"
+        "name": "Free for limited content or duration"
       },
       {
         "id": "free_or_reduced_for_some",
         "name": "Free or reduced fee for some"
       },
       {
-        "id": "for_fee",
-        "name": "For fee"
+        "id": "paid",
+        "name": "Paid"
       }
     ]
   }

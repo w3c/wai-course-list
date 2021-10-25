@@ -1,0 +1,34 @@
+[
+    {
+        "id": "international-sign-interpretation",
+        "name": "International sign interpretation"
+    },
+    {
+        "id": "other-sign-language",
+        "name": "Other sign language"
+    },
+    {
+        "id": "captioning",
+        "name": "Captioning"
+    },
+    {
+        "id": "real-time-captioning",
+        "name": "Real-time captioning"
+    },
+    {
+        "id": "audio-descriptions",
+        "name": "Audio descriptions"
+    },
+    {
+        "id": "transcripts",
+        "name": "Transcripts"
+    },
+    {
+        "id": "physical-accessibility",
+        "name": "Physical accessibility"
+    },
+    {
+        "id": "z_other",
+        "name": "Other"
+    }
+]
