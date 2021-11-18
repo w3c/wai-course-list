@@ -42,10 +42,10 @@ footer: >
 {% include css/styles.css %}
 </style>
 <div class="header-sup">
-    <p> The List of Courses provides information about offers of courses, training, and certification on web accessibility from different providers, so that people can make informed decisions when they choose an offer. This page provides a list of offers that you can filter to find ones that match your particular needs. 
-    </p>
-    <p><em>Note: offers are user-submitted, not W3C-endorsed, see <a href="#disclaimer">disclaimer</a> for vendor-submitted content.</em></p>
-    {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}
+    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. If you wish to provide information about a course, training, or certification on web accessibility, please use the following button to add or update information about your resource.</p>
+    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}
+    <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
+    </em></p>
 </div>
 <div id="app">
     <div id="left-col" class="offers-filters">
@@ -54,7 +54,7 @@ footer: >
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 <legend class="label">{{ filter.name }}</legend>
-<!--                 {% if filter.name == "Format" %}
+<!--                {% if filter.name == "Format" %}
                     {% include resource-link.html label="Show info" href="#"%}
                 {% endif %} -->
                 {% for option in filter.options %}
@@ -95,14 +95,14 @@ footer: >
         {% include_cached button.html label="Clear filters" class="clear-button"%}
         <div id="disclaimer">
             <h2>Important Disclaimer</h2>
-            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of offers in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
-            <p>Offer descriptions, search criteria, and other information in this database is provided by offers providers. W3C does not verify the accuracy of the information.</p>
-            <p>The list is not a review of offers, nor a complete or definitive list of all offers. The information can change at any time.</p>
+            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+            <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p>
+            <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
         </div>
     </div>
     <div id="offers-list">
         <span id="status">
-            <p id="total-offers">Showing {{ site.data.offers | size }} offers</p>
+            <p id="total-offers">Showing {{ site.data.offers | size }} results</p>
         </span>
         <div class="field" class="sort-by">
             <label for="select">Sort by</label>
@@ -117,10 +117,12 @@ footer: >
         {% for offer in offers %}
             {% include offer.liquid %}
         {% endfor %}      
-        {% include_cached button.html type="link" label="Submit an offer" class="more" href="submit-an-offer" %}  
     </div>
+    
 </div>
-
+<div class="button-submit-end">
+    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}  
+</div>
 
 <script>
 {% include js/offers.js %}

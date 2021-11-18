@@ -6,6 +6,12 @@
 
 .header-sup {
   grid-column: 1 / 8;
+  margin-bottom: 48px;
+}
+
+.button-submit-end{
+  grid-column: 2 / 8;
+  margin-top: 2em;
 }
 
 @media ( min-width: 72em) {
@@ -28,17 +34,17 @@ main>header {
   grid-column: 1 / 9;
 }
 
-.header-sup {
-  margin-bottom: 48px;
-}
-
 .header-sup p:first-child {
   margin-top: 0;
   font-size: 125%;
 }
 
-.button{
-  margin-top:2em;
+.header-sup .button{
+  margin-bottom: 2em;
+}
+
+.button {
+  margin-top: 2em;
 }
 
 #app {
@@ -83,10 +89,21 @@ main>header {
   margin-top: 1em;
 }
 
-.duration-input {
-  width: 25% !important;
+.length-container{
+  display: flex;
+}
+
+.length-value{
+  flex: 1;
+  margin-right: 2em;
+}
+
+.length-unity{
+  flex: 5;
+}
+
+.length-unity select{
   padding: 8px;
-  display: inline !important;
 }
 
 
@@ -145,9 +162,10 @@ details dt::after {
   font-weight: 700;
 }
 
-.field-topic, .field-prerequisite{
+.field-topic, .field-prerequisite {
   margin-top: 2em;
 }
+
 /* 
 details>div{
   margin-bottom: -8px;
@@ -177,7 +195,7 @@ details>div{
 }
 */
 
-#offers-list details>div{
+#offers-list details>div {
   border-top: solid 1px var(--line-grey);
   margin-left: -48px;
   margin-right: -16px;
