@@ -98,11 +98,11 @@ main>header {
   margin-right: 2em;
 }
 
-.length-unity{
+.length-unit{
   flex: 5;
 }
 
-.length-unity select{
+.length-unit select{
   padding: 8px;
 }
 
