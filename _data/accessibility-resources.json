@@ -5,7 +5,7 @@
     },
     {
         "id": "presentation-accessible-all",
-        "name": "All content meets relevant good practice in <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations Accessible to All</a>"
+        "name": "All presentations, talks, meetings, or training sessions meet relevant good practice in <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/\">How to Make Your Presentations Accessible to All</a>"
     },
     {
         "id": "audio-video-good-practices",
@@ -32,21 +32,9 @@
         "name": "<a href=\"https://www.w3.org/WAI/media/av/player/\">Media player accessibility</a>"
     },
     {
-        "id": "accessible-venue",
-        "name": "Accessible venue"
-    },
-    {
         "id": "pre-check-available",
-        "name": "Pre-session technology check available"
+        "name": "Pre-session technology check available - dedicated time to participants set up any relevant technology, or additional settings"
     },
-    {
-        "id": "material-available-before-sessions",
-        "name": "Materials all available before sessions"
-    },
-    {
-        "id": "accessible_venue",
-        "name": "Teaching resources available in relevant alternative formats (e.g., large print documents, tactile graphics, braille translations and printing, etc.)"
-    }, 
     {
         "id": "z_other",
         "name": "Other"
