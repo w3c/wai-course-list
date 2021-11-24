@@ -206,15 +206,15 @@ main > header { grid-column: 4 / span 4; }
 
 
   <fieldset class="field" id="offer-learning">
-      <legend class="label">Learning (Required)</legend>
-      <p class="expl">Indicate the type of learning provided in this offer.</p>
+      <legend class="label">Activities (Required)</legend>
+      <p class="expl">Indicate the type of activities provided in this offer.</p>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-scheduled" name="offer-learning-scheduled" required>
           <label for="offer-learning-scheduled">Scheduled sessions - Participants are required to be online at a specif time</label>
       </div>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-not-scheduled" name="offer-learning-not-scheduled">
-          <label for="offer-learning-not-scheduled">Not scheduled sessions - Participants can access at their own schedule</label>
+          <label for="offer-learning-not-scheduled">Unscheduled sessions - Participants can access at their own pace</label>
       </div>
   </fieldset>
 
