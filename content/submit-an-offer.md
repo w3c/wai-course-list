@@ -2,26 +2,17 @@
 title: "Submit a course, training, or certification on web accessibility"
 nav_title: "Submit a course, training, or certification on web accessibility"
 doc-note-type: draft
-lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
+lang: en   
+last_updated: 2021-@@-@@
 github:
-  repository: leticiaseixas/wai-list-of-courses
-  path: content/submit-an-offer.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-permalink: /list-of-courses/submit-an-offer   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
-# NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
-# navigation:
-  # previous: /teach-advocate/course-list/@@
-  # next: /teach-advocate/course-list/@@
-ref: /teach-advocate/course-list/   # Translators, do not change this
-changelog: /teach-advocate/course-list/changelog/  # NEW: set up a changelog so it's ready for later
-acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
+  repository: w3c/wai-course-list
+  path: content/submit-an-offer.md
+permalink: course-list/submit-an-offer
+ref: /teach-advocate/course-list/
+changelog: /teach-advocate/course-list/changelog/
+acknowledgements: /teach-advocate/course-list/acknowledgements/
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
-# In the footer below:
-# Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
-# Translate the other words below, including "Date:" and "Editor:"
-# Translate the Working Group name. Leave the Working Group acronym in English.
-# Do not change the dates in the footer below.
 footer: 
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
@@ -37,8 +28,8 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../list-of-courses">Back to List of Courses</a>
 <p>
-  This form allows you to provide information about courses, training, and certification on web accessibility. To update an existing resource, please use the following button to upload the file provided when first submiting your resource.</p>
-  {% include_cached button.html type="link" label="Load resource information" class="more" href="#" %}
+  This form allows you to provide information about courses, training, and certification on web accessibility. For existing resources, please <a href="#">upload the existing resource file</a>.
+
 <p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 <form id="form-submit-an-offer">
@@ -216,23 +207,15 @@ main > header { grid-column: 4 / span 4; }
 
   <fieldset class="field" id="offer-learning">
       <legend class="label">Learning (Required)</legend>
-      <p class="expl">Indicate the type of learning provided in this offer. Choose as many as apply.</p>
+      <p class="expl">Indicate the type of learning provided in this offer.</p>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-self-paced" name="offer-learning-self-paced" required>
-          <label for="offer-learning-self-paced">Self-paced - Progress at your own speed</label>
+          <input type="checkbox" id="offer-learning-scheduled" name="offer-learning-scheduled" required>
+          <label for="offer-learning-scheduled">Scheduled sessions - Participants are required to be online at a specif time</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="offer-learning-instructor-paced" name="offer-learning-instructor-paced">
-          <label for="offer-learning-instructor-paced">Instructor paced - Instructor-led on a course schedule</label>
+          <input type="checkbox" id="offer-learning-not-scheduled" name="offer-learning-not-scheduled">
+          <label for="offer-learning-not-scheduled">Not scheduled sessions - Participants can access at their own schedule</label>
       </div>
-      <div class="radio-field">
-          <input type="checkbox" id="offer-learning-asynchronous" name="offer-learning-asynchronous">
-          <label for="offer-learning-asynchronous">Asynchronous learning - Access at your own schedule</label>
-      </div>
-      <div class="radio-field">
-          <input type="checkbox" id="offer-learning-synchronous" name="offer-learning-synchronous">
-          <label for="offer-learning-synchronous">Synchronous learning - Students and instructors required to be online at the same time</label>
-      </div>            
   </fieldset>
 
   <div class="field">
@@ -243,8 +226,8 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-accessibility-resources" class="label-input">Accessibility support</label>
-      <p class="expl">Indicate what accessibility support is provided. Include details in the text box.</p>
-      {% assign aresources = site.data.accessibility-resources | sort: 'id' %}
+      <p class="expl">Indicate what relevant accessibility support is provided. Include details in the text box.</p>
+      {% assign aresources = site.data.accessibility-resources %}
       {% for resource in aresources %}
         <div class="radio-field">
           <input type="checkbox" id="offer-accessibility-resource-{{resource.id}}" value="offer-accessibility-resource-{{resource.id}}">
@@ -268,9 +251,9 @@ main > header { grid-column: 4 / span 4; }
           <label for="offer-value-duration">Value</label>
           <input type="number" id="offer-value-duration" required>
         </div>
-        <div class="length-unity">
-          <label for="offer-unity-duration">Unity</label>
-          <select id="offer-unity-duration" required> 
+        <div class="length-unit">
+          <label for="offer-unit-duration">Unit</label>
+          <select id="offer-unit-duration" required> 
               <option value=""></option>
               <option value="hours">Hours</option>
               <option value="days">Days</option>

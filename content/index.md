@@ -1,37 +1,19 @@
 ---
-# NEW: Comments for new repos start with "NEW". Please delete the NEW comments. Leave the other comments for translators. Also, search for @@s to replace. For multi-page resources and other frontmatter info, see: https://wai-website-theme.netlify.app/writing/frontmatter/
-# Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
-# In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 title: "List of Accessibility Courses"
 title_html: "List of Accessibility Courses:<br>Education, training, and certification" 
 nav_title: "List of Courses"
 doc-note-type: draft
-lang: en   # Change "en" to the translated-language shortcode from https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
-last_updated: 2021-@@-@@   # Put the date of this translation YYYY-MM-DD (with month in the middle)
-# translators:    # remove from the beginning of this line and the lines below: "# " (the hash sign and the space)
-# - name: "Jan Doe"   # Replace Jan Doe with translator name
-# - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple translators
-# contributors:
-# - name: "Jan Doe"   # Replace Jan Doe with contributor name, or delete this line if none
-# - name: "Jan Doe"   # Replace Jan Doe with name, or delete this line if not multiple contributors
+lang: en
+last_updated: 2021-@@-@@
 github:
-  repository: leticiaseixas/wai-list-of-courses
-  path: content/index.md    # Add the language shortcode to the middle of the filename, for example: content/index.fr.md
-permalink: /list-of-courses/   # Add the language shortcode to the end, with no slash at end, for example: /link/to/page/fr
-# NEW: 3 navigation lines below are only needed for multi-page resources where you have previous and next at the bottom. If so, un-comment them; otherwise delete these lines.
-# navigation:
-  # previous: /teach-advocate/course-list/@@
-  # next: /teach-advocate/course-list/@@
-ref: /teach-advocate/course-list/   # Translators, do not change this
-changelog: /teach-advocate/course-list/changelog/  # NEW: set up a changelog so it's ready for later
-acknowledgements: /teach-advocate/course-list/acknowledgements/  # NEW: delete if don't have a separate acknowledgements page. And delete it in the footer below.
+  repository: w3c/wai-course-list
+  path: content/index.md
+permalink: /course-list/
+ref: /teach-advocate/course-list/
+changelog: /teach-advocate/course-list/changelog/
+acknowledgements: /teach-advocate/course-list/acknowledgements/
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
-# In the footer below:
-# Do not translate or change CHANGELOG or ACKNOWLEDGEMENTS.
-# Translate the other words below, including "Date:" and "Editor:"
-# Translate the Working Group name. Leave the Working Group acronym in English.
-# Do not change the dates in the footer below.
 footer: >
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
@@ -42,7 +24,7 @@ footer: >
 {% include css/styles.css %}
 </style>
 <div class="header-sup">
-    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. If you wish to provide information about a course, training, or certification on web accessibility, please use the following button to add or update information about your resource.</p>
+    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
     {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}
     <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
     </em></p>
