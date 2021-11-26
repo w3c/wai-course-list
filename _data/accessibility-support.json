@@ -60,7 +60,7 @@
                 "name": "Easy-to-read font face"
             },
             {
-                "id": "accessible-electronic-handout",
+                "id": "sufficient-contrast",
                 "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
             },
             {
