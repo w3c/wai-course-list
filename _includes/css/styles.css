@@ -89,6 +89,10 @@ main>header {
   margin-top: 1em;
 }
 
+.accessibility-support{
+  display: inline !important;
+}
+
 .length-container{
   display: flex;
 }
@@ -158,7 +162,7 @@ details dt::after {
 }
 
 .label-input {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-weight: 700;
 }
 

@@ -1,0 +1,20 @@
+
+{% for support in site.data.accessibility-support %}
+
+{% include excol.html type="start" open="true"%}
+<h4>{{ support.name }}</h4>
+{% include excol.html type="middle" %}
+{% for option in support.options %}
+<div class="radio-field">
+    <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
+    <label for="offer-{{ option.id }}">{{ option.name }}</label>
+</div>
+
+{% endfor %}
+{% include excol.html type="end" %}
+{% endfor %}
+
+<div class="field">
+    <label for="offer-new-accessibility-support">Additional accessibility support</label>
+    <textarea id="offer-new-accessibility-support"></textarea>
+</div>

@@ -25,7 +25,7 @@ footer: >
 </style>
 <div class="header-sup">
     <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
-    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-an-offer" %}
+    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-a-resource" %}
     <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
     </em></p>
 </div>
