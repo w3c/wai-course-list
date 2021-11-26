@@ -26,7 +26,7 @@ footer:
 main > header { grid-column: 4 / span 4; }
 </style>
 
-<a href="../list-of-courses">Back to List of Courses</a>
+<a href="../course-list">Back to List of Courses</a>
 <p>
   This form allows you to provide information about courses, training, and certification on web accessibility. For existing resources, please <a href="#">upload the existing resource file</a>.
 
