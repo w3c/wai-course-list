@@ -1,7 +1,7 @@
 [
   {
     "id": "type",
-    "name": "Type",
+    "name": "Type of resource",
     "type": "checkbox",
     "options": [
       {
@@ -14,7 +14,7 @@
       },
       {
         "id": "training",
-        "name": "Training program"
+        "name": "Training"
       },
       {
         "id": "certification",
@@ -32,16 +32,16 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "developer",
-        "name": "Developer"
+        "id": "content_author",
+        "name": "Content author"
       },
       {
         "id": "designer",
         "name": "Designer"
       },
       {
-        "id": "content_author",
-        "name": "Content author"
+        "id": "developer",
+        "name": "Developer"
       },
       {
         "id": "manager",
@@ -82,39 +82,35 @@
     "type": "checkbox",
     "options": [
       {
-        "id": "online",
-        "name": "Online"
-      },
-      {
         "id": "face-to-face",
         "name": "Face-to-face"
       },
       {
+        "id": "online",
+        "name": "Online"
+      },
+      {
         "id": "hybrid",
         "name": "Hybrid"
+      },
+      {
+        "id": "blended",
+        "name": "Blended"
       }
     ]
   },
   {
-    "id": "learning",
-    "name": "Learning",
+    "id": "activities",
+    "name": "Activities",
     "type": "checkbox",
     "options": [
       {
-        "id": "guided",
-        "name": "Guided"
+        "id": "scheduled",
+        "name": "Scheduled"
       },
       {
-        "id": "non-guided",
-        "name": "Non-guided"
-      },
-      {
-        "id": "synchronous",
-        "name": "Synchronous"
-      },
-      {
-        "id": "asynchronous",
-        "name": "Asynchronous"
+        "id": "unscheduled",
+        "name": "Unscheduled"
       }
     ]
   },

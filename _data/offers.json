@@ -11,7 +11,7 @@
       "In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -43,13 +43,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -59,6 +72,12 @@
     ],
     "duration": [
       "2 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -85,7 +104,7 @@
       "In this course, you will get hands-on experience making web applications accessible."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "HTML, CSS, Javascript"
@@ -115,12 +134,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Udacity"
@@ -130,6 +163,12 @@
     ],
     "duration": [
       "Approx 2 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
     ],
     "offer_link": [
       "www.link.com"
@@ -182,14 +221,32 @@
       "us"
     ],
     "format": [
-      "Not provided"
+      "Blended"
     ],
-    "learning": [
-      "Not provided"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Real-time captioning"
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -199,6 +256,9 @@
     ],
     "duration": [
       "Not provided"
+    ],
+    "availability_start_date": [
+      "01 January 2019"
     ],
     "offer_link": [
       "www.link.com"
@@ -225,7 +285,7 @@
       "This credential is intendend for accessibility professionals who are expected to evaluate the accessibility of existing content according to technical standards and guidelines."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Principles of Web Accessibility"
@@ -252,13 +312,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -268,6 +341,9 @@
     ],
     "duration": [
       "2 weeks"
+    ],
+    "availability_start_date": [
+      "01 January 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -294,7 +370,7 @@
       "This online training covers creating accessible document content and structure, evaluating the accessibility of documents, and optimizing the accessibility of PDFs."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -323,13 +399,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Canvas"
@@ -339,6 +428,12 @@
     ],
     "duration": [
       "60 days"
+    ],
+    "availability_start_date": [
+      "01 September 2021"
+    ],
+    "availability_end_date": [
+      "31 December 2023"
     ],
     "offer_link": [
       "www.link.com"
@@ -365,7 +460,7 @@
       "Training session from accessibility principles to advanced accessibility techniques."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "A basic understanding of HTML is recommended"
@@ -395,13 +490,31 @@
     "format": [
       "Face-to-face"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Real-time captioning"
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "edx"
@@ -411,6 +524,9 @@
     ],
     "duration": [
       "2 days"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
     ],
     "offer_link": [
       "www.link.com"
@@ -437,7 +553,7 @@
       "This resource provides an introduction to online course accessibility for faculty, staff, and instructional designers."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -468,12 +584,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided"
+    "activities": [
+      "Unscheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Canvas"
@@ -482,7 +612,13 @@
       "Free"
     ],
     "duration": [
-      "Self-paced"
+      "2 months"
+    ],
+    "availability_start_date": [
+      "01 January 2021"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -509,7 +645,7 @@
       "This resource provides the training and resources for designing, building, and testing digital systems for your organization with accessibility in mind."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -538,12 +674,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "International sign interpretation",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -553,6 +703,12 @@
     ],
     "duration": [
       "6 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -579,7 +735,7 @@
       "Resource to train your staff in accessibility."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -605,13 +761,27 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      }
     ],
     "platform": [
       "ARC"
@@ -621,6 +791,12 @@
     ],
     "duration": [
       "8 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2021"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
     ],
     "offer_link": [
       "www.link.com"
@@ -647,7 +823,7 @@
       "This course provides the core concepts of accessibility as they apply to UX design, including an overview of the assistive technology visitors may use to access your projects."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge in web design"
@@ -674,13 +850,27 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled",
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "text-and-visuals-big-enough",
+        "name": "Text and important visuals big enough to be read even from the back of the room"
+      },
+      {
+        "id": "easy-to-read-font-face",
+        "name": "Easy-to-read font face"
+      },
+      {
+        "id": "sufficient-contrast",
+        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+      },
+      {
+        "id": "motions-or-animations",
+        "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
+      }
     ],
     "platform": [
       "LinkedIn"
@@ -690,6 +880,12 @@
     ],
     "duration": [
       "1h 20m"
+    ],
+    "availability_start_date": [
+      "01 January 2021"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
     ],
     "offer_link": [
       "www.link.com"
@@ -746,13 +942,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Asynchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "edx"
@@ -762,6 +971,12 @@
     ],
     "duration": [
       "10 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "31 December 2023"
     ],
     "offer_link": [
       "www.link.com"
@@ -788,7 +1003,7 @@
       "In this course you will learn how to identify and design solutions for ICT accessibility for people with disabilities."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "None"
@@ -818,13 +1033,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Non-guided",
-      "Asynchronous"
+    "activities": [
+      "Unscheduled"
     ],
-    "accessibility_resources": [
-      "International sign interpretation",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "edx"
@@ -834,6 +1062,12 @@
     ],
     "duration": [
       "6 weeks (2-4 hours per week)"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -889,14 +1123,26 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Asynchronous",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "International sign interpretation",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -906,6 +1152,12 @@
     ],
     "duration": [
       "Two 15-week semesters"
+    ],
+    "availability_start_date": [
+      "01 January 2019"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -932,7 +1184,7 @@
       "Online digital badging courses on IT Accessibility."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Accessibility 101"
@@ -961,13 +1213,30 @@
     "format": [
       "Online"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "edx"
@@ -977,6 +1246,12 @@
     ],
     "duration": [
       "3 days"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
     ],
     "offer_link": [
       "www.link.com"
@@ -1031,13 +1306,30 @@
     "format": [
       "Hybrid"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Captioning",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1047,6 +1339,12 @@
     ],
     "duration": [
       "2 years"
+    ],
+    "availability_start_date": [
+      "01 September 2021"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
     ],
     "offer_link": [
       "www.link.com"
@@ -1073,7 +1371,7 @@
       "This Certificate will help you to sit for certification examinations as an Accessibility Specialist."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "Basic knowledge of disability and computer applications"
@@ -1102,13 +1400,30 @@
     "format": [
       "Hybrid"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Captioning",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1118,6 +1433,12 @@
     ],
     "duration": [
       "3 years"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "31 December 2023"
     ],
     "offer_link": [
       "www.link.com"
@@ -1144,7 +1465,7 @@
       "This course focus is on developing expertise using WAI-ARIA."
     ],
     "type": [
-      "Training program"
+      "Training"
     ],
     "prerequisites": [
       "HTML and Javascript experience"
@@ -1171,13 +1492,26 @@
     "format": [
       "Face-to-face"
     ],
-    "learning": [
-      "Guided",
-      "Synchronous"
+    "activities": [
+      "Scheduled"
     ],
-    "accessibility_resources": [
-      "Audio descriptions",
-      "Transcripts"
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+      }
     ],
     "platform": [
       "Not provided"
@@ -1187,6 +1521,12 @@
     ],
     "duration": [
       "30 hours"
+    ],
+    "availability_start_date": [
+      "01 January 2019"
+    ],
+    "availability_end_date": [
+      "31 December 2023"
     ],
     "offer_link": [
       "www.link.com"
