@@ -270,3 +270,15 @@ details>div{
   padding-top: 16px;
   padding-bottom: 16px;
 }
+
+
+/* quick fix to link contrast - to better discuss */
+
+fieldset label:hover a{
+  color: var(--off-white);
+}
+
+fieldset label:hover a:hover{
+  text-decoration: underline gold;
+}
+
