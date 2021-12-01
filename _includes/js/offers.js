@@ -110,19 +110,19 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-      totalOffers.innerText = "Showing " + newResults.length + " offers";
+      totalOffers.innerText = "Showing " + newResults.length + " results";
       hideClearButton(true);
     }
     else if (newResults.length > 0) {
       if (newResults.length === 1)
-        totalOffers.innerText = "Showing " + newResults.length + " offer matching the following criteria: ";
+        totalOffers.innerText = "Showing " + newResults.length + " result matching the following criteria: ";
       else
-        totalOffers.innerText = "Showing " + newResults.length + " offers matching the following criteria: ";
+        totalOffers.innerText = "Showing " + newResults.length + " results matching the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
     else {
-      totalOffers.innerText = "Sorry, but no offers match the following criteria: ";
+      totalOffers.innerText = "Sorry, but no results match the following criteria: ";
       totalOffers.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
@@ -165,24 +165,27 @@ if (filterForm) {
 
 }
 
-const divSelectLang = document.getElementById("divSelectLang");
-const fieldLang = document.getElementsByClassName("field-language")[0];
-document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang,fieldLang)});
+if (document.getElementById("form-submit-an-offer")) {
 
-const divSelectCountry = document.getElementById("divSelectCountry");
-const fieldCountry = document.getElementsByClassName("field-country")[0];
-document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry,fieldCountry)});
+  const divSelectLang = document.getElementById("divSelectLang");
+  const fieldLang = document.getElementsByClassName("field-language")[0];
+  document.getElementsByClassName("button-new-lang")[0].addEventListener('click', e => { addNewField(divSelectLang, fieldLang) });
 
-const divInputPrerequisite = document.getElementById("divInputPrerequisite");
-const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
-document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite,fieldPrequisite)});
+  const divSelectCountry = document.getElementById("divSelectCountry");
+  const fieldCountry = document.getElementsByClassName("field-country")[0];
+  document.getElementsByClassName("button-new-country")[0].addEventListener('click', e => { addNewField(divSelectCountry, fieldCountry) });
 
-const divInputTopic = document.getElementById("divInputTopic");
-const fieldTopic = document.getElementsByClassName("field-topic")[0];
-document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic,fieldTopic)});
+  const divInputPrerequisite = document.getElementById("divInputPrerequisite");
+  const fieldPrequisite = document.getElementsByClassName("field-prerequisite")[0];
+  document.getElementsByClassName("button-new-prerequisite")[0].addEventListener('click', e => { addNewField(divInputPrerequisite, fieldPrequisite) });
+
+  const divInputTopic = document.getElementById("divInputTopic");
+  const fieldTopic = document.getElementsByClassName("field-topic")[0];
+  document.getElementsByClassName("button-new-topic")[0].addEventListener('click', e => { addNewField(divInputTopic, fieldTopic) });
 
 
 
-function addNewField(divToAppend, fieldToAppend){
-  divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
+  function addNewField(divToAppend, fieldToAppend) {
+    divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
+  }
 }

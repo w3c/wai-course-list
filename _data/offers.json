@@ -57,11 +57,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -148,11 +148,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -233,15 +233,15 @@
       },
       {
         "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
       },
       {
         "id": "caption-audio",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
       },
       {
         "id": "description-of-visual-information",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
       },
       {
         "id": "pre-check-available",
@@ -326,11 +326,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -413,11 +413,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -501,15 +501,15 @@
       },
       {
         "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
       },
       {
         "id": "caption-audio",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
       },
       {
         "id": "description-of-visual-information",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
       },
       {
         "id": "pre-check-available",
@@ -598,11 +598,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -688,11 +688,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -776,11 +776,7 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
-      },
-      {
-        "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       }
     ],
     "platform": [
@@ -865,11 +861,11 @@
       },
       {
         "id": "sufficient-contrast",
-        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+        "name": "Sufficient contrast between colors (“luminance contrast”) - see [Understanding contrast guidance](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced) and [contrast evaluation tools](https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources)"
       },
       {
         "id": "motions-or-animations",
-        "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
+        "name": "Reduced use of motion or animations - see [Understanding Animation from Interactions guidance](https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html)"
       }
     ],
     "platform": [
@@ -956,11 +952,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -1047,11 +1043,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -1137,11 +1133,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -1223,15 +1219,15 @@
       },
       {
         "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
       },
       {
         "id": "caption-audio",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
       },
       {
         "id": "description-of-visual-information",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
       },
       {
         "id": "pre-check-available",
@@ -1316,15 +1312,15 @@
       },
       {
         "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
       },
       {
         "id": "caption-audio",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
       },
       {
         "id": "description-of-visual-information",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
       },
       {
         "id": "pre-check-available",
@@ -1410,15 +1406,15 @@
       },
       {
         "id": "assistive-listening-devices",
-        "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
       },
       {
         "id": "caption-audio",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
       },
       {
         "id": "description-of-visual-information",
-        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
       },
       {
         "id": "pre-check-available",
@@ -1506,11 +1502,11 @@
       },
       {
         "id": "accessible-electronic-handout",
-        "name": "Handouts, slides, and other electronic material is accessible - all content meet <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a>, at least Level AA"
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
       },
       {
         "id": "media-accessible",
-        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see <a href=\"https://www.w3.org/WAI/media/av/\">Making Audio and Video Media Accessible</a>"
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
       }
     ],
     "platform": [
@@ -1542,3 +1538,7 @@
     ]
   }
 ]
+
+
+
+
