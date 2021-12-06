@@ -46,6 +46,18 @@ main > header { grid-column: 4 / span 4; }
      <input type="email" id="submitter-email" required>
   </div>
   
+  <div class="field" id="divSelectCountry">
+      <label for="offer-country" class="label-input">Country (Required)</label>
+      <p class="expl">Indicate by which country or countries this resource is provided.</p>
+      <select name="country" id="country" class="field-country select-form" required>
+          <option value=""></option>
+          {% for country in site.data.countries %}
+              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
+          {% endfor %}
+      </select>
+      {% include_cached button.html label="Add country" class="small button-new-country" %}
+  </div>
+
 
   <h2 id="the-tool">About the resource</h2>
   <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
@@ -172,18 +184,6 @@ main > header { grid-column: 4 / span 4; }
       {% include_cached button.html label="Add language" class="small button-new-lang" %}
   </div>
 
-  <div class="field" id="divSelectCountry">
-      <label for="offer-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
-          <option value=""></option>
-          {% for country in site.data.countries %}
-              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
-          {% endfor %}
-      </select>
-      {% include_cached button.html label="Add country" class="small button-new-country" %}
-  </div>
-
   <fieldset class="field" id="offer-format">
     <legend class="label">Format (Required)</legend>
     <div class="radio-field">
@@ -205,11 +205,11 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
 
   <fieldset class="field" id="offer-learning">
-      <legend class="label">Activities (Required)</legend>
+      <legend class="label">Scheduling (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-scheduled" name="offer-learning-scheduled" required>
-          <label for="offer-learning-scheduled">Scheduled - participants are required to attend at a specif time</label>
+          <label for="offer-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
       </div>
       <div class="radio-field">
           <input type="checkbox" id="offer-learning-not-scheduled" name="offer-learning-not-scheduled">
