@@ -9,12 +9,12 @@
   margin-bottom: 48px;
 }
 
-.button-submit-end{
+.button-submit-end {
   grid-column: 2 / 8;
   margin-top: 2em;
 }
 
-@media ( min-width: 72em) {
+@media (min-width: 72em) {
   .header-sup {
     grid-column: 2 / 9;
   }
@@ -24,7 +24,7 @@ main>header {
   grid-column: 1 / 10;
 }
 
-@media ( min-width: 72em) {
+@media (min-width: 72em) {
   main>header {
     grid-column: 2 / 9;
   }
@@ -39,7 +39,7 @@ main>header {
   font-size: 125%;
 }
 
-.header-sup .button{
+.header-sup .button {
   margin-bottom: 2em;
 }
 
@@ -84,29 +84,33 @@ main>header {
   width: 100%;
 }
 
+.button-small {
+  cursor: pointer;
+}
+
 .select-form {
   width: 100%;
   margin-top: 1em;
 }
 
-.accessibility-support{
+.accessibility-support {
   display: inline !important;
 }
 
-.length-container{
+.length-container {
   display: flex;
 }
 
-.length-value{
+.length-value {
   flex: 1;
   margin-right: 2em;
 }
 
-.length-unit{
+.length-unit {
   flex: 5;
 }
 
-.length-unit select{
+.length-unit select {
   padding: 8px;
 }
 
@@ -163,7 +167,7 @@ details dt::after {
 
 #offers-list dd ul {
   margin: 3em 3em 0 0;
-  
+
 }
 
 .label-input {
@@ -274,11 +278,10 @@ details>div{
 
 /* quick fix to link contrast - to better discuss */
 
-fieldset label:hover a{
+fieldset label:hover a {
   color: var(--off-white);
 }
 
-fieldset label:hover a:hover{
+fieldset label:hover a:hover {
   text-decoration: underline gold;
 }
-

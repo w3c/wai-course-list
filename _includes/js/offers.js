@@ -186,6 +186,9 @@ if (document.getElementById("form-submit-an-offer")) {
 
 
   function addNewField(divToAppend, fieldToAppend) {
-    divToAppend.insertBefore(fieldToAppend.cloneNode(true), divToAppend.lastElementChild);
+    var newField = fieldToAppend.cloneNode(true);
+    newField.value = '';
+    divToAppend.insertBefore(newField, divToAppend.lastElementChild);
+    //newField.focus();
   }
 }
