@@ -100,8 +100,8 @@
     ]
   },
   {
-    "id": "activities",
-    "name": "Activities",
+    "id": "scheduling",
+    "name": "Scheduling",
     "type": "checkbox",
     "options": [
       {

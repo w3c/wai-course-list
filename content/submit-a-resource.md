@@ -45,21 +45,8 @@ main > header { grid-column: 4 / span 4; }
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" required>
   </div>
-  
-  <div class="field" id="divSelectCountry">
-      <label for="offer-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
-          <option value=""></option>
-          {% for country in site.data.countries %}
-              <option value="{{ country[0] }}">{{ country[1].name }} ({{country[1].nativeName}})</option>
-          {% endfor %}
-      </select>
-      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
-  </div>
 
-
-  <h2 id="the-tool">About the resource</h2>
+  <h2 id="the-resource">About the resource</h2>
   <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
 
   <div class="field">
@@ -70,10 +57,31 @@ main > header { grid-column: 4 / span 4; }
       <label for="offer-provider" class="label-input">Provider (Required)</label>
       <input type="text" id="offer-provider" required>
   </div>
+{% assign orderedCountries = "" | split: "," %}
+{% for country in site.data.countries %}
+  {% assign nCountry = "" %}
+  {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
+  {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
+  {% assign nCountry =  nCountry | split: "," %}  
+  {% assign orderedCountries = orderedCountries | push: nCountry %}
+{% endfor %}
+{% assign orderedCountries = orderedCountries | sort %}
+  <div class="field" id="divSelectCountry">
+      <label for="offer-country" class="label-input">Country (Required)</label>
+      <p class="expl">Indicate by which country or countries this resource is provided.</p>
+      <select name="country" id="country" class="field-country select-form" required>
+          <option value=""></option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+          {% endfor %}
+      </select>
+      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
+  </div>
 
   <div class="field">
       <label for="offer-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of the resource (max.: 300 chars).</p>
+      <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
       <textarea id="offer-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
@@ -166,8 +174,12 @@ main > header { grid-column: 4 / span 4; }
   </div>
 
   <fieldset id="offer-wai-curricula">
-    <legend><h3>WAI Curricula module{% include resource-link.html label="Curricula on Web Accessibility"
-    href="https://www.w3.org/WAI/curricula/" %}</h3></legend>
+    <legend><h3>WAI Curricula on Web Accessibility
+    <!-- {% include resource-link.html label="Curricula on Web Accessibility" href="https://www.w3.org/WAI/curricula/" %} -->
+    </h3></legend>
+    <p class="expl">  
+    Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
+    </p>
     <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
       {% include wai-curricula.liquid %}
   </fieldset>
@@ -219,8 +231,8 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-platform" class="label-input">Platform</label>
-      <p class="expl">If applicable, indicate on which platform this course, training, or certification is provided.</p>
-      <input type="text" id="platform">
+      <p class="expl">If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
+      <input type="text" id="offer-platform">
   </div>
   
   <fieldset id="offer-accessibility-support">
@@ -230,25 +242,9 @@ main > header { grid-column: 4 / span 4; }
   </fieldset>
 
   <div class="field">
-      <legend class="label">Length (Required)</legend>
-      <p class="expl">Indicate the estimated amount of time needed to complete the course (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <div class="length-container">
-        <div class="length-value">
-          <label for="offer-value-duration">Value</label>
-          <input type="number" id="offer-value-duration" min="0" required>
-        </div>
-        <div class="length-unit">
-          <label for="offer-unit-duration">Unit</label>
-          <select id="offer-unit-duration" required> 
-              <option value=""></option>
-              <option value="hours">Hours</option>
-              <option value="days">Days</option>
-              <option value="weeks">Weeks</option>
-              <option value="months">Months</option>
-              <option value="years">Years</option>
-          </select>
-        </div>
-      </div>
+      <legend class="label">Length</legend>
+      <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
+      <input type="text" id="offer-length">
   </div>
 
   <fieldset class="field" id="offer-cost">
@@ -277,13 +273,13 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="offer-website" class="label-input">Website (Required)</label>
-      <p class="expl">Provide the website containing more information about this resource.</p>
+      <p class="expl">Indicate the website containing more information about this resource.</p>
       <input type="url" name="offer-website" id="offer-website" required>
   </div>
 
   <div class="field">
       <label for="offer-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Provide the web page containing consumer reviews about this resource.</p>
+      <p class="expl">Indicate the web page containing reviews about this resource.</p>
       <input type="url" name="offer-reviews-page" id="offer-reviews-page">
   </div>
   <div class="field">
@@ -291,12 +287,13 @@ main > header { grid-column: 4 / span 4; }
       <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
       <input type="date" id="offer-content-update" required>
   </div>
-  <div class="field">
+  <div class="field" id="availability">
       <legend class="label">Availability</legend>
-      <p class="expl">Indicate the start date for the period of time this resource will be available. If applicable, provide the end date.</p>
-      <label for="offer-availability-start-date">Start date (Required)</label>
+      <label for="offer-availability-start-date" class="label-input">Start date (Required)</label>
+      <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
       <input type="date" id="offer-availability-start-date" required>
-      <label for="offer-availability-end-date">End date</label>
+      <label for="offer-availability-end-date" class="label-input">End date</label>
+      <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
       <input type="date" id="offer-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>

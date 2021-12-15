@@ -96,6 +96,9 @@ main>header {
 .accessibility-support {
   display: inline !important;
 }
+.indent-right-checkgoup{
+  margin-left: 3em;
+}
 
 .length-container {
   display: flex;
@@ -173,6 +176,10 @@ details dt::after {
 .label-input {
   /* font-size: 1.25rem; */
   font-weight: 700;
+}
+
+#availability .label-input{
+  margin-top: 1em;
 }
 
 .field-topic, .field-prerequisite {

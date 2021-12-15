@@ -1,14 +1,22 @@
-
 {% for support in site.data.accessibility-support %}
 
-
-<h4>{{ support.name }}</h4>
+<h4>{{ support.type }}</h4>
 
 {% for option in support.options %}
+{% assign appendedName = option.name %}
+{% if option.options %}
+    {% assign appendedName = appendedName | append: ", including:" %}
+{% endif %}
 <div class="radio-field">
     <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
-    <label for="offer-{{ option.id }}">{{ option.name }}</label>
-</div>
+    <label for="offer-{{ option.id }}">{{ appendedName }}</label>
+</div>    
+    {% for details in option.options %}
+        <div class="radio-field indent-right-checkgoup">  
+            <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
+            <label for="offer-{{ details.id }}">{{ details.name }}</label>
+        </div>
+    {% endfor %}
 {% endfor %}
 
 {% endfor %}
