@@ -96,9 +96,6 @@ main>header {
 .accessibility-support {
   display: inline !important;
 }
-.indent-right-checkgoup{
-  margin-left: 3em;
-}
 
 .length-container {
   display: flex;
