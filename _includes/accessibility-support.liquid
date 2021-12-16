@@ -7,7 +7,7 @@
 {% if option.options %}
 <p class="expl">{{ option.name }}, including: </p>
 {% for details in option.options %}
-<div class="radio-field indent-right-checkgoup">  
+<div class="radio-field">  
     <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
     <label for="offer-{{ details.id }}">{{ details.name }}</label>
 </div>
