@@ -6,7 +6,7 @@
         "modules": [
             {
                 "id": "foundations_modules1",
-                "name": "Module 1: What is accessibility",
+                "name": "Module 1: What is Web Accessibility",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/"
             },
             {
