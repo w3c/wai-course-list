@@ -26,12 +26,8 @@
                         "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
                     },
                     {
-                        "id": "easy-to-read-font-face",
-                        "name": "Easy-to-read font face"
-                    },
-                    {
                         "id": "text-and-visuals-big-enough",
-                        "name": "Text and important visuals big enough to be read"
+                        "name": "Text and important visuals can be resized up to 200 percent without loss of content or functionality - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/resize-text\">Understanding Resize text guidance</a>"
                     },
                     {
                         "id": "sufficient-contrast",
@@ -69,10 +65,6 @@
                 "id": "accessible-format-handouts",
                 "name": "Handouts, slides, and other material in accessible formats",
                 "options": [
-                    {
-                        "id": "easy-to-read-font-face",
-                        "name": "Easy-to-read font face"
-                    },
                     {
                         "id": "text-and-visuals-big-enough",
                         "name": "Text and important visuals big enough to be read even from the back of the room"
