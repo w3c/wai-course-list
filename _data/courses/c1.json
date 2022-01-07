@@ -1,0 +1,94 @@
+
+  {
+    "id": "course1",
+    "name": [
+      "Web Accessibility Compliance"
+    ],
+    "provider": [
+      "Provider J76"
+    ],
+    "description": [
+      "In this course, you will learn about the standards in place to guide developers in creating a web that is accessible to all users as well as techniques to help bring your projects up to those standards."
+    ],
+    "type": [
+      "Training"
+    ],
+    "prerequisites": [
+      "None"
+    ],
+    "audience": [
+      "Developer",
+      "Designer",
+      "Tester",
+      "Other"
+    ],
+    "level": [
+      "Basic"
+    ],
+    "curricula_correspondence": [
+      "Foundation Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/foundation-modules/"
+    ],
+    "keywords_topics": [
+      "Development Tools"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Online"
+    ],
+    "activities": [
+      "Scheduled"
+    ],
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
+      }
+    ],
+    "platform": [
+      "Not provided"
+    ],
+    "cost": [
+      "Paid"
+    ],
+    "duration": [
+      "2 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "30 June 2021"
+    ],
+    "course_link": [
+      "www.link.com"
+    ],
+    "course_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "course_info_last_update": [
+      "08 September 2021"
+    ],
+    "course_content_last_update": [
+      "01 August 2021"
+    ]
+  }

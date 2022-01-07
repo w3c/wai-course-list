@@ -30,7 +30,7 @@ footer: >
     </em></p>
 </div>
 <div id="app">
-    <div id="left-col" class="offers-filters">
+    <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
@@ -47,7 +47,7 @@ footer: >
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {% assign langAvailable = site.data.offers | map: "language" | uniq | sort %}
+            {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
@@ -60,7 +60,7 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% assign countriesAvailable = site.data.offers | map: "country" | uniq %}
+            {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
@@ -91,9 +91,9 @@ footer: >
             <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
         </div>
     </div>
-    <div id="offers-list">
+    <div id="courses-list">
         <span id="status">
-            <p id="total-offers">Showing {{ site.data.offers | size }} results</p>
+            <p id="total-courses">Showing {{ site.data.courses | size }} results</p>
         </span>
         <div class="field" class="sort-by">
             <label for="select">Sort by</label>
@@ -104,10 +104,10 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% assign offers = site.data.offers | sort: 'name' %}
-        {% for offer in offers %}
-            {% include offer.liquid %}
-        {% endfor %}      
+        {% for courses_sorted in site.data.courses | sort: id.name%}
+        {% assign course = courses_sorted[1] %} 
+            {% include course.liquid %}
+        {% endfor %}    
     </div>
     
 </div>
@@ -116,5 +116,5 @@ footer: >
 </div>
 
 <script>
-{% include js/offers.js %}
+{% include js/courses.js %}
 </script>

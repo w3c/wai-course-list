@@ -1,0 +1,91 @@
+  {
+    "id": "course2",
+    "name": [
+      "Web Accessibility"
+    ],
+    "provider": [
+      "Provider U65"
+    ],
+    "description": [
+      "In this course, you will get hands-on experience making web applications accessible."
+    ],
+    "type": [
+      "Training"
+    ],
+    "prerequisites": [
+      "HTML, CSS, Javascript"
+    ],
+    "audience": [
+      "Developer",
+      "Tester"
+    ],
+    "level": [
+      "Advanced"
+    ],
+    "curricula_correspondence": [
+      "Developer Modules"
+    ],
+    "curricula_link": [
+      "https://www.w3.org/WAI/curricula/developer-modules/"
+    ],
+    "keywords_topics": [
+      "Accessible web applications"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Online"
+    ],
+    "activities": [
+      "Scheduled"
+    ],
+    "accessibility_support": [
+      {
+        "id": "material-ahead-of-time",
+        "name": "Material provided ahead of time, if requested"
+      },
+      {
+        "id": "accessible-format-handouts",
+        "name": "Handouts, slides, and other material in accessible formats - for example, large print or braille"
+      },
+      {
+        "id": "accessible-electronic-handout",
+        "name": "Handouts, slides, and other electronic material is accessible - all content meet [WCAG](https://www.w3.org/WAI/standards-guidelines/wcag/), at least Level AA"
+      },
+      {
+        "id": "media-accessible",
+        "name": "Media fully accessible - including audio and video used in sessions, and recordings of sessions provided afterwards - see [Making Audio and Video Media Accessible](https://www.w3.org/WAI/media/av/)"
+      }
+    ],
+    "platform": [
+      "Udacity"
+    ],
+    "cost": [
+      "Free"
+    ],
+    "duration": [
+      "Approx 2 weeks"
+    ],
+    "availability_start_date": [
+      "01 September 2020"
+    ],
+    "availability_end_date": [
+      "31 April 2022"
+    ],
+    "course_link": [
+      "www.link.com"
+    ],
+    "course_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "course_info_last_update": [
+      "08 September 2021"
+    ],
+    "course_content_last_update": [
+      "01 August 2021"
+    ]
+  }

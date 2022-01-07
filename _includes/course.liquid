@@ -1,0 +1,75 @@
+{% capture course_title %}<a href="{{ course.course_link }}">{{ course.name }}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
+{% capture course_details_id %}details_{{course.id}}{% endcapture %}
+
+{% include box.html type="start" title=course_title id=course.id %}
+{{ course.description }}
+{% include excol.html type="start" id=course_details_id %}
+#### Details
+{% include excol.html type="middle"%}
+
+Type of resource
+: {{ course.type }}
+
+Audience
+: {{ course.audience | join: ", " }}
+
+Level
+: {{ course.level}}
+
+Prerequisites
+: {{ course.prerequisites | join: ", "}}
+
+Topics
+: {{ course.keywords_topics | join: ", "}}
+  
+WAI Curricula module
+{% if course.curricula_link %}
+: <a href="{{ course.curricula_link}}" rel="external">{{ course.curricula_correspondence }}</a>
+{% else %}
+: Not provided
+{% endif %}
+
+Language
+{% assign langIndex = course.language[0] %}
+: {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+
+Country
+{% assign countryIndex = course.country[0] %}
+: {{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+
+Format
+: {{ course.format}}
+
+Scheduling
+: {{ course.activities | join: ", "}}
+
+Platform
+: {{ course.platform}}
+
+Accessibility support
+: {% for support in course.accessibility_support %} 
+* {{ support.name }}{% endfor %}
+
+Length
+: {{ course.duration}}
+
+Cost
+: {{ course.cost}}
+
+Availability
+: From {{ course.availability_start_date}}{% if course.availability_end_date %} to {{ course.availability_end_date }}{% endif %}
+
+Website
+: <a href="{{ course.course_link}}" rel="external">{{ course.course_link}}</a>
+
+Reviews page
+: <a href="{{ course.course_link_reviews}}" rel="external">{{ course.course_link_reviews}}</a>
+        
+        
+This information was last updated on {{ course.course_info_last_update}}.
+{% if course.course_content_last_update %}
+  The content of this resource was last updated on {{ course.course_content_last_update}}.
+{% endif %} 
+{% include excol.html type="end" %}
+{% include box.html type="end" %}

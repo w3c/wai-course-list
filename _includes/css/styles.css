@@ -59,24 +59,24 @@ main>header {
   font-size: 100%;
 }
 
-.offers-filters {
+.courses-filters {
   padding-right: 2em;
 }
 
 @media (min-width: 60em) {
-  .offers-filters {
+  .courses-filters {
     grid-column: 1 / 4;
     border-right: 1px solid #ccc;
   }
 }
 
 @media (min-width: 72em) {
-  .offers-filters {
+  .courses-filters {
     grid-column: 2 / 4;
   }
 }
 
-.offers-filters input {
+.courses-filters input {
   margin-right: .5em;
 }
 
@@ -131,14 +131,14 @@ main>header {
   display: inline !important;
 }
 
-#offers-list {
+#courses-list {
   padding-top: 2em;
   margin-top: 2em;
   border-top: 1px solid #ccc;
 }
 
 @media (min-width: 60em) {
-  #offers-list {
+  #courses-list {
     grid-column: 4 / span 7;
     padding-top: 0;
     margin-top: 0;
@@ -147,12 +147,12 @@ main>header {
 }
 
 @media (min-width: 72em) {
-  #offers-list {
+  #courses-list {
     grid-column: 4 / span 6;
   }
 }
 
-#offers-list dd {
+#courses-list dd {
   margin: 0 0 1em 0;
 }
 
@@ -160,12 +160,12 @@ details dt::after {
   content: ":";
 }
 
-#offers-list dt {
+#courses-list dt {
   float: left;
   margin: 0 0.5em 0 0;
 }
 
-#offers-list dd ul {
+#courses-list dd ul {
   margin: 3em 3em 0 0;
 
 }
@@ -212,7 +212,7 @@ details>div{
 }
 */
 
-#offers-list details>div {
+#courses-list details>div {
   border-top: solid 1px var(--line-grey);
   margin-left: -48px;
   margin-right: -16px;
@@ -249,7 +249,7 @@ details>div{
 }
 
 /*
-.submit-a-offer {
+.submit-a-course {
   grid-column: 8 / 10;
   align-self: start;
   justify-self: end;
@@ -257,7 +257,7 @@ details>div{
 }
 
 @media ( min-width: 72em) {
-  .submit-a-offer {
+  .submit-a-course {
     grid-column: 7 / 9;
   }
 }

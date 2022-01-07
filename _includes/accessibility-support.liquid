@@ -8,20 +8,20 @@
 <p class="expl">{{ option.name }}, including: </p>
 {% for details in option.options %}
 <div class="radio-field">  
-    <input type="checkbox" id="offer-{{ details.id }}" name="offer-{{ details.id }}">
-    <label for="offer-{{ details.id }}">{{ details.name }}</label>
+    <input type="checkbox" id="course-{{ details.id }}" name="course-{{ details.id }}">
+    <label for="course-{{ details.id }}">{{ details.name }}</label>
 </div>
 {% endfor %}
 {% else %}
 <div class="radio-field">
-    <input type="checkbox" id="offer-{{ option.id }}" name="offer-{{ option.id }}">
-    <label for="offer-{{ option.id }}">{{ option.name }}</label>
+    <input type="checkbox" id="course-{{ option.id }}" name="course-{{ option.id }}">
+    <label for="course-{{ option.id }}">{{ option.name }}</label>
 </div>    
 {% endif %}
 {% endfor %}
 {% endfor %}
 
 <div class="field">
-    <label for="offer-new-accessibility-support">Additional accessibility support</label>
-    <textarea id="offer-new-accessibility-support"></textarea>
+    <label for="course-new-accessibility-support">Additional accessibility support</label>
+    <textarea id="course-new-accessibility-support"></textarea>
 </div>

@@ -1,11 +1,11 @@
 const filterForm = document.querySelector('[data-filter-form]');
-const jsonOffers = JSON.parse('{{ site.data.offers | jsonify}}');
+const jsonCourses = JSON.parse('{{ site.data.courses | jsonify}}');
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
 
 
-var offersList = document.getElementById('offers-list');
+var coursesList = document.getElementById('courses-list');
 
 document.querySelectorAll('.button-clear-button').forEach(item => {
   item.hidden = true;
@@ -60,27 +60,27 @@ if (filterForm) {
 
     // by attribute
     filtersOn.forEach(filter => {
-      newResults.push(jsonOffers.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
+      newResults.push(jsonCourses.filter((x) => filter.filterValues.some(r => x[filter.filterId].includes(r))));
     })
 
-    // if no filter, show all offers
+    // if no filter, show all courses
     if (newResults.length === 0)
-      newResults = jsonOffers;
-    // intersection between results [offers]
+      newResults = jsonCourses;
+    // intersection between results [courses]
     else
       newResults = newResults.reduce((a, c) => a.filter(i => c.includes(i)));
 
     //rebuild document
     rebuildList(newResults, filtersOn);
 
-    // callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList);
+    // callDebug(jsonFilters, jsonCourses, filtersOn, newResults, coursesList);
 
   }
 
   function rebuildList(newResults, filtersOn) {
 
-    const articles = offersList.querySelectorAll('aside');
-    var totalOffers = document.getElementById("total-offers");
+    const articles = coursesList.querySelectorAll('aside');
+    var totalCourses = document.getElementById("total-courses");
 
     var listFiltersOnString = document.createElement('dl');
 
@@ -110,20 +110,20 @@ if (filterForm) {
     })
 
     if (filtersOn.length === 0) {
-      totalOffers.innerText = "Showing " + newResults.length + " results";
+      totalCourses.innerText = "Showing " + newResults.length + " results";
       hideClearButton(true);
     }
     else if (newResults.length > 0) {
       if (newResults.length === 1)
-        totalOffers.innerText = "Showing " + newResults.length + " result matching the following criteria: ";
+        totalCourses.innerText = "Showing " + newResults.length + " result matching the following criteria: ";
       else
-        totalOffers.innerText = "Showing " + newResults.length + " results matching the following criteria: ";
-      totalOffers.appendChild(listFiltersOnString);
+        totalCourses.innerText = "Showing " + newResults.length + " results matching the following criteria: ";
+      totalCourses.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
     else {
-      totalOffers.innerText = "Sorry, but no results match the following criteria: ";
-      totalOffers.appendChild(listFiltersOnString);
+      totalCourses.innerText = "Sorry, but no results match the following criteria: ";
+      totalCourses.appendChild(listFiltersOnString);
       hideClearButton(false);
     }
   }
@@ -135,23 +135,23 @@ if (filterForm) {
 
 
   function clearFilters() {
-    rebuildList(jsonOffers, []);
+    rebuildList(jsonCourses, []);
     filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
     filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
   }
 
 
-  function callDebug(jsonFilters, jsonOffers, filtersOn, newResults, offersList) {
+  function callDebug(jsonFilters, jsonCourses, filtersOn, newResults, coursesList) {
     console.log("Filters:");
     console.log(jsonFilters);
-    console.log("Offers:");
-    console.log(jsonOffers);
+    console.log("Courses:");
+    console.log(jsonCourses);
     console.log("Filters On:");
     console.log(filtersOn);
     console.log("Results:");
     console.log(newResults);
-    console.log("offersList");
-    console.log(offersList);
+    console.log("coursesList");
+    console.log(coursesList);
   }
 
   function clean(obj) {
@@ -165,7 +165,7 @@ if (filterForm) {
 
 }
 
-if (document.getElementById("form-submit-an-offer")) {
+if (document.getElementById("form-submit-an-course")) {
 
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];
@@ -191,4 +191,6 @@ if (document.getElementById("form-submit-an-offer")) {
     divToAppend.insertBefore(newField, divToAppend.lastElementChild);
     //newField.focus();
   }
+ 
 }
+

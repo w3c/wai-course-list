@@ -1,0 +1,90 @@
+  {
+    "id": "course3",
+    "name": [
+      "Certified Professional in Accessible Technologies"
+    ],
+    "provider": [
+      "Provider B56"
+    ],
+    "description": [
+      "Recognition of professionals who have acquired the knwoledge and skills to implement accessible technologies."
+    ],
+    "type": [
+      "Professional certification"
+    ],
+    "prerequisites": [
+      "Not provided"
+    ],
+    "audience": [
+      "Tester",
+      "Developer"
+    ],
+    "level": [
+      "Not provided"
+    ],
+    "curricula_correspondence": [
+      "Not provided"
+    ],
+    "keywords_topics": [
+      "Certification",
+      "Accessible technologies"
+    ],
+    "language": [
+      "en"
+    ],
+    "country": [
+      "us"
+    ],
+    "format": [
+      "Blended"
+    ],
+    "activities": [
+      "Scheduled"
+    ],
+    "accessibility_support": [
+      {
+        "id": "accessible-facility",
+        "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+      },
+      {
+        "id": "assistive-listening-devices",
+        "name": "[Assistive listening devices](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald) (ALD), [interpreters](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps), and [captioners](https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions), provided as needed"
+      },
+      {
+        "id": "caption-audio",
+        "name": "[Captions](https://www.w3.org/WAI/media/av/captions/) and/or [transcripts](https://www.w3.org/WAI/media/av/transcripts/) for audio"
+      },
+      {
+        "id": "description-of-visual-information",
+        "name": "[Description of visual information](https://www.w3.org/WAI/media/av/description/) - integrated description, audio description, or text description"
+      },
+      {
+        "id": "pre-check-available",
+        "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology, or additional settings"
+      }
+    ],
+    "platform": [
+      "Not provided"
+    ],
+    "cost": [
+      "Paid"
+    ],
+    "duration": [
+      "Not provided"
+    ],
+    "availability_start_date": [
+      "01 January 2019"
+    ],
+    "course_link": [
+      "www.link.com"
+    ],
+    "course_link_reviews": [
+      "www.link.com/reviews"
+    ],
+    "course_info_last_update": [
+      "27 July 2021"
+    ],
+    "course_content_last_update": [
+      "01 July 2021"
+    ]
+  }
