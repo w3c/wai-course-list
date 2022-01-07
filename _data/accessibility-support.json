@@ -27,7 +27,7 @@
                     },
                     {
                         "id": "text-and-visuals-big-enough",
-                        "name": "Text and important visuals can be resized up to 200 percent without loss of content or functionality - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/resize-text\">Understanding Resize text guidance</a>"
+                        "name": "Text and important visuals can be resized without loss of content or functionality - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/resize-text\">Understanding Resize text guidance</a>"
                     },
                     {
                         "id": "sufficient-contrast",
