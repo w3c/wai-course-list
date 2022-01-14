@@ -32,7 +32,7 @@ main > header { grid-column: 4 / span 4; }
 
 <p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
-<form id="form-submit-a-course">
+<form id="form-submit-a-resource">
 
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
@@ -298,10 +298,9 @@ main > header { grid-column: 4 / span 4; }
       <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
-  <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
-    <p class="expl">This information will not be publicly shared.</p>
+    <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
   </div>
   <div class="field">

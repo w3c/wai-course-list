@@ -166,7 +166,8 @@ if (filterForm) {
 
 }
 
-if (document.getElementById("form-submit-an-course")) {
+// TODO
+if (document.getElementById("form-submit-a-resource")) {
 
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];

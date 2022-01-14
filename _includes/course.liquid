@@ -30,13 +30,25 @@ WAI Curricula module
 : Not provided
 {% endif %}
 
+{% assign language = "" | split: "," %}
+{% for langIndex in course.language %}
+{% capture langLabel %}
+{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+{% endcapture %}
+{% assign language = language | push: langLabel  %} 
+{% endfor %}
 Language
-{% assign langIndex = course.language[0] %}
-: {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+: {{ language | join: ", "}}
 
+{% assign country = "" | split: "," %}
+{% for countryIndex in course.country %}
+{% capture countryLabel %}
+{{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+{% endcapture %}
+{% assign country = country | push: countryLabel  %} 
+{% endfor %}
 Country
-{% assign countryIndex = course.country[0] %}
-: {{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+: {{ country | join: ", "}}
 
 Format
 : {{ course.format}}
