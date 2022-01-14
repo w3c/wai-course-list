@@ -1,5 +1,5 @@
 const filterForm = document.querySelector('[data-filter-form]');
-const jsonCourses = JSON.parse('{{ site.data.courses | jsonify}}');
+const jsonCourses = Object.values(JSON.parse('{{ site.data.courses | jsonify}}'));
 const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const jsonCountry = JSON.parse('{{ site.data.countries | jsonify}}');
@@ -165,7 +165,8 @@ if (filterForm) {
 
 }
 
-if (document.getElementById("form-submit-an-course")) {
+// TODO
+if (document.getElementById("form-submit-a-resource")) {
 
   const divSelectLang = document.getElementById("divSelectLang");
   const fieldLang = document.getElementsByClassName("field-language")[0];
