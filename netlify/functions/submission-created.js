@@ -1,26 +1,42 @@
+const https = require('https')
+
 exports.handler = async function(event, context) {
 
-    const body = event.body
-    const url = 'https://api.github.com/repos/wai/wai-course-list/dispatches';
-    const githubPAT = process.env.GITHUB_PAT; // keep this secret
-
-/*
-    const https = require("https")
-    https.get("https://jsonplaceholder.typicode.com/todos/1", function(response) {
-    response.setEncoding("utf8")
-    response.on("data", console.log)
-    response.on("error", console.error)
-    }).on("error", console.error)
-
-      json: {
-        event_type: 'publish_blog',
-      },
-      headers: {
-        Authorization: "token " + githubPAT,
-      },
-*/
-      console.log(`PAT: ${githubPAT}\n form body: ${JSON.stringify(body)}`);
-
+    const formData = event.body.data
+    console.log(process.env.GITHUB_PAT, formData)
+    const body= `{
+        "event_type": "netlify-form-submission",
+        "client_payload": {
+            ${formData}
+        }`
+        const options = {
+            hostname: 'api.github.com',
+            port: 443,
+            path: '/repos/w3c/wai-course-list/dispatches',
+            method: 'POST',
+            headers: {
+                'Accept': 'application/vnd.github.v3+json',
+//                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${process.env.GITHUB_PAT}`,
+//                'Content-Length': body.length
+            }        
+        }
+    
+    const req = https.request(options, res => {
+        console.log(`statusCode: ${res.statusCode}`)
+        
+        res.on('data', d => {
+            console.info(d)
+        })
+    })
+        
+    req.on('error', error => {
+        console.error(error)
+    })    
+    
+    req.write(body)
+    req.end()
+    
     return {
         statusCode: 200,
         body: 'Form submission processed'
