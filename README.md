@@ -41,7 +41,6 @@ Also see See [interative lists repo](https://github.com/w3c/wai-interactive-list
 
 * Final note -> "[...]This should take 1-4 weeks." -> "[...]This will be within a month" [to be modified when sumbmition process is defined]
 
-
 	
 	
 	
