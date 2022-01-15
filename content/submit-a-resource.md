@@ -297,10 +297,9 @@ main > header { grid-column: 4 / span 4; }
       <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
-  <p>Let us know if you have any comments.</p>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
-    <p class="expl">This information will not be publicly shared.</p>
+    <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
   </div>
   <div class="field">

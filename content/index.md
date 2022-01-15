@@ -36,9 +36,6 @@ footer: >
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 <legend class="label">{{ filter.name }}</legend>
-<!--                {% if filter.name == "Format" %}
-                    {% include resource-link.html label="Show info" href="#"%}
-                {% endif %} -->
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
@@ -48,6 +45,14 @@ footer: >
             </fieldset>
             {% endfor %}
             {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
+            {% assign langAvailable = "" | split: "," %}
+            {% assign countriesAvailable = "" | split: "," %}
+            {% for course in site.data.courses %}
+                {% assign langAvailable = langAvailable | concat: course[1].language %} 
+                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
+            {% endfor %}
+            {% assign langAvailable = langAvailable | uniq %}
+            {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset id="language-filter">
                 <legend>Language</legend>
                 <div class="filter-options field">
@@ -60,7 +65,6 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% assign countriesAvailable = site.data.courses | map: "country" | uniq %}
             {% assign orderedCountries = "" | split: "," %}
             {% for country in countriesAvailable %}
                 {% assign nCountry = "" %}
