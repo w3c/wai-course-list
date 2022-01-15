@@ -1,6 +1,8 @@
 exports.handler = async function(event, context) {
 
-    console.log(`form submittedt:\n ${JSON.stringify(event)}`);
+    const body = event.body
+
+    console.log(`form submittedt:\n ${JSON.stringify(body)}`);
 
     return {
         statusCode: 200,
