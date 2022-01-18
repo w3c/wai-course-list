@@ -28,21 +28,22 @@ exports.handler = async function(event, context) {
         path: '/repos/w3c/wai-course-list/dispatches',
         method: 'POST',
         headers: {
+            'User-Agent': 'W3C WAI Website list',
             'Accept': 'application/vnd.github.v3+json',
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${process.env.GITHUB_PAT}`,
             'Content-Length': body.length
         }        
     }
-
+    console.log("a")
     // TODO maybe promisify so we can return the final outcome(s)
     const req = https.request(options, res => {
         console.log(`Github statusCode: ${res.statusCode}`)
         res.on('data', d => {
-            console.info(d.toString())
+            console.info(d)
         })
     })
-        
+    console.log("b")      
     req.on('error', error => {
         console.error(error)
         return {
@@ -51,8 +52,12 @@ exports.handler = async function(event, context) {
         };
     })    
   
+    console.log("c")
+
     req.write(body)
     req.end()
+
+    console.log("d")
     
     return {
         statusCode: 200,
