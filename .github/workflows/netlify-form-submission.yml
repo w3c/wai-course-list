@@ -11,6 +11,7 @@ jobs:
   process-submission:
     runs-on: ubuntu-latest
     steps:
-      - env:
+      - name: Print form content
+        env:
           MESSAGE: ${{ github.event.client_payload }}
         run: echo $MESSAGE
