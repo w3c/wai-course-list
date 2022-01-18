@@ -2,7 +2,7 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    const formData = event.body.data
+    const formData = event.body
     console.log(process.env.GITHUB_PAT, formData)
     const body= `{
         "event_type": "netlify-form-submission",
