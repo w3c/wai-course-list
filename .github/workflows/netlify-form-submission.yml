@@ -12,6 +12,7 @@ jobs:
     name: Print form content
     runs-on: ubuntu-latest
     steps:
-      env:
-        MESSAGE: ${{ github.event.client_payload }}
-      run: echo $MESSAGE
+      - name: Print form
+        run: echo $MESSAGE
+        env:
+          MESSAGE: ${{ github.event.client_payload }}
