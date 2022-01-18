@@ -2,14 +2,13 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    const formData = JSON.stringify(event.body.data)
-    console.log(formData)
-
+    const formData = event.body.data)
+    
     const body= `{
         "event_type": "netlify-form-submission",
-        "client_payload": {
-            ${formData}
-        }`
+        "client_payload": 
+            ${JSON.stringify(formData)}`
+        console.log(body)
 
         const options = {
             hostname: 'api.github.com',
@@ -36,7 +35,7 @@ exports.handler = async function(event, context) {
         console.log(error)
     })    
   
-    req.write(formData)
+    req.write(body)
     req.end()
     
     return {
