@@ -42,7 +42,7 @@ exports.handler = async function(event, context) {
                 if (res.statusCode >= 200 && res.statusCode <= 299) {
                     resolve({statusCode: res.statusCode, headers: res.headers, body: body});
                 } else {
-                    reject('Request failed. status: ' + res.statusCode + ', body: ' + body);
+                    reject('GitHub request failed. status: ' + res.statusCode + ', body: ' + body);
                 }
             });
         })
