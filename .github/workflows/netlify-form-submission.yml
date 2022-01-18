@@ -14,5 +14,5 @@ jobs:
     steps:
       - name: Print form
         run: echo $MESSAGE
-        env:
-          MESSAGE: ${{ github.event.client_payload }}
+        env: MESSAGE: ${{ github.event.client_payload }}
+
