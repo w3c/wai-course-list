@@ -2,7 +2,7 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    var payload
+    let payload
     try { 
         payload = JSON.parse(event.body)
     } catch(e) { 
@@ -12,11 +12,7 @@ exports.handler = async function(event, context) {
             body: 'Invalid JSON payload'
         };
     }
-
     const formData = payload.data
-
-    console.log("running")
-
     const body= `{
         "event_type": "netlify-form-submission",
         "client_payload": 
@@ -35,32 +31,31 @@ exports.handler = async function(event, context) {
             'Content-Length': body.length
         }        
     }
-    console.log("a")
-    // TODO maybe promisify so we can return the final outcome(s)
-    const req = https.request(options, res => {
-        console.log(`Github statusCode: ${res.statusCode}`)
-        res.on('data', d => {
-            console.info(d)
+
+    const gitHubRequest = new Promise((resolve, reject) => {
+        const req = https.request(options, res => {
+            let body = '';
+            res.on('data', (chunk) => (body += chunk.toString()));
+            res.on('end', () => {
+                if (res.statusCode >= 200 && res.statusCode <= 299) {
+                    resolve({statusCode: res.statusCode, headers: res.headers, body: body});
+                } else {
+                    reject('Request failed. status: ' + res.statusCode + ', body: ' + body);
+                }
+            });
         })
-    })
-    console.log("b")      
-    req.on('error', error => {
-        console.error(error)
-        return {
-            statusCode: 500,
-            body: `Error calling GitHub action - ${error}`
-        };
-    })    
-  
-    console.log("c")
 
-    req.write(body)
-    req.end()
-
-    console.log("d")
+        req.on('error', error => {
+            console.error(error)
+            reject( {
+                statusCode: 500,
+                body: `Error calling GitHub action - ${error}`
+            })
+        })    
     
-    return {
-        statusCode: 200,
-        body: 'Form submission processed'
-    };
+        req.write(body)
+        req.end()
+    })
+
+    return await(gitHubRequest)
 }
