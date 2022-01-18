@@ -2,7 +2,7 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    const formData = event.body.data
+    const formData = JSON.stringify(event.body.data)
     console.log(formData)
 
     const body= `{
@@ -18,9 +18,9 @@ exports.handler = async function(event, context) {
             method: 'POST',
             headers: {
                 'Accept': 'application/vnd.github.v3+json',
-//                'Content-Type': 'application/json',
+                'Content-Type': 'application/json',
                 'Authorization': `Bearer ${process.env.GITHUB_PAT}`,
-//                'Content-Length': body.length
+                'Content-Length': body.length
             }        
         }
     
@@ -36,11 +36,8 @@ exports.handler = async function(event, context) {
         console.log(error)
     })    
   
-    console.log('writing')
-    req.write(body)
+    req.write(formData)
     req.end()
-    console.log('writing')
-
     
     return {
         statusCode: 200,
