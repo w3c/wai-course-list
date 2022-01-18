@@ -15,6 +15,8 @@ exports.handler = async function(event, context) {
 
     const formData = payload.data
 
+    console.log("running")
+
     const body= `{
         "event_type": "netlify-form-submission",
         "client_payload": 
