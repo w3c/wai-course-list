@@ -2,13 +2,15 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    const formData = event.body
-    console.log(process.env.GITHUB_PAT, formData)
+    const formData = event.body.data
+    console.log(formData)
+
     const body= `{
         "event_type": "netlify-form-submission",
         "client_payload": {
             ${formData}
         }`
+
         const options = {
             hostname: 'api.github.com',
             port: 443,
@@ -31,11 +33,14 @@ exports.handler = async function(event, context) {
     })
         
     req.on('error', error => {
-        console.error(error)
+        console.log(error)
     })    
-    
+  
+    console.log('writing')
     req.write(body)
     req.end()
+    console.log('writing')
+
     
     return {
         statusCode: 200,
