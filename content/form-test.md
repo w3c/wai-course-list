@@ -2,7 +2,7 @@
 permalink: course-list/form-test
 ---
 
-{% include netlify-form.liquid type="start" id="form" %}
+{% include netlify-form.liquid type="start" name="form-test" %}
 
 <fieldset class="field" id="course-learning">
     <legend class="label">Scheduling (Required)</legend>
