@@ -20,11 +20,11 @@ permalink: course-list/form-test
 <fieldset class="field" id="course-audience">
     <legend class="label">Audience (Required)</legend>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-content-author" id="course-audience-content-author" value="course-audience-content-author" group="audience" required>
+      <input type="checkbox" name="course-audience-content-author" id="course-audience-content-author" group="audience" required>
       <label for="course-audience-content-author">Content Author</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" value="course-audience-designer" group="audience" >
+      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" group="audience" >
       <label for="course-audience-designer">Designer</label>
     </div>
   </fieldset>
