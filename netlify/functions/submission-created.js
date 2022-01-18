@@ -2,10 +2,9 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
-    console.log(event.body)
-    let payload
+    let body
     try { 
-        payload = JSON.parse(event.body)
+        body = JSON.parse(event.body)
     } catch(e) { 
         console.error(`Invalid JSON payload: ${event.body}`)
         return {
@@ -13,14 +12,14 @@ exports.handler = async function(event, context) {
             body: 'Invalid JSON payload'
         };
     }
-    const formData = payload.data
+    const formData = body.payload.data
     const body =
     `{
         "event_type": "netlify-form-submission",
         "client_payload": 
             ${JSON.stringify(formData)}
     }`
-console.log(body)
+
     const options = {
         hostname: 'api.github.com',
         port: 443,
