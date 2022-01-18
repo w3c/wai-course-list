@@ -13,11 +13,13 @@ exports.handler = async function(event, context) {
         };
     }
     const formData = payload.data
-    const body= `{
+    const body =
+    `{
         "event_type": "netlify-form-submission",
         "client_payload": 
-            ${JSON.stringify(formData)}`
-console.info(body)
+            ${JSON.stringify(formData)}
+    }`
+
     const options = {
         hostname: 'api.github.com',
         port: 443,
