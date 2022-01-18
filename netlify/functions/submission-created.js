@@ -19,7 +19,7 @@ exports.handler = async function(event, context) {
         "client_payload": 
             ${JSON.stringify(formData)}
     }`
-
+console.log(body)
     const options = {
         hostname: 'api.github.com',
         port: 443,
