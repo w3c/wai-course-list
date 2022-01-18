@@ -9,9 +9,9 @@ on:
  
 jobs:
   process-submission:
+    name: Print form content
     runs-on: ubuntu-latest
     steps:
-      - name: Print form content
-        env:
-          MESSAGE: ${{ github.event.client_payload }}
-        run: echo $MESSAGE
+      env:
+        MESSAGE: ${{ github.event.client_payload }}
+      run: echo $MESSAGE
