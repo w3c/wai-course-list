@@ -2,6 +2,7 @@ const https = require('https')
 
 exports.handler = async function(event, context) {
 
+    console.log(event.body)
     let payload
     try { 
         payload = JSON.parse(event.body)
