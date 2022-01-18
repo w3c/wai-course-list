@@ -13,7 +13,7 @@ exports.handler = async function(event, context) {
         };
     }
     const formData = body.payload.data
-    const body =
+    const reqBody =
     `{
         "event_type": "netlify-form-submission",
         "client_payload": 
@@ -30,19 +30,19 @@ exports.handler = async function(event, context) {
             'Accept': 'application/vnd.github.v3+json',
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${process.env.GITHUB_PAT}`,
-            'Content-Length': body.length
+            'Content-Length': reqBody.length
         }        
     }
 
     const gitHubRequest = new Promise((resolve, reject) => {
         const req = https.request(options, res => {
-            let body = '';
-            res.on('data', (chunk) => (body += chunk.toString()));
+            let respBody = '';
+            res.on('data', (chunk) => (respBody += chunk.toString()))
             res.on('end', () => {
                 if (res.statusCode >= 200 && res.statusCode <= 299) {
-                    resolve({statusCode: res.statusCode, headers: res.headers, body: body});
+                    resolve({statusCode: res.statusCode, headers: res.headers, body: respBody})
                 } else {
-                    reject('GitHub request failed. status: ' + res.statusCode + ', body: ' + body);
+                    reject(`GitHub request failed. status: ${res.statusCode} body: ${respBody}`)
                 }
             });
         })
@@ -55,7 +55,7 @@ exports.handler = async function(event, context) {
             })
         })    
     
-        req.write(body)
+        req.write(reqBody)
         req.end()
     })
 
