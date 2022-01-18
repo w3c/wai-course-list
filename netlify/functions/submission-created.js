@@ -17,7 +17,7 @@ exports.handler = async function(event, context) {
         "event_type": "netlify-form-submission",
         "client_payload": 
             ${JSON.stringify(formData)}`
-
+console.info(body)
     const options = {
         hostname: 'api.github.com',
         port: 443,
