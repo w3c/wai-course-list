@@ -15,5 +15,5 @@ jobs:
       - name: Print form
         run: echo $MESSAGE
         env:
-          MESSAGE: ${{ toJSON(github.event) }}
+          MESSAGE: ${{ toJSON(github.event.client_payload) }}
 
