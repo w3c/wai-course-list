@@ -44,7 +44,6 @@ footer: >
                 {% endfor %}
             </fieldset>
             {% endfor %}
-            {% assign langAvailable = site.data.courses | map: "language" | uniq | sort %}
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
             {% for course in site.data.courses %}
@@ -108,7 +107,7 @@ footer: >
         </div>        
         {% include excol.html type="all" %}
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% for courses_sorted in site.data.courses | sort: id.name%}
+        {% for courses_sorted in site.data.courses%}
         {% assign course = courses_sorted[1] %} 
             {% include course.liquid %}
         {% endfor %}    
