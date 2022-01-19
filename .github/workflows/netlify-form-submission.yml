@@ -12,8 +12,8 @@ jobs:
     name: Process Netlify Form
     runs-on: ubuntu-latest
     steps:
-      name: Print form
-      run: echo $MESSAGE
-      env:
-        MESSAGE: sss
+      - name: Print form
+        run: echo $MESSAGE
+        env:
+         MESSAGE: sss
 
