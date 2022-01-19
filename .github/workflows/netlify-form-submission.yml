@@ -15,5 +15,4 @@ jobs:
       - name: Print form
         run: echo $MESSAGE
         env:
-          MESSAGE: ${{ github.event.client_payload }}
-
+          MESSAGE: zzzz
