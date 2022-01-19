@@ -32,8 +32,7 @@ main > header { grid-column: 4 / span 4; }
 
 <p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
-<form id="form-submit-a-resource">
-
+{% include netlify-form.liquid type="start" id="form-submit-a-course" %}
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
@@ -117,27 +116,27 @@ main > header { grid-column: 4 / span 4; }
   <fieldset class="field" id="course-audience">
     <legend class="label">Audience (Required)</legend>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-content-author" value="course-audience-content-author">
+      <input type="checkbox" name="course-audience-content-author" id="course-audience-content-author" value="course-audience-content-author" group="audience" required>
       <label for="course-audience-content-author">Content author</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-designer" value="course-audience-designer">
+      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" value="course-audience-designer" group="audience">
       <label for="course-audience-designer">Designer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-developer" value="course-audience-developer">
+      <input type="checkbox" name="course-audience-developer" id="course-audience-developer" value="course-audience-developer" group="audience">
       <label for="course-audience-developer">Developer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-manager" value="course-audience-manager">
+      <input type="checkbox" name="course-audience-manager" id="course-audience-manager" value="course-audience-manager" group="audience">
       <label for="course-audience-manager">Manager</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-tester" value="course-audience-tester">
+      <input type="checkbox" name="course-audience-tester" id="course-audience-tester" value="course-audience-tester" group="audience">
       <label for="course-audience-tester">Tester</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience" id="course-audience-other" value="course-audience-other">
+      <input type="checkbox" name="course-audience-other" id="course-audience-other" value="course-audience-other" group="audience">
       <label for="course-audience-other">Other</label>
     </div>
   </fieldset>
@@ -220,11 +219,11 @@ main > header { grid-column: 4 / span 4; }
       <legend class="label">Scheduling (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-scheduled" name="course-learning-scheduled" required>
+          <input type="checkbox" id="course-learning-scheduled" name="course-learning-scheduled" group="learning" required>
           <label for="course-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-not-scheduled" name="course-learning-not-scheduled">
+          <input type="checkbox" id="course-learning-not-scheduled" name="course-learning-not-scheduled" group="learning">
           <label for="course-learning-not-scheduled">Unscheduled - participants can attend at their own pace</label>
       </div>
   </fieldset>
@@ -313,7 +312,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
     <button type="submit">Send information</button>
   </div>
-</form>
+{% include netlify-form.liquid type="end"%}
 
 <script>
 {% include js/courses.js %}
