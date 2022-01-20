@@ -5,7 +5,6 @@ exports.handler = async function(event, context) {
     let body
     try { 
         body = JSON.parse(event.body)
-        console.info(body)
     } catch(e) { 
         console.error(`Invalid JSON payload: ${event.body}`)
         return {
