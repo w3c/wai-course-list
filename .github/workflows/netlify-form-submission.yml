@@ -1,4 +1,4 @@
-# Triggered as webhook form a netlify function
+# Triggered as webhook from a netlify function
 # NB!!!! this MUST be on the branch set as GitHub's default if it is to be triggered
 
 name: Netlify Form Submission
@@ -9,9 +9,11 @@ on:
  
 jobs:
   process-submission:
-    name: Print form content
+    name: Process Netlify Form
     runs-on: ubuntu-latest
     steps:
-      env:
-        MESSAGE: ${{ github.event.client_payload }}
-      run: echo $MESSAGE
+      - name: Print form
+        run: echo $MESSAGE
+        env:
+          MESSAGE: ${{ toJSON(github.event.client_payload) }}
+
