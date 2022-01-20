@@ -1,4 +1,4 @@
-# Triggered as webhook from a netlify function
+# Github action triggered as webhook from a netlify function
 # NB!!!! this MUST be on the branch set as GitHub's default if it is to be triggered
 
 name: Netlify Form Submission
@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Add new file to workspace
-        run: cat `jq '.client_payload' $GITHUB_EVENT_PATH` > SUMMISSION_ID.json
+        run: jq '.client_payload' $GITHUB_EVENT_PATH > SUMMISSION_ID.json
 
       - name: Create Pull Request
         id: cpr
