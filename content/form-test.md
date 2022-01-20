@@ -4,6 +4,15 @@ permalink: course-list/form-test
 
 {% include netlify-form.liquid type="start" name="form-test" %}
 
+<div class="field">
+     <label for="submitter-name" class="label-input">Name (Required)</label>
+     <input type="text" id="submitter-name" required="" />
+   </div>
+   <div class="field">
+     <label for="submitter-email" class="label-input">Email (Required)</label>
+     <input type="email" id="submitter-email" required="" />
+</div>
+
 <fieldset class="field" id="course-learning">
     <legend class="label">Scheduling (Required)</legend>
     <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
