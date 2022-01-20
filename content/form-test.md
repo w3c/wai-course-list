@@ -2,7 +2,7 @@
 permalink: course-list/form-test
 ---
 
-{% include netlify-form.liquid type="start" name="form-test" %}
+{% include netlify-form.liquid type="start" name="form-test-1" %}
 
 <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
