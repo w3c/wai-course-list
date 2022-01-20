@@ -1,34 +1,30 @@
+// NETLIFY function to call a github repositry-dispatch Web hook 
+// when a Netlify form submission occurs
+
 const https = require('https')
 
-exports.handler = async function(event, context) {
+function parseSubmission(payload){
 
-    let body
-    try { 
-        body = JSON.parse(event.body)
-    } catch(e) { 
-        console.error(`Invalid JSON payload: ${event.body}`)
-        return {
-            statusCode: 500,
-            body: 'Invalid JSON payload'
-        };
-    }
-
+    import { randomUUID } from 'crypto';
+    
     const {
         number: form_number,
         created_at: form_created_at, 
         form_name,
         data: {
-            'submitter-name':submitter_name,
-            'submitter-email' :submitter_email,
+            'submitter-name': submitter_name,
+            'submitter-email': submitter_email,
             ip, user_agent, referrer,  // scratch these
             ...data 
             }
-        } = body.payload
-   // const {'submitter-name':submitter_name, 'submitter-email' :submitter_email, ip, user_agent, referrer, ...data} = payload.data
+        } = payload
     const private = { submitter_name, submitter_email }
     const public = { form_number, form_created_at, form_name, data }
-    const formData = { private, public }
+    return { id: randomUUID, private, public }
+}
 
+function callGitHubWebhook(formData)
+{
     const reqBody =
     `{
         "event_type": "netlify-form-submission",
@@ -50,7 +46,7 @@ exports.handler = async function(event, context) {
         }        
     }
 
-    const gitHubRequest = new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const req = https.request(options, res => {
             let respBody = '';
             res.on('data', (chunk) => (respBody += chunk.toString()))
@@ -74,6 +70,21 @@ exports.handler = async function(event, context) {
         req.write(reqBody)
         req.end()
     })
+}
 
-    return await(gitHubRequest)
+exports.handler = async function(event, context) {
+    let body
+    try { 
+        body = JSON.parse(event.body)
+    } catch(e) { 
+        console.error(`Invalid JSON payload: ${event.body}`)
+        return {
+            statusCode: 500,
+            body: 'Invalid JSON payload'
+        };
+    }
+    
+    const formData = parseSubmission(body.payload);
+
+    return await(callGitHubWebhook(formData))
 }
