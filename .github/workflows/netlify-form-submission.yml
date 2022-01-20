@@ -32,6 +32,8 @@ jobs:
           body: |
             New form submission:
 
+            - form: ${{ github.event.client_payload.form_name }}
+            - number: ${{ github.event.client_payload.form_number }}
             - id: ${{ github.event.client_payload.id }}
 
             See PR files
