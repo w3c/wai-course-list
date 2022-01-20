@@ -2,11 +2,9 @@
 // when a Netlify form submission occurs
 
 const https = require('https')
+const crypto = require('crypto');
 
 function parseSubmission(payload){
-
-    import { randomUUID } from 'crypto';
-    
     const {
         number: form_number,
         created_at: form_created_at, 
@@ -20,7 +18,7 @@ function parseSubmission(payload){
         } = payload
     const private = { submitter_name, submitter_email }
     const public = { form_number, form_created_at, form_name, data }
-    return { id: randomUUID, private, public }
+    return { id: crypto.randomUUID(), private, public }
 }
 
 function callGitHubWebhook(formData)
