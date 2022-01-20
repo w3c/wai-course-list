@@ -1,5 +1,7 @@
 ---
 permalink: course-list/form-test
+# set published to true to generate page for testing 
+published: true
 ---
 
 {% include netlify-form.liquid type="start" name="form-test-1" %}
@@ -12,11 +14,6 @@ permalink: course-list/form-test
      <label for="submitter-email" class="label-input">Email (Required)</label>
      <input type="email" id="submitter-email" name="submitter-email" required="" />
 </div>
-
-  <div class="field">
-      <label for="course-name" class="label-input">Title (Required)</label>
-      <input type="text" id="course-name" name="course-name" required="" />
-  </div>
 
 <fieldset class="field" id="course-learning">
     <legend class="label">Scheduling (Required)</legend>
@@ -31,18 +28,6 @@ permalink: course-list/form-test
     </div>
 </fieldset>
 
-<fieldset class="field" id="course-audience">
-    <legend class="label">Audience (Required)</legend>
-    <div class="radio-field">
-      <input type="checkbox" id="course-audience-content-author" name="course-audience-content-author" group="audience" required>
-      <label for="course-audience-content-author">Content Author</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" group="audience" >
-      <label for="course-audience-designer">Designer</label>
-    </div>
-  </fieldset>
-
-  <button type="submit">Send information</button>
+<button type="submit">Send information</button>
 
 {% include netlify-form.liquid type="end"%}
