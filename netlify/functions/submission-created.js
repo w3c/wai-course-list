@@ -13,7 +13,23 @@ exports.handler = async function(event, context) {
             body: 'Invalid JSON payload'
         };
     }
-    const formData = body.payload.data
+
+    const {
+        number: form_number,
+        created_at: form_created_at, 
+        form_name,
+        data: {
+            'submitter-name':submitter_name,
+            'submitter-email' :submitter_email,
+            ip, user_agent, referrer,  // scratch these
+            ...data 
+            }
+        } = body.payload
+   // const {'submitter-name':submitter_name, 'submitter-email' :submitter_email, ip, user_agent, referrer, ...data} = payload.data
+    const private = { submitter_name, submitter_email }
+    const public = { form_number, form_created_at, form_name, data }
+    const formData = { provate, public }
+
     const reqBody =
     `{
         "event_type": "netlify-form-submission",
