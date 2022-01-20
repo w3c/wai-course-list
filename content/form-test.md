@@ -6,11 +6,11 @@ permalink: course-list/form-test
 
 <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
-     <input type="text" id="submitter-name" required="" />
+     <input type="text" id="submitter-name" name="submitter-name" required="" />
    </div>
    <div class="field">
      <label for="submitter-email" class="label-input">Email (Required)</label>
-     <input type="email" id="submitter-email" required="" />
+     <input type="email" id="submitter-email" name="submitter-email" required="" />
 </div>
 
 <fieldset class="field" id="course-learning">
