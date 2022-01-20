@@ -28,7 +28,7 @@ exports.handler = async function(event, context) {
    // const {'submitter-name':submitter_name, 'submitter-email' :submitter_email, ip, user_agent, referrer, ...data} = payload.data
     const private = { submitter_name, submitter_email }
     const public = { form_number, form_created_at, form_name, data }
-    const formData = { provate, public }
+    const formData = { private, public }
 
     const reqBody =
     `{
