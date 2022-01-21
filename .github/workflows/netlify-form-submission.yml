@@ -27,10 +27,10 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: Form process <formprocess@users.noreply.github.com>
           signoff: false
-          branch: form-submission
-          branch-suffix: short-commit-hash
+          branch: form-submission/${{ github.event.client_payload.meta.id }}
+          branch-suffix: random     # handle concurrent submissions of same form id
           delete-branch: true
-          title: 'New form submission: ${{ github.event.client_payload.meta.name }}'
+          title: 'New form submission: ${{ github.event.client_payload.meta.name }} ${{ github.event.client_payload.meta.id }}'
           body: |
             New form submission:
 
