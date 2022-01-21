@@ -5,3 +5,5 @@ _site
 
 # Local Netlify folder
 .netlify
+**/node_modules
+**/package-lock.json

@@ -1,6 +1,5 @@
 // NETLIFY function to call a github repositry-dispatch Web hook 
 // when a Netlify form submission occurs
-//
 
 const https = require('https')
 const { v1: uuidv1 } = require('uuid');  // use vq, timebased so unique each call
@@ -78,6 +77,7 @@ exports.handler = async function(event, context) {
         };
     }
     
+
     const formData = parseSubmission(body.payload);
 
     const res = await(callGitHubWebhook(formData))

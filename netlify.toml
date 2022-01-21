@@ -12,3 +12,6 @@ RUBY_VERSION = "2.6.2"
 [dev]
 # NB on win64 (cmd or bash shells) --live reload is broken - please s/-w --livereload/--no-watch
 command = "bundle exec jekyll serve -w --livereload --config _config.yml,_config_staging.yml"
+
+[functions]
+node_bundler = "esbuild"
