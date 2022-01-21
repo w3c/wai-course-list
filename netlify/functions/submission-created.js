@@ -16,7 +16,8 @@ function parseSubmission(payload){
             ...data 
             }
         } = payload
-    const meta = { id: crypto.randomUUID(), name, number, created_at, referrer }
+    const UUID = crypto.randomUUID({ disableEntropyCache: true })
+    const meta = { id: UUID, name, number, created_at, referrer }
     return { meta, ...data }
 }
 
