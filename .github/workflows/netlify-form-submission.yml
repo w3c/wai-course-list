@@ -27,8 +27,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           author: Form process <formprocess@users.noreply.github.com>
           signoff: false
-          branch: form-submission
-          branch-suffix: short-commit-hash
+          branch: form-submission/${{ toJSON(github.event.client_payload.meta.id) }}
           delete-branch: true
           title: 'New form submission: ${{ github.event.client_payload.meta.name }}'
           body: |
