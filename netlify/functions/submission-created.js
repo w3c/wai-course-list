@@ -48,12 +48,8 @@ function callGitHubWebhook(formData)
             let respBody = '';
             res.on('data', (chunk) => (respBody += chunk.toString()))
             res.on('end', () => {
-                if (res.statusCode >= 200 && res.statusCode <= 299) {
                     resolve({statusCode: res.statusCode, headers: res.headers, body: respBody})
-                } else {
-                    reject(`GitHub request failed. status: ${res.statusCode} body: ${respBody}`)
-                }
-            });
+                });
         })
 
         req.on('error', error => {
@@ -83,5 +79,10 @@ exports.handler = async function(event, context) {
     
     const formData = parseSubmission(body.payload);
 
-    return await(callGitHubWebhook(formData))
+    const res = await(callGitHubWebhook(formData))
+    
+    const success = (res.statusCode >= 200 && res.statusCode <= 299)
+    console.info(`Form ${formData.meta.name} ${success ? 'processed' : 'processing failed'}: ${formData.meta.referrer}`)
+
+    return res
 }
