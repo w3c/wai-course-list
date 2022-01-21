@@ -41,11 +41,11 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
-     <input type="text" id="submitter-name" required>
+     <input type="text" name="submitter-name" id="submitter-name" required>
    </div>
    <div class="field">
      <label for="submitter-email" class="label-input">Email (Required)</label>
-     <input type="email" id="submitter-email" required>
+     <input type="email" name="submitter-email id="submitter-email" required>
   </div>
 
   <h2 id="the-resource">About the resource</h2>
@@ -53,11 +53,11 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="course-name" class="label-input">Title (Required)</label>
-      <input type="text" id="course-name" required>
+      <input type="text" name="course-name" id="course-name" required>
   </div>
   <div class="field">
       <label for="course-provider" class="label-input">Provider (Required)</label>
-      <input type="text" id="course-provider" required>
+      <input type="text" name="course-provider" id="course-provider" required>
   </div>
 {% assign orderedCountries = "" | split: "," %}
 {% for country in site.data.countries %}
@@ -84,7 +84,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-description" class="label-input">Description (Required)</label>
       <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
-      <textarea id="course-description" required></textarea>
+      <textarea name="course-description" id="course-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
@@ -112,7 +112,7 @@ main > header { grid-column: 4 / span 4; }
     </div>  
     <div>
       <label for="course-new-type-course" class="visuallyhidden">Other</label>
-      <input type="text" id="course-new-type-course">
+      <input type="text" name="course-type" id="course-new-type-course">
     </div>
   </fieldset>
 
@@ -164,14 +164,14 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divInputPrerequisite">
       <label for="course-prerequisites" class="label-input">Prerequisites</label>
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
-      <input type="text" id="prerequisites1" class="field-prerequisite">
+      <input type="text" name="prerequisites1" id="prerequisites1" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
   </div>
 
   <div class="field" id="divInputTopic">
       <label for="course-topics" class="label-input" required>Topics (Required)</label>
       <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-      <input type="text" id="topics1" class="field-topic">
+      <input type="text" name="topics1" id="topics1" class="field-topic">
       {% include_cached button.html type="fake" label="Add new topic" class="small fake button-new-topic" %}
   </div>
 
@@ -234,7 +234,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-platform" class="label-input">Platform</label>
       <p class="expl">If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
-      <input type="text" id="course-platform">
+      <input type="text" name="course-platform" id="course-platform">
   </div>
   
   <fieldset id="course-accessibility-support">
@@ -246,7 +246,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <legend class="label">Length</legend>
       <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <input type="text" id="course-length">
+      <input type="text" name="course-length" id="course-length">
   </div>
 
   <fieldset class="field" id="course-cost">
@@ -287,34 +287,38 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-content-update"  class="label-input">Last updated (Required)</label>
       <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
-      <input type="date" id="course-content-update" required>
+      <input type="date" name="course-content-update" id="course-content-update" required>
   </div>
   <div class="field" id="availability">
       <legend class="label">Availability</legend>
       <label for="course-availability-start-date" class="label-input">Start date (Required)</label>
       <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
-      <input type="date" id="course-availability-start-date" required>
+      <input type="date" name="course-availability-start-date" id="course-availability-start-date" required>
       <label for="course-availability-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
-      <input type="date" id="course-availability-end-date">
+      <input type="date" name="course-availability-end-date" id="course-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
   <div class="field">
     <label for="comments" class="label-input">Comments</label>
     <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
-    <textarea id="comments"></textarea>
+    <textarea name="comments" id="comments"></textarea>
   </div>
-  <div class="field">
-    <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-  </div>
-  <div class="field">  
-    <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
-  </div>
-  <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
-  <div class="field">
-    <button type="submit">Send information</button>
-  </div>
+
+  <fieldset class="field" id="course-cost">
+    <legend class="label">Permission (Required)</legend>
+    <div class="field">
+      <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
+    </div>
+    <div class="field">  
+      <label><input type="checkbox" required> I give permission for my name, email and other submitted information for this resource to be published in the W3C's list of courses.</label>
+    </div>
+    <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
+    <div class="field">
+      <button type="submit">Send information</button>
+    </div>
+  </fieldset>
 {% include netlify-form.liquid type="end"%}
 
 <script>
