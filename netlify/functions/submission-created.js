@@ -16,7 +16,7 @@ function parseSubmission(payload){
             ...data 
             }
         } = payload
-    const UUID = form_id || uuidv1()    // new id if not in form
+    const UUID = form-id || uuidv1()    // new id if not in form
     const meta = { id: UUID, name, number, created_at, referrer }
     return { meta, ...data }
 }
