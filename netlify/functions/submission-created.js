@@ -1,24 +1,23 @@
 // NETLIFY function to call a github repositry-dispatch Web hook 
 // when a Netlify form submission occurs
+//
 
 const https = require('https')
 const crypto = require('crypto');
 
 function parseSubmission(payload){
     const {
-        number: form_number,
-        created_at: form_created_at, 
-        form_name,
+        number,
+        created_at, 
+        form_name : name,
         data: {
-            'submitter-name': submitter_name,
-            'submitter-email': submitter_email,
-            ip, user_agent, referrer,  // scratch these
+            ip, user_agent, // ignore these as sensitive 
+            referrer,
             ...data 
             }
         } = payload
-    const private = { submitter_name, submitter_email }
-    const public = { form_number, form_created_at, form_name, data }
-    return { id: crypto.randomUUID(), private, public }
+    const meta = { id: crypto.randomUUID(), name, number, created_at, referrer }
+    return { meta, ...data }
 }
 
 function callGitHubWebhook(formData)
