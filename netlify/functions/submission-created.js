@@ -11,7 +11,7 @@ function parseSubmission(payload){
         form_name : name,
         data: {
             ip, user_agent, // ignore these as sensitive 
-            form_id: form_id,
+            'form-id': form_id,
             referrer,
             ...data 
             }
