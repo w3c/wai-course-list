@@ -15,9 +15,8 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Add new file to workspace
-        run: |
-          echo $PAYLOAD
-          jq '.client_payload' $GITHUB_EVENT_PATH > _data/courses/$SUMMISSION_ID.json
+        run: echo $PAYLOAD
+  #        jq '.client_payload' $GITHUB_EVENT_PATH > _data/courses/$SUMMISSION_ID.json
 
       - name: Create Pull Request
         id: cpr
