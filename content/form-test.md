@@ -6,6 +6,8 @@ published: true
 
 {% include netlify-form.liquid type="start" name="form-test-1" %}
 
+<input type="hidden" name ="form-id" value="">
+
 <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
      <input type="text" id="submitter-name" name="submitter-name" required="" />
