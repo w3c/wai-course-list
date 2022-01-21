@@ -17,6 +17,9 @@ jobs:
       - name: Add new file to workspace
         run: echo $PAYLOAD
   #        jq '.client_payload' $GITHUB_EVENT_PATH > _data/courses/$SUMMISSION_ID.json
+        env:
+          SUMMISSION_ID: ${{ toJSON(github.event.client_payload.meta.id) }}
+          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
 
       - name: Create Pull Request
         id: cpr
@@ -42,7 +45,4 @@ jobs:
             form submission
             automated pr
           draft: false
-        env:
-          SUMMISSION_ID: ${{ toJSON(github.event.client_payload.meta.id) }}
-          PAYLOAD: ${{ toJSON(github.event.client_payload) }}
 
