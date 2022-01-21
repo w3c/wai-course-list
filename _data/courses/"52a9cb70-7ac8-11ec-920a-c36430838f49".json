@@ -1,0 +1,13 @@
+{
+  "course-learning-not-scheduled": "",
+  "course-learning-scheduled": "on",
+  "meta": {
+    "created_at": "2022-01-21T14:42:13.101Z",
+    "id": "52a9cb70-7ac8-11ec-920a-c36430838f49",
+    "name": "form-test-1",
+    "number": 28,
+    "referrer": "https://deploy-preview-32--wai-course-list.netlify.app/course-list/form-test"
+  },
+  "submitter-email": "steve@foo.com",
+  "submitter-name": "Steve"
+}
