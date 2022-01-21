@@ -3,7 +3,7 @@
 //
 
 const https = require('https')
-const crypto = require('crypto');
+const { v1: uuidv1 } = require('uuid');  // use vq, timebased so unique each call
 
 function parseSubmission(payload){
     const {
@@ -16,7 +16,7 @@ function parseSubmission(payload){
             ...data 
             }
         } = payload
-    const UUID = crypto.randomUUID({ disableEntropyCache: true })
+    const UUID = uuidv1()
     const meta = { id: UUID, name, number, created_at, referrer }
     return { meta, ...data }
 }
@@ -83,7 +83,7 @@ exports.handler = async function(event, context) {
     const res = await(callGitHubWebhook(formData))
     
     const success = (res.statusCode >= 200 && res.statusCode <= 299)
-    console.info(`Form ${formData.meta.name} ${success ? 'processed' : 'processing failed'}: ${formData.meta.referrer}`)
+    console.info(`Form '${formData.meta.name}' ${success ? 'processed' : 'processing failed'}, ${formData.meta.referrer}`)
 
     return res
 }
