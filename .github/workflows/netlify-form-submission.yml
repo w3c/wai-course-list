@@ -34,12 +34,12 @@ jobs:
           body: |
             New form submission:
 
-            - form: ${{ github.event.client_payload.meta.form_name }}
+            - form: ${{ github.event.client_payload.meta.name }}
             - id: ${{ github.event.client_payload.meta.id }}
-            - number: ${{ github.event.client_payload.meta.form_number }}
+            - number: ${{ github.event.client_payload.meta.number }}
             - referrer: ${{ github.event.client_payload.meta.referrer}}, 
 
-            For the submitted JSON data see "files changed".
+            For the submitted JSON data see "Files changed".
           labels: |
             form submission
             automated pr
