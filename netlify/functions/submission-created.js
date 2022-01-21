@@ -11,12 +11,12 @@ function parseSubmission(payload){
         form_name : name,
         data: {
             ip, user_agent, // ignore these as sensitive 
-            form_id,
+            form_id: form_id,
             referrer,
             ...data 
             }
         } = payload
-    const UUID = form-id || uuidv1()    // new id if not in form
+    const UUID = form_id || uuidv1()    // new id if not in form
     const meta = { id: UUID, name, number, created_at, referrer }
     return { meta, ...data }
 }
