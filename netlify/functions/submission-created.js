@@ -85,7 +85,7 @@ exports.handler = async function(event, context) {
     const res = await(callGitHubWebhook(formData))
     
     const success = (res.statusCode >= 200 && res.statusCode <= 299)
-    console.info(`Form '${formData.meta.name}' ${success ? 'processed' : 'processing failed'}, ${formData.meta.referrer}`)
+    console.info(`Form '${formData.meta.name}' ${success ? 'processed' : 'processing failed'}, ${res.body}, ${formData.meta.referrer}`)
 
     return res
 }
