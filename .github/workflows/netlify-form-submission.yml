@@ -29,7 +29,7 @@ jobs:
           signoff: false
           branch: form-submission/${{ toJSON(github.event.client_payload.meta.id) }}
           delete-branch: true
-          title: 'New form submission: ${{ github.event.client_payload.meta.name }}'
+          title: 'New form submission: ${{ github.event.client_payload.meta.name }} ${{ toJSON(github.event.client_payload.meta.id) }}'
           body: |
             New form submission:
 
