@@ -33,6 +33,9 @@ main > header { grid-column: 4 / span 4; }
 <p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 {% include netlify-form.liquid type="start" id="form-submit-a-course-1" %}
+
+  <input type="hidden" name ="form-id" value="">
+
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
