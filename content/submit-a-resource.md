@@ -45,7 +45,7 @@ main > header { grid-column: 4 / span 4; }
    </div>
    <div class="field">
      <label for="submitter-email" class="label-input">Email (Required)</label>
-     <input type="email" name="submitter-email id="submitter-email" required>
+     <input type="email" name="submitter-email" id="submitter-email" required>
   </div>
 
   <h2 id="the-resource">About the resource</h2>
@@ -306,7 +306,7 @@ main > header { grid-column: 4 / span 4; }
     <textarea name="comments" id="comments"></textarea>
   </div>
 
-  <fieldset class="field" id="course-cost">
+  <fieldset class="field" id="permission">
     <legend class="label">Permission (Required)</legend>
     <div class="field">
       <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
