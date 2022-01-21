@@ -28,7 +28,7 @@ jobs:
           branch: form-submission
           branch-suffix: short-commit-hash
           delete-branch: true
-          title: 'New form submission - ${{ github.event.client_payload.meta.id }}
+          title: New form submission - ${{ github.event.client_payload.meta.id }}
           body: |
             New form submission:
 
@@ -36,7 +36,7 @@ jobs:
             - id: ${{ github.event.client_payload.meta.id }}
             - number: ${{ github.event.client_payload.meta.form_number }}
 
-            See "files changed".
+            For the submitted JSON data see "files changed".
           labels: |
             form submission
             automated pr
