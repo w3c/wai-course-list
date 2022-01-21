@@ -15,3 +15,6 @@ command = "bundle exec jekyll serve -w --livereload --config _config.yml,_config
 
 [functions]
 node_bundler = "esbuild"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core
