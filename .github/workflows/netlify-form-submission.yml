@@ -1,5 +1,6 @@
 # Github action triggered as webhook from a netlify function
 # NB!!!! this MUST be on the branch set as GitHub's default if it is to be triggered
+# it's ignored in builds - see netlify.tml
 
 name: Netlify Form Submission
   
