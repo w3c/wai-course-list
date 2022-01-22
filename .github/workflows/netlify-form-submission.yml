@@ -20,7 +20,6 @@ jobs:
           SUMMISSION_ID: ${{ toJSON(github.event.client_payload.meta.id) }}
 
       - name: Create Pull Request
-        id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
           commit-message: Add form submission
