@@ -2,28 +2,22 @@
 // when a Netlify form submission occurs
 
 const https = require('https')
-const { v1: uuidv1 } = require('uuid');  // use vq, timebased so unique each call
+const { v1: uuidv1 } = require('uuid')  // use vq, timebased so unique each call
 
 function parseSubmission(payload){
-    try {
-        const {
-            number,
-            created_at, 
-            form_name : name,
-            data: {
-                ip, user_agent, // ignore these as sensitive 
-                'form-id': form_id,
-                referrer,
-                ...data 
-                }
-            } = payload
-        const UUID = form_id || uuidv1()    // new id if not in form
-        const meta = { id: UUID, name, number, created_at, referrer }
-    }
-    catch(e) {
-        console.error(`Error parsing payload: ${e.message}`)
-        return undefined;
-    }
+    const {
+        number,
+        created_at, 
+        form_name : name,
+        data: {
+            ip, user_agent, // ignore these as sensitive 
+            'form-id': form_id,
+            referrer,
+            ...data 
+            }
+        } = payload
+    const UUID = form_id || uuidv1()    // new id if not in form
+    const meta = { id: UUID, name, number, created_at, referrer }
     return { meta, fields: {...data} }
 }
 
@@ -52,11 +46,11 @@ function callGitHubWebhook(formData)
 
     return new Promise((resolve, reject) => {
         const req = https.request(options, res => {
-            let respBody = '';
+            let respBody = ''
             res.on('data', (chunk) => (respBody += chunk.toString()))
             res.on('end', () => {
                     resolve({statusCode: res.statusCode, headers: res.headers, body: respBody})
-                });
+                })
         })
 
         req.on('error', error => {
@@ -81,14 +75,17 @@ exports.handler = async function(event, context) {
         return {
             statusCode: 500,
             body: 'Invalid JSON payload'
-        };
+        }
     }
-    const formData = parseSubmission(body.payload);
-    if (!formData) {
+
+    try {
+        const formData = parseSubmission(body.payload)
+    }
+    catch(e) {
         return {
             statusCode: 500,
             body: 'Payload is missing fields'
-        };
+        }        
     }
 
     const res = await(callGitHubWebhook(formData))
