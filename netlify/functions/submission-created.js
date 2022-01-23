@@ -5,19 +5,25 @@ const https = require('https')
 const { v1: uuidv1 } = require('uuid');  // use vq, timebased so unique each call
 
 function parseSubmission(payload){
-    const {
-        number,
-        created_at, 
-        form_name : name,
-        data: {
-            ip, user_agent, // ignore these as sensitive 
-            'form-id': form_id,
-            referrer,
-            ...data 
-            }
-        } = payload
-    const UUID = form_id || uuidv1()    // new id if not in form
-    const meta = { id: UUID, name, number, created_at, referrer }
+    try {
+        const {
+            number,
+            created_at, 
+            form_name : name,
+            data: {
+                ip, user_agent, // ignore these as sensitive 
+                'form-id': form_id,
+                referrer,
+                ...data 
+                }
+            } = payload
+        const UUID = form_id || uuidv1()    // new id if not in form
+        const meta = { id: UUID, name, number, created_at, referrer }
+    }
+    catch(e) {
+        console.error(`Error parsing payload: ${e.message}`)
+        return undefined;
+    }
     return { meta, fields: {...data} }
 }
 
@@ -77,9 +83,13 @@ exports.handler = async function(event, context) {
             body: 'Invalid JSON payload'
         };
     }
-    
-
     const formData = parseSubmission(body.payload);
+    if (!formData) {
+        return {
+            statusCode: 500,
+            body: 'Payload is missing fields'
+        };
+    }
 
     const res = await(callGitHubWebhook(formData))
     
