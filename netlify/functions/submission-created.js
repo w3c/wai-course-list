@@ -78,8 +78,9 @@ exports.handler = async function(event, context) {
         }
     }
 
+    let formData
     try {
-        const formData = parseSubmission(body.payload)
+        formData = parseSubmission(body.payload)
     }
     catch(e) {
         return {
