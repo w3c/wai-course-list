@@ -16,9 +16,9 @@ function parseSubmission(payload){
             ...data 
             }
         } = payload
-    const UUID = form_id || uuidv1()    // new id if not in form
+    const UUID = form_id || uuidv1()    // new id if not in form - v1 date based to avoid dupications
     const meta = { id: UUID, name, number, created_at, referrer }
-    return { meta, fields: {...data} }
+    return { meta, form: {...data} }
 }
 
 function callGitHubWebhook(formData)
