@@ -1,6 +1,5 @@
 # Github action triggered as webhook from a netlify function
 # NB!!!! this MUST be on the branch set as GitHub's default if it is to be triggered
-# it's ignored in builds - see netlify.tml
 
 name: Netlify Form Submission
   
@@ -16,11 +15,12 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Add new file to workspace
-        run: jq '.client_payload' $GITHUB_EVENT_PATH > _data/courses/$SUMMISSION_ID.json
+        run: jq '.client_payload' $GITHUB_EVENT_PATH > _data/courses/$SUBMISSION_ID.json
         env:
-          SUMMISSION_ID: ${{ toJSON(github.event.client_payload.meta.id) }}
+          SUBMISSION_ID: ${{ github.event.client_payload.meta.id }}
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v3
         with:
           commit-message: Add form submission
@@ -28,7 +28,7 @@ jobs:
           author: Form process <formprocess@users.noreply.github.com>
           signoff: false
           branch: form-submission/${{ github.event.client_payload.meta.id }}
-          branch-suffix: random
+          branch-suffix: random     # handle concurrent submissions of same form id
           delete-branch: true
           title: 'New form submission: ${{ github.event.client_payload.meta.name }} ${{ github.event.client_payload.meta.id }}'
           body: |
