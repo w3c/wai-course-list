@@ -1,6 +1,6 @@
 ---
 permalink: course-list/form-test
-# set published to true to generate page for testing 
+# set published to true to generate page for testing
 published: true
 ---
 
