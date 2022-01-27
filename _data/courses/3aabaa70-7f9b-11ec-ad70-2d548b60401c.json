@@ -1,0 +1,12 @@
+{
+  "form": {
+    "course-learning-scheduled": "on",
+    "submitter-email": "steve@foo.com",
+    "submitter-name": "Steve"
+  },
+  "meta": {
+    "created_at": "2022-01-27T18:02:02.261Z",
+    "id": "3aabaa70-7f9b-11ec-ad70-2d548b60401c",
+    "referrer": "http://localhost:8888/course-list/form-test"
+  }
+}
