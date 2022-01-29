@@ -5,6 +5,7 @@ _site
 
 # Local Netlify folder
 .netlify
+.vscode
 **/node_modules
 **/package-lock.json
 playwright-report

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "playwright test --config=tests/example.config.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.18.0",
+    "uuid": "8.3.2"
+  }
+}
