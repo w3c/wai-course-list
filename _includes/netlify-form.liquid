@@ -1,34 +1,70 @@
+{% comment %}
+  Netlify form integation
+
+    method - http submission - get or post (default post)
+    name - form name (default form id)
+    id - form id (default nill)
+    success - URI of custom success page (default none)
+    honeypot - honeypot field id (default none)
+    recapture - enable recapture (default none=false)
+{% endcomment %}
+
 {%- if include.type == 'start' -%}
-{%- if include.method == nil %}{% assign method="post" %}{% else %}{% assign method=include.method %}{% endif -%}
-{%- if include.name == nil %}{% assign name=include.id %}{% else %}{% assign name=include.name %}{% endif -%}
-<form id="{{include.id}}" name="{{name}}" method="{{method}}" data-netlify="true">
+    {%- if firstForm == nil %}
+        {% assign firstForm = true %}
+    {%- else %}
+        {% assign firstForm = false %}
+    {% endif -%}
+    {%- if include.method == nil %}
+        {% assign method = "post" %}
+    {% else %}
+        {% assign method=include.method %}
+    {% endif -%}
+    {%- if include.name == nil %}
+        {% assign name=include.id %}
+    {% else %}
+        {% assign name=include.name %}
+    {% endif -%}
+    {%- if include.success != nil %}
+      {% capture action %} action="{{include.success}}" {% endcapture %}
+    {% endif -%}
+    {%- if include.honeypot != nil %}
+      {% capture honeypot %} netlify-honeypot="{{include.honeypot}}" {% endcapture %}
+    {% endif -%}
+    {%- if include.honeypot != nil %}
+      {% capture recapture %} data-netlify-recaptcha="true" {% endcapture %}
+    {% endif -%}
+<form id="{{ include.id }}" name="{{ name }}" method="{{ method }}" data-netlify="true" {{action}} {{honeypot}} {{recapture}} >
+<input type="hidden" name ="form-id" value="{{include.id}}">
+
 {% elsif include.type == 'end' -%}
 </form>
 
+{% if firstForm == true %}
+{::nomarkdown}
 <script>
-// TODO - don't want this for more than one instance of this include !!!
-// Assume a single form - could add a build time check
-const form = document.querySelector('form')
-const submitButton = form.querySelector('button[type="submit"]')
-submitButton.addEventListener('click', (event) =>
-{
-    console.log("click")
-    const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
-    const groups = Array.from(requiredCheckboxes).map((n) => n.getAttribute('group'))
-    const uniqueGroups = [... new Set(groups)]
+    // TODO handle more than one form
+    const form = document.querySelector('form')
+    const submitButton = form.querySelector('button[type="submit"]')
+    submitButton.addEventListener('click', (event) => {
+        console.log("click")
+        const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
+        const groups = Array.from(requiredCheckboxes).map((n) => n.getAttribute('group'))
+        const uniqueGroups = [...new Set(groups)]
 
-    uniqueGroups.forEach(groupName => {
-        const checkboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]`)
-        const checkedCheckboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]:checked`)
+        uniqueGroups.forEach(groupName => {
+            const checkboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]`)
+            const checkedCheckboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]:checked`)
 
-        // if any checkbox in the group is checked we removed required from them all
-        if (checkedCheckboxs.length) {
-            for (let checkbox of checkboxs) {
-            checkbox.required = false;
+            // if any checkbox in the group is checked we removed required from them all
+            if (checkedCheckboxs.length) {
+                for (let checkbox of checkboxs) {
+                    checkbox.required = false;
+                }
             }
-        }
+        })
     })
-})
-
-</script>
+    </script >
+{:/}
+{% endif %}
 {%- endif -%}
