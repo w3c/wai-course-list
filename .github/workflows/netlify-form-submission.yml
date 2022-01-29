@@ -41,6 +41,6 @@ jobs:
 
             For the submitted JSON data see "Files changed".
           labels: |
-            form submission
+            form ${{ github.event.client_payload.meta.name }}
             automated pr
           draft: false
