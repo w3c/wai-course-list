@@ -5,6 +5,7 @@ import { v1 as uuidv1 } from "uuid";
 // Form submission details
 const URI =
   "https://deploy-preview-32--wai-course-list.netlify.app/course-list/submit-a-resource"; // NB no trailing /
+//const URI = "localhost:8888//course-list/submit-a-resource"; // NB no trailing /
 const FORM_ID = `test-${uuidv1()}`;
 
 // GtHub constants
@@ -28,17 +29,19 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   await page.fill('"Email (Required)"', "submitter@w3.org");
   await page.fill('"Title (Required)"', "Test Title");
   await page.fill('"Provider (Required)"', "Provider");
-  await page.selectOption("select#country", { label: "Georgia (საქართველო)" }); // bad label
+  await page.selectOption("select#country", { label: "Georgia (საქართველო)" });
   await page.fill('"Description (Required)"', "Description");
   await page.check('"Training"');
   await page.check('"Developer"');
   await page.check('"Designer"');
   await page.check('"Intermediate"');
-  await page.fill("input#prerequisites1", "Prerequisites"); // bad label
-  await page.fill("input#topics1", "Topics"); // bad label
-  await page.click("details"); // no id
+  await page.fill('"Prerequisites"', "Prerequisites");
+  await page.fill('"Topics (Required)"', "Topics");
+  await page.click("details"); // no id - selects first - try "Foundations Modules"
   await page.check('"Module 2: People and Digital Technology"');
-  await page.selectOption("select#language1", { label: "Xhosa (isiXhosa)" }); // bad label
+  await page.selectOption('"Language (Required)"', {
+    label: "Xhosa (isiXhosa)",
+  }); // bad label
   await page.check('"Online - all teaching sessions are provided online "');
   await page.check(
     '"Scheduled - participants are required to attend at a specific time"'
@@ -57,15 +60,10 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   await page.fill('"Start date (Required)"', "2022-01-01");
   await page.fill('"End date"', "2022-01-01");
   await page.fill('"Comments"', "Comments");
-  await page.check(
-    'label:text("The information I provided is correct") > input[type="checkbox"]'
-  );
-  await page.check(
-    'label:text("I give permission for") > input[type="checkbox"]'
-  );
+  await page.check('text="The information I provided is correct"');
+  await page.check('text="I give permission for"');
 
   let [response] = await Promise.all([
-    // Waits for the next response matching some conditions
     page.waitForResponse(
       (response) => response.url() === URI && response.status() === 200
     ),

@@ -33,18 +33,18 @@ main > header { grid-column: 4 / span 4; }
 
 <p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p>
 
-{% include netlify-form.liquid type="start" name="form-submit-a-course-1" %}
+{% include netlify-form.liquid type="start" name="course-submission-1" %}
 
   <h2 id="about-you">About you</h2>
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
   <div class="field">
      <label for="submitter-name" class="label-input">Name (Required)</label>
-     <input type="text" name="submitter-name" id="submitter-name" required>
+     <input type="text" name="submitter-name" id="course-submitter-name" required>
    </div>
    <div class="field">
      <label for="submitter-email" class="label-input">Email (Required)</label>
-     <input type="email" name="submitter-email" id="submitter-email" required>
+     <input type="email" name="submitter-email" id="course-submitter-email" required>
   </div>
 
   <h2 id="the-resource">About the resource</h2>
@@ -52,11 +52,11 @@ main > header { grid-column: 4 / span 4; }
 
   <div class="field">
       <label for="course-name" class="label-input">Title (Required)</label>
-      <input type="text" name="course-name" id="course-name" required>
+      <input type="text" name="name" id="course-name" required>
   </div>
   <div class="field">
       <label for="course-provider" class="label-input">Provider (Required)</label>
-      <input type="text" name="course-provider" id="course-provider" required>
+      <input type="text" name="provider" id="course-provider" required>
   </div>
 {% assign orderedCountries = "" | split: "," %}
 {% for country in site.data.countries %}
@@ -71,7 +71,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divSelectCountry">
       <label for="course-country" class="label-input">Country (Required)</label>
       <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
+      <select name="country" id="course-country" class="field-country select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -83,62 +83,66 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-description" class="label-input">Description (Required)</label>
       <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
-      <textarea name="course-description" id="course-description" required></textarea>
+      <textarea name="description" id="course-description" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
   <fieldset class="field" id="course-type">
     <legend class="label">Type of resource (Required)</legend>
     <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-graduate" required>
+      <input type="radio" name="type" id="course-type-graduate" required>
       <label for="course-type-graduate">Graduate program</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-undergraduate">
+      <input type="radio" name="type" id="course-type-undergraduate" value="undergraduate" >
       <label for="course-type-undergraduate">Undergraduate program</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-training">
+      <input type="radio" name="type" id="course-type-training" value="training" >
       <label for="course-type-training">Training</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-certification">
+      <input type="radio" name="type" id="course-type-certification" value="certification">
       <label for="course-type-certification">Professional certification</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-other">
+      <input type="radio" name="type" id="course-type-other" value="other">
       <label for="course-type-other">Other</label>
     </div>  
     <div>
       <label for="course-new-type-course" class="visuallyhidden">Other</label>
-      <input type="text" name="course-type" id="course-new-type-course">
+      <input type="text" name="type" id="course-new-type-course" >
     </div>
   </fieldset>
 
   <fieldset class="field" id="course-audience">
     <legend class="label">Audience (Required)</legend>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-content-author" id="course-audience-content-author" value="course-audience-content-author" group="audience" required>
+      <input type="checkbox" name="audience-content-author" id="course-audience-content-author" group="audience" required>
       <label for="course-audience-content-author">Content Author</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" value="course-audience-designer" group="audience">
+      <input type="checkbox" name="audience-designer"
+      id="course-audience-designer" group="audience">
       <label for="course-audience-designer">Designer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-developer" id="course-audience-developer" value="course-audience-developer" group="audience">
+      <input type="checkbox" name="audience-developer" id="course-audience-developer" group="audience">
       <label for="course-audience-developer">Developer</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-manager" id="course-audience-manager" value="course-audience-manager" group="audience">
+      <input type="checkbox" name="audience-manager"
+      id="course-audience-manager" group="audience">
       <label for="course-audience-manager">Manager</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-tester" id="course-audience-tester" value="course-audience-tester" group="audience">
+      <input type="checkbox" name="audience-tester"
+      id="course-audience-tester" group="audience">
       <label for="course-audience-tester">Tester</label>
     </div>
     <div class="radio-field">
-      <input type="checkbox" name="course-audience-other" id="course-audience-other" value="course-audience-other" group="audience">
+      <input type="checkbox" name="audience-other" 
+      id="course-audience-other" group="audience">
       <label for="course-audience-other">Other</label>
     </div>
   </fieldset>
@@ -147,15 +151,15 @@ main > header { grid-column: 4 / span 4; }
     <legend class="label">Level (Required)</legend>
     <p class="expl">Indicate the level of digital accessibility proficiency required.</p>
     <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-basic">
+      <input type="radio" name="level" id="course-level-basic">
       <label for="course-level-basic">Basic</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-intermediate">
+      <input type="radio" name="level" id="course-level-intermediate">
       <label for="course-level-intermediate">Intermediate</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-advanced">
+      <input type="radio" name="level" id="course-level-advanced">
       <label for="course-level-advanced">Advanced</label>
     </div>
   </fieldset>
@@ -163,14 +167,14 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divInputPrerequisite">
       <label for="course-prerequisites" class="label-input">Prerequisites</label>
       <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
-      <input type="text" name="prerequisites1" id="prerequisites1" class="field-prerequisite">
+      <input type="text" name="prerequisites" id="course-prerequisites" class="field-prerequisite">
       {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
   </div>
 
   <div class="field" id="divInputTopic">
       <label for="course-topics" class="label-input" required>Topics (Required)</label>
       <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-      <input type="text" name="topics1" id="topics1" class="field-topic">
+      <input type="text" name="topics" id="course-topics" class="field-topic">
       {% include_cached button.html type="fake" label="Add new topic" class="small fake button-new-topic" %}
   </div>
 
@@ -188,7 +192,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field" id="divSelectLang">
       <label for="course-language" class="label-input">Language (Required)</label>
       <p class="expl">Indicate in which language or languages this resource is provided.</p>
-      <select name="language" id="language1" class="field-language select-form" required> 
+      <select name="language" id="course-language" class="field-language select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
               <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -200,19 +204,19 @@ main > header { grid-column: 4 / span 4; }
   <fieldset class="field" id="course-format">
     <legend class="label">Format (Required)</legend>
     <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-face-to-face">
+      <input type="radio" name="format" id="course-format-face-to-face" required value="face-to-face">
       <label for="course-format-face-to-face">Face-to-face - all teaching sessions are provided on-site</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-online" required>
+      <input type="radio" name="format" id="course-format-online" value="online">
       <label for="course-format-online">Online - all teaching sessions are provided online </label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-hybrid">
+      <input type="radio" name="format" id="course-format-hybrid" value="hybrid">
       <label for="course-format-hybrid">Hybrid - teaching sessions are provided simultaneously on-site and online</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-blended">
+      <input type="radio" name="format" id="course-format-blended" value="blended">
       <label for="course-format-blended">Blended - teaching sessions are provided either on-site or online</label>
     </div>    
   </fieldset>
@@ -221,11 +225,11 @@ main > header { grid-column: 4 / span 4; }
       <legend class="label">Scheduling (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-scheduled" name="course-learning-scheduled" group="learning" required>
+          <input type="checkbox" id="course-learning-scheduled" name="learning-scheduled" group="learning" required>
           <label for="course-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-not-scheduled" name="course-learning-not-scheduled" group="learning">
+          <input type="checkbox" id="course-learning-not-scheduled" name="learning-not-scheduled" group="learning">
           <label for="course-learning-not-scheduled">Unscheduled - participants can attend at their own pace</label>
       </div>
   </fieldset>
@@ -233,7 +237,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-platform" class="label-input">Platform</label>
       <p class="expl">If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
-      <input type="text" name="course-platform" id="course-platform">
+      <input type="text" name="platform" id="course-platform">
   </div>
   
   <fieldset id="course-accessibility-support">
@@ -245,29 +249,29 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <legend class="label">Length</legend>
       <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <input type="text" name="course-length" id="course-length">
+      <input type="text" name="length" id="course-length">
   </div>
 
   <fieldset class="field" id="course-cost">
     <legend class="label">Cost (Required)</legend>
     <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free">
+      <input type="radio" name="cost" id="course-cost-free" value="free" required>
       <label for="course-cost-free">Free</label>
     </div> 
     <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-certificates-for-purchase" required>
+      <input type="radio" name="cost" id="course-cost-free-certificates-for-purchase" value= "free">
       <label for="course-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-limited-time">
+      <input type="radio" name="cost" id="course-cost-free-limited-time" value="free-limited-time">
       <label for="course-cost-free-limited-time">Free for limited content or duration</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-or-reduced-for-some">
+      <input type="radio" name="cost" id="course-cost-free-or-reduced-for-some" value="free-or-reduced-for-some">
       <label for="course-cost-free-or-reduced-for-some">Free or reduced fee for some</label>
     </div>
     <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-paid">
+      <input type="radio" name="cost" id="course-cost-paid" value="paid">
       <label for="course-cost-paid">Paid</label>
     </div>  
   </fieldset>
@@ -275,43 +279,43 @@ main > header { grid-column: 4 / span 4; }
   <div class="field">
       <label for="course-website" class="label-input">Website (Required)</label>
       <p class="expl">Indicate the website containing more information about this resource.</p>
-      <input type="url" name="course-website" id="course-website" required>
+      <input type="url" name="website" id="course-website" required>
   </div>
 
   <div class="field">
       <label for="course-reviews-page" class="label-input">Reviews page</label>
       <p class="expl">Indicate the web page containing reviews about this resource.</p>
-      <input type="url" name="course-reviews-page" id="course-reviews-page">
+      <input type="url" name="reviews-page" id="course-reviews-page">
   </div>
   <div class="field">
       <label for="course-content-update"  class="label-input">Last updated (Required)</label>
       <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
-      <input type="date" name="course-content-update" id="course-content-update" required>
+      <input type="date" name="content-update" id="course-content-update" required>
   </div>
   <div class="field" id="availability">
       <legend class="label">Availability</legend>
       <label for="course-availability-start-date" class="label-input">Start date (Required)</label>
       <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
-      <input type="date" name="course-availability-start-date" id="course-availability-start-date" required>
+      <input type="date" name="availability-start-date" id="course-availability-start-date" required>
       <label for="course-availability-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
-      <input type="date" name="course-availability-end-date" id="course-availability-end-date">
+      <input type="date" name="availability-end-date" id="course-availability-end-date">
       <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
   <div class="field">
-    <label for="comments" class="label-input">Comments</label>
+    <label for="course-comments" class="label-input">Comments</label>
     <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
-    <textarea name="comments" id="comments"></textarea>
+    <textarea name="comments" id="course-comments"></textarea>
   </div>
 
   <fieldset class="field" id="permission">
     <legend class="label">Permission (Required)</legend>
     <div class="field">
-      <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
+      <label><input type="checkbox" name="correct-info" required> The information I provided is correct according to the best of my knowledge (Required).</label>
     </div>
     <div class="field">  
-      <label><input type="checkbox" required> I give permission for my name, email and other submitted information for this resource to be published in the W3C's list of courses.</label>
+      <label><input type="checkbox" name="permission-given" required> I give permission for my name, email and other submitted information for this resource to be published in the W3C's list of courses. (Required)</label>
     </div>
     <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
     <div class="field">
