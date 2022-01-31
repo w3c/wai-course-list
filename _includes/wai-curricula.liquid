@@ -8,7 +8,7 @@
 
 {% for modules in curricula.modules %}
 <div class="radio-field">
-    <input type="checkbox" id="course-{{ modules.id }}" name="course-{{ modules.id }}">
+    <input type="checkbox" id="course-{{ modules.id }}" name="{{ modules.id }}">
     <label for="course-{{ modules.id }}">{{ modules.name }}</label>
 </div>
 

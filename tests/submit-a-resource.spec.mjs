@@ -3,9 +3,9 @@ import { test, expect } from "@playwright/test";
 import { v1 as uuidv1 } from "uuid";
 
 // Form submission details
-const URI =
-  "https://deploy-preview-32--wai-course-list.netlify.app/course-list/submit-a-resource"; // NB no trailing /
-//const URI = "localhost:8888//course-list/submit-a-resource"; // NB no trailing /
+//const URI =
+//  "https://deploy-preview-32--wai-course-list.netlify.app/course-list/submit-a-resource"; // NB no trailing /
+const URI = "localhost:8888//course-list/submit-a-resource"; // NB no trailing /
 const FORM_ID = `test-${uuidv1()}`;
 
 // GtHub constants
@@ -29,7 +29,9 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   await page.fill('"Email (Required)"', "submitter@w3.org");
   await page.fill('"Title (Required)"', "Test Title");
   await page.fill('"Provider (Required)"', "Provider");
-  await page.selectOption("select#country", { label: "Georgia (საქართველო)" });
+  await page.selectOption('"Country (Required)"', {
+    label: "Georgia (საქართველო)",
+  });
   await page.fill('"Description (Required)"', "Description");
   await page.check('"Training"');
   await page.check('"Developer"');
@@ -38,6 +40,7 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   await page.fill('"Prerequisites"', "Prerequisites");
   await page.fill('"Topics (Required)"', "Topics");
   await page.click("details"); // no id - selects first - try "Foundations Modules"
+  await page.check('"Module 1: What is Web Accessibility"');
   await page.check('"Module 2: People and Digital Technology"');
   await page.selectOption('"Language (Required)"', {
     label: "Xhosa (isiXhosa)",
@@ -60,9 +63,11 @@ test('Form "test-form" submission should create a Pull Request - slow test', asy
   await page.fill('"Start date (Required)"', "2022-01-01");
   await page.fill('"End date"', "2022-01-01");
   await page.fill('"Comments"', "Comments");
-  await page.check('text="The information I provided is correct"');
-  await page.check('text="I give permission for"');
-
+  await page.check("text=The information I provided is correct");
+  await page.check("text=I give permission for");
+  page.on("request", (request) =>
+    console.log(`Request sent: ${JSON.stringify(request.postDataJSON())}`)
+  );
   let [response] = await Promise.all([
     page.waitForResponse(
       (response) => response.url() === URI && response.status() === 200
