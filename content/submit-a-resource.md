@@ -39,11 +39,11 @@ main > header { grid-column: 4 / span 4; }
   <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
 
   <div class="field">
-     <label for="submitter-name" class="label-input">Name (Required)</label>
+     <label for="course-submitter-name" class="label-input">Name (Required)</label>
      <input type="text" name="submitter-name" id="course-submitter-name" required>
    </div>
    <div class="field">
-     <label for="submitter-email" class="label-input">Email (Required)</label>
+     <label for="course-submitter-email" class="label-input">Email (Required)</label>
      <input type="email" name="submitter-email" id="course-submitter-email" required>
   </div>
 
