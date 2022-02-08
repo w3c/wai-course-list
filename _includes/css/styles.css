@@ -114,11 +114,6 @@ main>header {
   padding: 8px;
 }
 
-
-.button-clear-button {
-  margin-bottom: 2em;
-}
-
 .button-clear-button[hidden] {
   display: none !important;
 }
@@ -175,42 +170,10 @@ details dt::after {
   font-weight: 700;
 }
 
-#availability .label-input{
+#availability .label-input {
   margin-top: 1em;
 }
 
-.field-topic, .field-prerequisite {
-  margin-top: 2em;
-}
-
-/* 
-details>div{
-  margin-bottom: -8px;
-  margin-right: -16px;
-  margin-left: -48px;
-  padding-left: 18px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: #d0e1f1;
-  border-radius: 3px;
-}
-
-details>div{
-  border: solid 1px var(--line-grey);
-  padding-left: 16px;
-  margin-bottom: 32px;
-  margin-right: 32px;
-}
-
-
-details>div{
-  border-top: solid 1px var(--line-grey);
-  margin-left: -47px;
-  margin-right: -16px;
-  padding-left: 16px;
-
-}
-*/
 
 #courses-list details>div {
   border-top: solid 1px var(--line-grey);
@@ -222,6 +185,7 @@ details>div{
 
 #disclaimer {
   border: 1px solid var(--line-grey);
+  margin-top: 2em;
 }
 
 #disclaimer h2 {
@@ -288,4 +252,81 @@ fieldset label:hover a {
 
 fieldset label:hover a:hover {
   text-decoration: underline gold;
+}
+
+
+
+/* new line button */
+.button-group button:hover {
+  cursor: pointer;
+}
+
+.proto {
+  display: none;
+}
+
+.add-line {
+  margin-top: 2em;
+}
+
+.line .select-form {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+
+.field input[type="checkbox"]:focus {
+  outline: 2px solid #686868;
+  outline-offset: 2px;
+  transition: outline-offset 0.2s linear;
+} 
+
+
+.courses-list-header {
+  display: grid;
+  grid-gap: 1em;
+  border-bottom: 1px solid var(--line-grey);
+  padding-bottom: 1em;
+}
+
+.courses-list-header .field {
+  grid-column: 1 / 5;
+  margin: 0;
+  align-self: center;
+}
+
+.courses-list-header #status {
+  grid-column: 5 / 8;
+  align-self: center;
+}
+
+.courses-list-header #status h4 {
+  margin: 0;
+}
+
+.courses-list-header .sort-by {
+  grid-column: 8 / 8;
+  align-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.courses-list-header .sort-by h4 {
+  float: left;
+  margin: 0;
+  margin-right: 0.5em
+}
+
+
+img.icon {
+  --img-width: 15px;
+}
+
+.helper div {
+  background-color: var(--cloudy-subtle);
+  padding:0.5em;
+  margin: 0.5em;
+  font-weight: normal;
+  border: solid 1px var(--line-grey);
+  margin-left:-2em;
 }

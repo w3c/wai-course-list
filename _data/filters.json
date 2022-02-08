@@ -79,6 +79,7 @@
   {
     "id": "format",
     "name": "Format",
+    "info": "true",
     "type": "checkbox",
     "options": [
       {
@@ -102,6 +103,7 @@
   {
     "id": "scheduling",
     "name": "Scheduling",
+    "info": "true",
     "type": "checkbox",
     "options": [
       {
@@ -121,7 +123,7 @@
     "options": [
       {
         "id": "free",
-        "name": "Free"
+        "name": "Free of charge"
       },
       {
         "id": "free_certificates_for_purchase",

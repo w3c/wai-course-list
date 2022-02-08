@@ -1,8 +1,8 @@
-{% capture course_title %}<a href="{{ course.course_link }}">{{ course.title }}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}{% include_cached icon.html name="external-link" %}</a> by {{ course.provider }}{% endcapture %}
 {% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
 {% capture course_details_id %}details_{{course.id}}{% endcapture %}
 
-{% include box.html type="start" title=course_title id=course.id %}
+{% include box.html type="start" title=course_title id=course.title %}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
 #### Details
@@ -13,7 +13,7 @@
 {% capture countryLabel %}
 {{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
 {% endcapture %}
-{% assign country = country | push: countryLabel  %} 
+{% assign country = country | push: countryLabel %}
 {% endfor %}
 Country
 : {{ country | join: ", "}}
@@ -29,16 +29,16 @@ Level
 
 Prerequisites
 {% if course.prerequisites %}
-: {% for prerequisite in course.prerequisites %} 
+: {% for prerequisite in course.prerequisites %}
 * {{ prerequisite }}{% endfor %}
 {% else %}
 : Not provided
 {% endif %}
 
 Topics
-: {% for topic in course.topics %} 
+: {% for topic in course.topics %}
 * {{ topic }}{% endfor %}
-  
+
 WAI Curricula module
 {% if course.wai_curricula_link %}
 : <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
@@ -51,7 +51,7 @@ WAI Curricula module
 {% capture langLabel %}
 {{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% endcapture %}
-{% assign language = language | push: langLabel  %} 
+{% assign language = language | push: langLabel %}
 {% endfor %}
 Language
 : {{ language | join: ", "}}
@@ -71,15 +71,28 @@ Platform
 {% endif %}
 
 
-{% assign hasASupport = false %} 
-Accessibility support 
-: {% if course.accessibility_support %}{% include filtered-accessibility-support.liquid data = course.accessibility_support %}{% assign hasASupport = true %}{% for accessibilitySupport in filteredItems %}
-* {{ accessibilitySupport[1] }}{% endfor %} {% endif %}
-{% if course.other_accessibility_support %} 
-* {{ course.other_accessibility_support }}{% assign hasASupport = true %}{% endif %}
+{% assign hasASupport = false %}
+{% assign aSupport = "" | split: "," %}
+{% if course.accessibility_support %}
+{% include filtered-accessibility-support.liquid data = course.accessibility_support %}
+{% assign hasASupport = true %}
+{% for accessibilitySupport in filteredItems %}
+{% assign aSupport = aSupport | push: accessibilitySupport[1] %}
+{% endfor %}
+{% endif %}
+{% if course.other_accessibility_support %}
+{% assign aSupport = aSupport | push: course.other_accessibility_support %}
+{% assign hasASupport = true %}
+{% endif %}
+
+
+Accessibility support
+: {% for s in aSupport %}
+* {{ s }}{% endfor %}
 {% unless hasASupport %}
 : Not provided
 {% endunless %}
+
 
 Length
 {% if course.length %}
@@ -92,22 +105,22 @@ Cost
 : {{ course.cost}}
 
 Availability
-: From {{ course.start_date | date: "%y %b, %d" }}{% if course.end_date %} 
-{% if course.end_date %} to {{ course.end_date | date: "%y %b, %d"  }}{% endif %}{% endif %}
+: From {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date %}
+{% if course.end_date %} to {{ course.end_date | date: "%-d %B %Y" }}{% endif %}{% endif %}
 
 Website
-: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
 
 Reviews page
 {% if course.reviews %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : Not provided
-{% endif %}      
-        
-This information was last updated on {{ course.info_last_updated | date: "%y %b, %d" }}.
-{% if course.course_content_last_update %}
-  The content of this resource was last updated on {{ course.content_last_updated | date: "%y %b, %d" }}.
-{% endif %} 
+{% endif %}
+
+This information was last updated on {{ course.info_last_updated | date: "%-d %B %Y" }}.
+{% if course.content_last_updated %}
+The content of this resource was last updated on {{ course.content_last_updated | date: "%-d %B %Y" }}.
+{% endif %}
 {% include excol.html type="end" %}
 {% include box.html type="end" %}

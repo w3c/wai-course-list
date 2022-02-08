@@ -23,23 +23,39 @@ footer: >
 <style> 
 {% include css/styles.css %}
 </style>
-<div class="header-sup">
-    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions to choose a resource. The page allows you to filter submissions to find ones that match your specific interest and need. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
+<a href="#left-col" class="button button--skip-link">Skip to filters</a>
+<a href="#courses-list" class="button button--skip-link">Skip to results</a>
+<div class="header-sup" id="main">
+    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
     {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-a-resource" %}
     <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
     </em></p>
 </div>
+{% assign defaultSort = site.data.sorting.first.sortkey %}
+{% include sort-data-folder.liquid data=site.data.courses sortKey=defaultSort %} 
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2>Filters</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
-                <legend class="label">{{ filter.name }}</legend>
+                <legend class="label">
+                {% if filter.info %}
+                <details class="helper">
+                    <summary>
+                        {{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+                    </summary>
+                    {% assign helper = site.data.helpers | where: "id", filter.id %}
+                    <div>{{ helper[0].description }}</div>
+                </details>
+                {% else %}
+                    {{ filter.name }}
+                {% endif %}
+                </legend>
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
-                    <label for="filter-{{ option.id }}">{{ option.name }}</label>
+                    <label for="filter-{{ option.id }}"><span class='filterName'>{{ option.name }}</span> <span class="filterPreCounter"></span></label>
                 </div>
                 {% endfor %}
             </fieldset>
@@ -64,16 +80,7 @@ footer: >
                     </select>
                 </div>
             </fieldset>
-            {% assign orderedCountries = "" | split: "," %}
-            {% for country in countriesAvailable %}
-                {% assign nCountry = "" %}
-                {% assign nCountry =  nCountry | append: site.data.countries[country].name | append: ',' %} 
-                {% assign nCountry =  nCountry | append: site.data.countries[country].nativeName | append: ',' %} 
-                {% assign nCountry =  nCountry | append: country | append: ',' %} 
-                {% assign nCountry =  nCountry | split: "," %}  
-                {% assign orderedCountries = orderedCountries | push: nCountry %}
-            {% endfor %}
-            {% assign orderedCountries = orderedCountries | sort %}
+            {% include sort-countries.liquid data=countriesAvailable %}
             <fieldset id="contry-filter">
                 <legend>Country</legend>
                 <div class="filter-options field">
@@ -95,23 +102,39 @@ footer: >
         </div>
     </div>
     <div id="courses-list">
-        <span id="status">
-            <p id="total-courses">Showing {{ site.data.courses | size }} results</p>
-        </span>
-        <div class="field" class="sort-by">
-            <label for="select">Sort by</label>
-            <select id="select">
-                <option selected="selected">Alphabetically (A to Z)</option>
-                <option>Most recently updated</option>
-            </select>
-        </div>        
-        {% include excol.html type="all" %}
+        <div class="courses-list-header">
+            <div class="field">
+                <input type="search" id="search" placeholder="Search courses">
+            </div>
+            <span id="status">
+                <h4 id="total-courses">{{ itemsSorted | size }} courses</h4>
+            </span>
+            <div class="field" class="sort-by">
+                <h4><label for="select">Sort by</label></h4>
+                <select id="select" class="field">
+                    {% for sort in site.data.sorting %}
+                        {% if sort.selected == "true" %}
+                            <option value="{{ sort.id }}" selected>{{ sort.name }}</option>
+                        {% else %}
+                            <option value="{{ sort.id }}">{{ sort.name }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+            </div>       
+        </div>
+        <div id="filter-courses-info"></div>
         {% include_cached button.html label="Clear filters" class="clear-button"%}
-        {% include sort-data-folder.liquid data=site.data.courses sortKey="name" %} 
+        {% include excol.html type="all" %}
+        <div class="courses-list">
+            {% for course in itemsSorted %}
+                {% include course.liquid %}
+            {% endfor %}            
+        </div>
+        <!--         
         {% for course in itemsSorted %}
             {% include course.liquid %}
         {% endfor %}    
-    </div>
+ -->    </div>
     
 </div>
 <div class="button-submit-end">

@@ -28,9 +28,9 @@ main > header { grid-column: 4 / span 4; }
 
 <a href="../course-list">Back to List of Courses</a>
 <p>
-  This form allows you to provide information about courses, training, and certification on web accessibility. For update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+  This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 
-<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
+<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
 
 {% include netlify-form.liquid type="start" id="form-submit-a-course" %}
   <h2 id="about-you">About you</h2>
@@ -56,32 +56,37 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-provider" class="label-input">Provider (Required)</label>
       <input type="text" id="course-provider" required>
   </div>
-{% assign orderedCountries = "" | split: "," %}
-{% for country in site.data.countries %}
-  {% assign nCountry = "" %}
-  {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
-  {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
-  {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
-  {% assign nCountry =  nCountry | split: "," %}  
-  {% assign orderedCountries = orderedCountries | push: nCountry %}
-{% endfor %}
-{% assign orderedCountries = orderedCountries | sort %}
-  <div class="field" id="divSelectCountry">
-      <label for="course-country" class="label-input">Country (Required)</label>
-      <p class="expl">Indicate by which country or countries this resource is provided.</p>
-      <select name="country" id="country" class="field-country select-form" required>
+  {% include sort-countries.liquid %} 
+
+  <fieldset class="field" id="country">
+    <legend class="label">Country (Required)</legend>
+    <p class="expl">Indicate by which country or countries this resource is provided.</p>
+    <div class="line">
+      <label for="course-country_1" class="label-input">Country 1 (Required)</label>
+      <select name="country" id="course-country_1" class="select-form" required>
           <option value=""></option>
           {% for country in orderedCountries %}
               <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
           {% endfor %}
       </select>
-      {% include_cached button.html type="fake" label="Add new country" class="small fake button-new-country" %}
-  </div>
+    </div>
+    <div class="proto">
+      <label for="course-country_[n]" class="label-input">Country [n]</label>
+      <select name="country" id="course-country_[n]" class="select-form" required>
+          <option value=""></option>
+          {% for country in orderedCountries %}
+              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+          {% endfor %}
+      </select>    
+      </div>
+    <button type="button" class="add-line small">Add new country</button>
+    <button type="button" class="remove-line small" disabled>Remove last country</button>
+  </fieldset>
 
   <div class="field">
       <label for="course-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of this resource (max.: 300 chars).</p>
-      <textarea id="course-description" required></textarea>
+      <p class="expl">Provide a brief description of this resource (max.: 350 chars).</p>
+      <textarea id="course-description" maxlength="350" required></textarea>
       <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
 
@@ -158,24 +163,40 @@ main > header { grid-column: 4 / span 4; }
     </div>
   </fieldset>
 
-  <div class="field" id="divInputPrerequisite">
-      <label for="course-prerequisites" class="label-input">Prerequisites</label>
-      <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
-      <input type="text" id="prerequisites1" class="field-prerequisite">
-      {% include_cached button.html type="fake" label="Add new prerequisite" class="small fake button-new-prerequisite" %}
-  </div>
+  <fieldset class="field" id="course-prerequisites">
+    <legend class="label">Prerequisites</legend>
+    <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
+    <div class="line">
+      <label for="course-prerequisites_1" class="label-input">Prerequisite 1</label>
+      <input type="text" id="course-prerequisites_1" name="course-prerequisites">
+    </div>
+    <div class="proto">
+      <label for="course-prerequisites_[n]" class="label-input">Prerequisite [n]</label>
+      <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
+    </div>
+    <button type="button" class="add-line small">Add new prerequisite</button>
+    <button type="button" class="remove-line small" disabled>Remove last prerequisite</button>
+  </fieldset>
 
-  <div class="field" id="divInputTopic">
-      <label for="course-topics" class="label-input" required>Topics (Required)</label>
-      <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-      <input type="text" id="topics1" class="field-topic">
-      {% include_cached button.html type="fake" label="Add new topic" class="small fake button-new-topic" %}
-  </div>
+  <fieldset class="field" id="topics">
+    <legend class="label">Topics (Required)</legend>
+    <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
+    <div class="line">
+      <label for="course-topics_1" class="label-input">Topic 1 (Required)</label>
+      <input type="text" id="course-topics_1" name="course-topics" required>
+    </div>
+    <div class="proto">
+      <label for="course-topics_[n]" class="label-input">Topic [n]</label>
+      <input type="text" id="course-topics_[n]" name="course-topics" />
+    </div>
+    <button type="button" class="add-line small">Add new topic</button>
+    <button type="button" class="remove-line small" disabled>Remove last topic</button>
+  </fieldset>
 
-  <fieldset id="course-wai-curricula">
-    <legend><h3>WAI Curricula on Web Accessibility
-    <!-- {% include resource-link.html label="Curricula on Web Accessibility" href="https://www.w3.org/WAI/curricula/" %} -->
-    </h3></legend>
+  <fieldset class="field" id="course-wai-curricula">
+    <legend>
+      <h3>WAI Curricula on Web Accessibility</h3>
+    </legend>
     <p class="expl">  
     Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
     </p>
@@ -183,17 +204,32 @@ main > header { grid-column: 4 / span 4; }
       {% include wai-curricula.liquid %}
   </fieldset>
 
-  <div class="field" id="divSelectLang">
-      <label for="course-language" class="label-input">Language (Required)</label>
-      <p class="expl">Indicate in which language or languages this resource is provided.</p>
-      <select name="language" id="language1" class="field-language select-form" required> 
+
+  <fieldset class="field" id="language">
+    <legend class="label">Language (Required)</legend>
+    <p class="expl">Indicate in which language or languages this resource is provided.</p>
+    <div class="line">
+      <label for="course-language_1" class="label-input">Language 1 (Required)</label>
+      <select name="language" id="language_1" class="select-form" required> 
           <option value=""></option>
           {% for language in site.data.lang %}
               <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
           {% endfor %}
       </select>
-      {% include_cached button.html type="fake" label="Add new language" class="small fake button-new-lang" %}
-  </div>
+    </div>
+    <div class="proto">
+      <label for="course-language_[n]" class="label-input">Language [n]</label>
+      <select name="language" id="language_[n]" class="select-form" required> 
+          <option value=""></option>
+          {% for language in site.data.lang %}
+              <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
+          {% endfor %}
+      </select>
+      </div>
+    <button type="button" class="add-line small">Add new language</button>
+    <button type="button" class="remove-line small" disabled>Remove last language</button>
+  </fieldset>
+
 
   <fieldset class="field" id="course-format">
     <legend class="label">Format (Required)</legend>
@@ -219,11 +255,11 @@ main > header { grid-column: 4 / span 4; }
       <legend class="label">Scheduling (Required)</legend>
       <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-scheduled" name="course-learning-scheduled" group="learning" required>
+          <input type="checkbox" id="course-learning-scheduled" name="course-scheduling" group="learning" required>
           <label for="course-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
       </div>
       <div class="radio-field">
-          <input type="checkbox" id="course-learning-not-scheduled" name="course-learning-not-scheduled" group="learning">
+          <input type="checkbox" id="course-learning-not-scheduled" name="course-scheduling" group="learning">
           <label for="course-learning-not-scheduled">Unscheduled - participants can attend at their own pace</label>
       </div>
   </fieldset>
@@ -234,7 +270,7 @@ main > header { grid-column: 4 / span 4; }
       <input type="text" id="course-platform">
   </div>
   
-  <fieldset id="course-accessibility-support">
+  <fieldset class="field"  id="course-accessibility-support">
     <legend><h3>Accessibility support</h3></legend>
     <p class="expl">If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
     {% include accessibility-support.liquid %}
@@ -250,7 +286,7 @@ main > header { grid-column: 4 / span 4; }
     <legend class="label">Cost (Required)</legend>
     <div class="radio-field">
       <input type="radio" name="course-cost" id="course-cost-free">
-      <label for="course-cost-free">Free</label>
+      <label for="course-cost-free">Free of charge</label>
     </div> 
     <div class="radio-field">
       <input type="radio" name="course-cost" id="course-cost-free-certificates-for-purchase" required>
@@ -294,7 +330,6 @@ main > header { grid-column: 4 / span 4; }
       <label for="course-end-date" class="label-input">End date</label>
       <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
       <input type="date" id="course-end-date">
-      <!-- this course is provided at any time, self-paced-->
   </div>
   <h2>Submitting your course, training, or certification</h2>
   <div class="field">
@@ -302,12 +337,16 @@ main > header { grid-column: 4 / span 4; }
     <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
     <textarea id="comments"></textarea>
   </div>
-  <div class="field">
-    <label><input type="checkbox" required> The information I provided is correct according to the best of my knowledge.</label>
-  </div>
-  <div class="field">  
-    <label><input type="checkbox" required> I give permission for information for this resource to be published in the W3C's list of courses.</label>
-  </div>
+  <fieldset class="field">
+    <div class="radio-field">  
+      <input type="checkbox" id="check-correct-info" required> 
+      <label for="check-correct-info">The information I provided is correct according to the best of my knowledge (Required).</label>
+    </div>
+    <div class="radio-field">  
+      <input type="checkbox" id="check-publish-info" required> 
+      <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses (Required).</label>
+    </div>
+  </fieldset>
   <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
   <div class="field">
     <button type="submit">Send information</button>

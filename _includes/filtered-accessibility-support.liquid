@@ -1,6 +1,9 @@
 {%- assign filteredItems = "" | split: "," -%}
 {%- assign aGroups = site.data.accessibility-support | map: "options" -%}
 
+
+
+
 {%- for aSubGroup in aGroups -%}
     {%- for aSupport in aSubGroup -%}
         {% if include.data contains aSupport.id %}
