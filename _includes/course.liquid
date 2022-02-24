@@ -8,6 +8,7 @@
 #### Details
 {% include excol.html type="middle"%}
 
+
 {% assign country = "" | split: "," %}
 {% for countryIndex in course.country %}
 {% capture countryLabel %}
@@ -39,12 +40,20 @@ Topics
 : {% for topic in course.topics %}
 * {{ topic }}{% endfor %}
 
-WAI Curricula module
-{% if course.wai_curricula_link %}
-: <a href="{{ course.wai_curricula_link}}" rel="external">{{ course.wai_curricula }}</a>
-{% else %}
-: Not provided
-{% endif %}
+<details class="helper">
+<summary>
+WAI Curricula module: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+</summary>
+{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+<div>{{ helper[0].description }}</div>
+</details>
+
+{% if course.wai_curricula %}
+{% include filtered-wai-curricula.liquid data = course.wai_curricula %}
+{% for module in filteredItems %}
+* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}, {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}
+{% endfor %}
+{% else %} Not provided {% endif %}
 
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
@@ -57,11 +66,24 @@ Language
 : {{ language | join: ", "}}
 
 
-Format
-: {{ course.format}}
 
-Scheduling
-: {{ course.scheduling | join: ", "}}
+<details class="helper">
+<summary>
+Format: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+</summary>
+{% assign helper = site.data.helpers | where: "id", "format" %}
+<div>{{ helper[0].description }}</div>
+</details>
+{{ course.format}}
+
+<details class="helper">
+<summary>
+Scheduling: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
+</summary>
+{% assign helper = site.data.helpers | where: "id", "scheduling" %}
+<div>{{ helper[0].description }}</div>
+</details>
+{{ course.scheduling | join: ", "}}
 
 Platform
 {% if course.platform %}

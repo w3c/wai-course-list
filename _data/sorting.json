@@ -1,8 +1,14 @@
 [
     {
+        "id": "recentlyupdated",
+        "name": "Most recently updated",
+        "selected": "true",
+        "sortkey": "info_last_updated"
+    },
+    {
         "id": "alphabeticallyaz",
         "name": "Alphabetically (A to Z)",
-        "selected": "true",
+        "selected": "false",
         "sortkey": "title"
     },
     {
@@ -10,11 +16,5 @@
         "name": "Alphabetically (Z to A)",
         "selected": "false",
         "sortkey": "title"
-    },
-    {
-        "id": "recentlyupdated",
-        "name": "Most recently updated",
-        "selected": "false",
-        "sortkey": "info_last_updated"
     }
-]
+]   

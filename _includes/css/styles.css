@@ -88,7 +88,7 @@ main>header {
   cursor: pointer;
 }
 
-.select-form {
+.select_form {
   width: 100%;
   margin-top: 1em;
 }
@@ -165,12 +165,12 @@ details dt::after {
 
 }
 
-.label-input {
+.label_input {
   /* font-size: 1.25rem; */
   font-weight: 700;
 }
 
-#availability .label-input {
+#availability .label_input {
   margin-top: 1em;
 }
 
@@ -265,11 +265,11 @@ fieldset label:hover a:hover {
   display: none;
 }
 
-.add-line {
+.add_line {
   margin-top: 2em;
 }
 
-.line .select-form {
+.line .select_form {
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
@@ -320,13 +320,21 @@ fieldset label:hover a:hover {
 
 img.icon {
   --img-width: 15px;
+  cursor: pointer;
 }
 
-.helper div {
+
+.helper div{
   background-color: var(--cloudy-subtle);
   padding:0.5em;
-  margin: 0.5em;
   font-weight: normal;
   border: solid 1px var(--line-grey);
-  margin-left:-2em;
+  width: 98%;
+  margin-left: -2em !important;
+  margin-right: 2em !important;
 }
+
+summary {
+  font-weight: bold;
+}
+

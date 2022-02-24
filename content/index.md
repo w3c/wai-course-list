@@ -32,7 +32,7 @@ footer: >
     </em></p>
 </div>
 {% assign defaultSort = site.data.sorting.first.sortkey %}
-{% include sort-data-folder.liquid data=site.data.courses sortKey=defaultSort %} 
+{% include sort-data-folder.liquid data=site.data.submissions sortKey=defaultSort %} 
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
@@ -62,7 +62,7 @@ footer: >
             {% endfor %}
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
-            {% for course in site.data.courses %}
+            {% for course in site.data.submissions %}
                 {% assign langAvailable = langAvailable | concat: course[1].language %} 
                 {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
             {% endfor %}

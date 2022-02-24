@@ -1,0 +1,103 @@
+back_to_list_link: Back to List of Courses
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.
+about_you: About you
+about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.
+submitter_name_label: Name (Required)
+submitter_email_label: Email (Required)
+about_the_resource: About the resource
+about_the_resource_description: Provide some information about the course, training, or certification. This information will be publicly shared.
+title_label: Title (Required)
+provider_label: Provider (Required)
+country_legend: Country (Required)
+country_expl: Indicate by which country or countries this resource is provided.
+country1_label: Country 1 (Required) 
+countryn_label: Country
+description_label: Description (Required)
+description_expl: Provide a brief description of this resource (max. 350 chars).
+description_expl_details: Please enter only plain text (no HTML). URIs are not linked..
+type_label: Type of resource (Required)
+type_graduate: Graduate program
+type_undergraduate: Undergraduate program
+type_training: Training
+type_certification: Professional certification
+type_other: Other
+type_new: New
+audience_label: Audience (Required)
+audience_content_author: Content author
+audience_designer: Designer
+audience_developer: Developer
+audience_manager: Manager
+audience_tester: Tester
+audience_other: Other
+level_label: Level (Required)
+level_expl: Indicate the level of digital accessibility proficiency required.
+level_basic: Basic
+level_intermediate: Intermediate
+level_advanced: Advanced
+prerequisites_legend: Prerequisites (Required)
+prerequisites_expl: For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.
+prerequisites1_label: Prerequisite 1
+prerequisitesn_label: Prerequisite
+topics_legend: Topics (Required)
+topics_expl: For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.
+topics1_label: Topic 1 (Required)
+topicsn_label: Topic
+curricula_label: WAI Curricula on Web Accessibility (Required)
+curricula_expl: Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
+curricula_expl_details: If applicable, indicate the WAI Curricula modules covered.
+language_legend: Language (Required)
+language_expl: Indicate in which language or languages this resource is provided.
+language1_label: Language 1
+languagen_label: Language
+format_legend: Format (Required)
+format_label: Format (Required)
+format_face_to_face: Face-to-face - all teaching sessions are provided on-site
+format_online: Online - all teaching sessions are provided online
+format_hybrid: Hybrid - teaching sessions are provided simultaneously on-site and online
+format_blended: Blended - teaching sessions are provided either on-site or online
+scheduling_legend: Scheduling (Required)
+scheduling_expl: Indicate the type of activities provided in this resource. Choose as many as apply.
+learning_scheduled: Scheduled - participants are required to attend at a specific time
+learning_unscheduled: Unscheduled - participants can attend at their own pace
+platform_label: Platform
+platform_expl: If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.)
+asupport_legend: Accessibility support
+asupport_expl: If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.
+asupport_including: including
+asupport_other: Additional accessibility support
+length_label: Length
+length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
+cost_legend: Cost (Required)
+cost_free: Free of charge
+cost_free_certificates_for_purchase: Free with certificates for purchase
+cost_free_limited_time: Free for limited content or duration
+cost_free_or_reduced_for_some: Free or reduced fee for some
+cost_paid: Paid
+website_label: Website (Required)
+website_expl: Indicate the website containing more information about this resource.
+reviews_label: Reviews page
+reviews_expl: Indicate the web page containing reviews about this resource.
+content_update_label: Last updated (Required)
+content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
+availability_legend: Availability
+start_date_label: Start date (Required)
+start_date_expl: Indicate the start date for the period of time this resource will be available.
+end_date_label: End date
+end_date_expl: If applicable, indicate the end date for the period of time this resource will be available.
+submitting_your_resource: Submitting your course, training, or certification
+comments_label: Comments
+comments_expl: Let us know if you have any comments. This information will not be publicly shared.
+correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
+publish_info_label: I give permission for the information about this resource to be published in the W3C's List of Courses (Required).
+info_submission: When you submit the form, we will review your submission and add it to the list. This will be within a month.
+
+add_new_country_button: Add new country
+remove_last_country_button: Remove last country
+add_new_prerequisite_button: Add new prerequisite
+remove_last_prerequisite_button: Remove last prerequisite
+add_new_topic_button: Add last topic
+remove_last_topic_button: Remove last topic
+add_new_language_button: Add new language
+remove_last_language_button: Remove last language
+send_form_button: Send information

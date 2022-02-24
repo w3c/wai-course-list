@@ -5,23 +5,23 @@
 {% for option in support.options %}
 
 {% if option.options %}
-<p class="expl">{{ option.name }}, including: </p>
+<p class="expl">{{ option.name }}, {{strings.asupport_including}}: </p>
 {% for details in option.options %}
 <div class="radio-field">  
-    <input type="checkbox" id="course-{{ details.id }}" name="course-{{ details.id }}">
-    <label for="course-{{ details.id }}">{{ details.name }}</label>
+    <input type="checkbox" id="{{ details.id }}" name="{{ details.id }}" value="{{ details.id }}">
+    <label for="{{ details.id }}">{{ details.name }}</label>
 </div>
 {% endfor %}
 {% else %}
 <div class="radio-field">
-    <input type="checkbox" id="course-{{ option.id }}" name="course-{{ option.id }}">
-    <label for="course-{{ option.id }}">{{ option.name }}</label>
+    <input type="checkbox" id="{{ option.id }}" name="{{ option.id }}" value="{{ option.id }}">
+    <label for="{{ option.id }}">{{ option.name }}</label>
 </div>    
 {% endif %}
 {% endfor %}
 {% endfor %}
 
 <div class="field">
-    <label for="course-new-accessibility-support">Additional accessibility support</label>
-    <textarea id="course-new-accessibility-support"></textarea>
+    <label for="asupport_other">{{strings.asupport_other}}</label>
+    <textarea id="asupport_other"></textarea>
 </div>

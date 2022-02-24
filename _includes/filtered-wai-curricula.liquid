@@ -1,0 +1,31 @@
+
+{%- assign filteredItems = "" | split: "," -%}
+
+
+
+{%- for curricula in site.data.wai-curricula -%}
+
+{%- assign curriculaAux = "" | split: "," -%}
+
+    {%- assign modulesAux = "" | split: "," -%}
+
+    {%- assign curriculaAux = curriculaAux  | push : curricula.name -%}
+    
+    {% for module in curricula.modules  %}
+
+        {% if include.data contains module.id %}
+        
+            {%- assign moduleAux = "" | split: "," -%}
+            {%- assign moduleAux = moduleAux | push : module.id -%}
+            {%- assign moduleAux = moduleAux | push : module.name -%}
+            {%- assign moduleAux = moduleAux | push : module.link -%}
+            {%- assign modulesAux = modulesAux:  | push : moduleAux -%}
+
+        {% endif %}
+
+    {%- endfor -%}
+    
+    {%- assign curriculaAux = curriculaAux  | push : modulesAux -%}
+    {%- assign filteredItems = filteredItems  | push : curriculaAux -%}
+
+{%- endfor -%}

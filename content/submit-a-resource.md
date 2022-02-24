@@ -25,334 +25,313 @@ footer:
 {% include css/styles.css %}
 main > header { grid-column: 4 / span 4; }
 </style>
-
-<a href="../course-list">Back to List of Courses</a>
-<p>
-  This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
-
-<p><em>Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.</em></p> 
-
+{% assign strings = site.data.strings %}
 {% include netlify-form.liquid type="start" id="form-submit-a-course" %}
-  <h2 id="about-you">About you</h2>
-  <p>We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.</p>
+{% include sort-countries.liquid %} 
+{% include submission-form.liquid type="start" name="course_submission" version="1"%}
 
-  <div class="field">
-     <label for="submitter-name" class="label-input">Name (Required)</label>
-     <input type="text" id="submitter-name" required>
-   </div>
-   <div class="field">
-     <label for="submitter-email" class="label-input">Email (Required)</label>
-     <input type="email" id="submitter-email" required>
-  </div>
+<a href="../course-list">{{strings.back_to_list_link}}</a>
+<p>{{strings.sub_header_info_form}}</p> 
+<p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
-  <h2 id="the-resource">About the resource</h2>
-  <p>Provide some information about the course, training, or certification. This information will be publicly shared.</p>
+<h2 id="about_you">{{strings.about_you}}</h2>
+<p>{{strings.about_you_description}}</p>
 
-  <div class="field">
-      <label for="course-title" class="label-input">Title (Required)</label>
-      <input type="text" id="course-title" required>
-  </div>
-  <div class="field">
-      <label for="course-provider" class="label-input">Provider (Required)</label>
-      <input type="text" id="course-provider" required>
-  </div>
-  {% include sort-countries.liquid %} 
+<div class="field">
+  <label for="submitter_name" class="label_input">{{strings.submitter_name_label}}</label>
+    <input type="text" id="submitter_name" required>
+</div>
+<div class="field">
+  <label for="submitter_email" class="label_input">{{strings.submitter_email_label}}</label>
+    <input type="email" id="submitter_email" required>
+</div>
 
-  <fieldset class="field" id="country">
-    <legend class="label">Country (Required)</legend>
-    <p class="expl">Indicate by which country or countries this resource is provided.</p>
-    <div class="line">
-      <label for="course-country_1" class="label-input">Country 1 (Required)</label>
-      <select name="country" id="course-country_1" class="select-form" required>
-          <option value=""></option>
-          {% for country in orderedCountries %}
-              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
-          {% endfor %}
+<h2 id="the_resource">{{strings.about_the_resource}}</h2>
+<p>{{strings.about_the_resource_description}}</p>
+<div class="field">
+  <label for="title" class="label_input">{{strings.title_label}}</label>
+  <input type="text" id="title" required>
+</div>
+<div class="field">
+  <label for="provider" class="label_input">{{strings.provider_label}}</label>
+  <input type="text" id="provider" required>
+</div>
+<fieldset class="field" id="country">
+  <legend class="label">{{strings.country_legend}}</legend>
+  <p class="expl">{{strings.country_expl}}</p>
+  <div class="line">
+    <label for="country1" class="label_input">{{strings.country1_label}}</label>
+      <select name="country" id="country1" class="select_form" required>
+        <option value=""></option>
+        {% for country in orderedCountries %}
+        <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+        {% endfor %}
       </select>
-    </div>
-    <div class="proto">
-      <label for="course-country_[n]" class="label-input">Country [n]</label>
-      <select name="country" id="course-country_[n]" class="select-form" required>
-          <option value=""></option>
-          {% for country in orderedCountries %}
-              <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
-          {% endfor %}
-      </select>    
-      </div>
-    <button type="button" class="add-line small">Add new country</button>
-    <button type="button" class="remove-line small" disabled>Remove last country</button>
-  </fieldset>
-
-  <div class="field">
-      <label for="course-description" class="label-input">Description (Required)</label>
-      <p class="expl">Provide a brief description of this resource (max.: 350 chars).</p>
-      <textarea id="course-description" maxlength="350" required></textarea>
-      <p><em>Please enter only plain text (no HTML). URIs are not linked.</em></p>
   </div>
-
-  <fieldset class="field" id="course-type">
-    <legend class="label">Type of resource (Required)</legend>
-    <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-graduate" required>
-      <label for="course-type-graduate">Graduate program</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-undergraduate">
-      <label for="course-type-undergraduate">Undergraduate program</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-training">
-      <label for="course-type-training">Training</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-certification">
-      <label for="course-type-certification">Professional certification</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-type" id="course-type-other">
-      <label for="course-type-other">Other</label>
-    </div>  
-    <div>
-      <label for="course-new-type-course" class="visuallyhidden">Other</label>
-      <input type="text" id="course-new-type-course">
-    </div>
-  </fieldset>
-
-  <fieldset class="field" id="course-audience">
-    <legend class="label">Audience (Required)</legend>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-content-author" id="course-audience-content-author" value="course-audience-content-author" group="audience" required>
-      <label for="course-audience-content-author">Content author</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-designer" id="course-audience-designer" value="course-audience-designer" group="audience">
-      <label for="course-audience-designer">Designer</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-developer" id="course-audience-developer" value="course-audience-developer" group="audience">
-      <label for="course-audience-developer">Developer</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-manager" id="course-audience-manager" value="course-audience-manager" group="audience">
-      <label for="course-audience-manager">Manager</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-tester" id="course-audience-tester" value="course-audience-tester" group="audience">
-      <label for="course-audience-tester">Tester</label>
-    </div>
-    <div class="radio-field">
-      <input type="checkbox" name="course-audience-other" id="course-audience-other" value="course-audience-other" group="audience">
-      <label for="course-audience-other">Other</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field" id="course-level">
-    <legend class="label">Level (Required)</legend>
-    <p class="expl">Indicate the level of digital accessibility proficiency required.</p>
-    <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-basic">
-      <label for="course-level-basic">Basic</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-intermediate">
-      <label for="course-level-intermediate">Intermediate</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-level" id="course-level-advanced">
-      <label for="course-level-advanced">Advanced</label>
-    </div>
-  </fieldset>
-
-  <fieldset class="field" id="course-prerequisites">
-    <legend class="label">Prerequisites</legend>
-    <p class="expl">For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.</p>
-    <div class="line">
-      <label for="course-prerequisites_1" class="label-input">Prerequisite 1</label>
-      <input type="text" id="course-prerequisites_1" name="course-prerequisites">
-    </div>
-    <div class="proto">
-      <label for="course-prerequisites_[n]" class="label-input">Prerequisite [n]</label>
-      <input type="text" id="course-prerequisites_[n]" name="course-prerequisites" />
-    </div>
-    <button type="button" class="add-line small">Add new prerequisite</button>
-    <button type="button" class="remove-line small" disabled>Remove last prerequisite</button>
-  </fieldset>
-
-  <fieldset class="field" id="topics">
-    <legend class="label">Topics (Required)</legend>
-    <p class="expl">For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.</p>
-    <div class="line">
-      <label for="course-topics_1" class="label-input">Topic 1 (Required)</label>
-      <input type="text" id="course-topics_1" name="course-topics" required>
-    </div>
-    <div class="proto">
-      <label for="course-topics_[n]" class="label-input">Topic [n]</label>
-      <input type="text" id="course-topics_[n]" name="course-topics" />
-    </div>
-    <button type="button" class="add-line small">Add new topic</button>
-    <button type="button" class="remove-line small" disabled>Remove last topic</button>
-  </fieldset>
-
-  <fieldset class="field" id="course-wai-curricula">
-    <legend>
-      <h3>WAI Curricula on Web Accessibility</h3>
-    </legend>
-    <p class="expl">  
-    Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
-    </p>
-    <p class="expl">If applicable, indicate the WAI Curricula modules covered.</p>
-      {% include wai-curricula.liquid %}
-  </fieldset>
-
-
-  <fieldset class="field" id="language">
-    <legend class="label">Language (Required)</legend>
-    <p class="expl">Indicate in which language or languages this resource is provided.</p>
-    <div class="line">
-      <label for="course-language_1" class="label-input">Language 1 (Required)</label>
-      <select name="language" id="language_1" class="select-form" required> 
-          <option value=""></option>
-          {% for language in site.data.lang %}
-              <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
-          {% endfor %}
-      </select>
-    </div>
-    <div class="proto">
-      <label for="course-language_[n]" class="label-input">Language [n]</label>
-      <select name="language" id="language_[n]" class="select-form" required> 
-          <option value=""></option>
-          {% for language in site.data.lang %}
-              <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
-          {% endfor %}
-      </select>
-      </div>
-    <button type="button" class="add-line small">Add new language</button>
-    <button type="button" class="remove-line small" disabled>Remove last language</button>
-  </fieldset>
-
-
-  <fieldset class="field" id="course-format">
-    <legend class="label">Format (Required)</legend>
-    <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-face-to-face">
-      <label for="course-format-face-to-face">Face-to-face - all teaching sessions are provided on-site</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-online" required>
-      <label for="course-format-online">Online - all teaching sessions are provided online </label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-hybrid">
-      <label for="course-format-hybrid">Hybrid - teaching sessions are provided simultaneously on-site and online</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-format" id="course-format-blended">
-      <label for="course-format-blended">Blended - teaching sessions are provided either on-site or online</label>
-    </div>    
-  </fieldset>
-
-  <fieldset class="field" id="course-learning">
-      <legend class="label">Scheduling (Required)</legend>
-      <p class="expl">Indicate the type of activities provided in this resource. Choose as many as apply.</p>
-      <div class="radio-field">
-          <input type="checkbox" id="course-learning-scheduled" name="course-scheduling" group="learning" required>
-          <label for="course-learning-scheduled">Scheduled - participants are required to attend at a specific time</label>
-      </div>
-      <div class="radio-field">
-          <input type="checkbox" id="course-learning-not-scheduled" name="course-scheduling" group="learning">
-          <label for="course-learning-not-scheduled">Unscheduled - participants can attend at their own pace</label>
-      </div>
-  </fieldset>
-
-  <div class="field">
-      <label for="course-platform" class="label-input">Platform</label>
-      <p class="expl">If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.) </p>
-      <input type="text" id="course-platform">
+  <div class="proto">
+    <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
+    <select name="country" id="country_[n]" class="select_form" required>
+      <option value=""></option>
+      {% for country in orderedCountries %}
+      <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+      {% endfor %}
+    </select>    
   </div>
-  
-  <fieldset class="field"  id="course-accessibility-support">
-    <legend><h3>Accessibility support</h3></legend>
-    <p class="expl">If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.</p>
-    {% include accessibility-support.liquid %}
-  </fieldset>
-
-  <div class="field">
-      <legend class="label">Length</legend>
-      <p class="expl">Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).</p>
-      <input type="text" id="course-length">
+  <button type="button" class="add_line small">{{strings.add_new_country_button}}</button>
+  <button type="button" class="remove_line small" disabled>{{strings.remove_last_country_button}}</button>
+</fieldset>
+<div class="field">
+  <label for="description" class="label_input">{{strings.description_label}}</label>
+  <p class="expl">{{strings.description_expl}}</p>
+  <textarea id="description" maxlength="350" required></textarea>
+  <p><em>{{strings.description_expl_details}}</em></p>
+</div>
+<fieldset class="field" id="type">
+  <legend class="label">{{strings.type_label}}</legend>
+  <div class="radio-field">
+    <input type="radio" name="type" id="type_graduate" value="type_graduate" required>
+    <label for="type_graduate">{{strings.type_graduate}}</label>
   </div>
-
-  <fieldset class="field" id="course-cost">
-    <legend class="label">Cost (Required)</legend>
-    <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free">
-      <label for="course-cost-free">Free of charge</label>
-    </div> 
-    <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-certificates-for-purchase" required>
-      <label for="course-cost-free-certificates-for-purchase">Free with certificates for purchase</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-limited-time">
-      <label for="course-cost-free-limited-time">Free for limited content or duration</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-free-or-reduced-for-some">
-      <label for="course-cost-free-or-reduced-for-some">Free or reduced fee for some</label>
-    </div>
-    <div class="radio-field">
-      <input type="radio" name="course-cost" id="course-cost-paid">
-      <label for="course-cost-paid">Paid</label>
-    </div>  
-  </fieldset>
-
-  <div class="field">
-      <label for="course-website" class="label-input">Website (Required)</label>
-      <p class="expl">Indicate the website containing more information about this resource.</p>
-      <input type="url" name="course-website" id="course-website" required>
+  <div class="radio-field">
+    <input type="radio" name="type" id="type_undergraduate" value="type_undergraduate">
+    <label for="type_undergraduate">{{strings.type_undergraduate}}</label>
   </div>
-
-  <div class="field">
-      <label for="course-reviews-page" class="label-input">Reviews page</label>
-      <p class="expl">Indicate the web page containing reviews about this resource.</p>
-      <input type="url" name="course-reviews-page" id="course-reviews-page">
+  <div class="radio-field">
+    <input type="radio" name="type" id="type_training" value="type_training">
+    <label for="type_training">{{strings.type_training}}</label>
   </div>
-  <div class="field">
-      <label for="course-content-update"  class="label-input">Last updated (Required)</label>
-      <p class="expl">Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.</p>
-      <input type="date" id="course-content-update" required>
+  <div class="radio-field">
+    <input type="radio" name="type" id="type_certification" value="type_certification">
+    <label for="type_certification">{{strings.type_certification}}</label>
   </div>
-  <div class="field" id="availability">
-      <legend class="label">Availability</legend>
-      <label for="course-start-date" class="label-input">Start date (Required)</label>
-      <p class="expl">Indicate the start date for the period of time this resource will be available.</p>
-      <input type="date" id="course-start-date" required>
-      <label for="course-end-date" class="label-input">End date</label>
-      <p class="expl">If applicable, indicate the end date for the period of time this resource will be available.</p>      
-      <input type="date" id="course-end-date">
+  <div class="radio-field">
+    <input type="radio" name="type" id="type_other" value="type_other">
+    <label for="type_other">{{strings.type_other}}</label>
+  </div>  
+  <div>
+    <label for="type_new" class="visuallyhidden">{{strings.type_new}}</label>
+    <input type="text" id="type_new">
   </div>
-  <h2>Submitting your course, training, or certification</h2>
-  <div class="field">
-    <label for="comments" class="label-input">Comments</label>
-    <p class="expl">Let us know if you have any comments. This information will not be publicly shared.</p>
-    <textarea id="comments"></textarea>
+</fieldset>
+<fieldset class="field" id="audience">
+  <legend class="label">{{strings.audience_label}}</legend>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_content_author" id="audience_content_author" value="audience_content_author" group="audience" required>
+    <label for="audience_content_-_author">{{strings.audience_content_author}}</label>
   </div>
-  <fieldset class="field">
-    <div class="radio-field">  
-      <input type="checkbox" id="check-correct-info" required> 
-      <label for="check-correct-info">The information I provided is correct according to the best of my knowledge (Required).</label>
-    </div>
-    <div class="radio-field">  
-      <input type="checkbox" id="check-publish-info" required> 
-      <label for="confirmatin-publish-info">I give permission for the information about this resource to be published in the W3C's List of Courses (Required).</label>
-    </div>
-  </fieldset>
-  <p>When you submit the form, we will review your submission and add it to the list. This will be within a month.</p>
-  <div class="field">
-    <button type="submit">Send information</button>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_designer" id="audience_designer" value="audience_designer" group="audience">
+     <label for="audience_designer">{{strings.audience_designer}}</label>
   </div>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_developer" id="audience_developer" value="audience_developer" group="audience">
+    <label for="audience_developer">{{strings.audience_developer}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_manager" id="audience_manager" value="audience_manager" group="audience">
+    <label for="audience_manager">{{strings.audience_manager}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_tester" id="audience_tester" value="audience_tester" group="audience">
+    <label for="audience_tester">{{strings.audience_tester}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" name="audience_other" id="audience_other" value="audience_other" group="audience">
+    <label for="audience_other">{{strings.audience_other}}</label>
+  </div>
+</fieldset>
+ <fieldset class="field" id="level">
+  <legend class="label">{{strings.level_label}}</legend>
+  <p class="expl">{{strings.level_expl}}</p>
+  <div class="radio-field">
+    <input type="radio" name="level" id="level-basic" value="level-basic">
+    <label for="level-basic">{{strings.level_basic}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="level" id="level-intermediate" value="level-basic">
+    <label for="level-intermediate">{{strings.level_intermediate}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="level" id="level-advanced" value="level-basic">
+    <label for="level-advanced">{{strings.level_advanced}}</label>
+  </div>
+</fieldset>
+<fieldset class="field" id="prerequisites">
+  <legend class="label">{{strings.prerequisites_legend}}</legend>
+  <p class="expl">{{strings.prerequisites_expl}}</p>
+  <div class="line">
+    <label for="prerequisites_1" class="label_input">{{strings.prerequisites1_label}}</label>
+    <input type="text" id="prerequisites_1" name="prerequisites">
+  </div>
+  <div class="proto">
+    <label for="prerequisites_[n]" class="label_input">{{strings.prerequisitesn_label}} [n]</label>
+    <input type="text" id="prerequisites_[n]" name="prerequisites" />
+  </div>
+  <button type="button" class="add_line small">{{strings.add_new_prerequisite_button}}</button>
+  <button type="button" class="remove_line small" disabled>{{strings.remove_last_prerequisite_button}}</button>
+</fieldset>
+<fieldset class="field" id="topics">
+  <legend class="label">{{strings.topics_legend}}</legend>
+  <p class="expl">{{strings.topics_expl}}</p>
+  <div class="line">
+    <label for="topics_1" class="label_input">{{strings.topics1_label}}</label>
+    <input type="text" id="topics_1" name="topics" required>
+  </div>
+  <div class="proto">
+    <label for="topics_[n]" class="label_input">{{strings.topicsn_label}} [n]</label>
+    <input type="text" id="topics_[n]" name="topics" />
+  </div>
+  <button type="button" class="add_line small">{{strings.add_new_topic_button}}</button>
+  <button type="button" class="remove_line small" disabled>{{strings.remove_last_topic_button}}</button>
+</fieldset>
+<fieldset class="field" id="curricula">
+  <legend>
+    <h3>{{strings.curricula_label}}</h3>
+  </legend>
+  <p class="expl">{{strings.curricula_expl}}</p>
+  <p class="expl">{{strings.curricula_expl_details}}</p>
+    {% include wai-curricula.liquid %}
+</fieldset>
+<fieldset class="field" id="language">
+  <legend class="label">{{strings.language_legend}}</legend>
+  <p class="expl">{{strings.language_expl}}</p>
+  <div class="line">
+    <label for="language_1" class="label_input">{{strings.language1_label}}</label>
+    <select name="language" id="language_1" class="select_form" required> 
+      <option value=""></option>
+      {% for language in site.data.lang %}
+      <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div class="proto">
+    <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
+    <select name="language" id="language_[n]" class="select_form" required> 
+      <option value=""></option>
+      {% for language in site.data.lang %}
+      <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
+      {% endfor %}
+    </select>
+  </div>
+  <button type="button" class="add_line small">{{strings.add_new_language_button}}</button>
+  <button type="button" class="remove_line small" disabled>{{strings.remove_last_language_button}}</button>
+</fieldset>
+<fieldset class="field" id="format">
+  <legend class="label">{{strings.format_legend}}</legend>
+  <div class="radio-field">
+    <input type="radio" name="format" id="format_face_to_face" value="format_face_to_face">
+    <label for="format-face-to-face">{{strings.format_face_to_face}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="format" id="format_online"  value="format_online">
+    <label for="format-online">{{strings.format_online}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="format" id="format_hybrid" value="format_hybrid">
+    <label for="format-hybrid">{{strings.format_hybrid}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="format" id="format_blended" value="format_blended">
+    <label for="format-blended">{{strings.format_blended}}</label>
+  </div>    
+</fieldset>
+<fieldset class="field" id="scheduling">
+  <legend class="label">{{strings.scheduling_legend}}</legend>
+  <p class="expl">{{strings.scheduling_expl}}</p>
+  <div class="radio-field">
+    <input type="checkbox" id="scheduling_scheduled" name="scheduling" group="scheduling" required>
+    <label for="scheduling_scheduled">{{strings.learning_scheduled}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="checkbox" id="scheduling_unscheduled" name="scheduling" group="scheduling">
+    <label for="scheduling_unscheduled">{{strings.learning_unscheduled}}</label>
+  </div>
+</fieldset>
+<div class="field">
+  <label for="platform" class="label_input">{{strings.platform_label}}</label>
+  <p class="expl">{{strings.platform_expl}}</p>
+  <input type="text" id="platform">
+</div>
+<fieldset class="field" id="accessibility-support">
+  <legend><h3>{{strings.asupport_legend}}</h3></legend>
+  <p class="expl">{{strings.asupport_expl}}</p>
+  {% include accessibility-support.liquid %}
+</fieldset>
+<div class="field">
+  <legend class="label">{{strings.length_label}}</legend>
+  <p class="expl">{{strings.length_expl}}</p>
+  <input type="text" id="length">
+</div>
+<fieldset class="field" id="cost">
+  <legend class="label">{{strings.cost_legend}}</legend>
+  <div class="radio-field">
+    <input type="radio" name="cost" id="cost_free">
+    <label for="cost_free">{{strings.cost_free}}</label>
+  </div> 
+  <div class="radio-field">
+    <input type="radio" name="cost" id="cost_free_certificates_for_purchase" required>
+    <label for="cost_free_certificates_for_purchase">{{strings.cost_free_certificates_for_purchase}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="cost" id="cost_free_limited_time">
+    <label for="cost_free_limited_time">{{strings.cost_free_limited_time}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="cost" id="cost_free_or_reduced_for_some">
+    <label for="cost_free_or_reduced_for_some">{{strings.cost_free_or_reduced_for_some}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="cost" id="cost_paid">
+    <label for="cost_paid">{{strings.cost_paid}}</label>
+  </div>  
+</fieldset>
+<div class="field">
+  <label for="website" class="label_input">{{strings.website_label}}</label>
+  <p class="expl">{{strings.website_expl}}</p>
+  <input type="url" name="website" id="website" required>
+</div>
+<div class="field">
+  <label for="reviews" class="label_input">{{strings.reviews_label}}</label>
+  <p class="expl">{{strings.reviews_expl}}</p>
+  <input type="url" name="reviews" id="reviews">
+</div>
+<div class="field">
+  <label for="content_update"  class="label_input">{{strings.content_update_label}}</label>
+  <p class="expl">{{strings.content_update_expl}}</p>
+  <input type="date" id="content_update" required>
+</div>
+<div class="field" id="availability">
+  <legend class="label">{{strings.availability}}</legend>
+  <label for="start-date" class="label_input">{{strings.start_date_label}}</label>
+  <p class="expl">{{strings.start_date_expl}}</p>
+  <input type="date" id="start_date" required>
+  <label for="end-date" class="label_input">{{strings.end_date_label}}</label>
+  <p class="expl">{{strings.end_date_expl}}</p>
+  <input type="date" id="end_date">
+</div>
+<h2>{{strings.submitting_your_resource}}</h2>
+<div class="field">
+  <label for="comments" class="label_input">{{strings.comments_label}}</label>
+  <p class="expl">{{strings.comments_expl}}</p>
+  <textarea id="comments"></textarea>
+</div>
+<fieldset class="field">
+  <div class="radio-field">  
+    <input type="checkbox" id="check_correct_info" required> 
+    <label for="check_correct_info">{{strings.correct_info_label}}</label>
+  </div>
+  <div class="radio-field">  
+    <input type="checkbox" id="check_publish_info" required> 
+    <label for="check_publish_info">{{strings.publish_info_label}}</label>
+  </div>
+</fieldset>
+<p>{{strings.info_submission}}</p>
+<div class="field">
+  <button type="submit">{{strings.send_form_button}}</button>
+</div>
 {% include netlify-form.liquid type="end"%}
 
 <script>
 {% include js/courses.js %}
 </script>
+{% include submission-form.liquid type="end"%}
