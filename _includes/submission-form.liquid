@@ -1,0 +1,61 @@
+{% comment %}
+  Netlify form integation
+
+      name - form name - required
+      version - version of form
+      action - url to send to - required
+      method - http verb  for submission - get or post (default post)
+      ref - form ref - sent in form hidden (default nil)
+{% endcomment %}
+
+{%- if include.type == 'start' -%}
+  {%- if include.action == nil -%}
+    {% assign action = "/.netlify/functions/form-action" %}
+  {% else %}
+    {% assign action = include.action %}
+  {%- endif -%}
+  {%- if include.method == nil -%}
+    {% assign method = "post" %}
+  {% else %}
+    {% assign method = include.method %}
+  {% endif -%}
+  {%- if firstForm == nil -%}
+    {% assign firstForm = true %}
+  {%- else -%}
+    {% assign firstForm = false %}
+  {% endif -%}
+
+  <form name="{{ include.name }}" method="{{ method }}" action="{{ action }}">
+    <input type="hidden" name="form_name" value="{{ include.name }}">
+    <input type="hidden" name="form_version" value="{{ include.version }}">
+    <input type="hidden" name="submission_ref" value="{{ include.ref }}">
+    <input type="hidden" name="submission_date" >
+{%- elsif include.type == 'end' -%}
+  </form>
+  {% if firstForm == true %}
+    <script>
+      // Adds check for one or more checkboxes in a required group
+      // TODO handle more than one form
+      const form = document.querySelector('form')
+      const submitButton = form.querySelector('button[type="submit"]')
+      submitButton.addEventListener('click', (event) => {
+        console.log('click')
+        const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
+        const groups = Array.from(requiredCheckboxes).map((n) => n.getAttribute('group'))
+        const uniqueGroups = [...new Set(groups)]
+
+        uniqueGroups.forEach((groupName) => {
+          const checkboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]`)
+          const checkedCheckboxs = form.querySelectorAll(`input[type="checkbox"][group="${groupName}"]:checked`)
+
+          // if any checkbox in the group is checked we removed required from them all
+          if (checkedCheckboxs.length) {
+            for (let checkbox of checkboxs) {
+              checkbox.required = false
+            }
+          }
+        })
+      })
+    </script>
+  {% endif %}
+{%- endif -%}
