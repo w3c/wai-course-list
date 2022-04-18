@@ -360,7 +360,7 @@ fieldset label:hover a:hover {
     margin: 0; 
     margin-right: .3em;
     margin-top: .2em;
-    content: url(/wai-course-list/content-images/wai-course-list/clear.svg) !important;
+    content: url(/content-images/wai-course-list/clear.svg) !important;
 }
 
 #filter-courses-info .div-clear-filters{

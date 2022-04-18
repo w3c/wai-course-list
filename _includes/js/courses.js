@@ -81,7 +81,7 @@ if (filterForm) {
     function filterJson(form) {
         //form = document.querySelector('[data-filter-form]');
 
-        var filtersOn = getActiveFiltersList(form);
+        var filtersOn = getActiveFiltersList(filterForm);
         var newResults = [];
         newResults = filterNewResultsList(filtersOn);
 

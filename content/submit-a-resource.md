@@ -26,12 +26,9 @@ footer:
 main > header { grid-column: 4 / span 4; }
 </style>
 {% assign strings = site.data.strings %}
-{% include netlify-form.liquid type="start" id="form-submit-a-course" %}
 {% include sort-countries.liquid %} 
-{% include submission-form.liquid type="start" name="course_submission" version="1"%}
 
-
-
+{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" -%}
 
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
@@ -39,7 +36,7 @@ main > header { grid-column: 4 / span 4; }
 <p>{{strings.sub_header_info_form}}</p> 
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
-<button type="button" class="start-preview">Start preview</button>
+
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
@@ -362,13 +359,12 @@ main > header { grid-column: 4 / span 4; }
   <button type="submit">{{strings.send_form_button}}</button>
 </div>
 
-{% include netlify-form.liquid type="end"%}
+{% include submission-form.liquid type="end"%}
 
 <script>
 {% include js/courses.js %}
 {% include js/preview.js %}
 </script>
-{% include submission-form.liquid type="end"%}
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
@@ -377,7 +373,7 @@ main > header { grid-column: 4 / span 4; }
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
   {% include_cached button.html type="icon" label=strings.back_to_form class="close_preview" icon="arrow-left" %}
-  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/wai-course-list/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
+  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
 
 </div>
 </div>

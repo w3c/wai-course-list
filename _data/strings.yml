@@ -54,13 +54,13 @@ content_updated: The content of this resource was last updated on
 back_to_list_link: Back to List of Courses
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. 
 # To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
-sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.
+sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.
 about_you: About you
-about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.
+about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission.
 submitter_name_label: Name (Required)
 submitter_email_label: Email (Required)
 about_the_resource: About the resource
-about_the_resource_description: Provide some information about the course, training, or certification. This information will be publicly shared.
+about_the_resource_description: Provide some information about the course, training, or certification.
 title_label: Title (Required)
 provider_label: Provider (Required)
 country_legend: Country (Required)

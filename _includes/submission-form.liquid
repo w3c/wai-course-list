@@ -56,6 +56,10 @@
           }
         })
       })
+      form.onsubmit = function(e) {    
+        e.preventDefault();
+        getPreviewSubmission();
+      };
     </script>
   {% endif %}
 {%- endif -%}

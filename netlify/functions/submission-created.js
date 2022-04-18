@@ -4,9 +4,9 @@ exports.handler = async function(event, context) {
 
     let body
     try { 
-        body = JSON.parse(event.body)
+        body = JSON.parse(event.body);
     } catch(e) { 
-        console.error(`Invalid JSON payload: ${event.body}`)
+        console.error('Invalid JSON payload: ${event.body}');
         return {
             statusCode: 500,
             body: 'Invalid JSON payload'
@@ -29,7 +29,7 @@ exports.handler = async function(event, context) {
             'User-Agent': 'W3C WAI Website list',
             'Accept': 'application/vnd.github.v3+json',
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.GITHUB_PAT}`,
+            'Authorization': 'Bearer ${process.env.GITHUB_PAT}',
             'Content-Length': reqBody.length
         }        
     }
@@ -40,9 +40,9 @@ exports.handler = async function(event, context) {
             res.on('data', (chunk) => (respBody += chunk.toString()))
             res.on('end', () => {
                 if (res.statusCode >= 200 && res.statusCode <= 299) {
-                    resolve({statusCode: res.statusCode, headers: res.headers, body: respBody})
+                    resolve({statusCode: res.statusCode, headers: res.headers, body: respBody});
                 } else {
-                    reject(`GitHub request failed. status: ${res.statusCode} body: ${respBody}`)
+                    reject('GitHub request failed. status: ${res.statusCode} body: ${respBody}');
                 }
             });
         })
@@ -51,13 +51,13 @@ exports.handler = async function(event, context) {
             console.error(error)
             reject( {
                 statusCode: 500,
-                body: `Error calling GitHub action - ${error}`
+                body: 'Error calling GitHub action - ${error}'
             })
         })    
     
-        req.write(reqBody)
-        req.end()
+        req.write(reqBody);
+        req.end();
     })
 
-    return await(gitHubRequest)
+    return await(gitHubRequest);
 }
