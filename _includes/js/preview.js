@@ -26,7 +26,7 @@ function getPreviewSubmission() {
 
     overlay.style.display = "flex";
 
-    const data = document.getElementById('form-submit-a-course');
+    const data = document.querySelector('form');
 
     var detailsPreview = document.querySelector(".details-preview");
 
