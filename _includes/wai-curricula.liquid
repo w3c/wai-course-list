@@ -3,7 +3,7 @@
 <p class="fieldset-subtitles">{{ curricula.name }}</p>
 {% for modules in curricula.modules %}
 <div class="radio-field">
-    <input type="checkbox" id="{{ modules.id }}" name="{{ modules.id }}">
+    <input type="checkbox" id="{{ modules.id }}" name="curricula[]" group="curricula">
     <label for="{{ modules.id }}">{{ modules.name }}</label>
 </div>
 {% endfor %}

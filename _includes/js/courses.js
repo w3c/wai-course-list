@@ -2,7 +2,7 @@
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
-const submitForm = document.querySelector('#form-submit-a-course');
+const submitForm = document.querySelector('form');
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
 const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
