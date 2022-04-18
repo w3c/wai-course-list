@@ -1,146 +1,139 @@
-[
-  {
-    "id": "type",
-    "name": "Type of resource",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "grad",
-        "name": "Graduate program"
-      },
-      {
-        "id": "undergraduate",
-        "name": "Undergraduate program"
-      },
-      {
-        "id": "training",
-        "name": "Training"
-      },
-      {
-        "id": "certification",
-        "name": "Professional certification"
-      },
-      {
-        "id": "other_type",
-        "name": "Other"
-      }                        
-    ]
-  },
-  {
-    "id": "audience",
-    "name": "Audience",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "content_author",
-        "name": "Content author"
-      },
-      {
-        "id": "designer",
-        "name": "Designer"
-      },
-      {
-        "id": "developer",
-        "name": "Developer"
-      },
-      {
-        "id": "manager",
-        "name": "Manager"
-      },
-      {
-        "id": "tester",
-        "name": "Tester"
-      },
-      {
-        "id": "other_audience",
-        "name": "Other"
-      }
-    ]
-  },
-  {
-    "id": "level",
-    "name": "Level",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "basic",
-        "name": "Basic"
-      },
-      {
-        "id": "intermediate",
-        "name": "Intermediate"
-      },
-      {
-        "id": "advanced",
-        "name": "Advanced"
-      }
-    ]
-  },
-  {
-    "id": "format",
-    "name": "Format",
-    "info": "true",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "face-to-face",
-        "name": "Face-to-face"
-      },
-      {
-        "id": "online",
-        "name": "Online"
-      },
-      {
-        "id": "hybrid",
-        "name": "Hybrid"
-      },
-      {
-        "id": "blended",
-        "name": "Blended"
-      }
-    ]
-  },
-  {
-    "id": "scheduling",
-    "name": "Scheduling",
-    "info": "true",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "scheduled",
-        "name": "Scheduled"
-      },
-      {
-        "id": "unscheduled",
-        "name": "Unscheduled"
-      }
-    ]
-  },
-  {
-    "id": "cost",
-    "name": "Cost",
-    "type": "checkbox",
-    "options": [
-      {
-        "id": "free",
-        "name": "Free of charge"
-      },
-      {
-        "id": "free_certificates_for_purchase",
-        "name": "Free with certificates for purchase"
-      },
-      {
-        "id": "free_limited_time",
-        "name": "Free for limited content or duration"
-      },
-      {
-        "id": "free_or_reduced_for_some",
-        "name": "Free or reduced fee for some"
-      },
-      {
-        "id": "paid",
-        "name": "Paid"
-      }
-    ]
-  }
+[{
+        "id": "type",
+        "name": "Type of resource",
+        "type": "checkbox",
+        "options": [{
+                "id": "grad",
+                "name": "Graduate program"
+            },
+            {
+                "id": "undergraduate",
+                "name": "Undergraduate program"
+            },
+            {
+                "id": "training",
+                "name": "Training"
+            },
+            {
+                "id": "certification",
+                "name": "Professional certification"
+            },
+            {
+                "id": "other_type",
+                "name": "Other"
+            }
+        ]
+    },
+    {
+        "id": "audience",
+        "name": "Audience",
+        "type": "checkbox",
+        "options": [{
+                "id": "content_author",
+                "name": "Content author"
+            },
+            {
+                "id": "designer",
+                "name": "Designer"
+            },
+            {
+                "id": "developer",
+                "name": "Developer"
+            },
+            {
+                "id": "manager",
+                "name": "Manager"
+            },
+            {
+                "id": "tester",
+                "name": "Tester"
+            },
+            {
+                "id": "other_audience",
+                "name": "Other"
+            }
+        ]
+    },
+    {
+        "id": "level",
+        "name": "Level",
+        "type": "checkbox",
+        "options": [{
+                "id": "basic",
+                "name": "Basic"
+            },
+            {
+                "id": "intermediate",
+                "name": "Intermediate"
+            },
+            {
+                "id": "advanced",
+                "name": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": "format",
+        "name": "Format",
+        "info": "true",
+        "type": "checkbox",
+        "options": [{
+                "id": "face-to-face",
+                "name": "Face-to-face"
+            },
+            {
+                "id": "online",
+                "name": "Online"
+            },
+            {
+                "id": "hybrid",
+                "name": "Hybrid"
+            },
+            {
+                "id": "blended",
+                "name": "Blended"
+            }
+        ]
+    },
+    {
+        "id": "scheduling",
+        "name": "Scheduling",
+        "info": "true",
+        "type": "checkbox",
+        "options": [{
+                "id": "scheduled",
+                "name": "Scheduled"
+            },
+            {
+                "id": "unscheduled",
+                "name": "Unscheduled"
+            }
+        ]
+    },
+    {
+        "id": "cost",
+        "name": "Cost",
+        "type": "checkbox",
+        "options": [{
+                "id": "free",
+                "name": "Free of charge"
+            },
+            {
+                "id": "free_certificates_for_purchase",
+                "name": "Free with certificates for purchase"
+            },
+            {
+                "id": "free_limited_time",
+                "name": "Free for limited content or duration"
+            },
+            {
+                "id": "free_or_reduced_for_some",
+                "name": "Free or reduced fee for some"
+            },
+            {
+                "id": "paid",
+                "name": "Paid"
+            }
+        ]
+    }
 ]

@@ -1,5 +1,59 @@
+show_all_info: Show all additional information
+hide_all_info: Hide all additional information
+show_info: Show info
+hide_info: Hide info
+other: Other
+
+courses: courses
+not_provided: Not provided
+
+# List strings
+
+skip_to_filters: Skip to filters
+skip_to_results: Skip to results
+sub_header_info_list: This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.
+button_to_form_label: Submit a course, training, or certification
+sub_header_note: Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
+filters_title: Filters
+select_option_default: Select an option
+disclaimer_title: Important Disclaimer
+disclaimer_text:
+  <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
+  <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p>
+  <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
+showing: Showing
+sortby_title: Sort by
+clear_filters_button_label: Clear filters
+
+
+# Details strings
+details: Details
+country: Country
+type_resource: Type of resource
+audience: Audience
+level: Level
+prerequisites: Prerequisites
+topics: Topics
+wai_curricula: WAI Curricula on Web Accessibility
+language: Language
+format: Format
+scheduling: Scheduling
+platform: Platform
+accessibility_support: Accessibility support
+length: Length
+cost: Cost
+availability: Availability
+availability_from: From
+availability_to: to
+website: Website
+reviews_page: Reviews page
+info_updated: This information was last updated on
+content_updated: The content of this resource was last updated on
+
+# Form strings
 back_to_list_link: Back to List of Courses
-sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. 
+# To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information (except your name and email) will be publicly available as this page generates a Pull Request on our GitHub repository.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will not be publicly shared.
@@ -11,11 +65,11 @@ title_label: Title (Required)
 provider_label: Provider (Required)
 country_legend: Country (Required)
 country_expl: Indicate by which country or countries this resource is provided.
-country1_label: Country 1 (Required) 
+country1_label: Country 1 (Required)
 countryn_label: Country
 description_label: Description (Required)
 description_expl: Provide a brief description of this resource (max. 350 chars).
-description_expl_details: Please enter only plain text (no HTML). URIs are not linked..
+description_expl_details: Please enter only plain text (no HTML). URIs are not linked.
 type_label: Type of resource (Required)
 type_graduate: Graduate program
 type_undergraduate: Undergraduate program
@@ -35,7 +89,7 @@ level_expl: Indicate the level of digital accessibility proficiency required.
 level_basic: Basic
 level_intermediate: Intermediate
 level_advanced: Advanced
-prerequisites_legend: Prerequisites (Required)
+prerequisites_legend: Prerequisites
 prerequisites_expl: For example, accessibility concepts and terminology, W3C Accessibility Standards, basic knowledge of HTML and CSS, etc.
 prerequisites1_label: Prerequisite 1
 prerequisitesn_label: Prerequisite
@@ -43,7 +97,7 @@ topics_legend: Topics (Required)
 topics_expl: For example, accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc.
 topics1_label: Topic 1 (Required)
 topicsn_label: Topic
-curricula_label: WAI Curricula on Web Accessibility (Required)
+curricula_label: WAI Curricula on Web Accessibility
 curricula_expl: Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
 curricula_expl_details: If applicable, indicate the WAI Curricula modules covered.
 language_legend: Language (Required)
@@ -96,8 +150,14 @@ add_new_country_button: Add new country
 remove_last_country_button: Remove last country
 add_new_prerequisite_button: Add new prerequisite
 remove_last_prerequisite_button: Remove last prerequisite
-add_new_topic_button: Add last topic
+add_new_topic_button: Add new topic
 remove_last_topic_button: Remove last topic
 add_new_language_button: Add new language
 remove_last_language_button: Remove last language
 send_form_button: Send information
+
+# Preview submission
+preview_title: Review your submission
+preview_info: Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.
+quit_preview: Close Preview
+back_to_form: Go back to the form

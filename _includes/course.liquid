@@ -5,7 +5,7 @@
 {% include box.html type="start" title=course_title id=course.title %}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
-#### Details
+#### {{ strings.details }}
 {% include excol.html type="middle"%}
 
 
@@ -16,44 +16,51 @@
 {% endcapture %}
 {% assign country = country | push: countryLabel %}
 {% endfor %}
-Country
+{{strings.country}}
 : {{ country | join: ", "}}
 
-Type of resource
+{{ strings.type_resource }}
 : {{ course.type }}
 
-Audience
+{{ strings.audience }}
 : {{ course.audience | join: ", " }}
 
-Level
+{{ strings.level }}
 : {{ course.level}}
 
-Prerequisites
+{{ strings.prerequisites }}
 {% if course.prerequisites %}
 : {% for prerequisite in course.prerequisites %}
 * {{ prerequisite }}{% endfor %}
 {% else %}
-: Not provided
+: {{ strings.not_provided }}
 {% endif %}
 
-Topics
+{{ strings.topics }}
 : {% for topic in course.topics %}
 * {{ topic }}{% endfor %}
 
-<details class="helper">
-<summary>
-WAI Curricula module: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-</summary>
-{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div>{{ helper[0].description }}</div>
-</details>
 
-{% if course.wai_curricula %}
 {% include filtered-wai-curricula.liquid data = course.wai_curricula %}
+{{ strings.wai_curricula }}
+{% if course.wai_curricula %}
+: 
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+<div class="helperinfo" id="info_about_curricula{{ course.id }}" hidden="hidden">
+    <p>{{ helper[0].description }}</p>
+</div>
 {% for module in filteredItems %}
-* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}, {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}
-{% endfor %}
-{% else %} Not provided {% endif %}
+* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}, {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endfor %}
+{% else %}
+: {{ strings.not_provided }}
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.id }}" data-target="#info_about_wai_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+<div class="helperinfo" id="info_about_wai_curricula{{ course.id }}" hidden="hidden">
+    <p>{{ helper[0].description }}</p>
+</div>
+{% endif %}
+
 
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
@@ -62,34 +69,33 @@ WAI Curricula module: {% include image.html src="info.svg" alt="alternative text
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
-Language
+{{ strings.language }}
 : {{ language | join: ", "}}
 
 
 
-<details class="helper">
-<summary>
-Format: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-</summary>
+{{ strings.format }}
 {% assign helper = site.data.helpers | where: "id", "format" %}
-<div>{{ helper[0].description }}</div>
-</details>
-{{ course.format}}
+: {{ course.format}}
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format{{ course.id }}" data-target="#info_about_format{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_format{{ course.id }}" hidden="hidden">
+    <p>{{ helper[0].description }}</p>
+</div>
 
-<details class="helper">
-<summary>
-Scheduling: {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-</summary>
+
+{{ strings.scheduling }}
 {% assign helper = site.data.helpers | where: "id", "scheduling" %}
-<div>{{ helper[0].description }}</div>
-</details>
-{{ course.scheduling | join: ", "}}
+: {{ course.scheduling | join: ", "}}
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.id }}" data-target="#info_about_scheduling{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_scheduling{{ course.id }}" hidden="hidden">
+    <p>{{ helper[0].description }}</p>
+</div>
 
-Platform
+{{ strings.platform }}
 {% if course.platform %}
 : {{ course.platform}}
 {% else %}
-: Not provided
+: {{ strings.not_provided }}
 {% endif %}
 
 
@@ -108,41 +114,41 @@ Platform
 {% endif %}
 
 
-Accessibility support
+{{ strings.accessibility_support }}
 : {% for s in aSupport %}
 * {{ s }}{% endfor %}
 {% unless hasASupport %}
-: Not provided
+: {{ strings.not_provided }}
 {% endunless %}
 
 
-Length
+{{ strings.length }}
 {% if course.length %}
 : {{ course.length }}
 {% else %}
-: Not provided
+: {{ strings.not_provided }}
 {% endif %}
 
-Cost
+{{ strings.cost }}
 : {{ course.cost}}
 
-Availability
-: From {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date %}
-{% if course.end_date %} to {{ course.end_date | date: "%-d %B %Y" }}{% endif %}{% endif %}
+{{ strings.availability }}
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date %}
+{% if course.end_date %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}{% endif %}
 
-Website
+{{ strings.website }}
 : <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
 
-Reviews page
+{{ strings.reviews_page }}
 {% if course.reviews %}
 : <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
 {% else %}
-: Not provided
+: {{ strings.not_provided }}
 {% endif %}
 
-This information was last updated on {{ course.info_last_updated | date: "%-d %B %Y" }}.
+{{ strings.info_updated }} {{ course.info_last_updated | date: "%-d %B %Y" }}.
 {% if course.content_last_updated %}
-The content of this resource was last updated on {{ course.content_last_updated | date: "%-d %B %Y" }}.
+{{ strings.content_updated }} {{ course.content_last_updated | date: "%-d %B %Y" }}.
 {% endif %}
 {% include excol.html type="end" %}
 {% include box.html type="end" %}

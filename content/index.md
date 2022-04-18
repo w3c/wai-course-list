@@ -23,12 +23,13 @@ footer: >
 <style> 
 {% include css/styles.css %}
 </style>
-<a href="#left-col" class="button button--skip-link">Skip to filters</a>
-<a href="#courses-list" class="button button--skip-link">Skip to results</a>
+{% assign strings = site.data.strings %}
+<a href="#left-col" class="button button--skip-link">{{ strings.skip_to_filters }}</a>
+<a href="#courses-list" class="button button--skip-link">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
-    <p>This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.</p>
-    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-a-resource" %}
-    <p><em>Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
+    <p>{{ strings.sub_header_info_list }}</p>
+    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
+    <p><em> {{ strings.sub_header_note }}
     </em></p>
 </div>
 {% assign defaultSort = site.data.sorting.first.sortkey %}
@@ -36,22 +37,21 @@ footer: >
 <div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
-            <h2>Filters</h2>
+            <h2>{{ strings.filters_title }}</h2>
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
-                <legend class="label">
                 {% if filter.info %}
-                <details class="helper">
-                    <summary>
-                        {{ filter.name }} {% include image.html src="info.svg" alt="alternative text" class="icon" %}
-                    </summary>
-                    {% assign helper = site.data.helpers | where: "id", filter.id %}
-                    <div>{{ helper[0].description }}</div>
-                </details>
+                <legend class="label">{{ filter.name }}</legend>
+                <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false"
+                        aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}"
+                        data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+                {% assign helper = site.data.helpers | where: "id", filter.id %}
+                <div class="helperinfo" id="info_about{{ filter.name}}" hidden="hidden">
+                    <p>{{ helper[0].description }}</p>
+                </div>
                 {% else %}
-                    {{ filter.name }}
+                 <legend class="label">{{ filter.name }}</legend>
                 {% endif %}
-                </legend>
                 {% for option in filter.options %}
                 <div class="filter-options field">
                     <input type="{{ filter.type }}" id="filter-{{ option.id }}" name="{{ option.id }}">
@@ -72,7 +72,7 @@ footer: >
                 <legend>Language</legend>
                 <div class="filter-options field">
                     <select name="language" id="language">
-                        <option value="">--Select an option--</option>
+                        <option value="">--{{ strings.select_option_default }}--</option>
                         {% for language in langAvailable %}
                         <option value="{{ language }}">{{ site.data.lang[language].name }} ({{
                             site.data.lang[language].nativeName}})</option>
@@ -85,7 +85,7 @@ footer: >
                 <legend>Country</legend>
                 <div class="filter-options field">
                     <select name="country" id="country">
-                        <option value="">--Select an option--</option>
+                        <option value="">--{{ strings.select_option_default }}--</option>
                         {% for country in orderedCountries %}
                         <option value="{{ country[2] }}">{{ country[0] }} ({{ country[1] }})</option>
                         {% endfor %}
@@ -93,12 +93,10 @@ footer: >
                 </div>
             </fieldset>
         </form>
-        {% include_cached button.html label="Clear filters" class="clear-button"%}
+        {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
         <div id="disclaimer">
-            <h2>Important Disclaimer</h2>
-            <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
-            <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p>
-            <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
+            <h2>{{ strings.disclaimer_title }}</h2>
+            {{ strings.disclaimer_text }}
         </div>
     </div>
     <div id="courses-list">
@@ -106,11 +104,8 @@ footer: >
             <div class="field">
                 <input type="search" id="search" placeholder="Search courses">
             </div>
-            <span id="status">
-                <h4 id="total-courses">{{ itemsSorted | size }} courses</h4>
-            </span>
             <div class="field" class="sort-by">
-                <h4><label for="select">Sort by</label></h4>
+                <h4><label for="select">{{ strings.sortby_title }}</label></h4>
                 <select id="select" class="field">
                     {% for sort in site.data.sorting %}
                         {% if sort.selected == "true" %}
@@ -120,10 +115,21 @@ footer: >
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>       
+            </div>     
         </div>
-        <div id="filter-courses-info"></div>
-        {% include_cached button.html label="Clear filters" class="clear-button"%}
+        <div id="status" tabindex="0">
+            <h4 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} {{ strings.courses }}</span></h4>
+        </div>  
+        <div class="box hidden-element results-box">
+            <div id="filter-courses-info" class="box-h">
+                <h4 id="default-results-title">Current filter criteria</h4>
+                <h4 id="no-results-title">Sorry, but no courses match the following criteria:</h4>
+                <div class="div-clear-filters">
+                    {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button" %}
+                </div>
+            </div>
+            <div class="details-criteria box-i"></div>
+        </div>
         {% include excol.html type="all" %}
         <div class="courses-list">
             {% for course in itemsSorted %}
@@ -138,7 +144,7 @@ footer: >
     
 </div>
 <div class="button-submit-end">
-    {% include_cached button.html type="link" label="Submit a course, training, or certification" class="more" href="submit-a-resource" %}  
+    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}  
 </div>
 
 <script>
