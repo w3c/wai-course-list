@@ -258,11 +258,11 @@ main > header { grid-column: 4 / span 4; }
   <legend class="label_input">{{strings.scheduling_legend}}</legend>
   <p class="expl">{{strings.scheduling_expl}}</p>
   <div class="radio-field">
-    <input type="checkbox" id="scheduling_scheduled" name="scheduling[]" group="scheduling" required>
+    <input type="checkbox" id="scheduling_scheduled" name="scheduling[]" value="scheduling_scheduled" group="scheduling" required>
     <label for="scheduling_scheduled">{{strings.learning_scheduled}}</label>
   </div>
   <div class="radio-field">
-    <input type="checkbox" id="scheduling_unscheduled" name="scheduling[]" group="scheduling">
+    <input type="checkbox" id="scheduling_unscheduled" name="scheduling[]" value="scheduling_unscheduled" group="scheduling">
     <label for="scheduling_unscheduled">{{strings.learning_unscheduled}}</label>
   </div>
 </fieldset>
