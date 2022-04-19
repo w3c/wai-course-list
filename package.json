@@ -3,7 +3,6 @@
       "test": "playwright test --project firefox --headed"
     },
     "devDependencies": {
-      "@playwright/test": "^1.19.1",
       "uuid": "8.3.2"
     }
   }
