@@ -81,7 +81,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form input_hidden">
+    <select name="country" id="country_[n]" class="select_form input_hidden" disabled>
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -159,16 +159,16 @@ main > header { grid-column: 4 / span 4; }
   <legend class="label_input">{{strings.level_label}}</legend>
   <p class="expl">{{strings.level_expl}}</p>
   <div class="radio-field">
-    <input type="radio" name="level" id="level-basic" value="level-basic">
-    <label for="level-basic">{{strings.level_basic}}</label>
+    <input type="radio" name="level" id="level_basic" value="level_basic">
+    <label for="level_basic">{{strings.level_basic}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="level" id="level-intermediate" value="level_intermediate">
-    <label for="level-intermediate">{{strings.level_intermediate}}</label>
+    <input type="radio" name="level" id="level_intermediate" value="level_intermediate">
+    <label for="level_intermediate">{{strings.level_intermediate}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="level" id="level-advanced" value="level_advanced">
-    <label for="level-advanced">{{strings.level_advanced}}</label>
+    <input type="radio" name="level" id="level_advanced" value="level_advanced">
+    <label for="level_advanced">{{strings.level_advanced}}</label>
   </div>
 </fieldset>
 
@@ -181,7 +181,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="prerequisites_[n]" class="label_input">{{strings.prerequisitesn_label}} [n]</label>
-    <input type="text" id="prerequisites_[n]" name="prerequisites" class="input_hidden"  />
+    <input type="text" id="prerequisites_[n]" name="prerequisites" class="input_hidden" disabled />
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_prerequisite_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_prerequisite_button}}</button>
@@ -196,7 +196,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="topics_[n]" class="label_input">{{strings.topicsn_label}} [n]</label>
-    <input type="text" id="topics_[n]" name="topics" class="input_hidden" />
+    <input type="text" id="topics_[n]" name="topics" class="input_hidden" disabled/>
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_topic_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_topic_button}}</button>
@@ -223,7 +223,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language" id="language_[n]" class="select_form input_hidden"> 
+    <select name="language" id="language_[n]" class="select_form input_hidden" disabled> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -254,16 +254,16 @@ main > header { grid-column: 4 / span 4; }
   </div>    
 </fieldset>
 
-<fieldset class="field fieldset_check" id="scheduling">
+<fieldset class="field fieldset_check" id="learning">
   <legend class="label_input">{{strings.scheduling_legend}}</legend>
   <p class="expl">{{strings.scheduling_expl}}</p>
   <div class="radio-field">
-    <input type="checkbox" id="scheduling_scheduled" name="scheduling[]" value="scheduling_scheduled" group="scheduling" required>
-    <label for="scheduling_scheduled">{{strings.learning_scheduled}}</label>
+    <input type="checkbox" id="learning_scheduled" name="learning[]" value="learning_scheduled" group="learning" required>
+    <label for="learning_scheduled">{{strings.learning_scheduled}}</label>
   </div>
   <div class="radio-field">
-    <input type="checkbox" id="scheduling_unscheduled" name="scheduling[]" value="scheduling_unscheduled" group="scheduling">
-    <label for="scheduling_unscheduled">{{strings.learning_unscheduled}}</label>
+    <input type="checkbox" id="learning_unscheduled" name="learning[]" value="learning_unscheduled" group="learning">
+    <label for="learning_unscheduled">{{strings.learning_unscheduled}}</label>
   </div>
 </fieldset>
 
@@ -292,16 +292,16 @@ main > header { grid-column: 4 / span 4; }
     <label for="cost_free">{{strings.cost_free}}</label>
   </div> 
   <div class="radio-field">
-    <input type="radio" name="cost" id="cost_free_certificates_for_purchase" value="cost_free_certificates_for_purchase">
-    <label for="cost_free_certificates_for_purchase">{{strings.cost_free_certificates_for_purchase}}</label>
+    <input type="radio" name="cost" id="cost_certificates_for_purchase" value="cost_certificates_for_purchase">
+    <label for="cost_certificates_for_purchase">{{strings.cost_certificates_for_purchase}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="cost" id="cost_free_limited_time" valye="cost_free_limited_time">
-    <label for="cost_free_limited_time">{{strings.cost_free_limited_time}}</label>
+    <input type="radio" name="cost" id="cost_limited_time" valye="cost_limited_time">
+    <label for="cost_limited_time">{{strings.cost_limited_time}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="cost" id="cost_free_or_reduced_for_some"  value="cost_free_or_reduced_for_some">
-    <label for="cost_free_or_reduced_for_some">{{strings.cost_free_or_reduced_for_some}}</label>
+    <input type="radio" name="cost" id="cost_reduced_for_some"  value="cost_reduced_for_some">
+    <label for="cost_reduced_for_some">{{strings.cost_reduced_for_some}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_paid" value="cost_paid">

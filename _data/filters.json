@@ -1,25 +1,25 @@
 [{
-        "id": "type",
+        "id": "type_resource",
         "name": "Type of resource",
         "type": "checkbox",
         "options": [{
-                "id": "grad",
+                "id": "type_graduate",
                 "name": "Graduate program"
             },
             {
-                "id": "undergraduate",
+                "id": "type_undergraduate",
                 "name": "Undergraduate program"
             },
             {
-                "id": "training",
+                "id": "type_training",
                 "name": "Training"
             },
             {
-                "id": "certification",
+                "id": "type_certification",
                 "name": "Professional certification"
             },
             {
-                "id": "other_type",
+                "id": "type_other",
                 "name": "Other"
             }
         ]
@@ -29,27 +29,27 @@
         "name": "Audience",
         "type": "checkbox",
         "options": [{
-                "id": "content_author",
+                "id": "audience_content_author",
                 "name": "Content author"
             },
             {
-                "id": "designer",
+                "id": "audience_designer",
                 "name": "Designer"
             },
             {
-                "id": "developer",
+                "id": "audience_developer",
                 "name": "Developer"
             },
             {
-                "id": "manager",
+                "id": "audience_manager",
                 "name": "Manager"
             },
             {
-                "id": "tester",
+                "id": "audience_tester",
                 "name": "Tester"
             },
             {
-                "id": "other_audience",
+                "id": "audience_other",
                 "name": "Other"
             }
         ]
@@ -59,15 +59,15 @@
         "name": "Level",
         "type": "checkbox",
         "options": [{
-                "id": "basic",
+                "id": "level_basic",
                 "name": "Basic"
             },
             {
-                "id": "intermediate",
+                "id": "level_intermediate",
                 "name": "Intermediate"
             },
             {
-                "id": "advanced",
+                "id": "level_advanced",
                 "name": "Advanced"
             }
         ]
@@ -78,19 +78,19 @@
         "info": "true",
         "type": "checkbox",
         "options": [{
-                "id": "face-to-face",
+                "id": "format_face_to_face",
                 "name": "Face-to-face"
             },
             {
-                "id": "online",
+                "id": "format_online",
                 "name": "Online"
             },
             {
-                "id": "hybrid",
+                "id": "format_hybrid",
                 "name": "Hybrid"
             },
             {
-                "id": "blended",
+                "id": "format_blended",
                 "name": "Blended"
             }
         ]
@@ -101,11 +101,11 @@
         "info": "true",
         "type": "checkbox",
         "options": [{
-                "id": "scheduled",
+                "id": "learning_scheduled",
                 "name": "Scheduled"
             },
             {
-                "id": "unscheduled",
+                "id": "learning_unscheduled",
                 "name": "Unscheduled"
             }
         ]
@@ -115,23 +115,23 @@
         "name": "Cost",
         "type": "checkbox",
         "options": [{
-                "id": "free",
+                "id": "cost_free",
                 "name": "Free of charge"
             },
             {
-                "id": "free_certificates_for_purchase",
+                "id": "cost_certificates_for_purchase",
                 "name": "Free with certificates for purchase"
             },
             {
-                "id": "free_limited_time",
+                "id": "cost_limited_time",
                 "name": "Free for limited content or duration"
             },
             {
-                "id": "free_or_reduced_for_some",
+                "id": "cost_reduced_for_some",
                 "name": "Free or reduced fee for some"
             },
             {
-                "id": "paid",
+                "id": "cost_paid",
                 "name": "Paid"
             }
         ]

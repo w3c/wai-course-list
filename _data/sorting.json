@@ -3,7 +3,7 @@
         "id": "recentlyupdated",
         "name": "Most recently updated",
         "selected": "true",
-        "sortkey": "info_last_updated"
+        "sortkey": "submission_date"
     },
     {
         "id": "alphabeticallyaz",

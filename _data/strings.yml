@@ -5,13 +5,14 @@ hide_info: Hide info
 other: Other
 
 courses: courses
+course: course
 not_provided: Not provided
 
 # List strings
 
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
-sub_header_info_list: This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add or update information about a course, training, or certification on web accessibility, please use the following button.
+sub_header_info_list: This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add information about a course, training, or certification on web accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
 sub_header_note: Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
 filters_title: Filters
@@ -24,6 +25,8 @@ disclaimer_text:
 showing: Showing
 sortby_title: Sort by
 clear_filters_button_label: Clear filters
+searchterm: Searchterm
+
 
 
 # Details strings
@@ -124,9 +127,9 @@ length_label: Length
 length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
 cost_legend: Cost (Required)
 cost_free: Free of charge
-cost_free_certificates_for_purchase: Free with certificates for purchase
-cost_free_limited_time: Free for limited content or duration
-cost_free_or_reduced_for_some: Free or reduced fee for some
+cost_certificates_for_purchase: Free with certificates for purchase
+cost_limited_time: Free for limited content or duration
+cost_reduced_for_some: Free or reduced fee for some
 cost_paid: Paid
 website_label: Website (Required)
 website_expl: Indicate the website containing more information about this resource.

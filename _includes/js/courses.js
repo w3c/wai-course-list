@@ -1,4 +1,5 @@
 {% include sort-data-folder.liquid data = site.data.submissions sortKey = "title" %}
+{% assign strings = site.data.strings %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
@@ -28,18 +29,18 @@ if (filterForm) {
     })
 
     filterForm.addEventListener('change', el => {
-        filterJson(filterForm);
+        filterJson();
     });
 
     sortForm.querySelector('select').addEventListener('change', el => {
-        filterJson(filterForm);
+        filterJson();
     });
 
     searchForm.addEventListener('keyup', el => {
-        filterJson(filterForm);
+        filterJson();
     });
     searchForm.addEventListener('search', () => {
-        filterJson(filterForm);
+        filterJson();
     })
 
 
@@ -66,9 +67,9 @@ if (filterForm) {
 
                 var currentFilterID = filterTypeFS.id;
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
-                var currentFilterValue = filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
 
-                criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [currentFilterValue] });
+                criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
+    
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
@@ -78,7 +79,7 @@ if (filterForm) {
         })
     }
 
-    function filterJson(form) {
+    function filterJson() {
         //form = document.querySelector('[data-filter-form]');
 
         var filtersOn = getActiveFiltersList(filterForm);
@@ -102,18 +103,19 @@ if (filterForm) {
 
             att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
                 if (filter.checked) {
-                    attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
+                    //attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
+                    attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
                 }
             })
-
             if (attValues.length > 0) {
                 activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
             }
 
             att.querySelectorAll('select').forEach(filter => {
                 attValues = [];
-                if (filter.value != "") {
-                    attValues.push(filter.value)
+                if (filter.value !== "") {
+                    
+                    attValues.push({optionID: filter.value, optionName: filter.options[filter.selectedIndex].text})
                     activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
                 }
 
@@ -121,18 +123,20 @@ if (filterForm) {
 
         });
 
+        //console.log(activeFiltersList);
         return activeFiltersList;
     }
 
     function filterNewResultsList(filtersOnList) {
         var newResultsList = [];
-
+        
         // by attribute
         filtersOnList.forEach(filter => {
+            
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
                     if (x[filter.filterId] !== undefined) {
-                        return x[filter.filterId].includes(r);
+                        return x[filter.filterId].includes(r.optionID);
                     } else {
                         return false;
                     }
@@ -165,7 +169,7 @@ if (filterForm) {
     }
 
     function rebuildList(newResults, filtersOn) {
-
+        
         const articles = coursesList.querySelectorAll('aside');
 
         //Sort items
@@ -192,18 +196,24 @@ if (filterForm) {
         })
         updateHeaderList(newResults, filtersOn);
         showFilterCounters(filterForm);
+        
         updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
+                
+        filtersOn.forEach(el => {
+            if(el.filterId === "language" || el.filterId === "country")
+                document.getElementById(el.filterId).value = el.filterValues[0].optionID;
+        })
+            
     }
 
     function updateSelectFilters(langs, countries) {
-
         langs = langs.flat();
         langs = [...new Set(langs)];
         selectLang = filterForm.querySelector('#language')
         selectLang.length = 0;
         var opt = document.createElement("option");
         opt.value = "";
-        opt.innerHTML = "--Select an option--";
+        opt.innerHTML = "--{{strings.select_option_default}}--";
         selectLang.appendChild(opt);
 
         countries = countries.flat();
@@ -212,7 +222,7 @@ if (filterForm) {
         selectCountry.length = 0;
         opt = document.createElement("option");
         opt.value = "";
-        opt.innerHTML = "--Select an option--";
+        opt.innerHTML = "--{{strings.select_option_default}}--";
         selectCountry.appendChild(opt);
 
         langs.forEach(l => {
@@ -232,6 +242,7 @@ if (filterForm) {
 
     function updateHeaderList(newResults, filtersOn) {
 
+        
         var listFiltersOnString = document.createElement('dl');
         var totalCoursesCounter = document.getElementById("total-courses");
 
@@ -243,35 +254,42 @@ if (filterForm) {
 
             var attValues = document.createElement('dd');
 
-            if (f.filterId == 'language')
-                attValues.innerText = jsonLang[f.filterValues[0]].name + " (" + jsonLang[f.filterValues[0]].nativeName + ")";
-            else if (f.filterId == 'country')
-                attValues.innerText = jsonCountry[f.filterValues[0]].name + " (" + jsonCountry[f.filterValues[0]].nativeName + ")";
-            else
-                attValues.innerText = f.filterValues.join(', ');
+            if (f.filterId == 'language' || f.filterId == 'country'){
+                attValues.innerText = f.filterValues[0].optionName;
+            }
+            else{
+                // attValues.innerText = f.filterValues.join(', ');
+                attValues.innerText = "";
+                f.filterValues.forEach((fv, i) => {
+                    attValues.innerText += fv.optionName;
+                    if (i != (f.filterValues.length - 1)) {
+                        attValues.innerText += "; ";
+                      }
+                })
+            }
+                
             listFiltersOnString.appendChild(attValues);
         });
 
+        totalCoursesCounter.innerText = "{{strings.showing}} ";
+        var newContent = document.createElement("span");
+            
+        totalCoursesCounter.appendChild(newContent);
 
+        document.querySelector('.excol-all').hidden = false;
+
+        newContent.innerText = Object.values(newResults).length + " {{strings.courses}}";
+        
         if (Object.values(newResults).length === 1) {
-            totalCoursesCounter.innerText = "Showing ";
-            totalCoursesCounter.appendChild(document.createElement("span").innerText = Object.values(newResults).length + " course");
-            document.querySelector('.excol-all').hidden = false;
-
-        } else {
-            totalCoursesCounter.innerText = "Showing ";
-            totaltext = document.createElement("span");
-            totaltext.innerText = Object.values(newResults).length + " courses";
-            totalCoursesCounter.appendChild(totaltext);
-            document.querySelector('.excol-all').hidden = false;
-        }
+            newContent.innerText = Object.values(newResults).length + " {{strings.course}}";
+        } 
 
         var searchTerm = searchForm.value;
 
 
         if (searchTerm.length > 0) {
             var attName = document.createElement('dt');
-            attName.innerText = "Searchterm: ";
+            attName.innerText = "{{strings.searchterm}}: ";
             listFiltersOnString.appendChild(attName);
 
             var attValues = document.createElement('dd');
@@ -330,7 +348,7 @@ if (filterForm) {
         filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
         filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
         document.getElementById("search").value = "";
-        filterJson(filterForm)
+        filterJson();
         hideClearButton(true);
     }
 
@@ -378,6 +396,7 @@ if (submitForm) {
 
                 proto.parentNode.insertBefore(newLine, proto);
 
+                newLine.querySelector('input, checkbox, select').disabled = false;
                 newLine.querySelector('input, checkbox, select').focus();
                 newLine.querySelector('input, checkbox, select').classList.remove('input_hidden');
 

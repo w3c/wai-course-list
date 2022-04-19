@@ -1,0 +1,77 @@
+{
+  "form_name": "submission",
+  "form_version": "1",
+  "submission_ref": "c1f34730-bf39-11ec-af6f-8d0d15d36157",
+  "submission_date": "2022-04-18T17:05:32.963Z",
+  "submitter_name": "Test Name",
+  "submitter_email": "email@test.com",
+  "title": "Accessibility principles",
+  "provider": "University of XYZ",
+  "country": [
+    "lu"
+  ],
+  "description": "In this course, you will be introduced to the basics of accessibility.",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_other"
+  ],
+  "level": "level_basic",
+  "prerequisites": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "topics": [
+    "Inclusive design"
+  ],
+  "wai_curricula": [
+    "foundations_modules1",
+    "foundations_modules2",
+    "foundations_modules3",
+    "foundations_modules4",
+    "foundations_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5"
+  ],
+  "language": [
+    "en",
+    "fr",
+    "es"
+  ],
+  "format": "format_online",
+  "scheduling": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "platform": "Zoom and Moodle",
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "length": "3 months",
+  "cost": "cost_certificates_for_purchase",
+  "website": "https://course.com",
+  "reviews": "https://course.com/reviews",
+  "content_update": "2022-04-01",
+  "start_date": "2022-09-01",
+  "end_date": "2023-06-30",
+  "comments": "Further comments.",
+  "check_correct_info": "on",
+  "check_publish_info": "on"
+}
