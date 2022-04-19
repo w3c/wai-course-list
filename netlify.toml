@@ -1,14 +1,24 @@
 [build]
 command = "git submodule update --init --remote && bundle exec jekyll build --config '_config.yml,_config_staging.yml'"
 publish = "_site"
+# always ignore github workflows
+# for the obscure pathspec syntax see https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
+ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ':(exclude).github/workflows/'"
 
 [build.environment]
 RUBY_VERSION = "2.6.2" 
 
 [[redirects]]
   from = "/"
-  to = "/link/to/page/"
+  to = "/course-list/"
 
 [dev]
-publish = "_site"
-framework = "#static"
+# NB on win64 (cmd or bash shells) --live reload is broken - s/-w --livereload/--no-watch
+command = "bundle exec jekyll serve -w --livereload --trace --config _config.yml,_config_staging.yml"
+
+[functions]
+directory = "functions"
+node_bundler = "esbuild"
+
+[[plugins]]
+package = "@netlify/plugin-functions-install-core"

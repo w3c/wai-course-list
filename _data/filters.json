@@ -1,0 +1,139 @@
+[{
+        "id": "type_resource",
+        "name": "Type of resource",
+        "type": "checkbox",
+        "options": [{
+                "id": "type_graduate",
+                "name": "Graduate program"
+            },
+            {
+                "id": "type_undergraduate",
+                "name": "Undergraduate program"
+            },
+            {
+                "id": "type_training",
+                "name": "Training"
+            },
+            {
+                "id": "type_certification",
+                "name": "Professional certification"
+            },
+            {
+                "id": "type_other",
+                "name": "Other"
+            }
+        ]
+    },
+    {
+        "id": "audience",
+        "name": "Audience",
+        "type": "checkbox",
+        "options": [{
+                "id": "audience_content_author",
+                "name": "Content author"
+            },
+            {
+                "id": "audience_designer",
+                "name": "Designer"
+            },
+            {
+                "id": "audience_developer",
+                "name": "Developer"
+            },
+            {
+                "id": "audience_manager",
+                "name": "Manager"
+            },
+            {
+                "id": "audience_tester",
+                "name": "Tester"
+            },
+            {
+                "id": "audience_other",
+                "name": "Other"
+            }
+        ]
+    },
+    {
+        "id": "level",
+        "name": "Level",
+        "type": "checkbox",
+        "options": [{
+                "id": "level_basic",
+                "name": "Basic"
+            },
+            {
+                "id": "level_intermediate",
+                "name": "Intermediate"
+            },
+            {
+                "id": "level_advanced",
+                "name": "Advanced"
+            }
+        ]
+    },
+    {
+        "id": "format",
+        "name": "Format",
+        "info": "true",
+        "type": "checkbox",
+        "options": [{
+                "id": "format_face_to_face",
+                "name": "Face-to-face"
+            },
+            {
+                "id": "format_online",
+                "name": "Online"
+            },
+            {
+                "id": "format_hybrid",
+                "name": "Hybrid"
+            },
+            {
+                "id": "format_blended",
+                "name": "Blended"
+            }
+        ]
+    },
+    {
+        "id": "scheduling",
+        "name": "Scheduling",
+        "info": "true",
+        "type": "checkbox",
+        "options": [{
+                "id": "learning_scheduled",
+                "name": "Scheduled"
+            },
+            {
+                "id": "learning_unscheduled",
+                "name": "Unscheduled"
+            }
+        ]
+    },
+    {
+        "id": "cost",
+        "name": "Cost",
+        "type": "checkbox",
+        "options": [{
+                "id": "cost_free",
+                "name": "Free of charge"
+            },
+            {
+                "id": "cost_certificates_for_purchase",
+                "name": "Free with certificates for purchase"
+            },
+            {
+                "id": "cost_limited_time",
+                "name": "Free for limited content or duration"
+            },
+            {
+                "id": "cost_reduced_for_some",
+                "name": "Free or reduced fee for some"
+            },
+            {
+                "id": "cost_paid",
+                "name": "Paid"
+            }
+        ]
+    }
+]

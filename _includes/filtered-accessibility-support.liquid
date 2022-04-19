@@ -1,0 +1,27 @@
+{%- assign filteredItems = "" | split: "," -%}
+{%- assign aGroups = site.data.accessibility-support | map: "options" -%}
+
+
+
+
+{%- for aSubGroup in aGroups -%}
+    {%- for aSupport in aSubGroup -%}
+        {% if include.data contains aSupport.id %}
+            {% assign aSupportAux = "" | split: "," %}
+            {% assign aSupportAux = aSupportAux | push: aSupport.id %}
+            {% assign aSupportAux = aSupportAux | push: aSupport.name %}
+            {% assign filteredItems  = filteredItems | push: aSupportAux %}
+        {% endif %}
+        {%- assign newASubGroups = aSupport | map: "options" -%}
+        {%- for newASubGroup in newASubGroups -%}
+            {%- for newASupport in newASubGroup -%}
+                {% if include.data contains newASupport.id %}
+                    {% assign aSupportAux = "" | split: "," %}
+                    {% assign aSupportAux = aSupportAux | push: newASupport.id %}
+                    {% assign aSupportAux = aSupportAux | push: newASupport.name %}
+                    {% assign filteredItems  = filteredItems | push: aSupportAux %}
+                {% endif %}
+            {%- endfor -%}
+        {%- endfor -%}
+    {%- endfor -%}
+{%- endfor -%}

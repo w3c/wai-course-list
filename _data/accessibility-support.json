@@ -1,0 +1,85 @@
+[
+    {
+        "id": "general-accessibility",
+        "type": "General accessibility",
+        "options": [
+            {
+                "id": "general-accessibility-material-ahead-of-time",
+                "name": "Material provided ahead of time, if requested"
+            },
+            {
+                "id": "general-accessibility-pre-check-available",
+                "name": "Pre-session technology check, if requested - dedicated time to participants set up any relevant technology or additional settings"
+            }
+        ]
+    },
+    {
+        "id": "digital-accessibility",
+        "type": "Digital accessibility",
+        "options": [
+            {
+                "id": "accessible-electronic-handout",
+                "name": "Handouts, slides, and other electronic material is accessible",
+                "options":[
+                    {
+                        "id": "digital-accessibility-caption-audio",
+                        "name": "<a href=\"https://www.w3.org/WAI/media/av/captions/\">Captions</a> and/or <a href=\"https://www.w3.org/WAI/media/av/transcripts/\">transcripts</a> for audio"
+                    },
+                    {
+                        "id": "digital-accessibility-text-and-visuals-can-be-resized",
+                        "name": "Text and important visuals can be resized without loss of content or functionality - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/resize-text\">Understanding Resize text guidance</a>"
+                    },
+                    {
+                        "id": "digital-accessibility-sufficient-contrast",
+                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">Contrast evaluation tools</a>"
+                    },
+                    {
+                        "id": "digital-accessibility-motions-or-animations",
+                        "name": "Reduced use of motion or animations - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/animation-from-interactions.html\">Understanding Animation from Interactions guidance</a>"
+                    },
+                    {
+                        "id": "digital-accessibility-description-of-visual-information",
+                        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - integrated description, audio description, or text description"
+                    },
+                    {
+                        "id": "digital-accessibility-all-content-meets-wcag",
+                        "name": "All content meets at least <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG</a> Level AA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "non-digital-accessibility",
+        "type": "Non-digital accessibility",
+        "options": [
+            {
+                "id": "non-digital-accessibility-accessible-facility",
+                "name": "Facility and area accessible to participants - for example, the building entrance, meeting room, presentation stage, and bathrooms are accessible"
+            },
+            {
+                "id": "non-digital-accessibility-assistive-listening-devices",
+                "name": "<a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#ald\">Assistive listening devices</a> (ALD), <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#terps\">interpreters</a>, and <a href=\"https://www.w3.org/WAI/teach-advocate/accessible-presentations/#captions\">captioners</a>, provided as needed"
+            },
+            {
+                "id": "accessible-format-handouts",
+                "name": "Handouts, slides, and other material in accessible formats",
+                "options": [
+                    {
+                        "id": "non-digital-accessibility-text-and-visuals-big-enough",
+                        "name": "Text and important visuals big enough to be read even from the back of the room"
+                    },
+                    {
+                        "id": "non-digital-accessibility-sufficient-contrast",
+                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+                    },
+                    {
+                        "id": "non-digital-accessibility-description-of-visual-information",
+                        "name": "<a href=\"https://www.w3.org/WAI/media/av/description/\">Description of visual information</a> - audio description and text description"
+                    }        
+                ]
+            }
+        ]
+    }
+]
+
