@@ -2,8 +2,7 @@
     "scripts": {
         "debug": "netlify dev --inspect"
     },
-    "devDependencies": {
-        "netlify-cli": "^10.0.0",
-        "uuid": "8.3.2"
+    "dependencies": {
+        "uuid": "^8.3.2"
     }
 }
