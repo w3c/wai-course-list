@@ -5,12 +5,15 @@
       version - version of form
       action - url to send to - required
       method - http verb  for submission - get or post (default post)
-      ref - form ref - sent in form hidden (default nil)
+      ref - form ref - sent in form hidden field (default nil)
+      success - url to redirect to when succeeded
+      failure - url to redirect to when failed
+
 {% endcomment %}
 
 {%- if include.type == 'start' -%}
   {%- if include.action == nil -%}
-    {% assign action = '/.netlify/functions/form-action' %}
+    {% assign action = "/.netlify/functions/form-action" %}
   {% else %}
     {% assign action = include.action %}
   {%- endif -%}
@@ -30,6 +33,8 @@
     <input type="hidden" name="form_version" value="{{ include.version }}">
     <input type="hidden" name="submission_ref" value="{{ include.ref }}">
     <input type="hidden" name="submission_date" >
+    <input type="hidden" name="success" value="{{ include.success }}">
+    <input type="hidden" name="failure" value="{{ include.failure }}">
 {%- elsif include.type == 'end' -%}
   </form>
   {% if firstForm == true %}
@@ -39,7 +44,6 @@
       const form = document.querySelector('form')
       const submitButton = form.querySelector('button[type="submit"]')
       submitButton.addEventListener('click', (event) => {
-        
         const requiredCheckboxes = form.querySelectorAll('input[type="checkbox"][required][group]')
         const groups = Array.from(requiredCheckboxes).map((n) => n.getAttribute('group'))
         const uniqueGroups = [...new Set(groups)]
