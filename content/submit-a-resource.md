@@ -32,6 +32,7 @@ main > header { grid-column: 4 / span 4; }
 {%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
 
 
+
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -250,7 +251,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="radio-field">
     <input type="radio" name="format" id="format_blended" value="format_blended">
     <label for="format_blended">{{strings.format_blended}}</label>
-  </div>
+  </div>    
 </fieldset>
 
 <fieldset class="field fieldset_check" id="learning">
