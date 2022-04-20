@@ -1,0 +1,63 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "No further comments.",
+  "content_update": "2022-04-01",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, comprising automatic tools and how to include users with disabilities.",
+  "end_date": "2022-11-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "en",
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 hours",
+  "level": "level_basic",
+  "platform": "",
+  "prerequisites": "Accessibility basic",
+  "provider": "Accessible University",
+  "reviews": "https://www.course.com/reviews",
+  "start_date": "2022-10-01",
+  "submission_date": "2022-04-20T09:57:29.982Z",
+  "submission_ref": "4a86bad0-c090-11ec-a60a-f3e31e27ea76",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Test Name",
+  "title": "Accessibility Testing",
+  "topics": [
+    "Inclusive design",
+    "Accessibility checks",
+    "Tools for accessibility evaluation",
+    "Barriers faced by people with disabilities"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundations_modules1",
+    "foundations_modules2",
+    "foundations_modules3",
+    "foundations_modules4",
+    "foundations_modules5"
+  ],
+  "website": "https://course.com"
+}
