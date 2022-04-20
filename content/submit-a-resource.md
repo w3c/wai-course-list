@@ -31,8 +31,6 @@ main > header { grid-column: 4 / span 4; }
 
 {%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
 
-<button type="button" class="start-preview">Start preview</button>
-
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
