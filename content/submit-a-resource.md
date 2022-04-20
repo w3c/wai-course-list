@@ -72,7 +72,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.country_expl}}</p>
   <div class="line">
     <label for="country1" class="label_input">{{strings.country1_label}}</label>
-      <select name="country" id="country1" class="select_form" required>
+      <select name="country[]" id="country1" class="select_form" required>
         <option value=""></option>
         {% for country in orderedCountries %}
         <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -81,7 +81,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
-    <select name="country" id="country_[n]" class="select_form input_hidden" disabled>
+    <select name="country[]" id="country_[n]" class="select_form input_hidden" disabled>
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -214,7 +214,7 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.language_expl}}</p>
   <div class="line">
     <label for="language_1" class="label_input">{{strings.language1_label}}</label>
-    <select name="language" id="language_1" class="select_form" required> 
+    <select name="language[]" id="language_1" class="select_form" required> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -223,7 +223,7 @@ main > header { grid-column: 4 / span 4; }
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language" id="language_[n]" class="select_form input_hidden" disabled> 
+    <select name="language[]" id="language_[n]" class="select_form input_hidden" disabled> 
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
