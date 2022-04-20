@@ -29,8 +29,7 @@
   "content_update": "2022-01-01",
   "cost": "cost_certificates_for_purchase",
   "country": [
-    "au",
-    ""
+    "au"
   ],
   "description": "This training provides an overview of basic accessibility concepts. You will develop a better understading about how people with disabilities interact with web content. This training also introduces accessibility standards and how to develop a web content in complience with current guidelines.",
   "end_date": "2022-12-31",
