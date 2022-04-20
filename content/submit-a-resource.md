@@ -26,6 +26,7 @@ footer:
 {% include css/styles.css %}
 main > header { grid-column: 4 / span 4; }
 </style>
+
 {% assign strings = site.data.strings %}
 {% include sort-countries.liquid %} 
 
@@ -87,7 +88,7 @@ function onSubmit(e) {
   <p class="expl">{{strings.country_expl}}</p>
   <div class="line">
     <label for="country1" class="label_input">{{strings.country1_label}}</label>
-    <select name="country" id="country1" class="select_form" required>
+    <select name="country[]" id="country1" class="select_form" required>
       <option value=""></option>
       {% for country in orderedCountries %}
       <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
