@@ -1,21 +1,33 @@
 // @ts-check
-// NETLIFY function to call a github repositry-dispatch Web hook
+// NETLIFY function to call a github repository-dispatch Web hook
 // when a form submission occurs
 
+const { debug } = require('console')
 const https = require('https')
 const { isArray } = require('util')
-const { v1: uuidv1 } = require('uuid') // use v1, timebased so unique each call
+const { v1: uuidv1 } = require('uuid') // use v1, time-based so unique each call
 
-// GitHub dispatch web hook handler used to triggerthe workflow
+// GitHub dispatch web hook handler used to trigger the workflow
 const GITHUB_DISPATCH_EVENT = 'form-submission'
-const GITHUB_URI = '/repos/w3c/wai-interactive-lists/dispatches'
 
 function callGitHubWebhook(formData) {
+  const repository = formData['repository'];
+  if (!repository) {
+    return {
+    statusCode: 500,
+    body: `Missing repository for GitHub Action`,
+  }}
+  const GITHUB_URI = `/repos/w3c/${repository}/dispatches`
+
+  // clone and clean up data
+  const data = {...formData}; // NB shallow copy. Semicolon as next line starts with [
+  ['repository', 'success', 'failure'].forEach((prop) => {delete data[prop]})
+
   const reqBody = `{
         "event_type": "${GITHUB_DISPATCH_EVENT}",
         "client_payload": {
           "form":
-            ${JSON.stringify(formData)}
+            ${JSON.stringify(data)}
           }
     }`
 
@@ -25,7 +37,7 @@ function callGitHubWebhook(formData) {
     path: GITHUB_URI,
     method: 'POST',
     headers: {
-      'User-Agent': 'W3C WAI Website list',
+      'User-Agent': `W3C WAI Website ${repository}`,
       Accept: 'application/vnd.github.v3+json',
       'Content-Type': 'application/json',
       Authorization: `Bearer ${process.env.GITHUB_PAT}`,
@@ -73,13 +85,12 @@ function formEncodedToPOJO(formEncoded) {
 
 exports.handler = async function (event, context) {
   const response = (code, redir, body) =>
-    ({ statusCode: redir ? 303 : code,     // this is the corect redirect code, UA will GET
+    ({ statusCode: redir ? 303 : code,     // this is the correct redirect code, UA will GET
       headers: { ...{"content-type": "application/json"}, ...(redir ? { "Location": redir } : {}) },
       body: body ? JSON.stringify(body, null, '  ') : ''
   })
 
   const mkURI = (path) => path ? `${event.headers.origin}${path}` : null
-
   if (event.httpMethod !== 'POST') {
     console.error(`Invalid http method: ${event.httpMethod}`)
     return { statusCode: 405, body: 'Method Not Allowed' }
@@ -99,7 +110,8 @@ exports.handler = async function (event, context) {
 
   console.info(`Processing form ${formData['form_name']} ${formData['submission_ref']}`)
 
-  return response(200, mkURI(formData['success']), formData )
+  // comment following out to stop GitHub action processing
+  // return response(200, mkURI(formData['success']), formData )
 
  // Invoke GitHub Action
   const res = await callGitHubWebhook(formData)

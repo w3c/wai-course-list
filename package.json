@@ -1,9 +1,10 @@
 {
-    "scripts": {
-      "test": "playwright test --project firefox --headed"
+    "scripts": {},
+    "dependencies": {
+        "uuid": "^8.3.2"
     },
     "devDependencies": {
-      "@playwright/test": "^1.19.1",
-      "uuid": "8.3.2"
+        "cd": "^0.3.3",
+        "netlify-cli": "^10.0.0"
     }
-  }
+}

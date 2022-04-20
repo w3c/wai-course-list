@@ -18,6 +18,7 @@ footer:
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
+<!-- markdownlint-disable no-inline-html -->
 
 <div style="grid-column: 4 / span 4">
 
@@ -28,7 +29,7 @@ main > header { grid-column: 4 / span 4; }
 {% assign strings = site.data.strings %}
 {% include sort-countries.liquid %} 
 
-{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" -%}
+{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
 
 <button type="button" class="start-preview">Start preview</button>
 
@@ -251,7 +252,7 @@ main > header { grid-column: 4 / span 4; }
   <div class="radio-field">
     <input type="radio" name="format" id="format_blended" value="format_blended">
     <label for="format_blended">{{strings.format_blended}}</label>
-  </div>    
+  </div>
 </fieldset>
 
 <fieldset class="field fieldset_check" id="learning">
