@@ -48,7 +48,7 @@
     "es"
   ],
   "format": "format_online",
-  "scheduling": [
+  "learning": [
     "learning_scheduled",
     "learning_unscheduled"
   ],

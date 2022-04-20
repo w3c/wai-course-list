@@ -50,7 +50,7 @@
     "es"
   ],
   "format": "format_hybrid",
-  "scheduling": [
+  "learning": [
     "learning_scheduled",
     "learning_unscheduled"
   ],
