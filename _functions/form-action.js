@@ -104,7 +104,7 @@ exports.handler = async function (event, context) {
 
   const formData = formEncodedToPOJO(event.body)
 
-  // new id if not in form - v1 date based to avoid dupications
+  // new id if not in form - v1 date based to avoid duplications
   formData['submission_ref'] = formData['submission_ref'] || uuidv1()
   formData['submission_date'] = (new Date).toISOString()
 
