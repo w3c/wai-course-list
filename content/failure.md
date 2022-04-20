@@ -1,5 +1,5 @@
 ---
-title: 'Form Submitted'
+title: 'Something went wrong'
 permalink: /failure
 ---
 <div style="grid-column: 2 / span 6">
