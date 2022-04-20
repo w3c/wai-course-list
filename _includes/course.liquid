@@ -30,7 +30,7 @@
 : {{ strings[course.level] }}
 
 {{ strings.prerequisites }}
-{% if course.prerequisites %}
+{% if course.prerequisites != "" %}
 : {{ course.prerequisites | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
@@ -83,14 +83,14 @@
 
 {{ strings.scheduling }}
 {% assign helper = site.data.helpers | where: "id", "scheduling" %}
-: {% for cb in course.scheduling %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
+: {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.id }}" data-target="#info_about_scheduling{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.id }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 
 {{ strings.platform }}
-{% if course.platform %}
+{% if course.platform != "" %}
 : {{ course.platform}}
 {% else %}
 : {{ strings.not_provided }}
@@ -121,7 +121,7 @@
 
 
 {{ strings.length }}
-{% if course.length %}
+{% if course.length != "" %}
 : {{ course.length }}
 {% else %}
 : {{ strings.not_provided }}
@@ -131,15 +131,14 @@
 : {{ strings[course.cost]}}
 
 {{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}
-{% if course.end_date %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
 
 {{ strings.website }}
-: <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }} {% include_cached icon.html name="external-link" %}</a>
 
 {{ strings.reviews_page }}
-{% if course.reviews %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
+{% if course.reviews != "" %}
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }} {% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
