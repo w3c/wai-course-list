@@ -10,6 +10,7 @@
         ref - form ref - sent in form hidden field (default nil)
         success - url to redirect to when succeeded
         failure - url to redirect to when failed
+        onsubmit - function to call for onsubmit event
         args - string of args to pass to function "foo:bar,wibble:wobble"
 
       end - end of form
@@ -31,6 +32,9 @@
     {% assign firstForm = true %}
   {%- else -%}
     {% assign firstForm = false %}
+  {% endif -%}
+  {%- if include.onsubmit %}
+    {% assign onsubmit = include.onsubmit %}
   {% endif -%}
 
   <form name="{{ include.name }}" method="{{ method }}" action="{{ action }}">
@@ -72,10 +76,9 @@
           }
         })
       })
-      form.onsubmit = function(e) {    
-        e.preventDefault();
-        getPreviewSubmission();
-      };
+    {%- if onsubmit %}
+      form.onsubmit = {{ onsubmit }}
+    {% endif -%}
     </script>
   {% endif %}
 {%- endif -%}

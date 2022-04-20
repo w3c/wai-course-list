@@ -29,7 +29,21 @@ main > header { grid-column: 4 / span 4; }
 {% assign strings = site.data.strings %}
 {% include sort-countries.liquid %} 
 
-{%- include submission-form.liquid type="start" name="submission" version="1" success="/success.html" failure="/failure.html" args="repository:wai-course-list" -%}
+<script>
+  // TODO this may not be the best place for the handler
+function onSubmit(e) {
+  e.preventDefault();
+  getPreviewSubmission();
+};
+</script>
+
+{%- include submission-form.liquid type="start"
+                                   name="submission"
+                                   version="1"
+                                   success="/success.html"
+                                   failure="/failure.html"
+                                   args="repository:wai-course-list"
+                                   onsubmit="onSubmit" -%}
 
 <button type="button" class="start-preview">Start preview</button>
 
@@ -73,12 +87,12 @@ main > header { grid-column: 4 / span 4; }
   <p class="expl">{{strings.country_expl}}</p>
   <div class="line">
     <label for="country1" class="label_input">{{strings.country1_label}}</label>
-      <select name="country" id="country1" class="select_form" required>
-        <option value=""></option>
-        {% for country in orderedCountries %}
-        <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
-        {% endfor %}
-      </select>
+    <select name="country" id="country1" class="select_form" required>
+      <option value=""></option>
+      {% for country in orderedCountries %}
+      <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
+      {% endfor %}
+    </select>
   </div>
   <div class="proto">
     <label for="country_[n]" class="label_input">{{strings.countryn_label}} [n]</label>
@@ -87,7 +101,7 @@ main > header { grid-column: 4 / span 4; }
       {% for country in orderedCountries %}
       <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
       {% endfor %}
-    </select>    
+    </select>
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_country_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_country_button}}</button>
