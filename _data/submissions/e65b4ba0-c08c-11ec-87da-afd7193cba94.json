@@ -1,0 +1,73 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "Further comments.",
+  "content_update": "2022-01-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "au",
+    ""
+  ],
+  "description": "This training provides an overview of basic accessibility concepts. You will develop a better understading about how people with disabilities interact with web content. This training also introduces accessibility standards and how to develop a web content in complience with current guidelines.",
+  "end_date": "2022-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": "en",
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "4 weeks",
+  "level": "level_basic",
+  "platform": "Zoom and Moodle",
+  "prerequisites": "HTML",
+  "provider": "XYZ University",
+  "reviews": "https://course.com/reviews",
+  "start_date": "2022-04-01",
+  "submission_date": "2022-04-20T09:33:13.435Z",
+  "submission_ref": "e65b4ba0-c08c-11ec-87da-afd7193cba94",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Test name",
+  "title": "Accessibility Fundamentals",
+  "topics": "Inclusive design",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundations_modules1",
+    "foundations_modules2",
+    "foundations_modules3",
+    "foundations_modules4",
+    "foundations_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5"
+  ],
+  "website": "https://course.com"
+}
