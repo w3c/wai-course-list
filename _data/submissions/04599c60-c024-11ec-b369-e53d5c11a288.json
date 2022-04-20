@@ -7,24 +7,27 @@
   "accessibility_support_other": "",
   "audience": [
     "audience_content_author",
-    "audience_designer"
+    "audience_designer",
+    "audience_tester",
+    "audience_developer",
+    "audience_manager"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
   "comments": "Further comments concerning this course.",
-  "content_update": "2022-04-13",
+  "content_update": "2022-01-13",
   "cost": "cost_free",
   "country": [
-    "sb"
+    "gr"
   ],
-  "description": "This is the description for this nice course",
+  "description": "This course provides an overview of important concepts of Web accessibility. The course covers how each team member shoud understand the different roles and responsabilities when it comes to integrating accessibility in the project development.",
   "end_date": "2022-04-10",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_face_to_face",
   "language": [
-    "tw",
-    "pt-BR"
+    "en",
+    "es"
   ],
   "learning": [
     "learning_scheduled"
@@ -36,15 +39,19 @@
     "HTML",
     "CSS"
   ],
-  "provider": "Provider of this course",
+  "provider": "XYV Courses",
   "reviews": "https://course.com/reviews",
   "start_date": "2022-04-07",
   "submission_date": "2022-04-19T21:02:26.598Z",
   "submission_ref": "04599c60-c024-11ec-b369-e53d5c11a288",
   "submitter_email": "test@email.com",
   "submitter_name": "Test name",
-  "title": "Accessibility course ",
-  "topics": "Inclusive design",
+  "title": "Introduction to Web Accessibility",
+  "topics": [
+    "Inclusive design",
+    "Accessibility standards and guidelines",
+    "Integrating accessibility in the project developement"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [

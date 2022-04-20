@@ -41,7 +41,7 @@
 
 {% include filtered-wai-curricula.liquid data = course.wai_curricula %}
 {{ strings.wai_curricula }}
-{% if course.wai_curricula %}
+{% if course.wai_curricula != "" %}
 : 
 <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}

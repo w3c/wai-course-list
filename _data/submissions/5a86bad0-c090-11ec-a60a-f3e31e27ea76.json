@@ -10,6 +10,8 @@
   ],
   "accessibility_support_other": "",
   "audience": [
+    "audience_content_author",
+    "audience_designer",
     "audience_tester",
     "audience_developer",
     "audience_manager"
@@ -17,48 +19,42 @@
   "check_correct_info": "on",
   "check_publish_info": "on",
   "comments": "No further comments.",
-  "content_update": "2022-04-01",
-  "cost": "cost_paid",
+  "content_update": "2022-02-01",
+  "cost": "cost_certificates_for_purchase",
   "country": [
-    "gb"
+    "fr",
+    "pt"
   ],
-  "description": "This training provide the baselines of accessibility testing. You will learn how to conduct accessibility evaluations, from using automatic tools to including users with disabilities. This training also provides insights on how to conduct large escale accessibility evaluations and how to better understand accessibility compliance with current standards such as WCAG.",
+  "description": "EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard.",
   "end_date": "2022-11-30",
   "form_name": "submission",
   "form_version": "1",
-  "format": "format_face_to_face",
+  "format": "format_hybrid",
   "language": [
-    "en"
+    "fr",
+    "pt"
   ],
   "learning": [
     "learning_scheduled"
   ],
   "length": "2 weeks",
-  "level": "level_intermediate",
-  "platform": "",
-  "prerequisites": "Accessibility basic",
+  "level": "level_advanced",
+  "platform": "Zoom",
+  "prerequisites": "Web accessibility basics",
   "provider": "Accessible University",
   "reviews": "https://www.course.com/reviews",
   "start_date": "2022-10-01",
   "submission_date": "2022-04-20T09:57:29.982Z",
-  "submission_ref": "4a86bad0-c090-11ec-a60a-f3e31e27ea76",
+  "submission_ref": "5a86bad0-c090-11ec-a60a-f3e31e27ea76",
   "submitter_email": "test@email.com",
   "submitter_name": "Test Name",
-  "title": "Accessibility Testing",
+  "title": "EN 301 549 Fundamentals",
   "topics": [
-    "Inclusive design",
-    "Accessibility checks",
-    "Tools for accessibility evaluation",
-    "Accessibility standards and guidelines"
+    "Legal context",
+    "Accessibility standards"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
-  "wai_curricula": [
-    "foundations_modules1",
-    "foundations_modules2",
-    "foundations_modules3",
-    "foundations_modules4",
-    "foundations_modules5"
-  ],
+  "wai_curricula": "",
   "website": "https://course.com"
 }
