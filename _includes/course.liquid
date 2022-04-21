@@ -20,7 +20,7 @@
 : {{ country | join: "; "}}
 
 {{ strings.type_resource }}
-: {{ strings[course.type_resource] }}
+: {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
 
 {{ strings.audience }}
 : {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
@@ -106,8 +106,8 @@
 {% assign aSupport = aSupport | push: accessibilitySupport[1] %}
 {% endfor %}
 {% endif %}
-{% if course.other_accessibility_support %}
-{% assign aSupport = aSupport | push: course.other_accessibility_support %}
+{% if course.accessibility_support_other != "" %}
+{% assign aSupport = aSupport | push: course.accessibility_support_other %}
 {% assign hasASupport = true %}
 {% endif %}
 

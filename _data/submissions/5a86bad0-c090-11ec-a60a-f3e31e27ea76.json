@@ -8,7 +8,7 @@
     "non-digital-accessibility-sufficient-contrast",
     "non-digital-accessibility-description-of-visual-information"
   ],
-  "accessibility_support_other": "",
+  "accessibility_support_other": "Additional accessibility support may be requested",
   "audience": [
     "audience_content_author",
     "audience_designer",
@@ -25,7 +25,7 @@
     "fr",
     "pt"
   ],
-  "description": "EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard.",
+  "description": "EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. ",
   "end_date": "2022-11-30",
   "form_name": "submission",
   "form_version": "1",
@@ -53,8 +53,8 @@
     "Legal context",
     "Accessibility standards"
   ],
-  "type_resource": "type_training",
-  "type_resource_new": "",
+  "type_resource": "type_other",
+  "type_resource_new": "Workshop",
   "wai_curricula": "",
   "website": "https://course.com"
 }
