@@ -166,5 +166,5 @@ quit_preview: Close Preview
 back_to_form: Go back to the form
 
 # Results message
-success_message: Your information has been submitted, and you should receive a reply within a month.
+success_message: Your information has been submitted for review, and you should receive a reply within a month.
 failure_message: An error has occurred. Please try again and if the error continues please contact us.
