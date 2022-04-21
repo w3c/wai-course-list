@@ -82,7 +82,7 @@
 
 
 {{ strings.scheduling }}
-{% assign helper = site.data.helpers | where: "id", "scheduling" %}
+{% assign helper = site.data.helpers | where: "id", "learning" %}
 : {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
