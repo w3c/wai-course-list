@@ -87,10 +87,6 @@ main>header {
     width: 100%;
 }
 
-.button-small {
-    cursor: pointer;
-}
-
 .select_form {
     width: 100%;
     margin-top: 1em;
@@ -347,13 +343,16 @@ fieldset label:hover a:hover {
     align-items: center;
 }
 
+button {
+    cursor: pointer;
+}
+
 #filter-courses-info button {
     margin: 0;
     padding: .3em;
 }
 
 .button-clear-button {
-    cursor: pointer;
     color: var(--off-black);
     border: 2px solid var(--line-grey);
 }
@@ -510,11 +509,7 @@ details .helperinfo {
 .details-preview {
     text-align: left;
     margin-bottom: 2em;
-    padding-left: 2em;
-}
-
-.overlay-content button {
-    cursor: pointer;
+    padding: 0 3em 0 1em;
 }
 
 .overlay-content ul {
