@@ -1,6 +1,6 @@
 {% capture course_title %}<a href="{{ course.website }}">{{ course.title }}{% include_cached icon.html name="external-link" %}</a> by {{ course.provider }}{% endcapture %}
-{% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
-{% capture course_details_id %}details_{{course.id}}{% endcapture %}
+{% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
+{% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
 {% include box.html type="start" title=course_title id=course.title %}
 {{ course.description }}
@@ -43,18 +43,18 @@
 {{ strings.wai_curricula }}
 {% if course.wai_curricula != "" %}
 : 
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_curricula{{ course.id }}" hidden="hidden">
+<div class="helperinfo" id="info_about_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 {% for module in filteredItems %}
 * {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endfor %}
 {% else %}
 : {{ strings.not_provided }}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.id }}" data-target="#info_about_wai_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_wai_curricula{{ course.id }}" hidden="hidden">
+<div class="helperinfo" id="info_about_wai_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 {% endif %}
@@ -75,8 +75,8 @@
 {{ strings.format }}
 {% assign helper = site.data.helpers | where: "id", "format" %}
 : {{ strings[course.format]}}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format{{ course.id }}" data-target="#info_about_format{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-<div class="helperinfo" id="info_about_format{{ course.id }}" hidden="hidden">
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 
@@ -84,8 +84,8 @@
 {{ strings.scheduling }}
 {% assign helper = site.data.helpers | where: "id", "scheduling" %}
 : {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.id }}" data-target="#info_about_scheduling{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-<div class="helperinfo" id="info_about_scheduling{{ course.id }}" hidden="hidden">
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 
