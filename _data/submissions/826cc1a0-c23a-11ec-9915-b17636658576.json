@@ -1,0 +1,68 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-04-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "us"
+  ],
+  "description": "The “Introduction to Web Accessibility” online course provides the foundation you need to make your digital technology accessible, so that it: works well for people with disabilities, meets international standards, enhances the user experience for everyone, achieves goals.\r\n",
+  "end_date": "2022-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "16-20 hours",
+  "level": "level_basic",
+  "platform": "edX",
+  "prerequisites": "",
+  "provider": "W3C WAI",
+  "reviews": "https://www.w3.org/WAI/fundamentals/foundations-course/#what-people-are-saying-about-the-course-and-survey-results",
+  "start_date": "2022-04-22",
+  "submission_date": "2022-04-22T12:48:29.370Z",
+  "submission_ref": "826cc1a0-c23a-11ec-9915-b17636658576",
+  "submitter_email": "lspereira@fc.ul.pt",
+  "submitter_name": "Letícia Seixas Pereira",
+  "title": "Digital Accessibility Foundations Free Online Course",
+  "topics": "What is Web Accessibility",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundations_modules1",
+    "foundations_modules2",
+    "foundations_modules3",
+    "foundations_modules4",
+    "foundations_modules5"
+  ],
+  "website": "https://www.w3.org/WAI/fundamentals/foundations-course/"
+}
