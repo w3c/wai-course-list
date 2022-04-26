@@ -105,7 +105,7 @@ footer: >
                 <input type="search" id="search" placeholder="Search courses">
             </div>
             <div class="field" class="sort-by">
-                <h4><label for="select">{{ strings.sortby_title }}</label></h4>
+                <label for="select">{{ strings.sortby_title }}</label>
                 <select id="select" class="field">
                     {% for sort in site.data.sorting %}
                         {% if sort.selected == "true" %}

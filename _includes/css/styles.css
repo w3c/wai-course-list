@@ -412,7 +412,7 @@ button {
     font-weight: bold;
 }
 
-.courses-list-header .sort-by h4 {
+.courses-list-header .sort-by label {
     float: left;
     margin: 0;
     margin-right: 0.5em
