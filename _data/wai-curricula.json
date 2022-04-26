@@ -72,5 +72,47 @@
                 "link": "https://www.w3.org/WAI/curricula/developer-modules/rich-applications/"
             }
         ]
+    },
+    {
+        "id": "designer_modules",
+        "name": "Designer Modules",
+        "link": "https://www.w3.org/WAI/curricula/designer-modules/",
+        "modules": [
+            {
+                "id": "designer_modules1",
+                "name": "Module 1: Visual Design",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/visual-design/"
+            },
+            {
+                "id": "designer_modules2",
+                "name": "Module 2: Information Design",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/information-design/"
+            },
+            {
+                "id": "designer_modules3",
+                "name": "Module 3: Navigation Design",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/navigation-design/"
+            },
+            {
+                "id": "designer_modules4",
+                "name": "Module 4: Interaction Design",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/interaction-design/"
+            },
+            {
+                "id": "designer_modules5",
+                "name": "Module 5: Images and Graphics",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/images-and-graphics/"
+            },
+            {
+                "id": "designer_modules6",
+                "name": "Module 6: Multimedia and Animations",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/multimedia-and-animations/"
+            },
+            {
+                "id": "designer_modules7",
+                "name": "Module 7: Forms Design",
+                "link": "https://www.w3.org/WAI/curricula/designer-modules/forms-design/"
+            }
+        ]
     }
 ]

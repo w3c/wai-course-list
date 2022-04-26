@@ -164,3 +164,7 @@ preview_title: Review your submission
 preview_info: Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.
 quit_preview: Close Preview
 back_to_form: Go back to the form
+
+# Results message
+success_message: Your information has been submitted for review, and you should receive a reply within a month.
+failure_message: An error has occurred. Please try again and if the error continues please contact us.

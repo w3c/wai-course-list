@@ -1,0 +1,60 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Additional accessibility support may be requested",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_tester",
+    "audience_developer",
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "No further comments.",
+  "content_update": "2022-02-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "fr",
+    "pt"
+  ],
+  "description": "EN 301 549 is a European standard for digital accessibility and it applies to all digital technology, including websites, software, electronic devices, and mobile apps. This course aims to provide a comprehensive overview of this standard. ",
+  "end_date": "2022-11-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr",
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 weeks",
+  "level": "level_advanced",
+  "platform": "Zoom",
+  "prerequisites": "Web accessibility basics",
+  "provider": "Accessible University",
+  "reviews": "https://www.course.com/reviews",
+  "start_date": "2022-10-01",
+  "submission_date": "2022-04-20T09:57:29.982Z",
+  "submission_ref": "5a86bad0-c090-11ec-a60a-f3e31e27ea76",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Test Name",
+  "title": "EN 301 549 Fundamentals",
+  "topics": [
+    "Legal context",
+    "Accessibility standards"
+  ],
+  "type_resource": "type_other",
+  "type_resource_new": "Workshop",
+  "wai_curricula": "",
+  "website": "https://course.com"
+}

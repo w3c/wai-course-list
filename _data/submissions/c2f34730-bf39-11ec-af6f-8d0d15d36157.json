@@ -5,12 +5,12 @@
   "submission_date": "2022-03-18T17:05:32.963Z",
   "submitter_name": "Test Name",
   "submitter_email": "email@test.com",
-  "title": "Monitoring accessibility",
+  "title": "Document accessibility",
   "provider": "XProvider",
   "country": [
-    "at"
+    "hr"
   ],
-  "description": "In this course, you will be guided through monitoring activities.",
+  "description": "In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.",
   "type_resource": "type_training",
   "type_resource_new": "",
   "audience": [
@@ -21,36 +21,21 @@
     "audience_tester",
     "audience_other"
   ],
-  "level": "level_advanced",
-  "prerequisites": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Accessibility"
-  ],
+  "level": "level_basic",
+  "prerequisites": "",
   "topics": [
-    "Accessibility monitoring",
-    "Acessibility standards and guidelines"
+    "Creating and testing accessible documents",
+    "Accessible PDF documents",
+    "Accessible Office documents",
+    "Accessible ePUB documents"
   ],
-  "wai_curricula": [
-    "foundations_modules1",
-    "foundations_modules2",
-    "foundations_modules3",
-    "foundations_modules4",
-    "foundations_modules5",
-    "developer_modules1",
-    "developer_modules2",
-    "developer_modules3",
-    "developer_modules4",
-    "developer_modules5"
-  ],
+  "wai_curricula": "",
   "language": [
     "en",
-    "fr",
-    "es"
+    "hr"
   ],
   "format": "format_hybrid",
-  "scheduling": [
+  "learning": [
     "learning_scheduled",
     "learning_unscheduled"
   ],
@@ -66,7 +51,7 @@
     "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
-  "length": "3 months",
+  "length": "3 hours",
   "cost": "cost_free",
   "website": "https://course.com",
   "reviews": "https://course.com/reviews",

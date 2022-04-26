@@ -1,6 +1,6 @@
 {% capture course_title %}<a href="{{ course.website }}">{{ course.title }}{% include_cached icon.html name="external-link" %}</a> by {{ course.provider }}{% endcapture %}
-{% capture course_section_identifier %}aside_{{ course.id }}{% endcapture %}
-{% capture course_details_id %}details_{{course.id}}{% endcapture %}
+{% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
+{% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
 {% include box.html type="start" title=course_title id=course.title %}
 {{ course.description }}
@@ -20,7 +20,7 @@
 : {{ country | join: "; "}}
 
 {{ strings.type_resource }}
-: {{ strings[course.type_resource] }}
+: {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
 
 {{ strings.audience }}
 : {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
@@ -30,7 +30,7 @@
 : {{ strings[course.level] }}
 
 {{ strings.prerequisites }}
-{% if course.prerequisites %}
+{% if course.prerequisites != "" %}
 : {{ course.prerequisites | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
@@ -41,20 +41,20 @@
 
 {% include filtered-wai-curricula.liquid data = course.wai_curricula %}
 {{ strings.wai_curricula }}
-{% if course.wai_curricula %}
+{% if course.wai_curricula != "" %}
 : 
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_curricula{{ course.id }}" hidden="hidden">
+<div class="helperinfo" id="info_about_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 {% for module in filteredItems %}
 * {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endfor %}
 {% else %}
 : {{ strings.not_provided }}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.id }}" data-target="#info_about_wai_curricula{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_wai_curricula{{ course.id }}" hidden="hidden">
+<div class="helperinfo" id="info_about_wai_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 {% endif %}
@@ -75,22 +75,22 @@
 {{ strings.format }}
 {% assign helper = site.data.helpers | where: "id", "format" %}
 : {{ strings[course.format]}}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format{{ course.id }}" data-target="#info_about_format{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-<div class="helperinfo" id="info_about_format{{ course.id }}" hidden="hidden">
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 
 
 {{ strings.scheduling }}
-{% assign helper = site.data.helpers | where: "id", "scheduling" %}
-: {% for cb in course.scheduling %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
-<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.id }}" data-target="#info_about_scheduling{{ course.id }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-<div class="helperinfo" id="info_about_scheduling{{ course.id }}" hidden="hidden">
+{% assign helper = site.data.helpers | where: "id", "learning" %}
+: {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
+<button type="button" class="showhidebutton button-small helperbutton" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
 
 {{ strings.platform }}
-{% if course.platform %}
+{% if course.platform != "" %}
 : {{ course.platform}}
 {% else %}
 : {{ strings.not_provided }}
@@ -106,8 +106,8 @@
 {% assign aSupport = aSupport | push: accessibilitySupport[1] %}
 {% endfor %}
 {% endif %}
-{% if course.other_accessibility_support %}
-{% assign aSupport = aSupport | push: course.other_accessibility_support %}
+{% if course.accessibility_support_other != "" %}
+{% assign aSupport = aSupport | push: course.accessibility_support_other %}
 {% assign hasASupport = true %}
 {% endif %}
 
@@ -121,7 +121,7 @@
 
 
 {{ strings.length }}
-{% if course.length %}
+{% if course.length != "" %}
 : {{ course.length }}
 {% else %}
 : {{ strings.not_provided }}
@@ -131,15 +131,14 @@
 : {{ strings[course.cost]}}
 
 {{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}
-{% if course.end_date %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
 
 {{ strings.website }}
-: <a href="{{ course.website}}" rel="external">{{ course.website }}{% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }} {% include_cached icon.html name="external-link" %}</a>
 
 {{ strings.reviews_page }}
-{% if course.reviews %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}{% include_cached icon.html name="external-link" %}</a>
+{% if course.reviews != "" %}
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }} {% include_cached icon.html name="external-link" %}</a>
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
