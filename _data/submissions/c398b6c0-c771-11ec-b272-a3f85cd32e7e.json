@@ -1,0 +1,50 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-05-01",
+  "cost": "cost_paid",
+  "country": [
+    "au",
+    "",
+    ""
+  ],
+  "description": "WCAG and best practices consideration in making your written content accessible to more people. blah blah",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4 hours over 2 sessions",
+  "level": "level_basic",
+  "platform": "Zoom",
+  "prerequisites": "",
+  "provider": "Intopia",
+  "reviews": "",
+  "start_date": "2022-05-09",
+  "submission_date": "2022-04-29T04:06:36.844Z",
+  "submission_ref": "c398b6c0-c771-11ec-b272-a3f85cd32e7e",
+  "submitter_email": "andrew@intopia.digital",
+  "submitter_name": "Andrew ",
+  "title": "Content accessibility",
+  "topics": " accessible documents and multimedia",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://intopia.digital/services/accessibility-training/"
+}
