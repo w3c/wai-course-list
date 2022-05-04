@@ -446,6 +446,13 @@ button {
     display: none !important;
 }
 
+[class^="i-"] {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    vertical-align: middle;
+    margin-top: -.25em;
+}
 
 .infobox h4 {
     border: 1px solid var(--line-grey);
