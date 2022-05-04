@@ -9,6 +9,7 @@ const searchForm = document.querySelector('#search');
 const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
+const totalCourses = jsonCourses.length;
 
 const importJsonCountries = String.raw`{{ site.data.countries | jsonify }}`;
 importJsonCountries.replace("\\", "\\\\");
@@ -32,9 +33,11 @@ if (filterForm) {
         filterJson();
     });
 
+    
     sortForm.querySelector('select').addEventListener('change', el => {
         filterJson();
     });
+    
 
     searchForm.addEventListener('keyup', el => {
         filterJson();
@@ -55,6 +58,9 @@ if (filterForm) {
 
     //Add pre-counters to filters
     showFilterCounters(filterForm);
+    handleSelectFilters(jsonCourses);
+
+    
 
 
     function showFilterCounters(filterForm) {
@@ -69,13 +75,13 @@ if (filterForm) {
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
 
                 criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
-    
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
                 filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
             })
+
         })
     }
 
@@ -196,8 +202,8 @@ if (filterForm) {
         })
         updateHeaderList(newResults, filtersOn);
         showFilterCounters(filterForm);
+        handleSelectFilters(newResults);
         
-        updateSelectFilters(newResults.map(e => e.language), newResults.map(e => e.country));
                 
         filtersOn.forEach(el => {
             if(el.filterId === "language" || el.filterId === "country")
@@ -206,18 +212,89 @@ if (filterForm) {
             
     }
 
-    function updateSelectFilters(langs, countries) {
+    function handleSelectFilters(newResults){
+
+        var totalSelects = updateSelectFiltersOptions(newResults.map(e => e.language), newResults.map(e => e.country));
+        updateSelectFiltersCounters(newResults, totalSelects);
+       
+    }
+
+
+    function updateSelectFiltersOptions(langs, countries) {
+
+        
+        langs = langs.flat();
+        const countsLang = {};
+        langs.forEach((x) => {
+            countsLang[x] = (countsLang[x] || 0) + 1;
+        });
+        
+        countries = countries.flat();
+        const countsCountry = {};
+        countries.forEach((x) => {
+            countsCountry[x] = (countsCountry[x] || 0) + 1;
+        });
+        
+        selectLang = filterForm.querySelector('#language')
+        selectCountry = filterForm.querySelector('#country');
+
+        selectLangOptions = filterForm.querySelectorAll('#language option')
+        selectCountryOptions = filterForm.querySelectorAll('#country option');
+        
+        
+        langs = [...new Set(langs)];
+        
+        if (selectLang.selectedIndex == 0)
+            selectLang[0].innerHTML = "--{{strings.select_option_default}}--";
+        else
+            selectLang[0].innerHTML = "--{{strings.select_remove_option}}--";
+        
+        selectLangOptions.forEach(s => {
+            
+            l = jsonLang[s.value];
+            
+            if(l !== undefined)
+                s.innerHTML = l.name + " (" + l.nativeName  + ")" + " ("+(countsLang[s.value]===undefined?"0":countsLang[s.value])+")";
+            
+        })
+
+        countries = [...new Set(countries)];
+
+        if (selectCountry.selectedIndex == 0)
+         selectCountry[0].innerHTML = "--{{strings.select_option_default}}--";
+        else
+            selectCountry[0].innerHTML = "--{{strings.select_remove_option}}--";
+    
+
+        selectCountryOptions.forEach(s => {
+
+            c = jsonCountry[s.value];
+
+            if (c !== undefined)
+                s.innerHTML = c.name + " (" + c.nativeName  + ")" + " ("+(countsCountry[s.value]===undefined?"0":countsCountry[s.value])+")";
+
+        })
+        
+        return {totalLangAvailable: langs.length, totalCountriesAvailable: countries.length};
+
+    }
+
+    function _updateSelectFiltersOptions(langs, countries) {
+        
         langs = langs.flat();
         langs = [...new Set(langs)];
+
+        countries = countries.flat();
+        countries = [...new Set(countries)];
+
+        
         selectLang = filterForm.querySelector('#language')
         selectLang.length = 0;
         var opt = document.createElement("option");
         opt.value = "";
         opt.innerHTML = "--{{strings.select_option_default}}--";
         selectLang.appendChild(opt);
-
-        countries = countries.flat();
-        countries = [...new Set(countries)];
+        
         selectCountry = filterForm.querySelector('#country');
         selectCountry.length = 0;
         opt = document.createElement("option");
@@ -237,6 +314,47 @@ if (filterForm) {
             opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")";
             selectCountry.appendChild(opt);
         })
+        
+        return {totalLangAvailable: langs.length, totalCountriesAvailable: countries.length};
+    }
+
+
+    function updateSelectFiltersCounters(newResults, totalSelects){
+
+        selectTotal = filterForm.querySelectorAll('.total-select-courses');
+        selectLang = filterForm.querySelector('#total-lang-courses');
+        selectCountry = filterForm.querySelector('#total-country-courses');
+
+        if(newResults.length === 0){
+            selectTotal.forEach(s => {
+                s.innerHTML = '{{strings.no_results_simple}}';
+            })
+            selectLang.innerHTML = '';
+            selectCountry.innerHTML = '';
+            
+        }
+        else{
+                
+            selectTotal.forEach(s => {
+                s.innerHTML = newResults.length;
+                s.innerHTML += ' {{strings.select_info}}';
+            })
+            
+
+            selectLang.innerHTML = totalSelects.totalLangAvailable;
+            selectCountry.innerHTML = totalSelects.totalCountriesAvailable;
+
+            
+            if(totalSelects.totalLangAvailable === 1)
+                selectLang.innerHTML += ' {{strings.select_language_info_single_result}}';
+            else
+                selectLang.innerHTML += ' {{strings.select_language_info_multiple_results}}';
+
+            if(totalSelects.totalCountriesAvailable === 1)
+                selectCountry.innerHTML += ' {{strings.select_country_info_single_result}}';
+            else
+                selectCountry.innerHTML += ' {{strings.select_country_info_multiple_results}}';
+        }
     }
 
 
@@ -278,12 +396,14 @@ if (filterForm) {
 
         document.querySelector('.excol-all').hidden = false;
 
-        newContent.innerText = Object.values(newResults).length + " {{strings.courses}}";
-        
-        if (Object.values(newResults).length === 1) {
-            newContent.innerText = Object.values(newResults).length + " {{strings.course}}";
-        } 
+        newContent.innerText = Object.values(newResults).length;
+                
+        if(Object.values(newResults).length != totalCourses){
+            newContent.innerText += " {{strings.from}} " + totalCourses;
+        }
 
+        newContent.innerText += " {{strings.courses}}";
+        
         var searchTerm = searchForm.value;
 
 

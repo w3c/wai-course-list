@@ -10,28 +10,66 @@
 }
 
 .header-sup {
+    display: grid;
+    grid-gap: 2em;
     grid-column: 1 / 8;
     margin-bottom: 48px;
 }
+
+.header-full {
+    grid-column: 1 / 7;
+    font-size: .85em;
+}
+
+.header-left {
+    grid-column: 1 / 7;
+}
+
+.header-right {
+    grid-column: 1 / 7;
+}
+
+.header-right .box {
+    margin: 0;
+    padding: 8px;
+}
+
+.header-right p {
+    font-size: 100% !important;
+}
+
 
 .button-submit-end {
     grid-column: 2 / 8;
     margin-top: 2em;
 }
 
-@media (min-width: 72em) {
-    .header-sup {
-        grid-column: 2 / 10;
-    }
-}
 
 main>header {
     grid-column: 1 / 10;
 }
 
-@media (min-width: 72em) {
+@media (min-width: 60em) {
     main>header {
         grid-column: 2 / 9;
+    }
+
+    .header-sup {
+        grid-column: 2 / 10;
+    }
+
+
+    .header-full {
+        grid-column: 1 / 7;
+        font-size: .85em;
+    }
+
+    .header-left {
+        grid-column: 1 / 6;
+    }
+
+    .header-right {
+        grid-column: 6 / 7;
     }
 }
 
@@ -39,10 +77,6 @@ main>header {
     grid-column: 1 / 9;
 }
 
-.header-sup p:first-child {
-    margin-top: 0;
-    font-size: 125%;
-}
 
 .header-sup .button {
     margin-bottom: 2em;
@@ -54,12 +88,25 @@ main>header {
 }
 
 #left-col h2 {
-    margin: 20px 0 20px;
+    margin: 43px 0 20px;
 }
 
 #left-col legend {
     font-size: 100%;
 }
+
+.box-infobox>div {
+    padding: 5px 5px 5px 2em !important;
+    font-size: .85em;
+    position: relative;
+}
+
+.box-infobox>div>svg {
+    margin-left: -1.5em !important;
+    margin-top: 3px !important;
+    position: absolute;
+}
+
 
 .courses-filters {
     padding-right: 2em;
@@ -217,6 +264,11 @@ fieldset>p {
     padding: 10px;
 }
 
+#total-courses {
+    border: 0 !important;
+    margin-top: 20px !important;
+}
+
 .status:not([hidden]) {
     background: white;
     position: absolute;
@@ -357,7 +409,8 @@ button {
     border: 2px solid var(--line-grey);
 }
 
-.button-clear-button:hover, .button-clear-button:focus {
+.button-clear-button:hover,
+.button-clear-button:focus {
     background: var(--off-white);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     color: black;
@@ -525,3 +578,6 @@ details .helperinfo {
 }
 
 
+.result-status-message {
+    margin: 20px 0 30px 0;
+}

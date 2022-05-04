@@ -1,11 +1,6 @@
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 
-document.querySelector('.start-preview').addEventListener('click', e => {
-    getPreviewSubmission();
-})
-
-
 function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
@@ -46,7 +41,7 @@ function getPreviewSubmission() {
         if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
             var label = document.querySelector("label[for='" + el.id + "']");
-            if(label === null) 
+            if (label === null)
                 label = el.closest('fieldset').querySelector('legend').innerText;
             else
                 label = label.innerText;
@@ -252,7 +247,63 @@ function getPreviewSubmission() {
     }
 
 
+
+    document.querySelector('#print').addEventListener('click', e => {
+        
+        var heading = document.createElement('h1');
+        heading.innerText = 'W3C WAI List of Accessibility Courses';
+        
+        var info = document.createElement('p');
+        info.innerText = "{{strings.info_pdf}}";
+        info.style.fontStyle = "italic";
+
+        var date = document.createElement('p');
+        date.innerText = new Date().toDateString();
+
+        var details = document.createElement('div');
+        details = overlayContent.querySelector('.details-preview').cloneNode(true);
+        
+        details.querySelectorAll('dt').forEach( d => {
+            d.style.fontWeight = "bold";
+            d.style.marginTop = "8px";
+        });
+        
+        var source = document.createElement('div');
+        source.appendChild(heading);
+        source.appendChild(date);
+        source.appendChild(info);
+        source.appendChild(details);
+        
+
+        var pdf = new jsPDF('p', 'pt', 'letter'), 
+        margins = {
+            top: 80,
+            bottom: 60,
+            left: 40,
+            width: 522
+          };
+        pdf.setProperties({
+            title: 'WAI Accessibility List of Courses submission',
+            author: 'W3C WAI'
+        });
+        pdf.fromHTML(
+            source 
+            , margins.left
+            , margins.top
+            , {
+                'width': margins.width 
+            },
+            function (dispose) {
+                pdf.save('WAI-List-of-courses-submission.pdf');
+              },
+            margins
+          )
+    })
+    
 }
 
 
+document.querySelector("#open-preview").addEventListener('click', e => {
+    getPreviewSubmission();
+})
 

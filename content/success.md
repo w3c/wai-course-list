@@ -11,10 +11,11 @@ main > header { grid-column: 2 / span 6; }
 
 {% assign strings = site.data.strings %}
 
-<div>
+<div class="result-status-message">
 {{ strings.success_message }}
 </div>
 
 
 <a href="../course-list">{{strings.back_to_list_link}}</a>
+
 </div>

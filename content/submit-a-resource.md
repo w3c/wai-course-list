@@ -51,6 +51,7 @@ function onSubmit(e) {
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
+<p>{{strings.info_submission}}</p>
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
@@ -110,7 +111,7 @@ function onSubmit(e) {
 <fieldset class="field">
   <legend for="description" id="description_label" class="label_input">{{strings.description_label}}</legend>
   <p class="expl">{{strings.description_expl}}</p>
-  <textarea id="description" name="description" maxlength="350" aria-labelledby="description_label" required></textarea>
+  <textarea id="description" name="description" maxlength="350" rows="5" aria-labelledby="description_label" required></textarea>
   <p><em>{{strings.description_expl_details}}</em></p>
 </fieldset>
 
@@ -282,11 +283,21 @@ function onSubmit(e) {
   </div>
 </fieldset>
 
-<fieldset class="field">
-  <legend id="platform_label" class="label_input">{{strings.platform_label}}</legend>
-  <p class="expl">{{strings.platform_expl}}</p>
-  <input type="text" id="platform" aria-labelledby="platform_label" name="platform">
+<fieldset class="field fieldset_text">
+  <legend id="platforms_label" class="label_input">{{strings.platforms_label}}</legend>
+  <p class="expl">{{strings.platforms_expl}}</p>
+  <div class="line">
+    <label for="platform_1" class="label_input">{{strings.platform1_label}}</label>
+    <input type="text" id="platform_1" name="platforms">
+  </div>
+  <div class="proto">
+    <label for="platform_[n]" class="label_input">{{strings.platformn_label}} [n]</label>
+    <input type="text" id="platform_[n]" name="platforms" class="input_hidden" disabled/>
+  </div>
+  <button type="button" class="add_line button-small">{{strings.add_new_platform_button}}</button>
+  <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_platform_button}}</button>
 </fieldset>
+
 
 <fieldset class="field fieldset_check" id="accessibility-support">
   <legend class="label_input">{{strings.asupport_legend}}</legend>
@@ -378,10 +389,14 @@ function onSubmit(e) {
 
 {% include list-submission-form.liquid type="end"%}
 
+<button id="open-preview">preview</button>
+
 <script>
 {% include js/courses.js %}
+{% include js/jspdf.min.js %}
 {% include js/preview.js %}
 </script>
+
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
@@ -389,8 +404,11 @@ function onSubmit(e) {
   <h2 id="preview_title">{{ strings.preview_title }}</h2>  
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
-  {% include_cached button.html type="icon" label=strings.back_to_form class="close_preview" icon="arrow-left" %}
+  {% include_cached button.html type="icon" label=strings.back_to_form 
+  class="close_preview" icon="arrow-left" %}
+  <button id="print">{{strings.download_pdf}}</button>
   <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
+  
 
 </div>
 </div>

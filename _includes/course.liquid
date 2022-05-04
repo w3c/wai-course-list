@@ -1,8 +1,8 @@
-{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}{% include_cached icon.html name="external-link" %}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}</a> by {{ course.provider }}{% endcapture %}
 {% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
-{% include box.html type="start" title=course_title id=course.title %}
+{% include box.html type="start" title=course_title id=course.title  h="3"%}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
 #### {{ strings.details }}
@@ -89,13 +89,12 @@
     <p>{{ helper[0].description }}</p>
 </div>
 
-{{ strings.platform }}
+{{ strings.platforms }}
 {% if course.platform != "" %}
-: {{ course.platform}}
+: {{ course.platform | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
-
 
 {% assign hasASupport = false %}
 {% assign aSupport = "" | split: "," %}
@@ -131,7 +130,8 @@
 : {{ strings[course.cost]}}
 
 {{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{% if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% endif %}.
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{%if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% capture date_now %}{{ site.time | date: "%s" }}{% endcapture %}{% capture end_date %}{{ course.end_date | date: "%s" }}{% endcapture %}{% if date_now > end_date %} (*{{ strings.availability_expired }}*){% endif %}{% endif %}.
+
 
 {{ strings.website }}
 : <a href="{{ course.website}}" rel="external">{{ course.website }} {% include_cached icon.html name="external-link" %}</a>

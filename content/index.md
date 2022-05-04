@@ -24,13 +24,20 @@ footer: >
 {% include css/styles.css %}
 </style>
 {% assign strings = site.data.strings %}
-<a href="#filters_title" class="button button--skip-link">{{ strings.skip_to_filters }}</a>
-<a href="#status" class="button button--skip-link">{{ strings.skip_to_results }}</a>
+<a href="#filters_title" class="button button--skip-link" accesskey="f">{{ strings.skip_to_filters }}</a>
+<a href="#status" class="button button--skip-link" accesskey="r">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
-    <p>{{ strings.sub_header_info_list }}</p>
-    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
-    <p><em> {{ strings.sub_header_note }}
-    </em></p>
+    <div class="header-left">
+        <p>{{ strings.sub_header_info_list }}</p>
+        {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
+    </div>
+    <div class="header-right">
+        {% include box.html type="start" class="simple" %}
+        <p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+        {% include box.html type="end" %}
+    </div>
+    <div class="header-full"><p><em>{{ strings.sub_header_note }}</em></p></div>
+
 </div>
 {% assign defaultSort = site.data.sorting.first.sortkey %}
 {% include sort-data-folder.liquid data=site.data.submissions sortKey=defaultSort %} 
@@ -38,6 +45,10 @@ footer: >
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2 id="filters_title">{{ strings.filters_title }}</h2>
+            {% include box.html type="start" class="simple infobox" %}
+            <svg focusable="false" aria-label="Information about the filters" class="i-info"><use xlink:href="/assets/images/icons.svg#icon-info"></use></svg>
+            {{strings.filters_info}}
+            {% include box.html type="end" %}
             {% for filter in site.data.filters %}
             <fieldset id="{{ filter.id }}">
                 {% if filter.info %}
@@ -68,10 +79,13 @@ footer: >
             {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
-            <fieldset id="language-filter">
-                <legend>Language</legend>
+            <fieldset>
+                <legend id="language_label">Language</legend>
+                <p class="expl">
+                <span class="total-select-courses">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-lang-courses">{{langAvailable | size}} {{strings.select_language_info_multiple_results}}</span>
+                </p>
                 <div class="filter-options field">
-                    <select name="language" id="language">
+                    <select name="language" id="language" aria-labelledby="language_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
                         {% for language in langAvailable %}
                         <option value="{{ language }}">{{ site.data.lang[language].name }} ({{
@@ -81,10 +95,13 @@ footer: >
                 </div>
             </fieldset>
             {% include sort-countries.liquid data=countriesAvailable %}
-            <fieldset id="contry-filter">
-                <legend>Country</legend>
+            <fieldset>
+                <legend id="country_label">Country</legend>
+                <p class="expl">
+                <span class="total-select-courses">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
+                </p>
                 <div class="filter-options field">
-                    <select name="country" id="country">
+                    <select name="country" id="country" aria-labelledby="country_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
                         {% for country in orderedCountries %}
                         <option value="{{ country[2] }}">{{ country[0] }} ({{ country[1] }})</option>
@@ -117,13 +134,19 @@ footer: >
                 </select>
             </div>     
         </div>
+        {% capture totalSubmissions %}
+        {{ site.data.submissions | size }}
+        {% endcapture %}
+        {% capture totalSubmissionsFiltered %}
+        {{ itemsSorted | size }}
+        {% endcapture %}
         <div id="status" tabindex="0">
-            <h4 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} {{ strings.courses }}</span></h4>
+            <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
         </div>  
         <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">
-                <h4 id="default-results-title">Current filter criteria</h4>
-                <h4 id="no-results-title">Sorry, but no courses match the following criteria:</h4>
+                <h4 id="default-results-title">{{strings.filtered_criteria_title}}</h4>
+                <h4 id="no-results-title">{{strings.no_results_title}}:</h4>
                 <div class="div-clear-filters">
                     {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button" %}
                 </div>

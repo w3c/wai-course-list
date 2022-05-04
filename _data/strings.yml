@@ -3,29 +3,45 @@ hide_all_info: Hide all additional information
 show_info: Show info
 hide_info: Hide info
 other: Other
+from: from
 
 courses: courses
 course: course
 not_provided: Not provided
 
+contact_email_list_courses: group-wai-list-courses@w3.org
+
 # List strings
 
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
-sub_header_info_list: This List of Courses provides information about courses, training, and certification on web accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add information about a course, training, or certification on web accessibility, please use the following button.
+sub_header_info_list: This List of Courses provides information about courses, training, and certification on web and digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add information about a course, training, or certification on web and digital accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
-sub_header_note: Please note that the list items are provider-submitted, not <abbr title="World Wide Web Consortium">W3C</abbr>-endorsed. See the full <a href="#disclaimer">disclaimer</a> for more information about provider-submitted content.
+edit_remove_info: If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list
+sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
 filters_title: Filters
+filters_info: Changing filters will change the listed courses.
 select_option_default: Select an option
+select_remove_option: Remove filter
+select_info: courses available in
+select_language_info_single_result: different language
+select_language_info_multiple_results: different languages
+select_country_info_single_result: different country
+select_country_info_multiple_results: different countries
+
 disclaimer_title: Important Disclaimer
 disclaimer_text:
-  <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific vendor products. Inclusion of resources in this list does not indicate endorsement by W3C. Products and search criteria are listed with no quality rating.</p>
-  <p>Courses descriptions, search criteria, and other information in this database are provider-submitted. W3C does not verify the accuracy of the information.</p>
+  <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers or courses. Inclusion of courses in this list does not indicate endorsement by W3C. Courses and search criteria are listed with no quality rating.</p>
+  <p>Courses descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information.</p>
   <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
-showing: Showing
 sortby_title: Sort by
+showing: Showing
+
 clear_filters_button_label: Clear filters
 searchterm: Searchterm
+filtered_criteria_title: Current filter criteria
+no_results_title: Sorry, but no courses match the following criteria
+no_results_simple: No results found
 
 
 
@@ -41,13 +57,14 @@ wai_curricula: WAI Curricula on Web Accessibility
 language: Language
 format: Format
 scheduling: Scheduling
-platform: Platform
+platforms: Platforms
 accessibility_support: Accessibility support
 length: Length
 cost: Cost
 availability: Availability
 availability_from: From
 availability_to: to
+availability_expired: Please note that this course may no longer be available
 website: Website
 reviews_page: Reviews page
 info_updated: This information was last updated on
@@ -55,11 +72,11 @@ content_updated: The content of this resource was last updated on
 
 # Form strings
 back_to_list_link: Back to List of Courses
-sub_header_info_form: This form allows you to provide information about courses, training, and certification on web accessibility. 
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on web and digital accessibility. 
 # To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
-sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available as this page generates a Pull Request on our GitHub repository.
+sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available on our GitHub repository.
 about_you: About you
-about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission.
+about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
 submitter_name_label: Name (Required)
 submitter_email_label: Email (Required)
 about_the_resource: About the resource
@@ -67,7 +84,7 @@ about_the_resource_description: Provide some information about the course, train
 title_label: Title (Required)
 provider_label: Provider (Required)
 country_legend: Country (Required)
-country_expl: Indicate by which country or countries this resource is provided.
+country_expl: Indicate the country or countries the provider is located in.
 country1_label: Country 1 (Required)
 countryn_label: Country
 description_label: Description (Required)
@@ -117,8 +134,10 @@ scheduling_legend: Scheduling (Required)
 scheduling_expl: Indicate the type of activities provided in this resource. Choose as many as apply.
 learning_scheduled: Scheduled - participants are required to attend at a specific time
 learning_unscheduled: Unscheduled - participants can attend at their own pace
-platform_label: Platform
-platform_expl: If applicable, indicate on which platform this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.)
+platforms_label: Platforms
+platforms_expl: If applicable, indicate on which platforms this resource is provided (for example, which Learning Management System (LMS), Student Management System (SMS), Meeting Platform, etc.)
+platform1_label: Platform 1
+platformn_label: Platform
 asupport_legend: Accessibility support
 asupport_expl: If applicable, indicate what accessibility support is provided (see guidance on <a href="https://www.w3.org/WAI/teach-advocate/accessible-presentations/">How to Make Your Presentations Accessible to All</a>). Include details in the text box.
 asupport_including: including
@@ -144,10 +163,10 @@ end_date_label: End date
 end_date_expl: If applicable, indicate the end date for the period of time this resource will be available.
 submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
-comments_expl: Let us know if you have any comments. This information will not be publicly shared.
+comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
 publish_info_label: I give permission for the information about this resource to be published in the W3C's List of Courses (Required).
-info_submission: When you submit the form, we will review your submission and add it to the list. This will be within a month.
+info_submission: When you submit the form, we will review your submission and add it to the list. Submissions are expected to be published within a month.
 
 add_new_country_button: Add new country
 remove_last_country_button: Remove last country
@@ -157,6 +176,8 @@ add_new_topic_button: Add new topic
 remove_last_topic_button: Remove last topic
 add_new_language_button: Add new language
 remove_last_language_button: Remove last language
+add_new_platform_button: Add new platform
+remove_last_platform_button: Remove last platform
 send_form_button: Send information
 
 # Preview submission
@@ -164,7 +185,12 @@ preview_title: Review your submission
 preview_info: Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.
 quit_preview: Close Preview
 back_to_form: Go back to the form
+download_pdf: Download as PDF
+
+# PDF info
+info_pdf: This is a summary of the information provided in the form. Please note that the information below has not yet been submitted or approved for publication.
 
 # Results message
-success_message: Your information has been submitted for review, and you should receive a reply within a month.
-failure_message: An error has occurred. Please try again and if the error continues please contact us.
+success_message: Thank you for your submission. We will review the information provided and contact you shortly to clarify eventual details, or to confirm that your submission has been accepted. Submissions are expected to be published within a month.
+failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list
+
