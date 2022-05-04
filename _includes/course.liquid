@@ -134,11 +134,11 @@
 
 
 {{ strings.website }}
-: <a href="{{ course.website}}" rel="external">{{ course.website }} {% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
 
 {{ strings.reviews_page }}
 {% if course.reviews != "" %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }} {% include_cached icon.html name="external-link" %}</a>
+: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
