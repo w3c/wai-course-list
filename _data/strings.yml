@@ -23,7 +23,8 @@ filters_title: Filters
 filters_info: Changing filters will change the listed courses.
 select_option_default: Select an option
 select_remove_option: Remove filter
-select_info: courses available in
+select_results_courses: courses available in
+select_result_course: course available in
 select_language_info_single_result: different language
 select_language_info_multiple_results: different languages
 select_country_info_single_result: different country

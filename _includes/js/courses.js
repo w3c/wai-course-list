@@ -120,8 +120,14 @@ if (filterForm) {
             att.querySelectorAll('select').forEach(filter => {
                 attValues = [];
                 if (filter.value !== "") {
+                    var oName = "";
                     
-                    attValues.push({optionID: filter.value, optionName: filter.options[filter.selectedIndex].text})
+                    if(filter.id == "language" )
+                        oName = jsonLang[filter.value].name + " (" + jsonLang[filter.value].nativeName + ")";
+                    else if (filter.id == "country" )
+                        oName = jsonCountry[filter.value].name + " (" + jsonCountry[filter.value].nativeName + ")";
+                    
+                    attValues.push({optionID: filter.value, optionName: oName})
                     activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
                 }
 
@@ -279,46 +285,6 @@ if (filterForm) {
 
     }
 
-    function _updateSelectFiltersOptions(langs, countries) {
-        
-        langs = langs.flat();
-        langs = [...new Set(langs)];
-
-        countries = countries.flat();
-        countries = [...new Set(countries)];
-
-        
-        selectLang = filterForm.querySelector('#language')
-        selectLang.length = 0;
-        var opt = document.createElement("option");
-        opt.value = "";
-        opt.innerHTML = "--{{strings.select_option_default}}--";
-        selectLang.appendChild(opt);
-        
-        selectCountry = filterForm.querySelector('#country');
-        selectCountry.length = 0;
-        opt = document.createElement("option");
-        opt.value = "";
-        opt.innerHTML = "--{{strings.select_option_default}}--";
-        selectCountry.appendChild(opt);
-
-        langs.forEach(l => {
-            opt = document.createElement("option");
-            opt.value = l;
-            opt.innerHTML = jsonLang[l].name + " (" + jsonLang[l].nativeName + ")";
-            selectLang.appendChild(opt);
-        })
-        countries.forEach(c => {
-            opt = document.createElement("option");
-            opt.value = c;
-            opt.innerHTML = jsonCountry[c].name + " (" + jsonCountry[c].nativeName + ")";
-            selectCountry.appendChild(opt);
-        })
-        
-        return {totalLangAvailable: langs.length, totalCountriesAvailable: countries.length};
-    }
-
-
     function updateSelectFiltersCounters(newResults, totalSelects){
 
         selectTotal = filterForm.querySelectorAll('.total-select-courses');
@@ -337,7 +303,10 @@ if (filterForm) {
                 
             selectTotal.forEach(s => {
                 s.innerHTML = newResults.length;
-                s.innerHTML += ' {{strings.select_info}}';
+                if (newResults.length == 1)
+                    s.innerHTML += ' {{strings.select_result_course}}';
+                else
+                    s.innerHTML += ' {{strings.select_results_courses}}';
             })
             
 
