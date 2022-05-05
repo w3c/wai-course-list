@@ -55,6 +55,8 @@ function onSubmit(e) {
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
+<button id="open-preview">Open preview</button>
+
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
@@ -392,7 +394,6 @@ function onSubmit(e) {
 </div>
 
 {% include list-submission-form.liquid type="end"%}
-
 
 <script>
 {% include js/courses.js %}
