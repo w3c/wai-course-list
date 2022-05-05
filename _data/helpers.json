@@ -2,7 +2,7 @@
     {
         "id": "format",
         "name": "Format",
-        "description": "Consider: <ul><li>Face-to-face - all teaching sessions are provided on-site</li><li>Online - all teaching sessions are provided online</li><li>Hybrid - teaching sessions are provided simultaneously on-site and online</li><li>Blended - teaching sessions are provided either on-site or online</li></ul>"
+        "description": "Consider: <ul><li>Face-to-face - participants are required to attend to on-site teaching sessions</li><li>Online - participants are required to attend to online teaching sessions</li><li>Blended - participants are required to attend to on-site and online teaching sessions</li><li>Hybrid - participants can choose to attend to on-site or online teaching sessions</li></ul>"
     },
     {
         "id": "learning",

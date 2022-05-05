@@ -12,7 +12,7 @@ ref: /teach-advocate/course-list/
 changelog: /teach-advocate/course-list/changelog/
 acknowledgements: /teach-advocate/course-list/acknowledgements/
 description:  # NEW: aa 150ish-character-description for social media   # translate the description
-# image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
+# image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: 
    <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
    <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
@@ -166,6 +166,10 @@ function onSubmit(e) {
     <label for="audience_tester">{{strings.audience_tester}}</label>
   </div>
   <div class="radio-field">
+    <input type="checkbox" name="audience[]" id="audience_general" value="audience_general" group="audience">
+    <label for="audience_general">{{strings.audience_general}}</label>
+  </div>  
+  <div class="radio-field">
     <input type="checkbox" name="audience[]" id="audience_other" value="audience_other" group="audience">
     <label for="audience_other">{{strings.audience_other}}</label>
   </div>
@@ -261,13 +265,13 @@ function onSubmit(e) {
     <label for="format_online">{{strings.format_online}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="format" id="format_hybrid" value="format_hybrid">
-    <label for="format_hybrid">{{strings.format_hybrid}}</label>
-  </div>
-  <div class="radio-field">
     <input type="radio" name="format" id="format_blended" value="format_blended">
     <label for="format_blended">{{strings.format_blended}}</label>
-  </div>    
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="format" id="format_hybrid" value="format_hybrid">
+    <label for="format_hybrid">{{strings.format_hybrid}}</label>
+  </div>      
 </fieldset>
 
 <fieldset class="field fieldset_check" id="learning">
@@ -384,7 +388,7 @@ function onSubmit(e) {
 <p>{{strings.info_submission}}</p>
 
 <div class="field">
-  <button type="submit">{{strings.send_form_button}}</button>
+  <button type="submit">{{strings.submit_review_form_button}}</button>
 </div>
 
 {% include list-submission-form.liquid type="end"%}
@@ -400,14 +404,15 @@ function onSubmit(e) {
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
-{% include_cached button.html type="icon" label=strings.quit_preview class="close_preview icon" icon="ex-circle" %}
+{% include_cached button.html type="icon" label=strings.back_to_form class="close_preview icon" icon="ex-circle" %}
   <h2 id="preview_title">{{ strings.preview_title }}</h2>  
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
+  <p>{{ strings.info_submission }}</p>
   {% include_cached button.html type="icon" label=strings.back_to_form 
   class="close_preview" icon="arrow-left" %}
   <button id="print">{{strings.download_pdf}}</button>
-  <button class="button button-submit_form" type="submit"><span>{{ strings.send_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
+  <button class="button button-submit_form" type="submit"><span>{{ strings.submit_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
   
 
 </div>

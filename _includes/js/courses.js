@@ -303,10 +303,19 @@ if (filterForm) {
                 
             selectTotal.forEach(s => {
                 s.innerHTML = newResults.length;
-                if (newResults.length == 1)
-                    s.innerHTML += ' {{strings.select_result_course}}';
-                else
-                    s.innerHTML += ' {{strings.select_results_courses}}';
+
+                if (newResults.length == 1){
+                    if(s.id.includes('lang'))
+                        s.innerHTML += ' {{strings.select_result_course_language}}';
+                    else if (s.id.includes('country'))
+                        s.innerHTML += ' {{strings.select_result_course_country}}';
+                }
+                else {
+                    if(s.id.includes('lang'))
+                        s.innerHTML += ' {{strings.select_results_courses_language}}';
+                    else if (s.id.includes('country'))
+                        s.innerHTML += ' {{strings.select_results_courses_country}}';
+                }
             })
             
 

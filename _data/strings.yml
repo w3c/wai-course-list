@@ -15,7 +15,8 @@ contact_email_list_courses: group-wai-list-courses@w3.org
 
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
-sub_header_info_list: This List of Courses provides information about courses, training, and certification on web and digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. If you wish to add information about a course, training, or certification on web and digital accessibility, please use the following button.
+sub_header_list_intro: This List of Courses provides information about courses, training, and certification on web and digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
+sub_header_info_add_list: If you wish to add information about a course, training, or certification on web and digital accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
 edit_remove_info: If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list
 sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
@@ -23,8 +24,10 @@ filters_title: Filters
 filters_info: Changing filters will change the listed courses.
 select_option_default: Select an option
 select_remove_option: Remove filter
-select_results_courses: courses available in
-select_result_course: course available in
+select_results_courses_language: courses available in
+select_result_course_language: course available in
+select_results_courses_country: courses available from providers in
+select_result_course_country: course available from providers in
 select_language_info_single_result: different language
 select_language_info_multiple_results: different languages
 select_country_info_single_result: different country
@@ -42,7 +45,7 @@ clear_filters_button_label: Clear filters
 searchterm: Searchterm
 filtered_criteria_title: Current filter criteria
 no_results_title: Sorry, but no courses match the following criteria
-no_results_simple: No results found
+no_results_simple: No courses found
 
 
 
@@ -64,7 +67,7 @@ length: Length
 cost: Cost
 availability: Availability
 availability_from: From
-availability_to: to
+availability_until: until
 availability_expired: Please note that this course may no longer be available
 website: Website
 reviews_page: Reviews page
@@ -104,6 +107,7 @@ audience_designer: Designer
 audience_developer: Developer
 audience_manager: Manager
 audience_tester: Tester
+audience_general: General
 audience_other: Other
 level_label: Level (Required)
 level_expl: Indicate the level of digital accessibility proficiency required.
@@ -127,12 +131,12 @@ language1_label: Language 1
 languagen_label: Language
 format_legend: Format (Required)
 format_label: Format (Required)
-format_face_to_face: Face-to-face - all teaching sessions are provided on-site
-format_online: Online - all teaching sessions are provided online
-format_hybrid: Hybrid - teaching sessions are provided simultaneously on-site and online
-format_blended: Blended - teaching sessions are provided either on-site or online
+format_face_to_face: Face-to-face - participants are required to attend to on-site teaching sessions
+format_online: Online - participants are required to attend to online teaching sessions
+format_blended: Blended - participants are required to attend to on-site and online teaching sessions
+format_hybrid: Hybrid - participants can choose to attend to on-site or online teaching sessions
 scheduling_legend: Scheduling (Required)
-scheduling_expl: Indicate the type of activities provided in this resource. Choose as many as apply.
+scheduling_expl: Indicate the attendance requirements for this resource. Choose as many as apply.
 learning_scheduled: Scheduled - participants are required to attend at a specific time
 learning_unscheduled: Unscheduled - participants can attend at their own pace
 platforms_label: Platforms
@@ -158,10 +162,10 @@ reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
 content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
 availability_legend: Availability
-start_date_label: Start date (Required)
-start_date_expl: Indicate the start date for the period of time this resource will be available.
-end_date_label: End date
-end_date_expl: If applicable, indicate the end date for the period of time this resource will be available.
+start_date_label: From (Required)
+start_date_expl: Indicate when this resource will become available.
+end_date_label: Until
+end_date_expl: If applicable, indicate the date this resource will no longer be available.
 submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
@@ -179,12 +183,12 @@ add_new_language_button: Add new language
 remove_last_language_button: Remove last language
 add_new_platform_button: Add new platform
 remove_last_platform_button: Remove last platform
-send_form_button: Send information
+submit_review_form_button: Review and submit information
+submit_form_button: Submit information
 
 # Preview submission
 preview_title: Review your submission
 preview_info: Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.
-quit_preview: Close Preview
 back_to_form: Go back to the form
 download_pdf: Download as PDF
 

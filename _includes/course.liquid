@@ -130,7 +130,7 @@
 : {{ strings[course.cost]}}
 
 {{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{%if course.end_date != "" %} {{ strings.availability_to }} {{ course.end_date | date: "%-d %B %Y" }}{% capture date_now %}{{ site.time | date: "%s" }}{% endcapture %}{% capture end_date %}{{ course.end_date | date: "%s" }}{% endcapture %}{% if date_now > end_date %} (*{{ strings.availability_expired }}*){% endif %}{% endif %}.
+: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{%if course.end_date != "" %} {{ strings.availability_until }} {{ course.end_date | date: "%-d %B %Y" }}{% capture date_now %}{{ site.time | date: "%s" }}{% endcapture %}{% capture end_date %}{{ course.end_date | date: "%s" }}{% endcapture %}{% if date_now > end_date %} (*{{ strings.availability_expired }}*){% endif %}{% endif %}.
 
 
 {{ strings.website }}

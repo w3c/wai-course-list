@@ -28,7 +28,8 @@ footer: >
 <a href="#status" class="button button--skip-link" accesskey="r">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
     <div class="header-left">
-        <p>{{ strings.sub_header_info_list }}</p>
+        <p>{{ strings.sub_header_list_intro }}</p>
+        <p>{{ strings.sub_header_info_add_list }}</p>
         {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
     </div>
     <div class="header-right">
@@ -82,7 +83,7 @@ footer: >
             <fieldset>
                 <legend id="language_label">Language</legend>
                 <p class="expl">
-                <span class="total-select-courses">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-lang-courses">{{langAvailable | size}} {{strings.select_language_info_multiple_results}}</span>
+                <span class="total-select-courses" id="total-select-courses-lang">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-lang-courses">{{langAvailable | size}} {{strings.select_language_info_multiple_results}}</span>
                 </p>
                 <div class="filter-options field">
                     <select name="language" id="language" aria-labelledby="language_label">
@@ -98,7 +99,7 @@ footer: >
             <fieldset>
                 <legend id="country_label">Country</legend>
                 <p class="expl">
-                <span class="total-select-courses">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
+                <span class="total-select-courses"  id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
                 </p>
                 <div class="filter-options field">
                     <select name="country" id="country" aria-labelledby="country_label">

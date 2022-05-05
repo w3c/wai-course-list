@@ -49,6 +49,10 @@
                 "name": "Tester"
             },
             {
+                "id": "audience_general",
+                "name": "General"
+            },
+            {
                 "id": "audience_other",
                 "name": "Other"
             }
@@ -86,12 +90,12 @@
                 "name": "Online"
             },
             {
-                "id": "format_hybrid",
-                "name": "Hybrid"
-            },
-            {
                 "id": "format_blended",
                 "name": "Blended"
+            },
+            {
+                "id": "format_hybrid",
+                "name": "Hybrid"
             }
         ]
     },
