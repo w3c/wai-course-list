@@ -393,7 +393,6 @@ function onSubmit(e) {
 
 {% include list-submission-form.liquid type="end"%}
 
-<button id="open-preview">preview</button>
 
 <script>
 {% include js/courses.js %}
