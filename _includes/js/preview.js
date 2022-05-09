@@ -1,13 +1,18 @@
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 
+document.querySelector('.start-preview').addEventListener('click', e => {
+    getPreviewSubmission();
+})
+
+
 function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
     const dataForm = document.querySelector('form');
-    
-    
+
+
 
     overlayContent.querySelectorAll('.button-close_preview').forEach(el => {
         el.addEventListener('click', e => {
@@ -29,7 +34,7 @@ function getPreviewSubmission() {
     var list = document.createElement("dl");
     detailsPreview.appendChild(list);
 
-    
+
 
 
 
@@ -41,7 +46,7 @@ function getPreviewSubmission() {
         if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
 
             var label = document.querySelector("label[for='" + el.id + "']");
-            if (label === null)
+            if(label === null) 
                 label = el.closest('fieldset').querySelector('legend').innerText;
             else
                 label = label.innerText;
@@ -148,14 +153,16 @@ function getPreviewSubmission() {
 
 
             //var label = getFieldsetText(el.querySelector("legend"));
+
+
             // appendList(label, value);
 
+
         }
-     
+        
     });
-    
+
     handleKeyboard();
-    
 
     function appendList(label, value, isSubList = false) {
 
@@ -198,6 +205,8 @@ function getPreviewSubmission() {
 
     function handleKeyboard() {
 
+        overlayContent.querySelector('button').focus();
+        
         window.addEventListener("keyup", function (event) {
             if (event.key === "Escape")
                 closePreviewOverlay();
@@ -205,7 +214,6 @@ function getPreviewSubmission() {
         })
 
         document.addEventListener('keydown', handleKeyDown, false);
-        
     }
 
 
@@ -239,11 +247,4 @@ function getPreviewSubmission() {
     }
 
 
-    
 }
-
-
-document.querySelector("#open-preview").addEventListener('click', e => {
-    getPreviewSubmission();
-})
-

@@ -576,15 +576,28 @@ details .helperinfo {
     line-height: 3em;
 }
 
-.overlay-content .icon {
+
+.button-close_preview.icon {
+    background-color: white;
+    border: 0;
     position: absolute;
     right: 0;
     top: 0;
     margin-right: 2em;
     margin-top: 2em;
-    cursor: pointer;
+    height: 30px !important;
+    width: 30px;
+    padding: 1em 0 .5em 0;
 }
 
+.button-close_preview.icon svg {
+    fill: black;
+}
+
+svg.icon-ex-circle {
+    height: 30px !important;
+    width: 30px;
+}
 
 .result-status-message {
     margin: 20px 0 30px 0;
