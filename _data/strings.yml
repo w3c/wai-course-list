@@ -40,6 +40,7 @@ disclaimer_text:
   <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
 sortby_title: Sort by
 showing: Showing
+searchbox_placeholder: Search courses by title, provider, or topic
 
 clear_filters_button_label: Clear filters
 searchterm: Searchterm
@@ -123,8 +124,8 @@ topics_expl: For example, accessibility policy and regulations, inclusive design
 topics1_label: Topic 1 (Required)
 topicsn_label: Topic
 curricula_label: WAI Curricula on Web Accessibility
-curricula_expl: Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
-curricula_expl_details: If applicable, indicate the WAI Curricula modules covered.
+curricula_expl: WAI Curricula on Web Accessibility is a framework that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
+curricula_expl_details: If applicable, indicate the WAI Curricula modules followed.
 language_legend: Language (Required)
 language_expl: Indicate in which language or languages this resource is provided.
 language1_label: Language 1
@@ -190,12 +191,9 @@ submit_form_button: Submit information
 preview_title: Review your submission
 preview_info: Please review the information provided. If you need to correct any information, you can go back to the form and then proceed to your submission.
 back_to_form: Go back to the form
-download_pdf: Download as PDF
-
-# PDF info
-info_pdf: This is a summary of the information provided in the form. Please note that the information below has not yet been submitted or approved for publication.
+close_back_to_form: Close preview and go back to the form
 
 # Results message
-success_message: Thank you for your submission. We will review the information provided and contact you shortly to clarify eventual details, or to confirm that your submission has been accepted. Submissions are expected to be published within a month.
+success_message: Thank you for your submission. We will review the information provided and contact you shortly to clarify eventual details, or to confirm that your submission has been accepted. Submissions are expected to be published within a month. The information provided is available on our GitHub repository. 
 failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list
 

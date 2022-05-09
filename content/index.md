@@ -46,7 +46,7 @@ footer: >
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2 id="filters_title">{{ strings.filters_title }}</h2>
-            {% include box.html type="start" class="simple infobox" %}
+            {% include box.html type="start" class="simple infobox"%}
             <svg focusable="false" aria-label="Information about the filters" class="i-info"><use xlink:href="/assets/images/icons.svg#icon-info"></use></svg>
             {{strings.filters_info}}
             {% include box.html type="end" %}
@@ -120,7 +120,7 @@ footer: >
     <div id="courses-list">
         <div class="courses-list-header">
             <div class="field">
-                <input type="search" id="search" placeholder="Search courses">
+                <input type="search" id="search" placeholder="{{strings.searchbox_placeholder}}">
             </div>
             <div class="field" class="sort-by">
                 <label for="select">{{ strings.sortby_title }}</label>

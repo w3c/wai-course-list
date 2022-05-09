@@ -55,7 +55,7 @@ function onSubmit(e) {
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
-<button id="open-preview">Open preview</button>
+<span id="open-preview">Open preview</span>
 
 
 <h2 id="about_you">{{strings.about_you}}</h2>
@@ -397,21 +397,19 @@ function onSubmit(e) {
 
 <script>
 {% include js/courses.js %}
-{% include js/jspdf.min.js %}
 {% include js/preview.js %}
 </script>
 
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
-{% include_cached button.html type="icon" label=strings.back_to_form class="close_preview icon" icon="ex-circle" %}
+  <button class="button-close_preview icon" title="{{ strings.close_back_to_form }}" aria-label="{{ strings.close_back_to_form }}"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/assets/images/icons.svg#icon-ex-circle"></use></svg></span></button>
   <h2 id="preview_title">{{ strings.preview_title }}</h2>  
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
   <p>{{ strings.info_submission }}</p>
   {% include_cached button.html type="icon" label=strings.back_to_form 
   class="close_preview" icon="arrow-left" %}
-  <button id="print">{{strings.download_pdf}}</button>
   <button class="button button-submit_form" type="submit"><span>{{ strings.submit_form_button }} <svg focusable="false" aria-hidden="true" class="icon-arrow-right "><use xlink:href="/assets/images/icons.svg#icon-arrow-right"></use></svg></span></button>
   
 

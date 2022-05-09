@@ -6,8 +6,8 @@ function getPreviewSubmission() {
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
     const dataForm = document.querySelector('form');
-
-
+    
+    
 
     overlayContent.querySelectorAll('.button-close_preview').forEach(el => {
         el.addEventListener('click', e => {
@@ -29,7 +29,7 @@ function getPreviewSubmission() {
     var list = document.createElement("dl");
     detailsPreview.appendChild(list);
 
-
+    
 
 
 
@@ -148,16 +148,14 @@ function getPreviewSubmission() {
 
 
             //var label = getFieldsetText(el.querySelector("legend"));
-
-
             // appendList(label, value);
 
-
         }
-        handleKeyboard();
+     
     });
-
-
+    
+    handleKeyboard();
+    
 
     function appendList(label, value, isSubList = false) {
 
@@ -200,11 +198,6 @@ function getPreviewSubmission() {
 
     function handleKeyboard() {
 
-        var focusableElements = overlayContent.querySelectorAll('button');
-        var firstElementOfModal = focusableElements[0];
-        var lastElementOfModal = focusableElements[focusableElements.length - 1];
-        firstElementOfModal.focus();
-
         window.addEventListener("keyup", function (event) {
             if (event.key === "Escape")
                 closePreviewOverlay();
@@ -212,8 +205,7 @@ function getPreviewSubmission() {
         })
 
         document.addEventListener('keydown', handleKeyDown, false);
-
-
+        
     }
 
 
@@ -247,58 +239,6 @@ function getPreviewSubmission() {
     }
 
 
-
-    document.querySelector('#print').addEventListener('click', e => {
-        
-        var heading = document.createElement('h1');
-        heading.innerText = 'W3C WAI List of Accessibility Courses';
-        
-        var info = document.createElement('p');
-        info.innerText = "{{strings.info_pdf}}";
-        info.style.fontStyle = "italic";
-
-        var date = document.createElement('p');
-        date.innerText = new Date().toDateString();
-
-        var details = document.createElement('div');
-        details = overlayContent.querySelector('.details-preview').cloneNode(true);
-        
-        details.querySelectorAll('dt').forEach( d => {
-            d.style.fontWeight = "bold";
-            d.style.marginTop = "8px";
-        });
-        
-        var source = document.createElement('div');
-        source.appendChild(heading);
-        source.appendChild(date);
-        source.appendChild(info);
-        source.appendChild(details);
-        
-
-        var pdf = new jsPDF('p', 'pt', 'letter'), 
-        margins = {
-            top: 80,
-            bottom: 60,
-            left: 40,
-            width: 522
-          };
-        pdf.setProperties({
-            title: 'WAI Accessibility List of Courses submission',
-            author: 'W3C WAI'
-        });
-        pdf.fromHTML(
-            source 
-            , margins.left
-            , margins.top
-            , {
-                'width': margins.width 
-            },
-            function (dispose) {
-                pdf.save('WAI-List-of-courses-submission.pdf');
-              },
-            margins
-          )
-    })
     
 }
 
