@@ -99,7 +99,7 @@ footer: >
             <fieldset>
                 <legend id="country_label">Country</legend>
                 <p class="expl">
-                <span class="total-select-courses"  id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
+                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
                 </p>
                 <div class="filter-options field">
                     <select name="country" id="country" aria-labelledby="country_label">
@@ -141,7 +141,7 @@ footer: >
         {% capture totalSubmissionsFiltered %}
         {{ itemsSorted | size }}
         {% endcapture %}
-        <div id="status" tabindex="0">
+        <div id="status" tabindex="0" role="status" aria-live="polite">
             <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
         </div>  
         <div class="box hidden-element results-box">
