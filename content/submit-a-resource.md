@@ -55,9 +55,6 @@ function onSubmit(e) {
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
-<span class="start-preview">Open preview</span>
-
-
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
 
