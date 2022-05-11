@@ -54,11 +54,11 @@
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
-    "foundations_modules1",
-    "foundations_modules2",
-    "foundations_modules3",
-    "foundations_modules4",
-    "foundations_modules5"
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
   ],
   "website": "https://course.com"
 }
