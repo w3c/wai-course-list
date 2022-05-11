@@ -1,6 +1,6 @@
 ---
 title: "List of Accessibility Courses"
-title_html: "List of Accessibility Courses:<br>Education, training, and certification" 
+title_html: "List of Accessibility Courses:<br>Education, Training, and Certification" 
 nav_title: "List of Courses"
 doc-note-type: draft
 lang: en
