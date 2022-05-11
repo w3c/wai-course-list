@@ -1,31 +1,31 @@
 [
     {
-        "id": "foundations_modules",
-        "name": "Foundations Modules",
+        "id": "foundation_modules",
+        "name": "Foundation Modules",
         "link": "https://www.w3.org/WAI/curricula/foundation-modules/",
         "modules": [
             {
-                "id": "foundations_modules1",
+                "id": "foundation_modules1",
                 "name": "Module 1: What is Web Accessibility",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/what-is-web-accessibility/"
             },
             {
-                "id": "foundations_modules2",
+                "id": "foundation_modules2",
                 "name": "Module 2: People and Digital Technology",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/people-and-digital-technology/"
             },
             {
-                "id": "foundations_modules3",
+                "id": "foundation_modules3",
                 "name": "Module 3: Business Case and Benefits",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/business-case-and-benefits/"
             },
             {
-                "id": "foundations_modules4",
+                "id": "foundation_modules4",
                 "name": "Module 4: Principles, Standards, and Checks",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/principles-standards-and-checks/"
             },
             {
-                "id": "foundations_modules5",
+                "id": "foundation_modules5",
                 "name": "Module 5: Getting Started with Accessibility",
                 "link": "https://www.w3.org/WAI/curricula/foundation-modules/getting-started-with-accessibility/"
             }
