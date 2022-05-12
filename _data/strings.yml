@@ -2,6 +2,7 @@ show_all_info: Show all additional information
 hide_all_info: Hide all additional information
 show_info: Show info
 hide_info: Hide info
+info_about: Info about
 other: Other
 from: from
 
@@ -75,6 +76,7 @@ reviews_page: Reviews page
 info_updated: This information was last updated on
 content_updated: The content of this resource was last updated on
 
+
 # Form strings
 back_to_list_link: Back to List of Courses
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on web and digital accessibility. 
@@ -124,8 +126,8 @@ topics_expl: For example, accessibility policy and regulations, inclusive design
 topics1_label: Topic 1 (Required)
 topicsn_label: Topic
 curricula_label: WAI Curricula on Web Accessibility
-curricula_expl: WAI Curricula on Web Accessibility is a framework that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
-curricula_expl_details: If applicable, indicate the WAI Curricula modules followed.
+curricula_expl: WAI Curricula on Web Accessibility is a framework to help you create courses on digital accessibility, or to include accessibility in other courses. WAI Curricula provides a set of learning outcomes, topics and assessment ideas covering accessibility foundations that apply broadly, and specific skills for developers, designers and content authors. <a href="https://www.w3.org/WAI/curricula/">See more information about WAI Curricula Modules</a>.
+curricula_expl_details: If applicable, indicate the WAI Curricula modules that your resource covers.
 language_legend: Language (Required)
 language_expl: Indicate in which language or languages this resource is provided.
 language1_label: Language 1

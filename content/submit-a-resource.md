@@ -47,7 +47,6 @@ function onSubmit(e) {
                                    onsubmit="onSubmit" -%}
 
 
-
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -405,6 +404,6 @@ function onSubmit(e) {
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
   {% include_cached button.html label=strings.close_back_to_form class="close_preview"%}
-  {% include_cached button.html label=strings.submit_review_form_button class="button button-submit_form" %}
+  {% include_cached button.html label=strings.submit_form_button class="button button-submit_form" %}
 </div>
 </div>
