@@ -47,6 +47,8 @@ function onSubmit(e) {
                                    onsubmit="onSubmit" -%}
 
 
+
+
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -359,10 +361,10 @@ function onSubmit(e) {
   <legend class="label_input">{{strings.availability}}</legend>
   <label for="start_date" class="label_input">{{strings.start_date_label}}</label>
   <p class="expl">{{strings.start_date_expl}}</p>
-  <input type="date" id="start_date" name="start_date" required>
+  <input type="date" id="start_date" name="start_date" aria-label="{{strings.available_from_label}}" required>
   <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
   <p class="expl">{{strings.end_date_expl}}</p>
-  <input type="date" id="end_date" name="end_date">
+  <input type="date" id="end_date" name="end_date" aria-label="{{strings.available_until_label}}">
 </fieldset>
 
 <h2>{{strings.submitting_your_resource}}</h2>

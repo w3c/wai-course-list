@@ -165,6 +165,8 @@ reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
 content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
 availability_legend: Availability
+available_from_label: Available from
+available_until_label: Available until
 start_date_label: From (Required)
 start_date_expl: Indicate when this resource will become available.
 end_date_label: Until
