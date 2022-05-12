@@ -53,7 +53,7 @@ footer: >
             <fieldset id="{{ filter.id }}">
                 {% if filter.info %}
                 <legend class="label">{{ filter.name }}</legend>
-                <button type="button" class="showhidebutton button-small helperbutton" aria-label="Info about {{ filter.name }}" aria-expanded="false" aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+                <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ filter.name }}" aria-expanded="false" aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
                 {% assign helper = site.data.helpers | where: "id", filter.id %}
                 <div class="helperinfo" id="info_about{{ filter.name}}" hidden="hidden">
                     <p>{{ helper[0].description }}</p>
