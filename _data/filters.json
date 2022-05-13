@@ -11,12 +11,12 @@
                 "name": "Undergraduate program"
             },
             {
-                "id": "type_training",
-                "name": "Training"
-            },
-            {
                 "id": "type_certification",
                 "name": "Professional certification"
+            },
+            {
+                "id": "type_training",
+                "name": "Training"
             },
             {
                 "id": "type_other",

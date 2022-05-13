@@ -127,12 +127,12 @@ function onSubmit(e) {
     <label for="type_undergraduate">{{strings.type_undergraduate}}</label>
   </div>
   <div class="radio-field">
-    <input type="radio" name="type_resource" id="type_training" value="type_training">
-    <label for="type_training">{{strings.type_training}}</label>
-  </div>
-  <div class="radio-field">
     <input type="radio" name="type_resource" id="type_certification" value="type_certification">
     <label for="type_certification">{{strings.type_certification}}</label>
+  </div>
+  <div class="radio-field">
+    <input type="radio" name="type_resource" id="type_training" value="type_training">
+    <label for="type_training">{{strings.type_training}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="type_resource" id="type_other" value="type_other" class="option_field_other">
