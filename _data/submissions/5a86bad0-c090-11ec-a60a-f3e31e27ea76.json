@@ -53,8 +53,8 @@
     "Legal context",
     "Accessibility standards"
   ],
-  "type_resource": "type_other",
-  "type_resource_new": "Workshop",
+  "type_resource": "type_training",
+  "type_resource_new": "",
   "wai_curricula": "",
   "website": "https://course.com"
 }
