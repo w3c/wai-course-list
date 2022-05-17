@@ -3,9 +3,18 @@
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
-const submitForm = document.querySelector('form');
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
+const regionMainStatus = document.querySelector('#status');
+
+const selectLang = document.querySelector('#language');
+const selectCountry = document.querySelector('#country');
+const selectLangOptions = document.querySelectorAll('#language option');
+const selectCountryOptions = document.querySelectorAll('#country option');
+const selectTotal = document.querySelectorAll('.total-select-courses');
+const selectLangTotal = document.querySelector('#total-lang-courses');
+const selectCountryTotal = document.querySelector('#total-country-courses');
+
 const importJsonCourses = String.raw`{{ itemsSorted | jsonify }}`;
 importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
@@ -19,34 +28,22 @@ const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
 const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
+const submitForm = document.querySelector('form');
 
 // if (filterForm && sortForm && search) {
 
 if (filterForm) {
+
 
     document.querySelectorAll('.button-clear-button').forEach(item => {
         item.hidden = true;
         item.addEventListener('click', e => { clearFilters() });
     })
 
-    filterForm.addEventListener('change', el => {
-        filterJson();
-    });
-
-    
-    sortForm.querySelector('select').addEventListener('change', el => {
-        filterJson();
-    });
-    
-
-    searchForm.addEventListener('keyup', el => {
-        filterJson();
-    });
-    searchForm.addEventListener('search', () => {
-        filterJson();
-    })
-
-
+    filterForm.addEventListener('change', filterJson);
+    console.log(filterForm);
+    searchForm.addEventListener('keyup', filterJson);
+    searchForm.addEventListener('search', filterJson);    
     searchForm.onkeydown = function (e) {
         e = e || window.event;
         switch (e.which || e.keyCode) {
@@ -56,10 +53,13 @@ if (filterForm) {
       }
 
 
+    sortForm.querySelector('select').addEventListener('change', filterJson);
+    
+
     //Add pre-counters to filters
     showFilterCounters(filterForm);
     handleSelectFilters(jsonCourses);
-
+    handleARIAselect();
     
 
 
@@ -220,6 +220,7 @@ if (filterForm) {
 
     function handleSelectFilters(newResults){
 
+        
         var totalSelects = updateSelectFiltersOptions(newResults.map(e => e.language), newResults.map(e => e.country));
         updateSelectFiltersCounters(newResults, totalSelects);
        
@@ -240,12 +241,6 @@ if (filterForm) {
         countries.forEach((x) => {
             countsCountry[x] = (countsCountry[x] || 0) + 1;
         });
-        
-        selectLang = filterForm.querySelector('#language')
-        selectCountry = filterForm.querySelector('#country');
-
-        selectLangOptions = filterForm.querySelectorAll('#language option')
-        selectCountryOptions = filterForm.querySelectorAll('#country option');
         
         
         langs = [...new Set(langs)];
@@ -287,16 +282,12 @@ if (filterForm) {
 
     function updateSelectFiltersCounters(newResults, totalSelects){
 
-        selectTotal = filterForm.querySelectorAll('.total-select-courses');
-        selectLang = filterForm.querySelector('#total-lang-courses');
-        selectCountry = filterForm.querySelector('#total-country-courses');
-
         if(newResults.length === 0){
             selectTotal.forEach(s => {
                 s.innerHTML = '{{strings.no_results_simple}}';
             })
-            selectLang.innerHTML = '';
-            selectCountry.innerHTML = '';
+            selectLangTotal.innerHTML = '';
+            selectCountryTotal.innerHTML = '';
             
         }
         else{
@@ -319,19 +310,19 @@ if (filterForm) {
             })
             
 
-            selectLang.innerHTML = totalSelects.totalLangAvailable;
-            selectCountry.innerHTML = totalSelects.totalCountriesAvailable;
+            selectLangTotal.innerHTML = totalSelects.totalLangAvailable;
+            selectCountryTotal.innerHTML = totalSelects.totalCountriesAvailable;
 
             
             if(totalSelects.totalLangAvailable === 1)
-                selectLang.innerHTML += ' {{strings.select_language_info_single_result}}';
+                selectLangTotal.innerHTML += ' {{strings.select_language_info_single_result}}';
             else
-                selectLang.innerHTML += ' {{strings.select_language_info_multiple_results}}';
+                selectLangTotal.innerHTML += ' {{strings.select_language_info_multiple_results}}';
 
             if(totalSelects.totalCountriesAvailable === 1)
-                selectCountry.innerHTML += ' {{strings.select_country_info_single_result}}';
+                selectCountryTotal.innerHTML += ' {{strings.select_country_info_single_result}}';
             else
-                selectCountry.innerHTML += ' {{strings.select_country_info_multiple_results}}';
+                selectCountryTotal.innerHTML += ' {{strings.select_country_info_multiple_results}}';
         }
     }
 
@@ -462,10 +453,48 @@ if (filterForm) {
 
     function handleKeyboardSearch(){
         if(searchForm.value !== ""){
-            document.querySelector("#status").focus();
+            regionMainStatus.focus();
         }
     }
 
+    function handleARIAselect(){
+        
+        console.log('Handle ARIA');
+
+        selectLang.addEventListener('focus', toogleOffARIA);
+
+        // when closed = blur, enter, scape, space
+        selectLang.addEventListener('blur', toogleOnARIA);        
+        selectLang.addEventListener('keypress', function(event){
+            if (event.key === "Enter") toogleOnARIA();
+            //if (event.key === "Space") toogleOnARIA();
+            //if (event.key === "Escape") toogleOnARIA();
+        })
+
+    }
+
+    function toogleOffARIA(){
+        regionMainStatus.removeAttribute('aria-live');
+        console.log(regionMainStatus.getAttribute('aria-live'));
+    }
+
+    function toogleOnARIA(){
+        
+        console.log('change aria');
+        console.log(regionMainStatus.getAttribute('aria-live'));
+        regionMainStatus.setAttribute('aria-live','polite');
+        console.log(regionMainStatus.getAttribute('aria-live'));
+
+        console.log('change text');
+        console.log(regionMainStatus.innerHTML);
+        txt = regionMainStatus.innerHTML;
+        regionMainStatus.innerHTML = "";
+        console.log(regionMainStatus.innerHTML);
+        regionMainStatus.innerHTML = txt;
+        console.log(regionMainStatus.innerHTML);
+    
+    }
+    
 }
 
 
