@@ -85,8 +85,11 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_select_text" id="country">
-  <legend class="label_input">{{strings.country_legend}}</legend>
-  <p class="expl">{{strings.country_expl}}</p>
+  <legend class="label_input">
+    {{strings.country_legend}}
+    <span class="expl">{{strings.country_expl}}</span>
+  </legend>
+  
   <div class="line">
     <label for="country1" class="label_input">{{strings.country1_label}}</label>
       <select name="country[]" id="country1" class="select_form" required>
@@ -110,10 +113,11 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field">
-  <legend for="description" id="description_label" class="label_input">{{strings.description_label}}</legend>
-  <p class="expl">{{strings.description_expl}}</p>
-  <textarea id="description" name="description" maxlength="350" rows="5" aria-labelledby="description_label" required></textarea>
-  <p><em>{{strings.description_expl_details}}</em></p>
+  <legend for="description" id="description_label" class="label_input">{{strings.description_label}}
+    <span class="expl">{{strings.description_expl}}</span>
+  </legend>
+  <textarea id="description" name="description" maxlength="350" rows="5" aria-labelledby="description_label" aria-describedby="description_expl" required></textarea>
+  <p id="description_expl"><em>{{strings.description_expl_details}}</em></p>
 </fieldset>
 
 <fieldset class="field fieldset_radio other_field" id="type">
@@ -177,8 +181,9 @@ function onSubmit(e) {
 </fieldset>
 
  <fieldset class="field fieldset_radio" id="level">
-  <legend class="label_input">{{strings.level_label}}</legend>
-  <p class="expl">{{strings.level_expl}}</p>
+  <legend class="label_input">{{strings.level_label}}
+    <span class="expl">{{strings.level_expl}}</span>
+  </legend>
   <div class="radio-field">
     <input type="radio" name="level" id="level_basic" value="level_basic">
     <label for="level_basic">{{strings.level_basic}}</label>
@@ -194,8 +199,9 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_text" id="prerequisites">
-  <legend class="label_input">{{strings.prerequisites_legend}}</legend>
-  <p class="expl">{{strings.prerequisites_expl}}</p>
+  <legend class="label_input">{{strings.prerequisites_legend}}
+    <span class="expl">{{strings.prerequisites_expl}}</span>
+  </legend>
   <div class="line">
     <label for="prerequisites_1" class="label_input">{{strings.prerequisites1_label}}</label>
     <input type="text" id="prerequisites_1" name="prerequisites">
@@ -209,8 +215,9 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_text" id="topics">
-  <legend class="label_input">{{strings.topics_legend}}</legend>
-  <p class="expl">{{strings.topics_expl}}</p>
+  <legend class="label_input">{{strings.topics_legend}}
+    <span class="expl">{{strings.topics_expl}}</span>
+  </legend>
   <div class="line">
     <label for="topics_1" class="label_input">{{strings.topics1_label}}</label>
     <input type="text" id="topics_1" name="topics" required>
@@ -224,15 +231,17 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_check_title" id="curricula">
-  <legend class="label_input">{{strings.curricula_label}}</legend>
-  <p class="expl">{{strings.curricula_expl}}</p>
-  <p class="expl">{{strings.curricula_expl_details}}</p>
+  <legend class="label_input">{{strings.curricula_label}}
+    <span class="expl">{{strings.curricula_expl}}</span>
+    <span class="expl">{{strings.curricula_expl_details}}</span>
+  </legend>
     {% include wai-curricula.liquid %}
 </fieldset>
 
 <fieldset class="field fieldset_select_text" id="language">
-  <legend class="label_input">{{strings.language_legend}}</legend>
-  <p class="expl">{{strings.language_expl}}</p>
+  <legend class="label_input">{{strings.language_legend}}
+    <span class="expl">{{strings.language_expl}}</span>
+  </legend>
   <div class="line">
     <label for="language_1" class="label_input">{{strings.language1_label}}</label>
     <select name="language[]" id="language_1" class="select_form" required> 
@@ -276,8 +285,9 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_check" id="learning">
-  <legend class="label_input">{{strings.scheduling_legend}}</legend>
-  <p class="expl">{{strings.scheduling_expl}}</p>
+  <legend class="label_input">{{strings.scheduling_legend}}
+    <span class="expl">{{strings.scheduling_expl}}</span>
+  </legend>
   <div class="radio-field">
     <input type="checkbox" id="learning_scheduled" name="learning[]" value="learning_scheduled" group="learning" required>
     <label for="learning_scheduled">{{strings.learning_scheduled}}</label>
@@ -289,8 +299,9 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field fieldset_text">
-  <legend id="platforms_label" class="label_input">{{strings.platforms_label}}</legend>
-  <p class="expl">{{strings.platforms_expl}}</p>
+  <legend id="platforms_label" class="label_input">{{strings.platforms_label}}
+    <span class="expl">{{strings.platforms_expl}}</span>
+  </legend>
   <div class="line">
     <label for="platform_1" class="label_input">{{strings.platform1_label}}</label>
     <input type="text" id="platform_1" name="platforms">
@@ -305,14 +316,16 @@ function onSubmit(e) {
 
 
 <fieldset class="field fieldset_check" id="accessibility-support">
-  <legend class="label_input">{{strings.asupport_legend}}</legend>
-  <p class="expl">{{strings.asupport_expl}}</p>
+  <legend class="label_input">{{strings.asupport_legend}}
+    <span class="expl">{{strings.asupport_expl}}</span>
+  </legend>
   {% include accessibility-support.liquid %}
 </fieldset>
 
 <fieldset class="field">
-  <legend id="length_label" class="label_input">{{strings.length_label}}</legend>
-  <p class="expl">{{strings.length_expl}}</p>
+  <legend id="length_label" class="label_input">{{strings.length_label}}
+    <span class="expl">{{strings.length_expl}}</span>
+  </legend>
   <input type="text" id="length" aria-labelledby="length_label" name="length">
 </fieldset>
 
@@ -341,37 +354,43 @@ function onSubmit(e) {
 </fieldset>
 
 <fieldset class="field">
-  <legend id="website_label" class="label_input">{{strings.website_label}}</legend>
-  <p class="expl">{{strings.website_expl}}</p>
+  <legend id="website_label" class="label_input">{{strings.website_label}}
+    <span class="expl">{{strings.website_expl}}</span>
+  </legend>
   <input type="url" name="website" id="website" aria-labelledby="website_label" placeholder="https://example.com" required>
 </fieldset>
 
 <fieldset class="field">
-  <legend id="reviews_label" class="label_input">{{strings.reviews_label}}</legend>
-  <p class="expl">{{strings.reviews_expl}}</p>
+  <legend id="reviews_label" class="label_input">{{strings.reviews_label}}
+    <span class="expl">{{strings.reviews_expl}}</span>
+  </legend>
   <input type="url" name="reviews" id="reviews" aria-labelledby="reviews_label" placeholder="https://example.com">
 </fieldset>
 
 <fieldset class="field">
-  <legend id="content_update_label" class="label_input">{{strings.content_update_label}}</legend>
-  <p class="expl">{{strings.content_update_expl}}</p>
+  <legend id="content_update_label" class="label_input">{{strings.content_update_label}}
+    <span class="expl">{{strings.content_update_expl}}</span>
+  </legend>
   <input type="date" name="content_update" id="content_update" aria-labelledby="content_update_label" required>
 </fieldset>
 
 <fieldset class="field" id="availability">
   <legend class="label_input">{{strings.availability}}</legend>
-  <label for="start_date" class="label_input">{{strings.start_date_label}}</label>
-  <p class="expl">{{strings.start_date_expl}}</p>
+  <label for="start_date" class="label_input">{{strings.start_date_label}}
+    <span class="expl">{{strings.start_date_expl}}</span>
+  </label>
   <input type="date" id="start_date" name="start_date" aria-label="{{strings.available_from_label}}" required>
-  <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
-  <p class="expl">{{strings.end_date_expl}}</p>
+  <label for="end_date" class="label_input">{{strings.end_date_label}}
+    <span class="expl">{{strings.end_date_expl}}</span>
+  </label> 
   <input type="date" id="end_date" name="end_date" aria-label="{{strings.available_until_label}}">
 </fieldset>
 
 <h2>{{strings.submitting_your_resource}}</h2>
 <fieldset class="field">
-  <legend id="comments_label" class="label_input">{{strings.comments_label}}</legend>
-  <p class="expl">{{strings.comments_expl}}</p>
+  <legend id="comments_label" class="label_input">{{strings.comments_label}}
+    <span class="expl">{{strings.comments_expl}}</span>
+  </legend>
   <textarea id="comments" name="comments" aria-labelledby="comments_label"></textarea>
 </fieldset>
 

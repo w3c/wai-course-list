@@ -1,20 +1,20 @@
 {% for support in site.data.accessibility-support %}
 
-<p class="fieldset-subtitles">{{ support.type }}</p>
+<p class="fieldset-subtitles" id="{{support.id}}-subtitles" >{{ support.type }}</p>
 
 {% for option in support.options %}
 
 {% if option.options %}
-<p class="expl">{{ option.name }}, {{strings.asupport_including}}: </p>
+<p class="expl" id="{{option.id}}-expl">{{ option.name }}, {{strings.asupport_including}}: </p>
 {% for details in option.options %}
 <div class="radio-field">  
-    <input type="checkbox" id="{{ details.id }}" name="accessibility_support[]" value="{{ details.id }}" group="accessibility_support">
+    <input type="checkbox" id="{{ details.id }}" name="accessibility_support[]" value="{{ details.id }}" group="accessibility_support" aria-describedby="{{support.id}}-subtitles {{option.id}}-expl">
     <label for="{{ details.id }}">{{ details.name }}</label>
 </div>
 {% endfor %}
 {% else %}
 <div class="radio-field">
-    <input type="checkbox" id="{{ option.id }}" name="accessibility_support[]" value="{{ option.id }}" group="accessibility_support">
+    <input type="checkbox" id="{{ option.id }}" name="accessibility_support[]" value="{{ option.id }}" group="accessibility_support" aria-describedby="{{support.id}}-subtitles {{option.id}}-expl">
     <label for="{{ option.id }}">{{ option.name }}</label>
 </div>    
 {% endif %}
