@@ -1,10 +1,6 @@
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
 
-document.querySelector('.start-preview').addEventListener('click', e => {
-    getPreviewSubmission();
-})
-
 
 function getPreviewSubmission() {
 
