@@ -79,9 +79,6 @@ footer: >
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset>
                 <legend id="language_label">Language</legend>
-                <p class="expl">
-                <span class="total-select-courses" id="total-select-courses-lang">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-lang-courses">{{langAvailable | size}} {{strings.select_language_info_multiple_results}}</span>
-                </p>
                 <div class="filter-options field">
                     <select name="language" id="language" aria-labelledby="language_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -91,13 +88,13 @@ footer: >
                         {% endfor %}
                     </select>
                 </div>
+                <p class="expl" tabindex=0>
+                <span class="total-select-courses" id="total-select-courses-lang">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-lang-courses">{{langAvailable | size}} {{strings.select_language_info_multiple_results}}</span>
+                </p>
             </fieldset>
             {% include sort-countries.liquid data=countriesAvailable %}
             <fieldset>
                 <legend id="country_label">Country</legend>
-                <p class="expl">
-                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
-                </p>
                 <div class="filter-options field">
                     <select name="country" id="country" aria-labelledby="country_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -106,6 +103,9 @@ footer: >
                         {% endfor %}
                     </select>
                 </div>
+                <p class="expl" tabindex=0>
+                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
+                </p>
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
@@ -138,7 +138,7 @@ footer: >
         {% capture totalSubmissionsFiltered %}
         {{ itemsSorted | size }}
         {% endcapture %}
-        <div id="status" tabindex="0" role="status" aria-live="polite">
+        <div id="status" tabindex="0" aria-live="polite" role="status">
             <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
         </div>  
         <div class="box hidden-element results-box">
