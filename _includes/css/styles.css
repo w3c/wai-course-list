@@ -498,7 +498,11 @@ button {
 }
 
 
-
+span.expl{
+    font-weight: 400 !important;
+    display: block;
+    padding: .25em 0 1em 0;
+}
 
 
 
