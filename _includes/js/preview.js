@@ -1,9 +1,5 @@
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
-document.querySelector('#open').addEventListener('click', e => {
-    getPreviewSubmission();
-})
-
 function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
