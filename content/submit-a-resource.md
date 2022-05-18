@@ -48,8 +48,6 @@ function onSubmit(e) {
 
 
 
-
-
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -86,7 +84,7 @@ function onSubmit(e) {
 
 <fieldset class="field fieldset_select_text" id="country">
   <legend class="label_input">
-    {{strings.country_legend}}
+    {{-strings.country_legend-}}
     <span class="expl">{{strings.country_expl}}</span>
   </legend>
   
