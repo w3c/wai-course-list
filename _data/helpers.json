@@ -12,7 +12,7 @@
     {
         "id": "wai-curricula",
         "name": "WAI Curricula module",
-        "description": "Curricula on Web Accessibility is a WAI resource that provides teaching modules to help you create courses on digital accessibility, or to include accessibility in other courses. The modules cover accessibility foundations that apply broadly, and specific skills for developers, designers, content authors, and others. <a href=\"https://www.w3.org/WAI/curricula/\">See more information about WAI Curricula Modules.</a>"
+        "description": "WAI Curricula on Web Accessibility is a framework to help you create courses on digital accessibility, or to include accessibility in other courses. WAI Curricula provides a set of learning outcomes, topics and assessment ideas covering accessibility foundations that apply broadly, and specific skills for developers, designers and content authors. <a href=\"https://www.w3.org/WAI/curricula/\">See more information about WAI Curricula Modules.</a>"
     }
 
 ]
