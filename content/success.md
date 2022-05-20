@@ -2,11 +2,11 @@
 title: 'Form Submitted'
 permalink: /success
 ---
-<div style="grid-column: 2 / span 6">
+<div style="grid-column: 2 / span 8">
 
 <style> 
 {% include css/styles.css %}
-main > header { grid-column: 2 / span 6; }
+main > header { grid-column: 2 / span 8; }
 </style>
 
 {% assign strings = site.data.strings %}
