@@ -91,7 +91,7 @@ about_the_resource_description: Provide some information about the course, train
 title_label: Title (Required)
 provider_label: Provider (Required)
 country_legend: Country (Required)
-country_expl: Indicate the country or countries the provider is located in.
+country_expl: In which country or countries is the provider?
 country1_label: Country 1 (Required)
 countryn_label: Country
 description_label: Description (Required)
@@ -176,7 +176,7 @@ comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
 publish_info_label: I give permission for the information about this resource to be published in the W3C's List of Courses (Required).
-info_submission: When you submit the form, we will review your submission and add it to the list. Submissions are expected to be published within a month.
+info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 
 add_new_country_button: Add new country
 remove_last_country_button: Remove last country
@@ -198,6 +198,6 @@ back_to_form: Go back to the form
 close_back_to_form: Close preview and go back to the form
 
 # Results message
-success_message: Thank you for your submission. We will review the information provided and contact you shortly to clarify eventual details, or to confirm that your submission has been accepted. Submissions are expected to be published within a month. The information provided is available on our GitHub repository. 
-failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list
-
+success_message: Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
+gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">List of Courses GitHub repository</a> to see your information (JSON format).
+failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list.
