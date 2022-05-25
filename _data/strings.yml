@@ -134,7 +134,7 @@ language1_label: Language 1
 languagen_label: Language
 format_legend: Format (Required)
 format_label: Format (Required)
-format_face_to_face: Face-to-face - participants are required to attend to on-site teaching sessions
+format_face_to_face: Face-to-face - participants are required to attend on-site teaching sessions
 format_online: Online - participants are required to complete online teaching sessions
 format_blended: Blended - participants are required to attend on-site and online teaching sessions
 format_hybrid: Hybrid - participants can choose to attend on-site or online teaching sessions
