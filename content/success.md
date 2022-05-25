@@ -1,6 +1,6 @@
 ---
 title: 'Form Submitted'
-permalink: /success
+permalink: course-list/success
 ---
 <div style="grid-column: 2 / span 8">
 

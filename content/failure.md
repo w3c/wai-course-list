@@ -1,6 +1,6 @@
 ---
 title: 'Something went wrong'
-permalink: /failure
+permalink: course-list/failure
 ---
 <div style="grid-column: 2 / span 8">
 

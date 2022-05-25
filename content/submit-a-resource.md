@@ -45,9 +45,6 @@ function onSubmit(e) {
                                    failure="/failure.html"
                                    repository="wai-course-list"
                                    onsubmit="onSubmit" -%}
-
-
-
 <a href="../course-list">{{strings.back_to_list_link}}</a>
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -415,6 +412,16 @@ function onSubmit(e) {
 <script>
 {% include wai-course-list/js/courses.js %}
 {% include wai-course-list/js/preview.js %}
+
+// uncomment this to help test without filling in all required fields
+const _button = document.createElement('button')
+_button.innerText = 'Show Preview'
+_button.addEventListener('click', e => {
+    getPreviewSubmission();
+})
+const _form = document.forms[0]
+_form.insertBefore(_button, _form.firstChild)
+
 </script>
 
 

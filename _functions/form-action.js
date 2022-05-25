@@ -21,7 +21,7 @@ function callGitHubWebhook(formData) {
 
   // clone and clean up data
   const data = {...formData}; // NB shallow copy. Semicolon as next line starts with [
-  ['repository', 'success', 'failure'].forEach((prop) => {delete data[prop]})
+  ['success', 'failure'].forEach((prop) => {delete data[prop]})
 
   const reqBody = `{
         "event_type": "${GITHUB_DISPATCH_EVENT}",
@@ -110,8 +110,8 @@ exports.handler = async function (event, context) {
 
   console.info(`Processing form ${formData['form_name']} ${formData['submission_ref']}`)
 
-  // comment following out to stop GitHub action processing
-  // return response(200, mkURI(formData['success']), formData )
+  // uncomment following to stop GitHub action processing
+  return response(200, mkURI(formData['success']), formData )
 
  // Invoke GitHub Action
   const res = await callGitHubWebhook(formData)

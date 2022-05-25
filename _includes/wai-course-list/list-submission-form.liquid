@@ -35,8 +35,8 @@
   {% capture args %}
     {% if include.version %}form_version:{{include.version}}, {% endif %}
     {% if include.ref %}submission_ref:{{include.ref}}, {% endif %}
-    success:{{include.success}}, 
-    failure:{{include.failure}}, 
+    success:{{ page.dir }}{{include.success}}, 
+    failure:{{ page.dir }}{{include.failure}}, 
     repository:{{include.repository}}{% endcapture %}
   {%- include wai-course-list/html-form.liquid type="start"
                                     name=include.name
