@@ -16,7 +16,7 @@ main > header { grid-column: 2 / span 8; }
 </div>
 
 
-<a href="../">{{strings.back_to_list_link}}</a>
+<a href="{{ page.dir }}">{{strings.back_to_list_link}}</a>
 
 
 <div class="header-full success"><p><em>{{ strings.gh_note }}</em></p></div>
