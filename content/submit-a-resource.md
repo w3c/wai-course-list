@@ -41,8 +41,8 @@ function onSubmit(e) {
 {%- include wai-course-list/list-submission-form.liquid type="start"
                                    name="submission"
                                    version="1"
-                                   success="/success.html"
-                                   failure="/failure.html"
+                                   success="success.html"
+                                   failure="failure.html"
                                    repository="wai-course-list"
                                    onsubmit="onSubmit" -%}
 <a href="../course-list">{{strings.back_to_list_link}}</a>
