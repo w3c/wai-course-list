@@ -5,11 +5,11 @@ permalink: /success
 <div style="grid-column: 2 / span 8">
 
 <style> 
-{% include css/styles.css %}
+{% include wai-course-list/css/styles.css %}
 main > header { grid-column: 2 / span 8; }
 </style>
 
-{% assign strings = site.data.strings %}
+{% assign strings = site.data.wai-course-list.strings %}
 
 <div class="result-status-message">
 {{ strings.success_message }}

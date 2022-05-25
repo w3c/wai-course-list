@@ -1,5 +1,5 @@
-{% include sort-data-folder.liquid data = site.data.submissions sortKey = "title" %}
-{% assign strings = site.data.strings %}
+{% include wai-course-list/sort-data-folder.liquid data = site.data.wai-course-list.submissions sortKey = "title" %}
+{% assign strings = site.data.wai-course-list.strings %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
@@ -20,12 +20,12 @@ importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
 const totalCourses = jsonCourses.length;
 
-const importJsonCountries = String.raw`{{ site.data.countries | jsonify }}`;
+const importJsonCountries = String.raw`{{ site.data.wai-course-list.countries | jsonify }}`;
 importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
-const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
-const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
+const jsonFilters = JSON.parse('{{site.data.wai-course-list.filters | jsonify}}');
+const jsonLang = JSON.parse('{{site.data.wai-course-list.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
 const submitForm = document.querySelector('form');

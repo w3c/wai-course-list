@@ -12,7 +12,7 @@
 {% assign country = "" | split: "," %}
 {% for countryIndex in course.country %}
 {% capture countryLabel %}
-{{ site.data.countries[countryIndex].name }} ({{ site.data.countries[countryIndex].nativeName }})
+{{ site.data.wai-course-list.countries[countryIndex].name }} ({{ site.data.wai-course-list.countries[countryIndex].nativeName }})
 {% endcapture %}
 {% assign country = country | push: countryLabel %}
 {% endfor %}
@@ -39,12 +39,12 @@
 {{ strings.topics }}
 : {{ course.topics | join: "; "}}
 
-{% include filtered-wai-curricula.liquid data = course.wai_curricula %}
+{% include wai-course-list/filtered-wai-curricula.liquid data = course.wai_curricula %}
 {{ strings.wai_curricula }}
 {% if course.wai_curricula != "" %}
 : 
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+{% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
 <div class="helperinfo" id="info_about_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
@@ -53,7 +53,7 @@
 {% else %}
 : {{ strings.not_provided }}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-{% assign helper = site.data.helpers | where: "id", "wai-curricula" %}
+{% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
 <div class="helperinfo" id="info_about_wai_curricula{{ course.submission_ref }}" hidden="hidden">
     <p>{{ helper[0].description }}</p>
 </div>
@@ -63,7 +63,7 @@
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
 {% capture langLabel %}
-{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
+{{ site.data.wai-course-list.lang[langIndex].name }} ({{ site.data.wai-course-list.lang[langIndex].nativeName }})
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
@@ -73,7 +73,7 @@
 
 
 {{ strings.format }}
-{% assign helper = site.data.helpers | where: "id", "format" %}
+{% assign helper = site.data.wai-course-list.helpers | where: "id", "format" %}
 : {{ strings[course.format]}}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.format }}" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
@@ -82,7 +82,7 @@
 
 
 {{ strings.scheduling }}
-{% assign helper = site.data.helpers | where: "id", "learning" %}
+{% assign helper = site.data.wai-course-list.helpers | where: "id", "learning" %}
 : {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.scheduling }}" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
@@ -99,7 +99,7 @@
 {% assign hasASupport = false %}
 {% assign aSupport = "" | split: "," %}
 {% if course.accessibility_support %}
-{% include filtered-accessibility-support.liquid data = course.accessibility_support %}
+{% include wai-course-list/filtered-accessibility-support.liquid data = course.accessibility_support %}
 {% assign hasASupport = true %}
 {% for accessibilitySupport in filteredItems %}
 {% assign aSupport = aSupport | push: accessibilitySupport[1] %}

@@ -1,6 +1,6 @@
 ---
-title: "Submit a course, training, or certification on web accessibility"
-nav_title: "Submit a course, training, or certification on web accessibility"
+title: "Test submission"
+nav_title: "Test submission"
 doc-note-type: draft
 lang: en   
 last_updated: 2021-@@-@@

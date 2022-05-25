@@ -38,7 +38,7 @@
     success:{{include.success}}, 
     failure:{{include.failure}}, 
     repository:{{include.repository}}{% endcapture %}
-  {%- include html-form.liquid type="start"
+  {%- include wai-course-list/html-form.liquid type="start"
                                     name=include.name
                                     version=include.version
                                     action=action
@@ -48,6 +48,6 @@
 
 {%- elsif include.type == 'end' -%}
 
-  {%- include html-form.liquid type="end" -%}
+  {%- include wai-course-list/html-form.liquid type="end" -%}
 
 {% endif -%}
