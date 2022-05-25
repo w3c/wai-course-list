@@ -14,5 +14,5 @@ main > header { grid-column: 2 / span 8; }
 {{ strings.failure_message }}: <a href="mailto:group-wai-list-courses@w3.org?subject=Something%20went%20wrong">{{strings.contact_email_list_courses}}</a>
 </div>
 
-<a href="../course-list">{{strings.back_to_list_link}}</a>
+<a href="../">{{strings.back_to_list_link}}</a>
 </div>
