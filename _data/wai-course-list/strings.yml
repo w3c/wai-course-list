@@ -134,10 +134,10 @@ language1_label: Language 1
 languagen_label: Language
 format_legend: Format (Required)
 format_label: Format (Required)
-format_face_to_face: Face-to-face - participants are required to attend to on-site teaching sessions
-format_online: Online - participants are required to attend to online teaching sessions
-format_blended: Blended - participants are required to attend to on-site and online teaching sessions
-format_hybrid: Hybrid - participants can choose to attend to on-site or online teaching sessions
+format_face_to_face: Face-to-face - participants are required to attend on-site teaching sessions
+format_online: Online - participants are required to complete online teaching sessions
+format_blended: Blended - participants are required to attend on-site and online teaching sessions
+format_hybrid: Hybrid - participants can choose to attend on-site or online teaching sessions
 scheduling_legend: Scheduling (Required)
 scheduling_expl: Indicate the attendance requirements for this resource. Choose as many as apply.
 learning_scheduled: Scheduled - participants are required to attend at a specific time

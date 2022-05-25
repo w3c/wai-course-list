@@ -18,7 +18,7 @@ jobs:
         run: "jq '.client_payload.form' $GITHUB_EVENT_PATH > _data/$REPOSITORY/submissions/$SUBMISSION_REF.json"
         env:
           SUBMISSION_REF: ${{ github.event.client_payload.form.submission_ref }}
-          REPOSITORY: ${{ github.event.client_payload.form.submission_ref }}
+          REPOSITORY: ${{ github.event.client_payload.form.repository }}
 
       - name: Create Pull Request
         id: cpr
