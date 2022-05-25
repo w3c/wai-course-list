@@ -1,0 +1,63 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2019-01-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "us"
+  ],
+  "description": "@@cool course!",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "16-20 hours, variable",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "W3Cx / EdX",
+  "reviews": "",
+  "start_date": "2019-01-01",
+  "submission_date": "2022-05-25T03:56:54.137Z",
+  "submission_ref": "b7042e90-dbde-11ec-8b98-c75f05789c82",
+  "submitter_email": "shawn@w3.org",
+  "submitter_name": "shawn",
+  "title": "Aewsome Course!",
+  "topics": "oh boy, lots of them!",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.w3.org/WAI/fundamentals/foundations-course/"
+}
