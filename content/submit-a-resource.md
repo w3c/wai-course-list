@@ -44,7 +44,7 @@ function onSubmit(e) {
 };
 </script>
 
-{%- include wai-course-list/list-submission-form.liquid type="start"
+{%- include list-submission-form.liquid type="start"
                                    name="submission"
                                    version="1"
                                    success="success.html"
@@ -414,7 +414,7 @@ function onSubmit(e) {
   <button type="submit">{{strings.submit_review_form_button}}</button>
 </div>
 
-{% include wai-course-list/list-submission-form.liquid type="end"%}
+{% include list-submission-form.liquid type="end"%}
 
 <script>
 {% include wai-course-list/js/courses.js %}
