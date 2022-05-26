@@ -1,0 +1,59 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-05-11",
+  "cost": "cost_paid",
+  "country": [
+    "ad"
+  ],
+  "description": "Nice description for this nice form",
+  "end_date": "2022-07-01",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "pl",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 hours",
+  "level": "level_basic",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "HTML",
+    "CSS"
+  ],
+  "provider": "Nice provider",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-05-13",
+  "submission_date": "2022-05-26T11:09:26.542Z",
+  "submission_ref": "4e4483d0-dce4-11ec-92c2-d985b973de79",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "Letícia",
+  "title": "Nice course",
+  "topics": [
+    "Inclusive design",
+    "Accessible document"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2"
+  ],
+  "website": "https://course.com"
+}
