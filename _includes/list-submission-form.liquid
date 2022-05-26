@@ -21,8 +21,6 @@
 
 {%- if include.type == 'start' -%}
 
-zzz {{jekyll.environment | inspect}}
-
   {%- if include.action == nil -%}
     {% if jekyll.environment == "production" %} 
       {% assign action = "https://wai-website.netlify.app/.netlify/functions/form-action" %}
