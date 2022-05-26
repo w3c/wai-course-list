@@ -1,0 +1,42 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-05-25",
+  "cost": "cost_free",
+  "country": [
+    "af"
+  ],
+  "description": "blah",
+  "end_date": "2022-05-04",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "ab"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "blah",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-05-11",
+  "submission_date": "2022-05-26T14:18:35.185Z",
+  "submission_ref": "ba960300-dcfe-11ec-a7a8-e76fcc028799",
+  "submitter_email": "blah@blah.com",
+  "submitter_name": "blah",
+  "title": "blah",
+  "topics": "blah",
+  "type_resource": "type_other",
+  "type_resource_new": "",
+  "website": "https:example.com"
+}
