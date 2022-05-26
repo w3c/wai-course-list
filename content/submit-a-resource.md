@@ -20,6 +20,12 @@ footer:
 ---
 <!-- markdownlint-disable no-inline-html -->
 
+{% comment %}
+  For Testing
+  Uncomment to add a preview button which allows submission without filling all the required fields
+{% assign PREVIEW_BUTTON = true %}
+{% endcomment %}
+
 <div style="grid-column: 4 / span 4">
 
 <style>
@@ -45,7 +51,7 @@ function onSubmit(e) {
                                    failure="failure.html"
                                    repository="wai-course-list"
                                    onsubmit="onSubmit" -%}
-                                   
+
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
 <p>{{strings.sub_header_info_form}}</p> 
@@ -414,14 +420,17 @@ function onSubmit(e) {
 {% include wai-course-list/js/courses.js %}
 {% include wai-course-list/js/preview.js %}
 
-// uncomment this to help test without filling in all required fields
-const _button = document.createElement('button')
-_button.innerText = 'Show Preview'
-_button.addEventListener('click', e => {
-    getPreviewSubmission();
-})
-const _form = document.forms[0]
-_form.insertBefore(_button, _form.firstChild)
+{% if PREVIEW_BUTTON %}
+(function(){
+  const button = document.createElement('button')
+  button.innerText = 'Show Preview'
+  button.addEventListener('click', e => {
+      getPreviewSubmission();
+  })
+  const form = document.forms[0]
+  form.insertBefore(button, form.firstChild)
+})();
+{% endif %}
 
 </script>
 
