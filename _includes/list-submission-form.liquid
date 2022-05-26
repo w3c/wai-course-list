@@ -41,8 +41,8 @@ zzz {{jekyll.environment | inspect}}
   {% capture args %}
     {% if include.version %}form_version:{{include.version}}, {% endif %}
     {% if include.ref %}submission_ref:{{include.ref}}, {% endif %}
-    success:{{ page.dir }}{{include.success}}, 
-    failure:{{ page.dir }}{{include.failure}}, 
+    success:{{include.success}}, 
+    failure:{{include.failure}}, 
     repository:{{include.repository}}{% endcapture %}
   {%- include html-form.liquid type="start"
                                     name=include.name
