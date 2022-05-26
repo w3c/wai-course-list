@@ -22,11 +22,7 @@
 {%- if include.type == 'start' -%}
 
   {%- if include.action == nil -%}
-    {% if jekyll.environment == "production" %} 
-      {% assign action = "https://wai-website.netlify.app/.netlify/functions/form-action" %}
-    {% else %}
-      {% assign action = "/.netlify/functions/form-action" %}
-    {%- endif -%}
+    {% assign action = "https://wai-website.netlify.app/.netlify/functions/list-submission" %}
   {% else %}
     {% assign action = include.action %}
   {%- endif -%}
