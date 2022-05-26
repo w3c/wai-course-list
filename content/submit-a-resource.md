@@ -34,7 +34,7 @@ main > header { grid-column: 4 / span 4; }
 </style>
 
 {% assign strings = site.data.wai-course-list.strings %}
-{% include wai-course-list/sort-countries.liquid %} 
+{% include wai-course-list/sort-countries.liquid %}
 
 <script>
   // TODO this may not be the best place for the handler
@@ -251,7 +251,7 @@ function onSubmit(e) {
     <label for="language_1" class="label_input">{{strings.language1_label}}</label>
     <select name="language[]" id="language_1" class="select_form" required> 
       <option value=""></option>
-      {% for language in site.data.wai-course-list.lang %}
+      {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
       {% endfor %}
     </select>
@@ -260,7 +260,7 @@ function onSubmit(e) {
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
     <select name="language[]" id="language_[n]" class="select_form input_hidden" disabled> 
       <option value=""></option>
-      {% for language in site.data.wai-course-list.lang %}
+      {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
       {% endfor %}
     </select>
