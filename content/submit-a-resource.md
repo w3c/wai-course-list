@@ -23,8 +23,8 @@ footer:
 {% comment %}
   For Testing
   Uncomment to add a preview button which allows submission without filling all the required fields
-{% assign PREVIEW_BUTTON = true %}
 {% endcomment %}
+{% assign PREVIEW_BUTTON = true %}
 
 <div style="grid-column: 4 / span 4">
 
