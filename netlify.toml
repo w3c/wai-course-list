@@ -3,6 +3,9 @@ command = "git submodule update --init --remote && bundle exec jekyll build --co
 publish = "_site"
 environment = { RUBY_VERSION = "2.6.2" }
 
+[context.steve-integration]
+environment = { JEKYLL_ENV = "production" }
+
 [[redirects]]
   from = "/"
   to = "/courses/list"

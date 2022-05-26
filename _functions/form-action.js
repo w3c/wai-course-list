@@ -83,10 +83,11 @@ function formEncodedToPOJO(formEncoded) {
   }, {})
 }
 
+
 exports.handler = async function (event, context) {
   const response = (code, redir, body) =>
     ({ statusCode: redir ? 303 : code,     // this is the correct redirect code, UA will GET
-      headers: { ...{"content-type": "application/json"}, ...(redir ? { "Location": redir } : {}) },
+      headers: { ...{"content-type": "application/json", "Access-Control-Allow-Origin": "*"}, ...(redir ? { "Location": redir } : {}) },
       body: body ? JSON.stringify(body, null, '  ') : ''
   })
 
