@@ -7,7 +7,7 @@ last_updated: 2021-@@-@@
 github:
   repository: w3c/wai-course-list
   path: content/submit-a-resource.md
-permalink: course-list/submit-a-resource
+permalink: /courses/submission
 ref: /teach-advocate/course-list/
 changelog: /teach-advocate/course-list/changelog/
 acknowledgements: /teach-advocate/course-list/acknowledgements/
@@ -46,7 +46,7 @@ function onSubmit(e) {
                                    repository="wai-course-list"
                                    onsubmit="onSubmit" -%}
                                    
-<a href="../course-list">{{strings.back_to_list_link}}</a>
+<!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
 <p>{{strings.sub_header_info_form}}</p> 
 <p>{{strings.info_submission}}</p>

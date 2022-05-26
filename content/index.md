@@ -8,7 +8,7 @@ last_updated: 2021-@@-@@
 github:
   repository: w3c/wai-course-list
   path: content/index.md
-permalink: /course-list/
+permalink: /courses/list/
 ref: /teach-advocate/course-list/
 changelog: /teach-advocate/course-list/changelog/
 acknowledgements: /teach-advocate/course-list/acknowledgements/
@@ -29,7 +29,7 @@ footer: >
 <div class="header-sup" id="main">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
-        {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}
+        {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
     </div>
     <div class="header-right">
         {% include box.html type="start" class="simple" %}
