@@ -16,8 +16,8 @@ contact_email_list_courses: group-wai-list-courses@w3.org
 
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
-sub_header_list_intro: This List of Courses provides information about courses, training, and certification on web and digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
-sub_header_info_add_list: If you wish to add information about a course, training, or certification on web and digital accessibility, please use the following button.
+sub_header_list_intro: This List of Courses provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
+sub_header_info_add_list: If you wish to add information about a course, training, or certification on digital accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
 edit_remove_info: If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list
 sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
@@ -79,7 +79,7 @@ content_updated: The content of this resource was last updated on
 
 # Form strings
 back_to_list_link: Back to List of Courses
-sub_header_info_form: This form allows you to provide information about courses, training, and certification on web and digital accessibility. 
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility. 
 # To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available on our GitHub repository.
 about_you: About you
