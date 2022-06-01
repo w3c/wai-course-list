@@ -1,8 +1,8 @@
 ---
 published: true
-title: "List of Accessibility Courses"
-title_html: "List of Accessibility Courses:<br>Education, Training, and Certification" 
-nav_title: "List of Courses"
+title: "Course List"
+title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
+nav_title: "Course List"
 doc-note-type: draft
 lang: en
 last_updated: 2021-@@-@@

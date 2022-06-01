@@ -41,7 +41,7 @@ defaults:
       path: ""
     values:
       layout: standalone_resource
-      standalone_resource_doc_name: List of Accessibility Courses
+      standalone_resource_doc_name: Course List
 #  -
 #    scope:
 #      path: "_business-case"

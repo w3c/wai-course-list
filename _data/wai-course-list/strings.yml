@@ -16,7 +16,7 @@ contact_email_list_courses: group-wai-list-courses@w3.org
 
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
-sub_header_list_intro: This List of Courses provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
+sub_header_list_intro: This Course List provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
 sub_header_info_add_list: If you wish to add information about a course, training, or certification on digital accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
 edit_remove_info: If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list
@@ -78,7 +78,7 @@ content_updated: The content of this resource was last updated on
 
 
 # Form strings
-back_to_list_link: Back to List of Courses
+back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility. 
 # To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available on our GitHub repository.
@@ -175,7 +175,7 @@ submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
-publish_info_label: I give permission for the information about this resource to be published in the W3C's List of Courses (Required).
+publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 
 add_new_country_button: Add new country
@@ -199,5 +199,5 @@ close_back_to_form: Close preview and go back to the form
 
 # Results message
 success_message: Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
-gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">List of Courses GitHub repository</a> to see your information (JSON format).
+gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">Course List GitHub repository</a> to see your information (JSON format).
 failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list.
