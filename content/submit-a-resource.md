@@ -9,13 +9,11 @@ github:
   path: content/submit-a-resource.md
 permalink: /courses/submission/
 ref: /teach-advocate/course-list/
-changelog: /teach-advocate/course-list/changelog/
-acknowledgements: /teach-advocate/course-list/acknowledgements/
 description:  # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: 
-   <p><strong>Date:</strong> <!-- Updated @@ Month 2021.--> First published Month 20@@. CHANGELOG.</p>
-   <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href="https://www.w3.org/groups/wg/eowg/participants">participants of the EOWG</a>. ACKNOWLEDGEMENTS lists contributors and credits.</p>
+   <p><strong>Date:</strong>Updated 04 June 2021. First published June 2022.</p>
+   <p><strong>Project Team:</strong> <a href="https://www.w3.org/People/Brewer/">Judy Brewer</a>, Carlos Duarte, and Letícia Seixas Pereira. <strong>Contributors:</strong> <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 <!-- markdownlint-disable no-inline-html -->
