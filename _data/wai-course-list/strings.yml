@@ -91,11 +91,11 @@ about_the_resource_description: Provide some information about the course, train
 title_label: Title (Required)
 provider_label: Provider (Required)
 country_legend: Country (Required)
-country_expl: In which country or countries is the provider?
+country_expl: In which country or countries is the provider located?
 country1_label: Country 1 (Required)
 countryn_label: Country
 description_label: Description (Required)
-description_expl: Provide a brief description of this resource (max. 350 characters).
+description_expl: Provide a brief description of this resource (350 characters maximum).
 description_expl_details: Please enter only plain text (no HTML). URIs are not linked.
 type_label: Type of resource (Required)
 type_graduate: Graduate program
