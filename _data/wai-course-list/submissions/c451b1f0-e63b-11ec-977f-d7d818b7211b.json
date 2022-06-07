@@ -1,0 +1,62 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough"
+  ],
+  "accessibility_support_other": "other support",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-02",
+  "cost": "cost_free",
+  "country": [
+    "as"
+  ],
+  "description": "Description",
+  "end_date": "2022-06-25",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "am"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 hours",
+  "level": "level_basic",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "HTML",
+    "CSS"
+  ],
+  "provider": "Provider",
+  "repository": "wai-course-list",
+  "reviews": "https://course.com/reviews",
+  "start_date": "2022-06-15",
+  "submission_date": "2022-06-07T08:28:11.279Z",
+  "submission_ref": "c451b1f0-e63b-11ec-977f-d7d818b7211b",
+  "submitter_email": "email@email.com",
+  "submitter_name": "Name",
+  "title": "Title",
+  "topics": [
+    "Topic 1",
+    "Topic 2"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "developer_modules1",
+    "developer_modules2",
+    "designer_modules1"
+  ],
+  "website": "https://course.com"
+}
