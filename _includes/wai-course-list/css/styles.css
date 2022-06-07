@@ -129,7 +129,7 @@ main>header {
     margin-right: .5em;
 }
 
-.field>label{
+.field:not(.filter-options)>label{
     font-weight: 700;
 }
 
@@ -233,10 +233,17 @@ fieldset {
 fieldset>p {
     margin-top: .25em !important
 }
+fieldset>fieldset{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
 
 .fieldset-subtitles {
-    margin-top: 1.5em !important;
+    margin-top: .5em !important;
     color: var(--wai-green);
+    margin: 1em 0;
+    font-size: 1rem;
+    font-weight: normal;
 }
 
 #availability .label_input {

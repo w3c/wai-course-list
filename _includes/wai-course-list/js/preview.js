@@ -144,7 +144,7 @@ function getPreviewSubmission() {
                             val.push(el.querySelector("label[for='" + c.id + "']").innerText);
                         })
 
-                        var label = d.querySelector('p').innerText;
+                        var label = d.querySelector('legend').innerText;
 
                         var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join('; '));
 

@@ -233,11 +233,10 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_topic_button}}</button>
 </fieldset>
 
-<fieldset class="field fieldset_check_title" id="curricula">
-  <legend class="label_input">{{strings.curricula_label}}
-    <span class="expl">{{strings.curricula_expl}}</span>
-    <span class="expl">{{strings.curricula_expl_details}}</span>
-  </legend>
+<fieldset class="field fieldset_check_title" id="curricula" aria-describedby="expl_curricula1 expl_curricula2">
+  <legend class="label_input">{{strings.curricula_label}}</legend>
+  <p class="expl" id="expl_curricula1">{{strings.curricula_expl}}</p>
+  <p class="expl" id="expl_curricula2">{{strings.curricula_expl_details}}</p>
     {% include wai-course-list/wai-curricula.liquid %}
 </fieldset>
 
@@ -318,10 +317,9 @@ function onSubmit(e) {
 </fieldset>
 
 
-<fieldset class="field fieldset_check" id="accessibility-support">
-  <legend class="label_input">{{strings.asupport_legend}}
-    <span class="expl">{{strings.asupport_expl}}</span>
-  </legend>
+<fieldset class="field fieldset_check" id="accessibility-support" aria-describedby="expl_asupport">
+  <legend class="label_input">{{strings.asupport_legend}}</legend>
+  <p class="expl" id="expl_asupport">{{strings.asupport_expl}}</p>
   {% include wai-course-list/accessibility-support.liquid %}
 </fieldset>
 
