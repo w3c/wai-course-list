@@ -1,0 +1,51 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-16",
+  "cost": "cost_free",
+  "country": [
+    "bz"
+  ],
+  "description": "desc",
+  "end_date": "2022-06-29",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "ay"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "sdfsdf",
+  "level": "level_basic",
+  "platforms": "sf",
+  "prerequisites": "pdf",
+  "provider": "Provider",
+  "repository": "wai-course-list",
+  "reviews": "https://course.com/reviews",
+  "start_date": "2022-06-24",
+  "submission_date": "2022-06-07T15:49:55.564Z",
+  "submission_ref": "7a1a7bb0-e679-11ec-ac9b-c16d71ede6c9",
+  "submitter_email": "email@email.com",
+  "submitter_name": "Name",
+  "title": "Title",
+  "topics": "pdf",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "developer_modules1"
+  ],
+  "website": "https://course.com"
+}
