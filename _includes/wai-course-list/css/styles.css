@@ -129,6 +129,10 @@ main>header {
     margin-right: .5em;
 }
 
+.field>label{
+    font-weight: 700;
+}
+
 #language,
 #country {
     width: 100%;

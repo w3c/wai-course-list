@@ -63,29 +63,29 @@ function onSubmit(e) {
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
 
-<fieldset class="field">
-<legend id="label_submitter_name" class="label_input">{{strings.submitter_name_label}}</legend>
-  <input type="text" id="submitter_name" aria-labelledby="label_submitter_name" name="submitter_name" required>
-</fieldset>
+<div class="field">
+  <label class="label_input" for="submitter_name">{{strings.submitter_name_label}}</label>
+  <input type="text" id="submitter_name" name="submitter_name" required>
+</div>
 
-<fieldset class="field">
-<legend id="label_submitter_email" class="label_input">{{strings.submitter_email_label}}</legend>
-    <input type="email" id="submitter_email" name="submitter_email" aria-labelledby="label_submitter_email" required>
-</fieldset>
+<div class="field">
+<label for="submitter_email" class="label_input">{{strings.submitter_email_label}}</label>
+    <input type="email" id="submitter_email" name="submitter_email" required>
+</div>
 
 
 <h2 id="the_resource">{{strings.about_the_resource}}</h2>
 <p>{{strings.about_the_resource_description}}</p>
 
-<fieldset class="field">
-  <legend id="label_title" class="label_input">{{strings.title_label}}</legend>
-  <input type="text" id="title" name="title" aria-labelledby="label_title" required>
-</fieldset>
+<div class="field">
+  <label for="title" class="label_input">{{strings.title_label}}</label>
+  <input type="text" id="title" name="title" required>
+</div>
 
-<fieldset class="field">
-  <legend id="label_provider" class="label_input">{{strings.provider_label}}</legend>
-  <input type="text" id="provider" name="provider" aria-labelledby="label_provider" required>
-</fieldset>
+<div class="field">
+  <label for="provider" class="label_input">{{strings.provider_label}}</label>
+  <input type="text" id="provider" name="provider" required>
+</div>
 
 <fieldset class="field fieldset_select_text" id="country">
   <legend class="label_input">
@@ -115,13 +115,13 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_country_button}}</button>
 </fieldset>
 
-<fieldset class="field">
-  <legend for="description" id="description_label" class="label_input">{{strings.description_label}}
+<div class="field">
+  <label for="description" for="description" class="label_input">{{strings.description_label}}
     <span class="expl">{{strings.description_expl}}</span>
-  </legend>
-  <textarea id="description" name="description" maxlength="350" rows="5" aria-labelledby="description_label" aria-describedby="description_expl" required></textarea>
+  </label>
+  <textarea id="description" name="description" maxlength="350" rows="5" aria-describedby="description_expl" required></textarea>
   <p id="description_expl"><em>{{strings.description_expl_details}}</em></p>
-</fieldset>
+</div>
 
 <fieldset class="field fieldset_radio other_field" id="type">
   <legend class="label_input">{{strings.type_label}}</legend>
@@ -325,12 +325,12 @@ function onSubmit(e) {
   {% include wai-course-list/accessibility-support.liquid %}
 </fieldset>
 
-<fieldset class="field">
-  <legend id="length_label" class="label_input">{{strings.length_label}}
+<div class="field">
+  <label for="length" class="label_input">{{strings.length_label}}
     <span class="expl">{{strings.length_expl}}</span>
-  </legend>
-  <input type="text" id="length" aria-labelledby="length_label" name="length">
-</fieldset>
+  </label>
+  <input type="text" id="length" name="length">
+</div>
 
 <fieldset class="field fieldset_radio" id="cost">
   <legend class="label_input">{{strings.cost_legend}}</legend>
@@ -356,26 +356,26 @@ function onSubmit(e) {
   </div>  
 </fieldset>
 
-<fieldset class="field">
-  <legend id="website_label" class="label_input">{{strings.website_label}}
+<div class="field">
+  <label for="website" class="label_input">{{strings.website_label}}
     <span class="expl">{{strings.website_expl}}</span>
-  </legend>
-  <input type="url" name="website" id="website" aria-labelledby="website_label" placeholder="https://example.com" required>
-</fieldset>
+  </label>
+  <input type="url" name="website" id="website" placeholder="https://example.com" required>
+</div>
 
-<fieldset class="field">
-  <legend id="reviews_label" class="label_input">{{strings.reviews_label}}
+<div class="field">
+  <label for="reviews" class="label_input">{{strings.reviews_label}}
     <span class="expl">{{strings.reviews_expl}}</span>
-  </legend>
-  <input type="url" name="reviews" id="reviews" aria-labelledby="reviews_label" placeholder="https://example.com">
-</fieldset>
+  </label>
+  <input type="url" name="reviews" id="reviews" placeholder="https://example.com">
+</div>
 
-<fieldset class="field">
-  <legend id="content_update_label" class="label_input">{{strings.content_update_label}}
+<div class="field">
+  <label for="content_update" class="label_input">{{strings.content_update_label}}
     <span class="expl">{{strings.content_update_expl}}</span>
-  </legend>
-  <input type="date" name="content_update" id="content_update" aria-labelledby="content_update_label" required>
-</fieldset>
+  </label>
+  <input type="date" name="content_update" id="content_update" required>
+</div>
 
 <fieldset class="field" id="availability">
   <legend class="label_input">{{strings.availability}}</legend>
@@ -390,12 +390,12 @@ function onSubmit(e) {
 </fieldset>
 
 <h2>{{strings.submitting_your_resource}}</h2>
-<fieldset class="field">
-  <legend id="comments_label" class="label_input">{{strings.comments_label}}
+<div class="field">
+  <label for="comments" class="label_input">{{strings.comments_label}}
     <span class="expl">{{strings.comments_expl}}</span>
-  </legend>
-  <textarea id="comments" name="comments" aria-labelledby="comments_label"></textarea>
-</fieldset>
+  </label>
+  <textarea id="comments" name="comments" ></textarea>
+</div>
 
 <fieldset class="field">
   <div class="radio-field">  
