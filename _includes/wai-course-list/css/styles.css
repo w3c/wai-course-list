@@ -233,6 +233,7 @@ fieldset {
 fieldset>p {
     margin-top: .25em !important
 }
+
 fieldset>fieldset{
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
@@ -244,6 +245,11 @@ fieldset>fieldset{
     margin: 1em 0;
     font-size: 1rem;
     font-weight: normal;
+}
+legend.expl{
+    font-size: 1rem !important;
+    font-weight: normal;
+    margin-bottom: 0.5em !important;
 }
 
 #availability .label_input {

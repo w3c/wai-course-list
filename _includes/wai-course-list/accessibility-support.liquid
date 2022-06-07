@@ -4,13 +4,15 @@
 <legend class="fieldset-subtitles" id="{{support.id}}-subtitles" >{{ support.type }}</legend>
 {% for option in support.options %}
 {% if option.options %}
-<p class="expl" id="{{option.id}}-expl">{{ option.name }}, {{strings.asupport_including}}: </p>
+<fieldset>
+<legend class="expl" id="{{option.id}}-expl">{{ option.name }}, {{strings.asupport_including}}: </legend>
 {% for details in option.options %}
 <div class="radio-field">  
     <input type="checkbox" id="{{ details.id }}" name="accessibility_support[]" value="{{ details.id }}" group="accessibility_support" aria-describedby="{{support.id}}-subtitles {{option.id}}-expl">
     <label for="{{ details.id }}">{{ details.name }}</label>
 </div>
 {% endfor %}
+</fieldset>
 {% else %}
 <div class="radio-field">
     <input type="checkbox" id="{{ option.id }}" name="accessibility_support[]" value="{{ option.id }}" group="accessibility_support" aria-describedby="{{support.id}}-subtitles {{option.id}}-expl">
