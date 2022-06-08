@@ -1,0 +1,40 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough"
+  ],
+  "accessibility_support_other": "support",
+  "comments": "",
+  "content_update": "",
+  "country": [
+    ""
+  ],
+  "description": "",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "language": [
+    ""
+  ],
+  "length": "",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "",
+  "submission_date": "2022-06-08T08:36:12.542Z",
+  "submission_ref": "0d9659e0-e706-11ec-af64-c7d7755fafca",
+  "submitter_email": "",
+  "submitter_name": "",
+  "title": "",
+  "topics": "",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2"
+  ],
+  "website": ""
+}
