@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: "Course List"
 title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
