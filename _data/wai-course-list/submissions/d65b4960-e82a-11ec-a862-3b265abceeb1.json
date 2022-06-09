@@ -1,0 +1,42 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "aq"
+  ],
+  "description": "re",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "ar"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "re",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-08",
+  "submission_date": "2022-06-09T19:32:02.423Z",
+  "submission_ref": "d65b4960-e82a-11ec-a862-3b265abceeb1",
+  "submitter_email": "re@re.com",
+  "submitter_name": "re",
+  "title": "re",
+  "topics": "re",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "http://www.google.com"
+}
