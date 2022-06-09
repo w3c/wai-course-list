@@ -1,0 +1,42 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-07",
+  "cost": "cost_free",
+  "country": [
+    "as"
+  ],
+  "description": "sdfsdf",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "ar"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "fds",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-08",
+  "submission_date": "2022-06-09T19:46:13.812Z",
+  "submission_ref": "d1d31740-e82c-11ec-a2d7-f7122dcdb453",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "sfd",
+  "title": "sdf",
+  "topics": "sff",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "http://www.google.com"
+}
