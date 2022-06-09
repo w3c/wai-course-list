@@ -1,0 +1,43 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-24",
+  "cost": "cost_free",
+  "country": [
+    "as",
+    ""
+  ],
+  "description": "Description",
+  "end_date": "2022-06-23",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "Provider of the course",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-22",
+  "submission_date": "2022-06-09T14:54:36.498Z",
+  "submission_ref": "149cdb20-e804-11ec-a058-75d273434049",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "Name",
+  "title": "Title of the course",
+  "topics": "topic1",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "https://www.course.com"
+}
