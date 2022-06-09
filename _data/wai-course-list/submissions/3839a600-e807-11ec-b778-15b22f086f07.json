@@ -1,0 +1,57 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-09",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "us",
+    ""
+  ],
+  "description": "This course will teach you how to weave a basket underwater. You will need a snorkel or scuba gear.",
+  "end_date": "2022-06-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_blended",
+  "language": [
+    "en",
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 weeks (4 hours per week)",
+  "level": "level_basic",
+  "platforms": "Blackboard",
+  "prerequisites": "Scuba Certification",
+  "provider": "Bakken Inc.",
+  "repository": "wai-course-list",
+  "reviews": "https://UnderWaterBasketWeaving.com/reviews",
+  "start_date": "2022-06-11",
+  "submission_date": "2022-06-09T15:17:04.736Z",
+  "submission_ref": "3839a600-e807-11ec-b778-15b22f086f07",
+  "submitter_email": "brent.bakken@pearson.com",
+  "submitter_name": "Brent Bakken",
+  "title": "Underwater Basket Weaving",
+  "topics": "Basket Grasses",
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "designer_modules1",
+    "designer_modules5"
+  ],
+  "website": "https://UnderWaterBasketWeaving.com"
+}
