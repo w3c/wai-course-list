@@ -1,0 +1,63 @@
+{
+  "accessibility_support": [
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-05-16",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "Be Accessible, Inc. provides personalized document accessibility training for digital documents such as PDFs. We use your own documents as examples in order to allow a full understanding of how to apply accessibility with Microsoft Office and Adobe products. Participants learn how to design, remediate, and test documents for accessibility.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1/2 day, 1 day",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": "Basic knowledge of Microsoft Office, Basic knowledge of Adobe Pro",
+  "provider": "Be Accessible, Inc.",
+  "repository": "wai-course-list",
+  "reviews": "https://beaccessible.com/about/",
+  "start_date": "2019-09-01",
+  "submission_date": "2022-06-09T17:07:12.748Z",
+  "submission_ref": "9ae842c0-e816-11ec-8298-73e41fad134f",
+  "submitter_email": "kelly@beaccessible.com",
+  "submitter_name": "Kelly Childs",
+  "title": "Document Accessibility Training",
+  "topics": "Accessible documents, inclusive design, WCAG, accessibility testing",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.beaccessible.com"
+}
