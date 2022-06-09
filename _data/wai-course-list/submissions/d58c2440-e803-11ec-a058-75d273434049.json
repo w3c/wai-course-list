@@ -1,0 +1,61 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "non-digital-accessibility-accessible-facility"
+  ],
+  "accessibility_support_other": "support",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "further comments",
+  "content_update": "2022-06-24",
+  "cost": "cost_free",
+  "country": [
+    "as"
+  ],
+  "description": "Description",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "pt",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 hours",
+  "level": "level_basic",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "HTML",
+    "CSS"
+  ],
+  "provider": "Provider of the course",
+  "repository": "wai-course-list",
+  "reviews": "https://www.course.com/reviews",
+  "start_date": "2022-06-22",
+  "submission_date": "2022-06-09T14:52:50.692Z",
+  "submission_ref": "d58c2440-e803-11ec-a058-75d273434049",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "Name",
+  "title": "Title of the course",
+  "topics": [
+    "topic1",
+    "topic2"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "developer_modules1",
+    "developer_modules2"
+  ],
+  "website": "https://www.course.com"
+}
