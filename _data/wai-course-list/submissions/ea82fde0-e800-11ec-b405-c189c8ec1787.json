@@ -1,0 +1,51 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-08",
+  "cost": "cost_free",
+  "country": [
+    "ad"
+  ],
+  "description": "desde",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "bm"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "length",
+  "level": "level_basic",
+  "platforms": "Platform",
+  "prerequisites": "HTML",
+  "provider": "Provider",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-22",
+  "submission_date": "2022-06-09T14:31:57.375Z",
+  "submission_ref": "ea82fde0-e800-11ec-b405-c189c8ec1787",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Letícia",
+  "title": "Title of this resource",
+  "topics": "topics",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3"
+  ],
+  "website": "https://www.course.com"
+}
