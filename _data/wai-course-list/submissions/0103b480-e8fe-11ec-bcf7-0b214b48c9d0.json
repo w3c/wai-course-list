@@ -1,0 +1,74 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "Students can content me via the Udemy platform. ",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "Regarding free or reduced fee: I am happy to provide free or reduced fee coupons for people who cannot pay for the course. \r\n\r\nCourse resources include: \r\n3.5 hours on-demand video\r\n18 articles\r\n38 downloadable resources\r\nFull lifetime access\r\nAccess on mobile and TV\r\nAssignments\r\nCertificate of completion",
+  "content_update": "2022-06-10",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "gb"
+  ],
+  "description": "On this beginners & intermediate level accessible website design course you will learn both the techniques of accessible website design and an entire ‘framework for thinking about the subject’. This course will equip you with the skills to understand, identify and fix issues any accessibility issues you come across. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "There are 3.5 hours of on-demand videos plus assignments and quizzes. Time to Complete course may be between 6 and 10 hours. ",
+  "level": "level_basic",
+  "platforms": "Udemy",
+  "prerequisites": [
+    "Students need to have access to a computer and the internet and an interest in accessible website design.",
+    "It will help if you know the basics of how websites are designed/built."
+  ],
+  "provider": "Authored by Jim Byrne - hosted by Udemy",
+  "repository": "wai-course-list",
+  "reviews": "https://www.udemy.com/course/web-accessibility-training-course-wcag-21-compliance/?instructorPreviewMode=guest",
+  "start_date": "2022-06-10",
+  "submission_date": "2022-06-10T20:43:37.800Z",
+  "submission_ref": "0103b480-e8fe-11ec-bcf7-0b214b48c9d0",
+  "submitter_email": "webdesign@jimbyrne.co.uk",
+  "submitter_name": "Jim Byrne",
+  "title": "Web Accessibility Training Course - WCAG 2.1 Compliance",
+  "topics": "Section: Welcome and introduction to the course",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules5",
+    "designer_modules7"
+  ],
+  "website": "https://www.udemy.com/course/web-accessibility-training-course-wcag-21-compliance/?instructorPreviewMode=guest"
+}
