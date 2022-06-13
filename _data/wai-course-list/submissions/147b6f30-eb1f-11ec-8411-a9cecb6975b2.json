@@ -1,0 +1,84 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "This course is presently offered once in the spring and once in the fall.",
+  "content_update": "2022-06-13",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "The Screen Reader User Tester Training (SRUTT) Program at the Carroll Center for the Blind equips screen reader users with the requisite skills to test and report on the accessibility of digital products, including websites, mobile apps, and PDF documents. Our goal is employment for all SRUTT graduates.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "Seven (7) Weeks",
+  "level": "level_basic",
+  "platforms": [
+    "Zoom Video Conferencing",
+    "Google Drive for Desktop"
+  ],
+  "prerequisites": "At least 3-years of experience using JAWS on a PC on a regular basis.",
+  "provider": "The Carroll Center for the Blind",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-03",
+  "submission_date": "2022-06-13T13:45:26.180Z",
+  "submission_ref": "147b6f30-eb1f-11ec-8411-a9cecb6975b2",
+  "submitter_email": "Nick.corbett@carroll.org",
+  "submitter_name": "Nick Corbett",
+  "title": "Screen Reader User Tester Training (SRUTT) Program",
+  "topics": [
+    "Understanding digital accessibility, disability types, and various assistive technologies.",
+    "Understanding accessible web development components including HTML, CSS, JavaScript, and ARIA.",
+    "Understanding screen reader detectable WCAG 2.1 success criteria.",
+    "Understanding web and mobile app elements in their semantic context.",
+    "Evaluating the functional accessibility of web pages, PDFs, and mobile apps.",
+    "Creating screen reader user tester reports and communicating those findings to stakeholders.",
+    "Building a portfolio of sample work.",
+    "Interviewing, resume writing, and digital networking techniques.",
+    "Opportunity to apply to a post-graduation internship in the field of digital accessibility.",
+    "Explore and improve your competency with the JAWS, NVDA, Narrator, VoiceOver, and Talkback screen readers.",
+    "Key features of the Google Chrome, Mozilla Firefox, and Microsoft Edge web browsers for Windows.",
+    "Cloud-based file management with Dropbox, One Drive, and Google Drive for Windows.",
+    "Creating accessible Word documents.",
+    "Creating accessible Excel documents.",
+    "Creating basic PowerPoint presentations.",
+    "Outlook and Google Calendar appointment management.",
+    "Accessing and navigating Adobe Acrobat DC PDF documents.",
+    "Zoom Meeting conferencing.",
+    "Working with Google Docs and Sheets files.",
+    "Determining software versions, updating applications, and locating system information."
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules7"
+  ],
+  "website": "https://carroll.org/screen-reader-user-tester-training-program/"
+}
