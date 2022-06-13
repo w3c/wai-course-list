@@ -1,0 +1,66 @@
+{
+  "accessibility_support": [
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-10",
+  "cost": "cost_paid",
+  "country": [
+    "es"
+  ],
+  "description": "The course offers an introduction to key concepts such as diversity, accessibility and universal design, with creators and professionals who want to create content for all in mind, as well as managers of different public and private sectors (culture, education, councils, etc.)who want to incorporate accessibility in their working environments.",
+  "end_date": "2022-12-18",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "ca"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "12 weeks duration (6 ECTS)",
+  "level": "level_basic",
+  "platforms": "Campus Virtual (Universitat Autònoma de Barcelona)",
+  "prerequisites": "",
+  "provider": "Universitat Autònoma de Barcelona",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-09-26",
+  "submission_date": "2022-06-13T07:00:51.084Z",
+  "submission_ref": "8f65bdb0-eae6-11ec-841f-d76278723618",
+  "submitter_email": "estella.oncins@uab.cat",
+  "submitter_name": "Estella Oncins",
+  "title": "Course in Accessibility Management and Promotion: Accessibility Services, Communication and Information ",
+  "topics": "Key concepts and models in accessibility.",
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.uab.cat/web/postgraduate/course-in-accessibility-management-and-promotion-accessible-services-information-and-communication/general-information-1345468608438.html/param1-4514_en/"
+}
