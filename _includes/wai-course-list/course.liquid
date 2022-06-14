@@ -63,7 +63,7 @@
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
 {% capture langLabel %}
-{{ site.data.wai-course-list.lang[langIndex].name }} ({{ site.data.wai-course-list.lang[langIndex].nativeName }})
+{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
