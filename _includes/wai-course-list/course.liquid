@@ -90,8 +90,8 @@
 </div>
 
 {{ strings.platforms }}
-{% if course.platform != "" %}
-: {{ course.platform | join: "; "}}
+{% if course.platforms != "" %}
+: {{ course.platforms | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
