@@ -17,11 +17,8 @@ footer:
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-{% comment %}
-  For Testing
-  Uncomment to add a preview button which allows submission without filling all the required fields
 {% assign PREVIEW_BUTTON = true %}
-{% endcomment %}
+
 
 <div style="grid-column: 4 / span 4">
 
@@ -421,7 +418,7 @@ function onSubmit(e) {
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
-  <button class="button button-close_preview icon" title="{{strings.close_back_to_form}}"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
+  <button class="button button-close_preview icon" title="{{strings.close_back_to_form}}"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle"><use xlink:href="/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
   <h2 id="preview_title">{{ strings.preview_title }}</h2>  
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
