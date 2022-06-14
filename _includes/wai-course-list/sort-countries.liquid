@@ -1,12 +1,12 @@
 {% assign orderedCountries = "" | split: "," %}
 {% assign filteredCountries = "" | split: "," %}
-{% for country in site.data.countries %}
+{% for country in site.data.wai-course-list.countries %}
   {% assign nCountry = "" %}
   {% assign nCountry =  nCountry | append: country[1].name | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[1].nativeName | append: ',' %} 
   {% assign nCountry =  nCountry | append: country[0] | append: ',' %} 
   {% assign nCountry =  nCountry | split: "," %}  
-  {% if include.data and include.data.size != 0 %}  
+  {% if include.data and include.data.wai-course-list.size != 0 %}  
     {% if include.data contains country[0] %}
       {% assign orderedCountries = orderedCountries | push: nCountry %}  
     {% endif %}

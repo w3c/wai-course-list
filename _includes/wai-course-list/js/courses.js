@@ -1,5 +1,5 @@
-{% include sort-data-folder.liquid data = site.data.submissions sortKey = "title" %}
-{% assign strings = site.data.strings %}
+{% include wai-course-list/sort-data-folder.liquid data = site.data.wai-course-list.submissions sortKey = "title" %}
+{% assign strings = site.data.wai-course-list.strings %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
 const filterForm = document.querySelector('[data-filter-form]');
@@ -20,12 +20,12 @@ importJsonCourses.replace("\\", "\\\\");
 const jsonCourses = JSON.parse(importJsonCourses);
 const totalCourses = jsonCourses.length;
 
-const importJsonCountries = String.raw`{{ site.data.countries | jsonify }}`;
+const importJsonCountries = String.raw`{{ site.data.wai-course-list.countries | jsonify }}`;
 importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
-const jsonFilters = JSON.parse('{{site.data.filters | jsonify}}');
-const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
+const jsonFilters = JSON.parse('{{site.data.wai-course-list.filters | jsonify}}');
+const jsonLang = JSON.parse('{{site.data.wai-course-list.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
 const submitForm = document.querySelector('form');
@@ -53,15 +53,18 @@ if (filterForm) {
       }
 
 
-    sortForm.querySelector('select').addEventListener('change', filterJson);
     
+    sortForm.querySelector('select').addEventListener('change', filterJson);
 
+    handleARIAselect(selectLang);
+    handleARIAselect(selectCountry);
+    
+    
     //Add pre-counters to filters
     showFilterCounters(filterForm);
     handleSelectFilters(jsonCourses);
     handleARIAselect();
     
-
 
     function showFilterCounters(filterForm) {
 
@@ -457,42 +460,30 @@ if (filterForm) {
         }
     }
 
-    function handleARIAselect(){
+    function handleARIAselect(select){
         
-        console.log('Handle ARIA');
-
-        selectLang.addEventListener('focus', toogleOffARIA);
-
-        // when closed = blur, enter, scape, space
-        selectLang.addEventListener('blur', toogleOnARIA);        
-        selectLang.addEventListener('keypress', function(event){
-            if (event.key === "Enter") toogleOnARIA();
-            //if (event.key === "Space") toogleOnARIA();
-            //if (event.key === "Escape") toogleOnARIA();
+        select.addEventListener('focus', toogleOffARIA);
+        select.addEventListener('change', toogleOffARIA);
+        select.addEventListener('blur', toogleOnARIA);   
+        select.addEventListener('keyup', function(event){
+            if (event.keyCode === 13) toogleOnARIA(); 
         })
-
     }
 
     function toogleOffARIA(){
         regionMainStatus.removeAttribute('aria-live');
-        console.log(regionMainStatus.getAttribute('aria-live'));
+        regionMainStatus.removeAttribute('role');
     }
 
     function toogleOnARIA(){
-        
-        console.log('change aria');
-        console.log(regionMainStatus.getAttribute('aria-live'));
-        regionMainStatus.setAttribute('aria-live','polite');
-        console.log(regionMainStatus.getAttribute('aria-live'));
-
-        console.log('change text');
-        console.log(regionMainStatus.innerHTML);
+       
         txt = regionMainStatus.innerHTML;
         regionMainStatus.innerHTML = "";
-        console.log(regionMainStatus.innerHTML);
+
+        regionMainStatus.setAttribute('role','status');
+        regionMainStatus.setAttribute('aria-live','polite');
+
         regionMainStatus.innerHTML = txt;
-        console.log(regionMainStatus.innerHTML);
-    
     }
     
 }

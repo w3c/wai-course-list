@@ -1,7 +1,5 @@
 const options = { year: 'numeric', month: 'long', day: 'numeric' };
 
-
-
 function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
@@ -38,14 +36,12 @@ function getPreviewSubmission() {
 
         var elType = el.getAttribute("type");
 
-
-        if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
+        if(el.id == "description"){
 
             var label = document.querySelector("label[for='" + el.id + "']");
             if(label === null) 
-                label = el.closest('fieldset').querySelector('legend').innerText;
-            else
-                label = label.innerText;
+                label = el.closest('fieldset').querySelector('legend');
+
 
             var value = "";
             if (el.value === "") value = "{{strings.not_provided}}";
@@ -58,12 +54,40 @@ function getPreviewSubmission() {
                 }
             }
 
-            appendList(label, value);
+            var finalLabel = label.cloneNode(true);
+            clearChildNodes(finalLabel);
+
+            appendList(finalLabel.innerText, value);
+
+        }
+
+        if ((elType === "text" || elType === "email" || elType === "url" || elType === "date") && (!el.classList.contains('input_hidden')) && (!el.classList.contains('new-option-field'))) {
+
+            var label = document.querySelector("label[for='" + el.id + "']");
+            if(label === null) 
+                label = el.closest('fieldset').querySelector('legend');
+
+
+            var value = "";
+            if (el.value === "") value = "{{strings.not_provided}}";
+            else {
+                value = el.value;
+
+                if (elType === "date") {
+                    value = new Date(value);
+                    value = value.toLocaleDateString(undefined, options);
+                }
+            }
+
+            var finalLabel = label.cloneNode(true);
+            clearChildNodes(finalLabel);
+
+            appendList(finalLabel.innerText, value);
         }
         if (el.classList.contains('fieldset_radio')) {
 
             var radiosChecked = el.querySelector("input[type='radio']:checked");
-            var label = getFieldsetText(el.querySelector("legend"));
+            var label = el.querySelector("legend");
 
             var value = "";
             if (radiosChecked) value = document.querySelector("label[for='" + radiosChecked.id + "']").innerText;
@@ -74,8 +98,11 @@ function getPreviewSubmission() {
             if (newField && newField.value) {
                 value += " (" + newField.value + ")";
             }
-
-            appendList(label, value);
+           
+            var finalLabel = label.cloneNode(true);
+            clearChildNodes(finalLabel);
+           
+            appendList(finalLabel.innerText, value);
 
         }
         if (el.classList.contains('fieldset_select_text')) {
@@ -88,10 +115,13 @@ function getPreviewSubmission() {
                 if (val !== "") selectValues.push(val);
             });
 
-            var label = el.querySelector("legend").innerText;
+            var label = el.querySelector("legend");
             var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join(', '));
 
-            appendList(label, value);
+            var finalLabel = label.cloneNode(true);
+            clearChildNodes(finalLabel);
+
+            appendList(finalLabel.innerText, value);
 
         }
         if (el.classList.contains('fieldset_check') || el.classList.contains('fieldset_check_title')) {
@@ -102,7 +132,7 @@ function getPreviewSubmission() {
             if (checks) {
                 if (el.classList.contains('fieldset_check_title')) {
 
-                    var finalLabel = el.querySelector('legend').innerText;
+                    var finalLabel = el.querySelector('legend');
                     var finalValue = [];
 
                     el.querySelectorAll('.subitems').forEach(d => {
@@ -114,7 +144,7 @@ function getPreviewSubmission() {
                             val.push(el.querySelector("label[for='" + c.id + "']").innerText);
                         })
 
-                        var label = d.querySelector('p').innerText;
+                        var label = d.querySelector('legend').innerText;
 
                         var value = label + ": " + (val.length === 0 ? "{{strings.not_provided}}" : val.join('; '));
 
@@ -122,11 +152,13 @@ function getPreviewSubmission() {
 
                     });
 
-
                     //console.log(finalLabel);
-                    //console.log(finalValue);
+                    //console.log(finalValue);                    
 
-                    appendList(finalLabel, finalValue, true);
+                    var finalLabel2 = finalLabel.cloneNode(true);
+                    clearChildNodes(finalLabel2);
+        
+                    appendList(finalLabel2.innerText, finalValue, true);
 
 
                 }
@@ -140,10 +172,15 @@ function getPreviewSubmission() {
                         if (val !== "") selectValues.push(val);
                     });
 
-                    var label = getFieldsetText(el.querySelector("legend"));
+                    var label = el.querySelector("legend");
                     var value = (selectValues.length === 0 ? "{{strings.not_provided}}" : selectValues.join('; '));
+                    
 
-                    appendList(label, value);
+                    var finalLabel = label.cloneNode(true);
+                    clearChildNodes(finalLabel);
+        
+                    
+                    appendList(finalLabel.innerText, value);
                 }
             }
 
@@ -180,6 +217,13 @@ function getPreviewSubmission() {
             listValue.innerText = value;
             list.appendChild(listValue);
         }
+    }
+
+    function clearChildNodes(el){
+        while (el.childNodes.length > 1) {
+            el.removeChild(el.lastChild);
+        }
+        return el;
     }
 
 

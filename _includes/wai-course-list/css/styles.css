@@ -51,7 +51,7 @@ main>header {
 
 @media (min-width: 60em) {
     main>header {
-        grid-column: 2 / 9;
+        grid-column: 2 / 7;
     }
 
     .header-sup {
@@ -127,6 +127,10 @@ main>header {
 
 .courses-filters input {
     margin-right: .5em;
+}
+
+.field:not(.filter-options)>label{
+    font-weight: 700;
 }
 
 #language,
@@ -230,9 +234,22 @@ fieldset>p {
     margin-top: .25em !important
 }
 
+fieldset>fieldset{
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
 .fieldset-subtitles {
-    margin-top: 1.5em !important;
+    margin-top: .5em !important;
     color: var(--wai-green);
+    margin: 1em 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+legend.expl{
+    font-size: 1rem !important;
+    font-weight: normal;
+    margin-bottom: 0.5em !important;
 }
 
 #availability .label_input {
@@ -498,7 +515,11 @@ button {
 }
 
 
-
+span.expl{
+    font-weight: 400 !important;
+    display: block;
+    padding: .25em 0 1em 0;
+}
 
 
 

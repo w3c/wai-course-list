@@ -1,11 +1,11 @@
-{% for curricula in site.data.wai-curricula %}
-<div class="subitems">
-<p class="fieldset-subtitles">{{ curricula.name }}</p>
+{% for curricula in site.data.wai-course-list.wai-curricula %}
+<fieldset class="subitems">
+<legend class="fieldset-subtitles">{{ curricula.name }}</legend>
 {% for modules in curricula.modules %}
 <div class="radio-field">
     <input type="checkbox" id="{{ modules.id }}" name="wai_curricula[]" value="{{ modules.id }}"  group="wai_curricula">
     <label for="{{ modules.id }}">{{ modules.name }}</label>
 </div>
 {% endfor %}
-</div>
+</fieldset>
 {% endfor %}

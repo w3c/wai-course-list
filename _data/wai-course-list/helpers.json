@@ -1,0 +1,18 @@
+[
+    {
+        "id": "format",
+        "name": "Format",
+        "description": "Consider: <ul><li>Face-to-face - participants are required to attend on-site teaching sessions</li><li>Online - participants are required to complete online teaching sessions</li><li>Blended - participants are required to attend on-site and online teaching sessions</li><li>Hybrid - participants can choose to attend on-site or online teaching sessions</li></ul>"
+    },
+    {
+        "id": "learning",
+        "name": "Scheduling",
+        "description": "Consider: <ul><li>Scheduled - participants are required to attend at a specific time</li><li>Unscheduled - participants can attend at their own pace</li></ul>"
+    },
+    {
+        "id": "wai-curricula",
+        "name": "WAI Curricula module",
+        "description": "WAI Curricula on Web Accessibility is a framework to help you create courses on digital accessibility, or to include accessibility in other courses. WAI Curricula provides a set of learning outcomes, topics and assessment ideas covering accessibility foundations that apply broadly, and specific skills for developers, designers and content authors. <a href=\"https://www.w3.org/WAI/curricula/\">See more information about WAI Curricula Modules.</a>"
+    }
+
+]
