@@ -1,0 +1,31 @@
+{
+  "DEBUG": "true",
+  "accessibility_support_other": "",
+  "comments": "",
+  "content_update": "",
+  "country": [
+    ""
+  ],
+  "description": "",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "language": [
+    ""
+  ],
+  "length": "",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "",
+  "submission_date": "2022-06-16T10:16:20.076Z",
+  "submission_ref": "5da94ac0-ed5d-11ec-a6f4-e1ab6fdbdb53",
+  "submitter_email": "",
+  "submitter_name": "",
+  "title": "",
+  "topics": "",
+  "type_resource_new": "",
+  "website": ""
+}
