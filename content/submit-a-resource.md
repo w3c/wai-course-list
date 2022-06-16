@@ -21,6 +21,8 @@ footer:
   For Testing
   Uncomment to add a preview button which allows submission without filling all the required fields
 {% assign PREVIEW_BUTTON = true %}
+{% assign DEBUG_SUBMISSION_FUNCTION = true %}
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = true %}
 {% endcomment %}
 
 <div style="grid-column: 4 / span 4">
@@ -49,7 +51,9 @@ function onSubmit(e) {
                                    success=success_page
                                    failure=failure_page
                                    repository="wai-course-list"
-                                   onsubmit="onSubmit" -%}
+                                   onsubmit="onSubmit"
+                                   DEBUG_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_USE_LOCAL_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
