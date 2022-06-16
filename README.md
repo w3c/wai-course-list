@@ -20,6 +20,6 @@ The Function progress is logged and can be viewed in netlify.
 
 Unless otherwise specified the form Submission calls the Netlify Function in the production deploy of the wai-website. It is possibe to override with a DEBUG option in the submission filer to use a local function. This is for testing code changes locally. The Netlify Function processes the submitted form encoded data and passes as JSON to a GitHub action in wai-course-list repo. It also addes a couple of extra fields
 
-The Netlify console web app lets you view the wai-website Function logs which may help if their are errors. They are only kept 7 days
+The Netlify console web app lets you view the [wai-website Function logs](https://app.netlify.com/sites/wai-website/functions/list-submission) which may help if their are errors. They are only kept 7 days
 
 There is a DEBUG option in the sumbission file to cause the Funtion to not call git hub and redirect to the outcome page but to return the json and form data. Make sure to comment ou this andotehr options before checking in.
