@@ -17,13 +17,10 @@ footer:
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-{% comment %}
-  For Testing
-  Uncomment to add a preview button which allows submission without filling all the required fields
 {% assign PREVIEW_BUTTON = true %}
 {% assign DEBUG_SUBMISSION_FUNCTION = true %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = true %}
-{% endcomment %}
+
 
 <div style="grid-column: 4 / span 4">
 
