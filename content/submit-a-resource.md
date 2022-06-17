@@ -18,12 +18,16 @@ footer:
 <!-- markdownlint-disable no-inline-html -->
 
 {% comment %}
-  For Testing
-  Uncomment to add a preview button which allows submission without filling all the required fields
-{% assign PREVIEW_BUTTON = true %}
-{% assign DEBUG_SUBMISSION_FUNCTION = true %}
-{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = true %}
+  To DEBUG set any of the following to true.
+  NB!! ensure to reset all to false before committing
+
+  PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
+  DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
+  DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
+{% assign DEBUG_PREVIEW_BUTTON = false %}
+{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
 
@@ -408,7 +412,7 @@ function onSubmit(e) {
 {% include wai-course-list/js/courses.js %}
 {% include wai-course-list/js/preview.js %}
 
-{% if PREVIEW_BUTTON %}
+{% if DEBUG_PREVIEW_BUTTON %}
 (function(){
   const button = document.createElement('button')
   button.innerText = 'Show Preview'
