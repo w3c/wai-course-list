@@ -1,0 +1,67 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "We are updating this course.",
+  "content_update": "2020-12-15",
+  "cost": "cost_free",
+  "country": [
+    "pt"
+  ],
+  "description": "This MOOC begins with an introduction to the  web accessibility regulation, providing a historical perspective, both in the world and in Portugal, and a clarification of WCAG. The following module introduces the issue of interfaces, assistive technologies and WCAG validation. The other modules cover strategies to create accessible content.",
+  "end_date": "2022-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "4 hours",
+  "level": "level_basic",
+  "platforms": [
+    "OPEN EDX",
+    "MOODLE"
+  ],
+  "prerequisites": "No prerequisite",
+  "provider": "Instituto Politécnico de Leiria",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-01",
+  "submission_date": "2022-06-20T17:36:51.602Z",
+  "submission_ref": "91bb1720-f0bf-11ec-92a0-a966f0ed8b7f",
+  "submitter_email": "manuela.amado@gmail.com",
+  "submitter_name": "Manuela Francisco",
+  "title": "Web accessibility: How to start",
+  "topics": "Module 1: Regulation ",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://www.nau.edu.pt/en/course/acessibilidade-web-por-onde-comecar/"
+}
