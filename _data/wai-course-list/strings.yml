@@ -202,4 +202,5 @@ close_back_to_form: Close preview and go back to the form
 # Results message
 success_message: Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">Course List GitHub repository</a> to see your information (JSON format).
-failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list.
+failure_message: An error has occurred. Sorry about that.
+failure_message_contact_info: Please let us know by opening a <a href="https://github.com/w3c/wai-course-list/issues/new">new GitHub issue</a> or sending e-mail to
