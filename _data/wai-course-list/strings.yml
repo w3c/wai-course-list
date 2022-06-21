@@ -160,8 +160,8 @@ cost_certificates_for_purchase: Free, with certificates for purchase
 cost_limited_time: Paid, with some free content or free for a limited duration
 cost_reduced_for_some: Paid, with reduced fee for some
 cost_paid: Paid
-website_label: Website (Required)
-website_expl: Indicate the website containing more information about this resource.
+website_label: Web page (Required)
+website_expl: Indicate the web page containing more information about this resource.
 reviews_label: Reviews page
 reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
