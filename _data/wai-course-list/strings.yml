@@ -162,7 +162,7 @@ cost_reduced_for_some: Paid, with reduced fee for some
 cost_paid: Paid
 website_label: Web page (Required)
 website_expl: Indicate the web page containing more information about this resource.
-reviews_label: Reviews page
+reviews_label: Reviews web page
 reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
 content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
