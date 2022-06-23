@@ -170,12 +170,16 @@ if (filterForm) {
         var searchedResults = [];
 
         Object.values(newResultsList).forEach(o => {
-
+            var topics;
+            if(Array.isArray(o.topics))
+                topics = o.topics.join();
+            else
+                topics = o.topics;
             if (
                 o.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.provider.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                o.topics.join().toLowerCase().includes(searchTerm.toLowerCase())) {
+                topics.toLowerCase().includes(searchTerm.toLowerCase())) {
                 searchedResults.push(o);
             }
         })

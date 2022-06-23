@@ -19,7 +19,9 @@ skip_to_results: Skip to results
 sub_header_list_intro: This Course List provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
 sub_header_info_add_list: If you wish to add information about a course, training, or certification on digital accessibility, please use the following button.
 button_to_form_label: Submit a course, training, or certification
-edit_remove_info: If you wish to update any information or remove a course included in this list, please contact us via e-mail to the editors group list
+question_info: If you have questions, please e-mail them to 
+edit_remove_info: If you want to update information in the list or delete a course, please send e-mail to
+edit_remove_info_note: (e-mails to that address are not publicly-archived).
 sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
 filters_title: Filters
 filters_info: Changing filters will change the listed courses.
@@ -79,9 +81,9 @@ content_updated: The content of this resource was last updated on
 
 # Form strings
 back_to_list_link: Back to Course List
-sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility. 
+sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 # To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
-sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating. All information will be publicly available on our GitHub repository.
+sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
 submitter_name_label: Name (Required)
@@ -154,13 +156,13 @@ length_label: Length
 length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
 cost_legend: Cost (Required)
 cost_free: Free of charge
-cost_certificates_for_purchase: Free with certificates for purchase
-cost_limited_time: Free for limited content or duration
-cost_reduced_for_some: Free or reduced fee for some
+cost_certificates_for_purchase: Free, with certificates for purchase
+cost_limited_time: Paid, with some free content or free for a limited duration
+cost_reduced_for_some: Paid, with reduced fee for some
 cost_paid: Paid
-website_label: Website (Required)
-website_expl: Indicate the website containing more information about this resource.
-reviews_label: Reviews page
+website_label: Web page (Required)
+website_expl: Indicate the web page containing more information about this resource.
+reviews_label: Reviews web page
 reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
 content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
@@ -200,4 +202,5 @@ close_back_to_form: Close preview and go back to the form
 # Results message
 success_message: Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">Course List GitHub repository</a> to see your information (JSON format).
-failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list.
+failure_message: An error has occurred. Sorry about that.
+failure_message_contact_info: Please let us know by opening a <a href="https://github.com/w3c/wai-course-list/issues/new">new GitHub issue</a> or sending e-mail to

@@ -17,8 +17,17 @@ footer:
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-{% assign PREVIEW_BUTTON = true %}
+{% comment %}
+  To DEBUG set any of the following to true.
+  NB!! ensure to reset all to false before committing
 
+  PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
+  DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
+  DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
+{% endcomment %}
+{% assign DEBUG_PREVIEW_BUTTON = false %}
+{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
 
@@ -46,13 +55,16 @@ function onSubmit(e) {
                                    success=success_page
                                    failure=failure_page
                                    repository="wai-course-list"
-                                   onsubmit="onSubmit" -%}
+                                   onsubmit="onSubmit"
+                                   DEBUG_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_USE_LOCAL_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
 <p>{{strings.sub_header_info_form}}</p> 
 <p>{{strings.info_submission}}</p>
-<p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+<p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+<p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a> {{strings.edit_remove_info_note}}</p>
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
@@ -401,7 +413,7 @@ function onSubmit(e) {
 {% include wai-course-list/js/courses.js %}
 {% include wai-course-list/js/preview.js %}
 
-{% if PREVIEW_BUTTON %}
+{% if DEBUG_PREVIEW_BUTTON %}
 (function(){
   const button = document.createElement('button')
   button.innerText = 'Show Preview'
@@ -418,7 +430,7 @@ function onSubmit(e) {
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
-  <button class="button button-close_preview icon" title="{{strings.close_back_to_form}}"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle"><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
+  <button class="button button-close_preview icon" title="{{strings.close_back_to_form}}"><span><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> </span></button>
   <h2 id="preview_title">{{ strings.preview_title }}</h2>  
   <p>{{ strings.preview_info }}</p>
   <div class="details-preview box"></div>
