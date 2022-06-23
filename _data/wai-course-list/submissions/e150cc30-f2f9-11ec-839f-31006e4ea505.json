@@ -1,0 +1,42 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-07",
+  "cost": "cost_paid",
+  "country": [
+    "ad"
+  ],
+  "description": "desc",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "am"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "Provider",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-25",
+  "submission_date": "2022-06-23T13:39:18.260Z",
+  "submission_ref": "e150cc30-f2f9-11ec-839f-31006e4ea505",
+  "submitter_email": "email@gmail.com",
+  "submitter_name": "name",
+  "title": "Title",
+  "topics": "topics",
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "website": "https://course.com"
+}
