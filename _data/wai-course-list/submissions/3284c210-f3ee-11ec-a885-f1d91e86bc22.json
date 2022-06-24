@@ -1,0 +1,42 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-07",
+  "cost": "cost_free",
+  "country": [
+    "aq"
+  ],
+  "description": "sf",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "ca"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "fds",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-08",
+  "submission_date": "2022-06-24T18:48:11.697Z",
+  "submission_ref": "3284c210-f3ee-11ec-a885-f1d91e86bc22",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "sdf",
+  "title": "fsdf",
+  "topics": "fds",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "http://127.0.0.1:4000/wai-course-list/course-list/submit-a-resourcep://127.0.0.1:4000/wai-course-list/course-list/submit-a-resourcettp://www.google.comp"
+}
