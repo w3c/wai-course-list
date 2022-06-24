@@ -64,7 +64,11 @@ function onSubmit(e) {
 <p>{{strings.sub_header_info_form}}</p> 
 <p>{{strings.info_submission}}</p>
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+
+{% include box.html type="start" class="highlighted" %}
 <p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a> {{strings.edit_remove_info_note}}</p>
+{% include box.html type="end" %}
+
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 

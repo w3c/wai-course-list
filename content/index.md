@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Course List"
 title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
@@ -32,10 +32,9 @@ footer:
     </div>
     <div class="header-right">
         {% include box.html type="start" class="simple" %}
-        <p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+        <p>{{ strings.sub_header_note }}</p>
         {% include box.html type="end" %}
     </div>
-    <div class="header-full"><p><em>{{ strings.sub_header_note }}</em></p></div>
 
 </div>
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}

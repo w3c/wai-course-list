@@ -18,7 +18,7 @@ skip_to_filters: Skip to filters
 skip_to_results: Skip to results
 sub_header_list_intro: This Course List provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
 sub_header_info_add_list: If you wish to add information about a course, training, or certification on digital accessibility, please use the following button.
-button_to_form_label: Submit a course, training, or certification
+button_to_form_label: Submit or update a course, training, or certification
 question_info: If you have questions, please e-mail them to 
 edit_remove_info: If you want to update information in the list or delete a course, please send e-mail to
 edit_remove_info_note: (e-mails to that address are not publicly-archived).
