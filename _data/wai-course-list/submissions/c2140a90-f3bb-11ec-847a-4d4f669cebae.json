@@ -1,0 +1,52 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-15",
+  "cost": "cost_free",
+  "country": [
+    "pl"
+  ],
+  "description": "Nice description",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "ga"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "molde",
+  "prerequisites": [
+    "HTML",
+    "CSS"
+  ],
+  "provider": "University XYZ",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-29",
+  "submission_date": "2022-06-24T12:47:08.218Z",
+  "submission_ref": "c2140a90-f3bb-11ec-847a-4d4f669cebae",
+  "submitter_email": "leticiaseixasp@gmail.com",
+  "submitter_name": "Letícia",
+  "title": "Accessible Course",
+  "topics": [
+    "inclusive design",
+    "guidelines"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "http://www.google.com"
+}
