@@ -1,0 +1,59 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2021-06-21",
+  "cost": "cost_paid",
+  "country": [
+    "ca"
+  ],
+  "description": "This course focuses on developing expertise using the W3C Web Accessibility Initiative's (WAI) Accessible Rich Internet Applications (ARIA) specifications to create interactive widgets and applications for the Web that are accessible by people using assistive technologies like screen readers. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "7 weeks, 30 hours",
+  "level": "level_advanced",
+  "platforms": "D2L Brightspace (LMS)",
+  "prerequisites": [
+    "Basic knowledge of WCAG",
+    "Functional knowldge of HTML, CSS, Javascript",
+    "A GitHub account",
+    "A local development environment"
+  ],
+  "provider": "The Chang School, Toronto Metropolitan University",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2021-09-13",
+  "submission_date": "2022-06-24T14:37:51.053Z",
+  "submission_ref": "39845fd0-f3cb-11ec-a87d-a71607dac388",
+  "submitter_email": "greg.gay@ryerson.ca",
+  "submitter_name": "Greg Gay",
+  "title": "Web Accessibility for Developers",
+  "topics": "Static vs Dynamic WAI-ARIA",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://continuing.torontomu.ca/search/publicCourseSearchDetails.do?method=load&courseId=258107"
+}
