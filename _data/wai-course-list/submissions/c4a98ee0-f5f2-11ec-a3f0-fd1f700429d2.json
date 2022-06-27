@@ -1,0 +1,49 @@
+{
+  "accessibility_support": [
+    "non-digital-accessibility-text-and-visuals-big-enough"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "Do not forget to read the books mentioned in one of the lectures.",
+  "content_update": "2022-06-18",
+  "cost": "cost_free",
+  "country": [
+    "pk"
+  ],
+  "description": "This course will help you become proficient in Copywriting, and It will also help you understand the Psyche of your target audience. This course is an effort to make things easier and understandable for Students.\r\n\r\nOnce you complete the course and read the books that I suggest in this course? You will then be able to write your copy.\r\n\r\n",
+  "end_date": "2022-09-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "33 Minutes",
+  "level": "level_basic",
+  "platforms": "Master Study LMS",
+  "prerequisites": "The student must be able to Understand the English Language.",
+  "provider": "Rameez Qaiser",
+  "repository": "wai-course-list",
+  "reviews": "https://www.udemy.com/user/rameez-qaiser/",
+  "start_date": "2022-06-26",
+  "submission_date": "2022-06-27T08:25:57.198Z",
+  "submission_ref": "c4a98ee0-f5f2-11ec-a3f0-fd1f700429d2",
+  "submitter_email": "creativepenperson@gmail.com",
+  "submitter_name": "Rameez Qaiser",
+  "title": "Bite-sized Copywriting Course",
+  "topics": "Introduction",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "designer_modules2"
+  ],
+  "website": "https://rameezqaiser.com/courses-page/ultimate-copywriting-course-in-pakistan/"
+}
