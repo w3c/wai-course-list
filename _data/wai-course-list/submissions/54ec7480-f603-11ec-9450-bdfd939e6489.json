@@ -1,0 +1,54 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-01-02",
+  "cost": "cost_paid",
+  "country": [
+    "fi"
+  ],
+  "description": "This course consists of five minimodules which focus on easy language, easy spoken interaction,  picture communication, subtitling, speech and audio to text. After this course, the participant will have the overall understanding of how language can be made more accessible. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-02",
+  "submission_date": "2022-06-27T10:24:31.177Z",
+  "submission_ref": "54ec7480-f603-11ec-9450-bdfd939e6489",
+  "submitter_email": "pauliina.baltzar@tuni.fi",
+  "submitter_name": "Pauliina Baltzar",
+  "title": "Accessible Language",
+  "topics": "Easy Language",
+  "type_resource": "type_other",
+  "type_resource_new": "Continuous learning",
+  "website": "https://research.tuni.fi/taccu/courses/"
+}
