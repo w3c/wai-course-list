@@ -1,0 +1,57 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-01-02",
+  "cost": "cost_paid",
+  "country": [
+    "fi"
+  ],
+  "description": "This course consists of three minimodules which focus on accessibility legislation, accessible lectures, and accessible material production. After completing this course, the participant will have the skills and understanding to make teaching more accessible.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-02",
+  "submission_date": "2022-06-27T10:57:04.086Z",
+  "submission_ref": "e0f2df60-f607-11ec-8ad1-51519856c629",
+  "submitter_email": "pauliina.baltzar@tuni.fi",
+  "submitter_name": "Pauliina Baltzar",
+  "title": "Accessible Teaching",
+  "topics": [
+    "Accessible Lectures",
+    "Teaching and Accessibility Legislation",
+    "Accessible Documents",
+    "Accessible Materials"
+  ],
+  "type_resource": "type_other",
+  "type_resource_new": "Continuous learning",
+  "website": "https://research.tuni.fi/taccu/courses/"
+}
