@@ -1,0 +1,71 @@
+{
+  "accessibility_support": [
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "all are covered what I need!",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "No comment",
+  "content_update": "2022-07-01",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "in"
+  ],
+  "description": "Well, I could knew about this source from |wwww.w3schools.com| where I couldn't find what I've found here because I explore |WCAG| in mentioned site but there is only accessibility that tell only technique which relates to HTML, CSS and ARIA. so I want theory and its sufficient technique which I've explore seen |w3c|. So I want to have this one.",
+  "end_date": "2023-01-01",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "6 Months",
+  "level": "level_advanced",
+  "platforms": "LMS",
+  "prerequisites": "ARIA",
+  "provider": "W3C",
+  "repository": "wai-course-list",
+  "reviews": "https://w3.org",
+  "start_date": "2022-07-01",
+  "submission_date": "2022-06-27T06:35:42.119Z",
+  "submission_ref": "5dc47460-f5e3-11ec-91f4-a9959b6632ab",
+  "submitter_email": "naresh.starks@gmail.com",
+  "submitter_name": "Naresh Kumar Pandey",
+  "title": "ACCESSIBILITY IS ETHICALLY SUGGESTED INSTEAD OF ITS LEGALLY IMPLEMENTATION IN PRACTICE",
+  "topics": "Accessibility technique and its theory",
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://w3.org"
+}
