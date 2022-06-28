@@ -1,0 +1,80 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-28",
+  "cost": "cost_paid",
+  "country": [
+    "au",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "description": "Ready to become an accessibility coding boss? Expand your knowledge of ARIA, the accessibility tree, building accessible forms and web components, and heaps more. This course is great for front-end or full-stack developers.\r\n",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "5 x 2-hour sessions",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "No prior accessibility knowledge is needed.",
+    "Basic knowledge of HTML is required."
+  ],
+  "provider": "Intopia",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-28",
+  "submission_date": "2022-06-28T13:37:52.640Z",
+  "submission_ref": "82592000-f6e7-11ec-a0da-dfed1919a707",
+  "submitter_email": "russ@intopia.digital",
+  "submitter_name": "Russ Weakley",
+  "title": "Developing for web accessibility",
+  "topics": [
+    "The Accessibility Tree",
+    "An introduction to ARIA",
+    "Accessible names",
+    "Valid and semantic markup",
+    "Correct use of headings, landmarks, tables, links, buttons",
+    "Accessible form markup, including labels, required fields, and notifications",
+    "Use of live regions",
+    "Building accessible custom components."
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://intopia.digital/services/accessibility-training/developing-for-web-accessibility/"
+}
