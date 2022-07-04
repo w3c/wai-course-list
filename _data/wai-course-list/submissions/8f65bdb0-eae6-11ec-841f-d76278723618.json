@@ -41,7 +41,7 @@
   ],
   "length": "12 weeks duration (6 ECTS)",
   "level": "level_basic",
-  "platforms": "Campus Virtual (Universitat Autònoma de Barcelona)",
+  "platforms": "Campus Virtual (Universitat Autònoma de Barcelona) based on Moodle platform",
   "prerequisites": "",
   "provider": "Universitat Autònoma de Barcelona",
   "repository": "wai-course-list",
@@ -52,7 +52,14 @@
   "submitter_email": "estella.oncins@uab.cat",
   "submitter_name": "Estella Oncins",
   "title": "Course in Accessibility Management and Promotion: Accessibility Services, Communication and Information ",
-  "topics": "Key concepts and models in accessibility.",
+  "topics": [
+    "Key concepts and models in accessibility",
+    "Defining users, scenarios and services",
+    "Legislation",
+    "Standards and guidelines",
+    "Technology for accessibility",
+    "Managing and promoting accessibility: case studies"
+  ],
   "type_resource": "type_certification",
   "type_resource_new": "",
   "wai_curricula": [
