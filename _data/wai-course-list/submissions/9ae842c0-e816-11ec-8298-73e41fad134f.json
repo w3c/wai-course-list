@@ -49,7 +49,16 @@
   "submitter_email": "kelly@beaccessible.com",
   "submitter_name": "Kelly Childs",
   "title": "Document Accessibility Training",
-  "topics": "Accessible documents, inclusive design, WCAG, accessibility testing",
+  "topics": [
+    "General accessibility",
+    "Document accessibility overview",
+    "Accessibility tools",
+    "Accessibility testing",
+    "Creating an accessible Word document",
+    "Using Adobe Acrobat Pro to create accessible documents",
+    "Inclusive design",
+    "WCAG"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
@@ -59,5 +68,5 @@
     "foundation_modules4",
     "foundation_modules5"
   ],
-  "website": "https://www.beaccessible.com"
+  "website": "https://beaccessible.com/services/PDF-accessibility-training/"
 }
