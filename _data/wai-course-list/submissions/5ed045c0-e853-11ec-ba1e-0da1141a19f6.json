@@ -53,7 +53,14 @@
   "submitter_email": "scott.hollier@accessibility.org.au",
   "submitter_name": "Scott Hollier ",
   "title": "Professional Certificate in Web Accessibility (PCWA)",
-  "topics": "How people with disability use assistive technologies ",
+  "topics": [
+    "Web accessibility: importance and benefits",
+    "Policy and legislative frameworks",
+    "Practical guidelines",
+    "More advanced techniques for web accessibility",
+    "Authoring Tool Accessibility Guidelines (ATAG) 2.0",
+    "Future standards, including HTML 5 and WAI-ARIA"
+  ],
   "type_resource": "type_certification",
   "type_resource_new": "",
   "wai_curricula": [
