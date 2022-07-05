@@ -51,7 +51,13 @@
   "submitter_email": "kelly@beaccessible.com",
   "submitter_name": "Kelly Childs",
   "title": "Web Accessibility Training",
-  "topics": "Basic knowledge of HTML and CSS",
+  "topics": [
+    "Web Accessibility: Who is it for and Why",
+    "Web Accessibility Laws",
+    "WCAG A and AA Success Criteria",
+    "Web Accessibility Testing",
+    "Basic ARIA"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
