@@ -25,8 +25,8 @@ footer:
   DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
   DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = false %}
-{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_PREVIEW_BUTTON = true %}
+{% assign DEBUG_SUBMISSION_FUNCTION = true %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
@@ -44,7 +44,7 @@ main > header { grid-column: 4 / span 4; }
 function onSubmit(e) {
   e.preventDefault();
   getPreviewSubmission();
-};
+}
 </script>
 
 {% capture success_page %}{{ page.dir }}success.html{% endcapture %}
@@ -421,13 +421,12 @@ function onSubmit(e) {
   button.addEventListener('click', e => {
       getPreviewSubmission();
   })
-  const form = document.forms[0]
+  const form = document.querySelector('[name="submission"]');
   form.insertBefore(button, form.firstChild)
 })();
 {% endif %}
 
 </script>
-
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">
