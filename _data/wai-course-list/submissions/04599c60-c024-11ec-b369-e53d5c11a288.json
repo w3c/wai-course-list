@@ -34,7 +34,7 @@
   ],
   "length": "3 weeks",
   "level": "level_basic",
-  "platform": "Zoom",
+  "platforms": "Zoom",
   "prerequisites": [
     "HTML",
     "CSS"

@@ -23,8 +23,6 @@ footer:
 {% include wai-course-list/css/styles.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
-<a href="#filters_title" class="button button--skip-link" accesskey="f">{{ strings.skip_to_filters }}</a>
-<a href="#status" class="button button--skip-link" accesskey="r">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
