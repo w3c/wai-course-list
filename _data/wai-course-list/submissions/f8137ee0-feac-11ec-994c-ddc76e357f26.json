@@ -1,0 +1,47 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-06",
+  "cost": "cost_free",
+  "country": [
+    "ao"
+  ],
+  "description": "Brief description",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "az"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "Test Provider",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-07-20",
+  "submission_date": "2022-07-08T10:58:59.150Z",
+  "submission_ref": "f8137ee0-feac-11ec-994c-ddc76e357f26",
+  "submitter_email": "test@test.com",
+  "submitter_name": "LEtºicia",
+  "title": "Test",
+  "topics": "topic1",
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "http://www.google.com"
+}
