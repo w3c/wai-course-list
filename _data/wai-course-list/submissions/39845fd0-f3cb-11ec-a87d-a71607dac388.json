@@ -6,9 +6,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -52,7 +50,17 @@
   "submitter_email": "greg.gay@ryerson.ca",
   "submitter_name": "Greg Gay",
   "title": "Web Accessibility for Developers",
-  "topics": "Static vs Dynamic WAI-ARIA",
+  "topics": [
+    "Static vs Dynamic WAI-ARIA",
+    "Graceful Degradation vs Progressive Enhancement Development Methods",
+    "WAI-ARIA Roles, States, and Properties",
+    "WAI-ARIA Navigation",
+    "WAI-ARIA Live Regions",
+    "Standardized Keyboard Interaction Patterns",
+    "Basic Widgets (sliders, progress meters, tooltips)",
+    "Intermediate Widgets (auto-complete forms, modal dialogs, tab panels, accordions)",
+    "Advanced Widgets (carousels, drag and drop, list reorderers)"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "website": "https://continuing.torontomu.ca/search/publicCourseSearchDetails.do?method=load&courseId=258107"
