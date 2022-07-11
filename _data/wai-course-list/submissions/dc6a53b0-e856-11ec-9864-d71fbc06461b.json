@@ -43,7 +43,17 @@
   "submitter_email": "sergio.lujan@ua.es",
   "submitter_name": "Sergio Lujan Mora",
   "title": "Aprende Accesibilidad Web paso a paso",
-  "topics": "Guidelines and laws",
+  "topics": [
+    "What is web accessibility",
+    "People with disabilities and the Web",
+    "Guidelines and laws",
+    "Accessible content",
+    "Accessible navigation",
+    "Accessible design",
+    "Accessible interaction",
+    "Accessibility and search engine optimization (SEO)",
+    "Analysis and evaluation of web accessibility"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
