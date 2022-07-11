@@ -49,14 +49,12 @@
   "title": "Usabilidad y Accesibilidad",
   "topics": [
     "What is web accessibility",
-    "People with disabilities and the Web",
-    "Guidelines and laws",
-    "Accessible content",
-    "Accessible navigation",
-    "Accessible design",
-    "Accessible interaction",
-    "Accessibility and search engine optimization (SEO)",
-    "Analysis and evaluation of web accessibility"
+    "Principles of universal design",
+    "International and national guidelines on the accessibility of computer applications",
+    "Legal regulations in Europe and Spain",
+    "W3C's Web Content Accessibility Guidelines (WCAG 1.0, 2.0, 2.1, 2.2 and later)",
+    "Adaptation of user interfaces for people with functional diversity (visual, hearing, motor disabilities, etc.)",
+    "Accessibility evaluation"
   ],
   "type_resource": "type_undergraduate",
   "type_resource_new": "",
