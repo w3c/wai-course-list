@@ -1,0 +1,78 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-04-01",
+  "cost": "cost_free",
+  "country": [
+    "au",
+    ""
+  ],
+  "description": "This is a brief description of this accessible course.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_blended",
+  "language": [
+    "it",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_basic",
+  "platforms": [
+    "Moodle",
+    "Google Drive"
+  ],
+  "prerequisites": [
+    "W3C Accessibility Standards",
+    "basic knowledge of HTML and CSS"
+  ],
+  "provider": "University of Accessibility",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-07-22",
+  "submission_date": "2022-07-11T17:53:28.798Z",
+  "submission_ref": "5ec7dfe0-0142-11ed-80c1-b13f3c1fde44",
+  "submitter_email": "leticia@email.com",
+  "submitter_name": "Leticia",
+  "title": "Accessibility course",
+  "topics": [
+    "accessibility policy and regulations",
+    "inclusive design",
+    "accessible documents and multimedia",
+    ""
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://course.com"
+}
