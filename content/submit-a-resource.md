@@ -229,11 +229,11 @@ function onSubmit(e) {
   <p class="expl" id="expl_topics">{{strings.topics_expl}}</p>
   <div class="line">
     <label for="topics_1" class="label_input">{{strings.topics1_label}}</label>
-    <input type="text" id="topics_1" name="topics" required>
+    <input type="text" id="topics_1" name="topics[]" required>
   </div>
   <div class="proto">
     <label for="topics_[n]" class="label_input">{{strings.topicsn_label}} [n]</label>
-    <input type="text" id="topics_[n]" name="topics" class="input_hidden" disabled/>
+    <input type="text" id="topics_[n]" name="topics[]" class="input_hidden" disabled/>
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_topic_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_topic_button}}</button>
