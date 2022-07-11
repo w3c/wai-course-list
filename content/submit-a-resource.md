@@ -56,8 +56,8 @@ function onSubmit(e) {
                                    failure=failure_page
                                    repository="wai-course-list"
                                    onsubmit="onSubmit"
-                                   DEBUG_FUNCTION=DEBUG_SUBMISSION_FUNCTION
-                                   DEBUG_USE_LOCAL_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
+                                   DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
