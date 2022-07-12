@@ -3,9 +3,7 @@
     "general-accessibility-material-ahead-of-time",
     "digital-accessibility-caption-audio",
     "digital-accessibility-sufficient-contrast",
-    "digital-accessibility-motions-or-animations",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast"
+    "digital-accessibility-motions-or-animations"
   ],
   "accessibility_support_other": "",
   "audience": [
