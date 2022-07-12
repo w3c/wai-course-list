@@ -1,0 +1,75 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2016-12-31",
+  "cost": "cost_free",
+  "country": [
+    "es"
+  ],
+  "description": "The goal of this course is to provide an introduction to web accessibility that provides an overview of the different components: content, navigation, design, and interaction.\r\n\r\nAt the end of this course, the student will be able to create accessible websites for all users, for all devices and better positioned.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "4 weeks",
+  "level": "level_basic",
+  "platforms": "Udemy",
+  "prerequisites": "Knowledge of HTML, CSS, JavaScript and DOM",
+  "provider": "Universidad de Alicante ",
+  "repository": "wai-course-list",
+  "reviews": "https://www.udemy.com/course/aprende-accesibilidad-web-paso-a-paso/",
+  "start_date": "2015-02-01",
+  "submission_date": "2022-06-10T00:47:10.443Z",
+  "submission_ref": "dc6a53b0-e856-11ec-9864-d71fbc06461b",
+  "submitter_email": "sergio.lujan@ua.es",
+  "submitter_name": "Sergio Lujan Mora",
+  "title": "Aprende Accesibilidad Web paso a paso",
+  "topics": [
+    "What is web accessibility",
+    "People with disabilities and the Web",
+    "Guidelines and laws",
+    "Accessible content",
+    "Accessible navigation",
+    "Accessible design",
+    "Accessible interaction",
+    "Accessibility and search engine optimization (SEO)",
+    "Analysis and evaluation of web accessibility"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.udemy.com/course/aprende-accesibilidad-web-paso-a-paso/"
+}
