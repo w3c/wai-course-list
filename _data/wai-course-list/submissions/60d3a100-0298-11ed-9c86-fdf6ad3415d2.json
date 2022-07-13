@@ -1,0 +1,73 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-15",
+  "cost": "cost_free",
+  "country": [
+    "pl",
+    ""
+  ],
+  "description": "This is a description of a nice course.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "pl"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_basic",
+  "platforms": [
+    "Zoom",
+    "Moodle"
+  ],
+  "prerequisites": "W3C Accessibility Standards",
+  "provider": "University of ZYX",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-07-25",
+  "submission_date": "2022-07-13T10:41:40.112Z",
+  "submission_ref": "60d3a100-0298-11ed-9c86-fdf6ad3415d2",
+  "submitter_email": "leticia@email.com",
+  "submitter_name": "Letícia",
+  "title": "Accessibility Course",
+  "topics": [
+    "accessibility policy and regulations",
+    "inclusive design",
+    "accessible documents and multimedia"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "http://www.google.com"
+}
