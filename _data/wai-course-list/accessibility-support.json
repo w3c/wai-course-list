@@ -71,7 +71,7 @@
                     },
                     {
                         "id": "non-digital-accessibility-sufficient-contrast",
-                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">contrast evaluation tools</a>"
+                        "name": "Sufficient contrast between colors (“luminance contrast”) - see <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced\">Understanding contrast guidance</a> and <a href=\"https://www.w3.org/WAI/WCAG21/Understanding/contrast-enhanced#resources\">Contrast evaluation tools</a>"
                     },
                     {
                         "id": "non-digital-accessibility-description-of-visual-information",

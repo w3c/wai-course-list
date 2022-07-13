@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: "Course List"
 title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
@@ -23,8 +23,6 @@ footer:
 {% include wai-course-list/css/styles.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
-<a href="#filters_title" class="button button--skip-link" accesskey="f">{{ strings.skip_to_filters }}</a>
-<a href="#status" class="button button--skip-link" accesskey="r">{{ strings.skip_to_results }}</a>
 <div class="header-sup" id="main">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
@@ -32,10 +30,9 @@ footer:
     </div>
     <div class="header-right">
         {% include box.html type="start" class="simple" %}
-        <p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+        <p>{{ strings.sub_header_note }}</p>
         {% include box.html type="end" %}
     </div>
-    <div class="header-full"><p><em>{{ strings.sub_header_note }}</em></p></div>
 
 </div>
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}

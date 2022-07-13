@@ -49,7 +49,8 @@
     <p>{{ helper[0].description }}</p>
 </div>
 {% for module in filteredItems %}
-* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endfor %}
+{% if module[1].size > 0 %}
+* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endif %}{% endfor %}
 {% else %}
 : {{ strings.not_provided }}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
@@ -63,7 +64,7 @@
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
 {% capture langLabel %}
-{{ site.data.wai-course-list.lang[langIndex].name }} ({{ site.data.wai-course-list.lang[langIndex].nativeName }})
+{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
@@ -90,8 +91,8 @@
 </div>
 
 {{ strings.platforms }}
-{% if course.platform != "" %}
-: {{ course.platform | join: "; "}}
+{% if course.platforms != "" %}
+: {{ course.platforms | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}

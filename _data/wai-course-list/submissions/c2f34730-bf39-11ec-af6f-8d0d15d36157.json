@@ -39,7 +39,10 @@
     "learning_scheduled",
     "learning_unscheduled"
   ],
-  "platform": "Zoom and Moodle",
+  "platforms": [
+    "Zoom",
+    "Moodle"
+  ],
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
     "general-accessibility-pre-check-available",

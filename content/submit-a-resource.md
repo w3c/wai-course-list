@@ -44,7 +44,7 @@ main > header { grid-column: 4 / span 4; }
 function onSubmit(e) {
   e.preventDefault();
   getPreviewSubmission();
-};
+}
 </script>
 
 {% capture success_page %}{{ page.dir }}success.html{% endcapture %}
@@ -56,15 +56,16 @@ function onSubmit(e) {
                                    failure=failure_page
                                    repository="wai-course-list"
                                    onsubmit="onSubmit"
-                                   DEBUG_FUNCTION=DEBUG_SUBMISSION_FUNCTION
-                                   DEBUG_USE_LOCAL_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
+                                   DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
 <p>{{strings.sub_header_info_form}}</p> 
 <p>{{strings.info_submission}}</p>
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
-<p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a> {{strings.edit_remove_info_note}}</p>
+
+
 <p><em>{{strings.sub_header_info_form_details}}</em></p> 
 
 
@@ -228,11 +229,11 @@ function onSubmit(e) {
   <p class="expl" id="expl_topics">{{strings.topics_expl}}</p>
   <div class="line">
     <label for="topics_1" class="label_input">{{strings.topics1_label}}</label>
-    <input type="text" id="topics_1" name="topics" required>
+    <input type="text" id="topics_1" name="topics[]" required>
   </div>
   <div class="proto">
     <label for="topics_[n]" class="label_input">{{strings.topicsn_label}} [n]</label>
-    <input type="text" id="topics_[n]" name="topics" class="input_hidden" disabled/>
+    <input type="text" id="topics_[n]" name="topics[]" class="input_hidden" disabled/>
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_topic_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_topic_button}}</button>
@@ -420,13 +421,12 @@ function onSubmit(e) {
   button.addEventListener('click', e => {
       getPreviewSubmission();
   })
-  const form = document.forms[0]
+  const form = document.querySelector('[name="submission"]');
   form.insertBefore(button, form.firstChild)
 })();
 {% endif %}
 
 </script>
-
 
 <div id="preview-submission-overlay" role="dialog" aria-modal="true" aria-labelledby="preview_title">
 <div class="overlay-content">

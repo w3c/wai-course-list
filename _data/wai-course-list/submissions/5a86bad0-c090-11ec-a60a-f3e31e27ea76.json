@@ -39,7 +39,7 @@
   ],
   "length": "2 weeks",
   "level": "level_advanced",
-  "platform": "Zoom",
+  "platforms": "Zoom",
   "prerequisites": "Web accessibility basics",
   "provider": "Accessible University",
   "reviews": "https://www.course.com/reviews",
