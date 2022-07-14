@@ -1,0 +1,60 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-01-02",
+  "cost": "cost_paid",
+  "country": [
+    "fi"
+  ],
+  "description": "This course consists of five minimodules which focus on games, audio description, entertainment, speech-to-text translation and speech and audio-to-text. After completing this course, the participant will have an overview of accessible culture and know how to make culture more accessible. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-02",
+  "submission_date": "2022-06-27T09:12:15.768Z",
+  "submission_ref": "3cd1b180-f5f9-11ec-b364-cbb3ab4bbb03",
+  "submitter_email": "pauliina.baltzar@tuni.fi",
+  "submitter_name": "Pauliina Baltzar",
+  "title": "Accessible Culture",
+  "topics": [
+    "Games",
+    "Gamification",
+    "Audiodescription of Art",
+    "Entertainment",
+    "Subtitling",
+    "Speech and audio to text"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://research.tuni.fi/taccu/courses/"
+}
