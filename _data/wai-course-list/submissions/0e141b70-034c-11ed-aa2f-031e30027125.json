@@ -1,0 +1,58 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-12",
+  "cost": "cost_free",
+  "country": [
+    "pl",
+    ""
+  ],
+  "description": "This is a brief description of this nice course.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_blended",
+  "language": [
+    "no",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 months",
+  "level": "level_basic",
+  "platforms": [
+    "Moodle",
+    "Zoom"
+  ],
+  "prerequisites": "accessibility concepts and terminology",
+  "provider": "University UWH",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-07-02",
+  "submission_date": "2022-07-14T08:07:50.695Z",
+  "submission_ref": "0e141b70-034c-11ed-aa2f-031e30027125",
+  "submitter_email": "leticia@test.com",
+  "submitter_name": "Leticia",
+  "title": "Accessible course",
+  "topics": [
+    "accessibility policy and regulations",
+    "inclusive design",
+    "accessible documents and multimedia"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1"
+  ],
+  "website": "http://www.google.com"
+}
