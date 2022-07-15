@@ -101,8 +101,8 @@ function onSubmit(e) {
   </legend>
   <p class="expl" id="expl_country">{{strings.country_expl}}</p>
   <div class="line">
-    <label for="country1" class="label_input">{{strings.country1_label}}</label>
-      <select name="country[]" id="country1" class="select_form" required>
+    <label for="country_1" class="label_input">{{strings.country1_label}}</label>
+      <select name="country[]" id="country_1" class="select_form" required>
         <option value=""></option>
         {% for country in orderedCountries %}
         <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
@@ -114,7 +114,7 @@ function onSubmit(e) {
     <select name="country[]" id="country_[n]" class="select_form input_hidden" disabled>
       <option value=""></option>
       {% for country in orderedCountries %}
-      <option value="{{ country[3] }}">{{ country[0] }} ({{country[1]}})</option>
+      <option value="{{ country[2] }}">{{ country[0] }} ({{country[1]}})</option>
       {% endfor %}
     </select>
   </div>
