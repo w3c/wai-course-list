@@ -56,7 +56,7 @@ function onSubmit(e) {
                                    failure=failure_page
                                    repository="wai-course-list"
                                    onsubmit="onSubmit"
-                                   DEBUG_FUNCTION=DEBUG_SUBMISSION_FUNCTION
+                                   DEBUG_SUBMISSION_FUNCTION=DEBUG_SUBMISSION_FUNCTION
                                    DEBUG_USE_LOCAL_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
@@ -213,11 +213,11 @@ function onSubmit(e) {
   <span class="expl" id="expl_prerequisites">{{strings.prerequisites_expl}}</span>
   <div class="line">
     <label for="prerequisites_1" class="label_input">{{strings.prerequisites1_label}}</label>
-    <input type="text" id="prerequisites_1" name="prerequisites">
+    <input type="text" id="prerequisites_1" name="prerequisites[]">
   </div>
   <div class="proto">
     <label for="prerequisites_[n]" class="label_input">{{strings.prerequisitesn_label}} [n]</label>
-    <input type="text" id="prerequisites_[n]" name="prerequisites" class="input_hidden" disabled />
+    <input type="text" id="prerequisites_[n]" name="prerequisites[]" class="input_hidden" disabled />
   </div>
   <button type="button" class="add_line button-small">{{strings.add_new_prerequisite_button}}</button>
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_prerequisite_button}}</button>
