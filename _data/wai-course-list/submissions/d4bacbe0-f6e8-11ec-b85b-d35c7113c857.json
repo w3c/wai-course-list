@@ -7,10 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "We always ask if anyone has specific needs and always aim to modify or adjust to suit people's needs.",
   "audience": [
@@ -23,12 +20,12 @@
   "cost": "cost_paid",
   "country": [
     "au",
-    "",
-    "",
-    "",
-    ""
+    "nz",
+    "us",
+    "gb",
+    "ca"
   ],
-  "description": "Are you a word wrangler? Discover how language, structure, and micro-content work together to create accessible content. This course is great for anyone who creates, publishes, or manages digital content.\r\n",
+  "description": "Are you a word wrangler? Discover how language, structure, and micro-content work together to create accessible content. This course is great for anyone who creates, publishes, or manages digital content.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
