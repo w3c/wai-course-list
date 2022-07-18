@@ -7,10 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -23,10 +20,10 @@
   "cost": "cost_paid",
   "country": [
     "au",
-    "",
-    "",
-    "",
-    ""
+    "nz",
+    "us",
+    "gb",
+    "ca"
   ],
   "description": "Ready to become an accessibility coding boss? Expand your knowledge of ARIA, the accessibility tree, building accessible forms and web components, and heaps more. This course is great for front-end or full-stack developers.\r\n",
   "end_date": "",
