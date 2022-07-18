@@ -7,10 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "We always ask if anyone has specific needs and always aim to modify or adjust to suit people's needs. We also follow accessible presentation practices.",
   "audience": [
@@ -23,10 +20,10 @@
   "cost": "cost_paid",
   "country": [
     "au",
-    "",
-    "",
-    "",
-    ""
+    "nz",
+    "us",
+    "gb",
+    "ca"
   ],
   "description": "Make your designs accessible, and share their beauty with everyone. Explore UI and interaction design principles that contribute to creating barrier-free experiences. This is great for visual and UX designers, and digital professionals.\r\n",
   "end_date": "",
