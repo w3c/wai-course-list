@@ -58,7 +58,13 @@
   "submitter_email": "amace@abledocs.com",
   "submitter_name": "Amanda Mace",
   "title": "ADWebKey Certificate in Digital Accessibility",
-  "topics": "Website Accessibility Basics",
+  "topics": [
+    "Introduction to Digital Accessibility",
+    "Creating Accessible Documents",
+    "Creating Accessible Forms",
+    "Screen Readers and The Mobile Experience",
+    "Taking Care of Business"
+  ],
   "type_resource": "type_certification",
   "type_resource_new": "",
   "wai_curricula": [
