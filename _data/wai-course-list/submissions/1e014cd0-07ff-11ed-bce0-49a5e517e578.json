@@ -1,0 +1,83 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-20",
+  "cost": "cost_paid",
+  "country": [
+    "at"
+  ],
+  "description": "This course provides a comprehensive overview about accessible web design and equips web designers and IT service providers with the right tools to design websites professionally and in accordance with requirements.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "de"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 webinars (each 3,5 hours) within 3 weeks",
+  "level": "level_intermediate",
+  "platforms": "own learning platform - access is provided to participants, online sessions via Zoom",
+  "prerequisites": [
+    "good to have: basic knowledge of HTML and CSS"
+  ],
+  "provider": "incite Ausbildungs- und Schulungsveranstaltungs GmbH",
+  "repository": "wai-course-list",
+  "reviews": "https://www.incite.at/de/kurse-zertifikate/webaccessibility/",
+  "start_date": "2022-06-20",
+  "submission_date": "2022-07-20T07:39:41.981Z",
+  "submission_ref": "1e014cd0-07ff-11ed-bce0-49a5e517e578",
+  "submitter_email": "bianca.pilz@incite.at",
+  "submitter_name": "Bianca Pilz",
+  "title": "WebAccessibility - Accessible Webdesign (German: Lehrgang WebAccessibility - Barrierefreies Webdesign)",
+  "topics": [
+    "Accessible Web Design - Why and what for?",
+    "Guidelines: Accessibility standardized and implementable",
+    "Exemplary procedure and process of an accessible web project",
+    "Accessible content and basic implementation techniques",
+    "Web Evaluation Tools",
+    "Multimedia on the web",
+    "Accessible documents for the web"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3"
+  ],
+  "website": "https://www.incite.at/de/kurse-zertifikate/webaccessibility/"
+}
