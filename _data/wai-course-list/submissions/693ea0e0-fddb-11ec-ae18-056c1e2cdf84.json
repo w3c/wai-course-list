@@ -46,8 +46,8 @@
   "submitter_name": "Marina Ribaudo",
   "title": "Introduzione all'accessibilità web",
   "topics": "General overview of the difficulties encountered by users with disabilities when accessing online services",
-  "type_resource": "type_other",
-  "type_resource_new": "Online course on a MOOC platform",
+  "type_resource": "type_training",
+  "type_resource_new": "",
   "wai_curricula": [
     "foundation_modules1",
     "foundation_modules5"
