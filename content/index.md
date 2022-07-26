@@ -139,8 +139,8 @@ footer:
         </div>  
         <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">
-                <h4 id="default-results-title">{{strings.filtered_criteria_title}}</h4>
-                <h4 id="no-results-title">{{strings.no_results_title}}:</h4>
+                <div id="default-results-title">{{strings.filtered_criteria_title}}</div>
+                <div id="no-results-title">{{strings.no_results_title}}:</div>
                 <div class="div-clear-filters">
                     {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button" %}
                 </div>
