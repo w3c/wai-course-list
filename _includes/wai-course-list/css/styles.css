@@ -415,6 +415,10 @@ fieldset label:hover a:hover {
     align-items: center;
 }
 
+#filter-courses-info p{
+    margin: 0 !important;
+}
+
 button {
     cursor: pointer;
 }
