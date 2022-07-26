@@ -204,6 +204,9 @@ select {
     }
 }
 
+details summary p{
+    color: var(--w3c-blue);
+}
 
 #courses-list dd {
     margin: 0 0 1em 0;
