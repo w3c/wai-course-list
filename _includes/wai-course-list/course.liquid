@@ -144,9 +144,11 @@
 : {{ strings.not_provided }}
 {% endif %}
 
-{{ strings.info_updated }} {{ course.submission_date | date: "%-d %B %Y" }}.
 {% if course.content_update %}
-{{ strings.content_updated }} {{ course.content_update | date: "%-d %B %Y" }}.
+{{ strings.content_updated }}
+: {{ course.content_update | date: "%-d %B %Y" }}.
 {% endif %}
+
+_{{ strings.info_updated }} {{ course.submission_date | date: "%-d %B %Y" }}._
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
