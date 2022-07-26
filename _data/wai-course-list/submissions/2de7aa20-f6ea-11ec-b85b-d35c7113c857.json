@@ -11,7 +11,8 @@
   ],
   "accessibility_support_other": "We always ask if anyone has specific needs and always aim to modify or adjust to suit people's needs. We also follow accessible presentation practices.",
   "audience": [
-    "audience_designer"
+    "audience_designer",
+    "audience_general"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
@@ -38,7 +39,7 @@
   ],
   "length": "5 x 2-hour sessions",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "Our courses are normally conducted via Zoom but we are flexible to the needs of attendees.",
   "prerequisites": [
     "No prior accessibility knowledge is needed",
     "Basic knowledge of UI design required"
@@ -53,14 +54,12 @@
   "submitter_name": "Russ Weakley",
   "title": "Designing for digital accessibility",
   "topics": [
-    "Colour",
-    "Layout and proximity",
-    "Images and graphics",
-    "Multimedia and animation",
-    "Navigation and content structure",
-    "Input methods: keyboard and voice",
-    "Input methods: touch",
-    "Forms and time limits"
+    "Improving readability using colour, layout and spacing",
+    "How responsive design supports UI customisation",
+    "Accessible alternatives for media and images",
+    "Structuring content for easy navigation",
+    "Designing for keyboard, pointer and voice interaction",
+    "Creating accessible forms."
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
