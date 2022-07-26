@@ -13,9 +13,9 @@ permalink: /courses/list/
 ref: /teach-advocate/course-list/
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
-footer: 
+footer: >
    <p><strong>Date:</strong> Updated 07 June 2021. First published June 2022.</p>
-   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <span>Contributors:<span> <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p>
+   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. Contributors: <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 
@@ -23,7 +23,7 @@ footer:
 {% include wai-course-list/css/styles.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
-<div class="header-sup" id="main">
+<div class="header-sup">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
         {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
@@ -52,7 +52,7 @@ footer:
                 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ filter.name }}" aria-expanded="false" aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
                 {% assign helper = site.data.wai-course-list.helpers | where: "id", filter.id %}
                 <div class="helperinfo" id="info_about{{ filter.name}}" hidden="hidden">
-                    <p>{{ helper[0].description }}</p>
+                    {{ helper[0].description }}
                 </div>
                 {% else %}
                  <legend class="label">{{ filter.name }}</legend>

@@ -2,7 +2,7 @@
 {% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
-{% include box.html type="start" title=course_title id=course.title  h="3"%}
+{% include box.html type="start" title=course_title id=course.submission_ref  h="3"%}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
 {{ strings.details }}
@@ -43,20 +43,20 @@
 {{ strings.wai_curricula }}
 {% if course.wai_curricula != "" %}
 : 
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_curricula_{{ course.submission_ref }}" data-target="#info_about_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_curricula{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+<div class="helperinfo" id="info_about_curricula_{{ course.submission_ref }}" hidden="hidden">
+    {{ helper[0].description }}
 </div>
 {% for module in filteredItems %}
 {% if module[1].size > 0 %}
 * {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endif %}{% endfor %}
 {% else %}
 : {{ strings.not_provided }}
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula_{{ course.submission_ref }}" data-target="#info_about_wai_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_wai_curricula{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+<div class="helperinfo" id="info_about_wai_curricula_{{ course.submission_ref }}" hidden="hidden">
+    {{ helper[0].description }}
 </div>
 {% endif %}
 
@@ -78,7 +78,7 @@
 : {{ strings[course.format]}}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.format }}" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+    {{ helper[0].description }}
 </div>
 
 
@@ -87,7 +87,7 @@
 : {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.scheduling }}" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+    {{ helper[0].description }}
 </div>
 
 {{ strings.platforms }}
