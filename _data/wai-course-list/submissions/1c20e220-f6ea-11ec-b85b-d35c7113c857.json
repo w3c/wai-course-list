@@ -42,7 +42,7 @@
   ],
   "length": "3 x 2-hour sessions",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "Our courses are normally conducted via Zoom but we are flexible to the needs of attendees.",
   "prerequisites": [
     "No prior accessibility knowledge needed",
     "Basic knowledge of HTML, CSS and web developer tools required"
@@ -60,7 +60,7 @@
     "Using automated and manual testing techniques",
     "Using tools to check contrast and colour usage",
     "Identifying different image types and check accessible alternatives for images",
-    "Checking content  structure is logical and meaningful",
+    "Checking content structure is logical and meaningful",
     "Making sure all tasks can be completed using a keyboard",
     "Checking form labels and instructions are clear and coded correctly."
   ],
