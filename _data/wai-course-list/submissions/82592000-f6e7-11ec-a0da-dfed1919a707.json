@@ -38,7 +38,7 @@
   ],
   "length": "5 x 2-hour sessions",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "Our courses are normally conducted via Zoom but we are flexible to the needs of attendees.",
   "prerequisites": [
     "No prior accessibility knowledge is needed.",
     "Basic knowledge of HTML is required."
@@ -53,13 +53,10 @@
   "submitter_name": "Russ Weakley",
   "title": "Developing for web accessibility",
   "topics": [
-    "The Accessibility Tree",
-    "An introduction to ARIA",
-    "Accessible names",
-    "Valid and semantic markup",
-    "Correct use of headings, landmarks, tables, links, buttons",
+    "The importance of the accessibility tree and accessible names",
+    "Using semantic markup for things such as headings, landmarks, and images",
     "Accessible form markup, including labels, required fields, and notifications",
-    "Use of live regions",
+    "How to use ARIA the right way",
     "Building accessible custom components."
   ],
   "type_resource": "type_training",
