@@ -46,7 +46,7 @@ showing: Showing
 searchbox_placeholder: Search courses by title, provider, or topic
 
 clear_filters_button_label: Clear filters
-searchterm: Searchterm
+searchterm: Search term
 filtered_criteria_title: Current filter criteria
 no_results_title: Sorry, but no courses match the following criteria
 no_results_simple: No courses found
