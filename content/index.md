@@ -1,7 +1,7 @@
 ---
 published: true
 title: "Course List"
-title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
+title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
 doc-note-type: draft
 lang: en
