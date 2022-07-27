@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "We always ask if anyone has specific needs and always aim to modify or adjust to suit people's needs. We also follow accessible presentation practices.",
+  "audience": [
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-28",
+  "cost": "cost_paid",
+  "country": [
+    "au",
+    "nz",
+    "us",
+    "gb",
+    "ca"
+  ],
+  "description": "Make your designs accessible, and share their beauty with everyone. Explore UI and interaction design principles that contribute to creating barrier-free experiences. This is great for visual and UX designers, and digital professionals.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "5 x 2-hour sessions",
+  "level": "level_basic",
+  "platforms": "Our courses are normally conducted via Zoom but we are flexible to the needs of attendees.",
+  "prerequisites": [
+    "No prior accessibility knowledge is needed",
+    "Basic knowledge of UI design required"
+  ],
+  "provider": "Intopia",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-06-28",
+  "submission_date": "2022-06-28T13:56:59.458Z",
+  "submission_ref": "2de7aa20-f6ea-11ec-b85b-d35c7113c857",
+  "submitter_email": "russ@intopia.digital",
+  "submitter_name": "Russ Weakley",
+  "title": "Designing for digital accessibility",
+  "topics": [
+    "Improving readability using colour, layout and spacing",
+    "How responsive design supports UI customisation",
+    "Accessible alternatives for media and images",
+    "Structuring content for easy navigation",
+    "Designing for keyboard, pointer and voice interaction",
+    "Creating accessible forms."
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://intopia.digital/services/accessibility-training/designing-for-digital-accessibility/"
+}
