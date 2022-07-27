@@ -1,0 +1,72 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-06-01",
+  "cost": "cost_free",
+  "country": [
+    "fi"
+  ],
+  "description": "The course gives an overview of how accessibility can be taken in account in everyday communication and digital services.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2021-03-07",
+  "submission_date": "2022-06-27T11:04:29.774Z",
+  "submission_ref": "ea9976e0-f608-11ec-8ad1-51519856c629",
+  "submitter_email": "pauliina.baltzar@tuni.fi",
+  "submitter_name": "Pauliina Baltzar",
+  "title": "Fundamentals of Accessibility ",
+  "topics": [
+    "Terminology",
+    "Undestanding Disability",
+    "Legislation",
+    "Policies",
+    "Users: Sensory Disabilities",
+    "Users Cognitive Disabilities",
+    "Culture",
+    "Communication",
+    "Accessible Content",
+    "Accessible Human-Technology Interaction",
+    "Assistive technologies",
+    "Adaptive Strategies",
+    "User experience",
+    "Web Accessibility"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules5"
+  ],
+  "website": "https://research.tuni.fi/taccu/courses/"
+}
