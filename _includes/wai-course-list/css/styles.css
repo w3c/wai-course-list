@@ -268,20 +268,13 @@ legend.expl{
 }
 
 #disclaimer {
-    border: 1px solid var(--line-grey);
+    grid-column: 2/10;
     margin-top: 2em;
 }
 
-#disclaimer h2 {
-    background-color: gold;
-    margin: 0px !important;
-    padding: 10px;
-    font-size: 1.3em;
-    color: var(--off-black);
-}
 
-#disclaimer p {
-    padding: 10px;
+.box-disclaimer {
+    margin: 0px !important;
 }
 
 #total-courses {

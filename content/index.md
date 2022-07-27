@@ -105,10 +105,6 @@ footer: >
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
-        <div id="disclaimer">
-            <h2>{{ strings.disclaimer_title }}</h2>
-            {{ strings.disclaimer_text }}
-        </div>
     </div>
     <div id="courses-list">
         <div class="courses-list-header">
@@ -163,7 +159,11 @@ footer: >
 <div class="button-submit-end">
     {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}  
 </div>
-
+<div id="disclaimer">
+{% include box.html type="start" title=strings.disclaimer_title class="disclaimer"%}
+{{ strings.disclaimer_text }}
+{% include box.html type="end" %}
+</div>
 <script>
 {% include wai-course-list/js/courses.js %}
 </script>

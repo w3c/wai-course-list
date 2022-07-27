@@ -22,7 +22,7 @@ button_to_form_label: Submit or update a course, training, or certification
 question_info: If you have questions, please e-mail them to 
 edit_remove_info: If you want to update information in the list or delete a course, please send e-mail to
 edit_remove_info_note: (e-mails to that address are not publicly-archived).
-sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
+sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. <br/><br/>See <a href="#disclaimer">Disclaimer</a>.
 filters_title: Filters
 filters_info: Changing filters will change the listed courses.
 select_option_default: Select an option
@@ -36,7 +36,7 @@ select_language_info_multiple_results: different languages
 select_country_info_single_result: different country
 select_country_info_multiple_results: different countries
 
-disclaimer_title: Important Disclaimer
+disclaimer_title: Disclaimer
 disclaimer_text:
   <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers or courses. Inclusion of courses in this list does not indicate endorsement by W3C. Courses and search criteria are listed with no quality rating.</p>
   <p>Courses descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information.</p>
