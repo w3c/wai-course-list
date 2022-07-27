@@ -157,7 +157,7 @@ footer: >
     
 </div>
 <div class="button-submit-end">
-    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}  
+    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
 </div>
 <div id="disclaimer">
 {% include box.html type="start" title=strings.disclaimer_title class="disclaimer"%}
