@@ -208,7 +208,7 @@ if (filterForm) {
         }
 
         sortedArticles.forEach(el => {
-            if (!Object.values(newResults).find(o => o.title === el.id))
+            if (!Object.values(newResults).find(o => o.submission_ref === el.id))
                 el.hidden = true;
             else
                 el.hidden = false;
