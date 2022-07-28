@@ -1,0 +1,51 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-11",
+  "cost": "cost_free",
+  "country": [
+    "it"
+  ],
+  "description": "Developed within the European Erasmus Plus Strategic Partnership project IWAC and then translated into Italian, the course introduces some good practices to achieve accessible teaching. Together with others, the participants will have the opportunity to learn good practices and tips to make their teaching more accessible.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "4 hours",
+  "level": "level_basic",
+  "platforms": "EduOpen (Italian MOOC platform Moodle based)",
+  "prerequisites": "None",
+  "provider": "Università di Genova (University of Genoa)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-07-23",
+  "submission_date": "2022-07-13T15:20:18.065Z",
+  "submission_ref": "4d80d010-02bf-11ed-baa7-89654aee4cf3",
+  "submitter_email": "marina.ribaudo@unige.it",
+  "submitter_name": "Marina Ribaudo",
+  "title": "Apprendimento e insegnamento accessibili",
+  "topics": "Good practices and tips for accessible teaching",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules5"
+  ],
+  "website": "https://learn.eduopen.org/eduopenv2/course_details.php?courseid=499"
+}
