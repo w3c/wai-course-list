@@ -132,7 +132,7 @@ footer: >
         {{ itemsSorted | size }}
         {% endcapture %}
         <div id="status" tabindex="0" aria-live="polite" role="status">
-            <h3 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h3>
+            <div id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</div>
         </div>  
         <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">

@@ -487,7 +487,7 @@ button {
     font-size: .85em;
 }
 
-#status span {
+#status {
     color: var(--wai-green);
     font-weight: bold;
 }
