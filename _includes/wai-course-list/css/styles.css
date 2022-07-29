@@ -189,6 +189,10 @@ select {
     border-top: 1px solid #ccc;
 }
 
+#courses-list h2{
+    margin: 43px 0 20px;
+}
+
 @media (min-width: 60em) {
     #courses-list {
         grid-column: 4 / span 7;
@@ -370,7 +374,6 @@ fieldset label:hover a:hover {
 .courses-list-header {
     display: grid;
     grid-gap: 1em;
-    border-bottom: 1px solid var(--line-grey);
     padding-bottom: 1em;
 }
 
