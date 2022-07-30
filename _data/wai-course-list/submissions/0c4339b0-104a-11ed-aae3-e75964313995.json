@@ -1,0 +1,84 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "yes",
+  "content_update": "2022-07-05",
+  "cost": "cost_free",
+  "country": [
+    "es"
+  ],
+  "description": "34566787",
+  "end_date": "2022-09-16",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6? months ",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "34566787"
+  ],
+  "provider": "nelson_d666@hotmail.com ",
+  "repository": "wai-course-list",
+  "reviews": "https://nicotra.com ",
+  "start_date": "2022-07-01",
+  "submission_date": "2022-07-30T20:56:13.771Z",
+  "submission_ref": "0c4339b0-104a-11ed-aae3-e75964313995",
+  "submitter_email": "nelson_d666@hotmail.com",
+  "submitter_name": "Nelson ",
+  "title": "Nelson Arias ",
+  "topics": [
+    "múltiples "
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://nicotra.com "
+}
