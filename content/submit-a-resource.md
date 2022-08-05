@@ -25,8 +25,8 @@ footer:
   DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
   DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = false %}
-{% assign DEBUG_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_PREVIEW_BUTTON = true %}
+{% assign DEBUG_SUBMISSION_FUNCTION = true %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
@@ -61,13 +61,11 @@ function onSubmit(e) {
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
-<p>{{strings.sub_header_info_form}}</p> 
+<p>{{strings.sub_header_info_form}}</p>
 <p>{{strings.info_submission}}</p>
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
 
-
-<p><em>{{strings.sub_header_info_form_details}}</em></p> 
-
+<p><em>{{strings.sub_header_info_form_details}}</em></p>
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
@@ -81,7 +79,6 @@ function onSubmit(e) {
 <label for="submitter_email" class="label_input">{{strings.submitter_email_label}}</label>
     <input type="email" id="submitter_email" name="submitter_email" required>
 </div>
-
 
 <h2 id="the_resource">{{strings.about_the_resource}}</h2>
 <p>{{strings.about_the_resource_description}}</p>
@@ -251,7 +248,7 @@ function onSubmit(e) {
   <p class="expl" id="expl_language">{{strings.language_expl}}</p>
   <div class="line">
     <label for="language_1" class="label_input">{{strings.language1_label}}</label>
-    <select name="language[]" id="language_1" class="select_form" required> 
+    <select name="language[]" id="language_1" class="select_form" required>
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -260,7 +257,7 @@ function onSubmit(e) {
   </div>
   <div class="proto">
     <label for="language_[n]" class="label_input">{{strings.languagen_label}} [n]</label>
-    <select name="language[]" id="language_[n]" class="select_form input_hidden" disabled> 
+    <select name="language[]" id="language_[n]" class="select_form input_hidden" disabled>
       <option value=""></option>
       {% for language in site.data.lang %}
       <option value="{{ language[0] }}">{{ language[1].name }} ({{language[1].nativeName }})</option>
@@ -288,7 +285,7 @@ function onSubmit(e) {
   <div class="radio-field">
     <input type="radio" name="format" id="format_hybrid" value="format_hybrid">
     <label for="format_hybrid">{{strings.format_hybrid}}</label>
-  </div>      
+  </div>
 </fieldset>
 
 <fieldset class="field fieldset_check" id="learning" aria-describedby="expl_learning">
@@ -319,7 +316,6 @@ function onSubmit(e) {
   <button type="button" class="remove_line button-small" disabled>{{strings.remove_last_platform_button}}</button>
 </fieldset>
 
-
 <fieldset class="field fieldset_check" id="accessibility-support" aria-describedby="expl_asupport">
   <legend class="label_input">{{strings.asupport_legend}}</legend>
   <p class="expl" id="expl_asupport">{{strings.asupport_expl}}</p>
@@ -337,7 +333,7 @@ function onSubmit(e) {
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_free" value="cost_free" required>
     <label for="cost_free">{{strings.cost_free}}</label>
-  </div> 
+  </div>
   <div class="radio-field">
     <input type="radio" name="cost" id="cost_certificates_for_purchase" value="cost_certificates_for_purchase">
     <label for="cost_certificates_for_purchase">{{strings.cost_certificates_for_purchase}}</label>
@@ -379,7 +375,7 @@ function onSubmit(e) {
   <label for="start_date" class="label_input">{{strings.start_date_label}}</label>
   <p class="expl" id="expl_start_date">{{strings.start_date_expl}}</p>
   <input type="date" id="start_date" name="start_date" aria-describedby="expl_start_date" required>
-  <label for="end_date" class="label_input">{{strings.end_date_label}}</label> 
+  <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
   <p class="expl" id="expl_end_date">{{strings.end_date_expl}}</p>
   <input type="date" id="end_date" name="end_date" aria-describedby="expl_end_date">
 </fieldset>
@@ -393,11 +389,11 @@ function onSubmit(e) {
 
 <fieldset class="field">
   <div class="radio-field">  
-    <input type="checkbox" id="check_correct_info" name="check_correct_info" required> 
+    <input type="checkbox" id="check_correct_info" name="check_correct_info" required>
     <label for="check_correct_info">{{strings.correct_info_label}}</label>
   </div>
   <div class="radio-field">  
-    <input type="checkbox" id="check_publish_info" name="check_publish_info" required> 
+    <input type="checkbox" id="check_publish_info" name="check_publish_info" required>
     <label for="check_publish_info">{{strings.publish_info_label}}</label>
   </div>
 </fieldset>

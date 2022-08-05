@@ -1,8 +1,7 @@
 ---
 published: true
 title: "Course List"
-title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
-nav_title: "Course List"
+title_html: "Course List - Digital Accessibility Education, Training, and Certification"nav_title: "Course List"
 doc-note-type: draft
 lang: en
 last_updated: 2021-@@-@@
@@ -18,9 +17,9 @@ footer: >
    <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. Contributors: <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
+<!-- markdownlint-disable no-inline-html -->
 
-<style> 
-{% include wai-course-list/css/styles.css %}
+<style>{% include wai-course-list/css/styles.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
 <div class="header-sup">
@@ -36,8 +35,7 @@ footer: >
 
 </div>
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}
-{% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %} 
-<div id="app">
+{% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %}<div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2 id="filters_title">{{ strings.filters_title }}</h2>
@@ -68,9 +66,7 @@ footer: >
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
             {% for course in site.data.wai-course-list.submissions %}
-                {% assign langAvailable = langAvailable | concat: course[1].language %} 
-                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
-            {% endfor %}
+                {% assign langAvailable = langAvailable | concat: course[1].language %}                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %}            {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset>
@@ -100,8 +96,7 @@ footer: >
                     </select>
                 </div>
                 <p class="expl" tabindex=0>
-                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
-                </p>
+                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span>                </p>
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
@@ -122,8 +117,7 @@ footer: >
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>     
-        </div>
+            </div>            </div>
         {% capture totalSubmissions %}
         {{ site.data.wai-course-list.submissions | size }}
         {% endcapture %}
@@ -132,8 +126,7 @@ footer: >
         {% endcapture %}
         <div id="status" tabindex="0" aria-live="polite" role="status">
             <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
-        </div>  
-        <div class="box hidden-element results-box">
+        </div>         <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">
                 <div id="default-results-title"><p>{{strings.filtered_criteria_title}}</p></div>
                 <div id="no-results-title"><p>{{strings.no_results_title}}:</p></div>
@@ -147,15 +140,11 @@ footer: >
         <div class="courses-list">
             {% for course in itemsSorted %}
                 {% include wai-course-list/course.liquid %}
-            {% endfor %}            
-        </div>
-        <!--         
-        {% for course in itemsSorted %}
+            {% endfor %}                   </div>
+        <!--                {% for course in itemsSorted %}
             {% include wai-course-list/course.liquid %}
-        {% endfor %}    
- -->    </div>
-    
-</div>
+        {% endfor %}    -->    </div>
+   </div>
 <div class="button-submit-end">
     {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
 </div>
