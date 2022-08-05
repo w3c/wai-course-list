@@ -1,5 +1,6 @@
 ---
 published: true
+no-sidenav: true
 title: "Course List"
 title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"

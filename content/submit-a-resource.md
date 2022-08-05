@@ -1,4 +1,5 @@
 ---
+no-sidenav: true
 title: "Submit a course, training, or certification on digital accessibility"
 nav_title: "Submit a course, training, or certification on digital accessibility"
 lang: en   
