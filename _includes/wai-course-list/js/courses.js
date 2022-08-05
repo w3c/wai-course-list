@@ -2,6 +2,7 @@
 {% assign strings = site.data.wai-course-list.strings %}
 // const jsonCourses = JSON.parse('{{ itemsSorted | jsonify}}');
 
+alert('aaa')
 const filterForm = document.querySelector('[data-filter-form]');
 const sortForm = document.querySelector('.sort-by');
 const searchForm = document.querySelector('#search');
