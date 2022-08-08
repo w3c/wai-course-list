@@ -198,7 +198,7 @@ if (filterForm) {
         newResults.sort(sortList);
 
         sortedArticles.sort(function (a, b) {
-            return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+            return newResults.findIndex(x => x.submission_ref === a.id) - newResults.findIndex(x => x.submission_ref === b.id);
         });
 
         list.innerHTML = "";
