@@ -104,6 +104,7 @@ footer: >
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
     </div>
     <div id="courses-list">
+        <h2>Courses</h2>
         <div class="courses-list-header">
             <div class="field">
                 <input type="search" id="search" placeholder="{{strings.searchbox_placeholder}}">
@@ -127,8 +128,9 @@ footer: >
         {{ itemsSorted | size }}
         {% endcapture %}
         <div id="status" tabindex="0" aria-live="polite" role="status">
-            <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
-        </div>         <div class="box hidden-element results-box">
+            <div id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</div>
+        </div>  
+        <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">
                 <div id="default-results-title"><p>{{strings.filtered_criteria_title}}</p></div>
                 <div id="no-results-title"><p>{{strings.no_results_title}}:</p></div>
