@@ -1,0 +1,67 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "An adapted rhythm is possible with a division of the breaks according to the needs of the learners. For the exercises, extra time is available for learners who request it. Customized adaptation is also possible for learners with very specific needs that cannot be met in a group course. In the same way, additional pedagogical engineering can be used to adapt the training to the particular needs of certain learners so that it corresponds to their possibilities and to the way they use the computer.",
+  "audience": [
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-21",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "fr"
+  ],
+  "description": "As the keystone of a web project, the project manager must ensure that the project will be delivered in accordance with the order, within the allotted time... and of course in compliance with the legal obligations of digital accessibility. This training aims to enable project managers to monitor the proper implementation of accessibility.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "7 hours",
+  "level": "level_intermediate",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "To have followed the \"Fundamentals of digital accessibility\" module at Koena or equivalent skills (placement test available for people who have not followed the Koena training).",
+    "Have already had to manage a digital project"
+  ],
+  "provider": "Koena",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-22",
+  "submission_date": "2022-08-22T13:32:05.712Z",
+  "submission_ref": "d0485d00-221e-11ed-8d2a-b51e6a98a49e",
+  "submitter_email": "formation@koena.net",
+  "submitter_name": "Koena Team",
+  "title": "Project managers: accessibility in your web and mobile projects",
+  "topics": [
+    "Issues and key elements to successfully take into account digital accessibility in a project",
+    "Accessibility criteria and evaluation.",
+    "Cost of accessibility.",
+    "Addressing barriers to digital accessibility.",
+    "The partners and actors of digital accessibility in a project."
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://koena.net/accueil/formations/m2a-chefs-et-cheffes-de-projets-laccessibilite-dans-vos-projets-web-et-mobiles/"
+}
