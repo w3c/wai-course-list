@@ -1,0 +1,73 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "An adapted rhythm is possible with a division of the breaks according to the needs of the learners. For the exercises, extra time is available for learners who request it. Customized adaptation is also possible for learners with very specific needs that cannot be met in a group course. In the same way, additional pedagogical engineering can be used to adapt the training to the particular needs of certain learners so that it corresponds to their possibilities and to the way they use the computer.",
+  "audience": [
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-21",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "fr"
+  ],
+  "description": "Digital accessibility is essentially about the graphical interface. If a large part of the accessibility work is invisible and hidden in the code, the way in which the interface is visually designed has a direct impact on its level of accessibility. This training aims to open up design practices to an inclusive approach.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "7 hours (1 day)",
+  "level": "level_intermediate",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "To have followed the \"Fundamentals of digital accessibility\" module at Koena or equivalent skills (placement test available for people who have not followed the Koena training).",
+    "People working in the field of interface design (UX / UI): ergonomists, graphic designers, ADs... Prerequisites: experience in web interface design."
+  ],
+  "provider": "Koena",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-22",
+  "submission_date": "2022-08-22T13:34:31.118Z",
+  "submission_ref": "26f38ee0-221f-11ed-8d2a-b51e6a98a49e",
+  "submitter_email": "formation@koena.net",
+  "submitter_name": "Koena Team",
+  "title": "UX/UI: designing inclusive interfaces",
+  "topics": [
+    "Discovering the fundamentals for designing accessible content ",
+    "From UX to UI for an inclusive experience "
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://koena.net/accueil/formations/module-3b-ux-ui-concevoir-des-interfaces-inclusives/"
+}
