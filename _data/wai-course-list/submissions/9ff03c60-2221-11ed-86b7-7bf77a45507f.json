@@ -1,0 +1,74 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-21",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "fr"
+  ],
+  "description": "Nothing is more difficult than to make things simple, especially when you are in a field you master. However, it is estimated that there are 2.5 million illiterate people in metropolitan France. Beyond that, have you ever found yourself faced with an administrative procedure without understanding what was expected of you?   ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "14 hours",
+  "level": "level_basic",
+  "platforms": [
+    "AhaSlides",
+    "Google Drive"
+  ],
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Koena",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-22",
+  "submission_date": "2022-08-22T13:52:13.094Z",
+  "submission_ref": "9ff03c60-2221-11ed-86b7-7bf77a45507f",
+  "submitter_email": "formation@koena.net",
+  "submitter_name": "Koena Team",
+  "title": "Making your texts more accessible thanks to the Facile à Lire et à Comprendre (FALC) rules",
+  "topics": [
+    "What is accessible information?",
+    "5 basic rules",
+    "Transcription of a simple text in duo with our FALC referent in an intellectual disability situation",
+    "Some illustrations",
+    "Review of the FALC rules in detail",
+    "Resumption of the document: objective 80%.",
+    "From a complex text to a simplified summary, basis for transcription",
+    "From easy French to FALC: Practical work using the simplified summary",
+    "The role of FALC as a driver of inclusion, for people with disabilities and beyond...",
+    "Goal of inclusion VS participation with adherence to FALC rules as a means of making accessible",
+    "From text accessibility to media accessibility: discovering web accessibility"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://koena.net/accueil/formations/falc/"
+}
