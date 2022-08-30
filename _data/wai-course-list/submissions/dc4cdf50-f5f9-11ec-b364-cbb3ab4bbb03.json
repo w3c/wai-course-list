@@ -25,7 +25,7 @@
   "country": [
     "fi"
   ],
-  "description": "This course consists of three minimodules which focus on technical and understandable web accessibility and user experience. After completing this course, the participant will have better understanding of what to consider in accessible web design. ",
+  "description": "This course consists of three minimodules which focus on technical and understandable web accessibility and user experience. After completing this course, the participant will have better understanding of what to consider in accessible web design.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -38,7 +38,7 @@
   ],
   "length": "",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "DigiCampus",
   "prerequisites": "",
   "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
   "repository": "wai-course-list",
@@ -49,7 +49,10 @@
   "submitter_email": "pauliina.baltzar@tuni.fi",
   "submitter_name": "Pauliina Baltzar",
   "title": "Web Accessibility ",
-  "topics": "Web Content Accessibility Guidelines (WCAG)",
+  "topics": [
+    "Web Content Accessibility Guidelines (WCAG)",
+    "Accessibility and user experience"
+  ],
   "type_resource": "type_other",
   "type_resource_new": "Continuous learning",
   "website": "https://research.tuni.fi/taccu/courses/"
