@@ -37,7 +37,7 @@
   ],
   "length": "",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "DigiCampus",
   "prerequisites": "",
   "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
   "repository": "wai-course-list",
@@ -48,7 +48,12 @@
   "submitter_email": "pauliina.baltzar@tuni.fi",
   "submitter_name": "Pauliina Baltzar",
   "title": "Trends in Accessibility",
-  "topics": "Accessible Artificial Intelligence",
+  "topics": [
+    "Accessible Artificial Intelligence",
+    "Haptics and gestures (gesture-based interfaces)",
+    "Spoken interfaces",
+    "Trends in accessibility research"
+  ],
   "type_resource": "type_other",
   "type_resource_new": "Continuous learning",
   "website": "https://research.tuni.fi/taccu/courses/"
