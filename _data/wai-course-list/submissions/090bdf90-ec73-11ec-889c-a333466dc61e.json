@@ -33,7 +33,7 @@
   ],
   "length": "5-20 hours",
   "level": "level_basic",
-  "platforms": "https://digicampus.fi/course/view.php?id=1688",
+  "platforms": "DigiCampus",
   "prerequisites": "",
   "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
   "repository": "wai-course-list",
@@ -44,7 +44,13 @@
   "submitter_email": "pauliina.baltzar@tuni.fi",
   "submitter_name": "Pauliina Baltzar",
   "title": "Introduction to Accessibility MOOC",
-  "topics": "What is accessibility",
+  "topics": [
+    "What is accessibility",
+    "Who benefits from accessibility",
+    "Why make things accessible",
+    "How to encounter a person with a disability",
+    "How different laws and directives affect accessibility"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
