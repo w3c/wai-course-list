@@ -22,7 +22,7 @@
   "country": [
     "fi"
   ],
-  "description": "This course consists of four minimodules which focus on media, social media, speech-to-text interpreting, and audio description. After completing this course, the participant will have the basic skills to translate e.g. visuals to text and produce more accessible media content. ",
+  "description": "This course consists of four minimodules which focus on media, social media, speech-to-text interpreting, and audio description. After completing this course, the participant will have the basic skills to translate e.g. visuals to text and produce more accessible media content.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -35,7 +35,7 @@
   ],
   "length": "",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "DigiCampus",
   "prerequisites": "",
   "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
   "repository": "wai-course-list",
