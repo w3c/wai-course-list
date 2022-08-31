@@ -125,9 +125,20 @@ main>header {
     }
 }
 
-.courses-filters input {
-    margin-right: .5em;
+.filter-options input {
+    float:left;
 }
+
+.filter-options label {
+    margin-left:28px;
+    display:block;
+}
+
+/*
+#left-col .field label {
+    display: inline !important;
+}
+*/
 
 .field:not(.filter-options)>label{
     font-weight: 700;
@@ -177,10 +188,6 @@ main>header {
 label,
 select {
     cursor: pointer;
-}
-
-#left-col .field label {
-    display: inline !important;
 }
 
 #courses-list {
