@@ -13,7 +13,7 @@
     display: grid;
     grid-gap: 2em;
     grid-column: 1 / 8;
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 }
 
 .header-full {
@@ -87,8 +87,8 @@ main>header {
     display: contents;
 }
 
-#left-col h2 {
-    margin: 43px 0 20px;
+#app h2 {
+    margin: 20px 0 20px;
 }
 
 #left-col legend {
@@ -189,9 +189,6 @@ select {
     border-top: 1px solid #ccc;
 }
 
-#courses-list h2{
-    margin: 43px 0 20px;
-}
 
 @media (min-width: 60em) {
     #courses-list {
