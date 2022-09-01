@@ -1,8 +1,14 @@
-[{
+[
+    {
         "id": "type_resource",
         "name": "Type of resource",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
+                "id": "type_training",
+                "name": "Training"
+            },
+            {
                 "id": "type_graduate",
                 "name": "Graduate program"
             },
@@ -15,10 +21,6 @@
                 "name": "Professional certification"
             },
             {
-                "id": "type_training",
-                "name": "Training"
-            },
-            {
                 "id": "type_other",
                 "name": "Other"
             }
@@ -28,7 +30,8 @@
         "id": "audience",
         "name": "Audience",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "audience_content_author",
                 "name": "Content author"
             },
@@ -62,7 +65,8 @@
         "id": "level",
         "name": "Level",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "level_basic",
                 "name": "Basic"
             },
@@ -81,7 +85,8 @@
         "name": "Format",
         "info": "true",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "format_face_to_face",
                 "name": "Face-to-face"
             },
@@ -104,7 +109,8 @@
         "name": "Scheduling",
         "info": "true",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "learning_scheduled",
                 "name": "Scheduled"
             },
@@ -118,7 +124,8 @@
         "id": "cost",
         "name": "Cost",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "cost_free",
                 "name": "Free of charge"
             },
