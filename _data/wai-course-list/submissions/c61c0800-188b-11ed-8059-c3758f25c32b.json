@@ -37,10 +37,13 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "21 hours (3 days)",
+  "length": "14 hours (2 days)",
   "level": "level_intermediate",
-  "platforms": "",
+  "platforms": "Microsoft Teams",
   "provider": "Ideance",
+  "prerequisites": [
+    "Knowledge of mobile development (iOS, Android or any other mobile framework)"
+  ],
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2022-08-01",
