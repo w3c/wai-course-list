@@ -62,5 +62,8 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual"
+  ],  
   "website": "https://intopia.digital/services/accessibility-training/accessibility-testing-with-nvda/"
 }

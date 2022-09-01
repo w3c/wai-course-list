@@ -22,6 +22,14 @@
 {{ strings.type_resource }}
 : {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
 
+{{ strings.type_registration }}
+{% if course.type_registration != "" %}
+: {% for tr in course.type_registration %} {{strings[tr]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
+{% else %}
+: {{ strings.not_provided }}
+{% endif %}
+
+
 {{ strings.audience }}
 : {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 

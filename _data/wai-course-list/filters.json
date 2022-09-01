@@ -27,6 +27,25 @@
         ]
     },
     {
+        "id": "type_registration",
+        "name": "Type of registration",
+        "type": "checkbox",
+        "options": [
+            {
+                "id": "type_registration_individual",
+                "name": "Individual"
+            },
+            {
+                "id": "type_registration_organization",
+                "name": "Organizational"
+            },
+            {
+                "id": "type_registration_groups",
+                "name": "Group"
+            }
+        ]
+    },    
+    {
         "id": "audience",
         "name": "Audience",
         "type": "checkbox",
