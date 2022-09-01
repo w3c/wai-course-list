@@ -39,10 +39,10 @@
   ],
   "length": "21 hours (3 days)",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "Microsoft Teams",
   "prerequisites": [
     "W3C Accessibility Standards",
-    "Basic knowledge of HTML and C"
+    "Basic knowledge of HTML and CSS"
   ],
   "provider": "Ideance",
   "repository": "wai-course-list",
