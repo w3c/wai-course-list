@@ -16,6 +16,7 @@
   "audience": [
     "audience_designer",
     "audience_tester",
+    "audience_manager",
     "audience_other"
   ],
   "check_correct_info": "on",
@@ -40,7 +41,7 @@
   ],
   "length": "7 hours (1 day)",
   "level": "level_basic",
-  "platforms": "",
+  "platforms": "Microsoft Teams",
   "prerequisites": [
     ""
   ],
