@@ -31,6 +31,12 @@ footer: >
     </div>
     <div class="header-right">
         {% include box.html type="start" class="simple" %}
+        <p>
+        {% include image.html src="w3c.png" alt="alternative text" class="tiny" %}
+        <a href="https://www.edx.org/course/web-accessibility-introduction">Digital Accessibility Foundations Free Online Course</a>
+        </p>
+        {% include box.html type="end" %}
+        {% include box.html type="start" class="simple" %}
         <p>{{ strings.sub_header_note }}</p>
         {% include box.html type="end" %}
     </div>

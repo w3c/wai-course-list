@@ -27,11 +27,13 @@
 
 .header-right {
     grid-column: 1 / 7;
+    margin-top: -100px;
 }
 
 .header-right .box {
     margin: 0;
     padding: 8px;
+    margin-bottom: 20px;
 }
 
 .header-right p {
