@@ -132,6 +132,10 @@ function onSubmit(e) {
 <fieldset class="field fieldset_radio other_field" id="type">
   <legend class="label_input">{{strings.type_label}}</legend>
   <div class="radio-field">
+    <input type="radio" name="type_resource" id="type_training" value="type_training">
+    <label for="type_training">{{strings.type_training}}</label>
+  </div>
+  <div class="radio-field">
     <input type="radio" name="type_resource" id="type_graduate" value="type_graduate" required>
     <label for="type_graduate">{{strings.type_graduate}}</label>
   </div>
@@ -142,10 +146,6 @@ function onSubmit(e) {
   <div class="radio-field">
     <input type="radio" name="type_resource" id="type_certification" value="type_certification">
     <label for="type_certification">{{strings.type_certification}}</label>
-  </div>
-  <div class="radio-field">
-    <input type="radio" name="type_resource" id="type_training" value="type_training">
-    <label for="type_training">{{strings.type_training}}</label>
   </div>
   <div class="radio-field">
     <input type="radio" name="type_resource" id="type_other" value="type_other" class="option_field_other">
