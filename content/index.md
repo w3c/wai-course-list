@@ -27,6 +27,7 @@ footer: >
 <div class="header-sup">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
+        <p><a href="https://deploy-preview-74--wai-fundamentals-overview.netlify.app/courses/foundations-course/">Digital Accessibility Foundations - Free Online Course</a> introduces a self-paced course from W3C WAI for developers, designers, ux, writers, managers, advocates. Designed for technical and non-technical learners, including students, instructors, professionals, and people with disabilities. Course is free with optional certificate.</p>
         {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
     </div>
     <div class="header-right">
