@@ -1,5 +1,20 @@
 [
     {
+        "id": "type_registration",
+        "name": "Courses for:",
+        "type": "checkbox",
+        "options": [
+            {
+                "id": "type_registration_individual",
+                "name": "Individuals"
+            },
+            {
+                "id": "type_registration_organization",
+                "name": "Organizations"
+            }
+        ]
+    },  
+    {
         "id": "type_resource",
         "name": "Type of resource",
         "type": "checkbox",
@@ -25,26 +40,7 @@
                 "name": "Other"
             }
         ]
-    },
-    {
-        "id": "type_registration",
-        "name": "Type of registration",
-        "type": "checkbox",
-        "options": [
-            {
-                "id": "type_registration_individual",
-                "name": "Individual"
-            },
-            {
-                "id": "type_registration_organization",
-                "name": "Organizational"
-            },
-            {
-                "id": "type_registration_groups",
-                "name": "Group"
-            }
-        ]
-    },    
+    },  
     {
         "id": "audience",
         "name": "Audience",

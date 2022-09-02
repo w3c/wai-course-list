@@ -57,7 +57,7 @@ no_results_simple: No courses found
 details: Details
 country: Country
 type_resource: Type of resource
-type_registration: Type of registration
+type_registration: This course is for
 audience: Audience
 level: Level
 prerequisites: Prerequisites
@@ -109,8 +109,8 @@ type_other: Other
 type_new: New
 type_registration_label: Type of registration (Required)
 type_registration_expl: Indicate who can take this course. Choose as many as apply.
-type_registration_individual: Individual
-type_registration_organization: Organizational
+type_registration_individual: Individuals
+type_registration_organization: Organizations
 type_registration_groups: Group
 audience_label: Audience (Required)
 audience_content_author: Content author
