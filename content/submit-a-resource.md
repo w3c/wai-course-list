@@ -159,7 +159,6 @@ function onSubmit(e) {
 
 <fieldset class="field fieldset_check" id="type_registration">
   <legend class="label_input">{{strings.type_registration_label}}</legend>
-  <p class="expl" id="expl_desc">{{strings.type_registration_expl}}</p>
   <div class="radio-field">
     <input type="checkbox" name="type_registration[]" id="type_registration_individual" value="type_registration_individual" group="type_registration" required>
     <label for="type_registration_individual">{{strings.type_registration_individual}}</label>
@@ -168,10 +167,7 @@ function onSubmit(e) {
     <input type="checkbox" name="type_registration[]" id="type_registration_organization" value="type_registration_organization" group="type_registration">
      <label for="type_registration_organization">{{strings.type_registration_organization}}</label>
   </div>
-  <div class="radio-field">
-    <input type="checkbox" name="type_registration[]" id="type_registration_groups" value="type_registration_groups" group="type_registration_groups">
-    <label for="type_registration_groups">{{strings.type_registration_groups}}</label>
-  </div>
+
 </fieldset>
 
 <fieldset class="field fieldset_check" id="audience">
