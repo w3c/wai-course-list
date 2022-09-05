@@ -43,7 +43,7 @@
   "platforms": "Moodle",
   "prerequisites": [
     "To have followed the \"Fundamentals of digital accessibility\" module at Koena or equivalent skills (placement test available for people who have not followed the Koena training).",
-    "mastery of HTML, CSS, JS"
+    "Mastery of HTML, CSS, JS"
   ],
   "provider": "Koena",
   "repository": "wai-course-list",
@@ -55,8 +55,7 @@
   "submitter_name": "Koena Team",
   "title": "Developers: Developing and coding accessible mobile applications",
   "topics": [
-    "Development of mobile applications compliant with accessibility standards (WCAG or RGAA) ",
-    ""
+    "Development of mobile applications compliant with accessibility standards (WCAG or RGAA)"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
