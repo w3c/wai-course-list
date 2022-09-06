@@ -58,7 +58,9 @@
   "submitter_name": "Sébastien Delorme (Ideance)",
   "title": "Discovering digital accessibility",
   "topics": [
-    "Accessibility Principles"
+    "Understand the challenges of digital accessibility",
+    "Understand the uses and needs of people with disabilities",
+    "Identify the key elements for the proper implementation of digital accessibility and WCAG"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
