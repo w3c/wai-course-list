@@ -40,8 +40,7 @@ defaults:
     scope:
       path: ""
     values:
-      layout: standalone_resource
-      standalone_resource_doc_name: Course List
+      layout: default
 #  -
 #    scope:
 #      path: "_business-case"

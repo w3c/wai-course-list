@@ -13,6 +13,9 @@
   "description": "This training provides an overview of the specifications for developing accessible web content for mobile applications. You will also learn how to test your applications, creating accessible experiences on mobile devices for different users. This course is intended for participants who have experience in designing, developing, and testing mobile applications.",
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual"
+  ],
   "audience": [
     "audience_designer",
     "audience_developer",
@@ -34,7 +37,10 @@
     "learning_scheduled",
     "learning_unscheduled"
   ],
-  "platform": "Zoom and Moodle",
+  "platforms": [
+    "Zoom",
+    "Moodle"
+  ],
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
     "general-accessibility-pre-check-available",

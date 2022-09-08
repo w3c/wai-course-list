@@ -13,6 +13,10 @@
   "description": "In this course, you will become familiar with the accessibility of different types of content. This course covers all the basics you need to ensure all your downloadable documents are accessible through this 3 hours training. You will learn how to create, remediate, and test for accessible documents.",
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],  
   "audience": [
     "audience_content_author",
     "audience_designer",
@@ -39,7 +43,10 @@
     "learning_scheduled",
     "learning_unscheduled"
   ],
-  "platform": "Zoom and Moodle",
+  "platforms": [
+    "Zoom",
+    "Moodle"
+  ],
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
     "general-accessibility-pre-check-available",

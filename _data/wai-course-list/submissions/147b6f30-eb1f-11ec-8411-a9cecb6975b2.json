@@ -66,6 +66,10 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_organization",
+    "type_registration_groups"
+  ],  
   "wai_curricula": [
     "foundation_modules1",
     "foundation_modules2",

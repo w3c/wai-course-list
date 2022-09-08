@@ -67,6 +67,9 @@
   ],
   "type_resource": "type_certification",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual"
+  ],  
   "wai_curricula": [
     "foundation_modules1",
     "foundation_modules2",
