@@ -60,6 +60,7 @@
     "Principles, Standards, and Checks (5 sections) - guides you through understanding accessibility requirements and checking for accessibility barriers (also called evaluating or testing for errors or bugs) - with non-technical and technical guidance; provides optional material for learning more about coding accessibly.",
     "Getting Started with Accessibility (2 sections) — explains approaches for integrating accessibility into your design and development processes; provides tips for getting started with accessibility right away."
   ],
+  "type_registration": "",
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
