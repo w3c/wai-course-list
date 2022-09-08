@@ -57,6 +57,7 @@ no_results_simple: No courses found
 details: Details
 country: Country
 type_resource: Type of resource
+type_registration: The course is for
 audience: Audience
 level: Level
 prerequisites: Prerequisites
@@ -106,6 +107,10 @@ type_training: Training
 type_certification: Professional certification
 type_other: Other
 type_new: New
+type_registration_label: The course is for (Required)
+type_registration_expl: Indicate who can take this course. Choose as many as apply.
+type_registration_individual: Individuals
+type_registration_organization: Organizations
 audience_label: Audience (Required)
 audience_content_author: Content author
 audience_designer: Designer
