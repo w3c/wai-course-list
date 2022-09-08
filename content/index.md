@@ -5,6 +5,8 @@ title: "Course List"
 title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
 doc-note-type: draft
+doc-note-message: <p><strong>Please do not share links</strong> to this draft page yet. We plan to announce it in September 2022. To get notified when it is ready to share, subscribe to <a href="https://www.w3.org/WAI/news/subscribe/">Get WAI News</a>.</p>
+
 lang: en
 last_updated: 2021-@@-@@
 github:
