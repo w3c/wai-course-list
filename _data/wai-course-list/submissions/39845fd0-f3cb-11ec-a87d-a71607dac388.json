@@ -61,6 +61,7 @@
     "Intermediate Widgets (auto-complete forms, modal dialogs, tab panels, accordions)",
     "Advanced Widgets (carousels, drag and drop, list reorderers)"
   ],
+  "type_registration": "",
   "type_resource": "type_training",
   "type_resource_new": "",
   "website": "https://continuing.torontomu.ca/search/publicCourseSearchDetails.do?method=load&courseId=258107"
