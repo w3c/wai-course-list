@@ -151,7 +151,10 @@ if (filterForm) {
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
                     if (x[filter.filterId] !== undefined) {
-                        return x[filter.filterId].includes(r.optionID);
+                        if (r.optionID == "type_undergraduate_graduate")
+                            return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
+                        else
+                          return x[filter.filterId].includes(r.optionID);
                     } else {
                         return false;
                     }
