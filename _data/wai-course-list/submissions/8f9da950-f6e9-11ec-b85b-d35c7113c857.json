@@ -60,7 +60,10 @@
     "How NVDA should work with different content types",
     "Identifying common screen reader issues."
   ],
-  "type_resource": "type_training",
+  "type_resource": "type_undergraduate",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual"
+  ],  
   "website": "https://intopia.digital/services/accessibility-training/accessibility-testing-with-nvda/"
 }
