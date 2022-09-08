@@ -27,7 +27,12 @@ footer: >
 <div class="header-sup">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
-        <p><a href="https://deploy-preview-74--wai-fundamentals-overview.netlify.app/courses/foundations-course/">Digital Accessibility Foundations - Free Online Course</a> introduces a self-paced course from W3C WAI for developers, designers, ux, writers, managers, advocates. Designed for technical and non-technical learners, including students, instructors, professionals, and people with disabilities. Course is free with optional certificate.</p>
+        {% include box.html type="start" class="simple" %}
+            <p>
+                {% include image.html src="w3c.png" alt="W3C logo" class="tiny" %}
+                {{ strings.wai_course_text }}
+            </p>
+        {% include box.html type="end" %}
         {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
     </div>
     <div class="header-right">
@@ -35,7 +40,6 @@ footer: >
         <p>{{ strings.sub_header_note }}</p>
         {% include box.html type="end" %}
     </div>
-
 </div>
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}
 {% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %}<div id="app">

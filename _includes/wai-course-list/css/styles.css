@@ -25,12 +25,17 @@
     grid-column: 1 / 7;
 }
 
+.header-left .box{
+    padding: 8px;
+    margin: 20px 0 30px;
+}
+
+
 .header-right {
     grid-column: 1 / 7;
 }
 
 .header-right .box {
-    margin: 0;
     padding: 8px;
 }
 
@@ -65,7 +70,7 @@ main>header {
     }
 
     .header-left {
-        grid-column: 1 / 6;
+        grid-column: 1 / 5;
     }
 
     .header-right {
