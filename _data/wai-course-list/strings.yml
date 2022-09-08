@@ -14,6 +14,8 @@ contact_email_list_courses: group-wai-list-courses@w3.org
 
 # List strings
 
+wai_course_text: >
+  <a href="https://www.w3.org/WAI/fundamentals/foundations-course/">Digital Accessibility Foundations - Introduction to Web Accessibility</a> introduces a self-paced course from W3C WAI for developers, designers, ux, writers, managers, and advocates. It is designed for technical and non-technical learners, including students, instructors, professionals, and people with disabilities. The course is free online.
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
 sub_header_list_intro: This Course List provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
