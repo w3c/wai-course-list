@@ -1,0 +1,60 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-05-15",
+  "cost": "cost_free",
+  "country": [
+    "it"
+  ],
+  "description": "This course was developed within the European Erasmus Plus Strategic Partnership project IWAC  and then translated in Italian. Its goal is to learn about the importance of web accessibility in relation to the different abilities of the users.  Divided into four modules, it covers different forms of disability: mobility, vision, cognition, hearing.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "4 hours",
+  "level": "level_basic",
+  "platforms": "EduOpen (Italian MOOC platform Moodle based)",
+  "prerequisites": "None",
+  "provider": "Università di Genova (University of Genoa)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-05-15",
+  "submission_date": "2022-07-07T09:58:54.703Z",
+  "submission_ref": "693ea0e0-fddb-11ec-ae18-056c1e2cdf84",
+  "submitter_email": "marina.ribaudo@unige.it",
+  "submitter_name": "Marina Ribaudo",
+  "title": "Introduzione all'accessibilità web",
+  "topics": "General overview of the difficulties encountered by users with disabilities when accessing online services",
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "type_registration": [
+    "type_registration_organization",
+    "type_registration_groups"
+  ],  
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules5"
+  ],
+  "website": "https://learn.eduopen.org/eduopenv2/course_details.php?courseid=497"
+}
