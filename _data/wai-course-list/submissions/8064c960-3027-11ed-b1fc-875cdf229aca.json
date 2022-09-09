@@ -1,0 +1,85 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-09-07",
+  "cost": "cost_free",
+  "country": [
+    "pl",
+    "mz"
+  ],
+  "description": "This is a brief description for this test submission.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 hours",
+  "level": "level_basic",
+  "platforms": [
+    "Moodle",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "HTML",
+    "CSS"
+  ],
+  "provider": "Test provider",
+  "repository": "wai-course-list",
+  "reviews": "https://www.course.com/reviews",
+  "start_date": "2022-09-15",
+  "submission_date": "2022-09-09T10:09:33.430Z",
+  "submission_ref": "8064c960-3027-11ed-b1fc-875cdf229aca",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Form test",
+  "title": "Test submission",
+  "topics": [
+    "Accessible design",
+    "Accessible documents"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://www.course.com"
+}
