@@ -8,7 +8,6 @@ doc-note-type: draft
 doc-note-message: <p><strong>Please do not share links</strong> to this draft page yet. We plan to announce it in September 2022. To get notified when it is ready to share, subscribe to <a href="https://www.w3.org/WAI/news/subscribe/">Get WAI News</a>.</p>
 
 lang: en
-last_updated: 2021-@@-@@
 github:
   repository: w3c/wai-course-list
   path: content/index.md
@@ -17,8 +16,8 @@ ref: /teach-advocate/course-list/
 description:  # NEW: add a 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 footer: >
-   <p><strong>Date:</strong> Updated 01 September 2022. First published September 2022.</p>
-   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. Contributors: Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra.</p>
+   <p><strong>Date:</strong> Updated 9 September 2022. First published September 2022.</p>
+   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. Contributors: Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 <!-- markdownlint-disable no-inline-html -->
