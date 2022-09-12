@@ -62,7 +62,9 @@
     "Understand the uses and needs of people with disabilities",
     "Identify the key elements for the proper implementation of digital accessibility and WCAG"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
