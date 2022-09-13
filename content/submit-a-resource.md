@@ -70,14 +70,10 @@ function onSubmit(e) {
 <p><em>{{strings.sub_header_info_form_details}}</em></p>
 
 <details id="optional-id" ><summary markdown="block">
-
-### {{strings.scope_info}}
-
+<strong>{{strings.scope_info}}</strong>
 </summary>
-  <div markdown="block">
-
+<div markdown="block">
 {{strings.scope_info_details}}
-
 </div>
 </details>
 
