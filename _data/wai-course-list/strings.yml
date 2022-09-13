@@ -85,7 +85,21 @@ info_updated: This listing was updated on
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
-question_info: Please make sure to read the <a href="https://www.w3.org/WAI/EO/wiki/WAI_Curricula/List_of_Courses#Scope">WAI Course List scope</a>. If you have questions, please e-mail them to 
+scope_info: Please make sure to read the scope of the WAI Course List
+scope_info_details: >
+  The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
+
+
+  The following courses are considered to be outside the scope of this resource:
+   - Courses available **only** to students enrolled in a University
+   - Courses available **only** to employees of a specific company
+   - Courses having **less** than 3 hours long
+   - Graduate or undergraduate programs **not** focused on digital accessibility
+   - Courses at conference that **cannot** be taken individually
+
+
+  For more details, please check the complete information about the <a href="https://github.com/w3c/wai-course-list/wiki/Course-List-Scope">WAI Course List scope</a>. 
+question_info: If you have questions, please e-mail them to 
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
@@ -183,6 +197,7 @@ end_date_expl: If applicable, indicate the date this resource will no longer be 
 submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
+check_scope_info_label: This submission meets the <a href="https://github.com/w3c/wai-course-list/wiki/Course-List-Scope">WAI Course List scope requirements</a> (Required).
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
 publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
 

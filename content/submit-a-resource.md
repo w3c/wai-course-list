@@ -63,9 +63,24 @@ function onSubmit(e) {
 
 <p>{{strings.sub_header_info_form}}</p>
 <p>{{strings.info_submission}}</p>
+
+
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
 
 <p><em>{{strings.sub_header_info_form_details}}</em></p>
+
+<details id="optional-id" ><summary markdown="block">
+
+### {{strings.scope_info}}
+
+</summary>
+  <div markdown="block">
+
+{{strings.scope_info_details}}
+
+</div>
+</details>
+
 
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
@@ -401,6 +416,10 @@ function onSubmit(e) {
 </div>
 
 <fieldset class="field">
+  <div class="radio-field">  
+    <input type="checkbox" id="check_scope_info" name="check_scope_info" required>
+    <label for="check_scope_info">{{strings.check_scope_info_label}}</label>
+  </div>
   <div class="radio-field">  
     <input type="checkbox" id="check_correct_info" name="check_correct_info" required>
     <label for="check_correct_info">{{strings.correct_info_label}}</label>
