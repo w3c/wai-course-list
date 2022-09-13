@@ -75,18 +75,6 @@ function onSubmit(e) {
 {% include excol.html type="end" %}
 
 
-<h2 id="about_you">Scope requirements</h2>
-{% include excol.html type="start" id="scope-info" %}
-<strong>Please make sure your submission meets the WAI Course List scope requirements</strong>
-{% include excol.html type="middle" %}
-{{strings.scope_info_details}}
-{% include excol.html type="end" %}
-<div class="radio-field">  
-  <input type="checkbox" id="check_scope_info" name="check_scope_info" required>
-  <label for="check_scope_info">{{strings.check_scope_info_label}}</label>
-</div>
-
-
 <h2 id="about_you">{{strings.about_you}}</h2>
 <p>{{strings.about_you_description}}</p>
 
