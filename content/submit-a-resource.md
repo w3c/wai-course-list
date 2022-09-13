@@ -67,14 +67,6 @@ function onSubmit(e) {
 
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
 
-<p><em>{{strings.sub_header_info_form_details}}</em></p>
-{% include excol.html type="start" id="scope-info" %}
-<strong>{{strings.scope_info}}</strong>
-{% include excol.html type="middle" %}
-{{strings.scope_info_details}}
-{% include excol.html type="end" %}
-
-
 <h2 id="about_you">Scope requirements</h2>
 {% include excol.html type="start" id="scope-info" %}
 <strong>Please make sure your submission meets the WAI Course List scope requirements</strong>
@@ -421,10 +413,6 @@ function onSubmit(e) {
 </div>
 
 <fieldset class="field">
-  <div class="radio-field">  
-    <input type="checkbox" id="check_scope_info" name="check_scope_info" required>
-    <label for="check_scope_info">{{strings.check_scope_info_label}}</label>
-  </div>
   <div class="radio-field">  
     <input type="checkbox" id="check_correct_info" name="check_correct_info" required>
     <label for="check_correct_info">{{strings.correct_info_label}}</label>
