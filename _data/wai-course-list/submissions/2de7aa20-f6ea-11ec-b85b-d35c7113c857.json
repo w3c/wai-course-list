@@ -63,6 +63,7 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": "",
   "wai_curricula": [
     "designer_modules1",
     "designer_modules2",

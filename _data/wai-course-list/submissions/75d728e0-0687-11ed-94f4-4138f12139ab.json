@@ -51,7 +51,7 @@
   "submission_date": "2022-07-18T10:50:38.574Z",
   "submission_ref": "75d728e0-0687-11ed-94f4-4138f12139ab",
   "submitter_email": "shawn@w3.org",
-  "submitter_name": "shawn",
+  "submitter_name": "Shawn",
   "title": "Digital Accessibility Foundations - Introduction to Web Accessibility",
   "topics": [
     "What is Web Accessibility (2 sections) - challenges the way you may approach accessibility.",
@@ -59,6 +59,10 @@
     "Business Case and Benefits (2 sections) - explains how accessibility can expand market reach, demonstrate social responsibility, drive innovation, and minimize legal risk.",
     "Principles, Standards, and Checks (5 sections) - guides you through understanding accessibility requirements and checking for accessibility barriers (also called evaluating or testing for errors or bugs) - with non-technical and technical guidance; provides optional material for learning more about coding accessibly.",
     "Getting Started with Accessibility (2 sections) — explains approaches for integrating accessibility into your design and development processes; provides tips for getting started with accessibility right away."
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",

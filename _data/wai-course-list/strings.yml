@@ -160,7 +160,7 @@ asupport_expl: If applicable, indicate what accessibility support is provided (s
 asupport_including: including
 asupport_other: Additional accessibility support
 length_label: Length
-length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
+length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 4 hours, 3 weeks, 6 months, etc.).
 cost_legend: Cost (Required)
 cost_free: Free of charge
 cost_certificates_for_purchase: Free, with certificates for purchase

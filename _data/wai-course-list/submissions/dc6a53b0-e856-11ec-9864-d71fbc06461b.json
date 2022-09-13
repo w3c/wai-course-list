@@ -52,6 +52,9 @@
     "Accessibility and search engine optimization (SEO)",
     "Analysis and evaluation of web accessibility"
   ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
