@@ -88,15 +88,11 @@ info_submission: When you submit the form, we will strive to review and publish 
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
 scope_info_intro: The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
 scope_info_details: >
-  The following courses are considered to be **outside** the scope of this resource:
-   - Courses having **less** than 3 hours long
-   - Courses available **only** to students enrolled in a University
-   - Courses available **only** to employees of a specific company
-   - Graduate or undergraduate programs **not** focused on digital accessibility
-   - Courses at a conference that **cannot** be taken without registering for the full conference
+  Courses that **will be** included on this list are courses that are open to the public, focus on digital accessibility and are three or more hours in length. This list targets specialization, training, and professional certification courses for individuals or organizations. Also in scope are full graduate or undergraduate degree programs focused on digital accessibility; individual courses that are part of a larger graduate or undergraduate program that can be taken without requiring the student to be enrolled in the program.
 
 
-  For more details, including what is outside the scope, please check the complete information about the <a href="https://github.com/w3c/wai-course-list/wiki/Course-List-Scope">WAI Course List scope</a>. 
+  Courses that **will not be** included in this list include courses that are available only to employees of a specific company, or enrolled students at a university. Conference sessions and presentations will also not be included in this list. Courses offered at a conference that cannot be taken without registering for the full conference will not be included.
+
 question_info: If you have questions, please e-mail them to 
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
