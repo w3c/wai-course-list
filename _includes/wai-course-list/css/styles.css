@@ -82,6 +82,10 @@ main>header {
     grid-column: 1 / 9;
 }
 
+.scope{
+    padding: 0 50px;
+}
+
 
 .header-sup .button {
     margin-bottom: 2em;

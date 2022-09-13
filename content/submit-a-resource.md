@@ -69,7 +69,8 @@ function onSubmit(e) {
 
 <p><em>{{strings.sub_header_info_form_details}}</em></p>
 
-<details id="optional-id" ><summary markdown="block">
+
+<details class="box scope"><summary markdown="block">
 <strong>{{strings.scope_info}}</strong>
 </summary>
 <div markdown="block">
