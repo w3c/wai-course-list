@@ -86,10 +86,8 @@ back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
+scope_info_intro: The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
 scope_info_details: >
-  The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
-
-
   The following courses are considered to be **outside** the scope of this resource:
    - Courses having **less** than 3 hours long
    - Courses available **only** to students enrolled in a University
