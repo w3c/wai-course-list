@@ -90,7 +90,7 @@ scope_info_details: >
   The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
 
 
-  The following courses are considered to be outside the scope of this resource:
+  The following courses are considered to be **outside** the scope of this resource:
    - Courses available **only** to students enrolled in a University
    - Courses available **only** to employees of a specific company
    - Courses having **less** than 3 hours long
