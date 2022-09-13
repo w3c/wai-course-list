@@ -69,7 +69,7 @@ function onSubmit(e) {
 
 <h2 id="about_you">Scope requirements</h2>
 {% include excol.html type="start" id="scope-info" %}
-Please make sure your submission meets the WAI Course List scope requirements
+WAI Course List scope requirements
 {% include excol.html type="middle" %}
 {{strings.scope_info_details}}
 {% include excol.html type="end" %}

@@ -82,14 +82,6 @@ main>header {
     grid-column: 1 / 9;
 }
 
-#scope-info{
-    background-color: var(--pure-white);
-    border: #686868 1px solid;
-    padding: 0 50px;
-    margin-bottom: 20px;
-}
-
-
 .header-sup .button {
     margin-bottom: 2em;
 }
