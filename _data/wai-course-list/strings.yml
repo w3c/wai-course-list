@@ -85,13 +85,31 @@ info_updated: This listing was updated on
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
+scope_title: Scope – what this course list includes
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
-scope_info_intro: The WAI Course List is intended to aggregate stand-alone and publicly available courses around the world focusing on topics related to digital accessibility.
+scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
+scope_details: Course List scope details
+check_scope_info_label: This submission meets the Course List scope above. (Required)
 scope_info_details: >
-  Courses that **will be** included on this list are courses that are open to the public, focus on digital accessibility and are three or more hours in length. This list targets specialization, training, and professional certification courses for individuals or organizations. Also in scope are full graduate or undergraduate degree programs focused on digital accessibility; individual courses that are part of a larger graduate or undergraduate program that can be taken without requiring the student to be enrolled in the program.
+  Courses that **will** be included on this list are courses that are:
+
+  - Specialization, training, and professional certification courses for individuals or organizations
+  
+  - Full graduate or undergraduate degree programs focused on digital accessibility
+  
+  - Individual courses that are part of a larger graduate or undergraduate program that can be taken without requiring the student to be enrolled in the program
 
 
-  Courses that **will not be** included in this list include courses that are available only to employees of a specific company, or enrolled students at a university. Conference sessions and presentations will also not be included in this list. Courses offered at a conference that cannot be taken without registering for the full conference will not be included.
+  Courses that **will not** be included in this list are:
+  
+  - Courses that are less than 3 hours long
+  
+  - Courses that are available only to employees of a specific company, or enrolled students at a university
+  
+  - Conference sessions and presentations
+  
+  - Courses offered at a conference that cannot be taken without registering for the full conference
+
 
 question_info: If you have questions, please e-mail them to 
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
@@ -191,7 +209,6 @@ end_date_expl: If applicable, indicate the date this resource will no longer be 
 submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
-check_scope_info_label: This submission meets the WAI Course List scope requirements (Required).
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
 publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
 
