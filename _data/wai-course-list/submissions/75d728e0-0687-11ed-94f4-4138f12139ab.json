@@ -41,9 +41,7 @@
   "length": "about 16-20 hours",
   "level": "level_basic",
   "platforms": "edX",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "W3C Web Accessibility Initiative (WAI)",
   "repository": "wai-course-list",
   "reviews": "https://www.w3.org/WAI/fundamentals/foundations-course/#what-people-are-saying-about-the-course-and-survey-results",

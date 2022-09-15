@@ -4,8 +4,6 @@ no-sidenav: true
 title: "Course List"
 title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
-doc-note-type: draft
-doc-note-message: <p><strong>Please do not share links</strong> to this draft page yet. We plan to announce it in September 2022. To get notified when it is ready to share, subscribe to <a href="https://www.w3.org/WAI/news/subscribe/">Get WAI News</a>.</p>
 
 lang: en
 github:
@@ -13,7 +11,7 @@ github:
   path: content/index.md
 permalink: /courses/list/
 ref: /teach-advocate/course-list/
-description:  # NEW: add a 150ish-character-description for social media   # translate the description
+description: Lists publicly-available accessibility courses around the world. You can filter to find courses matching your specific interests.
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 footer: >
    <p><strong>Date:</strong> Information on specific courses is updated frequently, as we receive it. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2022. <!--First published September 2022.--></p>
