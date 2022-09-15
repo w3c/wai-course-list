@@ -42,9 +42,7 @@
   "length": "7 hours (1 day)",
   "level": "level_basic",
   "platforms": "Microsoft Teams",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Ideance",
   "repository": "wai-course-list",
   "reviews": "",
@@ -57,6 +55,9 @@
   "topics": [
     "Inclusive design",
     "Accessible design"
+  ],
+  "type_registration": [
+    "type_registration_organization"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",

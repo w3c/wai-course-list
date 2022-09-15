@@ -58,9 +58,9 @@
   "type_resource": "type_graduate",
   "type_resource_new": "",
   "type_registration": [
-    "type_registration_organization",
-    "type_registration_groups"
-  ],  
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "wai_curricula": [
     "foundation_modules1",
     "foundation_modules2",

@@ -61,9 +61,7 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
-  "type_registration": [
-    "type_registration_individual"
-  ],  
+  "type_registration": "",
   "wai_curricula": [
     "developer_modules1",
     "developer_modules2",

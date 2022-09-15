@@ -153,6 +153,8 @@ if (filterForm) {
                     if (x[filter.filterId] !== undefined) {
                         if (r.optionID == "type_undergraduate_graduate")
                             return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
+                        else if(r.optionID == "cost_free_or_certificate")
+                            return x[filter.filterId].includes("cost_certificates_for_purchase") || x[filter.filterId].includes("cost_free");
                         else
                           return x[filter.filterId].includes(r.optionID);
                     } else {

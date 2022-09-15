@@ -85,7 +85,33 @@ info_updated: This listing was updated on
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
-question_info: Please make sure to read the <a href="https://www.w3.org/WAI/EO/wiki/WAI_Curricula/List_of_Courses#Scope">WAI Course List scope</a>. If you have questions, please e-mail them to 
+scope_title: Scope – what this course list includes
+scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
+scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
+scope_details: Course List scope details
+check_scope_info_label: This submission meets the Course List scope above (Required).
+scope_info_details: >
+  Courses that **will** be included on this list are:
+
+  - Specialization, training, and professional certification courses for individuals or organizations
+  
+  - Full graduate or undergraduate degree programs focused on digital accessibility
+  
+  - Individual courses that are part of a larger graduate or undergraduate program that can be taken without requiring the student to be enrolled in the program
+
+
+  Courses that **will not** be included in this list are:
+  
+  - Courses that are less than 3 hours long
+  
+  - Courses that are available only to employees of a specific company, or enrolled students at a university
+  
+  - Conference sessions and presentations
+  
+  - Courses offered at a conference that cannot be taken without registering for the full conference
+
+
+question_info: If you have questions, please e-mail them to 
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
@@ -160,7 +186,7 @@ asupport_expl: If applicable, indicate what accessibility support is provided (s
 asupport_including: including
 asupport_other: Additional accessibility support
 length_label: Length
-length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
+length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 4 hours, 3 weeks, 6 months, etc.).
 cost_legend: Cost (Required)
 cost_free: Free of charge
 cost_certificates_for_purchase: Free, with certificates for purchase

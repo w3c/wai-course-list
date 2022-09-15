@@ -137,12 +137,8 @@
         "type": "checkbox",
         "options": [
             {
-                "id": "cost_free",
-                "name": "Free of charge"
-            },
-            {
-                "id": "cost_certificates_for_purchase",
-                "name": "Free, with certificates for purchase"
+                "id": "cost_free_or_certificate",
+                "name": "Free of charge / Free, with certificates for purchase"
             },
             {
                 "id": "cost_limited_time",
