@@ -45,9 +45,7 @@
   "length": "3 hours",
   "level": "level_basic",
   "platforms": "Microsoft Teams",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Ideance",
   "repository": "wai-course-list",
   "reviews": "",
