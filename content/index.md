@@ -19,9 +19,8 @@ footer: >
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
 <!-- markdownlint-disable no-inline-html -->
+<link rel="stylesheet" href="/wai-course-list/assets/css/styles.css">
 
-<style>{% include wai-course-list/css/styles.css %}
-</style>
 {% assign strings = site.data.wai-course-list.strings %}
 <div class="header-sup">
     <div class="header-left">
