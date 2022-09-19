@@ -85,7 +85,7 @@ info_updated: This listing was updated on
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
-info_submission_lang: You are welcome to submit a course in a language other than English. For that, please indicate the course title in its original language and, in parentheses, its corresponding name in English. You are also encouraged to fill in the information requested in this form in the language of the course.
+info_submission_lang: Other Languages: If your course is in a language other than English, please put the course title in that language, and the English translation in parentheses. You may provide the description and other course information in only the language of the course, or also in English.
 scope_title: Scope – what this course list includes
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
 scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
