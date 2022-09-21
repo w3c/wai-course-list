@@ -1,0 +1,64 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Microassist offers open enrollment sessions for this class on a recurring basis (generally monthly).  Schedule details provided on website, https://www.microassist.com/classroom-training/course-schedule/",
+  "content_update": "2022-01-01",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "Welcome to Testing & Remediation Strategies for PDF Accessibility: The Basics. Microassist’s goal with this course is to introduce the learner to PDF accessibility so their PDF documents are accessible, perceivable, and usable by all those who access the information, regardless of level of ability or impairment.",
+  "end_date": "2023-12-01",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 Day",
+  "level": "level_basic",
+  "platforms": "Online Instructor Led Sessions are hosted using Zoom.",
+  "prerequisites": [
+    "To ensure your success in this course, you should have some working knowledge of the Adobe Acrobat Pro DC platform."
+  ],
+  "provider": "Microassist",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-01",
+  "submission_date": "2022-09-21T22:03:19.445Z",
+  "submission_ref": "33a51450-39f9-11ed-bfb8-d13ea595ced9",
+  "submitter_email": "drichard@microassist.com",
+  "submitter_name": "Dallas Richard",
+  "title": "Testing and Remediation Strategies for PDF Accessibility: The Basics",
+  "topics": [
+    "Identify Accessibility Standards",
+    "Describe Accessibility Standards",
+    "Identify Remediation Resources",
+    "Recognize the Adobe Acrobat Pro DC Interface",
+    "Practice Document Remediation Skills",
+    "Explain the Remediation Process",
+    "Practice the Remediation Process",
+    "Testing for Accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.microassist.com/courses/testing-remediation-strategies-for-pdf-accessibility-the-basics/"
+}
