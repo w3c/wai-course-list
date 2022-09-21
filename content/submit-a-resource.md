@@ -63,6 +63,7 @@ function onSubmit(e) {
 
 <p>{{strings.sub_header_info_form}}</p>
 <p>{{strings.info_submission}}</p>
+<p>{{strings.info_submission_lang}}</p>
 
 
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
