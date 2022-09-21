@@ -30,10 +30,8 @@
   ],
   "length": "5 weeks",
   "level": "level_basic",
-  "platforms": "Cousera",
-  "prerequisites": [
-    ""
-  ],
+  "platforms": "Coursera",
+  "prerequisites": "",
   "provider": "University of Colorado",
   "repository": "wai-course-list",
   "reviews": "",
@@ -46,13 +44,13 @@
   "topics": [
     "inclusive design",
     "description design",
-    "interactive description design",
-    ""
+    "interactive description design"
   ],
   "type_registration": [
     "type_registration_individual"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
-  "website": "https://www.coursera.org/learn/description-design-for-interactive-learning-resources"
+  "website": "https://www.coursera.org/learn/description-design-for-interactive-learning-resources",
+  "wai_curricula": ""
 }
