@@ -16,7 +16,11 @@
   ],
   "accessibility_support_other": "An adapted rhythm is possible with a division of the breaks according to the needs of the learners. For the exercises, extra time is available for learners who request it. Customized adaptation is also possible for learners with very specific needs that cannot be met in a group course. In the same way, additional pedagogical engineering can be used to adapt the training to the particular needs of certain learners so that it corresponds to their possibilities and to the way they use the computer.",
   "audience": [
-    "audience_general"
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
@@ -39,7 +43,7 @@
     "learning_scheduled",
     "learning_unscheduled"
   ],
-  "length": "7 hours",
+  "length": "7 hours for online or face-to-face formats, and 14 hours for blended format",
   "level": "level_basic",
   "platforms": "Moodle",
   "prerequisites": [
