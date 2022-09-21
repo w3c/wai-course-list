@@ -1,11 +1,13 @@
 ## Links
 
-[Course List](https://www.w3.org/WAI/courses/list/)
+**[Course List](https://www.w3.org/WAI/courses/list/)**
 
-[Submission form](https://www.w3.org/WAI/courses/submission/)
+**[Submission form](https://www.w3.org/WAI/courses/submission/)**
+
+([Project background](https://www.w3.org/WAI/EO/wiki/WAI_Curricula/List_of_Courses))
 
 
-## About (technical implementation and previews)
+## About technical implementation and previews
 
 Also see [interative lists repo](https://github.com/w3c/wai-interactive-lists).
 
