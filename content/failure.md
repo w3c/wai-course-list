@@ -2,9 +2,11 @@
 title: 'Something went wrong'
 permalink: courses/submission/failure
 ---
+<!-- markdownlint-disable no-inline-html -->
+
 <div style="grid-column: 2 / span 8">
 
-<style> 
+<style>
 {% include wai-course-list/css/styles.css %}
 main > header { grid-column: 2 / span 8; }
 </style>

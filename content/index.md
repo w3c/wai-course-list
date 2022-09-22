@@ -1,46 +1,47 @@
 ---
-published: false
+published: true
+no-sidenav: true
 title: "Course List"
-title_html: "Course List of Digital Accessibility Education, Training, and Certification" 
+title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
-doc-note-type: draft
+
 lang: en
-last_updated: 2021-@@-@@
 github:
   repository: w3c/wai-course-list
   path: content/index.md
 permalink: /courses/list/
 ref: /teach-advocate/course-list/
-description:  # NEW: add a 150ish-character-description for social media   # translate the description
+description: Lists publicly-available accessibility courses around the world. You can filter to find courses matching your specific interests.
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
-footer: 
-   <p><strong>Date:</strong> Updated 07 June 2021. First published June 2022.</p>
-   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <span>Contributors:<span> <a href="https://www.w3.org/WAI/about/groups/eowg/participants/">EOWG Participants</a>.</p>
+footer: >
+   <p><strong>Date:</strong> Information on specific courses is updated frequently, as we receive it. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2022. <!--First published September 2022.--></p>
+   <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <strong>Contributors:</strong> Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
+<!-- markdownlint-disable no-inline-html -->
 
-<style> 
-{% include wai-course-list/css/styles.css %}
+<style>{% include wai-course-list/css/styles.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
-<a href="#filters_title" class="button button--skip-link" accesskey="f">{{ strings.skip_to_filters }}</a>
-<a href="#status" class="button button--skip-link" accesskey="r">{{ strings.skip_to_results }}</a>
-<div class="header-sup" id="main">
+<div class="header-sup">
     <div class="header-left">
         <p>{{ strings.sub_header_list_intro }}</p>
+        {% include box.html type="start" class="simple" %}
+            <p>
+                {% include image.html src="w3c.png" alt="W3C logo" class="tiny" %}
+                {{ strings.wai_course_text }}
+            </p>
+        {% include box.html type="end" %}
         {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
     </div>
     <div class="header-right">
         {% include box.html type="start" class="simple" %}
-        <p>{{strings.edit_remove_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+        <p>{{ strings.sub_header_note }}</p>
         {% include box.html type="end" %}
     </div>
-    <div class="header-full"><p><em>{{ strings.sub_header_note }}</em></p></div>
-
 </div>
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}
-{% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %} 
-<div id="app">
+{% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %}<div id="app">
     <div id="left-col" class="courses-filters">
         <form data-filter-form action="...">
             <h2 id="filters_title">{{ strings.filters_title }}</h2>
@@ -55,7 +56,7 @@ footer:
                 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ filter.name }}" aria-expanded="false" aria-controls="info_about{{ filter.name}}" data-target="#info_about{{ filter.name }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
                 {% assign helper = site.data.wai-course-list.helpers | where: "id", filter.id %}
                 <div class="helperinfo" id="info_about{{ filter.name}}" hidden="hidden">
-                    <p>{{ helper[0].description }}</p>
+                    {{ helper[0].description }}
                 </div>
                 {% else %}
                  <legend class="label">{{ filter.name }}</legend>
@@ -71,9 +72,7 @@ footer:
             {% assign langAvailable = "" | split: "," %}
             {% assign countriesAvailable = "" | split: "," %}
             {% for course in site.data.wai-course-list.submissions %}
-                {% assign langAvailable = langAvailable | concat: course[1].language %} 
-                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %} 
-            {% endfor %}
+                {% assign langAvailable = langAvailable | concat: course[1].language %}                {% assign countriesAvailable = countriesAvailable | concat: course[1].country %}            {% endfor %}
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset>
@@ -103,17 +102,13 @@ footer:
                     </select>
                 </div>
                 <p class="expl" tabindex=0>
-                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span> 
-                </p>
+                <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span>                </p>
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
-        <div id="disclaimer">
-            <h2>{{ strings.disclaimer_title }}</h2>
-            {{ strings.disclaimer_text }}
-        </div>
     </div>
     <div id="courses-list">
+        <h2>Courses</h2>
         <div class="courses-list-header">
             <div class="field">
                 <input type="search" id="search" placeholder="{{strings.searchbox_placeholder}}">
@@ -129,8 +124,7 @@ footer:
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>     
-        </div>
+            </div>            </div>
         {% capture totalSubmissions %}
         {{ site.data.wai-course-list.submissions | size }}
         {% endcapture %}
@@ -138,12 +132,12 @@ footer:
         {{ itemsSorted | size }}
         {% endcapture %}
         <div id="status" tabindex="0" aria-live="polite" role="status">
-            <h2 id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</h2>
+            <div id="total-courses">{{ strings.showing }} <span>{{ itemsSorted | size }} </span> {{ strings.courses }}</div>
         </div>  
         <div class="box hidden-element results-box">
             <div id="filter-courses-info" class="box-h">
-                <h4 id="default-results-title">{{strings.filtered_criteria_title}}</h4>
-                <h4 id="no-results-title">{{strings.no_results_title}}:</h4>
+                <div id="default-results-title"><p>{{strings.filtered_criteria_title}}</p></div>
+                <div id="no-results-title"><p>{{strings.no_results_title}}:</p></div>
                 <div class="div-clear-filters">
                     {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button" %}
                 </div>
@@ -154,19 +148,19 @@ footer:
         <div class="courses-list">
             {% for course in itemsSorted %}
                 {% include wai-course-list/course.liquid %}
-            {% endfor %}            
-        </div>
-        <!--         
-        {% for course in itemsSorted %}
+            {% endfor %}                   </div>
+        <!--                {% for course in itemsSorted %}
             {% include wai-course-list/course.liquid %}
-        {% endfor %}    
- -->    </div>
-    
-</div>
+        {% endfor %}    -->    </div>
+   </div>
 <div class="button-submit-end">
-    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="submit-a-resource" %}  
+    {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
 </div>
-
+<div id="disclaimer">
+{% include box.html type="start" title=strings.disclaimer_title class="disclaimer"%}
+{{ strings.disclaimer_text }}
+{% include box.html type="end" %}
+</div>
 <script>
 {% include wai-course-list/js/courses.js %}
 </script>
