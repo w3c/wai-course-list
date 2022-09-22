@@ -32,9 +32,7 @@
   "length": "1 year",
   "level": "level_basic",
   "platforms": "Meet",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "ISTRAD",
   "repository": "wai-course-list",
   "reviews": "",
