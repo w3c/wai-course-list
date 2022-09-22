@@ -4,7 +4,7 @@ function getPreviewSubmission() {
 
     const overlay = document.getElementById("preview-submission-overlay");
     const overlayContent = overlay.querySelector(".overlay-content");
-    const dataForm = document.querySelector('form');
+    const dataForm = document.querySelector('[name="submission"]');
 
 
 
