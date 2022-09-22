@@ -1,0 +1,68 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Open enrollments class sessions are scheduled throughout the year, typically on a monthly cadence. For upcoming dates refer to Microassist's course schedule at https://www.microassist.com/classroom-training/course-schedule/",
+  "content_update": "2021-12-31",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "Welcome to Testing & Remediation Strategies for PDF Accessibility: Intermediate Edition. Microassist’s goal with this course is to teach students the process to remediate and test a PDF document for accessibility issues to make the content accessible, perceivable, and usable by all those who access the information, regardless of level of ability or",
+  "end_date": "2023-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 Day",
+  "level": "level_intermediate",
+  "platforms": "Online Instructor Led Sessions are hosted using Zoom.",
+  "prerequisites": [
+    "To ensure your success in this course, you should have some working knowledge of the Adobe Acrobat Pro DC platform and basic knowledge about accessibility concepts. You can obtain these skills by taking the Testing & Remediation Strategies for PDF Accessibility: The Basics course."
+  ],
+  "provider": "Microassist",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-01",
+  "submission_date": "2022-09-22T15:50:08.153Z",
+  "submission_ref": "3bced090-3a8e-11ed-8e3e-f11d3f2804f6",
+  "submitter_email": "drichard@microassist.com",
+  "submitter_name": "Dallas Richard",
+  "title": "Testing & Remediation Strategies for PDF Accessibility: Intermediate Edition",
+  "topics": [
+    "Review Accessibility Standards",
+    "Examine Remediation Resources (Screen Readers, Color Contrast Checkers, Automated Accessibility Checkers)",
+    "Set Up Adobe Acrobat Pro DC",
+    "Practice Document Remediation Skills (New tags, Content Panel Navigation and Artifacting)",
+    "Review the PDF Remediation Process",
+    "Assess Color Contrast",
+    "Prepare Hyperlinks",
+    "Modify Document Properties",
+    "Evaluate Tag Structure",
+    "Examine Alternative and Actual Text",
+    "Assess Document Reading Order",
+    "Test the PDF Document"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.microassist.com/courses/testing-remediation-strategies-for-pdf-accessibility-intermediate-edition/"
+}
