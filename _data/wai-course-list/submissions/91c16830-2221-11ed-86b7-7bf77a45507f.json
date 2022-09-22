@@ -40,9 +40,7 @@
   "length": "5 days (35 hours)",
   "level": "level_basic",
   "platforms": "AhaSlides",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Koena",
   "repository": "wai-course-list",
   "reviews": "",
@@ -61,5 +59,6 @@
     "type_registration_organization"
   ],  "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "https://koena.net/accueil/formations/decouverte-de-la-langue-des-signes-francaise-lsf/"
 }
