@@ -1,0 +1,74 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_tester",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-08-01",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "Learn how to implement accessibility and comply with the WCAG in the writing and publication of content (web and social media); Learn the rules of digital accessibility for web content (texts, links, images, videos, etc.)",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "7 hours (1 day)",
+  "level": "level_basic",
+  "platforms": "Microsoft Teams",
+  "prerequisites": "",
+  "provider": "Ideance",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-01",
+  "submission_date": "2022-08-10T09:02:40.960Z",
+  "submission_ref": "3061f400-188b-11ed-8059-c3758f25c32b",
+  "submitter_email": "contact@ideance.fr",
+  "submitter_name": "Sébastien Delorme (Ideance)",
+  "title": "Writing and publishing accessible content",
+  "topics": [
+    "Accessible multimedia",
+    "Accessible content"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "designer_modules2",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://ideance.net/en/accessibility-training/"
+}
