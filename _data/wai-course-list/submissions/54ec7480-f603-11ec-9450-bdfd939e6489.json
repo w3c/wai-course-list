@@ -54,7 +54,10 @@
     "Speech to text (subtitling)",
     "Speech and audio to text"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_other",
   "type_resource_new": "Continuous learning",
   "website": "https://research.tuni.fi/taccu/courses/"
