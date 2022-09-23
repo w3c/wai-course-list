@@ -1,0 +1,75 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-23",
+  "cost": "cost_paid",
+  "country": [
+    "it"
+  ],
+  "description": "A course that provide a full coverage of accessibility and understanding beyond WCAG: standards, good practices and tools for daily work",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "24 hours",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Labway",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-09-23",
+  "submission_date": "2022-09-23T09:12:51.907Z",
+  "submission_ref": "e6b61130-3b1f-11ed-abad-63584502c6b9",
+  "submitter_email": "jacopo@labway.it",
+  "submitter_name": "Jacopo Deyla",
+  "title": "Accessible communication",
+  "topics": [
+    "accessible documents and multimedia",
+    "undestanding"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://www.labway.it/corsi/Labway-accessibilita%CC%80-comprensibilita%CC%80.pdf"
+}
