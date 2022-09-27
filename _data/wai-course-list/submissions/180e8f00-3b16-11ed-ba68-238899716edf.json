@@ -35,9 +35,7 @@
   "length": "8 hours",
   "level": "level_basic",
   "platforms": "",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Labway",
   "repository": "wai-course-list",
   "reviews": "",
@@ -46,7 +44,7 @@
   "submission_ref": "180e8f00-3b16-11ed-ba68-238899716edf",
   "submitter_email": "jacopo@labway.it",
   "submitter_name": "Jacopo Deyla",
-  "title": "Accessible basis",
+  "title": "Accessibilità base (Accessible basis)",
   "topics": [
     "accessibility policy and regulations"
   ],
