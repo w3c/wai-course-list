@@ -34,9 +34,7 @@
   "length": "16 hours",
   "level": "level_intermediate",
   "platforms": "",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Labway",
   "repository": "wai-course-list",
   "reviews": "",
