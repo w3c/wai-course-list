@@ -36,7 +36,7 @@
     "en"
   ],
   "learning": [
-    "learning_unscheduled"
+    "learning_scheduled"
   ],
   "length": "2 days",
   "level": "level_intermediate",
@@ -58,7 +58,10 @@
     "WCAG and its 4 principles, 13 rules and 78 success criteria",
     "The 106 criteria of the RGAA"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
