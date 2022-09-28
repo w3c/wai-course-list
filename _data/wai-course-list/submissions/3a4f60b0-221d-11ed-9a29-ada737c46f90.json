@@ -42,8 +42,8 @@
   "level": "level_intermediate",
   "platforms": "Moodle",
   "prerequisites": [
-    " Know the fundamentals of digital accessibility",
-    "mastery of HTML, CSS, JS"
+    "Know the fundamentals of digital accessibility",
+    "Mastery of HTML, CSS, JS"
   ],
   "provider": "Koena",
   "repository": "wai-course-list",
