@@ -1,0 +1,80 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "We have developed an adapted version of the WP-pro-quiz management plugin (for Wordpress) to make it compliant with WCAG level AA rules. It has been tested and improved continuously with several candidates using magnifiers or screen readers, including accessibility experts (French), as well as people with reduced mobility and deaf people. \r\nUsers of the training platform have a feedback channel available on each page, a Slack room and an email channel dedicated to support.\r\nThe monitoring of user feedback allows for continuous improvements, especially on accessibility issues.\r\n\r\nTranslated with www.DeepL.com/Translator (free version)",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "The certification:\r\n \r\nis oriented towards universal design and centred on the quality of the user experience, the certification offers a pareto approach initiation to the key accessibility challenges for websites and online services and also interfacing disciplines such as performance, eco-design, privacy, UX etc.\r\n \r\ngives users a basic understanding of the difficulties, obstacles and challenges for each of the common profiles of users with disabilities (sensory, motor, cognitive). Finally, it enables the link to be made between the specific benefits of the accessibility approach and its wider benefits for all users.  \r\n \r\nis based on a checklist of 240 web quality assurance rules, 126 of which are explicitly related to the accessibility of online content and services, in line with the WCAG rules. More generally, all of the 240 rules are likely to remove more general barriers encountered by people with disabilities including privacy, security, performance etc.\r\n \r\n \r\nThe competences targeted by the certification essentially concern the understanding of the quality rules, their objectives and the risks they address for users, as well as the underlying notions and vocabulary. Certification is not, however, geared towards mastering the technical solutions corresponding to the various rules (though that information is available in the public documentation and checklist).\r\n \r\nTraining for certification is carried out entirely online, on a dedicated platform which offers \r\na course alternating between text and video resources, practical activities and self-learning quizzes with step-by-step corrections \r\na glossary of fundamental Web project terms, including key accessibility concepts \r\nFinal self-assessment tests, including a mock exam under the conditions of the final certification exam.\r\nThe final exam is an online quiz of 125 questions, lasting 90 minutes. The candidate obtains a score between 500-1000 points.\r\n",
+  "content_update": "2022-09-22",
+  "cost": "on",
+  "country": [
+    "fr"
+  ],
+  "description": "An inclusive design orientation on user quality and accessibility also covering essential inter-related UX disciplines such as: performance, eco-design, privacy, security, ergonomics etc. Includes basic understanding of the difficulties, obstacles and challenges for each of the common profiles of users with disabilities (sensory, motor, cognitive).",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "fr",
+    "es"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "14 hours",
+  "level": "level_basic",
+  "platforms": "The training course is offered via a specific Wordpress theme created by Opquast, using, among other things, a quiz plugin that has been readapted to correct the accessibility defects of its interface.",
+  "prerequisites": [
+    "basic understanding of computers and the web"
+  ],
+  "provider": "Opquast",
+  "repository": "wai-course-list",
+  "reviews": "https://www.opquast.com/en/certification/",
+  "start_date": "2020-12-28",
+  "submission_date": "2022-09-28T10:11:04.010Z",
+  "submission_ref": "dc3b72a0-3f15-11ed-9b64-8950aa3512bf",
+  "submitter_email": "elie.sloim@opquast.com",
+  "submitter_name": "Elie Sloim",
+  "title": "Mastering Web Quality Assurance",
+  "topics": [
+    "How people with disabilities use websites and applications",
+    "Examples of design features that benefit people with disabilities.",
+    "Examples of design barriers that exclude people with disabilities.",
+    "Examples of assistive technologies",
+    "How taking accessibility into account concretely benefits a much wider audience than people with disabilities",
+    "What are the main standards for web content accessibility? What is the role of the WAI W3C?",
+    ""
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.opquast.com/en/certification/"
+}
