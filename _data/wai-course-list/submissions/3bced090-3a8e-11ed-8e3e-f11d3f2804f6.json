@@ -18,7 +18,7 @@
   "country": [
     "us"
   ],
-  "description": "Welcome to Testing & Remediation Strategies for PDF Accessibility: Intermediate Edition. Microassist’s goal with this course is to teach students the process to remediate and test a PDF document for accessibility issues to make the content accessible, perceivable, and usable by all those who access the information, regardless of level of ability or",
+  "description": "Covers the process to remediate and test a PDF document for accessibility issues. Students will learn how to: 1) Apply accessibility standards to a PDF document; 2) Use the Adobe Acrobat Pro DC platform to remediate a PDF document; 3) Apply a process to remediate a PDF document; and 4) Test the PDF document against WCAG accessibility standards.",
   "end_date": "2023-12-31",
   "form_name": "submission",
   "form_version": "1",
