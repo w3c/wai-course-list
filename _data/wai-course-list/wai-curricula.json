@@ -114,5 +114,42 @@
                 "link": "https://www.w3.org/WAI/curricula/designer-modules/forms-design/"
             }
         ]
+    },
+    {
+        "id": "content_author_modules",
+        "name": "Content Author Modules",
+        "link": "https://www.w3.org/WAI/curricula/content-author-modules/",
+        "modules": [
+            {
+                "id": "content_author_modules1",
+                "name": "Module 1: Clear Content",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/clear-content/"
+            },
+            {
+                "id": "content_author_modules2",
+                "name": "Module 2: Structure",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/structure/"
+            },
+            {
+                "id": "content_author_modules3",
+                "name": "Module 3: Forms",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/forms/"
+            },
+            {
+                "id": "content_author_modules4",
+                "name": "Module 4: Images",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/images/"
+            },
+            {
+                "id": "content_author_modules5",
+                "name": "Module 5: Data Tables",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/data-tables/"
+            },
+            {
+                "id": "content_author_modules6",
+                "name": "Module 6: Multimedia",
+                "link": "https://www.w3.org/WAI/curricula/content-author-modules/multimedia/"
+            }
+        ]
     }
 ]
