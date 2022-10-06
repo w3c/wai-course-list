@@ -1,0 +1,56 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "If the course is listed, will I be able to update the course information after it is listed?",
+  "content_update": "2022-08-22",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "us"
+  ],
+  "description": "This course gives you easy access to an innovative description design framework used and created by experts in description design who design descriptions for highly interactive learning resources.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "5 weeks",
+  "level": "level_basic",
+  "platforms": "Coursera",
+  "prerequisites": "",
+  "provider": "University of Colorado",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-22",
+  "submission_date": "2022-09-19T17:48:55.191Z",
+  "submission_ref": "549d1b60-3843-11ed-83c4-bd2d647e25d9",
+  "submitter_email": "taliesin.smith@colorado.edu",
+  "submitter_name": "Taliesin L. Smith",
+  "title": "Description Design for Interactive Learning Resources",
+  "topics": [
+    "inclusive design",
+    "description design",
+    "interactive description design"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.coursera.org/learn/description-design-for-interactive-learning-resources",
+  "wai_curricula": ""
+}
