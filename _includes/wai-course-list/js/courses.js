@@ -25,7 +25,7 @@ importJsonCountries.replace("\\", "\\\\");
 const jsonCountry = JSON.parse(importJsonCountries);;
 
 const jsonFilters = JSON.parse('{{site.data.wai-course-list.filters | jsonify}}');
-const jsonLang = JSON.parse('{{site.data.wai-course-list.lang | jsonify}}');
+const jsonLang = JSON.parse('{{site.data.lang | jsonify}}');
 const coursesList = document.getElementById('courses-list');
 
 const submitForm = document.querySelector('form');
@@ -151,7 +151,12 @@ if (filterForm) {
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
                     if (x[filter.filterId] !== undefined) {
-                        return x[filter.filterId].includes(r.optionID);
+                        if (r.optionID == "type_undergraduate_graduate")
+                            return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
+                        else if(r.optionID == "cost_free_or_certificate")
+                            return x[filter.filterId].includes("cost_certificates_for_purchase") || x[filter.filterId].includes("cost_free");
+                        else
+                          return x[filter.filterId].includes(r.optionID);
                     } else {
                         return false;
                     }
@@ -170,12 +175,16 @@ if (filterForm) {
         var searchedResults = [];
 
         Object.values(newResultsList).forEach(o => {
-
+            var topics;
+            if(Array.isArray(o.topics))
+                topics = o.topics.join();
+            else
+                topics = o.topics;
             if (
                 o.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.provider.toLowerCase().includes(searchTerm.toLowerCase()) ||
                 o.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                o.topics.join().toLowerCase().includes(searchTerm.toLowerCase())) {
+                topics.toLowerCase().includes(searchTerm.toLowerCase())) {
                 searchedResults.push(o);
             }
         })
@@ -194,7 +203,7 @@ if (filterForm) {
         newResults.sort(sortList);
 
         sortedArticles.sort(function (a, b) {
-            return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+            return newResults.findIndex(x => x.submission_ref === a.id) - newResults.findIndex(x => x.submission_ref === b.id);
         });
 
         list.innerHTML = "";
@@ -204,7 +213,7 @@ if (filterForm) {
         }
 
         sortedArticles.forEach(el => {
-            if (!Object.values(newResults).find(o => o.title === el.id))
+            if (!Object.values(newResults).find(o => o.submission_ref === el.id))
                 el.hidden = true;
             else
                 el.hidden = false;
