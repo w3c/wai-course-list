@@ -3,7 +3,6 @@
     "general-accessibility-material-ahead-of-time",
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-motions-or-animations",
-    "non-digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -33,7 +32,7 @@
   "length": "1 year",
   "level": "level_basic",
   "platforms": "Meet",
-  "prerequisites": "",
+  "prerequisites": "Hold a higher university degree or, at least, have completed a minimum of 180 ECTS in a Bachelor’s Degree or similar",
   "provider": "ISTRAD",
   "repository": "wai-course-list",
   "reviews": "",
@@ -42,7 +41,7 @@
   "submission_ref": "21ea8600-38b4-11ed-a52e-312a67ab5b84",
   "submitter_email": "viviana.merola@institutotraduccion.com",
   "submitter_name": "Viviana Merola",
-  "title": "Esperto in Accessibilità della Comunicazione e dei Contenuti Culturali",
+  "title": "Esperto in Accessibilità della Comunicazione e dei Contenuti Culturali (Expert Diploma in Accessibility of Communication and Cultural Content)",
   "topics": [
     "accessible web sites",
     "easy-to-read",
