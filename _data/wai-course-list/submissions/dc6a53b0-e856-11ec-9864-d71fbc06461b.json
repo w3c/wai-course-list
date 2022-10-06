@@ -32,7 +32,7 @@
   "level": "level_basic",
   "platforms": "Udemy",
   "prerequisites": "Knowledge of HTML, CSS, JavaScript and DOM",
-  "provider": "Universidad de Alicante ",
+  "provider": "<span lang='es'>Universidad de Alicante</span>",
   "repository": "wai-course-list",
   "reviews": "https://www.udemy.com/course/aprende-accesibilidad-web-paso-a-paso/",
   "start_date": "2015-02-01",
@@ -40,7 +40,7 @@
   "submission_ref": "dc6a53b0-e856-11ec-9864-d71fbc06461b",
   "submitter_email": "sergio.lujan@ua.es",
   "submitter_name": "Sergio Lujan Mora",
-  "title": "Aprende Accesibilidad Web paso a paso",
+  "title": "<span lang='es'>Aprende Accesibilidad Web paso a paso</span>",
   "topics": [
     "What is web accessibility",
     "People with disabilities and the Web",

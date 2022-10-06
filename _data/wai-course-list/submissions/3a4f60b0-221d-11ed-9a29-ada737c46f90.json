@@ -1,0 +1,77 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "An adapted rhythm is possible with a division of the breaks according to the needs of the learners. For the exercises, extra time is available for learners who request it. Customized adaptation is also possible for learners with very specific needs that cannot be met in a group course. In the same way, additional pedagogical engineering can be used to adapt the training to the particular needs of certain learners so that it corresponds to their possibilities and to the way they use the computer.",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2022-07-21",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "fr"
+  ],
+  "description": "Various functionalities, debugging, security, interoperability, quality,... The tasks and responsibilities of developers are immense and constantly growing as digital technology becomes more complex. Accessibility with its set of rules can then be perceived as an additional constraint, and not as it should be: an opportunity to build inclusion. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 days",
+  "level": "level_intermediate",
+  "platforms": "Moodle",
+  "prerequisites": [
+    "Know the fundamentals of digital accessibility",
+    "Mastery of HTML, CSS, JS"
+  ],
+  "provider": "Koena",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-08-22",
+  "submission_date": "2022-08-22T13:20:44.603Z",
+  "submission_ref": "3a4f60b0-221d-11ed-9a29-ada737c46f90",
+  "submitter_email": "formation@koena.net",
+  "submitter_name": "Koena Team",
+  "title": "Web developers: producing accessible code with the RGAA",
+  "topics": [
+    "WCAG and its 4 principles, 13 rules and 78 success criteria",
+    "The 106 criteria of the RGAA"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules3",
+    "designer_modules4"
+  ],
+  "website": "https://koena.net/accueil/formations/module-4-developpeurs-et-developpeuses-web-produire-un-code-accessible-avec-le-rgaa/"
+}
