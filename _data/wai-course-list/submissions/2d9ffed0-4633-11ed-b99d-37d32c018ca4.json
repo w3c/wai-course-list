@@ -1,0 +1,78 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course provides native apps developers with the knowledge they need to create Android apps that can be used by all, including assistive technology users. It covers Android accessibility services, how to build accessible apps, and how to test them. There are also resources and a checklist. \r\n\r\nAvailable in both instuctor-led and self-led formats.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "6 hours (instructor-led) or 3 to 4 hours (self-led)",
+  "level": "level_intermediate",
+  "platforms": "PowerPoint (instructor-led)",
+  "prerequisites": [
+    "Foundation in Android development"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-15",
+  "submission_date": "2022-10-07T11:28:34.109Z",
+  "submission_ref": "2d9ffed0-4633-11ed-b99d-37d32c018ca4",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible Android Development",
+  "topics": [
+    "Platform accessibility services",
+    "Platform accessibility API",
+    "Images",
+    "Structure",
+    "Focus",
+    "Forms",
+    "Notifications",
+    "Testing native Android apps"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
