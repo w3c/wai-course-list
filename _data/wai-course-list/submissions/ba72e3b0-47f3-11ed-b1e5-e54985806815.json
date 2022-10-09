@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-07",
+  "cost": "cost_paid",
+  "country": [
+    "ca"
+  ],
+  "description": "Fable Upskill delivers training customized to your products, tools and frameworks to ensure your product teams have the knowledge and skills to build truly inclusive products. Most accessibility training focuses on understanding compliance guidelines. Fable Upskill gives your team practical, real-world skills that they can apply directly.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 hours per course",
+  "level": "level_basic",
+  "platforms": [
+    "Fable Upskill",
+    "SCORM files"
+  ],
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Fable",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-09",
+  "submission_date": "2022-10-09T16:59:24.907Z",
+  "submission_ref": "ba72e3b0-47f3-11ed-b1e5-e54985806815",
+  "submitter_email": "kate@makeitfable.com",
+  "submitter_name": "Kate Kalcevich",
+  "title": "Upskill",
+  "topics": [
+    "Intro to Digital Accessibility",
+    "Accessible User Experience",
+    "Accessible Web Development",
+    "Accessible Mobile Apps",
+    "Testing Accessibility"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "http://makeitfable.com/upskill"
+}
