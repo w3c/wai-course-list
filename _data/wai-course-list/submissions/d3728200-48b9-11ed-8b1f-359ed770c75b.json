@@ -1,0 +1,68 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course gives developers the skills and knowledge they need to create accessible websites and web applications.\r\n\r\nIt covers modes of interaction, keyboard support and focus management, implicit semantics in HTML and explicit semantics with ARIA, plus much more. \r\n\r\nAvailable in instructor-led and self-led formats.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "4 hours (instructor-led) or 3 hours (self-led)",
+  "level": "level_basic",
+  "platforms": "PowerPoint (instructor-led)",
+  "prerequisites": [
+    "Knowledge of HTML and CSS"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-15",
+  "submission_date": "2022-10-10T16:37:27.200Z",
+  "submission_ref": "d3728200-48b9-11ed-8b1f-359ed770c75b",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible web development",
+  "topics": [
+    "Interaction",
+    "Accessibility semantics: role",
+    "Accessibility semantics: name and description",
+    "Accessibility semantics: state",
+    "Accessibility mechanics",
+    "Component blueprints"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
