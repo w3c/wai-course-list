@@ -1,0 +1,69 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course is created for researchers to think about accessibility and how to use inclusive personas in their research.\r\n\r\nIt covers every aspect from planning to conducting to analysing user research with people with disabilities and notes key considerations. \r\n\r\nAvailable in instructor-led and self-led formats.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "4 hours (instructor-led) or 3 hours (self-led)",
+  "level": "level_basic",
+  "platforms": "PowerPoint (instructor-led)",
+  "prerequisites": [
+    "Knowledge of user research methodologies"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-15",
+  "submission_date": "2022-10-10T10:39:28.788Z",
+  "submission_ref": "d150ed40-4887-11ed-9717-e5bf430c59b0",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Inclusive user research",
+  "topics": [
+    "Why conduct inclusive user research",
+    "Recruiting people with disabilities",
+    "Inclusive language",
+    "Planning the research",
+    "Conducting the research",
+    "Analysing & reporting the findings"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
