@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer",
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-11",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "Very goog course",
+  "end_date": "2022-10-11",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_advanced",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Hentay",
+  "repository": "wai-course-list",
+  "reviews": "https://84hd.blogspot.com/",
+  "start_date": "2020-01-11",
+  "submission_date": "2022-10-11T10:04:24.006Z",
+  "submission_ref": "152e6e60-494c-11ed-a8f4-3dc7cc1e41fc",
+  "submitter_email": "wearewww@gmail.com",
+  "submitter_name": "John",
+  "title": "Course",
+  "topics": [
+    "accessibility policy and regulations, inclusive design, accessible documents and multimedia, etc."
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "developer_modules1",
+    "developer_modules2",
+    "designer_modules1",
+    "designer_modules2",
+    "content_author_modules1",
+    "content_author_modules2"
+  ],
+  "website": "https://84hd.blogspot.com/"
+}
