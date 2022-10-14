@@ -6,10 +6,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "Libras (Brazilian Sign Language)",
   "audience": [
@@ -50,7 +47,7 @@
   "prerequisites": [
     "it is ideal (but not mandatory) that the person already works with digital products"
   ],
-  "provider": "Tudo é Acessibilidade by Marcelo Sales",
+  "provider": "Tudo é Acessibilidade",
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2023-01-20",
