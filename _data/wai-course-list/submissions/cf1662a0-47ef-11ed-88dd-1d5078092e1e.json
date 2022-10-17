@@ -20,7 +20,7 @@
   "country": [
     "nl"
   ],
-  "description": "This course is aimed at webdevelopers with a basic understanding of HTML, CSS and JavaScript. We'll touch upon subjects like meaningful HTML5, ARIA and dynamic changes, behaviour in the browser, forms, focus management, code validation and testing and much more. Any webdeveloper can join, this course is platform, library and framework independent. ",
+  "description": "This course is aimed at webdevelopers with a basic understanding of HTML, CSS and JavaScript. We'll touch upon subjects like meaningful HTML5, ARIA and dynamic changes, behaviour in the browser, forms, focus management, code validation and testing and much more. Any webdeveloper can join, this course is platform, library and framework independent.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -35,10 +35,10 @@
   "level": "level_basic",
   "platforms": "LearnDash LMS",
   "prerequisites": [
-    "basic knowledge of HTML",
-    "basic knowledge of CSS",
-    "basic knowledge of JavaScript",
-    "different ways to use the web"
+    "Basic knowledge of HTML",
+    "Basic knowledge of CSS",
+    "Basic knowledge of JavaScript",
+    "Different ways to use the web"
   ],
   "provider": "The A11Y Collective",
   "repository": "wai-course-list",
@@ -50,7 +50,7 @@
   "submitter_name": "Taeke Reijenga",
   "title": " Accessible code",
   "topics": [
-    "Meaningfull HTML5",
+    "Meaningful HTML5",
     "Semantics",
     "ARIA",
     "Heading usage",
