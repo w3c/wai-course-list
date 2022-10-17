@@ -25,7 +25,7 @@
   "country": [
     "ca"
   ],
-  "description": "Fable Upskill delivers training customized to your products, tools and frameworks to ensure your product teams have the knowledge and skills to build truly inclusive products. Most accessibility training focuses on understanding compliance guidelines. Fable Upskill gives your team practical, real-world skills that they can apply directly.",
+  "description": "Fable Upskill delivers training customized to your products, tools and frameworks to ensure your product teams have the knowledge and skills to build truly inclusive products. Most accessibility training focuses on understanding compliance guidelines. Fable Upskill gives your team practical, real-world skills that they can apply directly.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -42,9 +42,7 @@
     "Fable Upskill",
     "SCORM files"
   ],
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Fable",
   "repository": "wai-course-list",
   "reviews": "",
@@ -66,5 +64,6 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "http://makeitfable.com/upskill"
 }
