@@ -21,7 +21,7 @@
   "country": [
     "it"
   ],
-  "description": "A course to give graphic, ui and ux designers that create web, app or documents a full view about requirement of accessibile design and interaction",
+  "description": "A course to give graphic, ui and ux designers that create web, app or documents a full view about requirement of accessibile design and interaction.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -36,7 +36,7 @@
   "level": "level_basic",
   "platforms": "",
   "prerequisites": [
-    ""
+    "Minimum knowledge of accessibility, assistive technologies and regulations"
   ],
   "provider": "Labway",
   "repository": "wai-course-list",
@@ -46,9 +46,9 @@
   "submission_ref": "0358d280-3b18-11ed-9286-9f11dfe00af9",
   "submitter_email": "jacopo@labway.it",
   "submitter_name": "Jacopo Deyla",
-  "title": "Accessible design",
+  "title": "UX/UI designer e grafici (Accessible design)",
   "topics": [
-    "inclusive design"
+    "Inclusive design"
   ],
   "type_registration": [
     "type_registration_individual"
