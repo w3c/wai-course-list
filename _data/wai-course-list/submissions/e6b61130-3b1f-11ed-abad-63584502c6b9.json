@@ -34,7 +34,7 @@
     "learning_scheduled"
   ],
   "length": "24 hours",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "",
   "prerequisites": [
     ""
@@ -49,8 +49,10 @@
   "submitter_name": "Jacopo Deyla",
   "title": "Accessible communication",
   "topics": [
-    "accessible documents and multimedia",
-    "undestanding"
+    "The rules and specific characteristics of the communicative context",
+    "Tools to create contents",
+    "Methods, techniques and tools to make content understandable",
+    "Methods, techniques and tools both to create and check documents' accessibility",
   ],
   "type_registration": [
     "type_registration_individual"
