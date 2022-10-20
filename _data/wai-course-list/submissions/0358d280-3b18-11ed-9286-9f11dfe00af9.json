@@ -48,7 +48,13 @@
   "submitter_name": "Jacopo Deyla",
   "title": "UX/UI designer e grafici (Accessible design)",
   "topics": [
-    "Inclusive design"
+    "Inclusive design", 
+    "WCAG 2.x",
+    "Visual aspect like colours, typography etc.", 
+    "Semantics of documents", 
+    "Accessible UI and UX", 
+    "Accessible design systems"
+
   ],
   "type_registration": [
     "type_registration_individual"
