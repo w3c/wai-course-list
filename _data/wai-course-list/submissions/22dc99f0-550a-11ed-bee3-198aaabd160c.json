@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2020-12-09",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "In this learning path you will learn how those with disabilities access and use the web. You will test and evaluate accessibility, explore design considerations, build accessible forms, and learn how to provide accessibility for elements, images, and other forms of media.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "13 hours",
+  "level": "level_basic",
+  "platforms": "Pluralsight (browser based)",
+  "prerequisites": [
+    "Basic knowledge of HTML and CSS"
+  ],
+  "provider": "Pluralsight",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2019-04-29",
+  "submission_date": "2022-10-26T08:42:34.127Z",
+  "submission_ref": "22dc99f0-550a-11ed-bee3-198aaabd160c",
+  "submitter_email": "fionaholder@googlemail.com",
+  "submitter_name": "Fiona Holder",
+  "title": "Developing Websites for Accessibility",
+  "topics": [
+    "Accessibility Testing",
+    "Screen Reader Use",
+    "Developing accessible solutions",
+    "ARIA attributes",
+    "The WCAG guidelines"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4"
+  ],
+  "website": "https://www.pluralsight.com/paths/developing-websites-for-accessibility"
+}
