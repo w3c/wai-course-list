@@ -1,0 +1,68 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-23",
+  "cost": "cost_paid",
+  "country": [
+    "it"
+  ],
+  "description": "A course to give content creators a basic knowledge of laws, disabilities, assistive techologies, and a full knowledge of content accessibility creation (from text structure basis, to complex content embedding)",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "8 hours",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": "",
+  "provider": "Labway",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-09-23",
+  "submission_date": "2022-09-23T08:11:58.211Z",
+  "submission_ref": "64f04d30-3b17-11ed-9286-9f11dfe00af9",
+  "submitter_email": "jacopo@labway.it",
+  "submitter_name": "Jacopo Deyla",
+  "title": "Redattori di siti web (Web content accessibility)",
+  "topics": [
+    "accessible content",
+    "accessibility policy and regulations"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "designer_modules5",
+    "designer_modules6"
+  ],
+  "website": "https://www.labway.it/corsi/Labway-accessibilita%CC%80-redattori.pdf"
+}
