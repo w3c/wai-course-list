@@ -27,7 +27,7 @@
   "country": [
     "fr"
   ],
-  "description": "Nothing is more difficult than to make things simple, especially when you are in a field you master. However, it is estimated that there are 2.5 million illiterate people in metropolitan France. Beyond that, have you ever found yourself faced with an administrative procedure without understanding what was expected of you?",
+  "description": "This training aims to raise awareness of expertise in producing content that is easier to read and understand (FALC). We will explore the European rules of FALC, but above all we will put into practice an inclusive method with our FALC referent, herself intellectually disabled.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -69,7 +69,10 @@
     "Goal of inclusion VS participation with adherence to FALC rules as a means of making accessible",
     "From text accessibility to media accessibility: discovering web accessibility"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "website": "https://koena.net/accueil/formations/falc/"
