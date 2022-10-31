@@ -2,10 +2,10 @@
 {% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
-{% include box.html type="start" title=course_title id=course.title  h="3"%}
+{% include box.html type="start" title=course_title id=course.submission_ref  h="3"%}
 {{ course.description }}
 {% include excol.html type="start" id=course_details_id %}
-#### {{ strings.details }}
+{{ strings.details }}
 {% include excol.html type="middle"%}
 
 
@@ -19,8 +19,17 @@
 {{strings.country}}
 : {{ country | join: "; "}}
 
+{{ strings.type_registration }}
+{% if course.type_registration != "" %}
+: {% for tr in course.type_registration %} {{strings[tr]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
+{% else %}
+: {{ strings.not_provided }}
+{% endif %}
+
 {{ strings.type_resource }}
 : {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
+
+
 
 {{ strings.audience }}
 : {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
@@ -43,19 +52,20 @@
 {{ strings.wai_curricula }}
 {% if course.wai_curricula != "" %}
 : 
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about" data-target="#info_about_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_curricula_{{ course.submission_ref }}" data-target="#info_about_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_curricula{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+<div class="helperinfo" id="info_about_curricula_{{ course.submission_ref }}" hidden="hidden">
+    {{ helper[0].description }}
 </div>
 {% for module in filteredItems %}
-* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endfor %}
+{% if module[1].size > 0 %}
+* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endif %}{% endfor %}
 {% else %}
 : {{ strings.not_provided }}
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula{{ course.submission_ref }}" data-target="#info_about_wai_curricula{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula_{{ course.submission_ref }}" data-target="#info_about_wai_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_wai_curricula{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+<div class="helperinfo" id="info_about_wai_curricula_{{ course.submission_ref }}" hidden="hidden">
+    {{ helper[0].description }}
 </div>
 {% endif %}
 
@@ -63,7 +73,7 @@
 {% assign language = "" | split: "," %}
 {% for langIndex in course.language %}
 {% capture langLabel %}
-{{ site.data.wai-course-list.lang[langIndex].name }} ({{ site.data.wai-course-list.lang[langIndex].nativeName }})
+{{ site.data.lang[langIndex].name }} ({{ site.data.lang[langIndex].nativeName }})
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
@@ -77,7 +87,7 @@
 : {{ strings[course.format]}}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.format }}" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+    {{ helper[0].description }}
 </div>
 
 
@@ -86,12 +96,12 @@
 : {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.scheduling }}" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
-    <p>{{ helper[0].description }}</p>
+    {{ helper[0].description }}
 </div>
 
 {{ strings.platforms }}
-{% if course.platform != "" %}
-: {{ course.platform | join: "; "}}
+{% if course.platforms != "" %}
+: {{ course.platforms | join: "; "}}
 {% else %}
 : {{ strings.not_provided }}
 {% endif %}
@@ -143,9 +153,11 @@
 : {{ strings.not_provided }}
 {% endif %}
 
-{{ strings.info_updated }} {{ course.submission_date | date: "%-d %B %Y" }}.
 {% if course.content_update %}
-{{ strings.content_updated }} {{ course.content_update | date: "%-d %B %Y" }}.
+{{ strings.content_updated }}
+: {{ course.content_update | date: "%-d %B %Y" }}.
 {% endif %}
+
+_{{ strings.info_updated }} {{ course.submission_date | date: "%-d %B %Y" }}._
 {% include excol.html type="end" %}
 {% include box.html type="end" %}
