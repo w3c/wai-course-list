@@ -26,7 +26,7 @@
   "country": [
     "fr"
   ],
-  "description": " This training aims to make them aware of accessibility issues and puts a lot of emphasis on the practice of coding web pages according to accessibility standards and correcting non-accessible pages and components.",
+  "description": "This course focuses on the practical aspects of coding mobile applications according to accessibility standards and correcting non-accessible content. This training will enable the trainee to develop iOS or Android applications that comply with the recommendations of the Digital Accessibility Guidelines.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -42,8 +42,9 @@
   "level": "level_intermediate",
   "platforms": "Moodle",
   "prerequisites": [
-    "To have followed the \"Fundamentals of digital accessibility\" module at Koena or equivalent skills (placement test available for people who have not followed the Koena training).",
-    "Mastery of HTML, CSS, JS"
+    "To have already developed a mobile application",
+    "Have already contributed to the functional design of mobile application projects",
+    "Software to be installed before the start of the course"
   ],
   "provider": "Koena",
   "repository": "wai-course-list",
@@ -57,7 +58,10 @@
   "topics": [
     "Development of mobile applications compliant with accessibility standards (WCAG or RGAA)"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
