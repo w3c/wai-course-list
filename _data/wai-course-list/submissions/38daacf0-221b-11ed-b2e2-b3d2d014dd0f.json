@@ -65,7 +65,10 @@
     "Do a quick accessibility audit of a web page",
     "Apply some basic rules to produce accessible digital documents"
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
