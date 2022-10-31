@@ -151,7 +151,12 @@ if (filterForm) {
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
                     if (x[filter.filterId] !== undefined) {
-                        return x[filter.filterId].includes(r.optionID);
+                        if (r.optionID == "type_undergraduate_graduate")
+                            return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
+                        else if(r.optionID == "cost_free_or_certificate")
+                            return x[filter.filterId].includes("cost_certificates_for_purchase") || x[filter.filterId].includes("cost_free");
+                        else
+                          return x[filter.filterId].includes(r.optionID);
                     } else {
                         return false;
                     }
@@ -198,7 +203,7 @@ if (filterForm) {
         newResults.sort(sortList);
 
         sortedArticles.sort(function (a, b) {
-            return newResults.findIndex(x => x.title === a.id) - newResults.findIndex(x => x.title === b.id);
+            return newResults.findIndex(x => x.submission_ref === a.id) - newResults.findIndex(x => x.submission_ref === b.id);
         });
 
         list.innerHTML = "";
@@ -208,7 +213,7 @@ if (filterForm) {
         }
 
         sortedArticles.forEach(el => {
-            if (!Object.values(newResults).find(o => o.title === el.id))
+            if (!Object.values(newResults).find(o => o.submission_ref === el.id))
                 el.hidden = true;
             else
                 el.hidden = false;

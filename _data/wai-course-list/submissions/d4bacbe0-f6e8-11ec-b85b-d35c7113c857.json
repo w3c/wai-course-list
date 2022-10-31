@@ -59,6 +59,11 @@
     "Writing accessible form labels, instructions, and notifications."
   ],
   "type_resource": "type_training",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "https://intopia.digital/services/accessibility-training/creating-accessible-content/"
 }
