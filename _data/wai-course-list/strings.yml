@@ -4,7 +4,7 @@ show_info: Show info
 hide_info: Hide info
 info_about: Info about
 other: Other
-from: from
+from: out of
 
 courses: courses
 course: course
@@ -14,15 +14,16 @@ contact_email_list_courses: group-wai-list-courses@w3.org
 
 # List strings
 
+wai_course_text: >
+  <a href="https://www.w3.org/WAI/fundamentals/foundations-course/">Digital Accessibility Foundations - Introduction to Web Accessibility</a> introduces a self-paced course from W3C WAI for developers, designers, ux, writers, managers, and advocates. It is designed for technical and non-technical learners, including students, instructors, professionals, and people with disabilities. The course is free online.
 skip_to_filters: Skip to filters
 skip_to_results: Skip to results
 sub_header_list_intro: This Course List provides information about courses, training, and certification on digital accessibility from different providers. It is meant to help you make informed decisions when choosing a resource. You can filter submissions to find those matching your specific interests and needs. 
 sub_header_info_add_list: If you wish to add information about a course, training, or certification on digital accessibility, please use the following button.
-button_to_form_label: Submit a course, training, or certification
-question_info: If you have questions, please e-mail them to 
+button_to_form_label: Submit or update a course, training, or certification
 edit_remove_info: If you want to update information in the list or delete a course, please send e-mail to
 edit_remove_info_note: (e-mails to that address are not publicly-archived).
-sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. See <a href="#disclaimer">Important Disclaimer</a>.
+sub_header_note: Information on this page is submitted by providers and others. <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific courses. <br/><br/>See <a href="#disclaimer">Disclaimer</a>.
 filters_title: Filters
 filters_info: Changing filters will change the listed courses.
 select_option_default: Select an option
@@ -36,7 +37,7 @@ select_language_info_multiple_results: different languages
 select_country_info_single_result: different country
 select_country_info_multiple_results: different countries
 
-disclaimer_title: Important Disclaimer
+disclaimer_title: Disclaimer
 disclaimer_text:
   <p><abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers or courses. Inclusion of courses in this list does not indicate endorsement by W3C. Courses and search criteria are listed with no quality rating.</p>
   <p>Courses descriptions, search criteria, and other information in this database are submitted by providers. W3C does not verify the accuracy of the information.</p>
@@ -46,7 +47,7 @@ showing: Showing
 searchbox_placeholder: Search courses by title, provider, or topic
 
 clear_filters_button_label: Clear filters
-searchterm: Searchterm
+searchterm: Search term
 filtered_criteria_title: Current filter criteria
 no_results_title: Sorry, but no courses match the following criteria
 no_results_simple: No courses found
@@ -57,6 +58,7 @@ no_results_simple: No courses found
 details: Details
 country: Country
 type_resource: Type of resource
+type_registration: The course is for
 audience: Audience
 level: Level
 prerequisites: Prerequisites
@@ -75,14 +77,43 @@ availability_until: until
 availability_expired: Please note that this course may no longer be available
 website: Website
 reviews_page: Reviews page
-info_updated: This information was last updated on
-content_updated: The content of this resource was last updated on
+content_updated: Content updated
+info_updated: This listing was updated on
 
 
 # Form strings
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
-# To update existing resources, please <a href="#">upload the file provided</a> when first submiting your resource to this list.
+info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
+info_submission_lang: >
+  Other Languages: If your course is in a language other than English, please put the course title in that language, and the English translation in parentheses.
+scope_title: Scope – what this course list includes
+scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
+scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
+scope_details: Course List scope details
+check_scope_info_label: This submission meets the Course List scope above (Required).
+scope_info_details: >
+  Courses that **will** be included on this list are:
+
+  - Specialization, training, and professional certification courses for individuals or organizations
+  
+  - Full graduate or undergraduate degree programs focused on digital accessibility
+  
+  - Individual courses that are part of a larger graduate or undergraduate program that can be taken without requiring the student to be enrolled in the program
+
+
+  Courses that **will not** be included in this list are:
+  
+  - Courses that are less than 3 hours long
+  
+  - Courses that are available only to employees of a specific company, or enrolled students at a university
+  
+  - Conference sessions and presentations
+  
+  - Courses offered at a conference that cannot be taken without registering for the full conference
+
+
+question_info: If you have questions, please e-mail them to 
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
@@ -106,6 +137,10 @@ type_training: Training
 type_certification: Professional certification
 type_other: Other
 type_new: New
+type_registration_label: The course is for (Required)
+type_registration_expl: Indicate who can take this course. Choose as many as apply.
+type_registration_individual: Individuals
+type_registration_organization: Organizations
 audience_label: Audience (Required)
 audience_content_author: Content author
 audience_designer: Designer
@@ -153,16 +188,16 @@ asupport_expl: If applicable, indicate what accessibility support is provided (s
 asupport_including: including
 asupport_other: Additional accessibility support
 length_label: Length
-length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 2 hours, 3 weeks, 6 months, etc.).
+length_expl: Indicate the estimated amount of time needed to complete this resource (for example, 4 hours, 3 weeks, 6 months, etc.).
 cost_legend: Cost (Required)
 cost_free: Free of charge
 cost_certificates_for_purchase: Free, with certificates for purchase
 cost_limited_time: Paid, with some free content or free for a limited duration
 cost_reduced_for_some: Paid, with reduced fee for some
 cost_paid: Paid
-website_label: Website (Required)
-website_expl: Indicate the website containing more information about this resource.
-reviews_label: Reviews page
+website_label: Web page (Required)
+website_expl: Indicate the web page containing more information about this resource.
+reviews_label: Reviews web page
 reviews_expl: Indicate the web page containing reviews about this resource.
 content_update_label: Last updated (Required)
 content_update_expl: Please indicate the date when the content of this resource was last updated. Consider items such as syllabus, structure, teaching resources, etc.
@@ -178,7 +213,6 @@ comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
 publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
-info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 
 add_new_country_button: Add new country
 remove_last_country_button: Remove last country
@@ -202,4 +236,5 @@ close_back_to_form: Close preview and go back to the form
 # Results message
 success_message: Thank you for your submission. We strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
 gh_note: We use GitHub and if you're really curious you can go to <a href="https://github.com/w3c/wai-course-list/pulls/">Course List GitHub repository</a> to see your information (JSON format).
-failure_message: An error has occurred. Please try again and if the error continues contact us via GitHub or via e-mail to the editors group list.
+failure_message: An error has occurred. Sorry about that.
+failure_message_contact_info: Please let us know by opening a <a href="https://github.com/w3c/wai-course-list/issues/new">new GitHub issue</a> or sending e-mail to

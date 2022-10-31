@@ -1,0 +1,78 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-23",
+  "cost": "cost_paid",
+  "country": [
+    "it"
+  ],
+  "description": "A course to give graphic, ui and ux designers that create web, app or documents a full view about requirement of accessibile design and interaction.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "8 hours",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "Minimum knowledge of accessibility, assistive technologies and regulations"
+  ],
+  "provider": "Labway",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-09-23",
+  "submission_date": "2022-09-23T08:16:23.976Z",
+  "submission_ref": "0358d280-3b18-11ed-9286-9f11dfe00af9",
+  "submitter_email": "jacopo@labway.it",
+  "submitter_name": "Jacopo Deyla",
+  "title": "UX/UI designer e grafici (Accessible design)",
+  "topics": [
+    "Inclusive design", 
+    "WCAG 2.x",
+    "Visual aspect like colours, typography etc.", 
+    "Semantics of documents", 
+    "Accessible UI and UX", 
+    "Accessible design systems"
+
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.labway.it/corsi/Labway-accessibilita%CC%80-ui-ux.pdf"
+}
