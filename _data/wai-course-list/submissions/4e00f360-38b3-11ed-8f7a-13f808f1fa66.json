@@ -1,0 +1,66 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-09-20",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "es"
+  ],
+  "description": "The Expert University Diploma in Accessibility is a program offered by the Instituto Superior de Estudios Lingüísticos y Traducción (ISTRAD). The primary objective of the course is to offer students detailed and specific training in accessibility techniques, as SDH, audio description, sign language, Augmentative and Alternative Comunication (AAC).",
+  "end_date": "2023-06-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "1 year",
+  "level": "level_basic",
+  "platforms": "Meet",
+  "prerequisites": "Hold a higher university degree or, at least, have completed a minimum of 180 ECTS in a Bachelor’s Degree or similar",
+  "provider": "ISTRAD",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-10",
+  "submission_date": "2022-09-20T07:10:27.734Z",
+  "submission_ref": "4e00f360-38b3-11ed-8f7a-13f808f1fa66",
+  "submitter_email": "viviana.merola@institutotraduccion.com",
+  "submitter_name": "Viviana Merola",
+  "title": "Experto en Accesibilidad a la Comunicación y a los Contenidos Culturales (Expert Diploma in Accessibility of Communication and Cultural Content)",
+  "topics": [
+    "accessible web sites",
+    "accessible video games",
+    "easy-to-read",
+    "subtitling",
+    "subtitling for deaf and hard of hearing",
+    "audio description",
+    "Information and Communication Technology for accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "designer_modules1",
+    "designer_modules2"
+  ],
+  "website": "https://www.accesibilistrad.com/es"
+}
