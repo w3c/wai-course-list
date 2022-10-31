@@ -26,7 +26,7 @@
   "country": [
     "fr"
   ],
-  "description": "In the digital sector, taking accessibility into account requires the implementation of regular monitoring to avoid regression as digital platforms and tools are updated. This training aims to provide concrete tools to enable the person in charge of managing the digital accessibility of their organisation to do so effectively and in compliance with",
+  "description": "Fundamental knowledge about digital accessibility is rare and therefore precious in these times of new legal obligations. The aim of this training course is to lay the foundations of simple and directly operational good practice, in accordance with the international WCAG rules.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -42,7 +42,7 @@
   "level": "level_intermediate",
   "platforms": "Moodle",
   "prerequisites": [
-    "Obligation to have followed Digital accessibility basics",
+    "Obligation to have followed Fundamentals of digital accessibility",
     "Good knowledge of the institutional functioning of its organisation",
     "Fluent use of the Internet",
     "Interpersonal skills"
@@ -55,12 +55,15 @@
   "submission_ref": "9001c590-221b-11ed-b2e2-b3d2d014dd0f",
   "submitter_email": "formation@koena.net",
   "submitter_name": "Koena Team",
-  "title": "Digital accessibility manager : managing the digital accessibility policy within the organisation",
+  "title": "Digital accessibility manager: managing the digital accessibility policy within the organisation",
   "topics": [
     "Discovering the RGAA and audit practice ",
     "Managing accessibility in the organisation "
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "website": "https://koena.net/accueil/formations/m2b-referent-accessibilite-numerique-piloter-la-politique-accessibilite-numerique-au-sein-de-son-organisation/"
