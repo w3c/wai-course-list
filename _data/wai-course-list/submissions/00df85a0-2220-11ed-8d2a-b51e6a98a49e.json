@@ -59,7 +59,9 @@
     "Preparation of additional resources and exercises",
     "From the integration on the platform to the opening of the MOOC, and after..."
   ],
-  "type_registration": "",
+  "type_registration": [
+    "type_registration_individual"
+  ],
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
