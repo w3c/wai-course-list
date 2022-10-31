@@ -65,9 +65,9 @@
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
-    "foundation_modules1",
-    "foundation_modules3",
-    "foundation_modules4",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
     "designer_modules5",
     "designer_modules6",
     "designer_modules7"
