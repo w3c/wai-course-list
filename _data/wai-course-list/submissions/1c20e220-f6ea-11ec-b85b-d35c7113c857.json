@@ -66,5 +66,10 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "wai_curricula": "",
   "website": "https://intopia.digital/services/accessibility-training/testing-for-web-accessibility/"
 }
