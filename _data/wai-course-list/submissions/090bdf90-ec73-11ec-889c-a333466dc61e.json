@@ -1,0 +1,66 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "comments": "",
+  "content_update": "2021-05-31",
+  "cost": "cost_free",
+  "country": [
+    "fi"
+  ],
+  "description": "Free course for everyone. The course provides basic understanding of what accessibility is, who benefits from accessibility, why to make things accessible, how to encounter a person with a disability, and how different laws and directives affect accessibility. The course is offered both in Finnish and in English. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "fi"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "5-20 hours",
+  "level": "level_basic",
+  "platforms": "DigiCampus",
+  "prerequisites": "",
+  "provider": "TACCU - Tampere Accessibility Unit (Tampere University)",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2021-05-20",
+  "submission_date": "2022-06-15T06:18:55.881Z",
+  "submission_ref": "090bdf90-ec73-11ec-889c-a333466dc61e",
+  "submitter_email": "pauliina.baltzar@tuni.fi",
+  "submitter_name": "Pauliina Baltzar",
+  "title": "Introduction to Accessibility MOOC",
+  "topics": [
+    "What is accessibility",
+    "Who benefits from accessibility",
+    "Why make things accessible",
+    "How to encounter a person with a disability",
+    "How different laws and directives affect accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules5"
+  ],
+  "website": "https://research.tuni.fi/taccu/introduction-to-accessibility-mooc/"
+}

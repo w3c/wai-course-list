@@ -1,34 +1,48 @@
-[{
+[
+    {
+        "id": "type_registration",
+        "name": "Courses for",
+        "type": "checkbox",
+        "options": [
+            {
+                "id": "type_registration_individual",
+                "name": "Individuals"
+            },
+            {
+                "id": "type_registration_organization",
+                "name": "Organizations"
+            }
+        ]
+    },  
+    {
         "id": "type_resource",
         "name": "Type of resource",
         "type": "checkbox",
-        "options": [{
-                "id": "type_graduate",
-                "name": "Graduate program"
-            },
+        "options": [
             {
-                "id": "type_undergraduate",
-                "name": "Undergraduate program"
+                "id": "type_training",
+                "name": "Training"
             },
             {
                 "id": "type_certification",
                 "name": "Professional certification"
             },
             {
-                "id": "type_training",
-                "name": "Training"
+                "id": "type_undergraduate_graduate",
+                "name": "Graduate / Undergraduate program"
             },
             {
                 "id": "type_other",
                 "name": "Other"
             }
         ]
-    },
+    },  
     {
         "id": "audience",
         "name": "Audience",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "audience_content_author",
                 "name": "Content author"
             },
@@ -62,7 +76,8 @@
         "id": "level",
         "name": "Level",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "level_basic",
                 "name": "Basic"
             },
@@ -81,7 +96,8 @@
         "name": "Format",
         "info": "true",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "format_face_to_face",
                 "name": "Face-to-face"
             },
@@ -104,7 +120,8 @@
         "name": "Scheduling",
         "info": "true",
         "type": "checkbox",
-        "options": [{
+        "options": [
+            {
                 "id": "learning_scheduled",
                 "name": "Scheduled"
             },
@@ -118,13 +135,10 @@
         "id": "cost",
         "name": "Cost",
         "type": "checkbox",
-        "options": [{
-                "id": "cost_free",
-                "name": "Free of charge"
-            },
+        "options": [
             {
-                "id": "cost_certificates_for_purchase",
-                "name": "Free, with certificates for purchase"
+                "id": "cost_free_or_certificate",
+                "name": "Free of charge / Free, with certificates for purchase"
             },
             {
                 "id": "cost_limited_time",

@@ -1,0 +1,64 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Open enrollment class sessions are offered throughout the year, generally at a monthly cadence. To confirm upcoming class dates, please refer to our course schedule located at https://www.microassist.com/classroom-training/course-schedule/",
+  "content_update": "2021-12-31",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "Students will learn the process to remediate and test a PDF document for accessibility issues to make the content meet WCAG 2.0 Level AA success criteria, which will be able to meet PDF/UA standards with no unintentional warnings or errors. Participants will also be given advanced items to remediate.",
+  "end_date": "2023-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 Day",
+  "level": "level_intermediate",
+  "platforms": "Online Instructor Led Sessions are hosted using Zoom.",
+  "prerequisites": [
+    "To ensure your success in this course, you should have a working knowledge of the Adobe Acrobat Pro DC platform and knowledge about accessibility concepts. You can obtain these skills by taking the Testing & Remediation Strategies for PDF Accessibility: Intermediate Edition course."
+  ],
+  "provider": "Microassist",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-01-01",
+  "submission_date": "2022-09-22T15:58:12.775Z",
+  "submission_ref": "5caa1c60-3a8f-11ed-81cd-7bcddbb45000",
+  "submitter_email": "drichard@microassist.com",
+  "submitter_name": "Dallas Richard",
+  "title": "Testing & Remediation Strategies for PDF Accessibility: Advanced Edition",
+  "topics": [
+    "Review Accessibility Standards ",
+    "Examine Remediation Resources ",
+    "Breakdown PDF/UA Standards ",
+    "Examine common PAC3 Errors ",
+    "Evaluate the Remediation Process",
+    "Illustrate Advanced Remediation Elements",
+    "Practice Remediation"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": "",
+  "website": "https://www.microassist.com/courses/test-remediation-strategies-for-pdf-accessibility-advanced/"
+}
