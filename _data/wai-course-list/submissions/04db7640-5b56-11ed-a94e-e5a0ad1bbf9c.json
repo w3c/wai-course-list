@@ -28,10 +28,9 @@
   "level": "level_intermediate",
   "platforms": "Any (Google Meet preferred)",
   "prerequisites": [
-    "W3C Accessibility Standards and UNI 301449",
-    "basic knowledge of HTML and CSS",
-    "Disabilities and assistive technologies",
-    ""
+    "W3C Accessibility Standards and UNI 301549",
+    "Basic knowledge of HTML and CSS",
+    "Disabilities and assistive technologies"
   ],
   "provider": "Labway srl",
   "repository": "wai-course-list",
