@@ -1,0 +1,105 @@
+{
+  "accessibility_support": [
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "Libras (Brazilian Sign Language)",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Accessboost's proposal is to have a holistic scope of accessibility, bringing its relationships in different areas so that people realize the real difficulty of correctly applying accessibility (in all its aspects) by all areas involved in the development of digital products and services.",
+  "content_update": "2022-09-01",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "br"
+  ],
+  "description": "Accessibility like you've never seen it before. This is a course that will make you reflect on your career and your life, whatever the position you occupy or the area in which you work in the creation of digital products or services.",
+  "end_date": "2023-02-20",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt-BR"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "At least 4 months",
+  "level": "level_basic",
+  "platforms": [
+    "Hotmart",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "It is idal (but not mandatory) that the person already works with digital products"
+  ],
+  "provider": "Tudo é Acessibilidade",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-01-20",
+  "submission_date": "2022-09-27T03:12:40.007Z",
+  "submission_ref": "3eaad570-3e12-11ed-9b6c-015145048feb",
+  "submitter_email": "msales@tudoeacessibilidade.com.br",
+  "submitter_name": "Marcelo Sales",
+  "title": "AccessBoost",
+  "topics": [
+    "About accessibility, Legislation & Compliance",
+    "Career and Market",
+    "Origins and Relationships",
+    "Business and Culture of Accessibility",
+    "Planning, Strategy and Metrics",
+    "WCAG",
+    "Contents, UI and UX",
+    "Inclusive Design, HCI and Interactions",
+    "Specification and Documentation",
+    "Accessibility Tests"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://www.accessboost.com.br"
+}
