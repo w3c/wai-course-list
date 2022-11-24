@@ -1,0 +1,104 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "This content is still being updated, and will be complete in December 2022.",
+  "content_update": "2022-10-25",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "Beginner and advanced web developers can gain a general understanding of accessibility practices and testing or use as a reference for specific subjects. Most sections have short assessments to test what you've learned.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "Online",
+  "prerequisites": [
+    "basic knowledge of HTML and CSS"
+  ],
+  "provider": "web.dev, Google's web developer relations team",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-10-01",
+  "submission_date": "2022-10-25T16:19:19.431Z",
+  "submission_ref": "c7486170-5480-11ed-9a34-6f27f4d17414",
+  "submitter_email": "alexandrawhite@google.com",
+  "submitter_name": "Alexandra White",
+  "title": "Learn Accessibility!",
+  "topics": [
+    "What is digital accessibility",
+    "Measure accessibility",
+    "ARIA",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Content structure",
+    "The Document and DOM",
+    "Color and contrast",
+    "Animation and motion",
+    "Video",
+    "Audio",
+    "Typography",
+    "Forms",
+    "Pattern or component evaluation and testing",
+    "Design evaluation and testing",
+    "Automated testing",
+    "Manual testing",
+    "Assistive Technology testing",
+    "User testing with people with disabilities"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://web.dev/learn/accessibility/"
+}
