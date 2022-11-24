@@ -1,0 +1,65 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-11-24",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "The 5W2H of accessibility: \r\nwhat: core concepts of Digital Accessibility\r\nwhy it is essential to include people with disabilities.\r\nwhere does accessibility apply\r\nwho has a role to play in a team\r\nhow to manage a project with accessibility requirements: schedule (when), budget (how much), workflow (how)",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "fr",
+    "nl"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4h",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Eleven Ways",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-11-24",
+  "submission_date": "2022-11-24T17:23:38.071Z",
+  "submission_ref": "bb9a9e70-6c1c-11ed-bf28-15f1ae20ede6",
+  "submitter_email": "regine.lambrecht@elevenways.be",
+  "submitter_name": "Régine Lambrecht",
+  "title": "Web Accessibility for Managers",
+  "topics": [
+    "The importance, benefits, and relevance of Digital Accessibility.",
+    "How some people with disabilities use the web and which types of barriers they most frequently encounter online.",
+    "What the legal requirements are (in the client’s specific context or industry).",
+    "What the standards of accessibility are.",
+    "How to plan for and manage the implementation of accessibility during an entire project lifecycle.",
+    "The time and resource implications if you fail to address web accessibility early in your projects",
+    "Reputational risks of not making your website or digital content accessible"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://elevenways.be"
+}
