@@ -1,0 +1,75 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-11-24",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "The training is based on the accessibility Foundation training curriculum recommended by the W3C, within the boundaries of a half-day overview.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en",
+    "fr",
+    "nl"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4h",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Eleven Ways",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-11-24",
+  "submission_date": "2022-11-24T17:27:57.629Z",
+  "submission_ref": "565006d0-6c1d-11ed-bf28-15f1ae20ede6",
+  "submitter_email": "regine.lambrecht@elevenways.be",
+  "submitter_name": "Régine Lambrecht",
+  "title": "Introduction to Web accessibility",
+  "topics": [
+    "Definition",
+    "Assistive technologies and strategies",
+    "ROI",
+    "Myths",
+    "A11Y legislation",
+    "A11Y standards",
+    "Take away checklists",
+    "Where to start",
+    "Resources",
+    "Q&A"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://elevenways.be"
+}
