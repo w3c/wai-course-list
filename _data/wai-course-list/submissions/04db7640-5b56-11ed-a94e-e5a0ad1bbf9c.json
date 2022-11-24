@@ -1,0 +1,68 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Hope to have filled all the fields correctly. Thanks in advance for your review job",
+  "content_update": "2022-11-03",
+  "cost": "cost_paid",
+  "country": [
+    "it"
+  ],
+  "description": "An overview of all requirements for websites, mobile apps and electronic documents and how to verify it in laboratory hours. A complete methodology for an accessibility assessment.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "it"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "30 hours (provided in 10 lessons of 3 hrs each)",
+  "level": "level_intermediate",
+  "platforms": "Any (Google Meet preferred)",
+  "prerequisites": [
+    "W3C Accessibility Standards and UNI 301549",
+    "Basic knowledge of HTML and CSS",
+    "Disabilities and assistive technologies"
+  ],
+  "provider": "Labway",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-11-10",
+  "submission_date": "2022-11-03T09:00:52.516Z",
+  "submission_ref": "04db7640-5b56-11ed-a94e-e5a0ad1bbf9c",
+  "submitter_email": "jacopo@labway.it",
+  "submitter_name": "Jacopo Deyla",
+  "title": "How to evaluate web accessibility (Accessibilità per sviluppatori e tester)",
+  "topics": [
+    "Standards WCAG, UNI 301549, WAI ARIA",
+    "Automatic evaluation tools",
+    "Semi-automatic tools and plugins",
+    "Assessment methodology (laboratory)",
+    "Sample mobile accessibility testing - iOS & Android - (laboratory)"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules4",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://www.labway.it/corsi/Labway-accessibilita-sviluppatori.pdf"
+}
