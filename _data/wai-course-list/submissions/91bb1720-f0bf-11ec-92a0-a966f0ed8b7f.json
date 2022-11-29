@@ -9,11 +9,6 @@
   ],
   "accessibility_support_other": "",
   "audience": [
-    "audience_content_author",
-    "audience_designer",
-    "audience_developer",
-    "audience_manager",
-    "audience_tester",
     "audience_general"
   ],
   "check_correct_info": "on",
