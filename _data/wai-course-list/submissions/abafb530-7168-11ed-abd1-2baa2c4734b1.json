@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course is designed for QA testers to recognise, test and document accessibility within their processes.\r\n\r\nTopics covered include WCAG, relevant legislation, best practises and documentation.\r\n\r\nParticipants also come away with recommended testing tools, practical examples, a checklist and further resources.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 to 4 hours",
+  "level": "level_intermediate",
+  "platforms": [
+    "HTML",
+    "SCORM"
+  ],
+  "prerequisites": [
+    "Knowledge of HTML and CSS"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-12-16",
+  "submission_date": "2022-12-01T11:09:48.931Z",
+  "submission_ref": "abafb530-7168-11ed-abd1-2baa2c4734b1",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible web QA",
+  "topics": [
+    "What is accessibility QA",
+    "Types of testing",
+    "Practical approaches",
+    "Communicating test results",
+    "Testing tools",
+    "Testing Perceivable Success Criteria",
+    "Testing Operable Success Criteria",
+    "Testing Understandable Success Criteria",
+    "Testing Robust Success Criteria"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
