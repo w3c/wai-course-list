@@ -1,0 +1,66 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "\"This course details what is meant by an accessible user experience and how to achieve this. \r\n\r\nIt covers the relationship between accessibility and inclusive design, the Inclusive Design Principles, accessible design, annotating and testing designs for accessibility. \r\n\r\nIt is packed with practical examples, case studies, quizzes and interactivity.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 hours",
+  "level": "level_basic",
+  "platforms": [
+    "HTML",
+    "SCORM"
+  ],
+  "prerequisites": [
+    "Basic knowledge of W3C accessibility concepts"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-12-16",
+  "submission_date": "2022-12-01T10:57:55.908Z",
+  "submission_ref": "02b10840-7167-11ed-abd1-2baa2c4734b1",
+  "submitter_email": "fizz.miners-jones@hotmail.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible User Experience and Design",
+  "topics": [
+    "Accessibility and inclusive design",
+    "The Inclusive Design principles",
+    "Accessible design",
+    "Adding inclusive design into process",
+    "Accessible design documentation"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
