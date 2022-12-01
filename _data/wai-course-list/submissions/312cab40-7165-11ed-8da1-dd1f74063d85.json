@@ -1,0 +1,71 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course provides native apps developers with the knowledge they need to create Android apps that can be used by all, including assistive technology users. \r\n\r\nIt covers Android accessibility services, how to build accessible apps, and how to test them.\r\n\r\nThere are also further resources and a checklist to use as a practical guide.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 to 4 hours",
+  "level": "level_intermediate",
+  "platforms": [
+    "HTML",
+    "SCORM"
+  ],
+  "prerequisites": [
+    "Foundation in Android development"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-12-16",
+  "submission_date": "2022-12-01T10:44:54.900Z",
+  "submission_ref": "312cab40-7165-11ed-8da1-dd1f74063d85",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible Android development",
+  "topics": [
+    "Android accessibility services",
+    "Platform accessibility API",
+    "Images",
+    "Structure",
+    "Forms",
+    "Content and focus order",
+    "Notifications",
+    "Content customisation",
+    "Testing Android apps."
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
