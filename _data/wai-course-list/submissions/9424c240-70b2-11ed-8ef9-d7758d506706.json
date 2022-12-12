@@ -38,8 +38,8 @@
   "level": "level_intermediate",
   "platforms": "",
   "prerequisites": [
-    "Course or equivalent knowledge: https://eliquotraining.com/training/course.php?cid=EWAW101&c=WCAG-2.1-Understanding-Web-Content-Accessibility-Guidelines",
-    "Course or equivalent knowledge: https://eliquotraining.com/training/course.php?cid=MO16MW101&c=Microsoft-Word-2019-365-Level-1-Introduction"
+    "Course or equivalent knowledge: <a href='https://eliquotraining.com/training/course.php?cid=EWAW101&c=WCAG-2.1-Understanding-Web-Content-Accessibility-Guidelines'>WCAG 2.2: Understanding the Web Content Accessibility Guidelines</a>",
+    "Course or equivalent knowledge: <a href='https://eliquotraining.com/training/course.php?cid=MO16MW101&c=Microsoft-Word-2019-365-Level-1-Introduction'>Microsoft Word 365 - Part One</a>"
   ],
   "provider": "Eliquo Training",
   "repository": "wai-course-list",
