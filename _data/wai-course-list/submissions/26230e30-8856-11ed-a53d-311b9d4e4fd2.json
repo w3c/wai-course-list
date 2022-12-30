@@ -1,0 +1,92 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-12-30",
+  "cost": "cost_paid",
+  "country": [
+    "de"
+  ],
+  "description": "In 10 weekly units, you will learn all basics about digital accessibility, including: persons with disabilities; Assistive Technologies; accessible videos, documents, web, software, self-service terminals, mobile apps; accessibility in organizations; regulations, future of accessibility. Units include assignments and individual feedback.",
+  "end_date": "2023-05-26",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "de"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "80 hours",
+  "level": "level_basic",
+  "platforms": [
+    "Moodle",
+    "BigBlueButton"
+  ],
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Hochschule der Medien, Weiterbildungszentrum",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-03-10",
+  "submission_date": "2022-12-30T15:25:10.675Z",
+  "submission_ref": "26230e30-8856-11ed-a53d-311b9d4e4fd2",
+  "submitter_email": "gzimmermann@hdm-stuttgart.de",
+  "submitter_name": "Gottfried Zimmermann",
+  "title": "Grundlagen der digitalen Barrierefreiheit (Accessibility Core Competencies)",
+  "topics": [
+    "Introduction",
+    "Variety of user needs and Assistive Technologies (student presentations)",
+    "Accessible multimedia",
+    "Accessible documents (Word, PowerPoint)",
+    "Accessible documents (PDF, EPUB)",
+    "Accessible websites",
+    "Checking tools for the web",
+    "Accessible software and self-service terminals",
+    "Accessible mobile apps",
+    "Accessible design & inclusive design processes",
+    "Demographics, regulations, future directions"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules6",
+    "content_author_modules6"
+  ],
+  "website": "https://digitalisierung.hdm-stuttgart.de/barrierefreiheit/grundlagen-der-digitalen-barrierefreiheit/"
+}
