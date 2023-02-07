@@ -33,12 +33,12 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "2 Days 9:00 AM to 4:00 PM Eastern Standard Time",
+  "length": "2 Days - 9:00 AM to 4:00 PM Eastern Standard Time",
   "level": "level_intermediate",
   "platforms": "",
   "prerequisites": [
-    "Course or equivalent knowledge: https://eliquotraining.com/training/course.php?cid=ADDC101&c=Adobe-Acrobat-DC-for-Desktop-and-Mobile-Level-1",
-    "Course or equivalent knowledge: https://eliquotraining.com/training/course.php?cid=EWAW101&c=WCAG-2.1-Understanding-Web-Content-Accessibility-Guidelines"
+    "Course or equivalent knowledge: <a href=\"https://eliquotraining.com/training/course.php?cid=ADDC101&c=Adobe-Acrobat-DC-for-Desktop-and-Mobile-Level-1\">Acrobat DC for Desktop and Mobile</a>",
+    "Course or equivalent knowledge: <a href=\"https://eliquotraining.com/training/course.php?cid=EWAW101&c=WCAG-2.1-Understanding-Web-Content-Accessibility-Guidelines\">WCAG 2.2: Understanding the Web Content Accessibility Guidelines</a>"
   ],
   "provider": "Eliquo Training",
   "repository": "wai-course-list",
