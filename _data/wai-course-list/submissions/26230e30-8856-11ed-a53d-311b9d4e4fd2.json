@@ -49,9 +49,7 @@
     "Moodle",
     "BigBlueButton"
   ],
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Hochschule der Medien, Weiterbildungszentrum",
   "repository": "wai-course-list",
   "reviews": "",
@@ -60,7 +58,7 @@
   "submission_ref": "26230e30-8856-11ed-a53d-311b9d4e4fd2",
   "submitter_email": "gzimmermann@hdm-stuttgart.de",
   "submitter_name": "Gottfried Zimmermann",
-  "title": "Grundlagen der digitalen Barrierefreiheit (Accessibility Core Competencies)",
+  "title": "Accessibility Core Competencies (Grundlagen der digitalen Barrierefreiheit)",
   "topics": [
     "Introduction",
     "Variety of user needs and Assistive Technologies (student presentations)",
