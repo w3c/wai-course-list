@@ -21,7 +21,7 @@
   "country": [
     "gb"
   ],
-  "description": "This course provides experienced user researchers with the knowledge they need to start including people with disabilities in their research projects.\r\n\r\nIt covers every aspect from planning to conducting to analysing findings from inclusive user research, as well as using inclusive language. ",
+  "description": "This course provides experienced user researchers with the knowledge they need to start including people with disabilities in their research projects. It covers every aspect from planning to conducting to analysing findings from inclusive user research, as well as using inclusive language.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -63,5 +63,6 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "https://tetralogical.com/services/self-led-training/"
 }
