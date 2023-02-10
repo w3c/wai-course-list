@@ -21,7 +21,7 @@
   "country": [
     "gb"
   ],
-  "description": "This course gives developers the skills and knowledge they need to create accessible websites and web applications using React.\r\n\r\nIt covers the principles of accessible development including keyboard support and focus management, implicit semantics with HTML and explicit semantics with ARIA, plus techniques with React code examples, and more.",
+  "description": "This course gives developers the skills and knowledge they need to create accessible websites and web applications using React. It covers the principles of accessible development including keyboard support and focus management, implicit semantics with HTML and explicit semantics with ARIA, plus techniques with React code examples, and more.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -65,5 +65,6 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula":"",
   "website": "https://tetralogical.com/services/self-led-training/"
 }
