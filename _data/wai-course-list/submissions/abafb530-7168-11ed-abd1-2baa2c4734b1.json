@@ -21,7 +21,7 @@
   "country": [
     "gb"
   ],
-  "description": "This course is designed for QA testers to recognise, test and document accessibility within their processes.\r\n\r\nTopics covered include WCAG, relevant legislation, best practises and documentation.\r\n\r\nParticipants also come away with recommended testing tools, practical examples, a checklist and further resources.",
+  "description": "This course is designed for QA testers to recognise, test and document accessibility within their processes. Topics covered include WCAG, relevant legislation, best practises and documentation. Participants also come away with recommended testing tools, practical examples, a checklist and further resources.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -66,5 +66,6 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "https://tetralogical.com/services/self-led-training/"
 }
