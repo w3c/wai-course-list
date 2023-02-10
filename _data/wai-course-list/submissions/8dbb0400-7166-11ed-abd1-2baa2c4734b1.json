@@ -21,7 +21,7 @@
   "country": [
     "gb"
   ],
-  "description": "\"This course takes an in-depth look at React Native accessibility, including the React Native accessibility API and the features supported on Android and iOS.\r\n\r\nIt introduces platform accessibility services, tools for testing, plus techniques with code examples for developing accessible apps using React Native elements and custom components.",
+  "description": "This course takes an in-depth look at React Native accessibility, including the React Native accessibility API and the features supported on Android and iOS. It introduces platform accessibility services, tools for testing, plus techniques with code examples for developing accessible apps using React Native elements and custom components.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
