@@ -1,0 +1,89 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-05-09",
+  "cost": "cost_paid",
+  "country": [
+    "ca"
+  ],
+  "description": "In this course you will learn how to: Create HTML applications and forms that are WCAG 2.2 AA compliant; Filter the W3C WCAG 2.2 techniques documentation to suit your needs; Identify the difference between Sufficient Techniques and Advisory Techniques; Identify common failures.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 Days - 9:00 AM to 4:00 PM Eastern Standard Time",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    "Course or equivalent knowledge: <a href=\"https://eliquotraining.com/training/course.php?cid=EWAW101&c=WCAG-2.1-Understanding-Web-Content-Accessibility-Guidelines\">WCAG 2.2: Understanding the Web Content Accessibility Guidelines</a>"
+  ],
+  "provider": "Eliquo Training",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-11-30",
+  "submission_date": "2022-11-30T13:34:18.753Z",
+  "submission_ref": "b0e3cf10-70b3-11ed-b4a7-97fa501aa37b",
+  "submitter_email": "craig.boassaly@eliquo.ca",
+  "submitter_name": "Craig Boassaly",
+  "title": "WCAG Techniques for Web Applications and Forms",
+  "topics": [
+    "Finding WCAG documentation and techniques",
+    "Techniques for principle 1 Perceivable",
+    "Techniques for principle 2 Operable",
+    "Techniques for principle 3 Understandable",
+    "Techniques for principle 4 Robust",
+    "Understanding Conformance Requirements"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://eliquotraining.com/training/course.php?cid=EWAW202&c=WCAG-Techniques-Web-Applications-Forms"
+}
