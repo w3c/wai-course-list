@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "gb"
+  ],
+  "description": "This course gives developers the skills and knowledge they need to create accessible websites and web applications using React. It covers the principles of accessible development including keyboard support and focus management, implicit semantics with HTML and explicit semantics with ARIA, plus techniques with React code examples, and more.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_intermediate",
+  "platforms": [
+    "HTML",
+    "SCORM"
+  ],
+  "prerequisites": [
+    "Knowledge of HTML, CSS, and React"
+  ],
+  "provider": "TetraLogical",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-12-16",
+  "submission_date": "2022-12-01T11:06:45.905Z",
+  "submission_ref": "3e982810-7168-11ed-abd1-2baa2c4734b1",
+  "submitter_email": "fminers-jones@tetralogical.com",
+  "submitter_name": "Felicity Miners-Jones",
+  "title": "Accessible web development with React",
+  "topics": [
+    "Interaction",
+    "Accessibility semantics: role",
+    "Accessibility semantics: name and description",
+    "Accessibility semantics: state",
+    "Accessibility mechanics",
+    "React application basics",
+    "React forms",
+    "Building React components"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula":"",
+  "website": "https://tetralogical.com/services/self-led-training/"
+}
