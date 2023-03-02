@@ -29,6 +29,7 @@ footer: >
 {% assign DEBUG_SUBMISSION_FUNCTION = false %}
 {% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
+
 <div style="grid-column: 4 / span 4">
 
 <style>
@@ -60,6 +61,11 @@ function onSubmit(e) {
                                    DEBUG_USE_LOCAL_SUBMISSION_FUNCTION=DEBUG_USE_LOCAL_SUBMISSION_FUNCTION -%}
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
+
+
+<aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/assets/images/icons.svg#icon-warning"></use></svg> This submission form is temporarily not working:</header><div class="box-i">
+  <p>We apologize. We expect to get it fixed in March 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
+  </div></aside>
 
 <p>{{strings.sub_header_info_form}}</p>
 <p>{{strings.info_submission}}</p>
