@@ -1,0 +1,50 @@
+{
+    "submitter_name": "Justin Fox",
+    "submitter_email": "justinf@candlefox.com",
+    "title": "ICS Learn - Foundation Certificate in User Experience",
+    "provider": "ICS Learn",
+    "country": [
+        "gb"
+    ],
+    "description": "This course offers an introduction to creating user friendly websites and includes modules that go over the topic of accessibility. Upon completion, learners should be able to create their own webpages which are as accessible as possible and have a solid grounding for learning what more they can do to ensure their content remains open to all.",
+    "type_resource": "type_training",
+    "type_resource_new": "",
+    "type_registration": [
+        "type_registration_individual"
+    ],
+    "audience": [
+        "audience_general"
+    ],
+    "level": "level_basic",
+    "prerequisites": "",
+    "topics": [
+        "User experience",
+        "Information architecture",
+        "Interaction design",
+        "Visual design",
+        "User research",
+        "Usability evaluation"
+    ],
+    "language": [
+        "en"
+    ],
+    "format": "format_online",
+    "learning": [
+        "learning_unscheduled"
+    ],
+    "platforms": "",
+    "accessibility_support_other": "",
+    "length": "Approximately 18 hours",
+    "cost": "cost_paid",
+    "website": "https://www.icslearn.co.uk/courses/it/bcs/bcs-foundation-certificate-in-user-experience/",
+    "reviews": "",
+    "content_update": "2022-10-01",
+    "start_date": "2023-03-07",
+    "wai_curricula": "",
+    "end_date": "",
+    "comments": "",
+    "check_correct_info": "on",
+    "check_publish_info": "on",
+    "submission_ref": "1d267dc0-bd18-11ed-8817-8d283a775fc5",
+    "submission_date": "2023-03-07T18:44:38.428Z"
+}
