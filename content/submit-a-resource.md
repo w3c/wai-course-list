@@ -11,7 +11,7 @@ ref: /teach-advocate/course-list/
 description:  # NEW: aa 150ish-character-description for social media   # translate the description
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this resource)
 footer: >
-   <p><strong>Date:</strong> Updated 12 September 2022. First published June 2022.</p>
+   <p><strong>Date:</strong> Updated 30 March 2023. First published June 2022.</p>
    <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <strong>Contributors:</strong> Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
@@ -62,10 +62,6 @@ function onSubmit(e) {
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
-
-<aside class="box"><header class="box-h  box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/assets/images/icons.svg#icon-warning"></use></svg> This submission form is temporarily not working:</header><div class="box-i">
-  <p>We apologize. We expect to get it fixed in March 2023. If you would like to be notified when it is fixed, please e-mail <a href="mailto:group-wai-list-courses@w3.org?subject=Submit%20course">group-wai-list-courses@w3.org</a></p>
-  </div></aside>
 
 <p>{{strings.sub_header_info_form}}</p>
 <p>{{strings.info_submission}}</p>
