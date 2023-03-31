@@ -1,0 +1,63 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "A new cohort starts on the first Monday of each month (unless there is a U.S. holiday that week | combined Nov/Dec cohort). Participants have 60 working days (excludes weekends and U.S. holidays) to complete the course. Please contact me to have anyone that would like to review the course enrolled, and/or with any questions. Anyone with a disability can take the course for free through our scholarship program: https://webaim.org/training/docs/scholarship.",
+  "content_update": "2023-03-10",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "us"
+  ],
+  "description": "This independent-study online training covers principles and processes for: Creating accessible document content and structure in Word & PowerPoint; Evaluating the accessibility of well-structured Word & PowerPoint documents; and, Optimizing the accessibility of PDFs exported from well-structured Word & PowerPoint documents with Acrobat.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "8 to 10 hours",
+  "level": "level_basic",
+  "platforms": "Canvas LMS",
+  "prerequisites": [
+    "This course is designed for adult learners that have experience creating Word & PowerPoint documents. Web development or design experience is not required."
+  ],
+  "provider": "WebAIM",
+  "repository": "wai-course-list",
+  "reviews": "https://webaim.org/training/docs/quotes",
+  "start_date": "2018-07-02",
+  "submission_date": "2023-03-31T17:15:20.183Z",
+  "submission_ref": "9d4d3070-cfe7-11ed-831d-8f4f3e141165",
+  "submitter_email": "george.joeckel@usu.edu",
+  "submitter_name": "George Joeckel",
+  "title": "Accessible Documents: Word, PowerPoint, & Acrobat",
+  "topics": [
+    "Module 1 | Document Content: Review basic principles and processes for optimizing the accessibility of document content in Microsoft Word and PowerPoint.",
+    "Module 2 | Document Structure: Review basic principles and processes for optimizing the accessibility of document structure in Microsoft Word and PowerPoint.",
+    "Module 3 | Evaluating Accessibility & Creating PDFs: Review processes for utilizing built-in accessibility checkers and an evaluation checklist, installing Adobe PDF Maker, and exporting PDF documents.",
+    "Module 4 | Optimizing PDFs in Acrobat: Review how to configure Adobe Acrobat Professional, and how to use it to optimize a PDF exported from a well-structured Microsoft Word or PowerPoint document.",
+    "Module 5 | Accessible Excel (bonus module): Review basic principles and processes for optimizing document structure, and for utilizing a built-in accessibility checker, in Excel documents."
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://webaim.org/training/docs/"
+}
