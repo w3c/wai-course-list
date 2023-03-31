@@ -1,0 +1,50 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-03-30",
+  "cost": "cost_free",
+  "country": [
+    "pr"
+  ],
+  "description": "This is a brief description.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Provider test",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-03-30",
+  "submission_date": "2023-03-31T07:11:49.219Z",
+  "submission_ref": "4de29330-cf93-11ed-89ff-47d4a1416951",
+  "submitter_email": "lspereira@ciencias.ulisboa.pt",
+  "submitter_name": "Letícia",
+  "title": "Course test",
+  "topics": [
+    "accessibility policy and regulations"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.course.com"
+}
