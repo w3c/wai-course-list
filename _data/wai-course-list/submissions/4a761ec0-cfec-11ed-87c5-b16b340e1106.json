@@ -1,0 +1,100 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-03-31",
+  "cost": "cost_free",
+  "country": [
+    "ca"
+  ],
+  "description": "This free, text-based online course covers a wide range of\r\nrecommendations for making web content more accessible for\r\npeople with disabilities. These recommendations also benefit all\r\nusers. This includes how to implement accessible page structure,\r\nlinks, tables, images, forms, visual & responsive design, multimedia,\r\ndevice inputs and ARIA live.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en",
+    "fr"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "1 hour reading per module. 11 hours for 11 modules.",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "Basic knowledge of HTML and CSS"
+  ],
+  "provider": "Employment and Social Development Canada - Government of Canada",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-03-31",
+  "submission_date": "2023-03-31T17:48:48.684Z",
+  "submission_ref": "4a761ec0-cfec-11ed-87c5-b16b340e1106",
+  "submitter_email": "omar.touma@hrsdc-rhdcc.gc.ca",
+  "submitter_name": "Omar O Touma",
+  "title": "ESDC Self-Paced Web Accessibility Course",
+  "topics": [
+    "Module 1 - Accessibility fundamentals",
+    "Module 2 - Page structure and semantics",
+    "Module 3 - Links and navigation",
+    "Module 4 - Tables",
+    "Module 5 - Images",
+    "Module 6 - Forms",
+    "Module 7 - Visual design and colours",
+    "Module 8 - Zoom and responsive design",
+    "Module 9 - Audio, Video, animation and motion",
+    "Module 10 - Input modalities",
+    "Module 11 - ARIA live and time limits",
+    ""
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://bati-itao.github.io/learning/esdc-self-paced-web-accessibility-course/index.html"
+}
