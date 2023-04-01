@@ -1,0 +1,89 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-04-01",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "es"
+  ],
+  "description": "The goal of the course is to learn to review in a practical way in real applications, the requirements that any mobile application must meet to be accessible, in accordance with current legislation in the European Union (Directive 2016/2102), which requires compliance with the requirements established in the European standard EN 301549 V3.2.1.",
+  "end_date": "2023-06-02",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "20 hours in 5 days (1 ECTS credit)",
+  "level": "level_basic",
+  "platforms": "Meeting Platform",
+  "prerequisites": [
+    "For practical workshops of the course, it is recommended to have a mobile phone (Android or Apple) with Internet access."
+  ],
+  "provider": "Universidad de Alcalá",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-05-29",
+  "submission_date": "2023-04-01T07:51:54.443Z",
+  "submission_ref": "11ec61b0-d062-11ed-b856-3d74a7a52abe",
+  "submitter_email": "jose.hilera@uah.es",
+  "submitter_name": "José R. Hilera",
+  "title": "Revisión de la accesibilidad de aplicaciones móviles",
+  "topics": [
+    "Introduction to mobile application accessibility",
+    "Workshop on support technologies for the use of mobile applications",
+    "Legislation and regulations on accessibility of mobile applications",
+    " The mobile application accessibility review report",
+    " Mobile application accessibility evaluation tools",
+    "Generic requirements evaluation workshop",
+    "Two-way voice communication requirements evaluation workshop",
+    "Video capabilities requirements evaluation workshop",
+    "Software requirements evaluation workshop",
+    " Documentation and support services requirements evaluation workshop",
+    "Declaration of accessibility of a mobile application"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://hilera.web.uah.es/cursodeverano/"
+}
