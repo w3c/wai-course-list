@@ -35,14 +35,13 @@
   "length": "4h",
   "level": "level_basic",
   "platforms": "",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Eleven Ways",
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2022-11-24",
-  "submission_date": "2022-11-24T17:27:57.629Z",
+  "_original_submission_date": "2022-11-24T17:27:57.629Z",
+  "submission_date": "2023-04-06T17:27:57.629Z",
   "submission_ref": "565006d0-6c1d-11ed-bf28-15f1ae20ede6",
   "submitter_email": "regine.lambrecht@elevenways.be",
   "submitter_name": "Régine Lambrecht",
@@ -71,5 +70,5 @@
     "foundation_modules4",
     "foundation_modules5"
   ],
-  "website": "https://elevenways.be"
+  "website": "https://www.elevenways.be/en/services/trainings"
 }
