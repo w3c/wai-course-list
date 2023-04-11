@@ -25,7 +25,7 @@
   "country": [
     "ca"
   ],
-  "description": "This free, text-based online course covers a wide range of\r\nrecommendations for making web content more accessible for\r\npeople with disabilities. These recommendations also benefit all\r\nusers. This includes how to implement accessible page structure,\r\nlinks, tables, images, forms, visual & responsive design, multimedia,\r\ndevice inputs and ARIA live.",
+  "description": "This free, text-based online course covers a wide range of recommendations for making web content more accessible for people with disabilities. These recommendations also benefit all users. This includes how to implement accessible page structure, links, tables, images, forms, visual & responsive design, multimedia, device inputs and ARIA live.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -63,8 +63,7 @@
     "Module 8 - Zoom and responsive design",
     "Module 9 - Audio, Video, animation and motion",
     "Module 10 - Input modalities",
-    "Module 11 - ARIA live and time limits",
-    ""
+    "Module 11 - ARIA live and time limits"
   ],
   "type_registration": [
     "type_registration_individual",
