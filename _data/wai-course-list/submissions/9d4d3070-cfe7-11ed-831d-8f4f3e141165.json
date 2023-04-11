@@ -48,16 +48,17 @@
   "submitter_name": "George Joeckel",
   "title": "Accessible Documents: Word, PowerPoint, & Acrobat",
   "topics": [
-    "Module 1 | Document Content: Review basic principles and processes for optimizing the accessibility of document content in Microsoft Word and PowerPoint.",
-    "Module 2 | Document Structure: Review basic principles and processes for optimizing the accessibility of document structure in Microsoft Word and PowerPoint.",
-    "Module 3 | Evaluating Accessibility & Creating PDFs: Review processes for utilizing built-in accessibility checkers and an evaluation checklist, installing Adobe PDF Maker, and exporting PDF documents.",
-    "Module 4 | Optimizing PDFs in Acrobat: Review how to configure Adobe Acrobat Professional, and how to use it to optimize a PDF exported from a well-structured Microsoft Word or PowerPoint document.",
-    "Module 5 | Accessible Excel (bonus module): Review basic principles and processes for optimizing document structure, and for utilizing a built-in accessibility checker, in Excel documents."
+    "Module 1: Document Content: Review basic principles and processes for optimizing the accessibility of document content in Microsoft Word and PowerPoint.",
+    "Module 2: Document Structure: Review basic principles and processes for optimizing the accessibility of document structure in Microsoft Word and PowerPoint.",
+    "Module 3: Evaluating Accessibility & Creating PDFs: Review processes for utilizing built-in accessibility checkers and an evaluation checklist, installing Adobe PDF Maker, and exporting PDF documents.",
+    "Module 4: Optimizing PDFs in Acrobat: Review how to configure Adobe Acrobat Professional, and how to use it to optimize a PDF exported from a well-structured Microsoft Word or PowerPoint document.",
+    "Module 5: Accessible Excel (bonus module): Review basic principles and processes for optimizing document structure, and for utilizing a built-in accessibility checker, in Excel documents."
   ],
   "type_registration": [
     "type_registration_individual"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
+  "wai_curricula": "",
   "website": "https://webaim.org/training/docs/"
 }
