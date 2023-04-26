@@ -29,7 +29,6 @@
     "en"
   ],
   "learning": [
-    "learning_scheduled",
     "learning_unscheduled"
   ],
   "length": "8 to 10 hours",
@@ -42,12 +41,14 @@
   "repository": "wai-course-list",
   "reviews": "https://webaim.org/training/docs/quotes",
   "start_date": "2018-07-02",
-  "submission_date": "2023-03-31T17:15:20.183Z",
+  "original_submission_date": "2023-03-31T17:15:20.183Z",
+  "submission_date": "2023-04-26T17:15:20.183Z",
   "submission_ref": "9d4d3070-cfe7-11ed-831d-8f4f3e141165",
   "submitter_email": "george.joeckel@usu.edu",
   "submitter_name": "George Joeckel",
   "title": "Accessible Documents: Word, PowerPoint, & Acrobat",
   "topics": [
+    "A new module will open each week",
     "Module 1: Document Content: Review basic principles and processes for optimizing the accessibility of document content in Microsoft Word and PowerPoint",
     "Module 2: Document Structure: Review basic principles and processes for optimizing the accessibility of document structure in Microsoft Word and PowerPoint",
     "Module 3: Evaluating Accessibility & Creating PDFs: Review processes for utilizing built-in accessibility checkers and an evaluation checklist, installing Adobe PDF Maker, and exporting PDF documents",
