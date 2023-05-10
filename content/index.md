@@ -128,10 +128,10 @@ footer: >
                 <a href="#">show/hide all</a>
             </fieldset>
 <fieldset id="duration" class="field">
-  <legend class="label_input">Duration</legend>
+  <legend class="label_input">Length</legend>
 
   <div>
-    <label for="duration-minimum" class="label_input">Duration range:</label>
+    <label for="duration-minimum" class="label_input">Length range:</label>
     <input type="number" id="duration-minimum" name="duration-minimum" placeholder="Minimum duration" required="">
     <select id="duration-minimum-unit" name="duration-minimum-unit" required="">
       <option value="">Select a unit</option>
