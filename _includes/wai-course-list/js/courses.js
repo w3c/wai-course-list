@@ -77,7 +77,7 @@ if (filterForm) {
                 var currentFilterID = filterTypeFS.id;
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
 
-                criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
+                //criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;

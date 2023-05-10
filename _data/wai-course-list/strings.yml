@@ -36,9 +36,9 @@ select_language_info_single_result: different language
 select_language_info_multiple_results: different languages
 select_country_info_single_result: different country
 select_country_info_multiple_results: different countries
-list_start_date_exp_label: Enter the date from which the course should start
-list_end_date_exp_label: Enter the date until which the course should start
-list_start_date_label: From
+filter_availability_from: Show only courses available from
+filter_availability_now: Show only available courses now
+
 
 disclaimer_title: Disclaimer
 disclaimer_text:

@@ -660,7 +660,7 @@ svg.icon-ex-circle {
     border-bottom: 1px solid var(--line-grey);
 }
 
-.name{
+.name {
     margin-bottom: 10px;
     margin-top: 10px;
 }
@@ -669,8 +669,38 @@ svg.icon-ex-circle {
     float: right;
 }
 
-input[type="number"] {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+.filter-section {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-section-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .filter-group:first-child {
+    flex-wrap: nowrap;
+  }
+  
+  .filter-group:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .filter-label {
+    margin-left: 0.5rem;
+  }
+  
+  .filter-checkbox {
+    margin-right: 0.5rem;
+  }
   
