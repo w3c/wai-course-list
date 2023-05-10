@@ -668,3 +668,9 @@ svg.icon-ex-circle {
 .name.collapsible svg {
     float: right;
 }
+
+input[type="number"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+  

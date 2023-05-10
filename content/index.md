@@ -125,6 +125,59 @@ footer: >
                     </div>
                 </div>
                 {% endfor %}
+                <a href="#">show/hide all</a>
+            </fieldset>
+<fieldset id="duration" class="field">
+  <legend class="label_input">Duration</legend>
+
+  <div>
+    <label for="duration-minimum" class="label_input">Duration range:</label>
+    <input type="number" id="duration-minimum" name="duration-minimum" placeholder="Minimum duration" required="">
+    <select id="duration-minimum-unit" name="duration-minimum-unit" required="">
+      <option value="">Select a unit</option>
+      <option value="minutes">Minutes</option>
+      <option value="hours">Hours</option>
+      <option value="days">Days</option>
+    </select>
+    <span>to</span>
+    <input type="number" id="duration-maximum" name="duration-maximum" placeholder="Maximum duration" required="">
+    <select id="duration-maximum-unit" name="duration-maximum-unit" required="">
+      <option value="">Select a unit</option>
+      <option value="minutes">Minutes</option>
+      <option value="hours">Hours</option>
+      <option value="days">Days</option>
+    </select>
+  </div>
+
+</fieldset>
+
+           
+            <fieldset id="availability" class="field">
+                <legend class="label_input">{{strings.availability}}</legend>
+                <label for="start_date" class="label_input">{{strings.list_start_date_label}}</label>
+                <p class="expl" id="expl_start_date">{{strings.list_start_date_exp_label}}</p>
+                <input type="date" id="start_date" name="start_date" aria-describedby="expl_start_date" required>
+                <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
+                <p class="expl" id="expl_end_date">{{strings.list_end_date_exp_label}}</p>
+                <input type="date" id="end_date" name="end_date" aria-describedby="expl_end_date">
+            </fieldset>
+            <fieldset id="availability" class="field">
+                <legend class="label_input">Start date</legend>
+                <label for="start_date" class="label_input">{{strings.list_start_date_label}}</label>
+                <p class="expl" id="expl_start_date">{{strings.list_start_date_exp_label}}</p>
+                <input type="date" id="start_date" name="start_date" aria-describedby="expl_start_date" required>
+                <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
+                <p class="expl" id="expl_end_date">{{strings.list_end_date_exp_label}}</p>
+                <input type="date" id="end_date" name="end_date" aria-describedby="expl_end_date">
+            </fieldset>
+            <fieldset id="availability" class="field">
+                <legend class="label_input">End date</legend>
+                <label for="start_date" class="label_input">{{strings.list_start_date_label}}</label>
+                <p class="expl" id="expl_start_date">Enter the date from which the course should end</p>
+                <input type="date" id="start_date" name="start_date" aria-describedby="expl_start_date" required>
+                <label for="end_date" class="label_input">{{strings.end_date_label}}</label>
+                <p class="expl" id="expl_end_date">Enter the date until which the course should end</p>
+                <input type="date" id="end_date" name="end_date" aria-describedby="expl_end_date">
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
