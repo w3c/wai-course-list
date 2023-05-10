@@ -76,7 +76,7 @@ footer: >
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset>
-                <legend id="language_label">Language</legend>
+                <legend id="language_label">{{ strings.languagen_label }}</legend>
                 <div class="filter-options field">
                     <select name="language" id="language" aria-labelledby="language_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -92,7 +92,7 @@ footer: >
             </fieldset>
             {% include wai-course-list/sort-countries.liquid data=countriesAvailable %}
             <fieldset>
-                <legend id="country_label">Country</legend>
+                <legend id="country_label">{{ strings.countryn_label }}</legend>
                 <div class="filter-options field">
                     <select name="country" id="country" aria-labelledby="country_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -103,6 +103,28 @@ footer: >
                 </div>
                 <p class="expl" tabindex=0>
                 <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span>                </p>
+            </fieldset>
+            {% assign wai_curricula = site.data.wai-course-list.wai-curricula %}
+            <fieldset id="curricula">
+                <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} curricula" aria-expanded="false" aria-controls="info_about_curricula" data-target="#info_about_curricula" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+                {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
+                <div class="helperinfo" id="info_about_curricula" hidden="hidden">
+                    {{ helper[0].description }}
+                </div>
+                <legend tabindex="0">{{strings.curricula_label}}</legend>  
+                {% for curricula in wai_curricula %}
+                <div class="module" collapsed="true">
+                    <div class="name collapsible" >{{ curricula.name }}</div>
+                    <div class="options collapsible">
+                        {% for module in curricula.modules %}
+                        <div class="filter-options field">
+                            <input type="checkbox" id="curricula-filter-{{ curricula.first }}" name="curricula">
+                            <label for="curricula-filter-{{ curricula.first }}"><span class='filterName'>{{ module.name }}</span><span sclass="filterPreCounter"></span></label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
             </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
@@ -124,7 +146,8 @@ footer: >
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>            </div>
+            </div>            
+        </div>
         {% capture totalSubmissions %}
         {{ site.data.wai-course-list.submissions | size }}
         {% endcapture %}
@@ -163,4 +186,5 @@ footer: >
 </div>
 <script>
 {% include wai-course-list/js/courses.js %}
+{% include wai-course-list/js/utilities.js %}
 </script>

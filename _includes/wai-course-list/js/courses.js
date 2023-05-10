@@ -81,7 +81,7 @@ if (filterForm) {
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
-                filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
+                //filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
             })
 
