@@ -3,7 +3,7 @@
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
 {% include box.html type="start" title=course_title id=course.submission_ref  h="3"%}
-{{ course.description }}
+{{ course.submission_date | date: "%-d %B %Y" }}
 {% include excol.html type="start" id=course_details_id %}
 {{ strings.details }}
 {% include excol.html type="middle"%}
