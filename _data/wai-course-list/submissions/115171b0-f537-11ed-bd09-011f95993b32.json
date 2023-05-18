@@ -1,0 +1,79 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-12-05",
+  "cost": "on",
+  "country": [
+    "in"
+  ],
+  "description": "Our 4 months UI UX Design Course in Mumbai, Pune & Bangalore offers live interactive classes. Get in touch for UI UX design course fee, batch timings and placements.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": " 6 months,",
+  "level": "level_basic",
+  "platforms": "Course",
+  "prerequisites": [
+    "UI UX Design Course"
+  ],
+  "provider": "EDIT",
+  "repository": "wai-course-list",
+  "reviews": "https://edit.co.in/ui-ux-design-course-in-bangalore.html",
+  "start_date": "2023-12-05",
+  "submission_date": "2023-05-18T04:47:18.091Z",
+  "submission_ref": "115171b0-f537-11ed-bd09-011f95993b32",
+  "submitter_email": "shamika.avega@gmail.com",
+  "submitter_name": "Edit Institute",
+  "title": "UI UX Design Course in Mumbai | Pune | Bangalore",
+  "topics": [
+    "UI UX Design Course"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules3",
+    "foundation_modules4",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules7",
+    "content_author_modules6"
+  ],
+  "website": "https://edit.co.in/"
+}
