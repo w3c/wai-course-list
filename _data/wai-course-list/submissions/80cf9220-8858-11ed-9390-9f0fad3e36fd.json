@@ -58,7 +58,9 @@
   "submission_ref": "80cf9220-8858-11ed-9390-9f0fad3e36fd",
   "submitter_email": "gzimmermann@hdm-stuttgart.de",
   "submitter_name": "Gottfried Zimmermann",
-  "title": "<span lang=\"de\">Einführung in Web-Barrierefreiheit</span> (Web Accessibility)",
+  "english_title": "Web Accessibility",
+  "original_lang_title": "de",
+  "title": "Einführung in Web-Barrierefreiheit",
   "topics": [
     "Introduction to web accessibility standards",
     "BIK BITV Selbstbewertung",

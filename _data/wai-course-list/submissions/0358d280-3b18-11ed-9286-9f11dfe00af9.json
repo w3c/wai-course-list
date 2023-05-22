@@ -46,7 +46,9 @@
   "submission_ref": "0358d280-3b18-11ed-9286-9f11dfe00af9",
   "submitter_email": "jacopo@labway.it",
   "submitter_name": "Jacopo Deyla",
-  "title": "<span lang=\"it\">UX/UI designer e grafici</span> (Accessible design)",
+  "english_title": "Accessible design",
+  "original_lang_title": "it",
+  "title": "UX/UI designer e grafici",
   "topics": [
     "Inclusive design", 
     "WCAG 2.x",

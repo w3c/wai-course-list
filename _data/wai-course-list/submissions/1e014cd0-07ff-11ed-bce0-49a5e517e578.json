@@ -50,7 +50,9 @@
   "submission_ref": "1e014cd0-07ff-11ed-bce0-49a5e517e578",
   "submitter_email": "bianca.pilz@incite.at",
   "submitter_name": "Bianca Pilz",
-  "title": "<span lang='de'>Lehrgang WebAccessibility - Barrierefreies Webdesign</span> (Web Accessibility - Accessible Web design)",
+  "english_title": "Web Accessibility - Accessible Web design",
+  "original_lang_title": "de",
+  "title": "Lehrgang WebAccessibility - Barrierefreies Webdesign",
   "topics": [
     "Accessible Web Design - Why and what for?",
     "Guidelines: Accessibility standardized and implementable",
