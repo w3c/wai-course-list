@@ -671,36 +671,31 @@ svg.icon-ex-circle {
 
 .filter-section {
     margin-bottom: 1rem;
-  }
-  
-  .filter-section-title {
+}
+
+.filter-section-title {
     font-weight: bold;
     margin-bottom: 0.5rem;
-  }
-  
-  .filter-group {
+}
+
+.filter-group {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
     margin-bottom: 0.5rem;
-  }
-  
-  .filter-group:first-child {
+}
+
+.filter-group:first-child {
     flex-wrap: nowrap;
-  }
-  
-  .filter-group:last-child {
-    display: flex;
+}
+
+.filter-group:last-child {
+    display: inline;
     flex-wrap: wrap;
     align-items: center;
-  }
-  
-  .filter-label {
+}
+
+.filter-label {
     margin-left: 0.5rem;
-  }
-  
-  .filter-checkbox {
-    margin-right: 0.5rem;
-  }
-  
+}
