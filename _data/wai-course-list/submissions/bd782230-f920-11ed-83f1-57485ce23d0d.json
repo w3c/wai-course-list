@@ -1,0 +1,75 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers",
+  "audience": [
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "There is no W3C curriculum material for this type of training.",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course shows how to use mobile screen readers to test websites and applications in a mobile environment and make recommendations for improving accessibility. You will find out what is expected for an accessible screen reader navigation (gesture, speech output) in a mobile environment.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "One day (7 hours)",
+  "level": "level_intermediate",
+  "platforms": "NA",
+  "prerequisites": [
+    "Knowledge about general principles of accessibility guidelines and RGAA (French accessibility framework). "
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/lecteurs-decran-mobile",
+  "start_date": "2023-05-17",
+  "submission_date": "2023-05-23T04:17:33.139Z",
+  "submission_ref": "bd782230-f920-11ed-83f1-57485ce23d0d",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "title": "Tester l’accessibilité avec les lecteurs d’écran mobiles : VoiceOver et TalkBack (Testing mobile accessibility with screen readers: VoiceOver and TalkBack)",
+  "topics": [
+    "Mobile screen readers VoiceOver and TalkBack"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://a42.fr/lecteurs-decran-mobile"
+}
