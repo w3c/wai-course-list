@@ -38,6 +38,8 @@ select_country_info_single_result: different country
 select_country_info_multiple_results: different countries
 filter_availability_from: Show only courses available from
 filter_availability_now: Show only available courses now
+filter_show_all: Show all
+filter_hide_all: Hide all
 
 
 disclaimer_title: Disclaimer

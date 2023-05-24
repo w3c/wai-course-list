@@ -76,12 +76,20 @@ if (filterForm) {
 
                 var currentFilterID = filterTypeFS.id;
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
-
-                //criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
+              
+                
+                criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
-                //filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
+
+                if(filterTypeFS.id == "wai_curricula"){
+                    console.log(filterTypeFS)
+                    console.log(counterCurrentFilter)
+                    console.log(filter.id)
+                }
+                
+                filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
             })
 
@@ -112,7 +120,7 @@ if (filterForm) {
 
             att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
                 if (filter.checked) {
-                    //attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
+                    attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
                     attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
                 }
             })

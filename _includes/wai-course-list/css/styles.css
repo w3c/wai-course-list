@@ -699,3 +699,11 @@ svg.icon-ex-circle {
 .filter-label {
     margin-left: 0.5rem;
 }
+
+.toggle_all{
+    background-color: var(--pure-white);
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 2px 4px;
+    color: var(--wai-green);
+}

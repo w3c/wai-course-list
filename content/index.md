@@ -105,39 +105,29 @@ footer: >
                 <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span>                </p>
             </fieldset>
             {% assign wai_curricula = site.data.wai-course-list.wai-curricula %}
-            <fieldset id="curricula">
-                <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} curricula" aria-expanded="false" aria-controls="info_about_curricula" data-target="#info_about_curricula" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+            <fieldset id="wai_curricula">
+                <legend tabindex="0">{{strings.curricula_label}}</legend>                 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} curricula" aria-expanded="false" aria-controls="info_about_curricula" data-target="#info_about_curricula" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
                 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
                 <div class="helperinfo" id="info_about_curricula" hidden="hidden">
                     {{ helper[0].description }}
-                </div>
-                <legend tabindex="0">{{strings.curricula_label}}</legend>  
+                </div>   
                 {% for curricula in wai_curricula %}
                 <div class="module" collapsed="true">
                     <div class="name collapsible"  tabindex="0">{{ curricula.name }}</div>
                     <div class="options collapsible">
                         {% for module in curricula.modules %}
                         <div class="filter-options field">
-                            <input type="checkbox" id="curricula-filter-{{ curricula.first }}" name="curricula">
-                            <label for="curricula-filter-{{ curricula.first }}"><span class='filterName'>{{ module.name }}</span><span sclass="filterPreCounter"></span></label>
+                            <input type="checkbox" id="{{ module.id }}" name="{{ module.id }}">
+                            <label for="{{ module.id }}"><span class='filterName'>{{ module.name }}</span> <span class="filterPreCounter"></span></label>
                         </div>
                         {% endfor %}
                     </div>
                 </div>
                 {% endfor %}
-                <a href="#">show/hide all</a>
+                <div>
+                    <button type="button" class="toggle_all expand" >{{ strings.filter_show_all }}</button>
+                </div>
             </fieldset>         
-            <fieldset id="availability" class="filter-section">
-            <legend class="filter-section-title">{{strings.availability}}</legend>
-            <div class="filter-group">
-                <label for="available_from">{{strings.filter_availability_from}}</label>
-                <input type="date" id="available_from" name="available_from" aria-describedby="expl_available_from" class="filter-field">
-            </div>
-            <div class="filter-group">
-                <input type="checkbox" id="available_now" name="available_now" aria-describedby="expl_available_now" class="filter-checkbox">
-                <label for="available_now" class="filter-label filter-availability-label">{{strings.filter_availability_now}}</label>
-            </div>
-            </fieldset>
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
     </div>
