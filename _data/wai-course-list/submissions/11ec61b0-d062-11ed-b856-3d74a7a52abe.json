@@ -38,7 +38,7 @@
   "prerequisites": [
     "For practical workshops of the course, it is recommended to have a mobile phone (Android or Apple) with Internet access."
   ],
-  "provider": "Universidad de Alcalá",
+  "provider": "<span lang='es'>Universidad de Alcalá</span>",
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2023-05-29",
@@ -46,7 +46,9 @@
   "submission_ref": "11ec61b0-d062-11ed-b856-3d74a7a52abe",
   "submitter_email": "jose.hilera@uah.es",
   "submitter_name": "José R. Hilera",
-  "title": "<span lang='es'>Revisión de la accesibilidad de aplicaciones móviles</span> (Accessibility evaluation of mobile applications)",
+  "english_title": "Accessibility evaluation of mobile applications",
+  "original_lang_title": "es",
+  "title": "Revisión de la accesibilidad de aplicaciones móviles",
   "topics": [
     "Introduction to mobile application accessibility",
     "Workshop on support technologies for the use of mobile applications",

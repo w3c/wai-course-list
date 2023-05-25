@@ -1,4 +1,9 @@
-{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_title %}
+<a href="{{ course.website }}">
+{% if course.english_title %}
+<span lang="{{course.original_lang_title}}">{{ course.title }}</span> ({{ course.english_title }}){% else %}{{ course.title }}{% endif %}</a>
+by {{ course.provider }}
+{% endcapture %}
 {% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 

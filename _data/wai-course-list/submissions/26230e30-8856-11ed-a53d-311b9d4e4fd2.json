@@ -50,7 +50,7 @@
     "BigBlueButton"
   ],
   "prerequisites": "",
-  "provider": "Hochschule der Medien, Weiterbildungszentrum",
+  "provider": "<span lang=\"de\">Hochschule der Medien, Weiterbildungszentrum</span>",
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2023-03-10",
@@ -58,7 +58,9 @@
   "submission_ref": "26230e30-8856-11ed-a53d-311b9d4e4fd2",
   "submitter_email": "gzimmermann@hdm-stuttgart.de",
   "submitter_name": "Gottfried Zimmermann",
-  "title": "Accessibility Core Competencies (Grundlagen der digitalen Barrierefreiheit)",
+  "english_title": "Accessibility Core Competencies",
+  "original_lang_title": "de",  
+  "title": "Grundlagen der digitalen Barrierefreiheit",
   "topics": [
     "Introduction",
     "Variety of user needs and Assistive Technologies (student presentations)",
