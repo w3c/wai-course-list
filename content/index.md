@@ -146,12 +146,11 @@ footer: >
         </div>
         {% include excol.html type="all" %}
         <div class="courses-list">
-            {% for course in itemsSorted %}
-                {% include wai-course-list/course.liquid %}
-            {% endfor %}                   </div>
-        <!--                {% for course in itemsSorted %}
-            {% include wai-course-list/course.liquid %}
-        {% endfor %}    -->    </div>
+        {% assign reversedItems = itemsSorted | reverse %}
+        {% for course in reversedItems %}
+            {% include wai-course-list/course.liquid %} 
+        {% endfor %}       
+        </div>
    </div>
 <div class="button-submit-end">
     {% include_cached button.html type="link" label=strings.button_to_form_label class="more" href="../submission" %}
