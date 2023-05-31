@@ -1,0 +1,92 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+  "audience": [
+    "audience_developer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "On-site teaching sessions can be scheduled upon request.",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course provides essential tools and resources to develop and design accessible mobile applications. It gives tools, some development techniques and essential resources to produce accessible applications that conform to RAAM (mobile accessibility framework).",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 days (14 hours)",
+  "level": "level_intermediate",
+  "platforms": [
+    "Microsoft Teams",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "Experience in contributing to the functional design of mobile application",
+    "Knowledge of the basic use of a smartphone"
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/dev-mobile",
+  "start_date": "2023-05-17",
+  "submission_date": "2023-05-31T15:03:16.721Z",
+  "submission_ref": "45bf9610-ffc4-11ed-806a-fb64f06c9df9",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "title": "EN 301 549 et RAAM : auditer l’accessibilité numérique des applications mobiles (EN 301 549 and RAAM: digital accessibility testing for mobile applications)",
+  "topics": [
+    "Web accessibility principles",
+    "Legislation on accessibility of mobile applications, standard EN 310 549",
+    "RAAM, the Luxembourg reference guide on accessibility of mobile applications ",
+    "People with disabilities, user needs and mobile assistive technologies",
+    "Essential resources on accessible mobile development",
+    "Accessibility features on mobile devices",
+    "Help and accessibility functions",
+    "Authoring tools",
+    "Help services",
+    "Real-time communication"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://a42.fr/dev-mobile"
+}
