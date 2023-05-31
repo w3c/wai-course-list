@@ -1,0 +1,96 @@
+{"submitter_name": "Access42",
+    "submitter_email": "formations@access42.net",
+    "title": "RGAA : auditer l’accessibilité numérique des sites web (RGAA: digital accessibility testing for websites)",
+    "provider": "Access42",
+    "country": [
+      "fr"
+    ],
+    "description": "This training course provides initial skills and knowledge to review the compliance of a website with the RGAA (French accessibility framework): find accessibility issues, write proposals for corrections, prioritize issues and manage exemptions.\\r\\nYou will be provided with tools and methodological elements to help you identify accessibility errors",
+    "type_resource": "type_certification",
+    "type_resource_new": "",
+    "type_registration": [
+      "type_registration_individual",
+      "type_registration_organization"
+    ],
+    "audience": [
+      "audience_tester"
+    ],
+    "level": "level_intermediate",
+    "prerequisites": [
+      "Good knowledge of HTML and CSS",
+      "Basic knowledge of JavaScript in order to read and understand the JS code",
+      "Knowledge of usual developing tools: browsers and native browser developing tools (code inspector)"
+    ],
+    "topics": [
+      "Web accessibility principles",
+      "Web standards (WCAG, RGAA) and legislations",
+      "People with disabilities, user needs and assistive technologies",
+      "RGAA (French accessibility framework): criteria and tests, methodology, tools and resources for testing",
+      "Accessible tree, accessible name and description",
+      "ARIA",
+      "Detailed review of a web page: sampling, auditing, delivering audit results"
+    ],
+    "wai_curricula": [
+      "foundation_modules1",
+      "foundation_modules2",
+      "foundation_modules3",
+      "foundation_modules4",
+      "foundation_modules5",
+      "developer_modules1",
+      "developer_modules2",
+      "developer_modules3",
+      "developer_modules4",
+      "developer_modules5",
+      "developer_modules6",
+      "developer_modules7",
+      "designer_modules1",
+      "designer_modules2",
+      "designer_modules3",
+      "designer_modules4",
+      "designer_modules5",
+      "designer_modules6",
+      "designer_modules7",
+      "content_author_modules1",
+      "content_author_modules2",
+      "content_author_modules3",
+      "content_author_modules4",
+      "content_author_modules5",
+      "content_author_modules6"
+    ],
+    "language": [
+      "fr"
+    ],
+    "format": "format_online",
+    "learning": [
+      "learning_scheduled"
+    ],
+    "platforms": "Microsoft Teams",
+    "accessibility_support": [
+      "general-accessibility-material-ahead-of-time",
+      "general-accessibility-pre-check-available",
+      "digital-accessibility-caption-audio",
+      "digital-accessibility-text-and-visuals-can-be-resized",
+      "digital-accessibility-sufficient-contrast",
+      "digital-accessibility-motions-or-animations",
+      "digital-accessibility-description-of-visual-information",
+      "digital-accessibility-all-content-meets-wcag",
+      "non-digital-accessibility-accessible-facility",
+      "non-digital-accessibility-assistive-listening-devices",
+      "non-digital-accessibility-text-and-visuals-big-enough",
+      "non-digital-accessibility-sufficient-contrast",
+      "non-digital-accessibility-description-of-visual-information"
+    ],
+    "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+    "length": "35 hours (5 days) of training. After the training, please plan enough time to prepare the certification exam. The final certification exam lasts 1 day.",
+    "cost": "cost_paid",
+    "website": "https://a42.fr/audit",
+    "reviews": "https://a42.fr/audit",
+    "content_update": "2023-05-17",
+    "start_date": "2023-05-17",
+    "end_date": "",
+    "comments": "On-site teaching sessions can be scheduled upon request.\\r\\n\\r\\nThis training program includes the certification “Testing web accessibility with RGAA”.\\r\\nParticipants will take the certification exam online at a date defined by Access42. The exam is divided in two parts: an evaluation of a website and an oral review of the results in front of a jury of accessibility professionals. Details about the certification can be found online: https://a42.fr/certif-audit",
+    "check_correct_info": "on",
+    "check_publish_info": "on",
+    "submission_ref": "3d230470-ffd7-11ed-91f3-af9c47425e87",
+    "submission_date": "2023-05-31T17:19:02.711Z"
+  }
