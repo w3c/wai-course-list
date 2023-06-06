@@ -44,7 +44,7 @@
   "level": "level_intermediate",
   "platforms": "NA",
   "prerequisites": [
-    "Knowledge about general principles of accessibility guidelines and RGAA (French accessibility framework). "
+    "Knowledge about general principles of accessibility guidelines and RGAA (French accessibility framework)."
   ],
   "provider": "Access42",
   "repository": "wai-course-list",
@@ -54,7 +54,9 @@
   "submission_ref": "bd782230-f920-11ed-83f1-57485ce23d0d",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Tester l’accessibilité avec les lecteurs d’écran mobiles : VoiceOver et TalkBack (Testing mobile accessibility with screen readers: VoiceOver and TalkBack)",
+  "english_title": "Testing mobile accessibility with screen readers: VoiceOver and TalkBack",
+  "original_lang_title": "fr", 
+  "title": "Tester l'accessibilité avec les lecteurs d'écran mobiles : VoiceOver et TalkBack",
   "topics": [
     "Mobile screen readers VoiceOver and TalkBack"
   ],
