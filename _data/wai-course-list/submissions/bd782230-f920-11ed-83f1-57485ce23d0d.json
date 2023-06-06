@@ -58,7 +58,10 @@
   "original_lang_title": "fr", 
   "title": "Tester l'accessibilité avec les lecteurs d'écran mobiles : VoiceOver et TalkBack",
   "topics": [
-    "Mobile screen readers VoiceOver and TalkBack"
+    "Mobile screen readers VoiceOver and TalkBack",
+    "Screen readers main functions, behaviours and the main shortcuts",
+    "Browsing mobile web pages and applications with the screen reader",
+    "Testing complex components such as modal, disclosure, slider, progressbar… and learning how they are rendered by VoiceOver and TalkBack."
   ],
   "type_registration": [
     "type_registration_individual",
