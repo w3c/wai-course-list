@@ -40,14 +40,14 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "1 day (7 hours), may be 2 days (14 hours), if the training is organized within one company. ",
+  "length": "1 day (7 hours), may be 2 days (14 hours), if the training is organized within one company.",
   "level": "level_intermediate",
   "platforms": [
     "Zoom",
     "Microsoft Teams"
   ],
   "prerequisites": [
-    "    Knowledge of a document editing tool such as Microsoft Office, Libre Office."
+    "Knowledge of a document editing tool such as Microsoft Office, Libre Office."
   ],
   "provider": "Access42",
   "repository": "wai-course-list",
@@ -57,7 +57,9 @@
   "submission_ref": "11fef4d0-f91e-11ed-82d9-1d8727814408",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Concevoir du contenu éditorial accessible avec les outils bureautiques (Authoring accessible content with office editing tools)",
+  "english_title": "Authoring accessible content with office editing tools",
+  "original_lang_title": "fr",
+  "title": "Concevoir du contenu éditorial accessible avec les outils bureautiques",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
@@ -84,5 +86,5 @@
     "content_author_modules5",
     "content_author_modules6"
   ],
-  "website": "https://a42.fr/contrib-bureautique "
+  "website": "https://a42.fr/contrib-bureautique"
 }
