@@ -23,13 +23,13 @@
   "check_correct_info": "on",
   "check_publish_info": "on",
   "check_scope_info": "on",
-  "comments": "On-site teaching sessions can be scheduled upon request. \r\n",
+  "comments": "On-site teaching sessions can be scheduled upon request.",
   "content_update": "2023-05-17",
   "cost": "cost_paid",
   "country": [
     "fr"
   ],
-  "description": "This training course provides the keys to create accessible content with an online editor (such as WordPress). It gives essential basics and practical methodologies to produce and publish accessible web content with the needs of people with disabilities in mind. ",
+  "description": "This training course provides the keys to create accessible content with an online editor (such as WordPress). It gives essential basics and practical methodologies to produce and publish accessible web content with the needs of people with disabilities in mind.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -57,7 +57,9 @@
   "submission_ref": "5d158ff0-f91f-11ed-b356-f383b7892764",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Concevoir du contenu éditorial accessible pour le web (Authoring accessible web content)",
+  "english_title": "Authoring accessible web content",
+  "original_lang_title": "fr", 
+  "title": "Concevoir du contenu éditorial accessible pour le web",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
