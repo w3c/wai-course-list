@@ -69,12 +69,6 @@
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
-  "wai_curricula": [
-    "foundation_modules1",
-    "foundation_modules2",
-    "foundation_modules3",
-    "foundation_modules4",
-    "foundation_modules5"
-  ],
+  "wai_curricula": "",
   "website": "https://a42.fr/lecteurs-decran-mobile"
 }
