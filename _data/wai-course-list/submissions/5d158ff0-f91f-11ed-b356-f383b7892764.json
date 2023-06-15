@@ -33,7 +33,7 @@
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
-  "format": "format_online",
+  "format": "format_hybrid",
   "language": [
     "fr"
   ],
@@ -53,7 +53,8 @@
   "repository": "wai-course-list",
   "reviews": "https://a42.fr/contrib-web",
   "start_date": "2023-05-17",
-  "submission_date": "2023-05-23T04:07:41.935Z",
+  "_original_submission_date": "2023-05-23T04:07:41.935Z",
+  "submission_date": "2023-06-15T04:07:41.935Z",
   "submission_ref": "5d158ff0-f91f-11ed-b356-f383b7892764",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
@@ -61,11 +62,9 @@
   "original_lang_title": "fr", 
   "title": "Concevoir du contenu éditorial accessible pour le web",
   "topics": [
-    "Web accessibility principles",
-    "Web standards (WCAG, RGAA) and legislations",
-    "People with disabilities, user needs and assistive technologies",
-    "RGAA (French accessibility framework): criteria and tests, methodology",
-    "Producing and editing content: impacts on web accessibility"
+    "Producing content (texts, images, tables, links, etc.) while considering the specific needs of people with disabilities",
+    "Producing content on social media while considering the specific needs of people with disabilities",
+    "Evaluating and correcting inaccessible web content"
   ],
   "type_registration": [
     "type_registration_individual",
