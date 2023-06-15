@@ -53,7 +53,9 @@
   "submission_ref": "5be18cc0-ffc2-11ed-8375-010177768677",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Développer des sites web accessibles et conformes au RGAA (Developing accessible and RGAA compliant websites)",
+  "english_title": "Developing accessible and RGAA compliant websites",
+  "original_lang_title": "fr",
+  "title": "Développer des sites web accessibles et conformes au RGAA",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
