@@ -54,7 +54,9 @@
   "submission_ref": "f310e200-ffca-11ed-89c6-8337911bb0dd",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Tester l’accessibilité avec les lecteurs d’écran de bureau : NVDA, JAWS, VoiceOver (Testing accessibility with desktop screen readers: NVDA, JAWS, VoiceOver)",
+  "english_title": "Testing accessibility with desktop screen readers: NVDA, JAWS, VoiceOver",
+  "original_lang_title": "fr",
+  "title": "Tester l'accessibilité avec les lecteurs d'écran de bureau : NVDA, JAWS, VoiceOver",
   "topics": [
     "Screen readers JAWS, NVDA and VoiceOver",
     "Screen readers main functions, behaviours and the main shortcuts",
