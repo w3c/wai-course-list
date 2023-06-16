@@ -1,11 +1,13 @@
 {"submitter_name": "Access42",
     "submitter_email": "formations@access42.net",
-    "title": "RGAA : auditer l’accessibilité numérique des sites web (RGAA: digital accessibility testing for websites)",
+    "english_title": "RGAA: digital accessibility testing for websites",
+    "original_lang_title": "fr",
+    "title": "RGAA : auditer l'accessibilité numérique des sites web",
     "provider": "Access42",
     "country": [
       "fr"
     ],
-    "description": "This training course provides initial skills and knowledge to review the compliance of a website with the RGAA (French accessibility framework): find accessibility issues, write proposals for corrections, prioritize issues and manage exemptions.\\r\\nYou will be provided with tools and methodological elements to help you identify accessibility errors",
+    "description": "This training course provides initial skills and knowledge to review the compliance of a website with the RGAA (French accessibility framework): find accessibility issues, write proposals for corrections, prioritize issues and manage exemptions. You will be provided with tools and methodological elements to help you identify accessibility errors",
     "type_resource": "type_certification",
     "type_resource_new": "",
     "type_registration": [
@@ -88,7 +90,7 @@
     "content_update": "2023-05-17",
     "start_date": "2023-05-17",
     "end_date": "",
-    "comments": "On-site teaching sessions can be scheduled upon request.\\r\\n\\r\\nThis training program includes the certification “Testing web accessibility with RGAA”.\\r\\nParticipants will take the certification exam online at a date defined by Access42. The exam is divided in two parts: an evaluation of a website and an oral review of the results in front of a jury of accessibility professionals. Details about the certification can be found online: https://a42.fr/certif-audit",
+    "comments": "On-site teaching sessions can be scheduled upon request. This training program includes the certification “Testing web accessibility with RGAA”. Participants will take the certification exam online at a date defined by Access42. The exam is divided in two parts: an evaluation of a website and an oral review of the results in front of a jury of accessibility professionals. Details about the certification can be found online: https://a42.fr/certif-audit",
     "check_correct_info": "on",
     "check_publish_info": "on",
     "submission_ref": "3d230470-ffd7-11ed-91f3-af9c47425e87",
