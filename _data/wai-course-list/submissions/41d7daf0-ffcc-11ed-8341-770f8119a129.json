@@ -61,7 +61,9 @@
   "submission_ref": "41d7daf0-ffcc-11ed-8341-770f8119a129",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Découvrir l’accessibilité numérique : enjeux humains, juridiques et techniques (Digital accessibility awareness: human, legal and technical issues)",
+  "english_title": "Digital accessibility awareness: human, legal and technical issues",
+  "original_lang_title": "fr",
+  "title": "Découvrir l'accessibilité numérique : enjeux humains, juridiques et techniques",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
