@@ -57,7 +57,9 @@
   "submission_ref": "45bf9610-ffc4-11ed-806a-fb64f06c9df9",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "EN 301 549 et RAAM : auditer l’accessibilité numérique des applications mobiles (EN 301 549 and RAAM: digital accessibility testing for mobile applications)",
+  "english_title": "EN 301 549 and RAAM: digital accessibility testing for mobile applications",
+  "original_lang_title": "fr",
+  "title": "EN 301 549 et RAAM : auditer l'accessibilité numérique des applications mobiles",
   "topics": [
     "Web accessibility principles",
     "Legislation on accessibility of mobile applications, standard EN 310 549",
