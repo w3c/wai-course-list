@@ -58,7 +58,9 @@
   "submission_ref": "78f25450-ffc9-11ed-954f-eb21184914c4",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Design UX et UI accessible : créer des interfaces pour l’accessibilité numérique (Create accessible Interface Designs (UX/UI))",
+  "english_title": "Create accessible Interface Designs (UX/UI)",
+  "original_lang_title": "fr",
+  "title": "Design UX et UI accessible : créer des interfaces pour l'accessibilité numérique",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
