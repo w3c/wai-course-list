@@ -56,7 +56,9 @@
   "submission_ref": "075bb240-ffca-11ed-954f-eb21184914c4",
   "submitter_email": "formations@access42.net",
   "submitter_name": "Access42",
-  "title": "Intégrer l’accessibilité numérique dans la gestion de projet web ou mobile (Include digital accessibility in a web or mobile project)",
+  "english_title": "Include digital accessibility in a web or mobile project",
+  "original_lang_title": "fr",
+  "title": "Intégrer l'accessibilité numérique dans la gestion de projet web ou mobile",
   "topics": [
     "Web accessibility principles",
     "Web standards (WCAG, RGAA) and legislations",
