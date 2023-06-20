@@ -1,0 +1,73 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+  "audience": [
+    "audience_developer",
+    "audience_tester",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "This training is provided only on-site. \r\n\r\nThere is no W3C curriculum material for this type of training.",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course shows how to use the 3 most used desktop screen readers NVDA, JAWS and VoiceOver, to understand how screen reader users browse the web. You will learn how to test rich components (such as tab panels, dialogs, disclosure) with a screen reader to find out if they conform to RGAA (French accessibility framework).",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 day (7 hours).",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    "Knowledge about general principles of accessibility guidelines and the French reference guide RGAA."
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/formation-lecteurs-ecran",
+  "start_date": "2023-05-17",
+  "submission_date": "2023-05-31T15:51:04.481Z",
+  "submission_ref": "f310e200-ffca-11ed-89c6-8337911bb0dd",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "english_title": "Testing accessibility with desktop screen readers: NVDA, JAWS, VoiceOver",
+  "original_lang_title": "fr",
+  "title": "Tester l'accessibilité avec les lecteurs d'écran de bureau : NVDA, JAWS, VoiceOver",
+  "topics": [
+    "Screen readers JAWS, NVDA and VoiceOver",
+    "Screen readers main functions, behaviours and the main shortcuts",
+    "Browsing web pages with the screen readers",
+    "Testing complex components such as modal, disclosure, slider, progressbar, etc. and learning how they are rendered by the 3 screen readers"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://a42.fr/formation-lecteurs-ecran"
+}
