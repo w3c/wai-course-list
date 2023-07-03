@@ -18,7 +18,7 @@
   "audience": [
     "audience_tester"
   ],
-  "level": "level_intermediate",
+  "level": "level_basic",
   "prerequisites": [
     "Good knowledge of HTML and CSS",
     "Basic knowledge of JavaScript in order to read and understand the JS code",
