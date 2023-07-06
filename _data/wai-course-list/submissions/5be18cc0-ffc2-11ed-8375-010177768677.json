@@ -1,0 +1,88 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "On-site teaching sessions can be scheduled upon request.\r\n\r\nThe training sessions are either online or on-site. Additional learning content is provided online on a Moodle platform allowing participants to prepare the certification “Developing accessible websites”. Participants apply for an online exam session defined by Access42. On the exam day, they will be invited to complete all the tests between 9:00 AM and 6:00 PM.\r\nDetails about the certification can be found online: https://a42.fr/certif-dev. This certification is registered in the Specific Reference Framework of France Compétences, the French national authority for regulating and funding vocational training and apprenticeship.",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course provides essential tools and resources to develop accessible websites that comply to the RGAA (French accessibility framework) and WCAG. It mainly relies on practical exercises to help web developers understand accessibility criteria and methodologies they should consider in their work.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "21 hours (3 days) of training. After the training, please plan enough time to prepare the certification exam. The final certification exam lasts 1 day.",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "Good knowledge of HTML and CSS",
+    "Knowledge of JavaScript"
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/formationdev",
+  "start_date": "2023-05-17",
+  "submission_date": "2023-05-31T14:49:34.860Z",
+  "submission_ref": "5be18cc0-ffc2-11ed-8375-010177768677",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "english_title": "Developing accessible and RGAA compliant websites",
+  "original_lang_title": "fr",
+  "title": "Développer des sites web accessibles et conformes au RGAA",
+  "topics": [
+    "Web accessibility principles",
+    "Web standards (WCAG, RGAA) and legislations",
+    "People with disabilities, user needs and assistive technologies",
+    "RGAA (French accessibility framework): criteria and tests, methodology",
+    "Accessible tree, accessible name and description",
+    "ARIA"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://a42.fr/formationdev"
+}
