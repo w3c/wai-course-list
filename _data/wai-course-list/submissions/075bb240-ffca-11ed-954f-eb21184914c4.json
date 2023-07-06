@@ -1,0 +1,84 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+  "audience": [
+    "audience_manager",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "On-site teaching sessions can be scheduled upon request.",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course provides necessary knowledge to ensure that digital accessibility is considered through all steps of a project. This goes from the initial project requirements to the project closing. At the end of the training, participants will be able to manage and follow accessibility processes on their own.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 days (14 hours)",
+  "level": "level_basic",
+  "platforms": [
+    "Microsoft Teams",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "Knowledge of digital project management"
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/cp",
+  "start_date": "2023-05-17",
+  "submission_date": "2023-05-31T15:44:29.028Z",
+  "submission_ref": "075bb240-ffca-11ed-954f-eb21184914c4",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "english_title": "Include digital accessibility in a web or mobile project",
+  "original_lang_title": "fr",
+  "title": "Intégrer l'accessibilité numérique dans la gestion de projet web ou mobile",
+  "topics": [
+    "Web accessibility principles",
+    "Web standards (WCAG, RGAA) and legislations",
+    "People with disabilities, user needs and assistive technologies",
+    "RGAA (French accessibility framework)",
+    "Implementing accessibility in a project: requirements, usual barriers against accessibility implementation",
+    "Key factors to implement accessibility in a project successfully"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://a42.fr/cp"
+}
