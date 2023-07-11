@@ -1,0 +1,87 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-07-10",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "gb"
+  ],
+  "description": "Mobile devices make the digital world a part of everyday life for many people around the world, so it’s important that mobile apps are accessible. The courses range from an introduction to mobile app accessibility, including demonstrations of accessibility features, through design and development strategy, to coding and testing techniques.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "Typically 1 day per platform",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "Android or iOS development experience",
+    "Knowledge of accessibility concepts and terminology beneficial"
+  ],
+  "provider": "As It Should Be",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-07-10",
+  "submission_date": "2023-07-11T14:30:33.596Z",
+  "submission_ref": "7e923bc0-1ff7-11ee-a323-09a3ce073910",
+  "submitter_email": "jon.gibbins@digitalasitshouldbe.com",
+  "submitter_name": "Jon Gibbins",
+  "title": "Mobile app accessibility training",
+  "topics": [
+    "Overview of accessibility features on iOS and Android",
+    "Policy, standards, guidelines and laws",
+    "Visual design, UX and editorial practices",
+    "Best practices for accessible design and development of mobile apps",
+    "Coding techniques for common design patterns",
+    "Native accessibility APIs on iOS and Android",
+    "Testing mobile apps for accessibility"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules7"
+  ],
+  "website": "https://digitalasitshouldbe.com/services/training/mobile-app-accessibility/"
+}
