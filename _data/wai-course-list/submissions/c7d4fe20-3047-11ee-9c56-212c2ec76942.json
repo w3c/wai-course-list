@@ -1,0 +1,93 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-08-01",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "In 3 sessions of 4 hours, discover accessibility and learn what to look out for in terms of web code accessibility. A course full of practical exercises and reusable sample codes.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en",
+    "fr",
+    "nl"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "12h",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    "Basic knowledge of HTML, CSS and JS"
+  ],
+  "provider": "Eleven Ways",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2022-11-24",
+  "submission_date": "2023-08-01T08:45:34.850Z",
+  "submission_ref": "c7d4fe20-3047-11ee-9c56-212c2ec76942",
+  "submitter_email": "regine.lambrecht@elevenways.be",
+  "submitter_name": "Régine Lambrecht",
+  "title": "Advanced Web accessibility Training for Web Developers",
+  "topics": [
+    "Definition",
+    "Assistive technologies and strategies",
+    "Return on investment",
+    "Myths",
+    "Accessibility legislation",
+    "Accessibility standards",
+    "Checklists",
+    "Where to start",
+    "Page structure",
+    "Menus",
+    "Images",
+    "Tables",
+    "Forms",
+    "Custom Widgets",
+    "Rich applications"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://www.elevenways.be/en/services/trainings#advanced-web-accessibility-training-for-web-developers"
+}
