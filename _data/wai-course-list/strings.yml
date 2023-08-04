@@ -212,7 +212,7 @@ submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
 correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
-publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
+publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List and archived on GitHub (Required).
 
 add_new_country_button: Add new country
 remove_last_country_button: Remove last country
