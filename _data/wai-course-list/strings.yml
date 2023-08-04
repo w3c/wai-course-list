@@ -91,7 +91,7 @@ scope_title: Scope – what this course list includes
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
 scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
 scope_details: Course List scope details
-check_scope_info_label: This submission meets the Course List scope above (Required).
+check_scope_info_label: This submission meets the Course List scope above. (Required)
 scope_info_details: >
   Courses that **will** be included on this list are:
 
@@ -211,8 +211,8 @@ end_date_expl: If applicable, indicate the date this resource will no longer be 
 submitting_your_resource: Submitting your course, training, or certification
 comments_label: Comments
 comments_expl: Let us know if you have further comments. This comment will be publicly available but not published on the course list.
-correct_info_label: The information I provided is correct according to the best of my knowledge (Required).
-publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List (Required).
+correct_info_label: The information I provided is correct according to the best of my knowledge. (Required)
+publish_info_label: I give permission for the information about this resource to be published in the W3C's Course List. (Required)
 
 add_new_country_button: Add new country
 remove_last_country_button: Remove last country
