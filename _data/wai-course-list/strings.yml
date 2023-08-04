@@ -36,6 +36,8 @@ select_language_info_single_result: different language
 select_language_info_multiple_results: different languages
 select_country_info_single_result: different country
 select_country_info_multiple_results: different countries
+filter_show_all: Show all
+filter_hide_all: Hide all
 
 disclaimer_title: Disclaimer
 disclaimer_text:

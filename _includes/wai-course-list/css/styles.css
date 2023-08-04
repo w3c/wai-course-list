@@ -637,3 +637,15 @@ svg.icon-ex-circle {
   margin-right: 10px;
 }
 
+.toggle_all {
+    background-color: var(--pure-white);
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 2px 4px;
+    color: var(--wai-green);
+}
+
+.toggle_all_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

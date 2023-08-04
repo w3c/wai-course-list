@@ -33,10 +33,12 @@ by {{ course.provider }}
 
 - **{{ strings.prerequisites }}**: {% if course.prerequisites != "" %}{{ course.prerequisites | join: ", "}}{% else %}{{ strings.not_provided }}{% endif %}
 
-- **{{ strings.topics }}**:
+- **{{ strings.topics }}**: <button type="button" class="toggle_all expand" >{{ strings.filter_show_all }}</button><button type="button" class="toggle_all hide" >{{ strings.filter_hide_all }}</button>
 {% for topic in course.topics %}
   - {{ topic }}
 {% endfor %}
+
+
 
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
 {% include wai-course-list/filtered-wai-curricula.liquid data = course.wai_curricula %}

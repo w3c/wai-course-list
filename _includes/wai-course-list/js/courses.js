@@ -567,3 +567,26 @@ if (submitForm) {
 }
 
 
+
+ function toggleListVisibility(button) {
+    const list = button.parentElement.nextElementSibling;
+    if (list.style.display === 'none' || list.style.display === '') {
+      list.style.display = 'block';
+      button.nextElementSibling.disabled = false;
+      button.disabled = true;
+    } else {
+      list.style.display = 'none';
+      button.previousElementSibling.disabled = false;
+      button.disabled = true;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.box-i > details button.toggle_all');
+    buttons.forEach(button => {
+      toggleListVisibility(button);
+      button.addEventListener('click', function() {
+        toggleListVisibility(button);
+      });
+    });
+  });
