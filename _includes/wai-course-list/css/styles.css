@@ -220,22 +220,6 @@ details summary p{
     color: var(--w3c-blue);
 }
 
-#courses-list dd {
-    margin: 0 0 1em 0;
-}
-
-details dt::after {
-    content: ":";
-}
-
-#courses-list dt {
-    float: left;
-    margin: 0 .5em 0 0;
-}
-
-#courses-list dd ul {
-    margin: 3em 3em 0 0;
-}
 
 .label_input {
     font-size: 1rem;
@@ -461,8 +445,6 @@ button {
 }
 
 
-
-
 #filter-courses-info .div-clear-filters {
     grid-column: 3/3;
     text-align: right;
@@ -634,3 +616,24 @@ svg.icon-ex-circle {
 .result-status-message {
     margin: 20px 0 30px 0;
 }
+
+
+
+.box-i > details > div > ul,
+.box-i > details > div > ul ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.box-i > details > div > ul > li,
+.box-i > details > div > ul ul > li {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.box-i > details > div > ul ul > li {
+  list-style-type: disc; /* Set the desired list style type for nested ul li elements */
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
