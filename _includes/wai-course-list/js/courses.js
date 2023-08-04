@@ -165,7 +165,6 @@ if (filterForm) {
                         return startDate <= currentDate && (!endDate || currentDate <= endDate);
                     }
                     else if (r.optionID == "available_from") {
-                        console.log("entrou filterNewResultsList");
                         const availableFromDate = new Date(r.optionName);
                         const startDate = new Date(x.start_date);
                         const endDate = x.end_date ? new Date(x.end_date) : null;
