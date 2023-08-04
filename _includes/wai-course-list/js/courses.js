@@ -77,17 +77,10 @@ if (filterForm) {
                 var currentFilterID = filterTypeFS.id;
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
               
-                
                 criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
-
-                if(filterTypeFS.id == "wai_curricula"){
-                    console.log(filterTypeFS)
-                    console.log(counterCurrentFilter)
-                    console.log(filter.id)
-                }
                 
                 filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
@@ -118,10 +111,15 @@ if (filterForm) {
             attValues = [];
             filterName = att.querySelectorAll('legend')[0].innerText;
 
-            att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-                if (filter.checked) {
-                    attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
-                    attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
+            att.querySelectorAll('input[type="checkbox"], input[type="date"]').forEach(filter => {
+                if (filter.checked || (filter.type === "date" && filter.value !== "")) {
+                    if (filter.name === 'available_from') {
+                        console.log("getActiveFiltersList")
+                        attValues.push({ optionID: filter.name, optionName: filter.value });
+                    } else {
+                        attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
+                        attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
+                    }
                 }
             })
             if (attValues.length > 0) {
@@ -130,6 +128,7 @@ if (filterForm) {
 
             att.querySelectorAll('select').forEach(filter => {
                 attValues = [];
+                
                 if (filter.value !== "") {
                     var oName = "";
                     
@@ -146,7 +145,6 @@ if (filterForm) {
 
         });
 
-        //console.log(activeFiltersList);
         return activeFiltersList;
     }
 
@@ -158,6 +156,21 @@ if (filterForm) {
             
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
+                    
+                    if (r.optionID == "available_now") {
+                        // Check if the course is available now
+                        const currentDate = new Date();
+                        const startDate = new Date(x.start_date);
+                        const endDate = x.end_date ? new Date(x.end_date) : null;
+                        return startDate <= currentDate && (!endDate || currentDate <= endDate);
+                    }
+                    else if (r.optionID == "available_from") {
+                        console.log("entrou filterNewResultsList");
+                        const availableFromDate = new Date(r.optionName);
+                        const startDate = new Date(x.start_date);
+                        const endDate = x.end_date ? new Date(x.end_date) : null;
+                        return startDate <= availableFromDate && (!endDate || availableFromDate <= endDate);
+                    }
                     if (x[filter.filterId] !== undefined) {
                         if (r.optionID == "type_undergraduate_graduate")
                             return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
@@ -361,21 +374,15 @@ if (filterForm) {
 
             var attValues = document.createElement('dd');
 
-            if (f.filterId == 'language' || f.filterId == 'country'){
+            if (f.filterId === 'language' || f.filterId === 'country') {
                 attValues.innerText = f.filterValues[0].optionName;
+            } else {
+                const options = f.filterValues.map(option => option.optionName).filter(option => option && option.trim() !== ''); // Check if option is defined
+                attValues.innerText = options.join('; ');
             }
-            else{
-                // attValues.innerText = f.filterValues.join(', ');
-                attValues.innerText = "";
-                f.filterValues.forEach((fv, i) => {
-                    attValues.innerText += fv.optionName;
-                    if (i != (f.filterValues.length - 1)) {
-                        attValues.innerText += "; ";
-                      }
-                })
-            }
-                
+
             listFiltersOnString.appendChild(attValues);
+
         });
 
         totalCoursesCounter.innerText = "{{strings.showing}} ";
@@ -394,8 +401,9 @@ if (filterForm) {
         newContent.innerText += " {{strings.courses}}";
         
         var searchTerm = searchForm.value;
+        
 
-
+        
         if (searchTerm.length > 0) {
             var attName = document.createElement('dt');
             attName.innerText = "{{strings.searchterm}}: ";
@@ -406,10 +414,9 @@ if (filterForm) {
             listFiltersOnString.appendChild(attValues);
         }
 
-        var titleResults = document.querySelector('#filter-courses-info h4');
+        //var titleResults = document.querySelector('#filter-courses-info h4');
         var filterCoursesString = document.querySelector('.details-criteria');
         filterCoursesString.innerText = "";
-
 
         if (filtersOn.length > 0 || searchTerm.length > 0) {
             filterCoursesString.appendChild(listFiltersOnString);
@@ -454,9 +461,7 @@ if (filterForm) {
 
     function clearFilters() {
         //rebuildList(jsonCourses, []);
-        filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-        filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-        document.getElementById("search").value = "";
+        filterForm.reset();
         filterJson();
         hideClearButton(true);
     }

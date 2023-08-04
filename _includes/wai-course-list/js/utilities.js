@@ -1,70 +1,116 @@
-document.querySelectorAll('.toggle_all').forEach(toggle_button => {
-  toggle_button.addEventListener('click', e => {
-    const modules = document.querySelectorAll('.module');
-    const isAllClosed = [...modules].every(item => item.getAttribute('collapsed') === 'true');
+const expandButton = document.querySelector('.toggle_all.expand');
+const collapseButton = document.querySelector('.toggle_all.hide');
+const modules = document.querySelectorAll('.module');
 
-    modules.forEach(item => {
-      if (isAllClosed || item.getAttribute('collapsed') !== 'true') {
-        toggleCollapsed(item);
-      }
-    });
+// Enable the "Show All" button and disable the "Hide All" button initially
+expandButton.disabled = false;
+expandButton.classList.remove('toggle_all_disabled');
+collapseButton.disabled = true;
+collapseButton.classList.add('toggle_all_disabled');
 
-    toggle_button.textContent = isAllClosed ? '{{ strings.filter_hide_all }}' : '{{ strings.filter_show_all }}';
-    toggle_button.focus(); // Ensure the button retains focus after the click action
-  });
-
-  toggle_button.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === 'Space') {
-      e.preventDefault();
-      toggle_button.click(); // Trigger the button click on Enter or Space key press
+expandButton.addEventListener('click', () => {
+  modules.forEach(item => {
+    if (item.getAttribute('collapsed') === 'true') {
+      toggleCollapsed(item);
     }
   });
+
+  // Update button states after expanding all elements
+  expandButton.disabled = true;
+  expandButton.classList.add('toggle_all_disabled');
+  collapseButton.disabled = false;
+  collapseButton.classList.remove('toggle_all_disabled');
 });
 
+collapseButton.addEventListener('click', () => {
+  modules.forEach(item => {
+    if (item.getAttribute('collapsed') !== 'true') {
+      toggleCollapsed(item);
+    }
+  });
 
+  // Update button states after collapsing all elements
+  collapseButton.disabled = true;
+  collapseButton.classList.add('toggle_all_disabled');
+  expandButton.disabled = false;
+  expandButton.classList.remove('toggle_all_disabled');
+});
+
+expandButton.addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === 'Space') {
+    e.preventDefault();
+    if (!expandButton.disabled) {
+      expandButton.click();
+    }
+  }
+});
+
+collapseButton.addEventListener('keydown', e => {
+  if (e.key === 'Enter' || e.key === 'Space') {
+    e.preventDefault();
+    if (!collapseButton.disabled) {
+      collapseButton.click();
+    }
+  }
+});
+
+// Rest of your code for making modules collapsible...
 
 function makeCollapsible(item) {
   const label = item.querySelector('.name');
   const options = item.querySelector('.options');
 
   label.classList.add('collapsible');
-  label.addEventListener('click', e => {
-    toggleCollapsed(item);
-  });
-  label.addEventListener('keyup', e => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      label.click();
-    }
-  });
+  label.addEventListener('click', () => toggleCollapsed(item));
+  handleButtonKeyDown(label, () => toggleCollapsed(item));
+
+  const icon = document.createElement('span');
+  icon.classList.add('icon');
+  label.appendChild(icon);
+
+  updateCollapsibleIcon(item);
 
   if (item.getAttribute('collapsed') === 'true') {
-    label.innerHTML += '{% include_cached icon.html name="chevron-down" %}';
     options.classList.add('collapsed');
-  } else {
-    label.innerHTML += '{% include_cached icon.html name="chevron-up" %}';
   }
+}
+
+function updateCollapsibleIcon(item) {
+  const label = item.querySelector('.name');
+  const icon = label.querySelector('.icon');
+
+  icon.innerHTML = '{% include_cached icon.html name="' +
+    (item.getAttribute('collapsed') === 'true' ? 'chevron-down' : 'chevron-up') +
+    '" %}';
 }
 
 function toggleCollapsed(item) {
-  const label = item.querySelector('.name');
   const options = item.querySelector('.options');
 
-  if (options.classList.contains('collapsed')) {
-    label.querySelector('.icon-chevron-down').remove();
-    label.innerHTML += '{% include_cached icon.html name="chevron-up" %}';
-    options.classList.remove('collapsed');
+  options.classList.toggle('collapsed');
+
+  if (item.getAttribute('collapsed') === 'true') {
     item.setAttribute('collapsed', 'false');
   } else {
-    label.querySelector('.icon-chevron-up').remove();
-    label.innerHTML += '{% include_cached icon.html name="chevron-down" %}';
-    options.classList.add('collapsed');
     item.setAttribute('collapsed', 'true');
   }
+
+  updateCollapsibleIcon(item);
 }
 
-document.querySelectorAll('.module').forEach(item => {
-  if (item.getAttribute('collapsed')) {
-    makeCollapsible(item);
-  }
+function handleButtonKeyDown(button, action) {
+  button.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === 'Space') {
+      e.preventDefault();
+      if (!button.disabled) {
+        action();
+      }
+    }
+  });
+}
+
+// Initialize all elements as collapsed at the start
+modules.forEach(item => {
+  item.setAttribute('collapsed', 'true');
+  makeCollapsible(item);
 });

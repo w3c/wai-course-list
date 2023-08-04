@@ -126,8 +126,20 @@ footer: >
                 {% endfor %}
                 <div>
                     <button type="button" class="toggle_all expand" >{{ strings.filter_show_all }}</button>
+                    <button type="button" class="toggle_all hide" >{{ strings.filter_hide_all }}</button>
                 </div>
-            </fieldset>         
+                </fieldset>   
+                <fieldset id="availability" class="filter-section">
+                    <legend class="filter-section-title">{{strings.availability}}</legend>
+                    <div class="filter-group">
+                        <label for="available_from" class="filter-label"><span class='filterName'>{{strings.filter_availability_from}}</span></label>
+                        <input type="date" id="available_from" name="available_from" aria-describedby="expl_available_from" class="filter-field">
+                    </div>
+                    <div class="filter-group">
+                        <input type="checkbox" id="available_now" name="available_now" aria-describedby="expl_available_now" class="filter-checkbox">
+                        <label for="available_now" class="filter-label"><span class='filterName'>{{strings.filter_availability_now}}</span> <span class="filterPreCounter"></span></label>
+                    </div>
+                </fieldset>      
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
     </div>
