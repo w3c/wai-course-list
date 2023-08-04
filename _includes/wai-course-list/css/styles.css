@@ -563,23 +563,16 @@ details .helperinfo {
 
 #preview-submission-overlay {
     position: fixed;
-    /* Sit on top of the page content */
     display: none;
-    /* Hidden by default */
-    /*align-items: center;*/
     justify-content: center;
     width: 100%;
-    /* Full width (cover the whole page) */
     height: 100%;
-    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Black background with opacity */
     z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
     overflow: scroll;
 
 }
@@ -712,3 +705,30 @@ svg.icon-ex-circle {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.details-criteria {
+    margin: 0;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.details-criteria ul {
+    padding-left: 0 !important;
+}
+
+.details-criteria > ul > li {
+    list-style-type: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.details-criteria ul ul li {
+    list-style-type: disc;
+    margin-left: 50px; 
+}
+
+.details-criteria ul ul ul li {
+    margin-left: 80px; 
+}
+
