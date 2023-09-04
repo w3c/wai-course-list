@@ -1,0 +1,89 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "This training can be customized according to your accessibility needs. Some adjustments may induce additional costs as they are provided by third-party providers.",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-05-17",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "This training course provides the keys to create accessible office editing documents (Word, PDF). It gives the essential and practical methodologies to write and publish accessible documents using the functions of office tools such as images, styles, table of contents, page layout, templates and so on.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 day (7 hours), may be 2 days (14 hours), if the training is organized within one company.",
+  "level": "level_basic",
+  "platforms": [
+    "Zoom",
+    "Microsoft Teams"
+  ],
+  "prerequisites": [
+    "Knowledge of a document editing tool such as Microsoft Office, Libre Office."
+  ],
+  "provider": "Access42",
+  "repository": "wai-course-list",
+  "reviews": "https://a42.fr/contrib-bureautique ",
+  "start_date": "2023-05-17",
+  "_original_submission_date": "2023-05-23T03:58:26.461Z",
+  "submission_date": "2023-06-15T03:58:26.461Z",
+  "submission_ref": "11fef4d0-f91e-11ed-82d9-1d8727814408",
+  "submitter_email": "formations@access42.net",
+  "submitter_name": "Access42",
+  "english_title": "Authoring accessible content with office editing tools",
+  "original_lang_title": "fr",
+  "title": "Concevoir du contenu éditorial accessible avec les outils bureautiques",
+  "topics": [
+    "Producing content (text, images, tables, links, etc.) while considering the specific needs of people with disabilities",
+    "Identifying errors in a document and correcting them",
+    "Creating a template for a document that can be distributed and used after the training session to ensure minimum document accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://a42.fr/contrib-bureautique"
+}

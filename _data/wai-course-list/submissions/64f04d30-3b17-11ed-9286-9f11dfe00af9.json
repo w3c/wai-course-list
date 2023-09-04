@@ -43,7 +43,9 @@
   "submission_ref": "64f04d30-3b17-11ed-9286-9f11dfe00af9",
   "submitter_email": "jacopo@labway.it",
   "submitter_name": "Jacopo Deyla",
-  "title": "Redattori di siti web (Web content accessibility)",
+  "english_title": "Web content accessibility",
+  "original_lang_title": "it",
+  "title": "Redattori di siti web",
   "topics": [
     "accessible content",
     "accessibility policy and regulations"

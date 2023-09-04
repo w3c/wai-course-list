@@ -41,7 +41,9 @@
   "submission_ref": "4e00f360-38b3-11ed-8f7a-13f808f1fa66",
   "submitter_email": "viviana.merola@institutotraduccion.com",
   "submitter_name": "Viviana Merola",
-  "title": "Experto en Accesibilidad a la Comunicación y a los Contenidos Culturales (Expert Diploma in Accessibility of Communication and Cultural Content)",
+  "english_title": "Expert Diploma in Accessibility of Communication and Cultural Content",
+  "original_lang_title": "es",
+  "title": "Experto en Accesibilidad a la Comunicación y a los Contenidos Culturales",
   "topics": [
     "accessible web sites",
     "accessible video games",

@@ -1,4 +1,9 @@
-{% capture course_title %}<a href="{{ course.website }}">{{ course.title }}</a> by {{ course.provider }}{% endcapture %}
+{% capture course_title %}
+<a href="{{ course.website }}">
+{% if course.english_title %}
+<span lang="{{course.original_lang_title}}">{{ course.title }}</span> ({{ course.english_title }}){% else %}{{ course.title }}{% endif %}</a>
+by {{ course.provider }}
+{% endcapture %}
 {% capture course_section_identifier %}aside_{{ course.submission_ref }}{% endcapture %}
 {% capture course_details_id %}details_{{course.submission_ref}}{% endcapture %}
 
@@ -16,57 +21,38 @@
 {% endcapture %}
 {% assign country = country | push: countryLabel %}
 {% endfor %}
-{{strings.country}}
-: {{ country | join: "; "}}
+- **{{strings.country}}**: {{ country | join: ", "}}
 
-{{ strings.type_registration }}
-{% if course.type_registration != "" %}
-: {% for tr in course.type_registration %} {{strings[tr]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
-{% else %}
-: {{ strings.not_provided }}
-{% endif %}
+- **{{ strings.type_registration }}**: {% if course.type_registration != "" %}{% for tr in course.type_registration %} {{strings[tr]}}{% if forloop.last != true %}, {% endif %} {% endfor %}{% else %} {{ strings.not_provided }} {% endif %}
 
-{{ strings.type_resource }}
-: {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
+- **{{ strings.type_resource }}**: {{ strings[course.type_resource] }}{%if (course.type_resource == "type_other" and course.type_resource_new != "") %} - {{course.type_resource_new}}{%endif%}
+
+- **{{ strings.audience }}**: {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}, {% endif %} {% endfor %}
+
+- **{{ strings.level }}**: {{ strings[course.level] }}
+
+- **{{ strings.prerequisites }}**: {% if course.prerequisites != "" %}{{ course.prerequisites | join: ", "}}{% else %}{{ strings.not_provided }}{% endif %}
+
+- **{{ strings.topics }}**: <button type="button" class="toggle_all expand" >{{ strings.filter_show_all }}</button><button type="button" class="toggle_all hide" >{{ strings.filter_hide_all }}</button>
+{% for topic in course.topics %}
+  - {{ topic }}
+{% endfor %}
 
 
 
-{{ strings.audience }}
-: {% for cb in course.audience %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
-
-
-{{ strings.level }}
-: {{ strings[course.level] }}
-
-{{ strings.prerequisites }}
-{% if course.prerequisites != "" %}
-: {{ course.prerequisites | join: "; "}}
-{% else %}
-: {{ strings.not_provided }}
-{% endif %}
-
-{{ strings.topics }}
-: {{ course.topics | join: "; "}}
-
-{% include wai-course-list/filtered-wai-curricula.liquid data = course.wai_curricula %}
-{{ strings.wai_curricula }}
-{% if course.wai_curricula != "" %}
-: 
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_curricula_{{ course.submission_ref }}" data-target="#info_about_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_curricula_{{ course.submission_ref }}" hidden="hidden">
-    {{ helper[0].description }}
-</div>
+{% include wai-course-list/filtered-wai-curricula.liquid data = course.wai_curricula %}
+- **{{ strings.wai_curricula }}**: {% if course.wai_curricula != "" %}<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_curricula_{{ course.submission_ref }}" data-target="#info_about_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+- <div class="helperinfo" id="info_about_curricula_{{ course.submission_ref }}" hidden="hidden">{{ helper[0].description }}</div>
 {% for module in filteredItems %}
 {% if module[1].size > 0 %}
-* {{ module [0] }}: {% for subModule in module[1] %}{% if forloop.first == false%}; {% endif %}<a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endif %}{% endfor %}
+  - {{ module [0] }}
+    {% for subModule in module[1] %}
+    - <a href="{{subModule[2]}}" rel="external">{{ subModule[1] }}</a>{% endfor %}{% endif %}
+    {% endfor %}
 {% else %}
-: {{ strings.not_provided }}
-<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula_{{ course.submission_ref }}" data-target="#info_about_wai_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-{% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
-<div class="helperinfo" id="info_about_wai_curricula_{{ course.submission_ref }}" hidden="hidden">
-    {{ helper[0].description }}
-</div>
+{{ strings.not_provided }}<button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.wai_curricula }}" aria-expanded="false" aria-controls="info_about_wai_curricula_{{ course.submission_ref }}" data-target="#info_about_wai_curricula_{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+<div class="helperinfo" id="info_about_wai_curricula_{{ course.submission_ref }}" hidden="hidden">{{ helper[0].description }}</div>
 {% endif %}
 
 
@@ -77,34 +63,23 @@
 {% endcapture %}
 {% assign language = language | push: langLabel %}
 {% endfor %}
-{{ strings.language }}
-: {{ language | join: "; "}}
+- **{{ strings.language }}**: {{ language | join: ", "}}
 
-
-
-{{ strings.format }}
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "format" %}
-: {{ strings[course.format]}}
+- **{{ strings.format }}**: {{ strings[course.format]}}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.format }}" aria-expanded="false" aria-controls="info_about_format{{ course.submission_ref }}" data-target="#info_about_format{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
-<div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">
-    {{ helper[0].description }}
-</div>
+<div class="helperinfo" id="info_about_format{{ course.submission_ref }}" hidden="hidden">{{ helper[0].description }}</div>
 
 
-{{ strings.scheduling }}
 {% assign helper = site.data.wai-course-list.helpers | where: "id", "learning" %}
-: {% for cb in course.learning %} {{strings[cb]}}{% if forloop.last != true %}; {% endif %} {% endfor %}
+- **{{ strings.scheduling }}**: 
+{% for cb in course.learning %}{{strings[cb]}}{% if forloop.last != true %}, {% endif %}{% endfor %}
 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} {{ strings.scheduling }}" aria-expanded="false" aria-controls="info_about_scheduling{{ course.submission_ref }}" data-target="#info_about_scheduling{{ course.submission_ref }}" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
 <div class="helperinfo" id="info_about_scheduling{{ course.submission_ref }}" hidden="hidden">
     {{ helper[0].description }}
 </div>
 
-{{ strings.platforms }}
-{% if course.platforms != "" %}
-: {{ course.platforms | join: "; "}}
-{% else %}
-: {{ strings.not_provided }}
-{% endif %}
+- **{{ strings.platforms }}**: {% if course.platforms != "" %}{{ course.platforms | join: ", "}}{% else %}{{ strings.not_provided }}{% endif %}
 
 {% assign hasASupport = false %}
 {% assign aSupport = "" | split: "," %}
@@ -121,43 +96,36 @@
 {% endif %}
 
 
-{{ strings.accessibility_support }}
-: {% for s in aSupport %}
-* {{ s }}{% endfor %}
+- **{{ strings.accessibility_support }}**: 
+{% for s in aSupport %}
+  - {{ s }}{% endfor %}
 {% unless hasASupport %}
-: {{ strings.not_provided }}
+  - {{ strings.not_provided }}
 {% endunless %}
 
 
-{{ strings.length }}
-{% if course.length != "" %}
-: {{ course.length }}
-{% else %}
-: {{ strings.not_provided }}
+- **{{ strings.length }}**: 
+{% if course.length != "" %}{{ course.length }}
+{% else %}{{ strings.not_provided }}
 {% endif %}
 
-{{ strings.cost }}
-: {{ strings[course.cost]}}
+- **{{ strings.cost }}**: {{ strings[course.cost]}}
 
-{{ strings.availability }}
-: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{%if course.end_date != "" %} {{ strings.availability_until }} {{ course.end_date | date: "%-d %B %Y" }}{% capture date_now %}{{ site.time | date: "%s" }}{% endcapture %}{% capture end_date %}{{ course.end_date | date: "%s" }}{% endcapture %}{% if date_now > end_date %} (*{{ strings.availability_expired }}*){% endif %}{% endif %}.
+- **{{ strings.availability }}**: {{ strings.availability_from }} {{ course.start_date | date: "%-d %B %Y" }}{%if course.end_date != "" %} {{ strings.availability_until }} {{ course.end_date | date: "%-d %B %Y" }}{% capture date_now %}{{ site.time | date: "%s" }}{% endcapture %}{% capture end_date %}{{ course.end_date | date: "%s" }}{% endcapture %}{% if date_now > end_date %} (*{{ strings.availability_expired }}*){% endif %}{% endif %}.
 
 
-{{ strings.website }}
-: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
+- **{{ strings.website }}**: <a href="{{ course.website}}" rel="external">{{ course.website }}</a>
 
-{{ strings.reviews_page }}
-{% if course.reviews != "" %}
-: <a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
-{% else %}
-: {{ strings.not_provided }}
+- **{{ strings.reviews_page }}**:
+{% if course.reviews != "" %}<a href="{{ course.reviews}}" rel="external">{{ course.reviews }}</a>
+{% else %}{{ strings.not_provided }}
 {% endif %}
 
 {% if course.content_update %}
-{{ strings.content_updated }}
-: {{ course.content_update | date: "%-d %B %Y" }}.
+- **{{ strings.content_updated }}**: {{ course.content_update | date: "%-d %B %Y" }}.
 {% endif %}
 
 _{{ strings.info_updated }} {{ course.submission_date | date: "%-d %B %Y" }}._
+
 {% include excol.html type="end" %}
 {% include box.html type="end" %}

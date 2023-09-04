@@ -40,7 +40,9 @@
   "submission_ref": "04db7640-5b56-11ed-a94e-e5a0ad1bbf9c",
   "submitter_email": "jacopo@labway.it",
   "submitter_name": "Jacopo Deyla",
-  "title": "How to evaluate web accessibility (Accessibilità per sviluppatori e tester)",
+  "english_title": "How to evaluate web accessibility",
+  "original_lang_title": "it",
+  "title": "Accessibilità per sviluppatori e tester",
   "topics": [
     "Standards WCAG, UNI 301549, WAI ARIA",
     "Automatic evaluation tools",

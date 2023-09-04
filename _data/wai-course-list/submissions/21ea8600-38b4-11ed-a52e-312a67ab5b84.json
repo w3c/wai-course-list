@@ -2,7 +2,7 @@
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
     "digital-accessibility-text-and-visuals-can-be-resized",
-    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-motions-or-animations"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -41,7 +41,9 @@
   "submission_ref": "21ea8600-38b4-11ed-a52e-312a67ab5b84",
   "submitter_email": "viviana.merola@institutotraduccion.com",
   "submitter_name": "Viviana Merola",
-  "title": "Esperto in Accessibilità della Comunicazione e dei Contenuti Culturali (Expert Diploma in Accessibility of Communication and Cultural Content)",
+  "english_title": "Expert Diploma in Accessibility of Communication and Cultural Content",
+  "original_lang_title": "it",
+  "title": "Esperto in Accessibilità della Comunicazione e dei Contenuti Culturali",
   "topics": [
     "accessible web sites",
     "easy-to-read",
