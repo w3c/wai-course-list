@@ -365,36 +365,33 @@ fieldset label:hover a:hover {
 }
 
 .courses-list-header {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-gap: 1em;
     padding-bottom: 1em;
 }
 
-
 .courses-list-header .field {
-    grid-column: 1 / 7;
     margin: 0;
-    align-self: center;
+    width: 100%;
 }
 
-.courses-list-header .sort-by {
-    grid-column: 7 / 8;
-    align-self: center;
+.courses-list-header .field.sort-by {
+    width: 30%;
+    text-align: right;
+}
+
+.courses-list-header label {
+    font-weight: normal !important;
 }
 
 @media (max-width: 60em) {
-
-    .courses-list-header .field {
-        grid-column: 1 / 8;
+    .courses-list-header .field.sort-by {
+        text-align: left;
+        margin-top: 1em;
+        width: 100%;
     }
-
-    .courses-list-header .sort-by {
-        grid-column: 1 / 8;
-    }
-}
-
-#status {
-    margin: 0;
 }
 
 #filter-courses-info {

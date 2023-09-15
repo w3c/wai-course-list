@@ -49,8 +49,8 @@ disclaimer_text:
   <p>The list is not a review of courses, nor a complete or definitive list of all courses. The information can change at any time.</p>
 sortby_title: Sort by
 showing: Showing
-searchbox_placeholder: Search courses by title, provider, or topic
-
+searchbox_placeholder: Search for courses
+searchbox_placeholder_eg: Enter course title, provider or topic (e.g., 'WCAG', 'forms', 'mobile')
 clear_filters_button_label: Clear filters
 searchterm: Search term
 filtered_criteria_title: Current filter criteria
