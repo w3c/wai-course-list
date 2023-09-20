@@ -57,7 +57,7 @@
     "Best Practices for Better Alt Text",
     "How to Create and Change Text and Heading Styles",
     "How to Export to PDF",
-    " How to Create a Linked Table of Contents",
+    "How to Create a Linked Table of Contents",
     "How to Create Proper Footnotes"
   ],
   "type_registration": [
@@ -66,11 +66,11 @@
   "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
-    "developer_modules3",
-    "developer_modules4",
-    "designer_modules1",
-    "designer_modules2",
-    "designer_modules5"
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
   ],
   "website": "https://508institute.com/self-paced-microsoft-word-prep-course/"
 }
