@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-08-28",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "This narrated Microsoft Word video series provides an overview of the tools and processes that remediators use to make documents Section 508 compliant.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "3 hours",
+  "level": "level_basic",
+  "platforms": [
+    "Learndash via 508 Institute",
+    "Vimeo"
+  ],
+  "prerequisites": [
+    "Microsoft Word",
+    "Basic knowledge of Section 508"
+  ],
+  "provider": "The 508 Institute",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-08-28",
+  "submission_date": "2023-08-31T17:24:51.050Z",
+  "submission_ref": "4ac454a0-4823-11ee-a946-dd62b850a61c",
+  "submitter_email": "prudhvi.mandava@508institute.com",
+  "submitter_name": "Prudhvi Mandava",
+  "title": "Self-Paced Microsoft Word Prep Course",
+  "topics": [
+    "Designing for 508 Compliance",
+    "Color Contrast Testing and Fixes",
+    "Table Design Considerations for 508 Compliance",
+    "Best Practices for Better Alt Text",
+    "How to Create and Change Text and Heading Styles",
+    "How to Export to PDF",
+    "How to Create a Linked Table of Contents",
+    "How to Create Proper Footnotes"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://508institute.com/self-paced-microsoft-word-prep-course/"
+}
