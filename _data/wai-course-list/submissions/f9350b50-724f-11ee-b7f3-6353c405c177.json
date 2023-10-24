@@ -1,0 +1,49 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2022-01-01",
+  "cost": "cost_paid",
+  "country": [
+    "in"
+  ],
+  "description": "Amaravati Training Institute has been started with a vision to provide the Best Software Training in Rajahmundry. By making the most in-demand courses like Web Designing, Python, MEAN/MERN Stack, C, C++, Java, and Full Stack accessible to everyone, we want to make your dream of acquiring a Software Job come true.",
+  "end_date": "2023-01-01",
+  "form_name": "submission",
+  "form_version": "1",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Software training",
+  "repository": "wai-course-list",
+  "reviews": "https://www.amaravathitraininginstitute.com/",
+  "start_date": "2022-01-01",
+  "submission_date": "2023-10-24T09:30:30.406Z",
+  "submission_ref": "f9350b50-724f-11ee-b7f3-6353c405c177",
+  "submitter_email": "amaravathitraininginstitute@gmail.com",
+  "submitter_name": "Aneel Ch",
+  "title": "Amaravathi Software Training Institute ",
+  "topics": [
+    "development"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.amaravathitraininginstitute.com/"
+}
