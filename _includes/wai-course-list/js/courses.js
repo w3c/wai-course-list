@@ -381,8 +381,16 @@ if (filterForm) {
     
         var filterCoursesString = document.querySelector('.details-criteria');
         filterCoursesString.innerHTML = "";
-    
-        if (filtersOn.length > 0 || searchField.value.length > 0) {
+
+        if (searchField.value.length > 0) {
+            var attValues = document.createElement('ul');
+            var searchInfo = document.createElement('li');
+            searchInfo.innerHTML = 'Search term: ' + searchField.value;
+            attValues.appendChild(searchInfo);
+            filterCoursesString.appendChild(attValues);
+        }    
+
+        if (filtersOn.length > 0) {
             filtersOn.forEach(f => {
                 var listFiltersOnString = document.createElement('ul');
     
@@ -430,7 +438,8 @@ if (filterForm) {
     
                 filterCoursesString.appendChild(listFiltersOnString);
             });
-    
+            
+
             document.querySelector('.results-box').classList.remove('hidden-element');
             hideClearButton(false);
         } else {
