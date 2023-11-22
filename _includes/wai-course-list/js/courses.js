@@ -109,44 +109,42 @@ if (filterForm) {
             var attValues = [];
             var filterName = att.querySelectorAll('legend')[0].innerText;
     
-            att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-                if (filter.checked) {
-                    var optionName = att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
-                    if (filter.getAttribute('data-curricula') !== null) {
-                        attValues.push({ optionID: filter.name, optionName: optionName, optionCurricula: filter.getAttribute('data-curricula') });
-                    }
-                    else
-                        attValues.push({ optionID: filter.name, optionName: optionName });
+            att.querySelectorAll('input[type="checkbox"]:checked').forEach(filter => {
+                
+                var optionName = att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
+                if (filter.getAttribute('data-curricula') !== null) {
+                    attValues.push({ optionID: filter.name, optionName: optionName, optionCurricula: filter.getAttribute('data-curricula') });
                 }
+                else
+                    attValues.push({ optionID: filter.name, optionName: optionName });
+
+                activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
             });
     
             att.querySelectorAll('input[type="date"]').forEach(filter => {
                 if (filter.value !== "") {
                     attValues.push({ optionID: filter.name, optionName: filter.value });
+                    activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
+
                 }
             });
-    
+
             att.querySelectorAll('select').forEach(filter => {
                 attValues = [];
-    
                 if (filter.value !== "") {
                     var oName = "";
-    
-                    if (filter.id == "language")
+                    
+                    if(filter.id == "language" )
                         oName = jsonLang[filter.value].name + " (" + jsonLang[filter.value].nativeName + ")";
-                    else if (filter.id == "country")
+                    else if (filter.id == "country" )
                         oName = jsonCountry[filter.value].name + " (" + jsonCountry[filter.value].nativeName + ")";
-    
-                    attValues.push({ optionID: filter.value, optionName: oName });
+                    
+                    attValues.push({optionID: filter.value, optionName: oName})
                     activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
                 }
+
             });
-    
-            if (attValues.length > 0) {
-                activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
-            }
         });
-    
         return activeFiltersList;
     }
     
