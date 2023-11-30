@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "non-digital-accessibility-assistive-listening-devices"
+  ],
+  "accessibility_support_other": "Accessibility Services, The University of Winnipeg, Post-Secondary Education",
+  "audience": [
+    "audience_content_author",
+    "audience_manager",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-11-30",
+  "cost": "on",
+  "country": [
+    "ca"
+  ],
+  "description": "Accepted Student(2019),The city of Winnipeg, Manitoba, CANADA, Full Year, Regular Status/full course load,  ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_blended",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_advanced",
+  "platforms": "Microsoft",
+  "prerequisites": [
+    "Advanced Education"
+  ],
+  "provider": "The university of Winnipeg",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-10-31",
+  "submission_date": "2023-11-30T23:21:16.084Z",
+  "submission_ref": "28d4cf40-8fd7-11ee-95cb-c10778634f62",
+  "submitter_email": "candacenmousseau@outlook.com",
+  "submitter_name": "Candace Nicole Mousseau",
+  "title": "Business Administration-Accounting Specialization",
+  "topics": [
+    "Media "
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://eservices.canada.ca/en/service/?stepid=422ac1d4-ff46-ec11-8c62-000d3a09f7ce&sessionid=618ab737-d58f-ee11-8179-000d3a09c28e"
+}
