@@ -49,9 +49,7 @@
   "length": "9 hours",
   "level": "level_basic",
   "platforms": "Udemy",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Udemy (Course Author: Liz Brown)",
   "repository": "wai-course-list",
   "reviews": "https://www.udemy.com/course/the-ux-designers-accessibility-guide/#reviews",
