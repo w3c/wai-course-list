@@ -1,0 +1,65 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough"
+  ],
+  "accessibility_support_other": "Test",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Test",
+  "content_update": "2023-12-31",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "Test",
+  "end_date": "2023-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "Test",
+  "level": "level_basic",
+  "platforms": "Test",
+  "prerequisites": [
+    "Test"
+  ],
+  "provider": "Test",
+  "repository": "wai-course-list",
+  "reviews": "http://test.com",
+  "start_date": "2023-12-31",
+  "submission_date": "2023-12-04T20:24:04.091Z",
+  "submission_ref": "115245a0-92e3-11ee-8316-df1debeeae69",
+  "submitter_email": "test@test.com",
+  "submitter_name": "Test",
+  "title": "Test",
+  "topics": [
+    "Test"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "developer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "content_author_modules1",
+    "content_author_modules2"
+  ],
+  "website": "http://test.com"
+}
