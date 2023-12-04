@@ -61,8 +61,8 @@
   "submitter_name": "Bram Janssens",
   "title": "Accessible PDF documents using Microsoft Word",
   "topics": [
-    " Importance of digital accessibility",
-    "Assistive technology ",
+    "Importance of digital accessibility",
+    "Assistive technology",
     "How to make an accessible Word document",
     "How to convert that document to a tagged PDF",
     "How to test the accessibility of a PDF document"
