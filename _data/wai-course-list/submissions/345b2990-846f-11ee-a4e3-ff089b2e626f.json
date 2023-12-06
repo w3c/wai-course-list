@@ -1,0 +1,85 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-11-02",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "Want to learn how to make an accessible PDF document? This training will show you how to turn Microsoft Word documents into PDFs everyone can use.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 - 9 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "You know your way around Microsoft Word."
+  ],
+  "provider": "AnySurfer",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-11-02",
+  "submission_date": "2023-11-16T10:59:24.969Z",
+  "submission_ref": "345b2990-846f-11ee-a4e3-ff089b2e626f",
+  "submitter_email": "info@anysurfer.be",
+  "submitter_name": "Bram Janssens",
+  "title": "Accessible PDF documents using Microsoft Word",
+  "topics": [
+    "Importance of digital accessibility",
+    "Assistive technology",
+    "How to make an accessible Word document",
+    "How to convert that document to a tagged PDF",
+    "How to test the accessibility of a PDF document"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2"
+  ],
+  "website": "https://www.anysurfer.be/en/services/training/pdf-with-word"
+}
