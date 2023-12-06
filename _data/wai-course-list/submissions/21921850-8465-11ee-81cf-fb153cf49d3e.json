@@ -1,0 +1,102 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-11-01",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "Are you a front-end designer or developer? This training will offer you everything you need to build an accessible website. Aided by 9 fictional personas, we'll show you how users with specific disabilities navigate a computer. We'll offer you easy ways to implement accessibility during the design and development phase of your website.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "9 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "Experience with HTML and CSS is a must.",
+    "Having notions of Javascript is recommended."
+  ],
+  "provider": "AnySurfer",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-11-01",
+  "submission_date": "2023-11-16T09:47:18.485Z",
+  "submission_ref": "21921850-8465-11ee-81cf-fb153cf49d3e",
+  "submitter_email": "info@anysurfer.be",
+  "submitter_name": "Bram Janssens",
+  "title": "Accessibility for front-end developers",
+  "topics": [
+    "Why Accessibility",
+    "Legislation and standards",
+    "Personas",
+    "Keyboard accessibility",
+    "Links",
+    "Semantics",
+    "ARIA",
+    "Forms",
+    "Colour & contrast",
+    "Images",
+    "Distractions, motion & time limits",
+    "Responsive Web Design",
+    "WCAG success criteria",
+    "Dynamic updates",
+    "Video & audio",
+    "Mobile apps",
+    "Widgets",
+    "Documents"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules3",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.anysurfer.be/en/services/training/front-end"
+}
