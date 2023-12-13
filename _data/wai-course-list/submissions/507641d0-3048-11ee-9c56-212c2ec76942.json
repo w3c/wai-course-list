@@ -40,9 +40,7 @@
   "length": "8h",
   "level": "level_basic",
   "platforms": "",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Eleven Ways",
   "repository": "wai-course-list",
   "reviews": "",
