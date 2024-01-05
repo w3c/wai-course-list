@@ -1,0 +1,102 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Seeing",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "\r\n",
+  "content_update": "2024-01-04",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "us",
+    "au",
+    "ca"
+  ],
+  "description": "Vehicle purchase agreement ",
+  "end_date": "2024-01-05",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en",
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    "Basic knowledge "
+  ],
+  "provider": "Finance",
+  "repository": "wai-course-list",
+  "reviews": "https://www.dealerinspire.com/inspire-plus/",
+  "start_date": "2024-01-04",
+  "submission_date": "2024-01-05T02:11:22.981Z",
+  "submission_ref": "b912f150-ab6f-11ee-a819-f914fcc34f59",
+  "submitter_email": "ClownSoundaudio@gmail.com",
+  "submitter_name": "Edgar Alcaraz Melena",
+  "title": "CEO",
+  "topics": [
+    "Inclusive design"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://wordpress.com/setup/wooexpress/processing?profilerdata=eyJ3b29jb21tZXJjZV9kZWZhdWx0X2NvdW50cnkiOiJVUzpDQSIsIndvb2NvbW1lcmNlX29uYm9hcmRpbmdfcHJvZmlsZSI6eyJpbmR1c3RyeSI6WyJvdGhlciJdLCJpc19zdG9yZV9jb3VudHJ5X3NldCI6dHJ1ZSwic2VsbGluZ192ZW51ZXMiOiJicmljay1tb3J0YXIiLCJza2lwcGVkIjp0cnVlfSwiYmxvZ25hbWUiOiJDbG93blNvdW5kIEF1ZGlvICYgTW9yZSJ9https://wordpress.com/setup/wooexpress/processing?profilerdata=eyJ3b29jb21tZXJjZV9kZWZhdWx0X2NvdW50cnkiOiJVUzpDQSIsIndvb2NvbW1lcmNlX29uYm9hcmRpbmdfcHJvZmlsZSI6eyJpbmR1c3RyeSI6WyJvdGhlciJdLCJpc19zdG9yZV9jb3VudHJ5X3NldCI6dHJ1ZSwic2VsbGluZ192ZW51ZXMiOiJicmljay1tb3J0YXIiLCJza2lwcGVkIjp0cnVlfSwiYmxvZ25hbWUiOiJDbG93blNvdW5kIEF1ZGlvICYgTW9yZSJ9"
+}
