@@ -14,7 +14,7 @@ ref: /teach-advocate/course-list/
 description: Lists publicly-available accessibility courses around the world. You can filter to find courses matching your specific interests.
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 footer: >
-   <p><strong>Date:</strong> Information on specific courses is updated frequently, as we receive it. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2022. <!--First published September 2022.--></p>
+   <p><strong>Date:</strong> Information on specific courses is updated frequently. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2022. <!--First published September 2022.--></p>
    <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <strong>Contributors:</strong> Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
