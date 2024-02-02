@@ -1,0 +1,65 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-02-02",
+  "cost": "cost_paid",
+  "country": [
+    "pl"
+  ],
+  "description": "Get to know:\r\nBusiness case for digital accessibility.\r\nHow the biggest in the industry and competitors are approaching the topic.\r\nHow to integrate accessibility into your company culture.\r\nTogether we will assess the state of digital accessibility in your company.\r\nHow to measure and improve digital accessibility.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pl"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4 clock hours, comprising 2 modules of 2hours each.",
+  "level": "level_basic",
+  "platforms": "MS Teams",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Accens",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2024-02-02",
+  "submission_date": "2024-02-02T10:03:20.636Z",
+  "submission_ref": "4b472fc0-c1b2-11ee-95dc-e7bfb610289d",
+  "submitter_email": "contact@accens.io",
+  "submitter_name": "Accens",
+  "title": "Dostępność cyfrowa dla liderów (Digital accessibility for leaders)",
+  "topics": [
+    "accessibility legislation"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules5"
+  ],
+  "website": "https://accens.pl/szkolenie-dostepnosc-cyfrowa-dla-liderow/"
+}
