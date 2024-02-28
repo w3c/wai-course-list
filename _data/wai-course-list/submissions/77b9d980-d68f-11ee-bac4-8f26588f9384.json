@@ -1,0 +1,100 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Land gov bd ",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "ALL Work Bangladesh ",
+  "content_update": "2024-02-29",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "bd"
+  ],
+  "description": "https://www.bing.com/ck/a?!&&p=ce7c4a364a73b420JmltdHM9MTcwOTA3ODQwMCZpZ3VpZD0xM2IyNmQ2Yy0wMjU5LTY5M2YtM2Q1MS03OTY5MDNjMjY4NTcmaW5zaWQ9NTE4OA&ptn=3&ver=2&hsh=3&fclid=13b26d6c-0259-693f-3d51-796903c26857&psq=land+gov+bd&u=a1aHR0cHM6Ly9sYW5kLmdvdi5iZC8&ntb=1",
+  "end_date": "2024-02-29",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "bn"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "All work Bangladesh ",
+  "level": "level_basic",
+  "platforms": "Allow ",
+  "prerequisites": [
+    "Dhaka "
+  ],
+  "provider": "Bangladesh ",
+  "repository": "wai-course-list",
+  "reviews": "https://land.gov.bd",
+  "start_date": "2024-02-29",
+  "submission_date": "2024-02-28T23:16:57.240Z",
+  "submission_ref": "77b9d980-d68f-11ee-bac4-8f26588f9384",
+  "submitter_email": "masumbillah01927@gmail.com",
+  "submitter_name": "MD Masum Billah",
+  "title": "Land gov bd duplicat all work ",
+  "topics": [
+    "Allow "
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://land.gov.bd"
+}
