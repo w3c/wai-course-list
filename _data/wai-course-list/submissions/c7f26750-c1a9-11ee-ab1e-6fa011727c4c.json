@@ -21,7 +21,7 @@
   "country": [
     "pl"
   ],
-  "description": "Training objective: You will learn how to create and deliver digitally accessible documents.\r\nTraining consists of 4 modules: 1. How (in)accessible is your documentation. 2. Issues with accessibility of HTML documents. 3. Issues with accessibility of PDF documents. 4. Issues with accessibility of MS Office documents.",
+  "description": "Training objective: You will learn how to create and deliver digitally accessible documents. Training consists of 4 modules: 1. How (in)accessible is your documentation. 2. Issues with accessibility of HTML documents. 3. Issues with accessibility of PDF documents. 4. Issues with accessibility of MS Office documents.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -32,24 +32,24 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "12 clock hours, 4 modules lasting 3hours each.",
+  "length": "12 clock hours, 4 modules lasting 3 hours each.",
   "level": "level_basic",
   "platforms": [
-    "MS Teams",
-    ""
+    "MS Teams"
   ],
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "",
   "provider": "Accens",
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2024-02-02",
-  "submission_date": "2024-02-02T09:02:24.326Z",
+  "_original_submission_date": "22024-02-02T09:02:24.326Z",
+  "submission_date": "2024-03-05",
   "submission_ref": "c7f26750-c1a9-11ee-ab1e-6fa011727c4c",
   "submitter_email": "contact@accens.io",
   "submitter_name": "Accens",
-  "title": "Dostępna dokumentacja (Accessible documentation)",
+  "english_title": "Accessible documentation",
+  "original_lang_title": "pl",
+  "title": "Dostępna dokumentacja",
   "topics": [
     "accessible documents",
     "accessible PDF",
