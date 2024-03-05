@@ -20,7 +20,7 @@
   "country": [
     "pl"
   ],
-  "description": "You will learn:\r\nWhat a valuable accessibility test report can look like and how to put the information into practice.\r\nWhich WCAG criteria can be tested automatically.\r\nAbout tools for automatic accessibility testing (both free and commercial), their strengths and weaknesses and see them in action in form of workshops.",
+  "description": "You will learn: What a valuable accessibility test report can look like and how to put the information into practice. Which WCAG criteria can be tested automatically. About tools for automatic accessibility testing (both free and commercial), their strengths and weaknesses and see them in action in form of workshops.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
@@ -31,7 +31,7 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "11 clock hours consisting of 2 modules lasting 6 and 5 hours.",
+  "length": "11 hours consisting of 2 modules lasting 6 and 5 hours.",
   "level": "level_intermediate",
   "platforms": "MS Teams",
   "prerequisites": [
@@ -41,11 +41,14 @@
   "repository": "wai-course-list",
   "reviews": "",
   "start_date": "2024-02-02",
-  "submission_date": "2024-02-02T11:46:51.499Z",
+  "_original_submission_date": "2024-02-02T11:46:51.499Z",
+  "submission_date": "2024-03-05",
   "submission_ref": "c13dabb0-c1c0-11ee-83fb-25be98749c19",
   "submitter_email": "contact@accens.io",
   "submitter_name": "Accens",
-  "title": "Automatyczne testy dostępności aplikacji webowych w procesie CI/CD - warsztat (Automated  web applications accessibility testing in the CI/CD process - workshop)",
+  "english_title": "Automated  web applications accessibility testing in the CI/CD process - workshop",
+  "original_lang_title": "pl",
+  "title": "Automatyczne testy dostępności aplikacji webowych w procesie CI/CD - warsztat",
   "topics": [
     "CI/CD pipeline",
     "automated accessibility testing",
