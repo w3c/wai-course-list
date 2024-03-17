@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer",
+    "audience_manager",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Please ",
+  "content_update": "2019-01-17",
+  "cost": "cost_free",
+  "country": [
+    "in"
+  ],
+  "description": "Please ",
+  "end_date": "2019-01-17",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "Technically ",
+  "level": "level_basic",
+  "platforms": "Please ",
+  "prerequisites": [
+    "Bayppss "
+  ],
+  "provider": "Bayppss ",
+  "repository": "wai-course-list",
+  "reviews": "non",
+  "start_date": "2019-01-17",
+  "submission_date": "2024-03-17T08:38:22.449Z",
+  "submission_ref": "b6b29610-e439-11ee-9a4a-d597a7b9f549",
+  "submitter_email": "ahirem073@gmal.com",
+  "submitter_name": "Mahendra Ahire ",
+  "title": "Please ",
+  "topics": [
+    "Bayppss "
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules2",
+    "developer_modules4",
+    "developer_modules7",
+    "designer_modules6",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "non"
+}
