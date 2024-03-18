@@ -10,7 +10,8 @@
     "audience_designer",
     "audience_developer",
     "audience_manager",
-    "audience_tester"
+    "audience_tester",
+    "audience_content_author"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
