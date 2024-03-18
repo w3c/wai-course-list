@@ -32,7 +32,7 @@
     "learning_scheduled"
   ],
   "length": "11 hours consisting of 2 modules lasting 6 and 5 hours.",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "MS Teams",
   "prerequisites": [
     "basic knowledge of CI/CD processes and test automation"
