@@ -45,7 +45,9 @@
   "submission_ref": "bd6f5080-c1be-11ee-a091-9dad63a0baf1",
   "submitter_email": "contact@accens.io",
   "submitter_name": "Accens",
-  "title": "Practical introduction to mobile applications accessibility testing",
+  "title": "Praktyczne wprowadzenie do testowania dostępności aplikacji mobilnych",
+  "original_lang_title": "pl",
+  "english_title": "Practical introduction to mobile applications accessibility testing",
   "topics": [
     "WCAG",
     "accessibility legislation",
