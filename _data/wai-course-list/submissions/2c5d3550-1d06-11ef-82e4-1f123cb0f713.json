@@ -1,0 +1,105 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Shanine Beeksma",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "1",
+  "check_publish_info": "1",
+  "comments": "Shanine Beeksma",
+  "content_update": "1",
+  "cost": "cost_free",
+  "country": [
+    "af",
+    "af"
+  ],
+  "description": "Shanine Beeksma",
+  "end_date": "1",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": [
+    "format_face_to_face",
+    "format_online",
+    "format_blended",
+    "format_hybrid"
+  ],
+  "language": [
+    "ab",
+    "ab"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "Shanine Beeksma",
+  "level": "level_basic",
+  "platforms": [
+    "Shanine Beeksma",
+    "Shanine Beeksma"
+  ],
+  "prerequisites": [
+    "Shanine Beeksma",
+    "Shanine Beeksma"
+  ],
+  "provider": "Shanine Beeksma",
+  "repository": "wai-course-list",
+  "reviews": "1",
+  "start_date": "1",
+  "submission_date": "2024-05-28T15:23:02.309Z",
+  "submission_ref": "2c5d3550-1d06-11ef-82e4-1f123cb0f713",
+  "submitter_email": "hppchbmtqw.q@rightbliss.beauty",
+  "submitter_name": "Shanine",
+  "title": "Shanine Beeksma",
+  "topics": [
+    "Shanine Beeksma",
+    "Shanine Beeksma"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "Shanine Beeksma",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "1"
+}
