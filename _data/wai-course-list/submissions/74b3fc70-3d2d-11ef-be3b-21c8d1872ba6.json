@@ -1,0 +1,55 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2019-02-20",
+  "cost": "on",
+  "country": [
+    "us"
+  ],
+  "description": "Test",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Test",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2019-02-20",
+  "submission_date": "2024-07-08T13:24:51.255Z",
+  "submission_ref": "74b3fc70-3d2d-11ef-be3b-21c8d1872ba6",
+  "submitter_email": "test@email.com",
+  "submitter_name": "Rémi Bétin",
+  "title": "Test",
+  "topics": [
+    "Test"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "developer_modules5",
+    "content_author_modules3"
+  ],
+  "website": "https://w3.org"
+}
