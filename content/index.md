@@ -14,7 +14,7 @@ ref: /teach-advocate/course-list/
 description: Lists publicly-available accessibility courses around the world. You can filter to find courses matching your specific interests.
 # image: /content-images/wai-course-list/social.png  # NEW: image for social media (leave commented out if we don't have a specific one for this reource)
 footer: >
-   <p><strong>Date:</strong> Information on specific courses is updated frequently, as we receive it. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2022. <!--First published September 2022.--></p>
+   <p><strong>Date:</strong> Information on specific courses is updated frequently, as we receive it. In the "Details" for each course, there is a date after "This listing was updated on". The Course List user interface was updated on 15 September 2023. <!--First published September 2022.--></p>
    <p><strong>Editors:</strong> Carlos Duarte and Letícia Seixas Pereira. <strong>Contributors:</strong> Shawn Henry, Brent Bakken, Sharron Rush, Kris Anne Kinney, Steve Lee, Daniel Montavo, Kevin White, Estella Oncins, Michele Williams, Vicki Menezes Miller, Andrew Arch, Laura Keen, Sylvie Duchateau, Jade Matos Carew, Brian Elton, Howard Kramer, Mark Palmer, Shadi Abou-Zahra, and other <a href="https://www.w3.org/groups/wg/eowg/participants">EOWG Participants</a>.</p>
    <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>). Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 ---
@@ -76,7 +76,7 @@ footer: >
             {% assign langAvailable = langAvailable | uniq %}
             {% assign countriesAvailable = countriesAvailable | uniq %}
             <fieldset>
-                <legend id="language_label">Language</legend>
+                <legend id="language_label">{{ strings.languagen_label }}</legend>
                 <div class="filter-options field">
                     <select name="language" id="language" aria-labelledby="language_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -92,7 +92,7 @@ footer: >
             </fieldset>
             {% include wai-course-list/sort-countries.liquid data=countriesAvailable %}
             <fieldset>
-                <legend id="country_label">Country</legend>
+                <legend id="country_label">{{ strings.countryn_label }}</legend>
                 <div class="filter-options field">
                     <select name="country" id="country" aria-labelledby="country_label">
                         <option value="">--{{ strings.select_option_default }}--</option>
@@ -104,6 +104,42 @@ footer: >
                 <p class="expl" tabindex=0>
                 <span class="total-select-courses" id="total-select-courses-country">{{itemsSorted | size}} {{strings.select_info}} </span> <span id="total-country-courses">{{countriesAvailable | size}} {{strings.select_country_info_multiple_results}}</span>                </p>
             </fieldset>
+            {% assign wai_curricula = site.data.wai-course-list.wai-curricula %}
+            <fieldset id="wai_curricula">
+                <legend tabindex="0">{{strings.curricula_label}}</legend>                 <button type="button" class="showhidebutton button-small helperbutton" aria-label="{{strings.info_about}} curricula" aria-expanded="false" aria-controls="info_about_curricula" data-target="#info_about_curricula" data-showtext="{{ strings.show_info }}" data-hidetext="{{ strings.hide_info }}">{{ strings.show_info }}</button>
+                {% assign helper = site.data.wai-course-list.helpers | where: "id", "wai-curricula" %}
+                <div class="helperinfo" id="info_about_curricula" hidden="hidden">
+                    {{ helper[0].description }}
+                </div>   
+                {% for curricula in wai_curricula %}
+                <div class="module" collapsed="true">
+                    <div class="name collapsible"  tabindex="0">{{ curricula.name }}</div>
+                    <div class="options collapsible">
+                        {% for module in curricula.modules %}
+                        <div class="filter-options field">
+                            <input type="checkbox" id="{{ module.id }}" name="{{ module.id }}" data-curricula="{{ curricula.name }}">
+                            <label for="{{ module.id }}"><span class='filterName'>{{ module.name }}</span> <span class="filterPreCounter"></span></label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                <div>
+                    <button type="button" class="toggle_all expand" >{{ strings.filter_show_all }}</button>
+                    <button type="button" class="toggle_all hide" >{{ strings.filter_hide_all }}</button>
+                </div>
+            </fieldset>   
+            <fieldset id="availability" class="filter-section">
+                <legend class="filter-section-title">{{strings.availability}}</legend>
+                <div class="filter-group">
+                    <label for="available_from" class="filter-label"><span class='filterName'>{{strings.filter_availability_from}}</span></label>
+                    <input type="date" id="available_from" name="available_from" aria-describedby="expl_available_from" class="filter-field">
+                </div>
+                <div class="filter-group">
+                    <input type="checkbox" id="available_now" name="available_now" aria-describedby="expl_available_now" class="filter-checkbox">
+                    <label for="available_now" class="filter-label"><span class='filterName'>{{strings.filter_availability_now}}</span> <span class="filterPreCounter"></span></label>
+                </div>
+            </fieldset>      
         </form>
         {% include_cached button.html label=strings.clear_filters_button_label class="secondary button-clear-button"%}
     </div>
@@ -111,7 +147,8 @@ footer: >
         <h2>Courses</h2>
         <div class="courses-list-header">
             <div class="field">
-                <input type="search" id="search" placeholder="{{strings.searchbox_placeholder}}">
+                <label for="search">{{strings.searchbox_placeholder}}</label>
+            <input type="search" id="search" placeholder="{{strings.searchbox_placeholder_eg}}">
             </div>
             <div class="field" class="sort-by">
                 <label for="select">{{ strings.sortby_title }}</label>
@@ -124,7 +161,8 @@ footer: >
                         {% endif %}
                     {% endfor %}
                 </select>
-            </div>            </div>
+            </div>            
+        </div>
         {% capture totalSubmissions %}
         {{ site.data.wai-course-list.submissions | size }}
         {% endcapture %}
@@ -162,4 +200,5 @@ footer: >
 </div>
 <script>
 {% include wai-course-list/js/courses.js %}
+{% include wai-course-list/js/utilities.js %}
 </script>
