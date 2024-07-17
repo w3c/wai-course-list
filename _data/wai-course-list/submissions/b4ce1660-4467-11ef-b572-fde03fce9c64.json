@@ -1,0 +1,112 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Phan Mccardle",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "1",
+  "check_publish_info": "1",
+  "check_scope_info": "1",
+  "comments": "Phan Mccardle",
+  "content_update": "1",
+  "cost": "cost_free",
+  "country": [
+    "af",
+    "af"
+  ],
+  "description": "Phan Mccardle",
+  "end_date": "1",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": [
+    "format_face_to_face",
+    "format_online",
+    "format_blended",
+    "format_hybrid"
+  ],
+  "language": [
+    "ab",
+    "ab"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "Phan Mccardle",
+  "level": "level_basic",
+  "platforms": [
+    "Phan Mccardle",
+    "Phan Mccardle"
+  ],
+  "prerequisites": [
+    "Phan Mccardle",
+    "Phan Mccardle"
+  ],
+  "provider": "Phan Mccardle",
+  "repository": "wai-course-list",
+  "reviews": "1",
+  "start_date": "1",
+  "submission_date": "2024-07-17T18:09:27.750Z",
+  "submission_ref": "b4ce1660-4467-11ef-b572-fde03fce9c64",
+  "submitter_email": "tcthtwqwqj.q@silesia.life",
+  "submitter_name": "Phan",
+  "title": "Phan Mccardle",
+  "topics": [
+    "Phan Mccardle",
+    "Phan Mccardle"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "Phan Mccardle",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "1"
+}
