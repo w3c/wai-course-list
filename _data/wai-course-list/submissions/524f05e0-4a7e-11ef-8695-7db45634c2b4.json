@@ -1,0 +1,105 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Rudolph Takiguchi",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "1",
+  "check_publish_info": "1",
+  "comments": "Rudolph Takiguchi",
+  "content_update": "1",
+  "cost": "cost_free",
+  "country": [
+    "af",
+    "af"
+  ],
+  "description": "Rudolph Takiguchi",
+  "end_date": "1",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": [
+    "format_face_to_face",
+    "format_online",
+    "format_blended",
+    "format_hybrid"
+  ],
+  "language": [
+    "ab",
+    "ab"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "Rudolph Takiguchi",
+  "level": "level_basic",
+  "platforms": [
+    "Rudolph Takiguchi",
+    "Rudolph Takiguchi"
+  ],
+  "prerequisites": [
+    "Rudolph Takiguchi",
+    "Rudolph Takiguchi"
+  ],
+  "provider": "Rudolph Takiguchi",
+  "repository": "wai-course-list",
+  "reviews": "1",
+  "start_date": "1",
+  "submission_date": "2024-07-25T12:06:27.902Z",
+  "submission_ref": "524f05e0-4a7e-11ef-8695-7db45634c2b4",
+  "submitter_email": "tpdhbddbtd.q@rightbliss.beauty",
+  "submitter_name": "Rudolph",
+  "title": "Rudolph Takiguchi",
+  "topics": [
+    "Rudolph Takiguchi",
+    "Rudolph Takiguchi"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "Rudolph Takiguchi",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "1"
+}
