@@ -1,0 +1,105 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Zhianna Kenaston",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "1",
+  "check_publish_info": "1",
+  "comments": "Zhianna Kenaston",
+  "content_update": "1",
+  "cost": "cost_free",
+  "country": [
+    "af",
+    "af"
+  ],
+  "description": "Zhianna Kenaston",
+  "end_date": "1",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": [
+    "format_face_to_face",
+    "format_online",
+    "format_blended",
+    "format_hybrid"
+  ],
+  "language": [
+    "ab",
+    "ab"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "Zhianna Kenaston",
+  "level": "level_basic",
+  "platforms": [
+    "Zhianna Kenaston",
+    "Zhianna Kenaston"
+  ],
+  "prerequisites": [
+    "Zhianna Kenaston",
+    "Zhianna Kenaston"
+  ],
+  "provider": "Zhianna Kenaston",
+  "repository": "wai-course-list",
+  "reviews": "1",
+  "start_date": "1",
+  "submission_date": "2024-07-31T20:15:15.747Z",
+  "submission_ref": "998b8730-4f79-11ef-a878-9f61acc3793b",
+  "submitter_email": "tpcmtwbpmj.q@purline.top",
+  "submitter_name": "Zhianna",
+  "title": "Zhianna Kenaston",
+  "topics": [
+    "Zhianna Kenaston",
+    "Zhianna Kenaston"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "Zhianna Kenaston",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "1"
+}
