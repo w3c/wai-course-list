@@ -1,0 +1,78 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-06-01",
+  "cost": "cost_paid",
+  "country": [
+    "pt"
+  ],
+  "description": "This training aims to provide the fundamental foundations for any professional working in digital transformation, so that they can respond autonomously and sustainably to many of the essential questions on the topic of digital accessibility.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "No prerequisites required."
+  ],
+  "provider": "Lisbon Digital School",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-01-02",
+  "submission_date": "2024-08-02T05:39:00.566Z",
+  "submission_ref": "851f0f60-5091-11ef-8b0b-83a1bf32ff9a",
+  "submitter_email": "info@dxd.pt",
+  "submitter_name": "Ruben Ferreira Duarte",
+  "title": "Fundamentos de Acessibilidade Digital (Fundamentals of Digital Accessibility)",
+  "topics": [
+    "Transformation through digital",
+    "Digital accessibility",
+    "People and digital technology",
+    "Digital accessibility and business",
+    "National and international overview",
+    "Digital accessibility guidelines",
+    "Where to start"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://lisbondigitalschool.com/curso/curso-de-fundamentos-de-acessibilidade-digital/"
+}
