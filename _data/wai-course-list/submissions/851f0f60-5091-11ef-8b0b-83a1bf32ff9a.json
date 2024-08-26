@@ -51,7 +51,9 @@
   "submission_ref": "851f0f60-5091-11ef-8b0b-83a1bf32ff9a",
   "submitter_email": "info@dxd.pt",
   "submitter_name": "Ruben Ferreira Duarte",
-  "title": "Fundamentos de Acessibilidade Digital (Fundamentals of Digital Accessibility)",
+  "title": "Fundamentos de Acessibilidade Digital",
+  "english_title": "Fundamentals of Digital Accessibility",
+  "original_lang_title": "pt-pt",  
   "topics": [
     "Transformation through digital",
     "Digital accessibility",
