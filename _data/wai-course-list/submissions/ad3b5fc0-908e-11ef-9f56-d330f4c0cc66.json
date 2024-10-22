@@ -1,0 +1,87 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "More info (there are 2025 cohorts listed on the general schedule page as well): https://my.onlinelearningconsortium.org/s/community-event?id=a1Y4X000004nIdlUAE",
+  "content_update": "2024-08-01",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "us"
+  ],
+  "description": "Take a deeper dive into the principles and guidelines of the Web Content Accessibility Guidelines that course instructors and instructional designers need to consider when creating online courses. The workshop will focus on ways to meet accessibility criteria for documents and multimedia.",
+  "end_date": "2030-12-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 week, approximately 6-8 hours of work",
+  "level": "level_basic",
+  "platforms": "Canvas LMS",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Online Learning Consortium",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2024-10-22",
+  "submission_date": "2024-10-22T15:59:53.788Z",
+  "submission_ref": "ad3b5fc0-908e-11ef-9f56-d330f4c0cc66",
+  "submitter_email": "Kaitlin.Garrett@onlinelearning-c.org",
+  "submitter_name": "Kaitlin Garrett",
+  "title": "Accessible Course Design Using WCAG",
+  "topics": [
+    "WCAG",
+    "Accessible documents",
+    "Accessible multimedia"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules5",
+    "designer_modules6",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://drive.google.com/file/d/1P5Lr_9kzuYK3JDVg3t3pXvfciun7ia7l/view"
+}
