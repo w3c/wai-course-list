@@ -46,7 +46,9 @@
   "submission_ref": "759712d0-8170-11ef-a8e8-2752e6707ba6",
   "submitter_email": "info@dxd.pt",
   "submitter_name": "Ruben Ferreira Duarte",
-  "title": "Acessibilidade Digital na prática para Developers (Digital Accessibility in practice for Developers)",
+  "english_title": "Digital Accessibility in practice for Developers",
+  "original_lang_title": "pt",
+  "title": "Acessibilidade Digital na prática para Developers",
   "topics": [
     "Digital accessibility and the developer",
     "Accessibility tree",
