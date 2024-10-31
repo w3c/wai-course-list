@@ -33,10 +33,10 @@
     "learning_scheduled"
   ],
   "length": "12 hours",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "Zoom",
   "prerequisites": [
-    "No prerequisites required."
+    "Basic knowledge of HTML, CSS, and JavaScript."
   ],
   "provider": "Lisbon Digital School",
   "repository": "wai-course-list",
