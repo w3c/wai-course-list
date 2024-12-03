@@ -1,0 +1,72 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-12-03",
+  "cost": "cost_free",
+  "country": [
+    "in"
+  ],
+  "description": "web accessibility is providing facilities to disable persons like blind, motor, cognitive etc.",
+  "end_date": "2024-12-07",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Professional certification",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2024-12-03",
+  "submission_date": "2024-12-03T15:33:21.740Z",
+  "submission_ref": "eda5a0c0-b18b-11ef-ac9c-a90978edef8a",
+  "submitter_email": "tiwarineha0100@gmail.com",
+  "submitter_name": "Neha Tiwari",
+  "title": "Professional certification for accessibility testing",
+  "topics": [
+    "WCAG guidelines and aria attributes"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5"
+  ],
+  "website": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+}
