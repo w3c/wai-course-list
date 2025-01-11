@@ -1,0 +1,64 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-10",
+  "cost": "cost_paid",
+  "country": [
+    "es"
+  ],
+  "description": "The main objective of the course is to perform accessibility evaluations of web systems according to the WCAG-EM methodology.\r\n- To know the fundamental steps of the WCAG-EM methodology and how they are addressed in an evaluation.\r\n- To understand how to evaluate a web site \r\n- To know the process to complete an accessibility report.",
+  "end_date": "2025-04-06",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 weeks",
+  "level": "level_basic",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "Basic knowledge of HTML CSS and JS"
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-03-24",
+  "submission_date": "2025-01-11T18:45:53.371Z",
+  "submission_ref": "4910e2b0-d04c-11ef-a914-096add6ee85f",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Evaluación (Specialization Course in Digital Accessibility: Evaluation Module)",
+  "topics": [
+    "accessible evaluation"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4447/"
+}
