@@ -1,0 +1,71 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-10",
+  "cost": "cost_paid",
+  "country": [
+    "es"
+  ],
+  "description": "The main objective of the course is to introduce attendees to how to code web elements, considering accessibility.\r\n- Understand the main aspects related to the coding of web elements to make them accessible.\r\n- Know HTML5 and WAI-ARIA to properly code web elements.\r\n- To know the process to carry out a quick accessibility evaluation of the system.",
+  "end_date": "2025-03-23",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es",
+    ""
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_intermediate",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "basic knowledge of HTML and CSS",
+    ""
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-03-04",
+  "submission_date": "2025-01-11T18:32:28.882Z",
+  "submission_ref": "698d9b20-d04a-11ef-a914-096add6ee85f",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Codificación (Specialization Course in Digital Accessibility: Coding Module) ",
+  "topics": [
+    "accessible code"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4446/"
+}
