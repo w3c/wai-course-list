@@ -22,7 +22,7 @@
   "country": [
     "es"
   ],
-  "description": "The main objective of the course is to perform accessibility evaluations of web systems according to the WCAG-EM methodology.\r\n- To know the fundamental steps of the WCAG-EM methodology and how they are addressed in an evaluation.\r\n- To understand how to evaluate a web site \r\n- To know the process to complete an accessibility report.",
+  "description": "The main objective of the course is to perform accessibility evaluations of web systems according to the WCAG-EM methodology. To know the fundamental steps of the WCAG-EM methodology and how they are addressed in an evaluation. To understand how to evaluate a web site. To know the process to complete an accessibility report.",
   "end_date": "2025-04-06",
   "form_name": "submission",
   "form_version": "1",
@@ -47,7 +47,9 @@
   "submission_ref": "2ab3dd50-d04b-11ef-a914-096add6ee85f",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Evaluación (Specialization Course in Digital Accessibility: Evaluation Module)",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Evaluación",
+  "english_title": "Specialization Course in Digital Accessibility: Evaluation Module",
+  "original_lang_title": "es",
   "topics": [
     "accessible evaluation"
   ],
