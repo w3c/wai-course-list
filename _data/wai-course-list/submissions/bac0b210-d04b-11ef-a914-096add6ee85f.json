@@ -24,7 +24,7 @@
   "country": [
     "es"
   ],
-  "description": "The main objective of the course is to raise awareness of digital accessibility.\r\n- Understand how people with disabilities use the web.\r\n- Students will perform simulations of disabilities with assistive tools.\r\n- The regulations currently in force regarding compliance with the requirements of the EAA (European Accessibility Act) are explained.",
+  "description": "The main objective of the course is to raise awareness of digital accessibility. Understand how people with disabilities use the web. Students will perform simulations of disabilities with assistive tools. The regulations currently in force regarding compliance with the requirements of the EAA (European Accessibility Act) are explained.",
   "end_date": "2025-02-16",
   "form_name": "submission",
   "form_version": "1",
@@ -50,6 +50,8 @@
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
   "title": "Curso de especialización en Accesibilidad Digital: Módulo de Sensibilización (Digital Accessibility Specialization Course: Awareness Raising Module)",
+  "english_title": "Digital Accessibility Specialization Course: Awareness Raising Module",
+  "original_lang_title": "es",
   "topics": [
     "inclusive design"
   ],
