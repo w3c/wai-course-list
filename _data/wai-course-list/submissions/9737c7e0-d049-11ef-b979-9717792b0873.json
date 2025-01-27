@@ -21,7 +21,7 @@
   "country": [
     "es"
   ],
-  "description": "The main objective of the course is to introduce attendees to the aspects of design for accessibility.\r\n- To know the strategies for the design of different web elements. \r\n- Understand how to create an accessible design system that complies with current regulations.\r\n- To know the process to carry out a quick accessibility evaluation of the design.",
+  "description": "The main objective of the course is to introduce attendees to the aspects of design for accessibility. To know the strategies for the design of different web elements. Understand how to create an accessible design system that complies with current regulations. To know the process to carry out a quick accessibility evaluation of the design.",
   "end_date": "2025-03-02",
   "form_name": "submission",
   "form_version": "1",
@@ -46,7 +46,9 @@
   "submission_ref": "9737c7e0-d049-11ef-b979-9717792b0873",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Diseño (Digital Accessibility Specialization Course: Design Module)",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Diseño",
+  "english_title": "Digital Accessibility Specialization Course: Design Module",
+  "original_lang_title": "es",
   "topics": [
     "inclusive design"
   ],
