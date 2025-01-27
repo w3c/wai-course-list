@@ -49,7 +49,9 @@
   "submission_ref": "bfd944b0-d046-11ef-893a-df8c295fbcec",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital (Digital Accessibility Specialization Course)",
+  "title": "Curso de especialización en Accesibilidad Digital",
+  "english_title": "Digital Accessibility Specialization Course",
+  "original_lang_title": "fr",
   "topics": [
     "empathize with people with disabilities",
     "accessible web development",
