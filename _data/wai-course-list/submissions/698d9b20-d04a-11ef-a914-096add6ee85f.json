@@ -22,14 +22,13 @@
   "country": [
     "es"
   ],
-  "description": "The main objective of the course is to introduce attendees to how to code web elements, considering accessibility.\r\n- Understand the main aspects related to the coding of web elements to make them accessible.\r\n- Know HTML5 and WAI-ARIA to properly code web elements.\r\n- To know the process to carry out a quick accessibility evaluation of the system.",
+  "description": "The main objective of the course is to introduce attendees to how to code web elements, considering accessibility. Understand the main aspects related to the coding of web elements to make them accessible. Know HTML5 and WAI-ARIA to properly code web elements. To know the process to carry out a quick accessibility evaluation of the system.",
   "end_date": "2025-03-23",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
   "language": [
-    "es",
-    ""
+    "es"
   ],
   "learning": [
     "learning_scheduled"
@@ -39,7 +38,6 @@
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
     "basic knowledge of HTML and CSS",
-    ""
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
@@ -49,7 +47,9 @@
   "submission_ref": "698d9b20-d04a-11ef-a914-096add6ee85f",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Codificación (Specialization Course in Digital Accessibility: Coding Module) ",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Codificación",
+  "english_title": "Specialization Course in Digital Accessibility: Coding Module",
+  "original_lang_title": "es",
   "topics": [
     "accessible code"
   ],
