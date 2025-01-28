@@ -4,9 +4,7 @@
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -25,7 +23,7 @@
     "es"
   ],
   "description": "The main objective of the course is to raise awareness of digital accessibility. Understand how people with disabilities use the web. Students will perform simulations of disabilities with assistive tools. The regulations currently in force regarding compliance with the requirements of the EAA (European Accessibility Act) are explained.",
-  "end_date": "2025-02-02",
+  "end_date": "",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
@@ -44,7 +42,7 @@
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-01-10",
+  "start_date": "2025-02-04",
   "submission_date": "2025-01-11T18:14:27.520Z",
   "submission_ref": "e502dc00-d047-11ef-89ba-95cecdf00e71",
   "submitter_email": "afra.pascual@udl.cat",
@@ -53,8 +51,8 @@
   "english_title": "Digital Accessibility Specialization Course: Awareness Raising Module",
   "original_lang_title": "es",
   "topics": [
-    "inclusive design",
-    "empathize with people with disabilities"
+    "Inclusive design",
+    "Empathize with people with disabilities"
   ],
   "type_registration": [
     "type_registration_individual"
