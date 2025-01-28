@@ -4,9 +4,7 @@
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -42,7 +40,7 @@
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-03-24",
+  "start_date": "2025-03-25",
   "submission_date": "2025-01-11T18:37:52.934Z",
   "submission_ref": "2ab3dd50-d04b-11ef-a914-096add6ee85f",
   "submitter_email": "afra.pascual@udl.cat",
@@ -51,12 +49,12 @@
   "english_title": "Specialization Course in Digital Accessibility: Evaluation Module",
   "original_lang_title": "es",
   "topics": [
-    "accessible evaluation"
+    "Accessible evaluation"
   ],
   "type_registration": [
     "type_registration_individual"
   ],
-  "type_resource": "type_certification",
+  "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
     "foundation_modules4",
