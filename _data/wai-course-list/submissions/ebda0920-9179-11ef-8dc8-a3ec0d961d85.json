@@ -7,10 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -27,7 +24,7 @@
     "us"
   ],
   "description": "This workshop will provide participants with the knowledge, tools, and strategies they need to develop a working draft timeline and proposal to implement a digital accessibility plan in their own institution.",
-  "end_date": "2030-12-31",
+  "end_date": "",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
