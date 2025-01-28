@@ -57,7 +57,7 @@
   "type_registration": [
     "type_registration_individual"
   ],
-  "type_resource": "type_certification",
+  "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
     "foundation_modules1",
