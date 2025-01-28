@@ -7,10 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -30,7 +27,7 @@
     "us"
   ],
   "description": "This workshop will help you better understand the legal framework for accessibility in online education and how learners with disabilities participate in online classes. You will also explore the practical application of procedures that instructional designers, instructors, developers, & administrators follow when they create ADA-compliant courses.",
-  "end_date": "2030-12-31",
+  "end_date": "",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
