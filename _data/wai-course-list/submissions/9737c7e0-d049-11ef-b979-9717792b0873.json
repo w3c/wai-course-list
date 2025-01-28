@@ -3,9 +3,7 @@
     "general-accessibility-material-ahead-of-time",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -33,7 +31,7 @@
     "learning_scheduled"
   ],
   "length": "3 weeks",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
     "Basic knowledge of design web"
@@ -41,7 +39,7 @@
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-01-10",
+  "start_date": "2025-02-18",
   "submission_date": "2025-01-11T18:26:35.998Z",
   "submission_ref": "9737c7e0-d049-11ef-b979-9717792b0873",
   "submitter_email": "afra.pascual@udl.cat",
@@ -50,12 +48,12 @@
   "english_title": "Digital Accessibility Specialization Course: Design Module",
   "original_lang_title": "es",
   "topics": [
-    "inclusive design"
+    "Inclusive design"
   ],
   "type_registration": [
     "type_registration_individual"
   ],
-  "type_resource": "type_certification",
+  "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
     "designer_modules1",
