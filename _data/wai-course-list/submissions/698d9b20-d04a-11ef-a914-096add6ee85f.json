@@ -4,9 +4,7 @@
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -34,10 +32,10 @@
     "learning_scheduled"
   ],
   "length": "3 weeks",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
-    "basic knowledge of HTML and CSS",
+    "Basic knowledge of HTML and CSS",
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
@@ -51,12 +49,12 @@
   "english_title": "Specialization Course in Digital Accessibility: Coding Module",
   "original_lang_title": "es",
   "topics": [
-    "accessible code"
+    "Accessible code"
   ],
   "type_registration": [
     "type_registration_individual"
   ],
-  "type_resource": "type_certification",
+  "type_resource": "type_training",
   "type_resource_new": "",
   "wai_curricula": [
     "developer_modules1",
