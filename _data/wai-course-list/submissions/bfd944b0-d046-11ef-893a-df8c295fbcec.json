@@ -3,9 +3,7 @@
     "general-accessibility-material-ahead-of-time",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information",
-    "non-digital-accessibility-assistive-listening-devices",
-    "non-digital-accessibility-sufficient-contrast"
+    "digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -44,7 +42,7 @@
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-01-10",
+  "start_date": "2025-02-04",
   "submission_date": "2025-01-11T18:06:15.675Z",
   "submission_ref": "bfd944b0-d046-11ef-893a-df8c295fbcec",
   "submitter_email": "afra.pascual@udl.cat",
@@ -53,10 +51,10 @@
   "english_title": "Digital Accessibility Specialization Course",
   "original_lang_title": "es",
   "topics": [
-    "empathize with people with disabilities",
-    "accessible web development",
-    "accessible web design",
-    "accessible web content evaluation (WCAG-EM methodology)"
+    "Empathize with people with disabilities",
+    "Accessible web development",
+    "Accessible web design",
+    "Accessible web content evaluation (WCAG-EM methodology)"
   ],
   "type_registration": [
     "type_registration_individual"
