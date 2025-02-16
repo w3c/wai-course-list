@@ -34,7 +34,7 @@
   "level": "level_basic",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
-    "Basic knowledge of design web"
+    "Basic knowledge of web design"
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
