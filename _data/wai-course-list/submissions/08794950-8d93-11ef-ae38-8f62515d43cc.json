@@ -7,12 +7,7 @@
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
     "digital-accessibility-description-of-visual-information",
-    "digital-accessibility-all-content-meets-wcag",
-    "non-digital-accessibility-accessible-facility",
-    "non-digital-accessibility-assistive-listening-devices",
-    "non-digital-accessibility-text-and-visuals-big-enough",
-    "non-digital-accessibility-sufficient-contrast",
-    "non-digital-accessibility-description-of-visual-information"
+    "digital-accessibility-all-content-meets-wcag"
   ],
   "accessibility_support_other": "",
   "audience": [
@@ -41,20 +36,23 @@
   "length": "28-30 hours (4-5 hours a week for 6 weeks).",
   "level": "level_basic",
   "platforms": "D2L : Brightspace ",
-  "prerequisites": [
-    ""
-  ],
+  "prerequisites": "" ,
   "provider": "LEtoile Education, LLC",
   "repository": "wai-course-list",
   "reviews": "https://letoile-education.com/testimonials/",
-  "start_date": "2025-01-01",
+  "start_date": "2025-04-28",
   "submission_date": "2024-10-18T20:53:31.365Z",
   "submission_ref": "08794950-8d93-11ef-ae38-8f62515d43cc",
   "submitter_email": "nletoile@letoile-education.com",
   "submitter_name": "Dr. Nicole L'Etoile",
   "title": "Making Online Content Accessible For All",
   "topics": [
-    "Inclusive online course design, accessible multimedia and documents."
+    "Introduction to Accessibility in Digital Content Design",
+    "Perceivable Content – Designing for All Learners",
+    "Operable Interfaces – Navigation & Interaction",
+    "Understandable Content – Simplifying Language and Structure",
+    "Robust Content – Compatibility with Assistive Technology",
+    "Evaluating and Auditing Course Accessibility"
   ],
   "type_registration": [
     "type_registration_individual",
