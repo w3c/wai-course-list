@@ -12,7 +12,7 @@
 - [Submission form](https://www.w3.org/WAI/courses/submission/)
 - [Project background](https://www.w3.org/WAI/EO/wiki/WAI_Curricula/List_of_Courses)
 
-### Form submission
+## Form submission
 
 When submitted the browser is redirected to a success/fail page while the GitHub Action runs async.
 
@@ -24,7 +24,7 @@ https://github.com/w3c/wai-course-list/pulls
 
 The Function progress is logged and can be viewed in netlify.
 
-### Important Notes
+## Important Notes
 
 Unless otherwise specified the form Submission calls the Netlify Function in the production deploy of the wai-website. It is possible to override with a DEBUG option in the submission filer to use a local function. This is for testing code changes locally. The Netlify Function processes the submitted form encoded data and passes as JSON to a GitHub action in wai-course-list repo. It also adds a couple of extra fields.
 
