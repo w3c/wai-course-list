@@ -1,0 +1,54 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-text-and-visuals-can-be-resized"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-01",
+  "cost": "cost_paid",
+  "country": [
+    "in"
+  ],
+  "description": "PLAXIS software 2D/3D training by PIGSOL Learning helps you master soil material modeling, advanced geotechnical analysis, and material property selection. Learn to generate meshes for soil/rock models, conduct parametric studies, and create advanced visualizations to effectively communicate simulation results.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "1 - 2 month",
+  "level": "level_basic",
+  "platforms": "Meeting Platform",
+  "prerequisites": [
+    "Basic Knowledge of Geotechnical"
+  ],
+  "provider": "PIGSO LEARNING",
+  "repository": "wai-course-list",
+  "reviews": "https://pigsolearning.com/testimonial/",
+  "start_date": "2025-01-01",
+  "submission_date": "2025-03-19T04:18:08.217Z",
+  "submission_ref": "297e1c90-0479-11f0-9343-13b71fb05930",
+  "submitter_email": "michelwatt231@gmail.com",
+  "submitter_name": "Michel Watt",
+  "title": "PLAXIS Software Training Online",
+  "topics": [
+    "Geotechnical Design and Analysis"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_undergraduate",
+  "type_resource_new": "",
+  "website": "https://pigsolearning.com/plaxis-software-training/"
+}
