@@ -1,0 +1,88 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Making Online Content Accessible for All is designed to equip course designers, educators, and learning and development specialists with practical, actionable strategies for creating accessible digital content. The course emphasizes the intersection of accessibility, usability, and inclusive design, aligning with the Web Content Accessibility Guidelines (WCAG), and Universal Design for Learning (UDL) principles. Delivered through D2L, this course offers practical insights beyond compliance, helping participants build inclusive learning environments that support diverse learners.",
+  "content_update": "2024-10-18",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "Making Online Content Accessible for All is an in-depth 6-week course designed to equip educators, instructional designers, and consultants with the skills to create and evaluate accessible digital content. Focusing on the latest Web Content Accessibility Guidelines (WCAG 2.2) and neurodivergent design principles.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "28-30 hours (4-5 hours a week for 6 weeks).",
+  "level": "level_basic",
+  "platforms": "D2L : Brightspace ",
+  "prerequisites": "" ,
+  "provider": "LEtoile Education, LLC",
+  "repository": "wai-course-list",
+  "reviews": "https://letoile-education.com/testimonials/",
+  "start_date": "2025-04-07",
+  "submission_date": "2024-10-18T20:53:31.365Z",
+  "submission_ref": "08794950-8d93-11ef-ae38-8f62515d43cc",
+  "submitter_email": "nletoile@letoile-education.com",
+  "submitter_name": "Dr. Nicole L'Etoile",
+  "title": "Making Online Content Accessible For All",
+  "topics": [
+    "Introduction to Accessibility in Digital Content Design",
+    "Perceivable Content – Designing for All Learners",
+    "Operable Interfaces – Navigation & Interaction",
+    "Understandable Content – Simplifying Language and Structure",
+    "Robust Content – Compatibility with Assistive Technology",
+    "Evaluating and Auditing Course Accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://letoile-education.com/courses/"
+}
