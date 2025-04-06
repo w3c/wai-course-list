@@ -1,0 +1,65 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-04-06",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "in"
+  ],
+  "description": "Senior Front-End Developer with over 10 years of experience in developing high-converting e-commerce websites. Proven expertise in Magento with 8+ years of hands-on experience in front-end development and implementation. Adept at creating seamless user interfaces and enhancing user experience.",
+  "end_date": "2025-04-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_advanced",
+  "platforms": "Learning Management System",
+  "prerequisites": [
+    "W3C Accessibility Standards"
+  ],
+  "provider": "w3",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-04-06",
+  "submission_date": "2025-04-06T08:42:18.196Z",
+  "submission_ref": "0c407940-12c3-11f0-8bcf-df13f1c1fd25",
+  "submitter_email": "akshaykothekar28@gmail.com",
+  "submitter_name": "Akshay",
+  "title": "WCAG",
+  "topics": [
+    "accessibility policy"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "website": "https://www.linkedin.com/in/akshay-kothekar"
+}
