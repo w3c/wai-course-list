@@ -1,0 +1,90 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "Yes",
+  "content_update": "2025-04-09",
+  "cost": "cost_free",
+  "country": [
+    "in"
+  ],
+  "description": "Looking for free certification course on Web Accessibility Development along with Training.",
+  "end_date": "2025-04-09",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "en",
+    ""
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "4",
+  "level": "level_intermediate",
+  "platforms": "LMS or SMS",
+  "prerequisites": [
+    "To get AAA certification as per WCAG guidelines",
+    ""
+  ],
+  "provider": "W3C",
+  "repository": "wai-course-list",
+  "reviews": "https://evrontechnologies.com/",
+  "start_date": "2025-04-09",
+  "submission_date": "2025-04-09T07:22:12.032Z",
+  "submission_ref": "5acb4c00-1513-11f0-87d7-c9a24a5d9a4b",
+  "submitter_email": "kavitha@evrontek.com",
+  "submitter_name": "Kavitha Rani",
+  "title": "Looking for certification on Web Accessibility Development",
+  "topics": [
+    "Need policy and regulation, design,accessible documents and multimedia",
+    ""
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://evrontechnologies.com/"
+}
