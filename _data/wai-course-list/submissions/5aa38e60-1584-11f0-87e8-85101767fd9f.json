@@ -1,0 +1,95 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "Tailored accommodations can be provided upon request to meet specific accessibility needs",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-04-07",
+  "cost": "cost_paid",
+  "country": [
+    "nl"
+  ],
+  "description": "Comprehensive training (in Dutch) for teams and organizations on digital accessibility. Covers legislation, WCAG, inclusive design, and implementation across roles — from developers to UX and content. Includes hands-on practice and organization-specific challenges.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "nl",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "16 hours",
+  "level": "level_basic",
+  "platforms": "Live (in-person or via video conferencing platform such as Zoom or Microsoft Teams)",
+  "prerequisites": [
+    "Basic understanding of websites or digital content (e.g. editing, design, or development)."
+  ],
+  "provider": "Bureau Toegankelijkheid",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-04-09",
+  "submission_date": "2025-04-09T20:51:04.902Z",
+  "submission_ref": "5aa38e60-1584-11f0-87e8-85101767fd9f",
+  "submitter_email": "info@bureautoegankelijkheid.nl",
+  "submitter_name": "Allon Dery",
+  "title": "Digitale toegankelijkheid: bewustwording en implementatie (Digital Accessibility: Awareness and Implementation)",
+  "topics": [
+    "Accessibility legislation and compliance (including WCAG and EAA)",
+    "Inclusive and human-centered design",
+    "Accessibility in UX, content, and development",
+    "Practical implementation and testing",
+    "Organization-specific accessibility challenges"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules6"
+  ],
+  "website": "https://www.bureautoegankelijkheid.nl/training-digitale-toegankelijkheid"
+}
