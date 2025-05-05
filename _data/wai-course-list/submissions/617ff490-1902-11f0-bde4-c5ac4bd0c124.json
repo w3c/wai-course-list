@@ -20,8 +20,7 @@
   "content_update": "2025-04-07",
   "cost": "cost_reduced_for_some",
   "country": [
-    "nl",
-    ""
+    "nl"
   ],
   "description": "In this training testing apps you will learn the basics of testing apps. You will receive a certificate upon completion. This course is part of multiple app accessibility training courses.",
   "end_date": "",
@@ -37,8 +36,7 @@
   "length": "1/2 day",
   "level": "level_intermediate",
   "platforms": [
-    "Thinkific",
-    ""
+    "Thinkific"
   ],
   "prerequisites": [
     "Basic knowledge accessibility"
