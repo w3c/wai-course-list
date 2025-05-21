@@ -1,0 +1,59 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-01",
+  "cost": "cost_free",
+  "country": [
+    "fr"
+  ],
+  "description": "Course test description.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Acme Inc.",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-05-25",
+  "submission_date": "2025-05-21T15:37:30.108Z",
+  "submission_ref": "817f53c0-3659-11f0-a05b-9d09287f4cb3",
+  "submitter_email": "jdoe@acme.org",
+  "submitter_name": "Jane Doe",
+  "title": "Acme Course",
+  "topics": [
+    "Accessibility topic"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules5",
+    "developer_modules4"
+  ],
+  "website": "https://www.example.org"
+}
