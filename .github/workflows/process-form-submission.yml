@@ -31,7 +31,7 @@ jobs:
           branch: form-submission/${{ github.event.client_payload.form.submission_ref }}
           branch-suffix: random # handle concurrent submissions of same form id
           delete-branch: true
-          title: "New form submission: from ${{ github.event.client_payload.form.provider }}, starting ${{ github.event.client_payload.form.start_date }}"
+          title: "New course: by ${{ github.event.client_payload.form.provider }}, starting ${{ github.event.client_payload.form.start_date }}"
           body: |
             New form submission:
             - title: ${{ github.event.client_payload.form.title }}
