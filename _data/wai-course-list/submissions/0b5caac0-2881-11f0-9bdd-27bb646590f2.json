@@ -1,0 +1,93 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-04-28",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "au",
+    "us"
+  ],
+  "description": "Our UX accessibility certification program focuses on practical skills: writing accessible content, following UX accessibility guidelines, and helping teams deliver better experiences for everyone. Participants conduct a graded major exercise as a final project and earn a certificate.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "1-2 weeks",
+  "level": "level_intermediate",
+  "platforms": "Learndash",
+  "prerequisites": [
+    "English fluency",
+    "Basic understanding of UX"
+  ],
+  "provider": "UX Content Collective",
+  "repository": "wai-course-list",
+  "reviews": "https://uxcontent.com/accessibility-for-ux/",
+  "start_date": "2025-05-04",
+  "submission_date": "2025-05-04T00:45:15.500Z",
+  "submission_ref": "0b5caac0-2881-11f0-9bdd-27bb646590f2",
+  "submitter_email": "patrick@uxcontent.com",
+  "submitter_name": "Patrick Stafford",
+  "title": "Accessibility for UX Writers and Designers",
+  "topics": [
+    "Intro to accessibility",
+    "Frameworks such as POUR",
+    "Guidelines including WCAG and global regulations",
+    "Inclusive and accessible content design",
+    "Accessible interaction design",
+    "Advocating for accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://uxcontent.com/accessibility-for-ux/"
+}
