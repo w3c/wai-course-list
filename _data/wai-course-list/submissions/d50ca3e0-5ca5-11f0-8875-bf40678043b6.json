@@ -1,0 +1,51 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-05-05",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "Description",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Resource Provider",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-05-20",
+  "submission_date": "2025-07-09T09:19:36.222Z",
+  "submission_ref": "d50ca3e0-5ca5-11f0-8875-bf40678043b6",
+  "submitter_email": "jdoe@example.org",
+  "submitter_name": "John Doe",
+  "title": "Resource Title",
+  "topics": [
+    "Topic 1",
+    ""
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "website": "https://w3.org/WAI"
+}
