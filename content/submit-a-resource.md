@@ -25,9 +25,9 @@ footer: >
   DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
   DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
 {% endcomment %}
-{% assign DEBUG_PREVIEW_BUTTON = false %}
-{% assign DEBUG_SUBMISSION_FUNCTION = false %}
-{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
+{% assign DEBUG_PREVIEW_BUTTON = true %}
+{% assign DEBUG_SUBMISSION_FUNCTION = true %}
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = true %}
 
 
 <div style="grid-column: 4 / span 4">
