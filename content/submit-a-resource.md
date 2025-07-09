@@ -27,8 +27,7 @@ footer: >
 {% endcomment %}
 {% assign DEBUG_PREVIEW_BUTTON = true %}
 {% assign DEBUG_SUBMISSION_FUNCTION = true %}
-{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = true %}
-
+{% assign DEBUG_USE_LOCAL_SUBMISSION_FUNCTION = false %}
 
 <div style="grid-column: 4 / span 4">
 
