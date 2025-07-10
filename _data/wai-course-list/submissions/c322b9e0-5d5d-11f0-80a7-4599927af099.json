@@ -1,0 +1,50 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-07-09",
+  "cost": "cost_free",
+  "country": [
+    "pt"
+  ],
+  "description": "Test Submission",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Test Submission",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-07-03",
+  "submission_date": "2025-07-10T07:16:13.566Z",
+  "submission_ref": "c322b9e0-5d5d-11f0-80a7-4599927af099",
+  "submitter_email": "lspereira@fc.ul.pt",
+  "submitter_name": "Test Submission",
+  "title": "Test Submission",
+  "topics": [
+    "Test Submission"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://www.test.pt"
+}
