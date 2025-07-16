@@ -1,0 +1,100 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-07-14",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "pt"
+  ],
+  "description": "This course combines theory and practice of digital accessibility by highlighting concepts and standards of accessibility, the importance of conducting usability tests guided by technical criteria (such as the WCAG guidelines), qualitative and inclusive research methods, and using specific tools to evaluate accessibility.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt-BR",
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 weeks (20 Hours)",
+  "level": "level_basic",
+  "platforms": [
+    "Google Meet",
+    "Slack"
+  ],
+  "prerequisites": [
+    "Experience in User Experience and basic Acessibility fundamentals"
+  ],
+  "provider": "TheStarter",
+  "repository": "wai-course-list",
+  "reviews": "https://testimonial.to/thestarter/all",
+  "start_date": "2025-07-14",
+  "submission_date": "2025-07-16T11:07:20.521Z",
+  "submission_ref": "0af6a390-6235-11f0-b420-ddadd3296a9d",
+  "submitter_email": "miguel@thestarter.io",
+  "submitter_name": "Miguel Coelho",
+  "title": "Acessibilidade em UX Design: Dos Fundamentos à Prática (Accessibility in UX Design: From Fundamentals to Practice)",
+  "topics": [
+    "Fundamentals of Digital Accessibility",
+    "Introduction to the WCAG Guidelines (Web Content Accessibility Guidelines)",
+    "Introduction to disabilities: visual, hearing, motor, intellectual and multiple.",
+    "Persona analysis with a focus on accessibility",
+    "WCAG 2.1/2.2: structure and principles",
+    "National and international laws (Brazilian Inclusion Law, ADA, Section 508, European Accessibility Act).    ",
+    "Evaluating websites with a checklist based on WCAG",
+    "Accessibility analysis with tools such as WAVE, Axe and Lighthouse",
+    "Visual Design and Cognitive Accessibility",
+    "Typography, colors and contrast",
+    "Responsive layouts and visual hierarchy",
+    "Accessibility for dyslexia, ADHD and autism",
+    "Screen Reading and Keyboard Navigation Tools",
+    "ARIA roles and HTML semantics for accessibility",
+    "Research with Users with Disabilities",
+    "Figma and accessible prototyping",
+    "How to represent accessibility in wireframes and flows",
+    "Validation with automated tools and real tests",
+    "Accessibility Culture and Implementation in Teams",
+    "Documentation, communication and advocacy",
+    "Strategies for building more inclusive teams"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules7"
+  ],
+  "website": "https://www.thestarter.io/uxdesign/acessibilidade-para-ux-design"
+}
