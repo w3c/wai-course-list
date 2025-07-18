@@ -1,0 +1,85 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-10-03",
+  "cost": "cost_paid",
+  "country": [
+    "pt"
+  ],
+  "description": "For all developers who believe in the power of code also as a robust semantic element, more than a mere visual transposition of interfaces. Technology at the service of adapting digital experiences to the reality of each person, with or without disabilities.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "12 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "Basic knowledge of HTML, CSS, and JavaScript."
+  ],
+  "provider": "Lisbon Digital School",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-01-02",
+  "submission_date": "2024-10-03T10:15:48.093Z",
+  "submission_ref": "759712d0-8170-11ef-a8e8-2752e6707ba6",
+  "submitter_email": "info@dxd.pt",
+  "submitter_name": "Ruben Ferreira Duarte",
+  "english_title": "Digital Accessibility in practice for Developers",
+  "original_lang_title": "pt",
+  "title": "Acessibilidade Digital na prática para Developers",
+  "topics": [
+    "Digital accessibility and the developer",
+    "Accessibility tree",
+    "Screen readers",
+    "Techniques for hiding/showing elements",
+    "Focus management",
+    "ARIA",
+    "Semantic structure and navigation",
+    "Images and SVG's",
+    "Visual considerations",
+    "Accessibility and SEO",
+    "Tools and tests",
+    "Analysis of a website"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://lisbondigitalschool.com/curso/acessibilidade-digital-na-pratica-para-developers/"
+}

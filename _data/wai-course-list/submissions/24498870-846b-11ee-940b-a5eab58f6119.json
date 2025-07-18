@@ -1,0 +1,80 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-11-02",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "Would you like to publish information that is accessible to everyone? Not sure how to get started? This introduction will give you an overview of what digital accessibility entails.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 - 4 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "None"
+  ],
+  "provider": "AnySurfer",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-11-02",
+  "submission_date": "2023-11-16T10:30:20.024Z",
+  "submission_ref": "24498870-846b-11ee-940b-a5eab58f6119",
+  "submitter_email": "info@anysurfer.be",
+  "submitter_name": "Bram Janssens",
+  "title": "Introduction to digital accessibility",
+  "topics": [
+    "What is digital accessibility?",
+    "How do people with disabilities use a computer, and what assistive technologies do they use?",
+    "Legislation and standards",
+    "Where to start"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.anysurfer.be/en/services/training/introduction"
+}

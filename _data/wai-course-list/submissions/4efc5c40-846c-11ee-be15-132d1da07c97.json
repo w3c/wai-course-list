@@ -1,6 +1,7 @@
 {
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
     "digital-accessibility-caption-audio",
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
@@ -8,6 +9,7 @@
     "digital-accessibility-description-of-visual-information",
     "digital-accessibility-all-content-meets-wcag",
     "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
     "non-digital-accessibility-text-and-visuals-big-enough",
     "non-digital-accessibility-sufficient-contrast"
   ],
@@ -19,55 +21,47 @@
   "check_publish_info": "on",
   "check_scope_info": "on",
   "comments": "",
-  "content_update": "2023-08-01",
-  "cost": "cost_reduced_for_some",
+  "content_update": "2023-11-02",
+  "cost": "cost_paid",
   "country": [
     "be"
   ],
-  "description": "In 2 sessions of 4 hours, discover accessibility and learn how to contribute to the accessibility of a site, an app, a document, by writing accessible content.",
+  "description": "This training is aimed at web editors and will teach you all there is to know about how to publish accessible content online.",
   "end_date": "",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_hybrid",
   "language": [
-    "en",
+    "nl",
     "fr",
-    "nl"
+    "en"
   ],
   "learning": [
     "learning_scheduled"
   ],
-  "length": "8h",
+  "length": "5 hours",
   "level": "level_basic",
-  "platforms": "",
-  "prerequisites": "",
-  "provider": "Eleven Ways",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "You have used a content management system to maintain a website or are about to start using one."
+  ],
+  "provider": "AnySurfer",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2022-11-24",
-  "submission_date": "2023-08-01T08:49:24.077Z",
-  "submission_ref": "507641d0-3048-11ee-9c56-212c2ec76942",
-  "submitter_email": "regine.lambrecht@elevenways.be",
-  "submitter_name": "Régine Lambrecht",
-  "title": "Advanced Web accessibility Training for Content Writers",
+  "start_date": "2023-11-02",
+  "submission_date": "2023-11-16T10:38:41.157Z",
+  "submission_ref": "4efc5c40-846c-11ee-be15-132d1da07c97",
+  "submitter_email": "info@anysurfer.be",
+  "submitter_name": "Bram Janssens",
+  "title": "Accessibility for web editors",
   "topics": [
-    "Definition",
-    "Assistive technologies and strategies",
-    "Return on investment",
-    "Myths",
-    "Accessibility legislation",
-    "Accessibility standards",
-    "Checklists",
-    "Where to start",
-    "Clear Content",
-    "Structure",
-    "Forms",
-    "Images",
-    "Data Tables",
-    "Multimedia"
+    "Why web accessibility is important",
+    "How disabled users employ assistive technology to surf the web",
+    "Discuss all accessibility guidelines",
+    "How do you make content accessible?"
   ],
   "type_registration": [
-    "type_registration_individual"
+    "type_registration_organization"
   ],
   "type_resource": "type_training",
   "type_resource_new": "",
@@ -84,5 +78,5 @@
     "content_author_modules5",
     "content_author_modules6"
   ],
-  "website": "https://www.elevenways.be/en/services/trainings#advanced-web-accessibility-training-for-content-writers"
+  "website": "https://www.anysurfer.be/en/services/training/editors"
 }

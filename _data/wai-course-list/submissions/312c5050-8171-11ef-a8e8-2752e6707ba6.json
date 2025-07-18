@@ -1,0 +1,94 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-10-03",
+  "cost": "cost_paid",
+  "country": [
+    "pt"
+  ],
+  "description": "For all designers who every day can make a difference in designing not only visuals but also inclusive experiences and interaction models. Simplifying the practical application of the main digital accessibility recommendations.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "12 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "No prerequisites required."
+  ],
+  "provider": "Lisbon Digital School",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-01-02",
+  "submission_date": "2024-10-03T10:21:02.805Z",
+  "submission_ref": "312c5050-8171-11ef-a8e8-2752e6707ba6",
+  "submitter_email": "info@dxd.pt",
+  "submitter_name": "Ruben Ferreira Duarte",
+  "english_title": "Digital Accessibility in practice for Designers",
+  "original_lang_title": "pt",
+  "title": "Acessibilidade Digital na prática para Designers",
+  "topics": [
+    "Digital accessibility",
+    "Role of the designer",
+    "Design for versatility",
+    "Digital experiences",
+    "Content",
+    "Multimedia",
+    "Colors",
+    "Typography",
+    "Images",
+    "Interaction",
+    "Animations",
+    "Interface components",
+    "Design systems",
+    "Usability testing",
+    "Development support"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://lisbondigitalschool.com/curso/acessibilidade-digital-na-pratica-para-designers/"
+}

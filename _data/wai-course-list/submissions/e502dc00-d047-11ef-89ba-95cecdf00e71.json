@@ -1,0 +1,70 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-10",
+  "cost": "cost_paid",
+  "country": [
+    "es"
+  ],
+  "description": "The main objective of the course is to raise awareness of digital accessibility. Understand how people with disabilities use the web. Students will perform simulations of disabilities with assistive tools. The regulations currently in force regarding compliance with the requirements of the EAA (European Accessibility Act) are explained.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "2 weeks",
+  "level": "level_basic",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "nothing"
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-02-04",
+  "submission_date": "2025-01-11T18:14:27.520Z",
+  "submission_ref": "e502dc00-d047-11ef-89ba-95cecdf00e71",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Sensibilización",
+  "english_title": "Digital Accessibility Specialization Course: Awareness Raising Module",
+  "original_lang_title": "es",
+  "topics": [
+    "Inclusive design",
+    "Empathize with people with disabilities"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4444/"
+}

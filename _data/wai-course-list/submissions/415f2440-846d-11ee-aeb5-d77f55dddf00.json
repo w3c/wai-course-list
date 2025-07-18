@@ -1,0 +1,98 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2023-11-02",
+  "cost": "cost_paid",
+  "country": [
+    "be"
+  ],
+  "description": "How do you design a website anyone can use? Which parts of the design process require extra attention, and which ones can be passed on to the developers?",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "nl",
+    "fr",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_basic",
+  "platforms": "Zoom",
+  "prerequisites": [
+    "None"
+  ],
+  "provider": "AnySurfer",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2023-11-02",
+  "submission_date": "2023-11-16T10:45:27.812Z",
+  "submission_ref": "415f2440-846d-11ee-aeb5-d77f55dddf00",
+  "submitter_email": "info@anysurfer.be",
+  "submitter_name": "Bram Janssens",
+  "title": "Accessibility for designers",
+  "topics": [
+    "What is digital accessibility?",
+    "Principles of universal design",
+    "Accessible and inclusive design",
+    "User research",
+    "Disability types",
+    "Graphic Design",
+    "Colors",
+    "Graphic elements",
+    "Images",
+    "Forms",
+    "Construction",
+    "Navigation",
+    "Changes whithin pages",
+    "Components",
+    "Mobile",
+    "Distractions",
+    "Video & audio"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.anysurfer.be/en/services/training/designers"
+}

@@ -1,0 +1,87 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "non-digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2024-02-02",
+  "cost": "cost_paid",
+  "country": [
+    "pl"
+  ],
+  "description": "You will learn: What a user with a disability experiences when using popular mobile applications. Why and how mobile applications should be tested for accessibility. About the structure of the WCAG, examples of good and bad practice and tools for manual and automated accessibility testing. How we carry out mobile app accessibility audit.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pl"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "8 clock hours, comprising 4 modules of 2 hours each.",
+  "level": "level_basic",
+  "platforms": "MS Teams",
+  "prerequisites": "",
+  "provider": "Accens",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2024-02-02",
+  "_original_submission_date": "2024-02-02T11:32:26.120Z",
+  "submission_date": "2024-03-05",
+  "submission_ref": "bd6f5080-c1be-11ee-a091-9dad63a0baf1",
+  "submitter_email": "contact@accens.io",
+  "submitter_name": "Accens",
+  "title": "Praktyczne wprowadzenie do testowania dostępności aplikacji mobilnych",
+  "original_lang_title": "pl",
+  "english_title": "Practical introduction to mobile applications accessibility testing",
+  "topics": [
+    "WCAG",
+    "accessibility legislation",
+    "mobile app accessibility",
+    "mobile app accessibility testing",
+    "tools for mobile app accessibility tests",
+    "good and bad practices"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://accens.pl/szkolenie-praktyczne-wprowadzenie-do-testowania-dostepnosci-aplikacji-mobilnych/"
+}

@@ -1,0 +1,68 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-01-10",
+  "cost": "cost_paid",
+  "country": [
+    "es"
+  ],
+  "description": "The main objective of the course is to introduce attendees to the aspects of design for accessibility. To know the strategies for the design of different web elements. Understand how to create an accessible design system that complies with current regulations. To know the process to carry out a quick accessibility evaluation of the design.",
+  "end_date": "2025-03-02",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_basic",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "Basic knowledge of web design"
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-02-18",
+  "submission_date": "2025-01-11T18:26:35.998Z",
+  "submission_ref": "9737c7e0-d049-11ef-b979-9717792b0873",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Diseño",
+  "english_title": "Digital Accessibility Specialization Course: Design Module",
+  "original_lang_title": "es",
+  "topics": [
+    "Inclusive design"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4445/"
+}
