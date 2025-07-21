@@ -1,0 +1,88 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-07-16",
+  "cost": "cost_paid",
+  "country": [
+    "pt"
+  ],
+  "description": "Este curso foi criado para designers, developers e product managers que querem aplicar acessibilidade digital de forma prática, crítica e integrada no dia a dia de produto. Aqui não vais decorar normas. Vais aprender a analisar, corrigir e argumentar com confiança.",
+  "end_date": "2026-07-31",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "16 horas",
+  "level": "level_intermediate",
+  "platforms": "Google Meet and Classroom",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "uiux.pt",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-06-01",
+  "submission_date": "2025-07-16T09:06:19.059Z",
+  "submission_ref": "22cb7830-6224-11f0-8a94-57aec93dbf1b",
+  "submitter_email": "joaolima@uiux.pt",
+  "submitter_name": "João Lima",
+  "title": "Curso Prático de Acessibilidade Digital para Equipas de Produto (Digital Accessibility: the practical course for product teams)",
+  "topics": [
+    "Fundamentos de Acessibilidade",
+    "Analise com Criterios de Acessibilidade"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5"
+  ],
+  "website": "https://www.uiux.pt/curso-acessibilidade-digital/"
+}
