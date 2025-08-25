@@ -20,7 +20,9 @@ footer: >
 ---
 <!-- markdownlint-disable no-inline-html -->
 
-<style>{% include wai-course-list/css/styles.css %}
+<style>
+{% include wai-course-list/css/styles.css %}
+{% include wai-course-list/css/filters.css %}
 </style>
 {% assign strings = site.data.wai-course-list.strings %}
 <div class="header-sup">
@@ -43,12 +45,17 @@ footer: >
 {% assign defaultSort = site.data.wai-course-list.sorting.first.sortkey %}
 {% include wai-course-list/sort-data-folder.liquid data=site.data.wai-course-list.submissions sortKey=defaultSort %}<div id="app">
     <div id="left-col" class="courses-filters">
-        <form data-filter-form action="...">
-            <h2 id="filters_title">{{ strings.filters_title }}</h2>
+        <h2 class="visuallyhidden">Filters</h2>
+        <button class="button button-filters" aria-haspopup="true" aria-expanded="false" id="openfilters">Filters</button>
+        <form data-filter-form action="..." class="data-filter-form">
+            <div class="filter-header">
+                <a class="close-filters"><svg focusable="false" aria-hidden="true" class="icon-ex-circle "><use xlink:href="../../assets/images/icons.svg#icon-ex-circle"></use></svg></a>
+            </div>
             {% include box.html type="start" class="simple infobox"%}
-            <svg focusable="false" aria-label="Information about the filters" class="i-info"><use xlink:href="/assets/images/icons.svg#icon-info"></use></svg>
+            <svg focusable="false" aria-label="Information about the filters" class="i-info"><use xlink:href="../../assets/images/icons.svg#icon-info"></use></svg>
             {{strings.filters_info}}
             {% include box.html type="end" %}
+            <a href="#tools-list" class="button button--skip-link">Skip filters</a>
             {% for filter in site.data.wai-course-list.filters %}
             <fieldset id="{{ filter.id }}">
                 {% if filter.info %}
@@ -162,4 +169,7 @@ footer: >
 </div>
 <script>
 {% include wai-course-list/js/courses.js %}
+{% include wai-course-list/js/filters.js %}
 </script>
+<style>
+</style>
