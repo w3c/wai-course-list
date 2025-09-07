@@ -1,0 +1,83 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-12-08",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "es",
+    ""
+  ],
+  "description": "The main objective of the course is to perform accessibility evaluations of web systems according to the WCAG-EM methodology. To know the fundamental steps of the WCAG-EM methodology and how they are addressed in an evaluation. To understand how to evaluate a web site. To know the process to complete an accessibility report.",
+  "end_date": "2025-12-23",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_intermediate",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "Basic knowledge of accessibility web"
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-12-01",
+  "submission_date": "2025-09-07T06:12:18.747Z",
+  "submission_ref": "9bc708b0-8bb1-11f0-ac88-69b3ff618b14",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Evaluación (Specialization Course in Digital Accessibility: Evaluation Module) ",
+  "topics": [
+    "accessible evaluation"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4701/"
+}
