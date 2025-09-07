@@ -1,0 +1,87 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-09-08",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "es"
+  ],
+  "description": "This course is to train students in the design, development and evaluation of accessible web content so that they can comply with the requirements of the EAA (European Accessibility Act), as well as the EN 301 549 standard ‘Accessibility requirements for ICT products and services’ and the WCAG 2.2 guidelines.",
+  "end_date": "2025-12-23",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 months",
+  "level": "level_intermediate",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "Basic knowledge of HTML and CSS; Basic knowledge of design web",
+    ""
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "https://www.formaciocontinua.udl.cat/es/programes-formatius/cursos/4705/",
+  "start_date": "2025-09-29",
+  "submission_date": "2025-09-07T05:27:20.915Z",
+  "submission_ref": "53be8a30-8bab-11f0-87db-8d8019a50d3a",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Microcredencial en Especialización en Accesibilidad Digital",
+  "topics": [
+    "Empathize with people with disabilities",
+    "Accessible web design",
+    " Accessible web development",
+    "Accessible web content evaluation (WCAG-EM methodology)"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/es/programes-formatius/cursos/4705/"
+}
