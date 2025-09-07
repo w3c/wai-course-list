@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-09-08",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "es"
+  ],
+  "description": "The main objective of the course is to introduce attendees to how to code web elements, considering accessibility. Understand the main aspects related to the coding of web elements to make them accessible. Know HTML5 and WAI-ARIA to properly code web elements. To know the process to carry out a quick accessibility evaluation of the system.",
+  "end_date": "2025-11-28",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "es"
+  ],
+  "learning": [
+    "learning_scheduled",
+    "learning_unscheduled"
+  ],
+  "length": "3 weeks",
+  "level": "level_intermediate",
+  "platforms": "Learning Management System (LMS) of University of Lleida",
+  "prerequisites": [
+    "Basic knowledge of HTML, CSS and JS",
+    ""
+  ],
+  "provider": "University of Lleida",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-11-10",
+  "submission_date": "2025-09-07T06:11:42.762Z",
+  "submission_ref": "865428a0-8bb1-11f0-ac88-69b3ff618b14",
+  "submitter_email": "afra.pascual@udl.cat",
+  "submitter_name": "Afra Pascual Almenara",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Codificación (Specialization Course in Digital Accessibility: Coding Module) ",
+  "topics": [
+    "accessible code"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7"
+  ],
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4702/"
+}
