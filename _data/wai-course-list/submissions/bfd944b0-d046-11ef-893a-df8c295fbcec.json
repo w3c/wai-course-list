@@ -1,28 +1,30 @@
 {
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
     "audience_designer",
     "audience_developer",
-    "audience_tester",
-    "audience_general"
+    "audience_tester"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
   "check_scope_info": "on",
   "comments": "",
-  "content_update": "2025-01-10",
-  "cost": "cost_paid",
+  "content_update": "2025-09-08",
+  "cost": "cost_reduced_for_some",
   "country": [
     "es"
   ],
-  "description": "The course aims to train attendees in the design, development and evaluation of accessible web content to meet the requirements of the EAA (European Accessibility Act) that comes into force in June 2025, as well as the EN 301 549 “Accessibility requirements for ICT products and services” and the WCAG 2.2 guidelines.",
-  "end_date": "2025-02-02",
+  "description": "This course is to train students in the design, development and evaluation of accessible web content so that they can comply with the requirements of the EAA (European Accessibility Act), as well as the EN 301 549 standard ‘Accessibility requirements for ICT products and services’ and the WCAG 2.2 guidelines.",
+  "end_date": "2025-12-23",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
@@ -32,34 +34,33 @@
   "learning": [
     "learning_scheduled"
   ],
-  "length": "2 months",
+  "length": "3 months",
   "level": "level_intermediate",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
-    "Basic knowledge of HTML and CSS",
-    "Basic knowledge of design web"
+    "Basic knowledge of HTML and CSS; Basic knowledge of design web",
+    ""
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
-  "reviews": "",
-  "start_date": "2025-02-04",
-  "submission_date": "2025-01-11T18:06:15.675Z",
-  "submission_ref": "bfd944b0-d046-11ef-893a-df8c295fbcec",
+  "reviews": "https://www.formaciocontinua.udl.cat/es/programes-formatius/cursos/4705/",
+  "start_date": "2025-09-29",
+  "submission_date": "2025-09-07T05:27:20.915Z",
+  "submission_ref": "53be8a30-8bab-11f0-87db-8d8019a50d3a",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital",
-  "english_title": "Digital Accessibility Specialization Course",
-  "original_lang_title": "es",
+  "title": "Microcredencial en Especialización en Accesibilidad Digital",
   "topics": [
     "Empathize with people with disabilities",
-    "Accessible web development",
     "Accessible web design",
+    " Accessible web development",
     "Accessible web content evaluation (WCAG-EM methodology)"
   ],
   "type_registration": [
-    "type_registration_individual"
+    "type_registration_individual",
+    "type_registration_organization"
   ],
-  "type_resource": "type_training",
+  "type_resource": "type_graduate",
   "type_resource_new": "",
   "wai_curricula": [
     "foundation_modules1",
@@ -82,5 +83,5 @@
     "designer_modules6",
     "designer_modules7"
   ],
-  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4370/"
+  "website": "https://www.formaciocontinua.udl.cat/es/programes-formatius/cursos/4705/"
 }
