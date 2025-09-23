@@ -1,0 +1,84 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_manager",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-09-23",
+  "cost": "cost_paid",
+  "country": [
+    "pl"
+  ],
+  "description": "This training teaches content editors and site administrators how to create accessible digital content. Participants will learn to make websites clearer, more user-friendly, and accessible for all, ensuring long-term maintenance of an inclusive online presence.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "pl",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_basic",
+  "platforms": [
+    "MS Teams",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "Basic understanding of digital content editing and web publishing",
+    "No prior accessibility expertise is required"
+  ],
+  "provider": "Webchecker-Audyt Dostępności",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-09-23",
+  "submission_date": "2025-09-23T14:26:24.267Z",
+  "submission_ref": "487e65b0-9889-11f0-ae3b-7be5779ea251",
+  "submitter_email": "kontakt@audyt-dostepnosci.pl",
+  "submitter_name": "Katarzyna Basiewicz",
+  "title": "Digital Content Accessibility",
+  "topics": [
+    "Publishing text, images, multimedia, and links in WCAG-compliant ways",
+    "Common mistakes made by content editors and how to avoid them",
+    "Practical tips and tools for daily accessibility work"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://audyt-dostepnosci.pl/dostepnosc-tresci-cyfrowych-szkolenie-dla-firm/"
+}
