@@ -1,0 +1,71 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "That's good",
+  "content_update": "2025-09-24",
+  "cost": "cost_free",
+  "country": [
+    "et"
+  ],
+  "description": "https://www.w3.org/WAI/courses/submission/",
+  "end_date": "2025-09-25",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4hours",
+  "level": "level_intermediate",
+  "platforms": "telegram ",
+  "prerequisites": [
+    "Css"
+  ],
+  "provider": "assuming University ",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-09-24",
+  "submission_date": "2025-09-24T15:45:13.547Z",
+  "submission_ref": "75c701b0-995d-11f0-8a4b-fb793f86751a",
+  "submitter_email": "tgk0138@gmail.com",
+  "submitter_name": "Tewelde ",
+  "title": "the scope of MCT",
+  "topics": [
+    "inclusive design"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "developer_modules1",
+    "developer_modules2",
+    "designer_modules2",
+    "content_author_modules2"
+  ],
+  "website": "https://www.w3.org/WAI/courses/submission/"
+}
