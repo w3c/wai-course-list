@@ -1,15 +1,20 @@
 {
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
     "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
     "audience_designer",
     "audience_developer",
+    "audience_manager",
     "audience_tester",
     "audience_general"
   ],
@@ -17,13 +22,13 @@
   "check_publish_info": "on",
   "check_scope_info": "on",
   "comments": "",
-  "content_update": "2025-01-10",
-  "cost": "cost_paid",
+  "content_update": "2025-09-08",
+  "cost": "cost_reduced_for_some",
   "country": [
     "es"
   ],
   "description": "The main objective of the course is to raise awareness of digital accessibility. Understand how people with disabilities use the web. Students will perform simulations of disabilities with assistive tools. The regulations currently in force regarding compliance with the requirements of the EAA (European Accessibility Act) are explained.",
-  "end_date": "",
+  "end_date": "2025-10-17",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
@@ -31,9 +36,10 @@
     "es"
   ],
   "learning": [
-    "learning_scheduled"
+    "learning_scheduled",
+    "learning_unscheduled"
   ],
-  "length": "2 weeks",
+  "length": "3 weeks",
   "level": "level_basic",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
@@ -42,22 +48,22 @@
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-02-04",
-  "submission_date": "2025-01-11T18:14:27.520Z",
-  "submission_ref": "e502dc00-d047-11ef-89ba-95cecdf00e71",
+  "start_date": "52025-09-29",
+  "submission_date": "2025-09-07T06:10:29.860Z",
+  "submission_ref": "5ae03240-8bb1-11f0-ac88-69b3ff618b14",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Sensibilización",
-  "english_title": "Digital Accessibility Specialization Course: Awareness Raising Module",
-  "original_lang_title": "es",
+  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Fundamentos de accesibilidad digital (Specialisation course in Digital Accessibility: Module on Fundamentals of Digital Accessibility)",
   "topics": [
     "Inclusive design",
-    "Empathize with people with disabilities"
+    "Empathize with people with disabilities",
+    ""
   ],
   "type_registration": [
-    "type_registration_individual"
+    "type_registration_individual",
+    "type_registration_organization"
   ],
-  "type_resource": "type_training",
+  "type_resource": "type_graduate",
   "type_resource_new": "",
   "wai_curricula": [
     "foundation_modules1",
@@ -66,5 +72,5 @@
     "foundation_modules4",
     "foundation_modules5"
   ],
-  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4444/"
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4704/"
 }
