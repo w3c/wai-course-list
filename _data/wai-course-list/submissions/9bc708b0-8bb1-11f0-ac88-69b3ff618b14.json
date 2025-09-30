@@ -24,8 +24,7 @@
   "content_update": "2025-12-08",
   "cost": "cost_reduced_for_some",
   "country": [
-    "es",
-    ""
+    "es"
   ],
   "description": "The main objective of the course is to perform accessibility evaluations of web systems according to the WCAG-EM methodology. To know the fundamental steps of the WCAG-EM methodology and how they are addressed in an evaluation. To understand how to evaluate a web site. To know the process to complete an accessibility report.",
   "end_date": "2025-12-23",
