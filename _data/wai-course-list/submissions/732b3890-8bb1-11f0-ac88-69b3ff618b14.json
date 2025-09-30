@@ -1,26 +1,33 @@
 {
   "accessibility_support": [
     "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
     "digital-accessibility-sufficient-contrast",
     "digital-accessibility-motions-or-animations",
-    "digital-accessibility-description-of-visual-information"
+    "digital-accessibility-description-of-visual-information",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
   ],
   "accessibility_support_other": "",
   "audience": [
     "audience_designer",
-    "audience_general"
+    "audience_developer",
+    "audience_manager",
+    "audience_tester"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
   "check_scope_info": "on",
   "comments": "",
-  "content_update": "2025-01-10",
-  "cost": "cost_paid",
+  "content_update": "2025-09-08",
+  "cost": "cost_reduced_for_some",
   "country": [
     "es"
   ],
   "description": "The main objective of the course is to introduce attendees to the aspects of design for accessibility. To know the strategies for the design of different web elements. Understand how to create an accessible design system that complies with current regulations. To know the process to carry out a quick accessibility evaluation of the design.",
-  "end_date": "2025-03-02",
+  "end_date": "2025-11-07",
   "form_name": "submission",
   "form_version": "1",
   "format": "format_online",
@@ -28,32 +35,32 @@
     "es"
   ],
   "learning": [
-    "learning_scheduled"
+    "learning_scheduled",
+    "learning_unscheduled"
   ],
   "length": "3 weeks",
-  "level": "level_basic",
+  "level": "level_intermediate",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
-    "Basic knowledge of web design"
+    "Basic knowledge of HTML and CSS"
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
   "reviews": "",
-  "start_date": "2025-02-18",
-  "submission_date": "2025-01-11T18:26:35.998Z",
-  "submission_ref": "9737c7e0-d049-11ef-b979-9717792b0873",
+  "start_date": "2025-10-20",
+  "submission_date": "2025-09-07T06:11:10.617Z",
+  "submission_ref": "732b3890-8bb1-11f0-ac88-69b3ff618b14",
   "submitter_email": "afra.pascual@udl.cat",
   "submitter_name": "Afra Pascual Almenara",
-  "title": "Curso de especialización en Accesibilidad Digital: Módulo de Diseño",
-  "english_title": "Digital Accessibility Specialization Course: Design Module",
-  "original_lang_title": "es",
+  "title": "Curso de especialización en Accesibilidad Digital Módulo de Diseño (Specialisation course in Digital Accessibility Design Module)",
   "topics": [
-    "Inclusive design"
+    "inclusive design"
   ],
   "type_registration": [
-    "type_registration_individual"
+    "type_registration_individual",
+    "type_registration_organization"
   ],
-  "type_resource": "type_training",
+  "type_resource": "type_graduate",
   "type_resource_new": "",
   "wai_curricula": [
     "designer_modules1",
@@ -64,5 +71,5 @@
     "designer_modules6",
     "designer_modules7"
   ],
-  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4445/"
+  "website": "https://www.formaciocontinua.udl.cat/ca/programes-formatius/cursos/4703/"
 }
