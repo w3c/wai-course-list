@@ -35,7 +35,7 @@
     "learning_scheduled"
   ],
   "length": "3 months",
-  "level": "level_intermediate",
+  "level": "level_basic",
   "platforms": "Learning Management System (LMS) of University of Lleida",
   "prerequisites": [
     "Basic knowledge of HTML and CSS; Basic knowledge of design web",
@@ -43,7 +43,7 @@
   ],
   "provider": "University of Lleida",
   "repository": "wai-course-list",
-  "reviews": "https://www.formaciocontinua.udl.cat/es/programes-formatius/cursos/4705/",
+  "reviews": "",
   "start_date": "2025-09-29",
   "submission_date": "2025-09-07T05:27:20.915Z",
   "submission_ref": "53be8a30-8bab-11f0-87db-8d8019a50d3a",
