@@ -10,7 +10,9 @@
   "accessibility_support_other": "",
   "audience": [
     "audience_designer",
-    "audience_manager"
+    "audience_manager",
+    "audience_general",
+    "audience_other"
   ],
   "check_correct_info": "on",
   "check_publish_info": "on",
@@ -45,7 +47,7 @@
   "provider": "TheStarter",
   "repository": "wai-course-list",
   "reviews": "https://testimonial.to/thestarter/all",
-  "start_date": "2025-07-14",
+  "start_date": "2025-12-01",
   "submission_date": "2025-07-16T11:07:20.521Z",
   "submission_ref": "0af6a390-6235-11f0-b420-ddadd3296a9d",
   "submitter_email": "miguel@thestarter.io",
