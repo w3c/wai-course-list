@@ -1,0 +1,84 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_manager",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-09-23",
+  "cost": "cost_paid",
+  "country": [
+    "pl"
+  ],
+  "description": "Learn how to create accessible Word, PDF, and PowerPoint documents that meet WCAG standards. This workshop covers structure, headings, alternative text, tables, and testing techniques to ensure documents are usable by all.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "pl",
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "1 day (4h) or 2 × 3h sessions",
+  "level": "level_basic",
+  "platforms": [
+    "MS Teams",
+    "Zoom"
+  ],
+  "prerequisites": [
+    "Basic document editing skills (Word, PowerPoint, or PDF)",
+    "No advanced technical skills required"
+  ],
+  "provider": "Webchecker-Audyt Dostępności",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-09-23",
+  "submission_date": "2025-09-23T14:14:01.652Z",
+  "submission_ref": "8ddc5740-9887-11f0-ad75-dd32702151ea",
+  "submitter_email": "kontakt@audyt-dostepnosci.pl",
+  "submitter_name": "Katarzyna Basiewicz",
+  "title": "Accessible Documents",
+  "topics": [
+    "Creating documents : Word, PDF, and PowerPoint files that meet accessibility standards",
+    "Practical techniques for text structure, headings, alt text, tables, and forms",
+    "Testing documents with accessibility checkers and screen readers",
+    "Best practices for inclusive design and plain language"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://audyt-dostepnosci.pl/dostepnosc-dokumentow-szkolenie-dla-firm/"
+}
