@@ -52,7 +52,9 @@
   "submission_ref": "0af6a390-6235-11f0-b420-ddadd3296a9d",
   "submitter_email": "miguel@thestarter.io",
   "submitter_name": "Miguel Coelho",
-  "title": "Acessibilidade em UX Design: Dos Fundamentos à Prática (Accessibility in UX Design: From Fundamentals to Practice)",
+  "english_title": "Accessibility in UX Design: From Fundamentals to Practice",
+  "original_lang_title": "pt",
+  "title": "Acessibilidade em UX Design: Dos Fundamentos à Prática",
   "topics": [
     "Fundamentals of Digital Accessibility",
     "Introduction to the WCAG Guidelines (Web Content Accessibility Guidelines)",
