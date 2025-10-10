@@ -85,8 +85,9 @@ info_updated: This listing was updated on
 back_to_list_link: Back to Course List
 sub_header_info_form: This form allows you to provide information about courses, training, and certification on digital accessibility to be listed on the WAI website. Information submitted with this form will be publicly available in GitHub.
 info_submission: When you submit the form, we will strive to review and publish your submission within 2-4 weeks depending on the content. You will receive an email when we have reviewed your submission.
-info_submission_lang: >
-  Other Languages: If your course is in a language other than English, please put the course title in that language, and the English translation in parentheses.
+info_submission_disclaimer:
+  <p>W3C does not endorse providers, or any particular course, product, service, or website. See <a href="https://www.w3.org/help/#endorsement">Will W3C endorse my product?</a>.</p>
+  <p>Inclusion of your course in the list must not be used in any manner which implies W3C endorsement.</p>
 scope_title: Scope – what this course list includes
 scope_info: Before continuing, please make sure your submission meets the WAI Course List scope requirements
 scope_info_intro: This Course List includes publicly-available digital accessibility courses in any language, free or paid.
@@ -113,7 +114,7 @@ scope_info_details: >
   - Courses offered at a conference that cannot be taken without registering for the full conference
 
 
-question_info: If you have questions, please e-mail them to 
+question_info: If you have questions, want to update information in the list or delete a course please send an e-mail to
 sub_header_info_form_details: Please note that <abbr title="World Wide Web Consortium">W3C</abbr> does not endorse specific providers. Resources are listed with no quality rating.
 about_you: About you
 about_you_description: We'd like to know who you are, so that we can contact you with questions about your submission. This information will be publicly available but not published on the course list.
@@ -122,6 +123,8 @@ submitter_email_label: Email (Required)
 about_the_resource: About the resource
 about_the_resource_description: Provide some information about the course, training, or certification.
 title_label: Title (Required)
+title_lang: >
+  If your course is in a language other than English, please put the course title in that language, and the English translation in parentheses.
 provider_label: Provider (Required)
 country_legend: Country (Required)
 country_expl: In which country or countries is the provider located?
