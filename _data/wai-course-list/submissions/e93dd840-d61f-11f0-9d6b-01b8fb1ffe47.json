@@ -1,0 +1,59 @@
+{
+  "accessibility_support": [
+    "general-accessibility-pre-check-available"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-12-31",
+  "cost": "cost_certificates_for_purchase",
+  "country": [
+    "us"
+  ],
+  "description": "30 year old female who's married & have 5 babies (cats).",
+  "end_date": "2026-04-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "Sms",
+  "prerequisites": [
+    "Digital accessibility is such a crucial topic 🤝. To get started, let's cover some basics.  Accessibility concepts and terminology are essential. Some key terms include: - *A11y*: Short for accessibility - *Screen reader*: Software that reads web content aloud - *Alt text*: Alternative text for images - *ARIA*: Accessible Rich Internet Applications (for dynamic content)  W3C Accessibility Standards are guidelines for making web content more accessible. The main standards include: - *WCAG*: Web Content Accessibility Guidelines - *ATAG*: Authoring Tool Accessibility Guidelines - *UAAG*: User Agent Accessibility Guidelines  Basic knowledge of HTML and CSS is also necessary. Some key HTML elements for accessibility include: - *Semantic HTML* (e.g., `<header>`, `<nav>`, `<main>`) - *Alt attributes* for images - *ARIA attributes* for dynamic content  What specific areas of digital accessibility do you want to focus on? Accessibility Is"
+  ],
+  "provider": "Kennedy Slate ",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-12-31",
+  "submission_date": "2025-12-10T23:28:19.396Z",
+  "submission_ref": "e93dd840-d61f-11f0-9d6b-01b8fb1ffe47",
+  "submitter_email": "chelsiecoon7@gmail.com",
+  "submitter_name": "Chelsie Kennedy Slate",
+  "title": "Chelsie ",
+  "topics": [
+    "Accessibility policy "
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_undergraduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules3",
+    "developer_modules6",
+    "designer_modules1",
+    "content_author_modules4"
+  ],
+  "website": "https://www.instagram.com/chelsiekennedyslate?igsh=MXF1d3pweWVzZ2dvcw=="
+}
