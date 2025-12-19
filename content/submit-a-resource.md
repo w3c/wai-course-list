@@ -62,13 +62,12 @@ function onSubmit(e) {
 
 <!--<a href="../list">{{strings.back_to_list_link}}</a>-->
 
-
 <p>{{strings.sub_header_info_form}}</p>
-<p>{{strings.info_submission}}</p>
-<p>{{strings.info_submission_lang}}</p>
-
-
 <p>{{strings.question_info}}: <a href="mailto:group-wai-list-courses@w3.org?subject=Update%20course">{{strings.contact_email_list_courses}}</a></p>
+<aside class="box" id="endorsement">
+<header class="box-h ">Disclaimer</header>
+<div class="box-i">{{strings.info_submission_disclaimer}}</div>
+</aside>
 
 <h2 id="scope">{{strings.scope_title}}</h2>
 <p>{{strings.scope_info_intro}}</p>
@@ -101,6 +100,7 @@ function onSubmit(e) {
 <div class="field">
   <label for="title" class="label_input">{{strings.title_label}}</label>
   <input type="text" id="title" name="title" required>
+  <p class="expl" id="expl_desc"><em>{{strings.title_lang}}</em></p>
 </div>
 
 <div class="field">
