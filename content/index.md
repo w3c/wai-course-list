@@ -4,11 +4,7 @@ no-sidenav: true
 title: "Course List"
 title_html: "Course List - Digital Accessibility Education, Training, and Certification" 
 nav_title: "Course List"
-
 lang: en
-github:
-  repository: w3c/wai-course-list
-  path: content/index.md
 permalink: /courses/list/
 ref: /teach-advocate/course-list/
 description: Lists publicly-available accessibility courses around the world. You can filter to find courses matching your specific interests.
