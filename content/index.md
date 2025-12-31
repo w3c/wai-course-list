@@ -24,7 +24,7 @@ footer: >
         <p>{{ strings.sub_header_list_intro }}</p>
         {% include box.html type="start" class="simple" %}
             <p>
-                {% include image.html src="w3c.png" alt="W3C logo" class="tiny" %}
+                <img src="https://www.w3.org/assets/logos/w3c-2025/png/margins/w3c-bg-white.png" alt="W3C logo" class="tiny left">
                 {{ strings.wai_course_text }}
             </p>
         {% include box.html type="end" %}
