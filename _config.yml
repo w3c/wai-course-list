@@ -9,8 +9,8 @@
 title: 'Web Accessibility Initiative (WAI)'
 description: >
   The Website of the World Wide Web Consortium’s Web Accessibility Initiative.
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://w3c.github.io' # the base hostname & protocol for your site
+baseurl: '/wai-course-list' # the subpath of your site (for GitHub Pages)
+url: 'https://w3c.github.io' # the base hostname & protocol for your site (for GitHub Pages)
 exclude:
   - "_external"
   - "Gemfile"
