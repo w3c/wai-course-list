@@ -1,0 +1,92 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-12-31",
+  "cost": "cost_paid",
+  "country": [
+    "au"
+  ],
+  "description": "In this online, on-demand 15-hour course, learn how to apply accessibility principles and write accessible and inclusive content. You'll come out with a Writing for Accessibility course certificate and case study for your portfolio.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "15 hours",
+  "level": "level_basic",
+  "platforms": "LearnWorlds",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Content Design Hub",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-02-01",
+  "submission_date": "2026-01-10T05:02:07.797Z",
+  "submission_ref": "837dce50-ede1-11f0-b89b-153042d508f4",
+  "submitter_email": "admin@contentdesignhub.com.au",
+  "submitter_name": "Content Design Hub",
+  "title": "Writing for Accessibility",
+  "topics": [
+    " People's lived experience: Defining what writing for accessibility means and outlining how some people with disabilities access the internet.",
+    "Very real and legal consequences: Why companies must design accessible content.",
+    "Accessibility guidelines: What are the Web Content Accessibility Guidelines and how they help content designers to write accessible content.",
+    "Writing accessible content",
+    "Applying accessibility",
+    "Putting accessibility skills into practice",
+    "Adding accessibility skills to your resume and portfolio"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_certification",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://contentdesignhub.com.au/course/writing-for-accessibility"
+}
