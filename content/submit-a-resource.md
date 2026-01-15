@@ -3,9 +3,6 @@ no-sidenav: true
 title: "Submit a course, training, or certification on digital accessibility"
 nav_title: "Submit a course, training, or certification on digital accessibility"
 lang: en   
-github:
-  repository: w3c/wai-course-list
-  path: content/submit-a-resource.md
 permalink: /courses/submission/
 ref: /teach-advocate/course-list/
 description:  # NEW: aa 150ish-character-description for social media   # translate the description
