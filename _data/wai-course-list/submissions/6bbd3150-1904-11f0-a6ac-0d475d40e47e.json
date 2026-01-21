@@ -1,0 +1,62 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-04-07",
+  "cost": "cost_free",
+  "country": [
+    "nl"
+  ],
+  "description": "In this kick-off training you will learn the basics of accessibility. You will receive a certificate upon completion. This course is part of multiple app accessibility training courses. ",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "1/2 day ",
+  "level": "level_basic",
+  "platforms": "Thinkific ",
+  "prerequisites": [
+    "",
+    "",
+    ""
+  ],
+  "provider": "Abra",
+  "repository": "wai-course-list",
+  "reviews": "https://academy.abra.ai/collections",
+  "start_date": "2023-02-01",
+  "submission_date": "2025-04-14T07:45:22.661Z",
+  "submission_ref": "6bbd3150-1904-11f0-a6ac-0d475d40e47e",
+  "submitter_email": "info@abra.ai",
+  "submitter_name": "Paul van Workum",
+  "title": "Kick-off training accessibility",
+  "topics": [
+    "Basic knowledge accessibility"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://academy.abra.ai/courses/kick-off"
+}
