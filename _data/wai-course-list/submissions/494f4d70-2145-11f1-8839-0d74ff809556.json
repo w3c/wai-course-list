@@ -1,0 +1,73 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-accessible-facility",
+    "non-digital-accessibility-assistive-listening-devices",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-03-16",
+  "cost": "cost_free",
+  "country": [
+    "hk"
+  ],
+  "description": "education",
+  "end_date": "2026-03-16",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "zh-hant"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "",
+  "level": "level_advanced",
+  "platforms": "",
+  "prerequisites": [
+    "https://auth.cityu.edu.hk"
+  ],
+  "provider": "Microsoft",
+  "repository": "wai-course-list",
+  "reviews": "https://cityu.edu.hk",
+  "start_date": "2026-03-16",
+  "submission_date": "2026-03-16T14:34:49.159Z",
+  "submission_ref": "494f4d70-2145-11f1-8839-0d74ff809556",
+  "submitter_email": "jeffreyko3-c@my.cityu.edu.hk",
+  "submitter_name": "Jeffrey KO",
+  "title": "Student",
+  "topics": [
+    "Education"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_graduate",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules3",
+    "developer_modules3",
+    "designer_modules1",
+    "designer_modules5",
+    "content_author_modules4"
+  ],
+  "website": "https://cityu.edu.hk"
+}
