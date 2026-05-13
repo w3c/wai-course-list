@@ -1,0 +1,81 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_tester"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-08-28",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "\r\nwebsite this training:  Course List | Web Accessibility Initiative (WAI) | W3C.  ",
+  "end_date": "2026-08-30",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "6 months",
+  "level": "level_basic",
+  "platforms": "LMS",
+  "prerequisites": [
+    "WCAG Compliance"
+  ],
+  "provider": "English",
+  "repository": "wai-course-list",
+  "reviews": "https://web.dev/learn/accessibility/.  ",
+  "start_date": "2025-08-11",
+  "submission_date": "2026-05-13T19:03:22.804Z",
+  "submission_ref": "69bfe740-4efe-11f1-a19d-f1d81ec4a4ed",
+  "submitter_email": "harpreet.kaur@courts.wa.gov",
+  "submitter_name": "Harpreet Kaur Kaur",
+  "title": "Software Quality Assurance Tester",
+  "topics": [
+    "Learn Accessibility! "
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "developer_modules6",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://web.dev/learn/accessibility/"
+}
