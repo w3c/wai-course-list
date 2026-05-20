@@ -76,11 +76,12 @@ if (filterForm) {
 
                 var currentFilterID = filterTypeFS.id;
                 var currentFilterName = filterTypeFS.querySelectorAll('legend')[0].innerText;
-
+              
                 criteria.push({ filterId: currentFilterID, filterName: currentFilterName, filterValues: [{optionID: filter.name, optionName: filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText}] });
 
                 var newResults = filterNewResultsList(criteria);
                 var counterCurrentFilter = newResults.length;
+                
                 filterTypeFS.querySelector("label[for='" + filter.id + "']").querySelector('.filterPreCounter').innerText = "(" + counterCurrentFilter + ")";
 
             })
@@ -102,23 +103,31 @@ if (filterForm) {
 
     function getActiveFiltersList(form) {
         var activeFiltersList = [];
-        var attValues = [];
-
+    
         // for each attribute group
         form.querySelectorAll('fieldset').forEach(att => {
-
-            attValues = [];
-            filterName = att.querySelectorAll('legend')[0].innerText;
-
-            att.querySelectorAll('input[type="checkbox"]').forEach(filter => {
-                if (filter.checked) {
-                    //attValues.push(att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText);
-                    attValues.push({optionID: filter.name, optionName: att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText});
+            var attValues = [];
+            var filterName = att.querySelectorAll('legend')[0].innerText;
+    
+            att.querySelectorAll('input[type="checkbox"]:checked').forEach(filter => {
+                
+                var optionName = att.querySelector("label[for='" + filter.id + "']").querySelector('.filterName').innerText;
+                if (filter.getAttribute('data-curricula') !== null) {
+                    attValues.push({ optionID: filter.name, optionName: optionName, optionCurricula: filter.getAttribute('data-curricula') });
                 }
-            })
-            if (attValues.length > 0) {
+                else
+                    attValues.push({ optionID: filter.name, optionName: optionName });
+
                 activeFiltersList.push({ filterId: att.id, filterName: filterName, filterValues: attValues });
-            }
+            });
+    
+            att.querySelectorAll('input[type="date"]').forEach(filter => {
+                if (filter.value !== "") {
+                    attValues.push({ optionID: filter.name, optionName: filter.value });
+                    activeFiltersList.push({ filterId: filter.id, filterName: filterName, filterValues: attValues });
+
+                }
+            });
 
             att.querySelectorAll('select').forEach(filter => {
                 attValues = [];
@@ -135,12 +144,11 @@ if (filterForm) {
                 }
 
             });
-
         });
-
-        //console.log(activeFiltersList);
         return activeFiltersList;
     }
+    
+    
 
     function filterNewResultsList(filtersOnList) {
         var newResultsList = [];
@@ -150,6 +158,20 @@ if (filterForm) {
             
             newResultsList.push(Object.values(jsonCourses).filter((x) => filter.filterValues.some(
                 function (r) {
+                    
+                    if (r.optionID == "available_now") {
+                        // Check if the course is available now
+                        const currentDate = new Date();
+                        const startDate = new Date(x.start_date);
+                        const endDate = x.end_date ? new Date(x.end_date) : null;
+                        return startDate <= currentDate && (!endDate || currentDate <= endDate);
+                    }
+                    else if (r.optionID == "available_from") {
+                        const availableFromDate = new Date(r.optionName);
+                        const startDate = new Date(x.start_date);
+                        const endDate = x.end_date ? new Date(x.end_date) : null;
+                        return startDate <= availableFromDate && (!endDate || availableFromDate <= endDate);
+                    }
                     if (x[filter.filterId] !== undefined) {
                         if (r.optionID == "type_undergraduate_graduate")
                             return x[filter.filterId].includes("type_undergraduate") || x[filter.filterId].includes("type_graduate");
@@ -337,89 +359,97 @@ if (filterForm) {
                 selectCountryTotal.innerHTML += ' {{strings.select_country_info_multiple_results}}';
         }
     }
-
-
+    
     function updateHeaderList(newResults, filtersOn) {
-
-        
-        var listFiltersOnString = document.createElement('dl');
         var totalCoursesCounter = document.getElementById("total-courses");
-
-        filtersOn.forEach(f => {
-
-            var attName = document.createElement('dt');
-            attName.innerText = f.filterName + ':';
-            listFiltersOnString.appendChild(attName);
-
-            var attValues = document.createElement('dd');
-
-            if (f.filterId == 'language' || f.filterId == 'country'){
-                attValues.innerText = f.filterValues[0].optionName;
-            }
-            else{
-                // attValues.innerText = f.filterValues.join(', ');
-                attValues.innerText = "";
-                f.filterValues.forEach((fv, i) => {
-                    attValues.innerText += fv.optionName;
-                    if (i != (f.filterValues.length - 1)) {
-                        attValues.innerText += "; ";
-                      }
-                })
-            }
-                
-            listFiltersOnString.appendChild(attValues);
-        });
-
+        var searchForm = document.getElementById("search-form");
+        var searchField = document.getElementById("search");
+    
         totalCoursesCounter.innerText = "{{strings.showing}} ";
         var newContent = document.createElement("span");
-            
         totalCoursesCounter.appendChild(newContent);
-
-        document.querySelector('.excol-all').hidden = false;
-
+    
         newContent.innerText = Object.values(newResults).length;
-                
-        if(Object.values(newResults).length != totalCourses){
+    
+        if (Object.values(newResults).length !== totalCourses) {
             newContent.innerText += " {{strings.from}} " + totalCourses;
         }
-
+    
         newContent.innerText += " {{strings.courses}}";
-        
-        var searchTerm = searchForm.value;
-
-
-        if (searchTerm.length > 0) {
-            var attName = document.createElement('dt');
-            attName.innerText = "{{strings.searchterm}}: ";
-            listFiltersOnString.appendChild(attName);
-
-            var attValues = document.createElement('dd');
-            attValues.innerText = "\"" + searchTerm + "\"";
-            listFiltersOnString.appendChild(attValues);
-        }
-
-        var titleResults = document.querySelector('#filter-courses-info h4');
+    
         var filterCoursesString = document.querySelector('.details-criteria');
-        filterCoursesString.innerText = "";
+        filterCoursesString.innerHTML = "";
 
+        if (searchField.value.length > 0) {
+            var attValues = document.createElement('ul');
+            var searchInfo = document.createElement('li');
+            searchInfo.innerHTML = 'Search term: ' + searchField.value;
+            attValues.appendChild(searchInfo);
+            filterCoursesString.appendChild(attValues);
+        }    
 
-        if (filtersOn.length > 0 || searchTerm.length > 0) {
-            filterCoursesString.appendChild(listFiltersOnString);
+        if (filtersOn.length > 0) {
+            filtersOn.forEach(f => {
+                var listFiltersOnString = document.createElement('ul');
+    
+                var attName = document.createElement('li');
+                attName.innerText = f.filterName + ':';
+                listFiltersOnString.appendChild(attName);
+    
+                if (f.filterId === 'wai_curricula') {
+                    var curriculaModules = {};
+                    f.filterValues.forEach(option => {
+                        if (option.optionID && option.optionName && option.optionCurricula) {
+                            if (!curriculaModules[option.optionCurricula]) {
+                                curriculaModules[option.optionCurricula] = [];
+                            }
+                            curriculaModules[option.optionCurricula].push(option.optionName);
+                        }
+                    });
+    
+                    for (const curricula in curriculaModules) {
+                        var curriculaUl = document.createElement('ul');
+    
+                        var curriculaTitleLi = document.createElement('li');
+                        curriculaTitleLi.innerHTML = curricula;
+                        curriculaUl.appendChild(curriculaTitleLi);
+    
+                        var modulesUl = document.createElement('ul');
+                        curriculaModules[curricula].forEach(module => {
+                            var moduleLi = document.createElement('li');
+                            moduleLi.innerHTML = module;
+                            modulesUl.appendChild(moduleLi);
+                        });
+    
+                        curriculaUl.appendChild(modulesUl);
+                        listFiltersOnString.appendChild(curriculaUl);
+                    }
+                } else {
+                    f.filterValues.forEach(option => {
+                        var attValues = document.createElement('ul');
+                        var optionNameLi = document.createElement('li');
+                        optionNameLi.innerHTML = option.optionName;
+                        attValues.appendChild(optionNameLi);
+                        listFiltersOnString.appendChild(attValues);
+                    });
+                }
+    
+                filterCoursesString.appendChild(listFiltersOnString);
+            });
+            
+
             document.querySelector('.results-box').classList.remove('hidden-element');
             hideClearButton(false);
         } else {
             hideClearButton(true);
             document.querySelector('.results-box').classList.add('hidden-element');
         }
-
-
+    
         if (Object.values(newResults).length === 0) {
             document.getElementById('default-results-title').classList.add("hidden-element");
             document.getElementById('no-results-title').classList.remove("hidden-element");
-            filterCoursesString.appendChild(listFiltersOnString);
             document.querySelector('.excol-all').hidden = true;
-        }
-        else {
+        } else {
             document.getElementById('default-results-title').classList.remove("hidden-element");
             document.getElementById('no-results-title').classList.add("hidden-element");
         }
@@ -446,9 +476,7 @@ if (filterForm) {
 
     function clearFilters() {
         //rebuildList(jsonCourses, []);
-        filterForm.querySelectorAll("input[type='checkbox']").forEach(el => el.checked = false);
-        filterForm.querySelectorAll("select").forEach(el => el.selectedIndex = 0);
-        document.getElementById("search").value = "";
+        filterForm.reset();
         filterJson();
         hideClearButton(true);
     }
@@ -567,3 +595,26 @@ if (submitForm) {
 }
 
 
+
+ function toggleListVisibility(button) {
+    const list = button.parentElement.nextElementSibling;
+    if (list.style.display === 'none' || list.style.display === '') {
+      list.style.display = 'block';
+      button.nextElementSibling.disabled = false;
+      button.disabled = true;
+    } else {
+      list.style.display = 'none';
+      button.previousElementSibling.disabled = false;
+      button.disabled = true;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.box-i > details button.toggle_all');
+    buttons.forEach(button => {
+      toggleListVisibility(button);
+      button.addEventListener('click', function() {
+        toggleListVisibility(button);
+      });
+    });
+  });
