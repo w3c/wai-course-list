@@ -1,0 +1,49 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_developer"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-06-03",
+  "cost": "cost_free",
+  "country": [
+    "us"
+  ],
+  "description": "Description",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Ken",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-06-03",
+  "submission_date": "2026-06-03T15:55:08.488Z",
+  "submission_ref": "987ccc80-5f64-11f1-8a6b-d7c8e290411d",
+  "submitter_email": "kfranqueiro@w3.org",
+  "submitter_name": "Ken Test",
+  "title": "Ken Test",
+  "topics": [
+    "Test"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://w3.org/WAI/"
+}
