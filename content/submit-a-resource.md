@@ -21,6 +21,8 @@ footer: >
   PREVIEW_BUTTON - add a preview button which allows submission without filling all the required fields
   DEBUG_FUNCTION - pass DEBUG to submission function, causes function to return JSON rather than submitting to GitHub
   DEBUG_USE_LOCAL_FUNCTION - use local/domain function rather than live one exposed by the Netlify wai-website deploy
+    - This is intended to be used together with running `node _functions/list-submission.js` in wai-website
+    - Note these two DEBUG_* parameters are independent; you may want to set both for testing
 {% endcomment %}
 {% assign DEBUG_PREVIEW_BUTTON = false %}
 {% assign DEBUG_SUBMISSION_FUNCTION = false %}
