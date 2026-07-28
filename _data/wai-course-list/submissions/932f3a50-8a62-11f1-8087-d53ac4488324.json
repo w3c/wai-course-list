@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-07-28",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "pt"
+  ],
+  "description": "This course aims to enable organizations to assess their current level of maturity in accessibility, and from there build a systematic and transversal operationalization, covering not only digital products and services, but also internal processes, organizational culture, and the way accessibility is experienced by third parties.",
+  "end_date": "2026-10-02",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "18 hours",
+  "level": "level_intermediate",
+  "platforms": [
+    "Zoom",
+    ""
+  ],
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Xperienz",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-09-18",
+  "submission_date": "2026-07-28T08:59:00.597Z",
+  "submission_ref": "932f3a50-8a62-11f1-8087-d53ac4488324",
+  "submitter_email": "bruno.figueiredo@xrd.pt",
+  "submitter_name": "Bruno Figueiredo",
+  "title": "AccessibilityOps - Operacionalização da Acessibilidade (Operating Accessibility) ",
+  "topics": [
+    "Organizational Maturity",
+    "Integrating with Design and Development",
+    "Research and Content",
+    "Beyond Digital",
+    "Governance and Metrics",
+    "Roadmap and Continuity"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5"
+  ],
+  "website": "https://www.userexperience.pt/curso-accessibility-ops.html"
+}
