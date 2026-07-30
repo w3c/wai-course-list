@@ -1,0 +1,78 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-07-30",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "pt"
+  ],
+  "description": "This course aims to empower participants to structure semantically correct content, to build coherent header hierarchies, to write effective textual and audiovisual alternatives, and to annotate content for handoff so that developers can implement it unambiguously.",
+  "end_date": "2026-10-08",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_intermediate",
+  "platforms": "Zoom",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Xperienz",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-10-06",
+  "submission_date": "2026-07-30T08:23:46.543Z",
+  "submission_ref": "fbefaff0-8bef-11f1-bb3f-31838c6a7f2f",
+  "submitter_email": "bruno.figueiredo@xrd.pt",
+  "submitter_name": "Bruno Figueiredo",
+  "title": "Acessibilidade para UX Writers (Accessibility for UX Writers)",
+  "topics": [
+    "Semantic Structure",
+    "Headings and Hierarchy",
+    "Audiovisual Alternatives",
+    "Good Practices and Handoff"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules5",
+    "content_author_modules6"
+  ],
+  "website": "https://www.userexperience.pt/curso-acessibilidade-para-ux-writers.html"
+}
