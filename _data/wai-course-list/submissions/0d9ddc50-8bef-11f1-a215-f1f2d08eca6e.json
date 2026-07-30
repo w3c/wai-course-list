@@ -1,0 +1,76 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general",
+    "audience_other"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-07-30",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "pt"
+  ],
+  "description": "This course aims to empower participants to identify biases that exclude people with disabilities from research, to recruit and prepare sessions adapted to different types of impediment, to conduct and moderate usability tests and other research methods in an inclusive way, and to transform the findings into actionable recommendations.",
+  "end_date": "2026-10-01",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_intermediate",
+  "platforms": "Zoom",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Xperienz",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-09-29",
+  "submission_date": "2026-07-30T08:17:06.709Z",
+  "submission_ref": "0d9ddc50-8bef-11f1-a215-f1f2d08eca6e",
+  "submitter_email": "bruno.figueiredo@xrd.pt",
+  "submitter_name": "Bruno Figueiredo",
+  "title": "Acessibilidade para UX Researchers (Accessibility for UX Researchers)",
+  "topics": [
+    "Why include Accessibility in Research",
+    "Assistive Technologies by Impediment",
+    "Planning and Recruitment",
+    "Research Methods"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "designer_modules4"
+  ],
+  "website": "https://www.userexperience.pt/curso-acessibilidade-para-ux-researchers.html"
+}
