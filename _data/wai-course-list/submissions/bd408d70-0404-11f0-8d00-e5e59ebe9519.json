@@ -1,0 +1,66 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-03-07",
+  "cost": "cost_paid",
+  "country": [
+    "us"
+  ],
+  "description": "In this self-paced video-based course, students will learn to evaluate, identify, and contextualize how to inform web developers on what elements on a web page must be remediated for enhanced accessibility.",
+  "end_date": "2028-03-07",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "2 hours",
+  "level": "level_basic",
+  "platforms": "Learndash via 508 Institute",
+  "prerequisites": [
+    "Basics knowledge of Adobe InDesign",
+    "Basic knowledge of HTML (Preferred)"
+  ],
+  "provider": "The 508 Institute",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2025-03-07",
+  "submission_date": "2025-03-18T14:24:44.999Z",
+  "submission_ref": "bd408d70-0404-11f0-8d00-e5e59ebe9519",
+  "submitter_email": "prudhvi.mandava@508institute.com",
+  "submitter_name": "Prudhvi Mandava",
+  "title": "Self-Paced Web Accessibility Training for 508 Compliance",
+  "topics": [
+    "Accessible Document",
+    "Document Design",
+    "Adobe InDesign"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules4",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules5"
+  ],
+  "website": "https://508institute.com/self-paced-web-accessibility-training-for-508-compliance/"
+}
