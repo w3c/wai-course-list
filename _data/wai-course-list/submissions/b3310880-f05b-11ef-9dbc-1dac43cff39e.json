@@ -1,0 +1,93 @@
+{
+  "accessibility_support": [
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2025-02-20",
+  "cost": "on",
+  "country": [
+    "nl"
+  ],
+  "description": "This course focuses specifically on mobile (app) accessibility. Starting with awareness and accessibility testing, you will learn common accessibility issues on mobile devices. It ends with in depth training about how the operating systems of iOS and Android function. A great course if you want to learn about accessibility on mobile.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "en"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "5 hours",
+  "level": "level_intermediate",
+  "platforms": "Thinkific LMS",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Abra b.v.",
+  "repository": "wai-course-list",
+  "reviews": "https://academy.abra.ai/",
+  "start_date": "2023-03-01",
+  "submission_date": "2025-02-21T13:56:51.080Z",
+  "submission_ref": "b3310880-f05b-11ef-9dbc-1dac43cff39e",
+  "submitter_email": "paul@abra.ai",
+  "submitter_name": "Paul van Workum",
+  "title": "Abra Academy",
+  "topics": [
+    "Android",
+    "iOS",
+    "Assistive technology",
+    "Testing on mobile",
+    "Common issues",
+    "Accessibility features",
+    "Disabilities"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules4",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4",
+    "content_author_modules6"
+  ],
+  "website": "https://academy.abra.ai/"
+}
