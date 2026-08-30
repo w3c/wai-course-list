@@ -25,7 +25,7 @@
     grid-column: 1 / 7;
 }
 
-.header-left .box{
+.header-left .box {
     padding: 8px;
     margin: 20px 0 30px;
 }
@@ -130,12 +130,12 @@ main>header {
 }
 
 .filter-options input {
-    float:left;
+    float: left;
 }
 
 .filter-options label {
-    margin-left:28px;
-    display:block;
+    margin-left: 28px;
+    display: block;
 }
 
 /*
@@ -144,7 +144,7 @@ main>header {
 }
 */
 
-.field:not(.filter-options)>label{
+.field:not(.filter-options)>label {
     font-weight: 700;
 }
 
@@ -216,26 +216,10 @@ select {
     }
 }
 
-details summary p{
+details summary p {
     color: var(--w3c-blue);
 }
 
-#courses-list dd {
-    margin: 0 0 1em 0;
-}
-
-details dt::after {
-    content: ":";
-}
-
-#courses-list dt {
-    float: left;
-    margin: 0 .5em 0 0;
-}
-
-#courses-list dd ul {
-    margin: 3em 3em 0 0;
-}
 
 .label_input {
     font-size: 1rem;
@@ -249,7 +233,7 @@ fieldset>p {
     margin-top: .25em !important
 }
 
-fieldset>fieldset{
+fieldset>fieldset {
     margin-top: 0.5em !important;
     margin-bottom: 0.5em !important;
 }
@@ -261,7 +245,8 @@ fieldset>fieldset{
     font-size: 1rem;
     font-weight: normal;
 }
-legend.expl{
+
+legend.expl {
     font-size: 1rem !important;
     font-weight: normal;
     margin-bottom: 0.5em !important;
@@ -380,36 +365,33 @@ fieldset label:hover a:hover {
 }
 
 .courses-list-header {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-gap: 1em;
     padding-bottom: 1em;
 }
 
-
 .courses-list-header .field {
-    grid-column: 1 / 7;
     margin: 0;
-    align-self: center;
+    width: 100%;
 }
 
-.courses-list-header .sort-by {
-    grid-column: 7 / 8;
-    align-self: center;
+.courses-list-header .field.sort-by {
+    width: 30%;
+    text-align: right;
+}
+
+.courses-list-header label {
+    font-weight: normal !important;
 }
 
 @media (max-width: 60em) {
-
-    .courses-list-header .field {
-        grid-column: 1 / 8;
+    .courses-list-header .field.sort-by {
+        text-align: left;
+        margin-top: 1em;
+        width: 100%;
     }
-
-    .courses-list-header .sort-by {
-        grid-column: 1 / 8;
-    }
-}
-
-#status {
-    margin: 0;
 }
 
 #filter-courses-info {
@@ -419,7 +401,7 @@ fieldset label:hover a:hover {
     align-items: center;
 }
 
-#filter-courses-info p{
+#filter-courses-info p {
     margin: 0 !important;
 }
 
@@ -459,8 +441,6 @@ button {
     margin-top: .2em;
     content: url(/content-images/wai-course-list/clear.svg) !important;
 }
-
-
 
 
 #filter-courses-info .div-clear-filters {
@@ -526,7 +506,7 @@ button {
 }
 
 
-span.expl{
+span.expl {
     font-weight: 400 !important;
     display: block;
     padding: .25em 0 1em 0;
@@ -562,23 +542,16 @@ details .helperinfo {
 
 #preview-submission-overlay {
     position: fixed;
-    /* Sit on top of the page content */
     display: none;
-    /* Hidden by default */
-    /*align-items: center;*/
     justify-content: center;
     width: 100%;
-    /* Full width (cover the whole page) */
     height: 100%;
-    /* Full height (cover the whole page) */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(255, 255, 255, 0.8);
-    /* Black background with opacity */
     z-index: 2;
-    /* Specify a stack order in case you're using a different order for other elements */
     overflow: scroll;
 
 }
@@ -633,4 +606,123 @@ svg.icon-ex-circle {
 
 .result-status-message {
     margin: 20px 0 30px 0;
+}
+
+
+
+.collapsed {
+    display: none !important;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--line-grey);
+}
+
+.collapsible:hover {
+    cursor: pointer;
+}
+
+#left-col legend {
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--line-grey);
+}
+
+.name {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.name.collapsible svg {
+    float: right;
+}
+
+.filter-section {
+    margin-bottom: 1rem;
+}
+
+.filter-section-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.filter-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.filter-group:first-child {
+    flex-wrap: nowrap;
+}
+
+.filter-group:last-child {
+    display: inline;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-label {
+    margin-left: 0.5rem;
+.box-i > details > div > ul,
+.box-i > details > div > ul ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.box-i > details > div > ul > li,
+.box-i > details > div > ul ul > li {
+  margin-left: 0;
+  margin-right: 50px;
+}
+
+.box-i > details > div > ul ul > li {
+  list-style-type: disc; /* Set the desired list style type for nested ul li elements */
+  margin-left: 50px;
+  margin-right: 10px;
+}
+
+.toggle_all {
+    background-color: var(--pure-white);
+    font-weight: 700;
+    line-height: 1.4;
+    padding: 2px 4px;
+    color: var(--wai-green);
+}
+
+.toggle_all_disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.details-criteria {
+    margin: 0;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.details-criteria ul {
+    padding-left: 0 !important;
+}
+
+.details-criteria > ul > li {
+    list-style-type: none;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.details-criteria ul ul li {
+    list-style-type: disc;
+    margin-left: 50px; 
+}
+
+.details-criteria ul ul ul li {
+    margin-left: 80px; 
 }
