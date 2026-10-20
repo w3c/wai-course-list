@@ -1,0 +1,86 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "general-accessibility-pre-check-available",
+    "digital-accessibility-caption-audio",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "digital-accessibility-motions-or-animations",
+    "digital-accessibility-description-of-visual-information",
+    "digital-accessibility-all-content-meets-wcag",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_designer",
+    "audience_developer",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-05-01",
+  "cost": "cost_paid",
+  "country": [
+    "pl"
+  ],
+  "description": "Ten kurs to kilkuminutowe lekcje stworzone z myślą o zapracowanych osobach. Gotowy przepis, jak zacząć testować dostępność aplikacji, zgodnie z wymaganiami EAA (European Accessibility Act), WCAG 2.1 (2.2) (Web Content Accessibility Guidelines) oraz Europejską Normą Dostępności EN 301 549. W kursie podchodzimy holistycznie do zagadnienia dostępności",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pl"
+  ],
+  "learning": [
+    "learning_unscheduled"
+  ],
+  "length": "5 hours",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Tu się testuje",
+  "repository": "wai-course-list",
+  "reviews": "https://tusietestuje.pl/p/praktyczny-kurs-testowania-dostepnosci-accessibility-dla-poczatkujacych-2/",
+  "start_date": "2023-10-01",
+  "submission_date": "2026-10-20T12:13:04.311Z",
+  "submission_ref": "9a13fc70-cc7f-11f1-82fa-f93ef5fef04a",
+  "submitter_email": "kontakt@tusietestuje.pl",
+  "submitter_name": "Kinga Witko",
+  "title": "Testowanie dostępności (WCAG 2.1 i 2.2) dla początkujących (Accessibility testing WCAG 2.1.1 and 2.2 for beginners)",
+  "topics": [
+    "Accessibility policy and regulations",
+    "Web accessibility",
+    "Testing accessibility",
+    "Developing accessible solutions"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules1",
+    "developer_modules2",
+    "developer_modules3",
+    "developer_modules5",
+    "designer_modules1",
+    "designer_modules3",
+    "designer_modules5",
+    "designer_modules7",
+    "content_author_modules2",
+    "content_author_modules3"
+  ],
+  "website": "https://tusietestuje.pl/p/praktyczny-kurs-testowania-dostepnosci-accessibility-dla-poczatkujacych-2/"
+}
