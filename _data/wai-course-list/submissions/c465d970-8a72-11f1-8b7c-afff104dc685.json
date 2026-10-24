@@ -1,0 +1,87 @@
+{
+  "accessibility_support": [
+    "general-accessibility-material-ahead-of-time",
+    "digital-accessibility-text-and-visuals-can-be-resized",
+    "digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-text-and-visuals-big-enough",
+    "non-digital-accessibility-sufficient-contrast",
+    "non-digital-accessibility-description-of-visual-information"
+  ],
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author",
+    "audience_designer",
+    "audience_developer",
+    "audience_manager",
+    "audience_tester",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-07-28",
+  "cost": "cost_reduced_for_some",
+  "country": [
+    "pt"
+  ],
+  "description": "This course helps to distinguish what automatic tools detect from what requires human inspection. At the end of the training you will have the necessary information to validate digital products with screen readers and on mobile devices and conduct validation sessions with real users of assistive technologies.",
+  "end_date": "2026-09-24",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_online",
+  "language": [
+    "pt"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "6 hours",
+  "level": "level_intermediate",
+  "platforms": "Zoom",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Xperienz",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-09-22",
+  "submission_date": "2026-07-28T10:54:55.111Z",
+  "submission_ref": "c465d970-8a72-11f1-8b7c-afff104dc685",
+  "submitter_email": "bruno.figueiredo@xrd.pt",
+  "submitter_name": "Bruno Figueiredo",
+  "title": "Temos um Bom Score de Acessibilidade. E Agora? (We have a good accessibility score. Now what?)",
+  "topics": [
+    "Automatic Inspection",
+    "Semantic Inspection",
+    "Screen Readers and Smartphones",
+    "Testing with Users",
+    "Forms and How to Fix Them"
+  ],
+  "type_registration": [
+    "type_registration_individual",
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "wai_curricula": [
+    "foundation_modules1",
+    "foundation_modules2",
+    "foundation_modules3",
+    "foundation_modules4",
+    "foundation_modules5",
+    "developer_modules7",
+    "designer_modules1",
+    "designer_modules2",
+    "designer_modules3",
+    "designer_modules4",
+    "designer_modules5",
+    "designer_modules6",
+    "designer_modules7",
+    "content_author_modules1",
+    "content_author_modules2",
+    "content_author_modules3",
+    "content_author_modules4"
+  ],
+  "website": "https://www.userexperience.pt/curso-temos-bom-score-e-agora.html"
+}
