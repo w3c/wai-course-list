@@ -1,0 +1,51 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager",
+    "audience_general"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "Half-day session (3 h 30), remote or on site, for all staff and managers of an organisation, up to 25 people. Participants learn to spot an accessibility barrier and its effect on a user, apply basic practices to a link, an image and a common document, and write a useful issue report. No technical knowledge needed.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "3 hours 30 minutes",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Claren",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-10-26",
+  "submission_date": "2026-10-26T16:32:04.367Z",
+  "submission_ref": "c726d9f0-d15a-11f1-973d-5326ee4b100a",
+  "submitter_email": "contact@claren.fr",
+  "submitter_name": "Théodis Guyon",
+  "title": "Sensibilisation des agents (Digital accessibility awareness for staff)",
+  "topics": [
+    "Digital accessibility barriers, accessible links, images and documents"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://claren.fr/formation/"
+}
