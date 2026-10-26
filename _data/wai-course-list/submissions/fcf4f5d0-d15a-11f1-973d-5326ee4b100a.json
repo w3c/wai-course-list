@@ -1,0 +1,50 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_manager"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-10-26",
+  "cost": "cost_paid",
+  "country": [
+    "fr"
+  ],
+  "description": "Four half days (4 x 3 h 30) and two one-hour follow-up meetings for the accessibility lead of an organisation and a deputy. Participants map services and owners, read audit findings, build a remediation plan with priorities and proof of closure, and prepare a roadmap to follow up suppliers.",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_hybrid",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "4 half-days (14 hours) and 2 one-hour follow-up meetings",
+  "level": "level_intermediate",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Claren",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-10-26",
+  "submission_date": "2026-10-26T16:33:34.637Z",
+  "submission_ref": "fcf4f5d0-d15a-11f1-973d-5326ee4b100a",
+  "submitter_email": "contact@claren.fr",
+  "submitter_name": "Théodis Guyon",
+  "title": "Référent : piloter l'accessibilité numérique (Leading digital accessibility)",
+  "topics": [
+    "Accessibility governance, audit findings, remediation planning and supplier follow-up"
+  ],
+  "type_registration": [
+    "type_registration_organization"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://claren.fr/formation/"
+}
