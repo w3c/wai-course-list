@@ -1,0 +1,50 @@
+{
+  "accessibility_support_other": "",
+  "audience": [
+    "audience_content_author"
+  ],
+  "check_correct_info": "on",
+  "check_publish_info": "on",
+  "check_scope_info": "on",
+  "comments": "",
+  "content_update": "2026-01-01",
+  "cost": "on",
+  "country": [
+    "fr"
+  ],
+  "description": "Test descriptionj",
+  "end_date": "",
+  "form_name": "submission",
+  "form_version": "1",
+  "format": "format_face_to_face",
+  "language": [
+    "fr"
+  ],
+  "learning": [
+    "learning_scheduled"
+  ],
+  "length": "",
+  "level": "level_basic",
+  "platforms": "",
+  "prerequisites": [
+    ""
+  ],
+  "provider": "Test providerf",
+  "repository": "wai-course-list",
+  "reviews": "",
+  "start_date": "2026-01-01",
+  "submission_date": "2026-11-04T14:10:14.080Z",
+  "submission_ref": "7457dc00-d859-11f1-8a86-1f4395df66e2",
+  "submitter_email": "test@example.org",
+  "submitter_name": "Test name",
+  "title": "Test title",
+  "topics": [
+    "Test"
+  ],
+  "type_registration": [
+    "type_registration_individual"
+  ],
+  "type_resource": "type_training",
+  "type_resource_new": "",
+  "website": "https://example.org"
+}
