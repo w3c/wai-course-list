@@ -48,3 +48,4 @@ jobs:
           labels: |
             form submission
           draft: false
+          assignees: leticiaseixas
